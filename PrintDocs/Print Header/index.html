@@ -51,6 +51,23 @@
         .print-btn img {
             height: 35px;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #0000000a;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: white;
+            color: black;
+        }
         
         @media print {
             .print-btn {
@@ -284,7 +301,11 @@
         </div>
 
         <!-- the footer starts here -->
-        <div style="padding: 8.5mm;width: 100%;background-color: #eaf6e9;flex-grow: 1;margin-top: 9mm;display: flex;flex-flow: column;align-items: baseline;justify-content: space-between;">
+        <div style="padding: 8.5mm;width: 100%;background-color: #eaf6e9;margin-top: 9mm;
+        display: flex;flex-flow: column;align-items: baseline;justify-content: space-between;
+        position: absolute;
+        height: 70mm;
+        bottom: 0mm;">
             <div style="display: flex;justify-content: space-between;width: 100%;">
 
                 <div style="font-size: 12px;padding-top:3.3mm;">
@@ -335,7 +356,13 @@
                     <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2mm;">
                         <span style="font-family: 'Yellowtail', cursive;  color: #4ca82c; line-height: 0.9; font-size: 20px;">Thank You!</span>
                         <div style="display: flex; display: non; align-items: center; justify-content: center; font-size: 12px; margin-left: 8.5mm; text-transform: uppercase;">
-                            <p>Powered By Craft Silicon</p>
+                            <p style="text-transform: capitalize; font-family: 'Times New Roman', Times, serif; font-style:italic;">Powered By </p>
+
+                            <div>
+                                <img style="
+                                height: 11mm;
+                                margin-left: 3mm;" src="assets/CS_Logo_web.png" alt="">
+                            </div>
                            
 
                         </div>
