@@ -438,6 +438,16 @@
                                 </div>
 
                                 <div class="card-header bg-white w-100 border-bottom d-flex">
+
+                                    <div class="mr-15px">
+                                        <select class="form-select form-control bg-white mr-15px" title="Select System User Type" data-live-search="true" title="Select a tenant" data-style="">
+                                            <option selected value="All users (100)">Jul 2023</option>
+                                            <option value="Parking">May 2023</option>
+                                            <option value="Markets">may 203</option>
+                                            
+                                      </select>
+                                    </div>
+
                                     <div class="mr-15px">
                                         <select class="form-select form-control bg-white mr-15px" title="Select System User Type" data-live-search="true" title="Select a tenant" data-style="">
                                             <option selected value="All users (100)">All Revenue Streams</option>
@@ -447,7 +457,7 @@
                                       </select>
                                     </div>
 
-                                  <div class="flex-grow-1">
+                                  <div class="flex-grow-1 d-none">
                                     <div class="search-box mb-0 me-2 flex-grow-1">
                                         <div class="position-relative">
                                             <input type="text" class="form-control bg-light border-light rounded" placeholder="Search ...">
@@ -460,69 +470,64 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table align-middle table-nowrap table-hover  contacts-table" id="">
+                                        <table class="table align-middle table-nowrap table-hover table-striped  contacts-table" id="">
                                             <thead class="table-dark">
                                                 <tr>
                                                     <th scope="col">Date</th>
-                                                    <th>Paid By</th>
-                                                    <th>Transaction Code</th>
-                                                    <th>Revenue Stream</th>
-                                                    <th>Payment Mode</th>
-                                                    <th>Payment Status</th>
-                                                    <th>Paid At</th>
-                                                    <th scope="col" class="text-right">Transaction Amount</th>
-    
+                                                    <th>1st Transaction Time</th>
+                                                    <th>NO. Of Transactions</th>
+                                                    <th>Last Transaction Time</th>
+                                                    <th class="text-right">Collected Revenue</th>                                                    
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td scope="col">10 Jan 2023, 10:54 AM</td>
-                                                    <td>
-                                                        <h5 class="font-size-14 mb-1 "><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                        <p class="text-muted mb-0 ">0704*****9</p>
-                                                    </td>
-                                                    <td>PKN 12345</td>
-                                                    <td>Parking</td>
-                                                    <td>MPESA</td>
-                                                    <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
-                                                    <td><small>Homa Bay Central Homa Bay Town, Homa Bay, Kenya</small></td>
-                                                    <td scope="col" class="text-right">
-                                                        <strong class="fw-semibold text-black">KES 500</strong>
-                                                    </td>
-                                                </tr>
-    
-                                                <tr>
-                                                    <td scope="col">10 Jan 2023, 10:54 AM</td>
-                                                    <td>
-                                                        <h5 class="font-size-14 mb-1 "><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                        <p class="text-muted mb-0 ">0704*****9</p>
-                                                    </td>
-                                                    <td>PKN 12345</td>
-                                                    <td>Parking</td>
-                                                    <td>MPESA</td>
-                                                    <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
-                                                    <td><small>Homa Bay Central Homa Bay Town, Homa Bay, Kenya</small></td>
+                                                    <td scope="col">10 Jan 2023</td>
+                                                   <td>10:45 AM</td>
+                                                   <td>34</td>
+                                                   <td>05:34 PM</td>
                                                     <td scope="col" class="text-right">
                                                         <strong class="fw-semibold text-black">KES 500</strong>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td scope="col">10 Jan 2023, 10:54 AM</td>
-                                                    <td>
-                                                        <h5 class="font-size-14 mb-1 "><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                        <p class="text-muted mb-0 ">0704*****9</p>
+                                                    <td scope="col">10 Jan 2023</td>
+                                                   <td>10:45 AM</td>
+                                                   <td>34</td>
+                                                   <td>05:34 PM</td>
+                                                    <td scope="col" class="text-right">
+                                                        <strong class="fw-semibold text-black">KES 500</strong>
                                                     </td>
-                                                    <td>PKN 12345</td>
-                                                    <td>Parking</td>
-                                                    <td>MPESA</td>
-                                                    <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
-                                                    <td><small>Homa Bay Central Homa Bay Town, Homa Bay, Kenya</small></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="col">10 Jan 2023</td>
+                                                   <td>10:45 AM</td>
+                                                   <td>34</td>
+                                                   <td>05:34 PM</td>
+                                                    <td scope="col" class="text-right">
+                                                        <strong class="fw-semibold text-black">KES 500</strong>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="col">10 Jan 2023</td>
+                                                   <td>10:45 AM</td>
+                                                   <td>34</td>
+                                                   <td>05:34 PM</td>
                                                     <td scope="col" class="text-right">
                                                         <strong class="fw-semibold text-black">KES 500</strong>
                                                     </td>
                                                 </tr>
                                             </tbody>
+                                            <tfoot>
+                                                <tr class="table-dark">
+                                                    <th scope="col" colspan="2">January</th>                                                    
+                                                    <th>34</th>                                                    
+                                                    <th class="text-right" colspan="2">KES 56,900</th>                                                    
+                                                </tr>
+                                            </tfoot>
                                         </table>
                                     </div>
                                 </div>
