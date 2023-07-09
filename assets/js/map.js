@@ -954,21 +954,6 @@ $('.filter-by-county').on('change', function(){
 
 })
 
-// end of map data for diffrent counties
-function changingLegendTitle(){
-    Mapchart.legend.title.attr({
-        text:chartDate+" "+chartProd+" "+chartmvt_type
-    })
-
-    Mapchart.series[0].update({
-        name:chartDate+" "+chartProd+" "+chartmvt_type
-    })
-}
-
-//filter by month
-$('.filter-by-month').on('change', function(){
-    changingSeriesData()
-})
 
 //changing to filtered by
 $('.filter-by').on('change', function(){
@@ -1425,7 +1410,7 @@ const Mapchart=Highcharts.mapChart('Map-data', {
             style: {
                 fontFamily: '"Poppins",sans-serif'
             },
-           "mapData": selectedCounty,
+           "mapData": homaBayMapData,
             "data": [
                 {
                     //Langata north

@@ -882,26 +882,12 @@
     
                                         <div id="Map-data" class="h-80" dir="ltr"></div>
                                     </div>
-                                   
-                                    <div class="card-body border-top px-4 pt-4 d-none">
-                                        <h4 class="card-title mb-4">Inactive Certificates</h4>
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <p class="text-muted">Inactive Certificates</p>
-                                                <h3>945</h3>
-                                                <p class="text-muted"><span class="text-success me-2"> 12% <i class="mdi mdi-arrow-up"></i> </span> Renewed This Month</p>
-    
-                                                <div class="mt-4">
-                                                    <a href="cert-inactive.html" class="btn btn-primary waves-effect waves-light btn-sm">Inactive Certificates <i class="mdi mdi-arrow-right ms-1"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <div class="mt-4 mt-sm-0">
-                                                    <div id="radialBar-chart" data-colors='["--bs-primary"]' class="apex-charts"></div>
-                                                </div>
-                                            </div>
+                                    <div class="card-footer bg-transparent border-top">
+                                        <div class="text-center">
+                                            <a href="javascript: void(0);" class="btn btn-primary waves-effect waves-light"> <i class="mdi mdi-download-outline"></i> Download Custom Reports</a>
                                         </div>
                                     </div>
+                                   
                                 </div>
                                 <!--end card-->
                             </div>
@@ -910,66 +896,27 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="card">
-                                            <div class="card-header bg-white border-bottom">
-                                                <div class="float-end">
-                                                    <select class="form-select form-select-sm ms-2">
-                                                        <option value="MA" selected>All Sub Counties</option>
-                                                        <option value="FE">Westlands</option>
-                                                        <option value="JA">Roysambu</option>
-                                                        <option value="DE">Kibra</option>
-                                                        <option value="DE">Langata</option>
-                                                    </select>
-                                                </div>
-                                                <h4 class="card-title mb-3">Revenue By Patient Type</h4>
-                                            </div>
+                                           
                                             <div class="card-body">
-                                               
-            
-                                                <div class="row py-2">
-                                                    <div class="col-lg-4 d-none">
-                                                        <div class="mt-4">
-                                                            <p>Total Revenue Collected</p>
-                                                            <h4>KES 567,900</h4>
-            
-                                                            <p class="text-muted mb-4"> + 3,850 ( 0.2 % ) <i class="mdi mdi-arrow-up ms-1 text-success"></i></p>
-            
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div>
-                                                                        <p class="mb-2">value Of Bills Created</p>
-                                                                        <h5>KES 789,000</h5>
-                                                                    </div>
-                                                                </div>
-                                                                
-                                                            </div>
-            
-                                                            <div class="mt-4">
-                                                                <a href="bills-receipted.html" class="btn btn-primary btn-sm">Receipted Bills <i class="mdi mdi-arrow-right ms-1"></i></a>
-                                                            </div>
-                                                        </div>
+                                                <div class="d-sm-flex flex-wrap">
+                                                    <div class="d-flex flex-column">
+                                                         <h4 class="card-title mb-1">Departments</h4>
+                                                         <p>Revenue Collection By department</p>
                                                     </div>
-            
-                                                    <div class="col-lg-8">
-                                                        <div>
-                                                            <div id="wallet-balance-chart" class="apex-charts"></div>
-                                                        </div>
-                                                    </div>
-            
-                                                    <div class="col-lg-4 align-self-center">
-                                                        <div>
-                                                            <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-warning"></i>Inpatient</p>
-                                                            <h5>KES 200,655 <span class="text-muted font-size-14"> </span></h5>
-                                                        </div>
-            
-                                                        <div class="mt-4 pt-2">
-                                                            <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-info"></i>Outpatient</p>
-                                                            <h5>KES 345,900<span class="text-muted font-size-14"> </span></h5>
-                                                        </div>
-            
-                                                        
-    
-                                                    </div>
-                                                </div>
+                                                     <div class="ms-auto">
+                                                         <ul class="nav nav-pills">
+                                                             <li class="nav-item">
+                                                                 <a class="nav-link" href="#">Today</a>
+                                                             </li>
+                                                             
+                                                             <li class="nav-item">
+                                                                 <a class="nav-link active" href="#">Financial Year</a>
+                                                             </li>
+                                                         </ul>
+                                                     </div>
+                                                 </div>
+                                                 <div id="collected-rev"></div>
+                                              
                                             </div>
                                             <div class="card-footer bg-transparent border-top d-none">
                                                 <div class="text-center">
@@ -1580,6 +1527,7 @@
 
 
     <script src="assets/js/map.js"></script>
+    <script src="assets/js/collected-rev.js"></script>
 
 
 
