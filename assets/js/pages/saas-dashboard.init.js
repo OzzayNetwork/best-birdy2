@@ -145,7 +145,8 @@ var walletOptions = {
   series: [25, 40, 35],
   chart: {
       height: 302,
-      type: "radialBar"
+      type: "radialBar",
+      redrawOnWindowResize: true 
   },
   plotOptions: {
       radialBar: {
