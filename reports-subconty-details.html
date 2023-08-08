@@ -384,13 +384,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Revenue Collection by counies</h4>
+                                <h4 class="mb-sm-0 font-size-18">Revenue Collections For Homa Bay Town Sub county for the period 1 Jan 2023 to 31 Jan 2023</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item active">Revenue collection by county</li>
+                                        <li class="breadcrumb-item"><a href="reports-subconty.html">Revenue collection by county</a></li>
+                                        <li class="breadcrumb-item active">Karachuonyo Sub County</li>
                                     </ol>
                                 </div>
 
@@ -398,39 +399,82 @@
                         </div>
                     </div>
                     <!-- end page title -->
+
+                    <!-- toolbar start -->
+                    <div class="row">
+                        <div class="col-12 active">
+                            <div class="card active">
+                                <div class="card-body pt-2 pb-3 active">
+                                    <nav class="navbar navbar-expand-md navbar-white bg-white py-2 active">
+                                        <button class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                          <span class="mdi mdi-menu"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
+                                            <div class="navbar-nav active">
+                                                <a class="nav-item nav-link active" href="tenant-details.html">All Transactions</a>
+                                                <a class="nav-item nav-link" href="tenant-rent.html">Revenue Streams</a>
+                                                <a class="nav-item nav-link" href="tenant-kin.html">Collection Zones</a>
+                                                <a class="nav-item nav-link" href="tenant-dependants.html">Revenue Agents</a>
+                                               
+                                            </div>
+                                            <div class="navbar-nav text-capitalize">
+                                                <h4 class="mb-0 m-0">Homabay Sub county</h4>
+                                            </div>
+
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- toobar end -->
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
-                                        <h4 class="card-title text-capitalize mb-0 ">
-                                            Revenue Collection By County
-                                        </h4>
+                                      <div class="flex-grow-1">
+                                        <div class="search-box mb-0 me-3">
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l">
+                                                <i class="bx bx-search-alt search-icon"></i>
+                                            </div>
+                                        </div>
+                                      </div>
 
                                         <div class="d-flex">
-                                            <a href="bill-new.html" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
-                                                <i class="mdi mdi-plus-circle-outline  font-size-16"></i> <span class="pl-1 d-md-inline">Create A Bill</span>
-                                            </a>
+                                            <div class="d-flex align-items-center me-3 pe-3">
+                                                <span class="pr-3 fw-semibold">From:</span>
+                                                <input class="form-control"placeholder="Start date" type="date">
+                                                <span class="px-3 fw-semibold">TO:</span>
+                                                <input class="form-control" placeholder="Start date" type="date">
+                                            </div>
+                                            <button  data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                                <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                            </button>
 
                                         </div>
 
 
                                     </div>
                                     <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
+                                        <button type="button"  data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive overflow-visible">
 
-                                        <table class="table align-middle table-hover  contacts-table table-striped " id="datatable-buttons">
+                                        <table class="table align-middle table-hover  contacts-table table-striped " id="">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
-                                                    <th>#</th>
-                                                    <th scope="col">Sub County</th>
-                                                    <th>Total Transactions</th>
-                                                    <th scope="col">Total Agents</th>                                                    
+                                                    <th>Receipt No.</th>
+                                                    <th scope="col">Paid By</th>
+                                                    <th>Date</th>
+                                                    <th scope="col">Payment Method</th> 
+                                                    <th>Payment Details</th>
+                                                    <th>Served By</th>                                                   
                                                     <th scope="col" class="text-right">Amount collected</th>
                                                     <th></th>
                                                 </tr>
@@ -446,7 +490,7 @@
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Details</button>
+                                                            <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
                                                             <div class="dropdown">
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
@@ -459,98 +503,7 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        Ndhiwa
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Details</button>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>3.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        Rachuonyo South
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Details</button>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        Rachuonyo North
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Details</button>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>5.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        Unmatched Transactions
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Details</button>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
+                                               
                                                 
                                                 
                                             </tbody>
@@ -576,6 +529,40 @@
                                             </tfoot>
                                         </table>
                                     </div>
+                                    
+                                </div>
+
+                                <div class="card-footer bg-white">
+                                    <nav aria-label="Page navigation example " class="d-flex align-items-center justify-content-between">
+
+                                        <div class="d-flex align-items-center">
+                                            <span class="pr-3 pb-0 mb-0 font-13px">
+                                                <span>Rows Per Page</span>
+                                            </span>
+                                            <select class="form-select w-auto font-13px ">
+                                                <option value="10">10 Rows</option>
+                                                <option value="25">25 Rows</option>
+                                                <option value="50">50 Rows</option>
+                                                <option value="100">100 Rows</option>
+                                                <option value="150">150 Rows</option>
+                                                <option value="200">200 Rows</option>
+                                            </select>
+                                        </div>
+
+                                        <ul class="pagination">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
