@@ -384,15 +384,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Revenue Collections For Homa Bay Town Sub county for the period 1 Jan 2023 to 31 Jan 2023</h4>
+                                <h4 class="mb-sm-0 font-size-18">Revenue Collections By Zone for the period 1 Jan 2023 to 31 Jan 2023</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item"><a href="reports-streams.html">Revenue collection by Revenue Streams</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Parking</a></li>
-                                        <li class="breadcrumb-item active">All Sub Counties</li>
+                                        <li class="breadcrumb-item active" ><a href="#">Collections By Zones</a></li>
+                                       
                                     </ol>
                                 </div>
 
@@ -412,27 +411,27 @@
                                         </button>
                                         <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
                                             <div>
-                                                <h4 class="mb-0 m-0 card-title">Parking Collections For All Subcounties</h4> 
+                                                <h4 class="mb-0 m-0 card-title">All Subcounties</h4> 
                                             </div>
                                             <div class="navbar-nav text-capitalize">
                                                 
 
                                                 <div class="me-3">
                                                     <select class="form-select w-auto font-13px ">
-                                                        <option value="10" selected>Parking</option>
-                                                        <option value="25">Markets</option>
-                                                        <option value="50">Cess Barriers</option>
-                                                        <option value="100">Trade</option>                                                       
+                                                        <option value="10" selected="">All Subcounties</option>
+                                                        <option value="25">Sucounty 1</option>
+                                                        <option value="50">Sucounty 2</option>
+                                                        <option value="100">Sucounty 3</option>                                                       
                                                     </select>
                                                 </div>
 
                                                 <div>
                                                     <select class="form-select w-auto font-13px ">
-                                                        <option value="10" selected>All sub Counties</option>
-                                                        <option value="25">Ndhiwa</option>
-                                                        <option value="50">Rachuonyo East</option>
-                                                        <option value="100">Homabay Town Subcounty</option>  
-                                                        <option value="100">Homabay Town Subcounty</option>                                                       
+                                                        <option value="10" selected="">All Wards</option>
+                                                        <option value="25">Ward 1</option>
+                                                        <option value="50">Ward 2</option>
+                                                        <option value="100">Ward 3</option>  
+                                                        <option value="100">Ward 4</option>                                                       
                                                     </select>
                                                 </div>
                                             </div>
@@ -485,124 +484,166 @@
                                         <table class="table align-middle table-hover  contacts-table table-striped " id="">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
-                                                    <th>Receipt No.</th>
-                                                    <th scope="col">Paid By</th>
-                                                    <th>Date</th>
-                                                    <th scope="col">Payment Method</th> 
-                                                    <th>Payment Details</th>
-                                                    <th>Served By</th>
-                                                    <th>Status</th>  
-                                                    <th>Validity Status</th>                                                 
-                                                    <th scope="col" class="text-right">Amount</th>
+                                                    <th>#</th>
+                                                    <th scope="col">Zone</th>
+                                                    <th>Sub county</th>
+                                                    <th>Ward</th>
+                                                    <th>Total Transactions</th>
+                                                    <th scope="col">Total Agents</th>                                                    
+                                                    <th scope="col" class="text-right">Amount collected</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>PTY67809</strong></td>
+                                                    <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Kelvin 0704 549 859</a>
+                                                        <a href="reports-zone-details.html">Zone Name</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22 Apr 2023 04:56 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <span class="fw-semibold">MPESA RECSPPTHF</span>
-                                                    </td>
-                                                    <td>Daily Parking for KAD 123 Pick Up</td>
-                                                    <td>
-                                                        <a href="">Alex Wanjala</a>
-                                                    </td>
-                                                    <td><span class="badge badge-soft-success text-uppercase">PAID</span></td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    <td>Sub County Name</td>
+                                                    <td>Ward Name</td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
-                                                            <a type="button" href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Receipt</a>
-                                                           
+                                                            <a type="button" href="reports-zone-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>PTY67809</strong></td>
+                                                    <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Kelvin 0704 549 859</a>
+                                                        <a href="reports-zone-details.html">Zone Name</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22 Apr 2023 04:56 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <span class="fw-semibold">MPESA RECSPPTHF</span>
-                                                    </td>
-                                                    <td>Daily Parking for KAD 123 Pick Up</td>
-                                                    <td>
-                                                        <a href="">Alex Wanjala</a>
-                                                    </td>
-                                                    <td><span class="badge badge-soft-success text-uppercase">PAID</span></td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    <td>Sub County Name</td>
+                                                    <td>Ward Name</td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
-                                                            <a type="button" href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Receipt</a>
-                                                           
+                                                                                                                        <a type="button" href="reports-zone-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>PTY67809</strong></td>
+                                                    <td class="text-capitalize text-nowrap"><strong>3.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Kelvin 0704 549 859</a>
+                                                        <a href="reports-zone-details.html">Zone Name</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22 Apr 2023 04:56 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <span class="fw-semibold">MPESA RECSPPTHF</span>
-                                                    </td>
-                                                    <td>Daily Parking for KAD 123 Pick Up</td>
-                                                    <td>
-                                                        <a href="">Alex Wanjala</a>
-                                                    </td>
-                                                    <td><span class="badge badge-soft-success text-uppercase">PAID</span></td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    <td>Sub County Name</td>
+                                                    <td>Ward Name</td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
-                                                            <a type="button" href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Receipt</a>
-                                                           
+                                                                                                                        <a type="button" href="reports-zone-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>PTY67809</strong></td>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Kelvin 0704 549 859</a>
+                                                        <a href="reports-zone-details.html">Zone Name</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22 Apr 2023 04:56 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <span class="fw-semibold">MPESA RECSPPTHF</span>
-                                                    </td>
-                                                    <td>Daily Parking for KAD 123 Pick Up</td>
-                                                    <td>
-                                                        <a href="">Alex Wanjala</a>
-                                                    </td>
-                                                    <td><span class="badge badge-soft-success text-uppercase">PAID</span></td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    <td>Sub County Name</td>
+                                                    <td>Ward Name</td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
-                                                            <a type="button" href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Receipt</a>
-                                                           
+                                                                                                                        <a type="button" href="reports-zone-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                               
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>5.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-zone-details.html">Zone Name</a>
+                                                    </td>
+                                                    <td>Sub County Name</td>
+                                                    <td>Ward Name</td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end">
+                                                                                                                        <a type="button" href="reports-zone-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                                 
                                                 
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
 
-                                                    <th colspan="7">
-                                                        23 Transactions
+                                                    <th colspan="2">
+                                                        23 Sub Counties
                                                     </th>
-                                                   
+                                                    <th>34</th>
+                                                    <th>3</th>
+                                                   <th>
+                                                        45
+                                                   </th>
+                                                   <th>53</th>
 
                                                     <td class="text-nowrap text-right " colspan="">
                                                         <span class="fw-semibold ">KES 2,000,000</span>
                                                     </td>
                                                     <TD></TD>
-                                                    <td></td>
 
                                                     
                                                 </tr>
