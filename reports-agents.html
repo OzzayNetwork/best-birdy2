@@ -433,6 +433,26 @@
                                                 
                                             </div>
 
+                                            <div class="d-flex align-items-center me-3 pe-3">
+                                                <span class="pr-3 fw-semibold">Filter By Target</span>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <select class="form-select me-2">
+                                                        <option>All Renvenue Agents</option>
+                                                        <option>Above Target</option>
+                                                        <option>Below Target</option>
+                                                        <option>Poor Perfomance</option>
+                                                        <option>Zero Collections</option>
+                                                    </select>
+
+                                                    <button title="what does this filter do?" data-bs-toggle="modal" data-bs-target=".target-modal" type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle">
+                                                        <span class="avatar-title bg-transparent text-reset">
+                                                            <strong>?</strong>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                
+                                            </div>
+
 
                                             <button  data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                                 <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
@@ -454,10 +474,12 @@
                                                 <tr class="table-dark">
                                                     <th>#</th>
                                                     <th scope="col">Agent</th>
-                                                    <th>Role</th>
                                                     <th>Inspections</th>
                                                     <th scope="col">Transactions</th>     
-                                                    <th>Idle Time</th>                                               
+                                                    <th>Idle Time</th> 
+                                                    <th class="text-right">Highest Achievement</th> 
+                                                    <th class="text-right">Inspected Revenue</th>      
+                                                    <th class="text-right">Target</th>                                           
                                                     <th scope="col" class="text-right">Amount collected</th>
                                                     <th></th>
                                                 </tr>
@@ -465,14 +487,29 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-agents-details.html">Agent's Name</a>
+                                                    <td>
+                                                        <a href="use-logs.html" title="click to vie user logs and activities">
+                                                            </a><div class=" d-flex align-items-center "><a href="use-logs.html" title="click to vie user logs and activities">
+                                                                <div class="avatar-xs mr-15px ">
+                                                                    <span class="avatar-title rounded-circle ">
+                                                                            KN
+                                                                        </span>
+                                                                </div>
+                                                                </a><div><a href="use-logs.html" title="click to vie user logs and activities">
+                                                                    </a><h5 class="font-size-14 mb-1 "><a href="use-logs.html" title="click to vie user logs and activities"></a><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
+                                                                    <p class="text-muted mb-0 ">Developer</p>
+                                                                </div>
+                                                            </div>
+                                                        
                                                     </td>
-                                                    <td>Revenue Collector</td>
                                                     <td class="text-capitalize text-nowrap">22</td>
                                                     <td class="text-capitalize text-nowrap">18</td>
                                                     <td>22 Min</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 320,000</th>
+
                                                     <td>
                                                         <div class="d-flex justify-content-end">
                                                             <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
@@ -490,14 +527,29 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-agents-details.html">Agent's Name</a>
+                                                    <td>
+                                                        <a href="use-logs.html" title="click to vie user logs and activities">
+                                                            </a><div class=" d-flex align-items-center "><a href="use-logs.html" title="click to vie user logs and activities">
+                                                                <div class="avatar-xs mr-15px ">
+                                                                    <span class="avatar-title rounded-circle ">
+                                                                            KN
+                                                                        </span>
+                                                                </div>
+                                                                </a><div><a href="use-logs.html" title="click to vie user logs and activities">
+                                                                    </a><h5 class="font-size-14 mb-1 "><a href="use-logs.html" title="click to vie user logs and activities"></a><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
+                                                                    <p class="text-muted mb-0 ">Developer</p>
+                                                                </div>
+                                                            </div>
+                                                        
                                                     </td>
-                                                    <td>Revenue Collector</td>
                                                     <td class="text-capitalize text-nowrap">22</td>
                                                     <td class="text-capitalize text-nowrap">18</td>
                                                     <td>22 Min</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 320,000</th>
+
                                                     <td>
                                                         <div class="d-flex justify-content-end">
                                                                                                                         <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
@@ -516,14 +568,29 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>3.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-agents-details.html">Agent's Name</a>
+                                                    <td>
+                                                        <a href="use-logs.html" title="click to vie user logs and activities">
+                                                            </a><div class=" d-flex align-items-center "><a href="use-logs.html" title="click to vie user logs and activities">
+                                                                <div class="avatar-xs mr-15px ">
+                                                                    <span class="avatar-title rounded-circle ">
+                                                                            KN
+                                                                        </span>
+                                                                </div>
+                                                                </a><div><a href="use-logs.html" title="click to vie user logs and activities">
+                                                                    </a><h5 class="font-size-14 mb-1 "><a href="use-logs.html" title="click to vie user logs and activities"></a><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
+                                                                    <p class="text-muted mb-0 ">Developer</p>
+                                                                </div>
+                                                            </div>
+                                                        
                                                     </td>
-                                                    <td>Revenue Collector</td>
                                                     <td class="text-capitalize text-nowrap">22</td>
                                                     <td class="text-capitalize text-nowrap">18</td>
                                                     <td>22 Min</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 320,000</th>
+
                                                     <td>
                                                         <div class="d-flex justify-content-end">
                                                                                                                         <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
@@ -542,14 +609,29 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-agents-details.html">Agent's Name</a>
+                                                    <td>
+                                                        <a href="use-logs.html" title="click to vie user logs and activities">
+                                                            </a><div class=" d-flex align-items-center "><a href="use-logs.html" title="click to vie user logs and activities">
+                                                                <div class="avatar-xs mr-15px ">
+                                                                    <span class="avatar-title rounded-circle ">
+                                                                            KN
+                                                                        </span>
+                                                                </div>
+                                                                </a><div><a href="use-logs.html" title="click to vie user logs and activities">
+                                                                    </a><h5 class="font-size-14 mb-1 "><a href="use-logs.html" title="click to vie user logs and activities"></a><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
+                                                                    <p class="text-muted mb-0 ">Developer</p>
+                                                                </div>
+                                                            </div>
+                                                        
                                                     </td>
-                                                    <td>Revenue Collector</td>
                                                     <td class="text-capitalize text-nowrap">22</td>
                                                     <td class="text-capitalize text-nowrap">18</td>
                                                     <td>22 Min</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 320,000</th>
+
                                                     <td>
                                                         <div class="d-flex justify-content-end">
                                                                                                                         <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
@@ -568,14 +650,28 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>5.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-agents-details.html">Agent's Name</a>
+                                                    <td>
+                                                        <a href="use-logs.html" title="click to vie user logs and activities">
+                                                            </a><div class=" d-flex align-items-center "><a href="use-logs.html" title="click to vie user logs and activities">
+                                                                <div class="avatar-xs mr-15px ">
+                                                                    <span class="avatar-title rounded-circle ">
+                                                                            KN
+                                                                        </span>
+                                                                </div>
+                                                                </a><div><a href="use-logs.html" title="click to vie user logs and activities">
+                                                                    </a><h5 class="font-size-14 mb-1 "><a href="use-logs.html" title="click to vie user logs and activities"></a><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
+                                                                    <p class="text-muted mb-0 ">Developer</p>
+                                                                </div>
+                                                            </div>
+                                                        
                                                     </td>
-                                                    <td>Revenue Collector</td>
                                                     <td class="text-capitalize text-nowrap">22</td>
                                                     <td class="text-capitalize text-nowrap">18</td>
                                                     <td>22 Min</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 320,000</th>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
                                                                                                                         <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
@@ -598,7 +694,7 @@
                                             <tfoot class="table-dark">
                                                 <tr>
 
-                                                    <th colspan="2">
+                                                    <th colspan="">
                                                         23 Agents
                                                     </th>
                                                    <th>
@@ -607,6 +703,13 @@
                                                    <th>53</th>
                                                    <th>53</th>
                                                    <th>5 Hrs</th>
+                                                   <td class="text-nowrap text-right " colspan="2">
+                                                    <span class="fw-semibold ">KES 2,000,000</span>
+                                                </td>
+
+                                                   <td class="text-nowrap text-right " colspan="2">
+                                                    <span class="fw-semibold ">KES 2,000,000</span>
+                                                </td>
 
 
                                                     <td class="text-nowrap text-right " colspan="">
@@ -731,78 +834,30 @@
             <!-- end of receipting modal -->
 
             <!-- invoice details -->
-            <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal fade target-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Invoice Details</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Target Categorization</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="col-12">
-                                <address>
-                                    <strong>Billed To:</strong><br>
-                                    Kelvin Njuguna<br>
-                                    email@mail.com, 0704 549 859<br>                                   
-                                    Hse No. 410, 90 Degrees By Tsavo
-                                    <br><br>
-                                    1 Mar 2022, 10:20 AM
-                                </address>
-                            </div>
-                            <div class="col-12">
-                                <div class="py-2 mt-3">
-                                    <h3 class="font-size-15 fw-bold">Invoice Details ( <span class="text-primary fw-medium">No. 1237</span> )</h3>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <table class="table table-nowrap">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 70px;">No.</th>
-                                                <th>Item</th>
-                                                <th class="text-end">Amount</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>01</td>
-                                                <td>Rent Deposit</td>
-                                                <td class="text-end">KES 24,500</td>
-                                            </tr>
+                            <div class="row">
+                                <div class="col-12">
+                                    <ol>
+                                        <li class="mb-2">  <strong>Above Target:</strong> Collectors who collect more than their target, i.e., Ratio > 100.</li>
+                                        <li class="mb-2"> <strong>On Target:</strong> Collectors who collect exactly their target, i.e., Ratio = 100.</li>
 
-                                            <tr>
-                                                <td>02</td>
-                                                <td>Monthly Rent</td>
-                                                <td class="text-end">KES 12,000</td>
-                                            </tr>
+                                        <li class="mb-2"><strong>Below Target:</strong> Collectors who collect less than their target, i.e., Ratio < 100.</li>
+                                        <li class="mb-2"><strong>Poor Perfomance:</strong> Collectors who achieved less than 80% of the target.</li>
 
-                                            <tr>
-                                                <td>03</td>
-                                                <td>TAX (18%)</td>
-                                                <td class="text-end">KES 250</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="text-end">Total</td>
-                                                <td class="text-end fw-bold">KES 36,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="text-end">Paid</td>
-                                                <td class="text-end  fw-bold">KES 0.00</td>
-                                            </tr>
+                                        <li class="mb-2"><strong>Zero Collections:</strong> Collectors who did not collect anything</li>
 
-                                            <tr>
-                                                <td colspan="2" class="border-0 text-end">
-                                                    <strong>Balance</strong></td>
-                                                <td class="border-0 text-end">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 36,750</h5>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    </ol>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="modal-footer">
                             <div class="col-12 d-none">
                                 <div class="table-resposive p-4 px-2 pt-2 overflow-visible">
