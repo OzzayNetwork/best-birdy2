@@ -235,7 +235,7 @@
         </header>
 
         <!-- ========== Left Sidebar Start ========== -->
-        <div class="vertical-menu">
+       <div class="vertical-menu">
 
             <div data-simplebar class="h-100">
 
@@ -334,7 +334,7 @@
                                 <li><a href="reports-subconty.html">Collections By Sub County</a></li>
                                 <li class=""><a href="reports-streams.html">Revenue Streams Collections</a></li>
                                 <li class=""><a href="reports-zones.html">Collection Zones</a></li>
-                                <li class="text-capitalize"><a href="reports-wards.html">Wards</a></li>
+                                <li class="text-capitalize"><a href="reports-agents.html">Agents Daily Reports</a></li>
                             </ul>
                         </li>
 
@@ -384,23 +384,47 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Revenue Collections For Kadongo Stage for the period 1 Jan 2023 to 31 Jan 2023</h4>
+                                <h4 class="mb-sm-0 font-size-18">Revenue Collection by Streams for the period 1 Jan 2023 to 31 Jan 2023</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item"><a href="reports-zones.html">Revenue Collection By zone</a></li>
-                                        <li class="breadcrumb-item active">Selected Zone</li>
+                                        <li class="breadcrumb-item active">Revenue collection by Revenue Stream</li>
                                     </ol>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <!-- end page title -->
 
-                   
+                    <!-- tool bar -->
+                    <div class="row">
+                        <div class="col-12 active">
+                            <div class="card active">
+                                <div class="card-body pt-2 pb-3 active">
+                                    <nav class="navbar navbar-expand-md navbar-white bg-white py-2 active">
+                                        <button class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                          <span class="mdi mdi-menu"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
+                                            <div class="navbar-nav active">
+                                                <a class="nav-item nav-link" href="reports-streams.html">Whole county Summarized</a>
+                                                <a class="nav-item nav-link" href="reports-streams-subcounties.html">Sub counties</a>
+                                            </div>
+                                            <div class="navbar-nav text-capitalize">
+                                                <h4 class="mb-0 m-0 card-title">Whole County</h4>
+                                            </div>
+
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end of toolbar -->
+                    <!-- end page title -->
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
@@ -440,126 +464,128 @@
 
                                         <table class="table align-middle table-hover  contacts-table table-striped " id="">
                                             <thead class="table-light">
-                                                <tr class="table-dark">
-                                                    <th>Receipt No.</th>
-                                                    <th scope="col">Paid By</th>
-                                                    <th>Date</th>
-                                                    <th scope="col">Payment Method</th> 
-                                                    <th>Payment Details</th>
-                                                    <th>Served By</th>
-                                                    <th>Status</th>  
-                                                    <th>Validity Status</th>                                                 
-                                                    <th scope="col" class="text-right">Amount</th>
-                                                    <th></th>
+                                                <tr class="table-dark text-uppercase">
+                                                    <th>#</th>
+                                                    <th scope="col">Revenue Stream</th>
+                                                    <th class="text-right">Rachuonyo South</th>
+                                                    <th scope="col" class="text-right">Homabay Town</th>                                                    
+                                                    <th scope="col" class="text-right">Ndhiwa</th>
+                                                    <th scope="col" class="text-right">Suba South</th>
+                                                    <th scope="col" class="text-right">Suba North</th>
+                                                    <th scope="col" class="text-right">Rangwe</th>
+                                                    <th scope="col" class="text-right">Rachuonyo North</th>
+                                                    <th scope="col" class="text-right">Rachuonyo East</th>
+                                                    <th scope="col" class="text-right">Headquaters</th>
+                                                    <th scope="col" class="text-right">Total</th>
+                                                   
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>PTY67809</strong></td>
+                                                    <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Kelvin 0704 549 859</a>
+                                                        <a href="reports-stream-details.html">Parking</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22 Apr 2023 04:56 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <span class="fw-semibold">MPESA RECSPPTHF</span>
-                                                    </td>
-                                                    <td>Daily Parking for KAD 123 Pick Up</td>
-                                                    <td>
-                                                        <a href="">Alex Wanjala</a>
-                                                    </td>
-                                                    <td><span class="badge badge-soft-success text-uppercase">PAID</span></td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Receipt</a>
-                                                           
-                                                        </div>
-                                                    </td>
+                                                   
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>PTY67809</strong></td>
+                                                    <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Kelvin 0704 549 859</a>
+                                                        <a href="reports-stream-details.html">Cess</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22 Apr 2023 04:56 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <span class="fw-semibold">MPESA RECSPPTHF</span>
-                                                    </td>
-                                                    <td>Daily Parking for KAD 123 Pick Up</td>
-                                                    <td>
-                                                        <a href="">Alex Wanjala</a>
-                                                    </td>
-                                                    <td><span class="badge badge-soft-success text-uppercase">PAID</span></td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Receipt</a>
-                                                           
-                                                        </div>
-                                                    </td>
+                                                    
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>PTY67809</strong></td>
+                                                    <td class="text-capitalize text-nowrap"><strong>3.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Kelvin 0704 549 859</a>
+                                                        <a href="reports-stream-details.html">Markets</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22 Apr 2023 04:56 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <span class="fw-semibold">MPESA RECSPPTHF</span>
-                                                    </td>
-                                                    <td>Daily Parking for KAD 123 Pick Up</td>
-                                                    <td>
-                                                        <a href="">Alex Wanjala</a>
-                                                    </td>
-                                                    <td><span class="badge badge-soft-success text-uppercase">PAID</span></td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Receipt</a>
-                                                           
-                                                        </div>
-                                                    </td>
+                                                    
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>PTY67809</strong></td>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Kelvin 0704 549 859</a>
+                                                        <a href="reports-stream-details.html">Trade</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22 Apr 2023 04:56 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <span class="fw-semibold">MPESA RECSPPTHF</span>
-                                                    </td>
-                                                    <td>Daily Parking for KAD 123 Pick Up</td>
-                                                    <td>
-                                                        <a href="">Alex Wanjala</a>
-                                                    </td>
-                                                    <td><span class="badge badge-soft-success text-uppercase">PAID</span></td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Receipt</a>
-                                                           
-                                                        </div>
-                                                    </td>
+                                                   
                                                 </tr>
-                                               
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>5.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html">Unmatched Transactions</a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    
+                                                </tr>
                                                 
                                                 
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
 
-                                                    <th colspan="7">
-                                                        23 Transactions
+                                                    <th colspan="2">
+                                                        23 Sub Counties
                                                     </th>
-                                                   
-
-                                                    <td class="text-nowrap text-right " colspan="">
-                                                        <span class="fw-semibold ">KES 2,000,000</span>
-                                                    </td>
-                                                    <TD></TD>
-                                                    <td></td>
-
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    
                                                     
                                                 </tr>
 
@@ -613,96 +639,62 @@
             <!-- End Page-content -->
 
             <!-- receipting modal -->
-            <div class="modal fade receipting-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal fade download-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Bill details</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Download Report</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-12">
                                     <address>
-                                        <strong class="text-capitalize">Bill Prepared for:</strong><br>
-                                        Kelvin Njuguna AT Mombasa Road<br>
-                                        email@mail.com, 0704 549 859<br>                                   
-                                        ID No. 12345689. Car Plate No. KAB 123P <br/>
-                                        <br>
-                                        On 1 Mar 2022, 10:20 AM
-                                        
+                                        <strong class="text-capitalize">Report Title</strong><br>
+                                        Revenue Collections By Subcounties in Homabay County
                                     </address>
                                 </div>
-                                <div class="col-sm-6 text-sm-end d-none">
-                                    <address class="mt-2 mt-sm-0">
-                                        <strong>Payment Method</strong><br>
-                                        <span class="fw-medium">MPESA</span><br>
-                                        Phone No. 0704 549 859<br> <br>
-                                        On 1 Mar 2022, 10:20 AM
-                                    </address>
+
+                                <div class="col-12">
+                                    <label><strong>Report Date Range</strong></label>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="py-2 mt-3">
-                                    <h3 class="font-size-15 fw-bold">ND12368</h3>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-sm-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Date From</label>
+                                                <input class="form-control"placeholder="Start date" type="date">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-sm-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Date To</label>
+                                                <input class="form-control"placeholder="Start date" type="date">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <table class="table table-nowrap vertical-align-middle">
-                                        <thead class="bg-light">
-                                            <tr>
-                                                <th style="width: 70px;">No.</th>
-                                                <th>Offense</th>
-                                                <th class="text-end">Amount</th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tfoot class="bg-light">
-                                            <tr>
-                                                <td colspan="2" class="border-0 text-end text-right">
-                                                    <strong>Total</strong>
-                                                </td>
-                                                <td class="border-0 text-end">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 11,250</h5>
-                                                </td>
-                                                
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
-                                                <td>01</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Driving Without identification plates affixed or plates not fixed in the prescribed manner</p>
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
-                                            </tr>
 
-                                            <tr title="Drving a vehicle without a valid inspection certificate inspected">
-                                                <td>02</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Drving a vehicle without a valid inspection certificate inspected</p>
-
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
-                                            </tr>
-
-
-
-                                            
-                                        </tbody>
-                                    </table>
+                                <div class="col-12">
+                                    <label><strong>Select File Type</strong></label>
+                                    <select class="form-select">
+                                        <option>Select Document Type</option>
+                                        <option>PDF file</option>
+                                        <option>Excel File</option>
+                                    </select>
                                 </div>
+
+                                <div class="col-12">
+                                    <button  type="button" class="btn btn-primary dropdown-toggle option-selector text-capitalize w-100 mt-5">
+                                        <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                    </button>
+                                </div>
+                                
                             </div>
-                        </div>
-                        <div class="modal-footer">
                            
-                            <button type="button" class="btn btn-primary waves-effect waves-light">
-                                <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Bill
-                            </button>
                         </div>
+                       
                     </div>
                     <!-- /.modal-content -->
                 </div>
