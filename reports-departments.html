@@ -385,13 +385,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Revenue Collection By agents for 12 Jul 2023</h4>
+                                <h4 class="mb-sm-0 font-size-18">Revenue Collections Breakdown for July 2023</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item active">Revenue Collections By Agents</li>
+                                        <li class="breadcrumb-item active">Department Reports</li>
                                     </ol>
                                 </div>
 
@@ -416,44 +416,28 @@
 
                                         <div class="d-flex">
                                             <div class="d-flex align-items-center me-3 pe-3">
-                                                <span class="pr-3 fw-semibold">Date </span>
-                                                <input class="form-control"placeholder="Start date" type="date">
-                                                
+                                                <span class="pr-3 fw-semibold">Month </span>
+                                                <select class="form-select mr-3">
+                                                    <option>January</option>
+                                                    <option>February</option>
+                                                    <option>March</option>
+                                                    <option>April</option>
+                                                    <option>May</option>
+                                                    <option>June</option>
+                                                    <option>July</option>
+                                                    <option>August</option>
+                                                    <option>September</option>
+                                                    <option>October</option>
+                                                    <option>November</option>
+                                                    <option>December</option>
+                                                </select>
+
+                                                <span class="pl-3 pr-3 fw-semibold">Year </span>
+                                                <select class="form-select">
+                                                    <option>2022</option>
+                                                    <option selected>2023</option>                                                       
+                                                </select>                                                
                                             </div>
-
-                                            <div class="d-flex align-items-center me-3 pe-3">
-                                                <span class="pr-3 fw-semibold">Idle Time Filter</span>
-                                                <div class="d-flex">
-                                                    <input class="form-control"placeholder="Idle time" type="text">
-
-                                                    <select class="form-select">
-                                                        <option>Min</option>
-                                                        <option>Hrs</option>
-                                                    </select>
-                                                </div>
-                                                
-                                            </div>
-
-                                            <div class="d-flex align-items-center me-3 pe-3">
-                                                <span class="pr-3 fw-semibold">Filter By Target</span>
-                                                <div class="d-flex align-items-center justify-content-center">
-                                                    <select class="form-select me-2">
-                                                        <option>All Renvenue Agents</option>
-                                                        <option>Above Target</option>
-                                                        <option>Below Target</option>
-                                                        <option>Poor Perfomance</option>
-                                                        <option>Zero Collections</option>
-                                                    </select>
-
-                                                    <button title="what does this filter do?" data-bs-toggle="modal" data-bs-target=".target-modal" type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle">
-                                                        <span class="avatar-title bg-transparent text-reset">
-                                                            <strong>?</strong>
-                                                        </span>
-                                                    </button>
-                                                </div>
-                                                
-                                            </div>
-
 
                                             <button  data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                                 <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
@@ -470,295 +454,222 @@
                                 <div class="card-body">
                                     <div class="table-responsive overflow-visible">
 
-                                        <table class="table align-middle table-hover  contacts-table table-striped " id="">
+                                        <table class="table align-middle table-hover  contacts-table" id="">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th>#</th>
-                                                    <th scope="col">Agent</th>
-                                                    <th>Inspections</th>
-                                                    <th scope="col">Transactions</th>     
-                                                    <th>Idle Time</th> 
-                                                    <th class="text-right">Highest Achievement</th> 
-                                                    <th class="text-right">Inspected Revenue</th>      
-                                                    <th class="text-right">Target</th>                                           
-                                                    <th scope="col" class="text-right">Amount collected</th>
-                                                    <th></th>
+                                                    <th scope="col">Revenue Streams</th>
+                                                    <th class="text-right" scope="col">Actual Revenue July 2023</th> 
+                                                    <th class="text-right">Actual Revenue July 2022</th>
+                                                    <th class="text-right">Last year Variance</th>
+                                                    <th class="text-right" scope="col">July 2023 Target</th> 
+                                                    <th class="text-right" scope="col">Target Variance</th>                                                    
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
-                                                    <td>
-                                                        <a href="use-logs.html" title="click to vie user logs and activities">
-                                                            </a><div class=" d-flex align-items-center "><a href="use-logs.html" title="click to vie user logs and activities">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                            KN
-                                                                        </span>
-                                                                </div>
-                                                                </a><div><a href="use-logs.html" title="click to vie user logs and activities">
-                                                                    </a><h5 class="font-size-14 mb-1 "><a href="use-logs.html" title="click to vie user logs and activities"></a><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                                    <p class="text-muted mb-0 ">Developer</p>
-                                                                </div>
-                                                            </div>
-                                                        
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td>22 Min</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 320,000</th>
+                                               <tr class="table-info">
+                                                <th  colspan="7">A. Department of Land,Physical Planning, Housing & Urban Development</th>
+                                               </tr>
+                                               <tr>
+                                                <th>1.</th>
+                                                <th>Land Rates</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+                                               <tr>
+                                                <th>2.</th>
+                                                <th>Land Transfers/sales/change of use</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
-                                                    <td>
-                                                        <a href="use-logs.html" title="click to vie user logs and activities">
-                                                            </a><div class=" d-flex align-items-center "><a href="use-logs.html" title="click to vie user logs and activities">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                            KN
-                                                                        </span>
-                                                                </div>
-                                                                </a><div><a href="use-logs.html" title="click to vie user logs and activities">
-                                                                    </a><h5 class="font-size-14 mb-1 "><a href="use-logs.html" title="click to vie user logs and activities"></a><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                                    <p class="text-muted mb-0 ">Developer</p>
-                                                                </div>
-                                                            </div>
-                                                        
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td>22 Min</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 320,000</th>
+                                               <tr>
+                                                <th>3.</th>
+                                                <th>Site Values Rates</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                               <tr>
+                                                <th>4.</th>
+                                                <th>Search and Clearance Certificates</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+                                               <tr>
+                                                <th>5.</th>
+                                                <th>Survey/Sub Division Fees</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>3.</strong></td>
-                                                    <td>
-                                                        <a href="use-logs.html" title="click to vie user logs and activities">
-                                                            </a><div class=" d-flex align-items-center "><a href="use-logs.html" title="click to vie user logs and activities">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                            KN
-                                                                        </span>
-                                                                </div>
-                                                                </a><div><a href="use-logs.html" title="click to vie user logs and activities">
-                                                                    </a><h5 class="font-size-14 mb-1 "><a href="use-logs.html" title="click to vie user logs and activities"></a><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                                    <p class="text-muted mb-0 ">Developer</p>
-                                                                </div>
-                                                            </div>
-                                                        
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td>22 Min</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 320,000</th>
+                                               <tr class="text-uppercase fw-bolder table-warning">
+                                                <th colspan="2">Sub Total</th>
+                                                <th class="text-right">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                               <tr class="table-info">
+                                                <th  colspan="7">B. Department of Land,Physical Planning, Housing & Urban Development</th>
+                                               </tr>
+                                               <tr>
+                                                <th>1.</th>
+                                                <th>Land Rates</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+                                               <tr>
+                                                <th>2.</th>
+                                                <th>Land Transfers/sales/change of use</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                    <td>
-                                                        <a href="use-logs.html" title="click to vie user logs and activities">
-                                                            </a><div class=" d-flex align-items-center "><a href="use-logs.html" title="click to vie user logs and activities">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                            KN
-                                                                        </span>
-                                                                </div>
-                                                                </a><div><a href="use-logs.html" title="click to vie user logs and activities">
-                                                                    </a><h5 class="font-size-14 mb-1 "><a href="use-logs.html" title="click to vie user logs and activities"></a><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                                    <p class="text-muted mb-0 ">Developer</p>
-                                                                </div>
-                                                            </div>
-                                                        
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td>22 Min</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 320,000</th>
+                                               <tr>
+                                                <th>3.</th>
+                                                <th>Site Values Rates</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                               <tr>
+                                                <th>4.</th>
+                                                <th>Search and Clearance Certificates</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+                                               <tr>
+                                                <th>5.</th>
+                                                <th>Survey/Sub Division Fees</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>5.</strong></td>
-                                                    <td>
-                                                        <a href="use-logs.html" title="click to vie user logs and activities">
-                                                            </a><div class=" d-flex align-items-center "><a href="use-logs.html" title="click to vie user logs and activities">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                            KN
-                                                                        </span>
-                                                                </div>
-                                                                </a><div><a href="use-logs.html" title="click to vie user logs and activities">
-                                                                    </a><h5 class="font-size-14 mb-1 "><a href="use-logs.html" title="click to vie user logs and activities"></a><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                                    <p class="text-muted mb-0 ">Developer</p>
-                                                                </div>
-                                                            </div>
-                                                        
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td>22 Min</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 320,000</th>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                               <tr class="text-uppercase fw-bolder table-warning">
+                                                <th colspan="2">Sub Total</th>
+                                                <th class="text-right">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success">KES 67,900 (40%)</td>
+                                               </tr>
 
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                
+                                               <tr class="table-info">
+                                                <th  colspan="7">B. Department of Land,Physical Planning, Housing & Urban Development</th>
+                                               </tr>
+                                               <tr>
+                                                <th>1.</th>
+                                                <th>Land Rates</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
+
+                                               <tr>
+                                                <th>2.</th>
+                                                <th>Land Transfers/sales/change of use</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
+
+                                               <tr>
+                                                <th>3.</th>
+                                                <th>Site Values Rates</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
+
+                                               <tr>
+                                                <th>4.</th>
+                                                <th>Search and Clearance Certificates</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
+
+                                               <tr>
+                                                <th>5.</th>
+                                                <th>Survey/Sub Division Fees</th>
+                                                <th class="text-right table-primary">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success fw-semibold">KES 67,900 (40%)</td>
+                                               </tr>
+
+                                               <tr class="text-uppercase fw-bolder table-warning">
+                                                <th colspan="2">Sub Total</th>
+                                                <th class="text-right">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success">KES 67,900 (40%)</td>
+                                               </tr>
                                                 
                                             </tbody>
-                                            <tfoot class="table-dark">
+                                            <tfoot class="table-dark fw-bolder">
                                                 <tr>
-
-                                                    <th colspan="">
-                                                        23 Agents
-                                                    </th>
-                                                   <th>
-                                                        
-                                                   </th>
-                                                   <th>53</th>
-                                                   <th>53</th>
-                                                   <th>5 Hrs</th>
-                                                   <td class="text-nowrap text-right " colspan="2">
-                                                    <span class="fw-semibold ">KES 2,000,000</span>
-                                                </td>
-
-                                                   <td class="text-nowrap text-right " colspan="2">
-                                                    <span class="fw-semibold ">KES 2,000,000</span>
-                                                </td>
-
-
-                                                    <td class="text-nowrap text-right " colspan="">
-                                                        <span class="fw-semibold ">KES 2,000,000</span>
-                                                    </td>
-                                                    <TD></TD>
-
-                                                    
+                                                    <th colspan="2">Sub Total</th>
+                                                <th class="text-right">KES 345,900</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success">KES 67,900(45 %)</td>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td class="text-right text-success">KES 67,900 (40%)</td>
                                                 </tr>
 
                                             </tfoot>
                                         </table>
                                     </div>
                                     
-                                </div>
-
-                                <div class="card-footer bg-white">
-                                    <nav aria-label="Page navigation example " class="d-flex align-items-center justify-content-between">
-
-                                        <div class="d-flex align-items-center">
-                                            <span class="pr-3 pb-0 mb-0 font-13px">
-                                                <span>Rows Per Page</span>
-                                            </span>
-                                            <select class="form-select w-auto font-13px ">
-                                                <option value="10">10 Rows</option>
-                                                <option value="25">25 Rows</option>
-                                                <option value="50">50 Rows</option>
-                                                <option value="100">100 Rows</option>
-                                                <option value="150">150 Rows</option>
-                                                <option value="200">200 Rows</option>
-                                            </select>
-                                        </div>
-
-                                        <ul class="pagination">
-                                            <li class="page-item disabled">
-                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item active">
-                                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">Next</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
+                                </div>                                
                             </div>
                         </div>
                         <!-- end col -->
