@@ -386,13 +386,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Revenue Collection by Streams for the period 1 Jan 2023 to 31 Jan 2023</h4>
+                                <h4 class="mb-sm-0 font-size-18">Daily Revenue Tragets for Revenue Agents</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item active">Revenue collection by Revenue Stream</li>
+                                        <li class="breadcrumb-item"><a href="#">Set Ups</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Revenue Streams 2023/2024</a></li>
+                                        <li class="breadcrumb-item active">Revenue Officers daily Targets</li>
                                     </ol>
                                 </div>
 
@@ -411,11 +412,17 @@
                                         </button>
                                         <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
                                             <div class="navbar-nav active">
-                                                <a class="nav-item nav-link" href="reports-streams.html">Summarized</a>
-                                                <a class="nav-item nav-link" href="reports-streams-subcounties.html">Sub counties</a>
+                                                <a class="nav-item nav-link" href="set-targets.html">Revenue streams</a>
+                                                <a class="nav-item nav-link" href="set-targets-collectors.html">Revenue Officers Daily Targets</a>
                                             </div>
-                                            <div class="navbar-nav text-capitalize">
-                                                <h4 class="mb-0 m-0 card-title">Sammarized</h4>
+                                            <div class="navbar-nav text-capitalize d-flex align-items-center flex-row">
+                                                <small class="text-uppercase fw-semibold text-black text-nowrap me-3">Select Subcounty</small>
+                                                <select class="form-select">
+                                                    <option>Entire county</option>
+                                                    <option>Homa Bay County</option>
+                                                    <option>Raachuonyo South</option>
+                                                    <option>Suba North</option>
+                                                </select>
                                             </div>
 
                                         </div>
@@ -426,6 +433,100 @@
                         </div>
                     </div>
                     <!-- end of toolbar -->
+
+                    <!-- target cards -->
+                    <div class="row">
+                        
+                        <div class="col-xl-12">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-18">
+                                                        <i class="mdi mdi-cellphone-arrow-down"></i>
+                                                    </span>
+                                                </div>
+                                                <h5 class="font-size-14 mb-0">Collected Revenue</h5>
+                                            </div>
+                                            <div class="text-muted mt-4">
+                                                <h4>KES 23,900.00<i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
+                                                <div class="d-flex">
+                                                    <span class="badge badge-soft-success font-size-12"> + 0.2% </span> <span class="ms-2 text-truncate">From Previouse Day</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-18">
+                                                        <i class="mdi mdi-clipboard-search-outline"></i>
+                                                    </span>
+                                                </div>
+                                                <h5 class="font-size-14 mb-0">Inspected Revenue</h5>
+                                            </div>
+                                            <div class="text-muted mt-4">
+                                                <h4>KES 12,000<i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
+                                                <div class="d-flex">
+                                                    <span class="badge badge-soft-success font-size-12"> + 0.2% </span> <span class="ms-2 text-truncate">Below total colections</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-18">
+                                                        <i class="mdi mdi-target"></i>
+                                                    </span>
+                                                </div>
+                                                <h5 class="font-size-14 mb-0">Daily Target</h5>
+                                            </div>
+                                            <div class="text-muted mt-4">
+                                                <h4>KES 12,000<i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
+                                                <div class="d-flex">
+                                                    <span class="badge badge-soft-success font-size-12"> + 0.2% </span> <span class="ms-2 text-truncate">Above Target</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-18">
+                                                        <i class="mdi mdi-target"></i>
+                                                    </span>
+                                                </div>
+                                                <h5 class="font-size-14 mb-0">Highest Collection</h5>
+                                            </div>
+                                            <div class="text-muted mt-4">
+                                                <h4>KES 28,452 <i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
+                                                <div class="d-flex">
+                                                    <span class="badge badge-soft-success font-size-12"> + 0.2% </span> <span class="ms-2 text-truncate">Below highest collection</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                
+                            </div>
+                            <!-- end row -->
+                        </div>
+                    </div>
+                    <!-- end of target cards -->
                     <!-- end page title -->
                     <div class="row">
                         <div class="col-12">
@@ -443,178 +544,130 @@
                                       </div>
 
                                         <div class="d-flex">
-                                            <div class="d-flex align-items-center me-3 pe-3">
-                                                <span class="pr-3 fw-semibold">From:</span>
-                                                <input class="form-control"placeholder="Start date" type="date">
-                                                <span class="px-3 fw-semibold">TO:</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
-                                            </div>
+                                            
                                             <button  data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
-                                                <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                                <i class="mdi mdi-microsoft-excel font-size-16"></i> <span class="pl-1 d-md-inline">Upload Excel File</span>
                                             </button>
 
                                         </div>
 
 
                                     </div>
-                                    <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button"  data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
-                                    </div>
+                                    
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive overflow-visible">
 
-                                        <table class="table align-middle table-hover  contacts-table table-striped " id="">
+                                        <table class="table align-middle table-hover  contacts-table" id="">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th>#</th>
-                                                    <th scope="col">Revenue Stream</th>
-                                                    <th>Total Transactions</th>
-                                                    <th scope="col">Total Agents</th>                                                    
-                                                    <th scope="col" class="text-right">Amount collected</th>
+                                                    <th scope="col">Revenue Streams</th>
+                                                    <th class="">Financial Year</th>
+                                                    <th class="text-right" scope="col">Target</th> 
+                                                   
                                                     <th></th>
+                                                                                                    
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+                                               <tr class="table-info">
+                                                <th  colspan="5">A. Department of Land,Physical Planning, Housing & Urban Development</th>
+                                               </tr>
+                                               <tr>
+                                                <th>1.</th>
+                                                <th>Land Rates</th>
+                                                <td class="">
+                                                    -
+                                                </td>
+                                                <th class="text-right text-danger">Not set</th>
+                                               
+                                                <td>
+                                                    <button  data-bs-toggle="modal" data-bs-target=".target-modal" class="btn btn-primary btn-sm"><i class="mdi mdi-file-document-edit-outline"></i> Edit</button>
+                                                </td>
+                                               </tr>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Ndhiwa</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                               <tr>
+                                                <th>2.</th>
+                                                <th>Land Rates</th>
+                                                <td class="">
+                                                    -
+                                                </td>
+                                                <th class="text-right text-danger">Not set</th>
+                                               
+                                                <td>
+                                                    <button  data-bs-toggle="modal" data-bs-target=".target-modal" class="btn btn-primary btn-sm"><i class="mdi mdi-file-document-edit-outline"></i> Edit</button>
+                                                </td>
+                                               </tr>
 
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+                                               <tr>
+                                                <th>3.</th>
+                                                <th>Land Rates</th>
+                                                <td class="">
+                                                    -
+                                                </td>
+                                                <th class="text-right text-danger">Not set</th>
+                                               
+                                                <td>
+                                                    <button  data-bs-toggle="modal" data-bs-target=".target-modal" class="btn btn-primary btn-sm"><i class="mdi mdi-file-document-edit-outline"></i> Edit</button>
+                                                </td>
+                                               </tr>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>3.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Rachuonyo South</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                               <tr>
+                                                <th>4.</th>
+                                                <th>Land Rates</th>
+                                                <td class="">
+                                                    -
+                                                </td>
+                                                <th class="text-right text-danger">Not set</th>
+                                               
+                                                <td>
+                                                    <button  data-bs-toggle="modal" data-bs-target=".target-modal" class="btn btn-primary btn-sm"><i class="mdi mdi-file-document-edit-outline"></i> Edit</button>
+                                                </td>
+                                               </tr>
 
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+                                               <tr>
+                                                <th>5.</th>
+                                                <th>Land Rates</th>
+                                                <td class="">
+                                                    -
+                                                </td>
+                                                <th class="text-right text-danger">Not set</th>
+                                               
+                                                <td>
+                                                    <button  data-bs-toggle="modal" data-bs-target=".target-modal" class="btn btn-primary btn-sm"><i class="mdi mdi-file-document-edit-outline"></i> Edit</button>
+                                                </td>
+                                               </tr>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Rachuonyo North</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                               <tr>
+                                                <th>6.</th>
+                                                <th>Land Rates</th>
+                                                <td class="">
+                                                    -
+                                                </td>
+                                                <th class="text-right text-danger">Not set</th>
+                                               
+                                                <td>
+                                                    <button  data-bs-toggle="modal" data-bs-target=".target-modal" class="btn btn-primary btn-sm"><i class="mdi mdi-file-document-edit-outline"></i> Edit</button>
+                                                </td>
+                                               </tr>
 
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+                                               <tr class="text-uppercase fw-bolder table-warning">
+                                                <th colspan="2">Sub Total</th>
+                                                <th class="">2023/2024</th>
+                                                <td class="text-right">KES 67,900</td>
+                                                <td></td>
+                                               </tr>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>5.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Unmatched Transactions</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                
                                                 
                                             </tbody>
-                                            <tfoot class="table-dark">
+                                            <tfoot class="table-dark fw-bolder">
                                                 <tr>
-
-                                                    <th colspan="2">
-                                                        23 Sub Counties
-                                                    </th>
-                                                   <th>
-                                                        45
-                                                   </th>
-                                                   <th>53</th>
-
-                                                    <td class="text-nowrap text-right " colspan="">
-                                                        <span class="fw-semibold ">KES 2,000,000</span>
-                                                    </td>
-                                                    <TD></TD>
-
-                                                    
+                                                    <th colspan="2">Sub Total</th>
+                                                    <td class="">2023/2024</td>
+                                                    <th class="text-right">KES 345,900</th>
+                                               
+                                                    <td></td>
                                                 </tr>
 
                                             </tfoot>
@@ -671,51 +724,50 @@
                 <div class="modal-dialog modal-md modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Download Report</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Targets Upload</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-12">
                                     <address>
-                                        <strong class="text-capitalize">Report Title</strong><br>
-                                        Revenue Collections By Subcounties in Homabay County
+                                        <strong class="text-capitalize">Revenue Target for The Year</strong><br>
+                                        2023/2024
                                     </address>
                                 </div>
 
                                 <div class="col-12">
-                                    <label><strong>Report Date Range</strong></label>
+                                    <address>
+                                        <strong class="text-capitalize">Sample Excel Sheet</strong><br>
+                                        <p><a href="#"><i class="mdi mdi-download"></i> Download Sample Excel File</a></p>
+                                    </address>
+                                </div>
+
+                                <div class="col-12">
+                                    <label><strong>Select the file</strong></label>
                                 </div>
                                 <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-sm-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Date From</label>
-                                                <input class="form-control"placeholder="Start date" type="date">
+                                    <div>
+                                        <form action="#" class="dropzone">
+                                            <div class="fallback">
+                                                <input name="file" type="file" multiple="multiple">
                                             </div>
-                                        </div>
-
-                                        <div class="col-xl-6 col-sm-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Date To</label>
-                                                <input class="form-control"placeholder="Start date" type="date">
+                                            <div class="dz-message needsclick">
+                                                <div class="mb-3">
+                                                    <i class="display-4 text-muted bx bxs-cloud-upload"></i>
+                                                </div>
+                                                
+                                                <h4>Drop files here or click to upload.</h4>
                                             </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <label><strong>Select File Type</strong></label>
-                                    <select class="form-select">
-                                        <option>Select Document Type</option>
-                                        <option>PDF file</option>
-                                        <option>Excel File</option>
-                                    </select>
-                                </div>
+                               
 
                                 <div class="col-12">
                                     <button  type="button" class="btn btn-primary dropdown-toggle option-selector text-capitalize w-100 mt-5">
-                                        <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                        <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Upload Excel File</span>
                                     </button>
                                 </div>
                                 
@@ -730,7 +782,56 @@
             </div>
             <!-- end of receipting modal -->
 
-           
+             <!-- setting target -->
+             <div class="modal fade target-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Set Revenue Targets</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+
+                                <div class="col-12">
+                                    <address>
+                                        <strong class="text-capitalize">Revenue Stream</strong><br>
+                                        Selected Revenue Stream
+                                    </address>
+                                </div>
+
+                                <div class="col-12">
+                                    <address>
+                                        <strong class="text-capitalize">Financial Year</strong><br>
+                                        2022/2023
+                                    </address>
+                                </div>
+
+                                <div class="col-12">
+                                    <label><strong>Target Amount</strong></label>
+                                </div>
+                                <div class="col-12">
+                                    <input class="form-control" type="text" placeholder="Enter Amount">
+                                </div>
+
+                               
+
+                                <div class="col-12">
+                                    <button  type="button" class="btn btn-primary dropdown-toggle option-selector text-capitalize w-100 mt-5">
+                                        <i class="mdi mdi-content-save-all  font-size-16"></i> <span class="pl-1 d-md-inline">Save Changes</span>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                           
+                        </div>
+                       
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of target setting -->
 
             <!-- invoice details -->
             <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
