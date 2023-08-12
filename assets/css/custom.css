@@ -754,11 +754,11 @@ padding: 0px;
     }
     
     body[data-sidebar=dark] .navbar-brand-box {
-        background: #006220;
+        background: #00226c;
     }
     
     body[data-sidebar=dark] .vertical-menu {
-        background: #008134;
+        background: #023382;
     }
     
     .navbar-brand-box .logo-sm {
@@ -982,6 +982,7 @@ padding: 0px;
     
     .navbar-nav a.active {
         color: #556ee6;
+        color: #f9ff00 !important;
         position: relative;
     }
     
@@ -998,7 +999,7 @@ padding: 0px;
         bottom: 0px;
         left: 0px;
         /* z-index: 100; */
-        background-color: #556ee6;
+        background-color: #f9ff00;
         left: .5rem;
     }
     
@@ -1235,3 +1236,10 @@ padding: 0px;
     .h-calc-25px{
         height: calc(100% - 25px);
     }
+
+    .navbar.bg-primary,.mini-nav.bg-primary{
+        background-color:#00226c !important
+    }
+
+    
+    
