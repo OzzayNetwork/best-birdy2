@@ -274,7 +274,7 @@
         </header>
 
         <!-- ========== Left Sidebar Start ========== -->
-        <div class="vertical-menu">
+       <div class="vertical-menu">
 
             <div data-simplebar class="h-100">
 
@@ -284,9 +284,8 @@
                     <ul class="metismenu list-unstyled text-capitalize" id="side-menu">
                         <li class="menu-title" key="t-pages">Best Birdy Billing system. </li>
 
-                        <li class="side-bar-button">
-                            <a href="bill-new.html"
-                                class="waves-effect btn btn-light btn-rounded text-left write-msg-btn">
+                        <li class="side-bar-button" >
+                            <a href="bill-new.html" class="waves-effect btn btn-light btn-rounded text-left write-msg-btn">
                                 <i class=""><img src="assets/images/plus-icon.svg" alt=""></i>
                                 <span class="text-capitalize">Create A Bill</span>
                             </a>
@@ -297,7 +296,7 @@
                                 <i class="bx bx-home-circle"></i><span>Dashboard</span>
                             </a>
                         </li>
-
+                       
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi mdi-receipt"></i>
@@ -333,12 +332,10 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="rentals-arears.html">Rentals</a></li>
-                                <li><a href="market-arears.html">Market Stalls</a></li>
+                                <li><a href="market-arears.html">Market Stalls</a></li> 
                             </ul>
                         </li>
-                        <li class="menu-title d-none" key="t-pages">
-                            <hr />
-                        </li>
+                        <li class="menu-title d-none" key="t-pages"><hr/></li>
 
                         <li class="">
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
@@ -347,8 +344,8 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="bills-raised.html">Bills raised</a></li>
-                                <li><a href="bills-receipted.html">Receipted Bills</a></li>
-                                <li><a href="bills-unpaid.html">Unpaid Bills</a></li>
+                                <li><a href="bills-receipted.html">Receipted Bills</a></li>      
+                                <li><a href="bills-unpaid.html">Unpaid Bills</a></li>                               
 
                             </ul>
                         </li>
@@ -359,13 +356,13 @@
                                 <span>Certificates & Licenses</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="cert-biz.html">Business Permits</a></li>
-                                <li><a href="cert-food.html">Food handlers certificate</a></li>
-                                <li><a href="food-hygine.html">Food Hygiene Certificate</a></li>
+                                <li><a href="cert-biz-stats.html">Business Permits</a></li>
+                                <li><a href="cert-food.html">Food handlers certificate</a></li>      
+                                <li><a href="food-hygine.html">Food Hygiene Certificate</a></li>                               
 
                             </ul>
                         </li>
-
+                        
 
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
@@ -377,8 +374,7 @@
                                 <li class=""><a href="reports-streams.html">Revenue Streams Collections</a></li>
                                 <li class=""><a href="reports-zones.html">Collection Zones</a></li>
                                 <li class="text-capitalize"><a href="reports-agents.html">Agents Daily Reports</a></li>
-                                <li class="text-capitalize"><a href="reports-departments.html">Departmental Reports</a>
-                                </li>
+                                <li class="text-capitalize"><a href="reports-departments.html">Departmental Reports</a></li>
                             </ul>
                         </li>
 
@@ -394,7 +390,7 @@
                             </ul>
                         </li>
 
-
+                       
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi mdi-monitor-multiple"></i>
@@ -406,7 +402,7 @@
                             </ul>
                         </li>
 
-
+                        
 
                     </ul>
                 </div>
@@ -437,7 +433,8 @@
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Certificates & Licenses</a></li>
-                                        <li class="breadcrumb-item active">Business Permits</li>
+                                        <li class="breadcrumb-item"><a href="#">Business Permits</a></li>
+                                        <li class="breadcrumb-item active">SBP Stats</li>
                                     </ol>
                                 </div>
 
@@ -493,246 +490,208 @@
                     </div>
                     <!-- end of toolbar -->
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-lg-12 px-sm-30px">
                             <div class="card">
-                                <div
-                                    class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100"
-                                        role="toolbar">
-                                        <h4 class="card-title text-capitalize mb-0 ">
-                                            Active SBP Certificates
-                                        </h4>
-                                    </div>
-                                    <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar"
-                                        role="toolbar">
-                                        <button type="button"
-                                            class="btn btn-primary waves-effect btn-label waves-light me-3"><i
-                                                class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
-                                    </div>
-                                </div>
                                 <div class="card-body">
-                                    <div class="table-responsive ">
-
-                                        <table class="table align-middle table-hover  contacts-table table-striped "
-                                            id="datatable-buttons">
-                                            <thead class="table-light">
-                                                <tr class="table-dark">
-                                                    <th scope="col">Serial NO.</th>
-                                                    <th scope="col">Business ID</th>
-                                                    <th scope="col">Business Name</th>
-                                                    <th scope="col" class="">Duration</th>
-                                                    <th scope="col">Date Created</th>
-                                                    <th scope="col">Exp Date</th>
-                                                    <th>Status</th>
-                                                    <th scope="col" class="text-right">Amount Paid</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">12 Months</td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span></td>
-                                                    <td class="text-capitalize text-nowrap">11 Jan 2023 <span
-                                                            class="text-muted">10:56 PM</span></td>
-                                                    <td><span
-                                                            class="badge badge-soft-success text-uppercase">Active</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Details</button>
-                                                            <a href="PrintDocs/Trade-Permit/permit.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
+                                    <div class="row">
+                                       
+                                        <div class="col-sm-12 align-self-center text-capitalize">
+                                            <div class="text-lg-left mt-4 mt-lg-0">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-info font-size-16">
+                                                                        <i class="mdi mdi-briefcase-edit text-white"></i>
+                                                                    </span>
                                                             </div>
+                                                            <p class="text-muted text-truncate mb-2">Registered Businesses</p>
+                                                            <h5 class="mb-0">48</h5>
                                                         </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">Daily Post</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">12 Months</td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span></td>
-                                                    <td class="text-capitalize text-nowrap">11 Jan 2023 <span
-                                                            class="text-muted">10:56 PM</span></td>
-                                                    <td><span
-                                                            class="badge badge-soft-success text-uppercase">Active</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Details</button>
-                                                            <a href="PrintDocs/Trade-Permit/permit.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle font-size-16">
+                                                                        <i class="mdi mdi mdi-briefcase-check text-white"></i>
+                                                                    </span>
                                                             </div>
+                                                            <p class="text-muted text-truncate mb-2">Pending Applications</p>
+                                                            <h5 class="mb-0">6,503</h5>
                                                         </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Hotel</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">12 Months</td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span></td>
-                                                    <td class="text-capitalize text-nowrap">11 Jan 2023 <span
-                                                            class="text-muted">10:56 PM</span></td>
-                                                    <td><span
-                                                            class="badge badge-soft-success text-uppercase">Active</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Details</button>
-                                                            <a href="PrintDocs/Trade-Permit/permit.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-pink font-size-16">
+                                                                        <i class="mdi mdi-progress-clock text-white"></i>
+                                                                    </span>
                                                             </div>
+                                                            <p class="text-muted text-truncate mb-2">Suspended Applications</p>
+                                                            <h5 class="mb-0">180</h5>
+
                                                         </div>
-                                                    </td>
-                                                </tr>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-whatsApp font-size-16">
+                                                                        <i class="mdi mdi-progress-clock text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Active Certs</p>
+                                                            <h5 class="mb-0">5,236</h5>
 
+                                                        </div>
+                                                    </div>
 
-                                            </tbody>
-                                            <tfoot class="table-dark">
-                                                <tr>
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-warning font-size-16">
+                                                                        <i class="mdi mdi-close text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Expirted Certs</p>
+                                                            <h5 class="mb-0">22</h5>
 
-                                                    <th>
-                                                        23 Certs
-                                                    </th>
+                                                        </div>
+                                                    </div>
 
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-danger font-size-16">
+                                                                        <i class="mdi mdi-clock-alert text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Penalized Certs</p>
+                                                            <h5 class="mb-0">48</h5>
+                                                        </div>
+                                                    </div>
 
-                                                    <th class="text-nowrap" colspan="4">23 Businesses</th>
-                                                    <td colspan="">
-                                                        23 Inactive
-                                                    </td>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                                    <td class="text-nowrap text-right " colspan="2">
-                                                        <span class="fw-semibold ">KES 2,000,000</span>
-                                                    </td>
-                                                    <td></td>
+                                      
 
-
-
-
-                                                </tr>
-
-                                            </tfoot>
-                                        </table>
                                     </div>
+                                    <!-- end row -->
                                 </div>
                             </div>
                         </div>
-                        <!-- end col -->
+
+                        <div class="col-xl-12 px-sm-30px">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">Value of Pending SBP Bills</p>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                </div>
+
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-danger font-size-20">
+                                                        <i class="mdi mdi-account-cash"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="mb-0"> From 34 Businesses</p>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">SBP Collections Today</p>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                </div>
+
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                        <i class="mdi mdi-calendar-text-outline "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 18.89%</span> Target Margin</p>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">SBP Collections Thid Month</p>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                </div>
+
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                        <i class="mdi mdi-calendar-month-outline "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 8.41%</span> Target Margin</p>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">SBP Collections This year</p>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                </div>
+
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                        <i class="mdi mdi-calendar-check-outline "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 8.41%</span> Target Margin</p>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                               
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 px-sm-30px">
+                            <div class="card">
+                                
+                                <div class="card-body">
+                                    <h4 class="card-title mb-0">Applications By statuses</h4>
+                                    <div id="application-statuses"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 px-sm-30px">
+                            <div class="card">
+                                
+                                <div class="card-body">
+                                    <h4 class="card-title mb-0">Revenue Perfomance</h4>
+                                    <div id="revenuePerfomance"></div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <!-- end row -->
@@ -1457,6 +1416,9 @@
     <!-- numerals number formater -->
     <script src="assets/libs/numeral/numeral.js "></script>
 
+    <!-- highchart cdns -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
     <!-- Responsive examples -->
     <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js "></script>
     <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js "></script>
@@ -1473,6 +1435,12 @@
 
     <!-- timeline init js -->
     <script src="assets/js/pages/timeline.init.js"></script>
+
+     <!-- Application statuses -->
+     <script src="assets/js/pages/applicationStatuses.js"></script>
+
+     <!-- revenue perfomance -->
+     <script src="assets/js/pages/revenuePwerfomance.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js "></script>

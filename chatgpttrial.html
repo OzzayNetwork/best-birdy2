@@ -2,49 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Laikipia County Map</title>
+    <title>Revenue Bar Chart</title>
     <!-- Include Highcharts.js library -->
-    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
-    <script src="https://code.highcharts.com/mapdata/countries/ke/ke-2009-all.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
 </head>
 <body>
-    <!-- Container for the map -->
-    <div id="mapContainer" style="height: 600px;"></div>
+    <!-- Container for the chart -->
+    <div id="chartContainer" style="width: 800px; height: 400px;"></div>
     
-    <!-- Script to generate the map -->
+    <!-- Script to generate the chart -->
     <script>
-        // Your map generation code will go here
+        // Your chart generation code will go here
+        document.addEventListener('DOMContentLoaded', function () {
+            // Abbreviate months to three letters
+            function abbreviateMonth(month) {
+                return month.substring(0, 3);
+            }
+            
+            // Prepare the data
+            const data = [
+                ['Jul 2023', 50000, 60000, 55000], // [Month, Last Year, Target, Actual]
+                ['Aug 2023', 55000, 62000, 58000],
+                ['Sep 2023', 52000, 61000, 56000],
+                ['Oct 2023', 53000, 63000, 57000],
+                ['Nov 2023', 54000, 59000, 56000],
+                ['Dec 2023', 60000, 65000, 62000],
+                ['Jan 2024', 58000, 67000, 59000],
+                ['Feb 2024', 59000, 68000, 60000],
+                ['Mar 2024', 61000, 70000, 62000],
+                ['Apr 2024', 60000, 69000, 61000],
+                ['May 2024', 62000, 72000, 63000],
+                ['Jun 2024', 63000, 71000, 64000]
+            ];
+        
+            // Set the font family to Montserrat
+            Highcharts.setOptions({
+                chart: {
+                    style: {
+                        fontFamily: 'Montserrat, sans-serif'
+                    }
+                }
+            });
+
+            // Create the bar chart
+            Highcharts.chart('chartContainer', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'Revenue Comparison'
+                },
+                xAxis: {
+                    categories: data.map(item => abbreviateMonth(item[0]))
+                },
+                yAxis: {
+                    title: {
+                        text: 'Revenue (KES)'
+                    }
+                },
+                legend: {
+                    enabled: true
+                },
+                tooltip: {
+                    shared: true
+                },
+                plotOptions: {
+                    bar: {
+                        pointWidth: 20, // Adjust the width of each column
+                        stacking: 'normal', // Prevent stacking
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Last Year',
+                    data: data.map(item => item[1])
+                }, {
+                    name: 'Target',
+                    data: data.map(item => item[2])
+                }, {
+                    name: 'Actual Collections',
+                    data: data.map(item => item[3])
+                }]
+            });
+        });
     </script>
 </body>
-
-<script>
-    // JavaScript code inside the <script> tag
-document.addEventListener('DOMContentLoaded', function () {
-    // Initialize the Highcharts map
-    Highcharts.mapChart('mapContainer', {
-        chart: {
-            map: 'countries/ke/ke-2009-all' // Load Kenya map from Highmaps
-        },
-        title: {
-            text: 'Laikipia County Map'
-        },
-        series: [{
-            name: 'Laikipia County',
-            data: [/* Your data goes here */],
-            mapData: Highcharts.maps['countries/ke/ke-2009-all'],
-            joinBy: 'hc-key',
-            states: {
-                hover: {
-                    color: '#a4edba' // Color when hovering over the region
-                }
-            },
-            dataLabels: {
-                enabled: true,
-                format: '{point.name}'
-            }
-        }]
-    });
-});
-
-</script>
 </html>
