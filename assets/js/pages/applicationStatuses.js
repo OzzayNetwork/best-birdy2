@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
         series: [{
-            name: 'Status',
+            name: 'Applications',
             data: [
                 { name: 'Initiated', y: randomValues.initiated, link: 'https://example.com/initiated' },
                 { name: 'Pending Verification', y: randomValues.pendingVerification, link: 'https://example.com/pending-verification' },

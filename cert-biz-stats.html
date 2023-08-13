@@ -274,7 +274,7 @@
         </header>
 
         <!-- ========== Left Sidebar Start ========== -->
-       <div class="vertical-menu">
+        <div class="vertical-menu">
 
             <div data-simplebar class="h-100">
 
@@ -294,6 +294,12 @@
                         <li>
                             <a href="index.html" class="waves-effect">
                                 <i class="bx bx-home-circle"></i><span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="live-monitoring.html" class="waves-effect">
+                                <i class="bx bx-user-voice"></i><span>Live Monitoring</span>
                             </a>
                         </li>
                        
@@ -672,12 +678,22 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 col-md-6 px-sm-30px">
+                        <div class="col-sm-12 col-md-3 px-sm-30px">
                             <div class="card">
                                 
                                 <div class="card-body">
                                     <h4 class="card-title mb-0">Applications By statuses</h4>
                                     <div id="application-statuses"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 px-sm-30px">
+                            <div class="card">
+                                
+                                <div class="card-body">
+                                    <h4 class="card-title mb-0">Certificate Statuses</h4>
+                                    <div id="certificateStatus"></div>
                                 </div>
                             </div>
                         </div>
@@ -1419,6 +1435,9 @@
     <!-- highchart cdns -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
 
+    <!-- highchart drill down -->
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
     <!-- Responsive examples -->
     <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js "></script>
     <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js "></script>
@@ -1441,6 +1460,9 @@
 
      <!-- revenue perfomance -->
      <script src="assets/js/pages/revenuePwerfomance.js"></script>
+
+     <!-- active vs expired certificats -->
+     <script src="assets/js/pages/expiredVsActiveCerts.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js "></script>

@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Container for the chart -->
-    <div id="chartContainer" style="width: 800px; height: 400px;"></div>
+    <div id="revenuePerformance" style="width: 800px; height: 400px;"></div>
     
     <!-- Script to generate the chart -->
     <script>
@@ -24,29 +24,18 @@
             const data = [
                 ['Jul 2023', 50000, 60000, 55000], // [Month, Last Year, Target, Actual]
                 ['Aug 2023', 55000, 62000, 58000],
-                ['Sep 2023', 52000, 61000, 56000],
-                ['Oct 2023', 53000, 63000, 57000],
-                ['Nov 2023', 54000, 59000, 56000],
-                ['Dec 2023', 60000, 65000, 62000],
-                ['Jan 2024', 58000, 67000, 59000],
-                ['Feb 2024', 59000, 68000, 60000],
-                ['Mar 2024', 61000, 70000, 62000],
-                ['Apr 2024', 60000, 69000, 61000],
-                ['May 2024', 62000, 72000, 63000],
-                ['Jun 2024', 63000, 71000, 64000]
+                // ... Add data for other months ...
             ];
-        
-            // Set the font family to Montserrat
-            Highcharts.setOptions({
-                chart: {
-                    style: {
-                        fontFamily: 'Montserrat, sans-serif'
-                    }
-                }
-            });
+
+            // Drilldown data for days
+            const daysData = [
+                ['Day 1', 500],
+                ['Day 2', 600],
+                // ... Add data for other days ...
+            ];
 
             // Create the bar chart
-            Highcharts.chart('chartContainer', {
+            const chart = Highcharts.chart('revenuePerformance', {
                 chart: {
                     type: 'column'
                 },
@@ -65,12 +54,13 @@
                     enabled: true
                 },
                 tooltip: {
-                    shared: true
+                    shared: true,
+                    pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>KES {point.y}</b><br/>'
                 },
                 plotOptions: {
                     bar: {
-                        pointWidth: 20, // Adjust the width of each column
-                        stacking: 'normal', // Prevent stacking
+                        pointWidth: 20,
+                        stacking: 'normal',
                         borderWidth: 0
                     }
                 },
@@ -81,9 +71,24 @@
                     name: 'Target',
                     data: data.map(item => item[2])
                 }, {
-                    name: 'Actual Collections',
-                    data: data.map(item => item[3])
-                }]
+                    name: 'This Year',
+                    data: data.map(item => item[3]),
+                    id: 'thisYear',
+                    drilldown: true
+                }],
+                drilldown: {
+                    series: [{
+                        id: 'thisYear',
+                        data: daysData
+                    }]
+                }
+            });
+
+            // Handle drilldown events
+            chart.addSeriesAsDrilldown(chart.series[2], {
+                name: 'Days',
+                id: 'days',
+                data: daysData
             });
         });
     </script>
