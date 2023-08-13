@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laikipia County Map</title>
+    <!-- Include Highcharts.js library -->
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/ke/ke-2009-all.js"></script>
+</head>
+<body>
+    <!-- Container for the map -->
+    <div id="mapContainer" style="height: 600px;"></div>
+    
+    <!-- Script to generate the map -->
+    <script>
+        // Your map generation code will go here
+    </script>
+</body>
+
+<script>
+    // JavaScript code inside the <script> tag
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize the Highcharts map
+    Highcharts.mapChart('mapContainer', {
+        chart: {
+            map: 'countries/ke/ke-2009-all' // Load Kenya map from Highmaps
+        },
+        title: {
+            text: 'Laikipia County Map'
+        },
+        series: [{
+            name: 'Laikipia County',
+            data: [/* Your data goes here */],
+            mapData: Highcharts.maps['countries/ke/ke-2009-all'],
+            joinBy: 'hc-key',
+            states: {
+                hover: {
+                    color: '#a4edba' // Color when hovering over the region
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}'
+            }
+        }]
+    });
+});
+
+</script>
+</html>
