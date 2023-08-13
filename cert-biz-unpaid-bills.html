@@ -437,7 +437,8 @@
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Certificates & Licenses</a></li>
-                                        <li class="breadcrumb-item active">Business Permits</li>
+                                        <li class="breadcrumb-item"><a href="cert-biz-stats.html">Certificates & Licenses</a></li>
+                                        <li class="breadcrumb-item active">SBP Unpaid Bills</li>
                                     </ol>
                                 </div>
 
@@ -446,7 +447,7 @@
                     </div>
                     <!-- end page title -->
 
-                    <!-- tool bar -->
+                  <!-- tool bar -->
                     <div class="row">
                         <div class="col-12 active">
                             <div class="card active">
@@ -501,7 +502,7 @@
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
                                         role="toolbar">
                                         <h4 class="card-title text-capitalize mb-0 ">
-                                            Ongoing Applications
+                                            SBP Unpaid Bills
                                         </h4>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
@@ -536,22 +537,26 @@
                                             id="datatable-buttons">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
-                                                    <th scope="col">Receipt No.</th>
-                                                    <th scope="col">Business ID</th>
-                                                    <th scope="col">Business Name</th>
-                                                    <th scope="col">Applicatio Date</th>
-                                                    <th>Licensing Officer</th>
-                                                    <th>Status</th>
-                                                    <th scope="col" class="text-right">Amount Paid</th>
+                                                    <th scope="col">Bill No.</th>
+                                                    <th scope="col">Created For</th>
+                                                    <th scope="col">Bill For</th>
+                                                    <th scope="col">Billing Date</th>
+                                                    <th>Created By</th>
+                                                    <th>Bill Amount</th>
+                                                    <th>Amount Paid</th>
+                                                    <th>Balance</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
+                                                        <p class="mb-0">Automotives</p>
+                                                        <small>BIZ ID: 123456</small>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        Business Certificate Application
                                                     </td>
                                                     <td class="text-capitalize text-nowrap">10 Jan 2022 <span
                                                             class="text-muted">10:56 PM</span>
@@ -559,12 +564,15 @@
                                                         </td>
                                                         <td>Tobby Arnold</td>
                                                     
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
+                                                   
                                                     <td class="text-nowrap text-right ">
                                                         <span class="fw-semibold ">KES 2,000</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 0.00</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 0.00</span>
                                                     </td>
 
                                                     <td>
@@ -574,12 +582,12 @@
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target=".receipting-modal"><i
                                                                     class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
+                                                                Bill Details</button>
+                                                            <a href="PrintDocs/Bill/bill.html" target="_blank"
                                                                 class="btn btn-success btn-sm waves-effect waves-light">
                                                                 <i
                                                                     class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
+                                                                Print Bill
                                                             </a>
                                                             <div class="dropdown">
                                                                 <a class="text-muted font-size-16" role="button"
@@ -605,196 +613,29 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
-                                                        <td>Tobby Arnold</td>
-                                                    
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
-                                                        <td>Tobby Arnold</td>
-                                                    
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
-                                                        <td>Tobby Arnold</td>
-                                                    
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
+                                                
+                                                
 
 
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
 
-                                                    <th>
-                                                        23 Certs
-                                                    </th>
+                                                   
 
 
-                                                    <th class="text-nowrap" colspan="4">23 Businesses</th>
+                                                    <th class="text-nowrap" colspan="3">23 Bills</th>
+                                                   
+                                                    <td></td>
                                                    
                                                     <td class="text-nowrap text-right " colspan="2">
                                                         <span class="fw-semibold ">KES 2,000,000</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right " colspan="0">
+                                                        <span class="fw-semibold ">KES 0.00</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right " colspan="0">
+                                                        <span class="fw-semibold ">KES 0.00</span>
                                                     </td>
                                                     <td></td>
 
@@ -824,9 +665,9 @@
                 <div class="modal-dialog modal-lg modal-dialog-centered modal-full modal-fullscreen">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Business Details</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Application Details</h5>
                             <span
-                                class="badge rounded-pill bg-warning text-uppercase font-12px text-uppercase mx-3">Ongoing Applications</span>
+                                class="badge rounded-pill bg-info text-uppercase font-12px text-uppercase mx-3">Approved Application</span>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -854,20 +695,21 @@
                                                 </div>
                                             </div>
 
-                                            <div class="item event-list active">
+                                            <div class="item event-list ">
                                                 <div>
                                                     <div class="event-date">
-                                                        <div class="text-primary mb-1">-</div>
+                                                        <div class="text-primary">25 Sep 2023 At 12:43 PM</div>
                                                         <h5 class="mb-4">Details Verification</h5>
                                                     </div>
                                                     <div class="event-down-icon">
                                                         <i
-                                                        class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
+                                                        class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
                                                     </div>
 
                                                     <div class="mt-3 px-3">
-                                                        <p class="text-muted text-capitalize"><a
-                                                                href="user-details.html">-</a></p>
+                                                        <p class="text-muted text-capitalize"><a href="user-details.html">Flex Amondi Abiro</a></p>
+                                                        <p class="text-muted text-capitalize mb-1"><i class="bx bx-map"></i> At two rivers road</p>
+                                                                
                                                     </div>
                                                 </div>
                                             </div>
@@ -877,8 +719,45 @@
                                             <div class="item event-list">
                                                 <div>
                                                     <div class="event-date">
-                                                        <div class="text-primary mb-1">-</div>
+                                                        <div class="text-primary mb-1">15 Sep 2023 03:56 PM</div>
                                                         <h5 class="mb-4">Inspection</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i
+                                                        class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
+                                                    </div>
+
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted text-capitalize"><a
+                                                                href="user-details.html">Alex Oduor</a></p>
+                                                                <p class="text-muted text-capitalize mb-1"><i class="bx bx-map"></i> At two rivers road</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item event-list ">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">20 Sep 2023 02:56 PM</div>
+                                                        <h5 class="mb-4">KES 5,000 Paid</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i
+                                                        class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
+                                                    </div>
+
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted text-capitalize"><a
+                                                                href="user-details.html">Receipted By Kinoti </a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item event-list active">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">Pending ...</div>
+                                                        <h5 class="mb-4">Certificate Generation</h5>
                                                     </div>
                                                     <div class="event-down-icon">
                                                         <i
@@ -891,6 +770,25 @@
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="item event-list">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">Awaiting Generation</div>
+                                                        <h5 class="mb-4">Certificate Issued</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i
+                                                            class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
+                                                    </div>
+
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted text-capitalize"><a
+                                                                href="user-details.html">-</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
 
 
                                         </div>
@@ -1023,19 +921,33 @@
                                                             </td>
                                                             <td class=""><span class="text-primary">change to:</span> large high standard lodging</td>
                                                             <td class="text-right">
-                                                                <i class="bx bx-x text-danger font-28"></i>
+                                                                <i class="bx bx-check text-success font-28"></i>
                                                             </td>
 
                                                         </tr>
+
+                                                        <tr class=" fw-semibold text-capitalize">
+                                                            <td class="text-primary">
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Initial Payment</p>
+
+                                                            </td>
+                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">KES 5,000</span> ( <a href="PrintDocs/Receipts/receipts-HOMabay county.html">Receipt No. RT67899</a>)</td>
+                                                            <td class="text-right">
+                                                                <i class="bx bx bx-check text-success font-28"></i>
+                                                            </td>
+
+                                                        </tr>
+
                                                         <tr class=" fw-semibold text-capitalize">
                                                             <td class="text-primary">
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
                                                                     Additional Amount</p>
 
                                                             </td>
-                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">KES 12,000</span> (BILL NO. BLL12344jh)</td>
+                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">KES 12,000</span> (<a href="PrintDocs/Receipts/receipts-HOMabay county.html">Receipt No. RT67899</a>)</td>
                                                             <td class="text-right">
-                                                                <i class="bx bx-x text-danger font-28"></i>
+                                                                <i class="bx bx bx-check text-success font-28"></i>
                                                             </td>
 
                                                         </tr>
@@ -1309,14 +1221,25 @@
                                         <div class="col-12 mt-4">
                                             <div class="bg-danger border-2 bg-soft p-2 mb-4 d-flex align-items-center">
                                                 <i class="bx bxs-edit-alt pin font-28 mr-15px"></i>
-                                                <p class="fw-semibold mb-0 pb-0">Revenue Officer Notes (Flex Amondi)</p>
+                                                <p class="fw-semibold mb-0 pb-0">Noted from officers Site Visits</p>
 
                                             </div>
                                         </div>
                                         <div class="col-12">
+                                            
                                             <div class="alert alert-warning border-1 border-warning" role="alert">
-                                               Everything looks OK
-                                                </div>
+
+                                                <h4 class="alert-heading mb-0">Flex Amondi Abiro</h4>
+                                                <p><i>Revenue Officer Suba North Sub County</i></p>
+                                                <p> Everything looks OK</p>
+                                            </div>
+
+                                            <div class="alert alert-info border-1 border-info" role="alert">
+
+                                                <h4 class="alert-heading mb-0">Alex Oduor</h4>
+                                                <p><i>Deputy Director Revenue Suba North Sub County</i></p>
+                                                <p> Everything paid in full</p>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -1327,9 +1250,9 @@
                         </div>
                         <div class="modal-footer">
 
-                            <a href="PrintDocs/Receipts/receipts-HOMabay county.html" target="_blank" type="button"
+                            <a href="PrintDocs/Trade-Permit/permit.html" target="_blank" type="button"
                                 class="btn btn-primary waves-effect waves-light">
-                                <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Receipt
+                                <i class="mdi mdi-check-all font-size-16 align-middle me-2"></i> Generate Certificate
                             </a>
                         </div>
                     </div>
