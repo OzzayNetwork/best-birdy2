@@ -537,11 +537,14 @@
                                             id="datatable-buttons">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
+                                                    <th scope="col">Receipt No.</th>
                                                     <th scope="col">Bill No.</th>
-                                                    <th scope="col">Created For</th>
-                                                    <th scope="col">Bill For</th>
-                                                    <th scope="col">Billing Date</th>
-                                                    <th>Created By</th>
+                                                    <th scope="col">Bill Owner</th>
+                                                    <th scope="col">Paid For</th>
+                                                    <th scope="col">Date Receipted</th>
+                                                    <th scope="col">Payment Method</th>
+                                                   
+                                                    <th>Receipted By</th>
                                                     <th>Bill Amount</th>
                                                     <th>Amount Paid</th>
                                                     <th>Balance</th>
@@ -550,18 +553,24 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
+                                                    <td class="text-capitalize text-nowrap">56778ERTR</td>
                                                     <td class="text-capitalize text-nowrap">1234567</td>
                                                     <td class="text-capitalize text-nowrap">
                                                         <p class="mb-0">Automotives</p>
                                                         <small>BIZ ID: 123456</small>
                                                     </td>
+
                                                     <td class="text-capitalize text-nowrap">
                                                         Business Certificate Application
                                                     </td>
+                                                   
+
                                                     <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
+                                                        class="text-muted">10:56 PM</span>
+                                                        (3 Days Ago)
+                                                    </td>
+                                                    <td class="fw-semibold">MPESA 0704 549859</td>
+                                                  
                                                         <td>Tobby Arnold</td>
                                                     
                                                    
@@ -582,12 +591,12 @@
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target=".receipting-modal"><i
                                                                     class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Bill Details</button>
+                                                                Receipt Details</button>
                                                             <a href="PrintDocs/Bill/bill.html" target="_blank"
                                                                 class="btn btn-success btn-sm waves-effect waves-light">
                                                                 <i
                                                                     class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Bill
+                                                                Print Receipt
                                                             </a>
                                                             <div class="dropdown">
                                                                 <a class="text-muted font-size-16" role="button"
@@ -624,8 +633,10 @@
                                                    
 
 
-                                                    <th class="text-nowrap" colspan="3">23 Bills</th>
+                                                    <th class="text-nowrap" colspan="3">23 Receipts</th>
                                                    
+                                                    <td></td>
+                                                    <td></td>
                                                     <td></td>
                                                    
                                                     <td class="text-nowrap text-right " colspan="2">
