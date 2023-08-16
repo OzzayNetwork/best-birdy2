@@ -436,7 +436,7 @@
                     <!-- end page title -->
 
                   <!-- tool bar -->
-                    <div class="row">
+                     <div class="row">
                         <div class="col-12 active">
                             <div class="card active">
                                 <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
@@ -453,8 +453,7 @@
                                             <div class="navbar-nav">
                                                 <a class="nav-item nav-link" href="housing-quick-stat.html">Quick Stats</a>
                                                 <a class="nav-item nav-link" href="housing-register.html">Rentals Register</a>
-                                                <a class="nav-item nav-link" href="housing-tenants.html">Tenants</a>
-                                                <a class="nav-item nav-link" href="housing-arrears.html">Rental Arrears</a>
+                                               
                                             </div>
                                             
 
@@ -533,7 +532,7 @@
                                                     <th class="table-danger text-right text-black">KES 0.00</th>
                                                     <th class="table-success text-right text-black">KES 5,000</th>
                                                     <td class="text-uppercase fw-bold">
-                                                        <button class="btn btn-success btn-sm text-uppercase" data-toggle="modal" data-target=".vaccate-modal">Vacate Stall</button>
+                                                        <button class="btn btn-danger btn-sm text-uppercase" data-toggle="modal" data-target=".vaccate-modal">Vacate Stall</button>
                                                         <button class="btn btn-info btn-sm text-uppercase" data-toggle="modal" data-target=".edit-modal">Edit</button>
                                                         <a href="housing-marlet-details-rental-statements.html" class="btn btn-primary btn-sm text-uppercase" >Statements</a>
                                                         <a href="housing-market-details-history.html" class="btn btn-dark btn-sm text-uppercase" >Tenancy History</a>
@@ -544,13 +543,18 @@
                                                     <th>BLK1/001/900</th>
                                                     <th>Modern stall</th>
                                                     <td><span class="badge bg-warning text-uppercase">Vacant</span></td>
-                                                    <td>-</td>
+                                                    <td>25 Mar 2024 12:00 AM</td>
                                                     <td>-</td>
                                                     <td>-</td>
                                                     <th class="table-info text-right text-black">-</th>
                                                     <th class="table-danger text-right text-black">-</th>
-                                                    <th class="table-success text-right text-black">-</th>
-                                                    <td></td>
+                                                    <th class="table-success text-right text-black">KES 5,000</th>
+                                                    <td>
+                                                        <button class="btn-success btn btn-sm text-uppercase" data-toggle="modal" data-target=".new-tenant-modal">Assign Tenant</button>
+                                                        <button class="btn btn-info btn-sm text-uppercase" data-toggle="modal" data-target=".edit-modal">Edit</button>
+                                                        <a href="housing-marlet-details-rental-statements.html" class="btn btn-primary btn-sm text-uppercase" >Statements</a>
+                                                        <a href="housing-market-details-history.html" class="btn btn-dark btn-sm text-uppercase" >Tenancy History</a>
+                                                    </td>
                                                 </tr>     
                                                 
                                             </tbody>
@@ -757,6 +761,87 @@
                 </div>
             </div>
             <!-- end of vacating modal -->
+
+            <!-- adsigning new tenan modal -->
+            <div class="modal fade new-tenant-modal" id="new-business" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title text-capitalize" id="exampleModalLongTitle">129/4775/009 New tenant</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body steps-container">
+                        <div class="row the-step biz-info active">
+
+                            <div class="col-12 mb-3">
+                                <label for="">Tenat's Full Names</label>
+                                <input type="text" class="form-control" placeholder="Enter Full Names">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="">ID/PPT Number</label>
+                                <input type="text" class="form-control" placeholder="Enter ID/PPT Number">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="">Phone Number</label>
+                                <input type="text" class="form-control" placeholder="Enter Phone">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="">Email Address</label>
+                                <input type="text" class="form-control" placeholder="Enter Phone">
+                            </div>
+                            
+
+                            <div class="col-12 mb-3">
+                                <label for="">Effective from</label>
+                                <input class="form-control" type="date" placeholder="Select date" id="example-date-input">
+                            </div>
+
+                           
+                        </div>
+    
+                        <div class="row the-step biz-additional-info d-none">
+                            <div class="col-12">
+                                <div class="alert alert-warning" role="alert">
+                                    You are changing something that needs two OTPs, which I sent to the first and second approver. You need to get the OTPs from them and enter them in order, because if you enter them wrong, you can't continue. You also need to enter them exactly as they are, without any spaces or punctuation marks. Thank you for your cooperation.
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="">First Approver</label>
+                               <input class="form-control " placeholder="Enter OTP">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="">Second Approver</label>
+                               <input class="form-control " placeholder="Enter OTP">
+                            </div>
+
+                        </div>
+    
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex modal-next-prev-container">
+                            <button type="button" class="btn btn-outline-secondary btn-prev waves-effect waves-effect waves-light me-3">
+                                <i class="bx bx-left-arrow-alt font-size-16 align-middle me-2"></i> Previouse
+                            </button>
+    
+                            <button type="button" class="btn btn-primary waves-effect waves-effect waves-light btn-next">
+                                Next <i class="bx bx-right-arrow-alt font-size-16 align-middle me-2"></i>
+                            </button>
+    
+                            <button type="button" class="btn btn-submit btn-success d-none ml-3 ms-3 waves-effect waves-effect waves-light btn-next">
+                                <i class="bx bx-check-double font-size-16 align-middle me-2"></i> Finish 
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- assigning new tenant modal -->
 
             <!-- editing modal -->
             <div class="modal fade edit-modal" id="new-business" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

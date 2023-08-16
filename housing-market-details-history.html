@@ -437,7 +437,7 @@
                     <!-- end page title -->
 
                   <!-- tool bar -->
-                    <div class="row">
+                     <div class="row">
                         <div class="col-12 active">
                             <div class="card active">
                                 <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
@@ -454,8 +454,7 @@
                                             <div class="navbar-nav">
                                                 <a class="nav-item nav-link" href="housing-quick-stat.html">Quick Stats</a>
                                                 <a class="nav-item nav-link" href="housing-register.html">Rentals Register</a>
-                                                <a class="nav-item nav-link" href="housing-tenants.html">Tenants</a>
-                                                <a class="nav-item nav-link" href="housing-arrears.html">Rental Arrears</a>
+                                               
                                             </div>
                                             
 
@@ -471,7 +470,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header  border-bottom">
-                                    <h4 class="card-title text-capitalize">Modern markets rentals</h4>                                
+                                    <h4 class="card-title text-capitalize">Modern Market Stall No. 123 Tenancy history</h4>                                
                                 </div>
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
@@ -507,76 +506,448 @@
                                 <div class="card-body">
                                     <div class="table-responsive overflow-visible">
 
-                                        <table class="table align-middle table-hover  contacts-table table-striped " id="">
+                                        <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table" id="">
                                             <thead class="table-light">
-                                                <tr class="table-dark">
-                                                    <th>Stall No./Name</th>
-                                                    <th>Stall Type</th>
+                                                <tr>
+                                                    <th scope="col">#</th>
                                                     <th scope="col">Tenant</th>
-                                                    <th>Last Payment Date</th>  
-                                                    <th>Next Date</th>  
-                                                    <th>Months in Arreas</th>                                              
-                                                    <th class="text-right">Monthly Rent</th>
-                                                    <th class="text-right">Arrears</th>
-                                                    <th class="text-right">Total</th>
-                                                    <td></td>
+                                                    <th scope="col">Contacts</th>
+                                                    <th scope="col">From</th>
+                                                    <th scope="col">Till</th>
+                                                    <th scope="col">Duration</th>
+                                                    <th scope="col" class="">Reason for living</th>
+                                                    <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th>BLK1/001/900</th>
-                                                    <th>Mosern Stall</th>
-                                                    <td><a href="#">Kelvin Njuguna</a></td>
-                                                    <td>10 Jan 2023 10:45 AM</td>
-                                                    <td>5 Feb 2024 12:00 AM</td>
-                                                    <td>0</td>
-                                                    <th class="table-info text-right text-black">KES 5,000</th>
-                                                    <th class="table-danger text-right text-black">KES 0.00</th>
-                                                    <th class="table-success text-right text-black">KES 5,000</th>
-                                                    <td class="text-uppercase fw-bold">
-                                                        <button class="btn btn-success btn-sm text-uppercase" data-toggle="modal" data-target=".vaccate-modal">Vacate Stall</button>
-                                                        <button class="btn btn-info btn-sm text-uppercase" data-toggle="modal" data-target=".edit-modal">Edit</button>
-                                                        <a href="housing-marlet-details-rental-statements.html" class="btn btn-primary btn-sm text-uppercase" >Statements</a>
-                                                        <a href="housing-market-details-history.html" class="btn btn-dark btn-sm text-uppercase" >Tenancy History</a>
+                                                    <td class="text-capitalize">1</td>
+                                                    <td class="text-capitalize">
+                                                        <a href="#" title="View Details">Rose Nyawira</a>
                                                     </td>
-                                                </tr>     
-                                                
+                                                    <td>
+                                                        <p class="text-muted mb-0">
+                                                            <a href="tell:0734513678">0734513678</a>
+                                                        </p>
+                                                        <p class="mb-0 pb-0">
+                                                            <a href="mailto:RoseNya360@email.com">RoseNya360@email.com</a>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        1 Jan 2018
+                                                    </td>
+
+                                                    <td>
+                                                        3 May 2018
+                                                    </td>
+                                                    <td>
+                                                        4 Months
+                                                    </td>
+                                                    <td class="text-black">
+                                                        Left on free will
+                                                    </td>
+
+                                                    <td class="d-none">
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>View account details</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-file-document me-3"></i>View full Statements</a>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                                 <tr>
-                                                    <th>BLK1/001/900</th>
-                                                    <th>Modern stall</th>
-                                                    <td><span class="badge bg-warning text-uppercase">Vacant</span></td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <th class="table-info text-right text-black">-</th>
-                                                    <th class="table-danger text-right text-black">-</th>
-                                                    <th class="table-success text-right text-black">-</th>
-                                                    <td></td>
-                                                </tr>     
-                                                
-                                            </tbody>
-                                            <tfoot class="table-dark">
+                                                    <td class="text-capitalize">2</td>
+                                                    <td class="text-capitalize">
+                                                        <a href="#" title="View Details">John Njuguna</a>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-muted mb-0">
+                                                            <a href="tell:0704541229">0704541229</a>
+                                                        </p>
+                                                        <p class="mb-0 pb-0">
+                                                            <a href="mailto:johnnjugush12@email.com">johnnjugush12@email.com</a>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        6 May 2018
+                                                    </td>
+
+                                                    <td>
+                                                        25 sept 2018
+                                                    </td>
+                                                    <td>
+                                                        5 Months
+                                                    </td>
+                                                    <td class="text-black">
+                                                        Left on free will
+                                                    </td>
+
+                                                    <td class="d-none">
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>View account details</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-file-document me-3"></i>View full Statements</a>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                                 <tr>
-                                                    <th colspan="1">
-                                                        20 Stalls
-                                                    </th>
-                                                   <th colspan="4">
-                                                        20 Tenants | 2 Vacant | 3 Substandard
-                                                   </th>
-                                                  
-                                                    <th>5 Stalls</th>
-                                                    <th class="text-right text-info text-uppercase">KES 124,000</th>
+                                                    <td class="text-capitalize">3</td>
+                                                    <td class="text-capitalize">
+                                                        <a href="#" title="View Details">Mary Mwangi</a>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-muted mb-0">
+                                                            <a href="tell:0789473682">0789473682</a>
+                                                        </p>
+                                                        <p class="mb-0 pb-0">
+                                                            <a href="mailto:MaryMwas78@email.com">MaryMwas78@email.com</a>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        28 Sept 2018
+                                                    </td>
 
-                                                    <th class="text-right text-danger text-uppercase">KES 56,000</th>
+                                                    <td>
+                                                        20 Dec 2019
+                                                    </td>
+                                                    <td>
+                                                        4 Months
+                                                    </td>
+                                                    <td class="text-black">
+                                                        Left on free will
+                                                    </td>
+
+                                                    <td class="d-none">
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>View account details</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-file-document me-3"></i>View full Statements</a>
 
 
-                                                  <th class="text-right text-success text-uppercase">KES 123,000</th>
-                                                  <th></th>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">4</td>
+                                                    <td class="text-capitalize">
+                                                        <a href="#" title="View Details">Patrick Oliech</a>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-muted mb-0">
+                                                            <a href="tell:0784859356">0784859356</a>
+                                                        </p>
+                                                        <p class="mb-0 pb-0">
+                                                            <a href="mailto:PatrickOliech260@email.com">PatrickOliech260@email.com</a>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        2 Jan 2019
+                                                    </td>
 
-                                                    
+                                                    <td>
+                                                        23 June 2019
+                                                    </td>
+                                                    <td>
+                                                        6 Months
+                                                    </td>
+                                                    <td class="text-black">
+                                                        Left on free will
+                                                    </td>
+
+                                                    <td class="d-none">
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>View account details</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-file-document me-3"></i>View full Statements</a>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">5</td>
+                                                    <td class="text-capitalize">
+                                                        <a href="#" title="View Details">Jane Munene</a>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-muted mb-0">
+                                                            <a href="tell:0700859356">0700859356</a>
+                                                        </p>
+                                                        <p class="mb-0 pb-0">
+                                                            <a href="mailto:Janemunene160@email.com">Janemunene160@email.com</a>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        26 June 2019
+                                                    </td>
+
+                                                    <td>
+                                                        23 Sept 2019
+                                                    </td>
+                                                    <td>
+                                                        3 Months
+                                                    </td>
+                                                    <td class="text-black">
+                                                        Left on free will
+                                                    </td>
+
+                                                    <td class="d-none">
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>View account details</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-file-document me-3"></i>View full Statements</a>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">6</td>
+                                                    <td class="text-capitalize">
+                                                        <a href="#" title="View Details">James Macharia</a>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-muted mb-0">
+                                                            <a href="tell:0784800359">0784800359</a>
+                                                        </p>
+                                                        <p class="mb-0 pb-0">
+                                                            <a href="mailto:Jamesmacharia22@email.com">Jamesmacharia22@email.com</a>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        24 Sept 2019
+                                                    </td>
+
+                                                    <td>
+                                                        12 Nov 2022
+                                                    </td>
+                                                    <td>
+                                                        2 Months
+                                                    </td>
+                                                    <td class="text-black">
+                                                        Left on free will
+                                                    </td>
+
+                                                    <td class="d-none">
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>View account details</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-file-document me-3"></i>View full Statements</a>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">7</td>
+                                                    <td class="text-capitalize">
+                                                        <a href="#" title="View Details">Sharon Wangare</a>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-muted mb-0">
+                                                            <a href="tell:0711159352">0711159352</a>
+                                                        </p>
+                                                        <p class="mb-0 pb-0">
+                                                            <a href="mailto:Sharonwanga337@email.com">Sharonwanga337@email.com</a>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        15 Nov 2019
+                                                    </td>
+
+                                                    <td>
+                                                        3 Jan 2020
+                                                    </td>
+                                                    <td>
+                                                        2 Months
+                                                    </td>
+                                                    <td class="text-black">
+                                                        Left on free will
+                                                    </td>
+
+                                                    <td class="d-none">
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>View account details</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-file-document me-3"></i>View full Statements</a>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">8</td>
+                                                    <td class="text-capitalize">
+                                                        <a href="#" title="View Details">Caroline Wanjiku</a>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-muted mb-0">
+                                                            <a href="tell:0780446521">0780446521</a>
+                                                        </p>
+                                                        <p class="mb-0 pb-0">
+                                                            <a href="mailto:Carolinewanjiku300@email.com">Carolinewanjiku300@email.com</a>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        9 Jan 2020
+                                                    </td>
+
+                                                    <td>
+                                                        23 July 2020
+                                                    </td>
+                                                    <td>
+                                                        7 Months
+                                                    </td>
+                                                    <td class="text-black">
+                                                        Left on free will
+                                                    </td>
+
+                                                    <td class="d-none">
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>View account details</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-file-document me-3"></i>View full Statements</a>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">9</td>
+                                                    <td class="text-capitalize">
+                                                        <a href="#" title="View Details">Rayan Katuko</a>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-muted mb-0">
+                                                            <a href="tell:0733659012">0733659012</a>
+                                                        </p>
+                                                        <p class="mb-0 pb-0">
+                                                            <a href="mailto:Rayankatuko125@email.com">Rayankatuko125@email.com</a>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        25 July 2020
+                                                    </td>
+
+                                                    <td>
+                                                        4 Oct 2021
+                                                    </td>
+                                                    <td>
+                                                        13 Months
+                                                    </td>
+                                                    <td class="text-black">
+                                                        Left on free will
+                                                    </td>
+
+                                                    <td class="d-none">
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>View account details</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-file-document me-3"></i>View full Statements</a>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">10</td>
+                                                    <td class="text-capitalize">
+                                                        <a href="#" title="View Details">Justine Ngujiri</a>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-muted mb-0">
+                                                            <a href="tell:0745778345">0745778345</a>
+                                                        </p>
+                                                        <p class="mb-0 pb-0">
+                                                            <a href="mailto:Justinemuturi26@email.com">Justinemuturi26@email.com</a>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        10 Oct 2021
+                                                    </td>
+
+                                                    <td>
+                                                        23 Jan 2022
+                                                    </td>
+                                                    <td>
+                                                        3 Months
+                                                    </td>
+                                                    <td class="text-black">
+                                                        Left on free will
+                                                    </td>
+
+                                                    <td class="d-none">
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>View account details</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-file-document me-3"></i>View full Statements</a>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
 
-                                            </tfoot>
+
+
+
+
+
+
+                                            </tbody>
                                         </table>
                                     </div>
                                     
