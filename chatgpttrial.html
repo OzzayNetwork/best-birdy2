@@ -2,94 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Revenue Bar Chart</title>
+    <title>Revenue Collections</title>
     <!-- Include Highcharts.js library -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </head>
 <body>
     <!-- Container for the chart -->
-    <div id="revenuePerformance" style="width: 800px; height: 400px;"></div>
+    <div id="revenueChart" style="width: 800px; height: 400px;"></div>
     
     <!-- Script to generate the chart -->
     <script>
-        // Your chart generation code will go here
-        document.addEventListener('DOMContentLoaded', function () {
-            // Abbreviate months to three letters
-            function abbreviateMonth(month) {
-                return month.substring(0, 3);
+        // Generate date range from 1st June 2023 to 31st July 2024
+        function generateDateRange(startDate, endDate) {
+            const dateRange = [];
+            let currentDate = new Date(startDate);
+            while (currentDate <= endDate) {
+                dateRange.push(new Date(currentDate));
+                currentDate.setDate(currentDate.getDate() + 1);
             }
-            
-            // Prepare the data
-            const data = [
-                ['Jul 2023', 50000, 60000, 55000], // [Month, Last Year, Target, Actual]
-                ['Aug 2023', 55000, 62000, 58000],
-                // ... Add data for other months ...
-            ];
+            return dateRange;
+        }
 
-            // Drilldown data for days
-            const daysData = [
-                ['Day 1', 500],
-                ['Day 2', 600],
-                // ... Add data for other days ...
-            ];
+        // Generate random revenue values for the date range
+        function generateRandomRevenueValues(dateRange, min, max) {
+            const revenueData = [];
+            for (const date of dateRange) {
+                revenueData.push([date.getTime(), Math.floor(Math.random() * (max - min + 1)) + min]);
+            }
+            return revenueData;
+        }
 
-            // Create the bar chart
-            const chart = Highcharts.chart('revenuePerformance', {
-                chart: {
-                    type: 'column'
-                },
+        // Define start and end dates
+        const startDate = new Date('2023-06-01');
+        const endDate = new Date('2024-07-31');
+
+        // Generate date range and random revenue values
+        const dateRange = generateDateRange(startDate, endDate);
+        const revenueData = generateRandomRevenueValues(dateRange, 500000, 1000000);
+
+        // Create the spline area chart
+        Highcharts.chart('revenueChart', {
+            chart: {
+                type: 'areaspline',
+                zoomType: 'x'
+            },
+            title: {
+                text: 'Revenue Collections'
+            },
+            xAxis: {
+                type: 'datetime',
                 title: {
-                    text: 'Revenue Comparison'
+                    text: 'Date'
                 },
-                xAxis: {
-                    categories: data.map(item => abbreviateMonth(item[0]))
-                },
-                yAxis: {
-                    title: {
-                        text: 'Revenue (KES)'
-                    }
-                },
-                legend: {
-                    enabled: true
-                },
-                tooltip: {
-                    shared: true,
-                    pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>KES {point.y}</b><br/>'
-                },
-                plotOptions: {
-                    bar: {
-                        pointWidth: 20,
-                        stacking: 'normal',
-                        borderWidth: 0
-                    }
-                },
-                series: [{
-                    name: 'Last Year',
-                    data: data.map(item => item[1])
-                }, {
-                    name: 'Target',
-                    data: data.map(item => item[2])
-                }, {
-                    name: 'This Year',
-                    data: data.map(item => item[3]),
-                    id: 'thisYear',
-                    drilldown: true
-                }],
-                drilldown: {
-                    series: [{
-                        id: 'thisYear',
-                        data: daysData
-                    }]
+                tickInterval: 7 * 24 * 3600 * 1000, // One week interval
+                dateTimeLabelFormats: {
+                    day: '%e %b %Y'
                 }
-            });
-
-            // Handle drilldown events
-            chart.addSeriesAsDrilldown(chart.series[2], {
-                name: 'Days',
-                id: 'days',
-                data: daysData
-            });
+            },
+            yAxis: {
+                title: {
+                    text: 'Revenue (KES)'
+                }
+            },
+            tooltip: {
+                headerFormat: '<b>{series.name}</b><br>',
+                pointFormat: '{point.x:%e %b %Y}: KES {point.y}'
+            },
+            plotOptions: {
+                areaspline: {
+                    fillOpacity: 0.5 // Adjust the fill opacity for the area
+                }
+            },
+            series: [{
+                name: 'Revenue Collections',
+                data: revenueData
+            }]
         });
     </script>
 </body>
