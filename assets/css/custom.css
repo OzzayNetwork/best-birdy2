@@ -1243,6 +1243,18 @@ padding: 0px;
     .bg-primary-blue{
         background-color: #023382;
     }
+    .bg-primary-grad{
+        background: linear-gradient(to bottom right, #0066CC, #023382);
+    }
+    .text-warning-alt{
+        color: yellow !important;
+    }
+    .calc-heigt8{
+        height: calc(100% - 8px);
+    }
+    .bg-primary-alt{
+        background-color: #556ee6 !important;
+    }
 
     
     
