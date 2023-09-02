@@ -1255,6 +1255,22 @@ padding: 0px;
     .bg-primary-alt{
         background-color: #556ee6 !important;
     }
+    .mouse-pointer{
+        cursor: pointer;
+    }
+    .performer-table   tr{
+        background-color: #ff00002b;
+        margin-bottom: 0.3rem !important;
+        display: inline-table;
+        width: 100%;
+    }
+
+    .performer-table{
+        border-spacing: 0px 10px;
+    }
+    .weekly-chart{
+        height: 400px;
+    }
 
     
     
