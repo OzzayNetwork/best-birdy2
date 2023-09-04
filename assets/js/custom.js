@@ -824,6 +824,40 @@ $(document).ready(function() {
         
     });
 
+    function containsWordOrSentence(str, wordOrSentence) {
+        return str.includes(wordOrSentence);
+      }
+
+
+    $('body').on('change','#accessible-platforms', function(){
+
+       
+
+        var theVal=$(this).val()
+        var dashboard=containsWordOrSentence(theVal,"County Biller Dashboard")
+        var enforcementApp=containsWordOrSentence(theVal,"Collections & Enforcement App")
+        var supervisor=containsWordOrSentence(theVal,"Supervision Mobile App")
+
+        const dashboardCheckboxes = $('.dashboard-rights input[type="checkbox"]');
+        const dashboardCheckboxes2 = $('.dashboard-modules input[type="checkbox"]');
+        const enforcementCheckboxes = $('.enforcement-modules input[type="checkbox"]');
+        const supervisorCheckboxes = $('.supervisor-modules input[type="checkbox"]');
+
+        
+        
+
+        dashboardCheckboxes.prop('disabled', !dashboard);
+        dashboardCheckboxes2.prop('disabled', !dashboard);
+
+        enforcementCheckboxes.prop('disabled', !enforcementApp);
+        supervisorCheckboxes.prop('disabled', !supervisor);
+
+       
+
+        
+        
+    })
+
 
     $('.selectpicker').selectpicker();
     $('.selectpicker').selectpicker('render')
