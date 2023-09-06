@@ -862,3 +862,7 @@ $(document).ready(function() {
     $('.selectpicker').selectpicker();
     $('.selectpicker').selectpicker('render')
 });
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
