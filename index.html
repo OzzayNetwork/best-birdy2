@@ -3148,15 +3148,26 @@
                                         <div class="col-6">
                                             <div class="border-1 border-white">
                                                 <h4 class="card-title text-white text-uppercase fw-semibold mb-3">Top Perfoming Colectors</h4>
-                                                <table class="table text-white table-sm fs-6 opacity-75 vertical-align-middle table-borderless performer-table">
-                                                    <thead>
+                                                <table class="table text-white table-sm fs-6 opacity-7 vertical-align-middle table-borderless performer-table">
+                                                    <thead class="table-dark">
                                                         <tr>
                                                            
-                                                            <th colspan="3">Zone/Collection Point</th>
+                                                            <th colspan="3">Collector</th>
                                                             <th class="text-right">Today</th>
                                                             <th class="text-right">This Week</th>
                                                         </tr>
                                                     </thead>
+
+                                                    <tfoot class="table-dark ">
+                                                        <tr>
+                                                           
+                                                            <th colspan="5" class="text-center text-uppercase">
+                                                                <a href="live-monitoring.html">View all <span class="dripicons-arrow-thin-right"></span></a>
+                                                                <!-- once clicked filter all colectors with the highest perfoming selected based on their revenue target -->
+                                                            </th>
+                                                        </tr>
+                                                    </tfoot>
+
                                                     <tbody>
                                                         <tr class="">
                                                             <th>
@@ -3200,16 +3211,27 @@
                                         <div class="col-6">
                                             <div class="border-1 border-white">
                                                 <h4 class="card-title text-white text-uppercase fw-semibold mb-3">Lowest Performing Colectors</h4>
-                                                <table class="table text-white table-sm fs-6 opacity-75 vertical-align-middle table-borderless performer-table">
-                                                    <thead>
+                                                <table class="table bg-danger text-white table-sm fs-6 opacity-100 vertical-align-middle table-borderless performer-table">
+                                                    <thead class="table-dark ">
                                                         <tr>
                                                            
-                                                            <th colspan="3">Zone/Collection Point</th>
+                                                            <th colspan="3">Collector</th>
                                                             <th class="text-right">Today</th>
                                                             <th class="text-right">This Week</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+
+                                                    <tfoot class="table-dark ">
+                                                        <tr>
+                                                           
+                                                            <th colspan="5" class="text-center text-uppercase">
+                                                                <a href="live-monitoring.html">View all <span class="dripicons-arrow-thin-right"></span></a>
+                                                                <!-- once clicked filter the transactions with the lowest perfoming collector based on their revenue target -->
+                                                            </th>
+                                                        </tr>
+                                                    </tfoot>
+
+                                                    <tbody class="text-black">
                                                         <tr class="">
                                                             <th>
                                                                 <span class="mdi mdi-menu-up fs-3"></span>
@@ -3255,722 +3277,8 @@
                                 </div>
                             </div>
                             <!--end card-->
-                        </div>
-                        
-                        <div class="col-xl-6 col-lg-5 col-sm-12">
-                            <div class="row">
 
-                                <div class="col-12">
-                                    <div class="card calc-23">
-                                        <div class="card-body">
-                                            <div class="d-sm-flex flex-wrap">
-                                               <div class="d-flex flex-column">
-                                                    <h4 class="card-title mb-1">Sub Counties</h4>
-                                                    <p>Collections By Sub Counties</p>
-                                               </div>
-                                                <div class="ms-auto">
-                                                    <ul class="nav nav-pills">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Today</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Monthly</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link active" href="#">Financial Year</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            
-        
-                                            <div id="Map-data" class="h-80" dir="ltr"></div>
-                                        </div>
-                                        <div class="card-footer bg-transparent border-top">
-                                            <div class="text-center">
-                                                <a href="javascript: void(0);" class="btn btn-primary waves-effect waves-light"> <i class="mdi mdi-download-outline"></i> Download Custom Reports</a>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>  
-                                </div>
-                                <div class=" col-12">
-                                    <div class="card">
-                                       
-                                        <div class="card-body">
-                                            <div class="d-sm-flex flex-wrap">
-                                                <div class="d-flex flex-column">
-                                                     <h4 class="card-title mb-1">Departments</h4>
-                                                     <p>Revenue Collection By department</p>
-                                                </div>
-                                                 <div class="ms-auto">
-                                                     <ul class="nav nav-pills">
-                                                         <li class="nav-item">
-                                                             <a class="nav-link" href="#">Today</a>
-                                                         </li>
-                                                         
-                                                         <li class="nav-item">
-                                                             <a class="nav-link active" href="#">Financial Year</a>
-                                                         </li>
-                                                     </ul>
-                                                 </div>
-                                             </div>
-                                             <div id="collected-rev"></div>
-                                          
-                                        </div>
-                                        <div class="card-footer bg-transparent border-top d-none">
-                                            <div class="text-center">
-                                                <a href="reports-revenue-streams.html" class="btn btn-dark waves-effect waves-light"> View Applications</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-12">
-                                    <div class="card">
-                                        <div class="card-header bg-white border-bottom">
-                                            <div class="float-end d-non">
-                                                <select class="form-select form-select-sm ms-2">
-                                                    <option value="MA" selected>March</option>
-                                                    <option value="FE">February</option>
-                                                    <option value="JA">January</option>
-                                                    <option value="DE">December</option>
-                                                </select>
-                                            </div>
-                                            <h4 class="card-title mb-3">Revenue collection by Department</h4>
-                                        </div>
-                                        <div class="card-body">
-    
-                                            <ul class="nav nav-pills bg-light rounded d-none" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <a class="nav-link active" data-bs-toggle="tab" href="#transactions-all-tab" role="tab" aria-selected="true">Bottom 7</a>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <a class="nav-link" data-bs-toggle="tab" href="#transactions-buy-tab" role="tab" aria-selected="false" tabindex="-1">Top 7</a>
-                                                </li>
-                                                <li class="nav-item d-none" role="presentation">
-                                                    <a class="nav-link" data-bs-toggle="tab" href="#transactions-sell-tab" role="tab" aria-selected="false" tabindex="-1">Sell</a>
-                                                </li>
-                                            </ul>
-                                            <div class="tab-content mt-">
-                                                <div class="tab-pane active" id="transactions-all-tab" role="tabpanel">
-                                                    <div class="table-responsive" data-simplebar="init" style="max-height: 330px;"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: -15px; bottom: -15px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: scroll;"><div class="simplebar-content" style="padding: 0px;">
-                                                        <table class="table align-middle table-nowrap">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td style="width: 50px;">
-                                                                        <div class="font-size-22 text-success">
-                                                                            <i class="bx bx-up-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Dental</h5>
-                                                                            <p class="text-muted mb-0 d-none">39 Appointments</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">KES 45,908</h5>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-success">
-                                                                            <i class="bx bx-up-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Pharmecey Department</h5>
-                                                                            <p class="text-muted mb-0 d-none">KES 532,900</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0 text-right">KES 532,900</h5>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-danger">
-                                                                            <i class="bx bx-down-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Casualty department</h5>
-                                                                            <p class="text-muted mb-0 d-none">324 Cars</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">KES 452,900</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-danger">
-                                                                            <i class="bx bx-down-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Occupational Therapy </h5>
-                                                                            <p class="text-muted mb-0 d-none">1,020 Cars</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">KES 762,900</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                   
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-12 text-dark opacity-50">
-                                                                            <i class="mdi mdi-checkbox-blank-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Renal Unit </h5>
-                                                                            <p class="text-muted mb-0 d-none">56 Appoint</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">KES 764,900</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    
-                                                                </tr>
-    
-                                                               
-                                                            </tbody>
-                                                        </table>
-                                                    </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 473px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: visible;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: block; width: 196px;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 230px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
-                                                </div>
-                                                <div class="tab-pane" id="transactions-buy-tab" role="tabpanel">
-                                                    <div class="table-responsive" data-simplebar="init" style="max-height: 330px;"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;"><div class="simplebar-content" style="padding: 0px;">
-                                                        <table class="table align-middle table-nowrap">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td style="width: 50px;">
-                                                                        <div class="font-size-22 text-danger">
-                                                                            <i class="bx bx-down-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Kenya Commercial bank</h5>
-                                                                            <p class="text-muted mb-0 d-none">345 Member sacco Cars</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">90% Compliance</h5>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-success">
-                                                                            <i class="bx bx-up-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Kenya Revenue Authority</h5>
-                                                                            <p class="text-muted mb-0 d-none">450 Cars</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0 text-right">90% Compliance</h5>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-12 text-dark opacity-50">
-                                                                            <i class="mdi mdi-checkbox-blank-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Kenyatta National Hospital</h5>
-                                                                            <p class="text-muted mb-0 d-none">324 Cars</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">88% Compliance</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-danger">
-                                                                            <i class="bx bx-down-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Kenya Red Cross Society </h5>
-                                                                            <p class="text-muted mb-0 d-none">1,020 Cars</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">87% Compliance</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                   
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-success">
-                                                                            <i class="bx bx-up-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Oxfam</h5>
-                                                                            <p class="text-muted mb-0 d-none">560 Cars</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">81% Compliance</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td style="width: 50px;">
-                                                                        <div class="font-size-22 text-danger">
-                                                                            <i class="bx bx-down-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">KCB Group </h5>
-                                                                            <p class="text-muted mb-0 d-none">32 Cars</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">76% Compliance</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-success">
-                                                                            <i class="bx bx-up-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">United Nations</h5>
-                                                                            <p class="text-muted mb-0 d-none">15 Mar, 2020</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">76% Compliance</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div></div></div></div><div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: none;"></div></div></div>
-                                                </div>
-    
-                                                <div class="tab-pane" id="transactions-sell-tab" role="tabpanel">
-                                                    <div class="table-responsive" data-simplebar="init" style="max-height: 330px;"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;"><div class="simplebar-content" style="padding: 0px;">
-                                                        <table class="table align-middle table-nowrap">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td style="width: 50px;">
-                                                                        <div class="font-size-22 text-danger">
-                                                                            <i class="bx bx-down-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Buy BTC</h5>
-                                                                            <p class="text-muted mb-0 d-none">14 Mar, 2020</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">0.016 BTC</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 text-muted mb-0">$125.20</h5>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-danger">
-                                                                            <i class="bx bx-down-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Buy LTC</h5>
-                                                                            <p class="text-muted mb-0 d-none">16 Mar, 2020</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">1.88 LTC</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 text-muted mb-0">$94.22</h5>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-    
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-danger">
-                                                                            <i class="bx bx-down-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Buy ETH</h5>
-                                                                            <p class="text-muted mb-0 d-none">17 Mar, 2020</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">0.42 ETH</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 text-muted mb-0">$84.32</h5>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-success">
-                                                                            <i class="bx bx-up-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Sell ETH</h5>
-                                                                            <p class="text-muted mb-0 d-none">15 Mar, 2020</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">0.56 ETH</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 text-muted mb-0">$112.34</h5>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-12 text-dark opacity-50">
-                                                                            <i class="mdi mdi-checkbox-blank-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Sell BTC</h5>
-                                                                            <p class="text-muted mb-0 d-none">18 Mar, 2020</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">0.018 BTC</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 text-muted mb-0">$145.80</h5>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-success">
-                                                                            <i class="bx bx-up-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Sell ETH</h5>
-                                                                            <p class="text-muted mb-0 d-none">15 Mar, 2020</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">0.56 ETH</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 text-muted mb-0">$112.34</h5>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                
-    
-                                                                
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="font-size-22 text-danger">
-                                                                            <i class="bx bx-down-arrow-circle"></i>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div>
-                                                                            <h5 class="font-size-14 mb-1">Buy BTC</h5>
-                                                                            <p class="text-muted mb-0 d-none">14 Mar, 2020</p>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 mb-0">0.016 BTC</h5>
-                                                                        </div>
-                                                                    </td>
-    
-                                                                    <td>
-                                                                        <div class="text-end">
-                                                                            <h5 class="font-size-14 text-muted mb-0">$125.20</h5>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div></div></div></div><div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: none;"></div></div></div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="card-footer bg-transparent border-top">
-                                            <div class="text-center">
-                                                <a href="reports-clinic.html" class="btn btn-primary waves-effect waves-light"> View More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of charts -->
-
-                    <div class="row d-non">
-                        <div class="col-xl-6 px-sm-30px">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-0">Bill Creation And Receipted Bills</h4>
-                                    <small class="mb-3 text-muted">The last 12 Months</small>
-
-                                    <div>
-                                        <div id="member-salary-chart" class="apex-charts" dir="ltr"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="clearfix">
-                                        <div class="float-end">
-                                            <div class="input-group input-group-sm">
-                                                <select class="form-select form-select-sm">
-                                                    <option value="JA" selected>Jan</option>
-                                                    <option value="DE">Dec</option>
-                                                    <option value="NO">Nov</option>
-                                                    <option value="OC">Oct</option>
-                                                </select>
-                                                <label class="input-group-text">Month</label>
-                                            </div>
-                                        </div>
-                                        <h4 class="card-title mb-4">Top Revenue Earners</h4>
-                                    </div>
-                                    
-                                    <!-- <div class="d-flex flex-wrap align-items-start">
-                                        <div class="me-2">
-                                            <h5 class="card-title mb-3">Top Visitors</h5>
-                                        </div>
-                                        <div class="dropdown ms-auto">
-                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                <i class="mdi mdi-dots-horizontal"></i>
-                                            </a>
-                                          
-                                            <div class="dropdown-menu dropdown-menu-end">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                    <div class="row text-center d-non">
-                                        <div class="col-6 d-none">
-                                            <div class="mt-3">
-                                                <p class="text-muted mb-1">Today</p>
-                                                <h5>1024</h5>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-6 text-left">
-                                            <div class="mt-3">
-                                                <p class="text-muted mb-1">This Month</p>
-                                                <h5>KES 125,456 <span class="text-success font-size-13">0.2 % <i class="mdi mdi-arrow-up ms-1"></i></span></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="revenue-top">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">
-                                                <div class="py-2">
-                                                    <h5 class="font-size-12">Parking <span class="float-end">38%</span></h5>
-                                                    <div class="progress animated-progess progress-sm">
-                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 38%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </li>    
-                                            <li class="list-group-item">
-                                                <div class="py-2">
-                                                    <h5 class="font-size-12">Trade <span class="float-end">19%</span></h5>
-                                                    <div class="progress animated-progess progress-sm">
-                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 19%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <div class="py-2">
-                                                    <h5 class="font-size-12">Housing and Rent<span class="float-end">10.3%</span></h5>
-                                                    <div class="progress animated-progess progress-sm">
-                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 10.3%" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </li>   
-                                            <li class="list-group-item">
-                                                <div class="py-2">
-                                                    <h5 class="font-size-12">Adverts<span class="float-end">5%</span></h5>
-                                                    <div class="progress animated-progess progress-sm">
-                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </li>   
-                                            <li class="list-group-item">
-                                                <div class="py-2">
-                                                    <h5 class="font-size-12">Others<span class="float-end">4.2%</span></h5>
-                                                    <div class="progress animated-progess progress-sm">
-                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 4.2%" aria-valuenow="4.2" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </li>   
-                                            
-                                        </ul>
-                                        
-                                        
-                                    </div>
-                                </div>
-                                <div class="card-footer bg-transparent border-top">
-                                    <div class="text-center">
-                                        <a href="reports-sources.html" class="btn btn-primary waves-effect waves-light"> View All</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-7">
+                            <!-- revenue collection sources -->
                             <div class="card">
                                 <div class="card-body">
                                     <div class="float-end">
@@ -4032,629 +3340,167 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--end card-->
                         </div>
-                        <div class="col-5">
-                            <div class="card h-calc-25px">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-4">Inactive Licences</h4>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <p class="text-muted">Licenses that have expired</p>
-                                            <h3>56,908</h3>
-                                            <p class="text-muted"><span class="text-success me-2"> 12% <i class="mdi mdi-arrow-up"></i> </span> Renewed This Month</p>
-
-                                            <div class="mt-4">
-                                                <a href="javascript: void(0);" class="btn btn-primary waves-effect waves-light btn-sm d-none">Receipted Bills <i class="mdi mdi-arrow-right ms-1"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="mt-4 mt-sm-0">
-                                                <div id="radialBar-chart" class="apex-charts"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-                        </div>
-
                         
+                        <div class="col-xl-6 col-lg-5 col-sm-12">
+                            <div class="row">
 
-                        <div class="row d-non">
-                            <div class="col-xl-6 col-lg-7 col-sm-12 px-sm-30px">
-                                <div class="card calc-23">
-                                    <div class="card-body">
-                                        <div class="d-sm-flex flex-wrap">
-                                           <div class="d-flex flex-column">
-                                                <h4 class="card-title mb-1">Sub Counties</h4>
-                                                <p>Collections By Sub Counties</p>
-                                           </div>
-                                            <div class="ms-auto">
-                                                <ul class="nav nav-pills">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Today</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Monthly</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link active" href="#">Financial Year</a>
-                                                    </li>
+                                <div class=" col-12">
+                                    <div class="card">
+
+                                        <div class="card-header bg-transparent border-bottom">
+                                            <div class="">
+                                                <div class="d-flex justify-content-between">
+                                                   <div>
+                                                    <h4 class="card-title mb-1">Department Perfomance</h4>
+                                                    <p>Collected Revenue vs Revenue Targets</p>
+                                                   </div>
+
+                                                    <div class="float-end">
+                                                        <div class="input-group input-group-sm fw-semibold text-uppercase">
+                                                            <label class="input-group-text text-uppercase">Subcounties</label>
+                                                            <select class="form-select form-select-sm">
+                                                                <option value="JA" selected="">All Subcounties</option>
+                                                                <option value="DE">Homa Bay Town</option>
+                                                                <option value="NO">Rachuonyo N</option>
+                                                                <option value="OC">Rachuonyo S</option>
+                                                            </select>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <ul class="nav nav-tabs nav-tabs-custom card-header-tabs ms-auto" role="tablist">
+                                                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#" role="tab">Today</a>
+                                                    </li>                                                    
+                                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#" role="tab">Monthly</a></li>
+                                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#" role="tab">Financial Year</a></li>
                                                 </ul>
                                             </div>
                                         </div>
-                                        
-    
-                                        <div id="Map-data" class="h-80" dir="ltr"></div>
-                                    </div>
-                                    <div class="card-footer bg-transparent border-top">
-                                        <div class="text-center">
-                                            <a href="javascript: void(0);" class="btn btn-primary waves-effect waves-light"> <i class="mdi mdi-download-outline"></i> Download Custom Reports</a>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                                <!--end card-->
-                            </div>
-                            
-                            <div class="col-xl-6 col-lg-5 col-sm-12">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="card">
+                                       
+                                        <div class="card-body">
                                            
-                                            <div class="card-body">
-                                                <div class="d-sm-flex flex-wrap">
-                                                    <div class="d-flex flex-column">
-                                                         <h4 class="card-title mb-1">Departments</h4>
-                                                         <p>Revenue Collection By department</p>
-                                                    </div>
-                                                     <div class="ms-auto">
-                                                         <ul class="nav nav-pills">
-                                                             <li class="nav-item">
-                                                                 <a class="nav-link" href="#">Today</a>
-                                                             </li>
-                                                             
-                                                             <li class="nav-item">
-                                                                 <a class="nav-link active" href="#">Financial Year</a>
-                                                             </li>
-                                                         </ul>
-                                                     </div>
-                                                 </div>
-                                                 <div id="collected-rev"></div>
-                                              
-                                            </div>
-                                            <div class="card-footer bg-transparent border-top d-none">
-                                                <div class="text-center">
-                                                    <a href="reports-revenue-streams.html" class="btn btn-dark waves-effect waves-light"> View Applications</a>
-                                                </div>
+                                             <div id="collected-rev"></div>
+                                          
+                                        </div>
+                                        <div class="card-footer bg-transparent border-top d-none">
+                                            <div class="text-center">
+                                                <a href="reports-revenue-streams.html" class="btn btn-dark waves-effect waves-light"> View Applications</a>
                                             </div>
                                         </div>
                                     </div>
-    
-                                    <div class="col-xl-12">
-                                        <div class="card">
-                                            <div class="card-header bg-white border-bottom">
-                                                <div class="float-end d-non">
-                                                    <select class="form-select form-select-sm ms-2">
-                                                        <option value="MA" selected>March</option>
-                                                        <option value="FE">February</option>
-                                                        <option value="JA">January</option>
-                                                        <option value="DE">December</option>
-                                                    </select>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <div class="card calc-23">
+                                        <div class="card-header bg-transparent border-bottom">
+                                            <div class="">
+                                                <div class="d-flex justify-content-between">
+                                                   <div>
+                                                    <h4 class="card-title mb-1">Collections by Sub counties</h4>
+                                                    <p class="">All Revenue Streams</p>
+                                                   </div>
+
+                                                    <div class="float-end">
+                                                        <div class="input-group input-group-sm fw-semibold text-uppercase">
+                                                            <label class="input-group-text text-uppercase">Streams</label>
+                                                            <select class="form-select form-select-sm">
+                                                                <option value="JA" selected="">All Revenue Streams</option>
+                                                                <option value="DE">Daily Parking</option>
+                                                                <option value="NO">Bus Park</option>
+                                                                <option value="OC">Markets</option>
+                                                                <option value="OC">Fish Cess</option>
+                                                            </select>
+                                                            
+                                                        </div>
+                                                    </div>
+
                                                 </div>
-                                                <h4 class="card-title mb-3">Revenue collection by Department</h4>
-                                            </div>
-                                            <div class="card-body">
-        
-                                                <ul class="nav nav-pills bg-light rounded d-none" role="tablist">
-                                                    <li class="nav-item" role="presentation">
-                                                        <a class="nav-link active" data-bs-toggle="tab" href="#transactions-all-tab" role="tab" aria-selected="true">Bottom 7</a>
-                                                    </li>
-                                                    <li class="nav-item" role="presentation">
-                                                        <a class="nav-link" data-bs-toggle="tab" href="#transactions-buy-tab" role="tab" aria-selected="false" tabindex="-1">Top 7</a>
-                                                    </li>
-                                                    <li class="nav-item d-none" role="presentation">
-                                                        <a class="nav-link" data-bs-toggle="tab" href="#transactions-sell-tab" role="tab" aria-selected="false" tabindex="-1">Sell</a>
-                                                    </li>
+                                                <ul class="nav nav-tabs nav-tabs-custom card-header-tabs ms-auto" role="tablist">
+                                                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#" role="tab">Today</a>
+                                                    </li>                                                    
+                                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#" role="tab">Monthly</a></li>
+                                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#" role="tab">Financial Year</a></li>
                                                 </ul>
-                                                <div class="tab-content mt-">
-                                                    <div class="tab-pane active" id="transactions-all-tab" role="tabpanel">
-                                                        <div class="table-responsive" data-simplebar="init" style="max-height: 330px;"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: -15px; bottom: -15px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: scroll;"><div class="simplebar-content" style="padding: 0px;">
-                                                            <table class="table align-middle table-nowrap">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="width: 50px;">
-                                                                            <div class="font-size-22 text-success">
-                                                                                <i class="bx bx-up-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Dental</h5>
-                                                                                <p class="text-muted mb-0 d-none">39 Appointments</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">KES 45,908</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-success">
-                                                                                <i class="bx bx-up-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Pharmecey Department</h5>
-                                                                                <p class="text-muted mb-0 d-none">KES 532,900</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0 text-right">KES 532,900</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-danger">
-                                                                                <i class="bx bx-down-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Casualty department</h5>
-                                                                                <p class="text-muted mb-0 d-none">324 Cars</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">KES 452,900</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-danger">
-                                                                                <i class="bx bx-down-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Occupational Therapy </h5>
-                                                                                <p class="text-muted mb-0 d-none">1,020 Cars</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">KES 762,900</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                       
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-12 text-dark opacity-50">
-                                                                                <i class="mdi mdi-checkbox-blank-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Renal Unit </h5>
-                                                                                <p class="text-muted mb-0 d-none">56 Appoint</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">KES 764,900</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        
-                                                                    </tr>
-        
-                                                                   
-                                                                </tbody>
-                                                            </table>
-                                                        </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 473px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: visible;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: block; width: 196px;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 230px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
-                                                    </div>
-                                                    <div class="tab-pane" id="transactions-buy-tab" role="tabpanel">
-                                                        <div class="table-responsive" data-simplebar="init" style="max-height: 330px;"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;"><div class="simplebar-content" style="padding: 0px;">
-                                                            <table class="table align-middle table-nowrap">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="width: 50px;">
-                                                                            <div class="font-size-22 text-danger">
-                                                                                <i class="bx bx-down-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Kenya Commercial bank</h5>
-                                                                                <p class="text-muted mb-0 d-none">345 Member sacco Cars</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">90% Compliance</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-success">
-                                                                                <i class="bx bx-up-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Kenya Revenue Authority</h5>
-                                                                                <p class="text-muted mb-0 d-none">450 Cars</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0 text-right">90% Compliance</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-12 text-dark opacity-50">
-                                                                                <i class="mdi mdi-checkbox-blank-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Kenyatta National Hospital</h5>
-                                                                                <p class="text-muted mb-0 d-none">324 Cars</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">88% Compliance</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-danger">
-                                                                                <i class="bx bx-down-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Kenya Red Cross Society </h5>
-                                                                                <p class="text-muted mb-0 d-none">1,020 Cars</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">87% Compliance</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                       
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-success">
-                                                                                <i class="bx bx-up-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Oxfam</h5>
-                                                                                <p class="text-muted mb-0 d-none">560 Cars</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">81% Compliance</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td style="width: 50px;">
-                                                                            <div class="font-size-22 text-danger">
-                                                                                <i class="bx bx-down-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">KCB Group </h5>
-                                                                                <p class="text-muted mb-0 d-none">32 Cars</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">76% Compliance</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-success">
-                                                                                <i class="bx bx-up-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">United Nations</h5>
-                                                                                <p class="text-muted mb-0 d-none">15 Mar, 2020</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">76% Compliance</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div></div></div></div><div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: none;"></div></div></div>
-                                                    </div>
-        
-                                                    <div class="tab-pane" id="transactions-sell-tab" role="tabpanel">
-                                                        <div class="table-responsive" data-simplebar="init" style="max-height: 330px;"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;"><div class="simplebar-content" style="padding: 0px;">
-                                                            <table class="table align-middle table-nowrap">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="width: 50px;">
-                                                                            <div class="font-size-22 text-danger">
-                                                                                <i class="bx bx-down-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Buy BTC</h5>
-                                                                                <p class="text-muted mb-0 d-none">14 Mar, 2020</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">0.016 BTC</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 text-muted mb-0">$125.20</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-danger">
-                                                                                <i class="bx bx-down-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Buy LTC</h5>
-                                                                                <p class="text-muted mb-0 d-none">16 Mar, 2020</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">1.88 LTC</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 text-muted mb-0">$94.22</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-        
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-danger">
-                                                                                <i class="bx bx-down-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Buy ETH</h5>
-                                                                                <p class="text-muted mb-0 d-none">17 Mar, 2020</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">0.42 ETH</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 text-muted mb-0">$84.32</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-success">
-                                                                                <i class="bx bx-up-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Sell ETH</h5>
-                                                                                <p class="text-muted mb-0 d-none">15 Mar, 2020</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">0.56 ETH</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 text-muted mb-0">$112.34</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-12 text-dark opacity-50">
-                                                                                <i class="mdi mdi-checkbox-blank-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Sell BTC</h5>
-                                                                                <p class="text-muted mb-0 d-none">18 Mar, 2020</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">0.018 BTC</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 text-muted mb-0">$145.80</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-success">
-                                                                                <i class="bx bx-up-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Sell ETH</h5>
-                                                                                <p class="text-muted mb-0 d-none">15 Mar, 2020</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">0.56 ETH</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 text-muted mb-0">$112.34</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    
-        
-                                                                    
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="font-size-22 text-danger">
-                                                                                <i class="bx bx-down-arrow-circle"></i>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div>
-                                                                                <h5 class="font-size-14 mb-1">Buy BTC</h5>
-                                                                                <p class="text-muted mb-0 d-none">14 Mar, 2020</p>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 mb-0">0.016 BTC</h5>
-                                                                            </div>
-                                                                        </td>
-        
-                                                                        <td>
-                                                                            <div class="text-end">
-                                                                                <h5 class="font-size-14 text-muted mb-0">$125.20</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div></div></div></div><div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: none;"></div></div></div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+        
+                                            <div id="Map-data" class="h-80" dir="ltr"></div>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-top">
+                                            <div class="text-center">
+                                                <a href="javascript: void(0);" class="btn btn-primary waves-effect waves-light"> <i class="mdi mdi-download-outline"></i> Download Custom Reports</a>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>  
+                                </div>
+                               
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of charts -->
+
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+
+                                <div class="card-header bg-transparent border-bottom">
+                                    <div class="">
+                                        <div class="d-flex justify-content-between">
+                                           <div>
+                                            <h4 class="card-title mb-1">Revenue Collection perfomance</h4>
+                                            <p>Comparison of Revenue collection by last FY collections, by target and actual collections for this financial year</p>
+                                           </div>
+
+                                            <div class="float-end d-flex align-items-center justify-content-center">
+                                                <div class="input-group input-group-sm fw-semibold text-uppercase mx-3">
+                                                    <label class="input-group-text text-uppercase">Subcounties</label>
+                                                    <select class="form-select form-select-sm">
+                                                        <option value="JA" selected="">All Subcounties</option>
+                                                        <option value="DE">Homa Bay Town</option>
+                                                        <option value="NO">Rachuonyo N</option>
+                                                        <option value="OC">Rachuonyo S</option>
+                                                    </select>
+                                                    
+                                                </div>
+
+                                                <div class="input-group input-group-sm fw-semibold text-uppercase">
+                                                    <label class="input-group-text text-uppercase">Departments</label>
+                                                    <select class="form-select form-select-sm">
+                                                        <option value="JA" selected="">All Departments</option>
+                                                        <option value="DE">Homa Bay Town</option>
+                                                        <option value="NO">Rachuonyo N</option>
+                                                        <option value="OC">Rachuonyo S</option>
+                                                    </select>
                                                     
                                                 </div>
                                             </div>
-                                            <div class="card-footer bg-transparent border-top">
-                                                <div class="text-center">
-                                                    <a href="reports-clinic.html" class="btn btn-primary waves-effect waves-light"> View More</a>
-                                                </div>
-                                            </div>
+
                                         </div>
+                                       
+                                    </div>
+                                </div>
+                               
+                                <div class="card-body">
+                                   
+                                     <div id="rev-perfomace-chart"></div>
+                                  
+                                </div>
+                                <div class="card-footer bg-transparent border-top d-none">
+                                    <div class="text-center">
+                                        <a href="reports-revenue-streams.html" class="btn btn-dark waves-effect waves-light"> View Applications</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <!-- end row -->
 
 
 
@@ -4738,6 +3584,7 @@
    <!-- highchart map modules -->
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
@@ -4862,6 +3709,92 @@
             });
         });
     </script>
+
+   <script>
+    // Sample data for three series
+var categories = ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+var lastYearData = [50000, 52000, 55000, 48000, 49000, 51000, 54000, 56000, 59000, 61000, 63000, 66000];
+var targetData = [60000, 60000, 60000, 60000, 60000, 60000, 60000, 60000, 60000, 60000, 60000, 60000];
+var actualData = [48000, 51000, 54000, 47000, 49000, 52000, 55000, 58000, 59000, 61000, 62000, 65000];
+var transactionsData = [200, 220, 210, 230, 250, 240, 260, 270, 280, 290, 310, 320];
+
+Highcharts.chart('rev-perfomace-chart', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: null // Set the title to null
+    },
+    xAxis: {
+        categories: categories,
+        title: {
+            text: 'Months'
+        },
+        labels: {
+            style: {
+                fontFamily: 'Montserrat' // Set the font family
+            }
+        }
+    },
+    yAxis: [
+        {
+            title: {
+                text: 'Amount (in USD)'
+            },
+            labels: {
+                style: {
+                    fontFamily: 'Montserrat' // Set the font family
+                }
+            }
+        },
+        {
+            title: {
+                text: 'Number of Transactions'
+            },
+            opposite: true
+        }
+    ],
+    legend: {
+        align: 'center', // Center the legend horizontally
+        layout: 'horizontal', // Set the legend layout to horizontal
+        itemWidth: 150, // Adjust the width of legend items as needed
+        shared: true // Make the legend shared
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.1,
+            borderWidth: 0
+        }
+    },
+    tooltip: {
+        shared: true // Make the tooltip shared for all series
+    },
+    series: [
+        {
+            name: 'Last FY Collections',
+            data: lastYearData
+        },
+        {
+            name: 'Revenue Target',
+            data: targetData
+        },
+        {
+            name: 'Actual FY Collections',
+            data: actualData
+        },
+        {
+            name: 'Number of Transactions',
+            data: transactionsData,
+            yAxis: 1, // Use the second yAxis for this series
+            type: 'spline' // Use a spline chart for this series
+        }
+    ],
+    credits: {
+        enabled: false // Hide the Highcharts credits
+    }
+});
+
+   </script>
 </body>
 
 

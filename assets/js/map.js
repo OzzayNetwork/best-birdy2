@@ -1681,8 +1681,18 @@ const Mapchart=Highcharts.mapChart('Map-data', {
             dataLabels: {
                 enabled: true,
                 color: '#FFFFFF',
-                format: '{point.name}'
-            },
+                formatter: function () {
+                    return '<span style="font-weight:500; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">' + this.point.name + ': </span>' +
+                        '<span style="font-size: 18px; color: yellow; vertical-align: middle; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">&bull;</span> KES ' +
+                        Highcharts.numberFormat(this.point.value, 0);
+                },
+                style: {
+                    textOutline: 'none' // Remove text outline (optional)
+                }
+            }
+            
+            
+            
         }
     ],
 
@@ -1748,6 +1758,14 @@ const Mapchart=Highcharts.mapChart('Map-data', {
             [0.7, '#103d8e'],
             [1, '#00226c']
         ] 
+    },
+    dataLabels: {
+        enabled: true,
+        color: '#FFFFFF',
+        format: '<span style="font-weight:500;">{point.name} Sub County: </span>KES {point.value}',
+        style: {
+            textOutline: 'none' // Remove text outline (optional)
+        }
     },
     
     
