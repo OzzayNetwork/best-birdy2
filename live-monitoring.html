@@ -461,7 +461,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Live Monotoring</h4>
+                                <h4 class="mb-sm-0 font-size-18">System Users Live Monitoring</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -471,6 +471,8 @@
                                         
                                     </ol>
                                 </div>
+
+                                
 
 
                             </div>
@@ -494,14 +496,40 @@
                                         <div class="collapse navbar-collapse justify-content-between active"
                                             id="navbarNavAltMarkup">
                                             <div class="navbar-nav">
-                                                <a class="nav-item nav-link" href="live-monitoring.html">All Users</a>
-                                                <a class="nav-item nav-link" href="live-monitoring-active.html">Active Users</a>
+                                                <a class="nav-item nav-link" href="live-monitoring.html">All Users (100)</a>
+                                                <a class="nav-item nav-link" href="live-monitoring-active.html">Active Users (78)</a>
 
-                                                    <a class="nav-item nav-link" href="live-monitoring-dormant.html">Dormant Users</a>
-                                                <a class="nav-item nav-link" href="live-monitoring-out.html">Logged Out Users</a>
-                                                <a class="nav-item nav-link" href="live-monitoring-never.html">Never Logged In</a>
+                                                    <a class="nav-item nav-link" href="live-monitoring-dormant.html">Dormant Users (90)</a>
+                                                <a class="nav-item nav-link" href="live-monitoring-out.html">Offline (900)</a>
+                                                <a class="nav-item nav-link" href="live-monitoring-never.html">Never Logged In (987)</a>
                                                 
                                             </div>
+
+                                            <form class="form-inline mx-3 my-lg-0 d-flex text-capitalize">
+                                                <select class="form-select">
+                                                    <option>All target Classifications</option>
+                                                    <option>Underperforming (Below 80%)</option>
+                                                    <option>Below Target (80%-90%)</option>
+                                                    <option>Performing (91%-100%)</option>
+                                                    <option>Above Target (Above 100%)</option>
+                                                    <option>Zero Collectors</option>
+                                                </select>
+
+                                                <select class="form-select mx-2">
+                                                    <option>All User Categories</option>
+                                                    <option>Revenue Collectors</option>
+                                                    <option>Licensing Officers</option>
+                                                    <option>Inspectors</option>
+                                                    <option>Enforcers</option>
+                                                </select>
+
+                                                <select class="form-select">
+                                                    <option>All Sub Counties</option>
+                                                    <option>Homa Bay Town</option>
+                                                    <option>Ndhiwa</option>
+                                                </select>
+                                               
+                                              </form>
                                             
 
                                         </div>
@@ -512,43 +540,102 @@
                         </div>
                     </div>
                     <!-- end of toolbar -->
+
+                    <!-- revenue team highlights -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="d-flex">                                               
+                                                <div class="flex-grow-1 align-self-center">
+                                                    <div class="text-muted">                                                        
+                                                        <h5 class="mb-1">All Revenue Collectors</h5>
+                                                        <p class="mb-0">Revenue perfomance for the period 21 Aug 2023 to 21 Aug 2023</p>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="col-lg-8 align-self-center text-uppercase">
+                                            <div class="text-lg-center mt-4 mt-lg-0">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Zero Collectors</p>
+                                                            <h5 class="mb-0">48</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Underperforming</p>
+                                                            <h5 class="mb-0">40</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Performing</p>
+                                                            <h5 class="mb-0">18</h5>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-2">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Above Target</p>
+                                                            <h5 class="mb-0">18</h5>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of highlights -->
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div
-                                    class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
-                                        role="toolbar">
-                                        <h4 class="card-title text-capitalize mb-0 ">
-                                            All users
-                                        </h4>
+                                <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+                                    <div class="flex-grow-1">
+                                      <div class="search-box mb-0 me-3">
+                                          <div class="position-relative">
+                                              <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                                              <i class="bx bx-search-alt search-icon"></i>
+                                          </div>
+                                      </div>
                                     </div>
-                                    <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
-                                       
 
-                                        <label class="text-nowrap mb-0 mx-2">System Roles:</label>
-                                        <select class="form-select" title="Select Subcounty">
-                                            <option>All Roles</option>
-                                            <option>Revenue Collectors</option>
-                                            <option>Revenue Inspectors</option>
-                                            <option>Revenue Enforcers</option>
-                                            <option>Revenue Officers</option>
-                                        </select>
+                                      <div class="d-flex">
+                                          <div class="d-flex align-items-center me-3 pe-3">
+                                              <span class="pr-3 fw-semibold">From:</span>
+                                              <input class="form-control" placeholder="Start date" type="date">
+                                              <span class="px-3 fw-semibold">TO:</span>
+                                              <input class="form-control" placeholder="Start date" type="date">
+                                          </div>
+                                          <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                              <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                          </button>
 
-                                        <select class="form-select mx-3" title="Select Subcounty ">
-                                            <option>All of Sub counties</option>
-                                            <option>Homabay Town</option>
-                                            <option>Ndhiwa</option>
-                                            <option>...</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                      </div>
+
+
+                                  </div>
                                 <div class="card-body">
                                     <div class="table-responsive ">
 
                                         <table class="table align-middle table-hover  contacts-table table-striped "
-                                            id="datatable-buttons">
+                                            id="">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th scope="col">#</th>
@@ -558,10 +645,13 @@
                                                     <th>Idle Time</th>
                                                     <th scope="col">Log ins</th>
                                                     <th scope="col">Pending Bills</th>
-                                                    <th scope="col">Receipted Bills</th>
+                                                    <th scope="col">Transactions</th>
                                                     <th scope="col">Inspections</th>
-                                                    <th scope="col" class="text-right">Value Of Inspections</th>
-                                                    <th scope="col" class="text-right">Value Of Collections</th>                                                   
+                                                                                                    
+                                                    <th scope="col" class="text-right">Inspections Value</th>
+                                                    <th class="text-right">Target</th>
+                                                    <th>Target Rating</th>  
+                                                    <th scope="col" class="text-right">Collections value</th>                                                   
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -582,7 +672,100 @@
                                                    <td>4</td>
                                                    <td>45</td>
                                                     <td>56</td>
+                                                   
                                                     <td class="text-right text-uppercase fw-semibold">KES 12,900</td>
+                                                    <td class="text-right text-uppercase fw-semibold">KES 12,900</td>
+                                                    <td class="table-danger fw-bold" data-toggle="tooltip" data-placement="top" title="Underperforming (Collections that are 80% and below of the target)">
+                                                        45%
+
+                                                        <span class="badge rounded-pill bg-danger float-end text-uppercase">Underperforming</span>
+                                                    </td>
+                                                    <TD class="text-right text-uppercase fw-semibold">kes 45,890</TD>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">2.</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0">Kelvin Njuguna</p>
+                                                        <small>Revenue Collector</small>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="tel:0704 548 859">0704 548 859</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-uppercase badge badge-soft-success">online</span>
+                                                    </td>
+                                                    <td>23 Min</td>
+                                                   <td>3</td>
+                                                   <td>4</td>
+                                                   <td>45</td>
+                                                    <td>56</td>
+                                                   
+                                                    <td class="text-right text-uppercase fw-semibold">KES 12,900</td>
+                                                    <td class="text-right text-uppercase fw-semibold">KES 12,900</td>
+                                                    <td class="table-warning fw-bold" data-toggle="tooltip" data-placement="top" title="Below Target (Collections that are 80%-90% of the target)">
+                                                        88%
+
+                                                        <span class="badge rounded-pill bg-warning float-end text-uppercase">Below Target</span>
+                                                    </td>
+                                                    <TD class="text-right text-uppercase fw-semibold">kes 45,890</TD>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">3.</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0">Kelvin Njuguna</p>
+                                                        <small>Revenue Collector</small>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="tel:0704 548 859">0704 548 859</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-uppercase badge badge-soft-success">online</span>
+                                                    </td>
+                                                    <td>23 Min</td>
+                                                   <td>3</td>
+                                                   <td>4</td>
+                                                   <td>45</td>
+                                                    <td>56</td>
+                                                   
+                                                    <td class="text-right text-uppercase fw-semibold">KES 12,900</td>
+                                                    <td class="text-right text-uppercase fw-semibold">KES 12,900</td>
+                                                    <td class="table-info fw-bold" data-toggle="tooltip" data-placement="top" title="Performing (Collections that are 90%-100% of the target)">
+                                                        98%
+
+                                                        <span class="badge rounded-pill bg-info float-end text-uppercase">Performing</span>
+                                                    </td>
+                                                    <TD class="text-right text-uppercase fw-semibold">kes 45,890</TD>
+                                                </tr>
+                                                
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">4.</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0">Kelvin Njuguna</p>
+                                                        <small>Revenue Collector</small>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="tel:0704 548 859">0704 548 859</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-uppercase badge badge-soft-success">online</span>
+                                                    </td>
+                                                    <td>23 Min</td>
+                                                   <td>3</td>
+                                                   <td>4</td>
+                                                   <td>45</td>
+                                                    <td>56</td>
+                                                   
+                                                    <td class="text-right text-uppercase fw-semibold">KES 12,900</td>
+                                                    <td class="text-right text-uppercase fw-semibold">KES 12,900</td>
+                                                    <td class="table-success fw-bold" data-toggle="tooltip" data-placement="top" title="Above Target (collectuons above 100%)">
+                                                        108%
+                                                       
+
+                                                        <span class="badge rounded-pill bg-success float-end text-uppercase">Above Target</span>
+                                                    </td>
                                                     <TD class="text-right text-uppercase fw-semibold">kes 45,890</TD>
                                                 </tr>
                                                 
@@ -598,6 +781,12 @@
                                                     <td>456</td>
                                                     <td>456</td>
                                                     <th class="text-right">KES 34,890</th>
+                                                    <th class="text-right">KES 34,890</th>
+                                                    <th class="text-warning" data-toggle="tooltip" data-placement="top" title="Below Target (Collections that are 80%-90% of the target)">
+                                                        85%
+
+                                                        <span class="badge rounded-pill bg-warning float-end text-uppercase">Below Target</span>
+                                                    </th>
                                                     <th class="text-right">KES 34,890</th>
                                                 </tr>
 
