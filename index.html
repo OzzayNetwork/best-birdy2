@@ -3969,7 +3969,43 @@
                         ],
                         title: {
                             text: 'Daily Collections for ' + month
+                        },
+
+                        plotOptions: {
+                    column: {
+                        pointPadding: 0.1,
+                        borderWidth: 0,
+                        colorByPoint: false, // Enable different colors for each column
+                        colors: [
+                            'rgba(124, 181, 236, 0.8)',
+                            'rgba(144, 237, 125, 0.8)',
+                            'rgba(255, 152, 0, 0.8)',
+                            'rgba(128, 133, 233, 0.8)',
+                            'rgba(255, 95, 132, 0.8)',
+                            'rgba(0, 191, 255, 0.8)',
+                            'rgba(255, 0, 0, 0.8)',
+                            'rgba(255, 255, 0, 0.8)',
+                            'rgba(0, 255, 255, 0.8)',
+                            'rgba(255, 0, 255, 0.8)',
+                            'rgba(128, 128, 128, 0.8)',
+                            'rgba(255, 255, 255, 0.8)'
+                        ],
+                        dataLabels: {
+                            enabled: true,
+                            rotation: -90,
+                            color: '#FFFFFF',
+                            align: 'right',
+                            format: 'KES {point.y:,.2f}',
+                            y: 10,
+                            style: {
+                                fontSize: '12px',
+                                fontFamily: 'Verdana, sans-serif'
+                            }
                         }
+                    }
+                },
+
+
                     },
                     yAxis: {
                         title: {
