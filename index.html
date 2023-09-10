@@ -1375,16 +1375,22 @@
 
                         <!-- table view -->
                         <div class="row d-non">
-                            <div class="col-3">
+                            <div class="col-md-3 col-sm-12">
                                 <div class="card">
-                                    <div class="card-header  bg-white">
-                                        <div>
-                                            <h4 class="card-title text-left text-capitalize">Subcounty Collections</h4>
-                                            <div></div>
+                                    <div class="card-header  bg-white py-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="card-title text-left text-capitalize mb-0">Subcounty Collections</h4>
+                                            <div>
+                                                <div class="form-check form-switch form-switch-md mb-0" dir="ltr">
+                                                    <label class="form-check-label" for="subcounty-switch">Hide</label>
+                                                    <input class="form-check-input check-dash" name="card-hider" checked type="checkbox" id="subcounty-switch">
+                                                    
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <h4 class="card-title text-left">Collections By Sub Counties</h4>
+                                        <h4 class="card-title text-left d-none">Collections By Sub Counties</h4>
                                         <h6 class="card-subtitle text-center d-none">Revenue collections for the
                                             different sub counties (KES)
                                         </h6>
@@ -1393,60 +1399,67 @@
                                                 <thead>
                                                     <tr class="font-weight-bold table-dark">
                                                         <th scope="col">Sub Counties</th>
-                                                        <th scope="col">Today</th>
-                                                        <th scope="col">FY</th>
+                                                        <th scope="col" class="text-right">Today</th>
+                                                        <th scope="col" class="text-right">FY</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody>
+                                                <tbody class="align-middle">
                                                     <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">HOMA BAY TOWN</td>
-                                                        <td>93,681</td>
-                                                        <td>1,675,191</td>
+
+                                                        <!-- if the collections are above target -->
+                                                        <td scope="row"><small class="mdi mdi-rectangle text-success "></small> HOMA BAY TOWN</td>
+                                                        <td class="text-right">93,681 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
+                                                        <td class="text-right" class="">1,675,191 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                     </tr>
                                                     <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">RACHUONYO NORTH</td>
-                                                        <td>97,220</td>
-                                                        <td>1,493,250</td>
+                                                        <!-- if collections are performing in relation to the target -->
+                                                        <td scope="row"><small class="mdi mdi-rectangle text-info "></small> <span class="">RACHUONYO N.</span></td>
+                                                        <td class="text-right">97,220 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
+                                                        <td class="text-right">1,493,250 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
+                                                    </tr>
+
+                                                     <!-- if collections are below target in relation to the target -->
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row"><small class="mdi mdi-rectangle text-warning"></small> RACHUONYO S</td>
+                                                        <td class="text-right">55,630 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
+                                                        <td class="text-right">1,147,013 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
+                                                    </tr>
+
+                                                     <!-- if collections are under performing in relation to the target -->
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row"><small class="mdi mdi-rectangle text-danger"></small> SUBA N</td>
+                                                        <td class="text-right">74,120 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
+                                                        <td class="text-right">705,642 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                     </tr>
                                                     <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">RACHUONYO SOUTH</td>
-                                                        <td>55,630</td>
-                                                        <td>1,147,013</td>
+                                                        <td scope="row"><small class="mdi mdi-rectangle text-success"></small> RACHUONYO E.</td>
+                                                        <td class="text-right">53,660 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
+                                                        <td class="text-right">647,090 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                     </tr>
                                                     <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">SUBA NORTH</td>
-                                                        <td>74,120</td>
-                                                        <td>705,642</td>
+                                                        <td scope="row"><small class="mdi mdi-rectangle text-success"></small> NDHIWA</td>
+                                                        <td class="text-right">67,800 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
+                                                        <td class="text-right">616,541 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                     </tr>
                                                     <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">RACHUONYO EAST</td>
-                                                        <td>53,660</td>
-                                                        <td>647,090</td>
+                                                        <td scope="row"><small class="mdi mdi-rectangle text-success"></small> SUBA S.</td>
+                                                        <td class="text-right">31,060 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
+                                                        <td class="text-right">588,620 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                     </tr>
                                                     <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">NDHIWA</td>
-                                                        <td>67,800</td>
-                                                        <td>616,541</td>
+                                                        <td scope="row"><small class="mdi mdi-rectangle text-success"></small> RANGWE</td>
+                                                        <td class="text-right">42,150 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
+                                                        <td class="text-right">340,810 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                     </tr>
                                                     <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">SUBA SOUTH</td>
-                                                        <td>31,060</td>
-                                                        <td>588,620</td>
-                                                    </tr>
-                                                    <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">RANGWE</td>
-                                                        <td>42,150</td>
-                                                        <td>340,810</td>
-                                                    </tr>
-                                                    <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">HOMA BAY HQ</td>
-                                                        <td>50</td>
-                                                        <td>23,630</td>
+                                                        <td scope="row"><small class="mdi mdi-rectangle text-success"></small> HOMA BAY HQ</td>
+                                                        <td class="text-right">50 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
+                                                        <td class="text-right">23,630 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                     </tr>
                                                     <tr style="background: rgb(206, 233, 216);">
                                                         <th><strong>Total</strong></th>
-                                                        <th>KES 515,371</th>
-                                                        <th>KES 7,237,787</th>
+                                                        <th class="text-right">KES 515,371 </th>
+                                                        <th class="text-right">KES 7,237,787</th>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -1461,12 +1474,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-md-3 col-sm-12">
                                 <div class="card">
+                                    <div class="card-header  bg-white py-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="card-title text-left text-capitalize mb-0">Ward Collections</h4>
+                                            <div>
+                                                <div class="form-check form-switch form-switch-md mb-0" dir="ltr">
+                                                    <label class="form-check-label" for="ward-switch">Hide</label>
+                                                    <input class="form-check-input check-dash" name="card-hider" checked type="checkbox" id="ward-switch">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-body">
-                                        <h4 class="card-title text-left">Revenue Collection By Wards</h4>
-                                        <h6 class="card-subtitle text-center d-none">Revenue collections for the
-                                            different zones (KES) </h6>
+                                        
                                         <div class="table-responsive font-12" style="height: 385px; overflow-y: auto;">
                                             <table class="table table-striped table-sm font-12 sources-table">
                                                 <thead class="table-dark">
@@ -1697,12 +1720,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-md-3 col-sm-12">
                                 <div class="card">
+                                    <div class="card-header  bg-white py-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="card-title text-left text-capitalize mb-0">Zone Collections</h4>
+                                            <div>
+                                                <div class="form-check form-switch form-switch-md mb-0" dir="ltr">
+                                                    <label class="form-check-label" for="zone-switch">Hide</label>
+                                                    <input class="form-check-input check-dash" name="card-hider" checked type="checkbox" id="zone-switch">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-body">
-                                        <h4 class="card-title">Revenue Collection By Zones</h4>
-                                        <h6 class="card-subtitle text-center d-none">Revenue collections for the
-                                            different zones (KES) </h6>
+                                        
                                         <div class="table-responsive font-12" style="height: 385px; overflow-y: auto;">
                                             <table class="table table-striped table-sm font-12 sources-table">
                                                 <thead class="table-dark">
@@ -3208,12 +3241,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-md-3 col-sm-12">
                                 <div class="card">
+                                    <div class="card-header  bg-white py-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="card-title text-left text-capitalize mb-0">Departmental Collections</h4>
+                                            <div>
+                                                <div class="form-check form-switch form-switch-md mb-0" dir="ltr">
+                                                    <label class="form-check-label" for="department-switch">Hide</label>
+                                                    <input class="form-check-input check-dash" name="card-hider" checked type="checkbox" id="department-switch">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-body">
-                                        <h4 class="card-title text-left">Collections By Departments</h4>
-                                        <h6 class="card-subtitle text-center d-none">Revenue collections for the
-                                            different departments </h6>
+                                       
                                         <div class="table-responsive font-12" style="height: 385px; overflow-y: auto;">
                                             <table class="table table-striped table-sm font-12 sources-table">
                                                 <thead>

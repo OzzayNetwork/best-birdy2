@@ -858,6 +858,35 @@ $(document).ready(function() {
         
     })
 
+    $('body').on('change','.check-dash', function(){
+       //$('.check-dash').siblings('label').text("Show")
+
+       var id = $(this).attr('id');
+
+       var isChecked = isCheckboxChecked(id);
+
+       if (isChecked) {
+            $('.check-dash').siblings('label').text("Hide")
+            $('.check-dash').prop("checked", true);
+
+            $('.check-dash').siblings('label').text("Show").parent().parent().parent().parent().removeClass('bg-warning').addClass('bg-white').siblings().removeClass('d-none')
+        } else {
+            $('.check-dash').siblings('label').text("Show").parent().parent().parent().parent().addClass('bg-warning').removeClass('bg-white').siblings().addClass('d-none')
+            $('.check-dash').prop("checked", false);
+        }
+    })
+
+    function isCheckboxChecked(checkboxId) {
+        var checkbox = document.getElementById(checkboxId);
+        if (checkbox) {
+          return checkbox.checked;
+        } else {
+          console.error("Checkbox with ID " + checkboxId + " not found.");
+          return false; // Assuming unchecked if the checkbox is not found
+        }
+      }
+      
+
 
     $('.selectpicker').selectpicker();
     $('.selectpicker').selectpicker('render')
