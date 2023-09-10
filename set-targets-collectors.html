@@ -453,14 +453,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Daily Revenue Tragets for Revenue Agents</h4>
+                                <h4 class="mb-sm-0 font-size-18">revenue Target for colectors</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Set Ups</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Revenue Streams 2023/2024</a></li>
-                                        <li class="breadcrumb-item active">Revenue Officers daily Targets</li>
+                                        <li class="breadcrumb-item"><a href="#">Revenue Targets</a></li>
+                                        <li class="breadcrumb-item active">Collectors revenue targets</li>
                                     </ol>
                                 </div>
 
@@ -472,8 +472,8 @@
                     <div class="row">
                         <div class="col-12 active">
                             <div class="card active">
-                                <div class="card-body pt-2 pb-3 active">
-                                    <nav class="navbar navbar-expand-md navbar-white bg-white py-2 active">
+                                <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
+                                    <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
                                         <button
                                             class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary"
                                             type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -483,22 +483,21 @@
                                         </button>
                                         <div class="collapse navbar-collapse justify-content-between active"
                                             id="navbarNavAltMarkup">
-                                            <div class="navbar-nav active">
-                                                <a class="nav-item nav-link" href="set-targets.html">Revenue streams</a>
-                                                <a class="nav-item nav-link" href="set-targets-collectors.html">Revenue
-                                                    Officers Daily Targets</a>
+                                            <div class="navbar-nav">
+                                                <a class="nav-item nav-link" href="set-targets-subcounty.html">Sub County Targets</a>
+                                                <a class="nav-item nav-link" href="set-targets-collectors.html">Revenue Collector Targets</a>
+                                                <a class="nav-item nav-link" href="set-targets.html">Revenue Stream Targets</a>
                                             </div>
-                                            <div class="navbar-nav text-capitalize d-flex align-items-center flex-row">
-                                                <small
-                                                    class="text-uppercase fw-semibold text-black text-nowrap me-3">Select
-                                                    Subcounty</small>
+
+                                            <form class="form-inline my-2 my-lg-0">
                                                 <select class="form-select">
-                                                    <option>Entire county</option>
-                                                    <option>Homa Bay County</option>
-                                                    <option>Raachuonyo South</option>
-                                                    <option>Suba North</option>
+                                                    <option>All Sub Counties</option>
+                                                    <option>Homa Bay Town</option>
+                                                    <option>Ndhiwa</option>
                                                 </select>
-                                            </div>
+                                               
+                                              </form>
+                                            
 
                                         </div>
                                     </nav>
@@ -524,7 +523,7 @@
                                                         <i class="mdi mdi-account-group"></i>
                                                     </span>
                                                 </div>
-                                                <h5 class="font-size-14 mb-0">Total Agents</h5>
+                                                <h5 class="font-size-14 mb-0">Collectors</h5>
                                             </div>
                                             <div class="text-muted mt-4">
                                                 <h4>34</h4>
@@ -599,12 +598,20 @@
 
                                         <div class="d-flex">
 
-                                            <button data-bs-toggle="modal" data-bs-target=".download-modal"
+                                            <button data-bs-toggle="modal" data-bs-target=".upload-modal"
                                                 type="button"
                                                 class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                                 <i class="mdi mdi-microsoft-excel font-size-16"></i> <span
                                                     class="pl-1 d-md-inline">Upload Excel File</span>
                                             </button>
+
+                                            <button data-bs-toggle="modal" data-bs-target=".download-modal"
+                                            type="button"
+                                            class="btn btn-success dropdown-toggle option-selector me-3 text-capitalize ">
+                                            <i class="dripicons-download font-size-16"></i> <span
+                                                class="pl-1 d-md-inline">Download</span>
+                                        </button>
+
 
                                         </div>
 
@@ -619,14 +626,14 @@
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th>#</th>
-                                                    <th scope="col">Agent</th>
+                                                    <th scope="col">Name</th>
                                                     <th>ID No.</th>
                                                     <th>Phone</th>
-                                                    <th>Email</th>
-
+                                                    <th>Sub County</th>
                                                     <th>Zone(s)</th>
-                                                    <th class="">Financial Year</th>
-                                                    <th class="text-right" scope="col">Target</th>
+                                                    <th class="text-right">Daily Target</th>
+                                                    <th class="text-right">Monthly Target</th>
+                                                    <th class="text-right" scope="col">FY Target</th>
 
                                                     <th></th>
 
@@ -667,14 +674,18 @@
                                                         <a href="tel:0000000">0704549859</a>
                                                     </td>
                                                     <td>
-                                                        email@mail.com
+                                                        Ndhiwa Subcounty
                                                     </td>
                                                     <td>
                                                         Kadongo Stage
                                                     </td>
-                                                    <td>
-                                                        2023/2024
+                                                    <td class="text-right text-uppercase">
+                                                       kes 789,000
                                                     </td>
+
+                                                    <td class="text-right text-uppercase">
+                                                        kes 890,000
+                                                     </td>
                                                     <th class="text-right text-danger">Not set</th>
 
                                                     <td>
@@ -684,165 +695,6 @@
                                                             Edit</button>
                                                     </td>
                                                 </tr>
-
-                                                <tr>
-                                                    <th>1.</th>
-                                                    <td>
-                                                        <a href="use-logs.html"
-                                                            title="click to vie user logs and activities">
-                                                        </a>
-                                                        <div class=" d-flex align-items-center "><a href="use-logs.html"
-                                                                title="click to vie user logs and activities">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                        KN
-                                                                    </span>
-                                                                </div>
-                                                            </a>
-                                                            <div><a href="use-logs.html"
-                                                                    title="click to vie user logs and activities">
-                                                                </a>
-                                                                <h5 class="font-size-14 mb-1 "><a href="use-logs.html"
-                                                                        title="click to vie user logs and activities"></a><a
-                                                                        href="javascript: void(0); "
-                                                                        class="text-dark text-capitalize">Kelvin
-                                                                        Njuguna</a></h5>
-                                                                <p class="text-muted mb-0 ">Revenue Collector</p>
-                                                            </div>
-                                                        </div>
-
-                                                    </td>
-                                                    <td class="">
-                                                        4567890
-                                                    </td>
-                                                    <td>
-                                                        <a href="tel:0000000">0704549859</a>
-                                                    </td>
-                                                    <td>
-                                                        email@mail.com
-                                                    </td>
-                                                    <td>
-                                                        Kadongo Stage
-                                                    </td>
-                                                    <td>
-                                                        2023/2024
-                                                    </td>
-                                                    <th class="text-right text-danger">Not set</th>
-
-                                                    <td>
-                                                        <button data-bs-toggle="modal" data-bs-target=".target-modal"
-                                                            class="btn btn-primary btn-sm"><i
-                                                                class="mdi mdi-file-document-edit-outline"></i>
-                                                            Edit</button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <th>1.</th>
-                                                    <td>
-                                                        <a href="use-logs.html"
-                                                            title="click to vie user logs and activities">
-                                                        </a>
-                                                        <div class=" d-flex align-items-center "><a href="use-logs.html"
-                                                                title="click to vie user logs and activities">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                        KN
-                                                                    </span>
-                                                                </div>
-                                                            </a>
-                                                            <div><a href="use-logs.html"
-                                                                    title="click to vie user logs and activities">
-                                                                </a>
-                                                                <h5 class="font-size-14 mb-1 "><a href="use-logs.html"
-                                                                        title="click to vie user logs and activities"></a><a
-                                                                        href="javascript: void(0); "
-                                                                        class="text-dark text-capitalize">Kelvin
-                                                                        Njuguna</a></h5>
-                                                                <p class="text-muted mb-0 ">Revenue Collector</p>
-                                                            </div>
-                                                        </div>
-
-                                                    </td>
-                                                    <td class="">
-                                                        4567890
-                                                    </td>
-                                                    <td>
-                                                        <a href="tel:0000000">0704549859</a>
-                                                    </td>
-                                                    <td>
-                                                        email@mail.com
-                                                    </td>
-                                                    <td>
-                                                        Kadongo Stage
-                                                    </td>
-                                                    <td>
-                                                        2023/2024
-                                                    </td>
-                                                    <th class="text-right text-danger">Not set</th>
-
-                                                    <td>
-                                                        <button data-bs-toggle="modal" data-bs-target=".target-modal"
-                                                            class="btn btn-primary btn-sm"><i
-                                                                class="mdi mdi-file-document-edit-outline"></i>
-                                                            Edit</button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <th>1.</th>
-                                                    <td>
-                                                        <a href="use-logs.html"
-                                                            title="click to vie user logs and activities">
-                                                        </a>
-                                                        <div class=" d-flex align-items-center "><a href="use-logs.html"
-                                                                title="click to vie user logs and activities">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                        KN
-                                                                    </span>
-                                                                </div>
-                                                            </a>
-                                                            <div><a href="use-logs.html"
-                                                                    title="click to vie user logs and activities">
-                                                                </a>
-                                                                <h5 class="font-size-14 mb-1 "><a href="use-logs.html"
-                                                                        title="click to vie user logs and activities"></a><a
-                                                                        href="javascript: void(0); "
-                                                                        class="text-dark text-capitalize">Kelvin
-                                                                        Njuguna</a></h5>
-                                                                <p class="text-muted mb-0 ">Revenue Collector</p>
-                                                            </div>
-                                                        </div>
-
-                                                    </td>
-                                                    <td class="">
-                                                        4567890
-                                                    </td>
-                                                    <td>
-                                                        <a href="tel:0000000">0704549859</a>
-                                                    </td>
-                                                    <td>
-                                                        email@mail.com
-                                                    </td>
-                                                    <td>
-                                                        Kadongo Stage
-                                                    </td>
-                                                    <td>
-                                                        2023/2024
-                                                    </td>
-                                                    <th class="text-right text-danger">Not set</th>
-
-                                                    <td>
-                                                        <button data-bs-toggle="modal" data-bs-target=".target-modal"
-                                                            class="btn btn-primary btn-sm"><i
-                                                                class="mdi mdi-file-document-edit-outline"></i>
-                                                            Edit</button>
-                                                    </td>
-                                                </tr>
-
-
-
                                             </tbody>
 
                                         </table>
@@ -896,7 +748,7 @@
             <!-- End Page-content -->
 
             <!-- receipting modal -->
-            <div class="modal fade download-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            <div class="modal fade upload-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-md modal-dialog-centered">
                     <div class="modal-content">
@@ -964,56 +816,76 @@
 
             <!-- setting target -->
             <div class="modal fade target-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-md modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Daily Revenue Targets for collection Agents</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
+            aria-hidden="true">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myLargeModalLabel">Setting targets for Kelvin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
 
-                                <div class="col-12">
-                                    <address>
-                                        <strong class="text-capitalize">Agent's Name</strong><br>
-                                        Kelvin Kinoti
-                                    </address>
-                                </div>
+                            <div class="col-12">
+                                <address>
+                                    <strong class="text-capitalize">Agent's Name</strong><br>
+                                    Kelvin Kinoti
+                                </address>
+                            </div>
 
-                                <div class="col-12">
-                                    <address>
-                                        <strong class="text-capitalize">Financial Year</strong><br>
-                                        2022/2023
-                                    </address>
-                                </div>
+                            <div class="col-12">
+                                <address>
+                                    <strong class="text-capitalize">Financial Year</strong><br>
+                                    2022/2023
+                                </address>
+                            </div>
 
-                                <div class="col-12">
-                                    <label><strong>Daily Target Amount</strong></label>
-                                </div>
-                                <div class="col-12">
-                                    <input class="form-control" type="text" placeholder="Enter Amount">
-                                </div>
+                            <!-- calculated by dividing FY target by 365 -->
+
+                            <div class="col-12">
+                                <label><strong>Daily Target Amount</strong></label>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input class="form-control" type="text" placeholder="Enter Amount">
+                            </div>
+
+                            <!-- calculated by dividing FY targets by 12 -->
+
+                            <div class="col-12">
+                                <label><strong>Monthly Target</strong></label>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input class="form-control" type="text" placeholder="Enter Amount">
+                            </div>
+
+                            <!-- this is what has been provided -->
+
+                            <div class="col-12">
+                                <label><strong>Financial Year Target</strong></label>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input class="form-control" type="text" placeholder="Enter Amount">
+                            </div>
 
 
 
-                                <div class="col-12">
-                                    <button type="button"
-                                        class="btn btn-primary dropdown-toggle option-selector text-capitalize w-100 mt-5">
-                                        <i class="mdi mdi-content-save-all  font-size-16"></i> <span
-                                            class="pl-1 d-md-inline">Save Changes</span>
-                                    </button>
-                                </div>
-
+                            <div class="col-12">
+                                <button type="button"
+                                    class="btn btn-primary dropdown-toggle option-selector text-capitalize w-100 mt-5">
+                                    <i class="mdi mdi-content-save-all  font-size-16"></i> <span
+                                        class="pl-1 d-md-inline">Save Changes</span>
+                                </button>
                             </div>
 
                         </div>
 
                     </div>
-                    <!-- /.modal-content -->
+
                 </div>
-                <!-- /.modal-dialog -->
+                <!-- /.modal-content -->
             </div>
+            <!-- /.modal-dialog -->
+        </div>
             <!-- end of target setting -->
 
             <!-- invoice details -->
@@ -1152,6 +1024,51 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- invoice details -->
+
+            <!-- download modal -->
+            <div class="modal fade download-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Download Targets</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <address>
+                                        <strong class="text-capitalize">Report Title</strong><br>
+                                        Revenue Collections By Subcounties in Homabay County
+                                    </address>
+                                </div>
+
+                                
+
+                                <div class="col-12">
+                                    <label><strong>Select File Type</strong></label>
+                                    <select class="form-select">
+                                        <option>Select Document Type</option>
+                                        <option>PDF file</option>
+                                        <option>Excel File</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <button  type="button" class="btn btn-primary dropdown-toggle option-selector text-capitalize w-100 mt-5">
+                                        <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                           
+                        </div>
+                       
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- download modal -->
 
             <footer class="footer ">
                 <div class="container-fluid ">
