@@ -1273,5 +1273,92 @@ padding: 0px;
         height: 400px;
     }
 
+    .quick-stats-cont{
+        background-color: #0f095e;
+        background:linear-gradient(to right, rgb(15 9 94), rgb(42 188 238));
+        color: white;
+        position: relative;
+    }
+    .quick-stats-cont .quick-stat>div{
+        padding: 1rem;
+        background-color:#ffffff21;
+        color: white;
+        border-radius: 1%;
+        display: flex;
+    }
+
+    .quick-stat img{
+        height: 40px;
+    }
+
+    .quick-stats-cont .quick-stat>div>div:last-child{
+        padding-left: 1rem;
+    }
+
+    .quick-stats-cont .form-select{
+        background: #ffffff26;
+        border: none !important;
+        color: white !important;
+        text-align: right;
+    }
+
+    .high-chart-cont{
+        /* padding-top: 2rem; */
+        height: 350px;
+    }
+
+
+    .quick-stats-cont .quick-stat>div .text-muted,.live-data-card .text-muted{
+        color: #ffffffdb !important;
+        font-size: 12px;
+    }
+    .quick-stats-cont .quick-stat>div h5,.live-data-card h5{
+        color: white;
+    }
+
+    .quick-stats-cont::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0px;
+        background-color: red;
+        background-image: url(../images/index-page-img.jpg);
+        background-position: bottom;
+        /* background-repeat: no-repeat; */
+        background-size: contain;
+        /* background-size: cover; */
+        opacity: 0.1;
+    }
+    .index-live-stats{
+        background: #1e1c73;
+        background: linear-gradient(132deg, rgb(15 9 94) 0%, rgb(42 188 238) 100%);
+    }
+    .live-data-card{
+        background-color: #ffffff12;
+        padding: 1rem;
+        display: flex;
+        color: white;
+    }
+    .live-data-card img{
+        height: 45px;
+    }
+    .index-live-stats::before{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-image: url("../images/tower-bund-walkway-avenue-skyline-main.jpg");
+        /* background-attachment: fixed; */
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        opacity: 15%;
+    }
+
+
     
     
