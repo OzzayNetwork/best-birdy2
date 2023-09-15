@@ -1410,7 +1410,7 @@ const Mapchart=Highcharts.mapChart('Map-data', {
             style: {
                 fontFamily: '"Poppins",sans-serif'
             },
-           "mapData": MombasaCountyMapData,
+           "mapData": KisumuMapData,
             "data": [
                 {
                     //Langata north
