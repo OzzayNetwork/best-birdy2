@@ -454,7 +454,7 @@
                                       </div>
 
                                         <div class="d-flex">
-                                            <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                            <button data-toggle="modal" data-target=".add-asset-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                                 <i class="bx bx-plus"></i> <span class="pl-1 d-md-inline">Add An Asset</span>
                                             </button>
                                         </div>
@@ -472,6 +472,8 @@
                                                     <th scope="col">#</th>
                                                     <th scope="col">Asset Type</th>
                                                     <th>Plate No.</th>
+                                                    <th>Added On</th>
+                                                    <th>last Edited</th>
                                                     <th>Operator</th>
                                                     <th>Sub County</th>
                                                     <th scope="col" class="text-right">Private Rate</th>
@@ -486,6 +488,19 @@
                                                     <td>KDA124R</td>
                                                     <td>
                                                         <div>
+                                                            <p class="mb-0 pb-0">10 jul 2023 12:34 AM</p>
+                                                            <small><a href="user-details.html">By Kelvin Njuguna</a></small>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <div>
+                                                            <p class="mb-0 pb-0">10 Dec 2023 12:56 AM</p>
+                                                            <small><a href="user-details.html">By Alex wanjala</a></small>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
                                                             <p class="mb-0 pb-0">Gitonga Wyclif</p>
                                                             <small><a href="tel:0704549859">0704549859</a></small>
                                                         </div>
@@ -494,8 +509,7 @@
                                                     <td class="text-right fw-bold">KES 2000 PER ACRE</td>
                                                     <td class="text-right fw-bold">KES 1500 PER ACRE</td>
                                                     <td class="text-right">
-                                                        <button href="" class="btn-primary btn btn-sm">Edit</button>
-                                                        <a href="" class="btn-success btn btn-sm mx-2">View Details</a>
+                                                        <button href="" class="btn-primary btn btn-sm" data-toggle="modal" data-target=".add-asset-modal">Edit</button>
                                                     </td>
                                                 </tr>                                           
                                            </tbody>
@@ -515,73 +529,73 @@
             <!-- End Page-content -->
 
             <!-- editing account type -->
-            <div class="modal fade edit-account-modal " tabindex="-1 " role="dialog " aria-labelledby="transaction-detailModalLabel " aria-hidden="true ">
+            <div class="modal fade add-asset-modal " tabindex="-1 " role="dialog " aria-labelledby="transaction-detailModalLabel " aria-hidden="true ">
                 <div class="modal-dialog modal-dialog-centered " role="document ">
                     <div class="modal-content ">
                         <div class="modal-header ">
-                            <h5 class="modal-title " id="transaction-detailModalLabel ">Transactions Details</h5>
-                            <button type="button " class="btn-close " data-dismiss="modal " aria-label="Close "></button>
+                            <h5 class="modal-title " id="transaction-detailModalLabel ">Add A Tractor</h5>
+                            <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
                         </div>
                         <div class="modal-body ">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="">Plate No.</label>
+                                        <input type="text" class="form-control" placeholder="Enter Plate No." fdprocessedid="gtf6wa">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="">Opperator's Full names</label>
+                                        <input type="text" class="form-control" placeholder="eg James Okelo" fdprocessedid="gtf6wa">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="">Opperator's Phone No.</label>
+                                        <input type="text" class="form-control" placeholder="Phone" fdprocessedid="gtf6wa">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="">Opperator's ID No.</label>
+                                        <input type="text" class="form-control" placeholder="Enter Operator's ID No." fdprocessedid="gtf6wa">
+                                    </div>
+                                </div>
 
 
-                            <div class="table-responsive mt-4 ">
-                                <table class="table align-middle table-nowrap ">
-                                    <tbody>
-                                        <tr>
-                                            <td style="width: 30% ">
-                                                <p class="mb-0 ">Car Plate Number</p>
-                                            </td>
-                                            <td style="width: 25% ">
-                                                <h5 class="mb-0 text-uppercase ">UAG 1235p</h5>
-                                            </td>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="">Assigned Subcount</label>
+                                        <select class="form-select" multiple aria-label="multiple select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+                                </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0 ">Vehicle Category</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0 ">Salon Car</h5>
-                                            </td>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="">Private sector Charges per Acre</label>
+                                        <input type="text" class="form-control" placeholder="Fee charges per acre" fdprocessedid="gtf6wa">
+                                    </div>
+                                </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0 ">Payment Date</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0 ">22 Apr 2022 06:54PM</h5>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0 ">San Diego</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0 ">1,026</h5>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2 ">
-                                                <p class="mb-0 pb-0 ">Amount Paid</p>
-                                                <h3>UGX 2,000</h3>
-                                            </td>
-                                        </tr>
-                                        <TR>
-                                            <td col-span="2 ">
-                                                <p class="mb-2 ">Attended By<span class="text-primary "> Alex Sebeye</span></p>
-                                                <p class="mb-4 ">Toll taker's No. <span class="text-primary ">0704549859</span></p>
-                                            </td>
-                                        </TR>
-                                    </tbody>
-                                </table>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="">Public sector Charges per Acre</label>
+                                        <input type="text" class="form-control" placeholder="Fee charges per acre" fdprocessedid="gtf6wa">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="modal-footer ">
-                            <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
+                            <button type="button " class="btn  btn-primary w-100" data-bs-dismiss="modal ">Save Changes</button>
                         </div>
                     </div>
                 </div>
