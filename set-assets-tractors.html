@@ -420,13 +420,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">County Assets</h4>
+                                <h4 class="mb-sm-0 font-size-18">Tractors</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="index.html">Set Ups</a></li>
-                                        <li class="breadcrumb-item active">County Assets</li>
+                                        <li class="breadcrumb-item"><a href="set-assets.html">County Assets</a></li>
+                                        <li class="breadcrumb-item active">Tractors</li>
                                     </ol>
                                 </div>
 
@@ -440,6 +441,28 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
+                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+
+                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+                                      <div class="flex-grow-1">
+                                        <div class="search-box mb-0 me-3">
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                                                <i class="bx bx-search-alt search-icon"></i>
+                                            </div>
+                                        </div>
+                                      </div>
+
+                                        <div class="d-flex">
+                                            <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                                <i class="bx bx-plus"></i> <span class="pl-1 d-md-inline">Add An Asset</span>
+                                            </button>
+                                        </div>
+
+
+                                    </div>
+                                    
+                                </div>
                                
                                 <div class="card-body">
                                     <div class="table-responsive">
@@ -448,66 +471,33 @@
                                                 <tr>
                                                     <th scope="col">#</th>
                                                     <th scope="col">Asset Type</th>
-                                                    <th scope="col">Department</th>
-                                                    <th>Current Number</th>
-                                                   
-                                                    
+                                                    <th>Plate No.</th>
+                                                    <th>Operator</th>
+                                                    <th>Sub County</th>
+                                                    <th scope="col" class="text-right">Private Rate</th>
+                                                    <th scope="col" class="text-right">Public Rate</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                            <tbody>
-                                            <tr>
-                                                <td>1.</td>
-                                                <td>Tractors</td>
-                                                <td>Agriculture & Livestock</td>
-                                                <td>2</td>
-                                                <td>
-                                                    <a href="set-assets-tractors.html" class="btn btn-primary btn-sm">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>2.</td>
-                                                <td>Market Stalls</td>
-                                                <td>Housing And Urban Development</td>
-                                                <td>2</td>
-                                                <td>
-                                                    <a href="" class="btn btn-primary btn-sm">View</a>
-                                                    
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>3.</td>
-                                                <td>Rental Houses</td>
-                                                <td>Housing And Urban Development</td>
-                                                <td>2</td>
-                                                <td>
-                                                    <a href="" class="btn btn-primary btn-sm">View</a>
-                                                    
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>4.</td>
-                                                <td>Plant & Equipments</td>
-                                                <td>Roads, Public Works, Transport And Infrastructure</td>
-                                                <td>2</td>
-                                                <td>
-                                                    <a href="" class="btn btn-primary btn-sm">View</a>
-                                                    
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>5.</td>
-                                                <td>Slaughter Houses</td>
-                                                <td>Agriculture & Livestock</td>
-                                                <td>2</td>
-                                                <td>
-                                                    <a href="" class="btn btn-primary btn-sm">View</a>
-                                                    
-                                                </td>
-                                            </tr>
+                                                <tr>
+                                                    <th>1.</th>
+                                                    <td>Tractor</td>
+                                                    <td>KDA124R</td>
+                                                    <td>
+                                                        <div>
+                                                            <p class="mb-0 pb-0">Gitonga Wyclif</p>
+                                                            <small><a href="tel:0704549859">0704549859</a></small>
+                                                        </div>
+                                                    </td>
+                                                    <td>Suba South, Homabay Town</td>
+                                                    <td class="text-right fw-bold">KES 2000 PER ACRE</td>
+                                                    <td class="text-right fw-bold">KES 1500 PER ACRE</td>
+                                                    <td class="text-right">
+                                                        <button href="" class="btn-primary btn btn-sm">Edit</button>
+                                                        <a href="" class="btn-success btn btn-sm mx-2">View Details</a>
+                                                    </td>
+                                                </tr>                                           
                                            </tbody>
                                             
                                         </table>
