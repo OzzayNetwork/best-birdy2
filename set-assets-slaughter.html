@@ -420,14 +420,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Plant & equipment Register</h4>
+                                <h4 class="mb-sm-0 font-size-18">Slaugher House Register</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="index.html">Set Ups</a></li>
                                         <li class="breadcrumb-item"><a href="set-assets.html">County Assets</a></li>
-                                        <li class="breadcrumb-item active">Plant & equipment Register</li>
+                                        <li class="breadcrumb-item active">Slaughter House Register</li>
                                     </ol>
                                 </div>
 
@@ -470,48 +470,38 @@
                                             <thead class="table-dark">
                                                 <tr>
                                                     <th scope="col">#</th>
-                                                    <th scope="col">Make/Model</th>
-                                                    <th>Plate No.</th>
-                                                    <th>Equipoment Type</th>
-                                                    <th>Capacity</th>
-                                                    <th>Added By</th>  
-                                                    <th>last Edited</th>                                                    
-                                                    <th class="text-right">Basic Charge</th>
-                                                    <th scope="col" class="text-right">Private Rate</th>
-                                                    <th scope="col" class="text-right">Public Rate</th>
+                                                    <th scope="col">Slaughter House</th>
+                                                    <th>Sub County</th>
+                                                    <th>Ward</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                            <tbody>
                                                 <tr>
                                                     <th>1.</th>
-                                                    <td class="text-capitalize">Power Plus Grader</td>
-                                                    <td class="text-uppercase">43CG055A</td>
-                                                    <td class="text-capitalize">Motor Grader</td>
-                                                    <td>15 Ton</td>
-                                                    <td>
-                                                        <div>
-                                                            <p class="mb-0 pb-0">10 jul 2023 12:34 AM</p>
-                                                            <small><a href="user-details.html">By Kelvin Njuguna</a></small>
-                                                        </div>
-                                                    </td>
-
-                                                    <td>
-                                                        <div>
-                                                            <p class="mb-0 pb-0">10 Dec 2023 12:56 AM</p>
-                                                            <small><a href="user-details.html">By Alex wanjala</a></small>
-                                                        </div>
-                                                    </td>
-                                                   <td class="text-right">
-                                                        KES 5400 (Up to 1Hr 20 Min) 
-                                                   </td>
-                                                    <td class="text-right fw-bold">KES 2000 PER ACRE</td>
-                                                    <td class="text-right fw-bold">KES 1500 PER ACRE</td>
+                                                    <td class="text-capitalize">Oyugis Slaughter House</td>
+                                                    <td class="text-uppercase">South Rachuonyo</td>
+                                                    <td class="text-capitalize">Oyugis Ward</td>                                                   
                                                     <td class="text-right">
                                                         <button href="" class="btn-primary btn btn-sm" data-toggle="modal" data-target=".add-asset-modal">Edit</button>
                                                     </td>
-                                                </tr>                                           
+                                                </tr>   
+                                                
+                                                <tr>
+                                                    <th>2.</th>
+                                                    <td class="text-capitalize">Homabay Slaughter House</td>
+                                                    <td class="text-uppercase">South Rachuonyo</td>
+                                                    <td class="text-capitalize">Oyugis Ward</td>                                                   
+                                                    <td class="text-right">
+                                                        <button href="" class="btn-primary btn btn-sm" data-toggle="modal" data-target=".add-asset-modal">Edit</button>
+                                                    </td>
+                                                </tr>   
                                            </tbody>
+                                           <tfoot>
+                                            <tr class="table-dark">
+                                                <th colspan="5">2 slaughter Houses</th>
+                                            </tr>
+                                           </tfoot>
                                             
                                         </table>
                                     </div>
@@ -532,72 +522,47 @@
                 <div class="modal-dialog modal-dialog-centered " role="document ">
                     <div class="modal-content ">
                         <div class="modal-header ">
-                            <h5 class="modal-title " id="transaction-detailModalLabel ">Add A Plant Or Equipment</h5>
+                            <h5 class="modal-title " id="transaction-detailModalLabel ">Add A Slaughter House</h5>
                             <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
                         </div>
                         <div class="modal-body ">
                             <div class="row">
                                 <div class="col-12 mb-3">
                                     <div class="form-group">
-                                        <label for="">Plate No.</label>
-                                        <input type="text" class="form-control" placeholder="Enter Plate No." fdprocessedid="gtf6wa">
+                                        <label for="">Name of the Slaughter House</label>
+                                        <input type="text" class="form-control" placeholder="Slaugter House Name">
                                     </div>
                                 </div>
 
                                 <div class="col-12 mb-3">
                                     <div class="form-group">
-                                        <label for="">Equipment/Plant Type</label>
+                                        <label for="">Sub County</label>
                                         <select class="form-select">
-                                            <option selected>Truck</option>
-                                            <option value="">Tipper</option>
-                                            <option value="">Crawler</option>
-                                            <option value="">Motor Grader</option>
-                                            <option value="">Single Drum</option>
-                                            <option value="">Single Drum Vibtator Roller</option>
-                                            <option value="">Water Tanker</option>
-                                            <option value="">Excavator</option>
+                                            <option selected>Select a sub county</option>
+                                            <option value="">Sub County</option>
+                                            <option value="">Sub County</option>
+                                            <option value="">Sub County</option>
+                                            <option value="">Sub County</option>
+                                            <option value="">Sub County</option>
+                                            <option value="">Sub County</option>
+                                            <option value="">Sub County</option>
                                         </select>
                                     </div>
                                 </div>
 
                                 <div class="col-12 mb-3">
                                     <div class="form-group">
-                                        <label for="">Make/Model</label>
-                                        <input type="text" class="form-control" placeholder="Enter Make/Model" fdprocessedid="gtf6wa">
-                                    </div>
-                                </div>
-
-                                <div class="col-12 mb-3">
-                                    <div class="form-group">
-                                        <label for="">Minimum Time chargable</label>
-                                       <div class="d-flex">
-                                            <input class="form-control" placeholder="Hours">
-                                            <input class="form-control" placeholder="Minutes">
-                                       </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-12 mb-3">
-                                    <div class="form-group">
-                                        <label for="">Minimum Basic Charge</label>
-                                        <input type="text" class="form-control" placeholder="Enter minimum Amount">
-                                    </div>
-                                </div>
-
-
-
-                                <div class="col-12 mb-3">
-                                    <div class="form-group">
-                                        <label for="">Private sector Charges per Acre</label>
-                                        <input type="text" class="form-control" placeholder="Fee charges Per Hour" fdprocessedid="gtf6wa">
-                                    </div>
-                                </div>
-
-                                <div class="col-12 mb-3">
-                                    <div class="form-group">
-                                        <label for="">Public sector Charges per Acre</label>
-                                        <input type="text" class="form-control" placeholder="Fee charges per Hour" fdprocessedid="gtf6wa">
+                                        <label for="">Ward</label>
+                                        <select class="form-select">
+                                            <option selected>Select a Ward</option>
+                                            <option value="">Ward 1</option>
+                                            <option value="">Ward 1</option>
+                                            <option value="">Ward 1</option>
+                                            <option value="">Ward 1</option>
+                                            <option value="">Ward 1</option>
+                                            <option value="">Ward 1</option>
+                                            <option value="">Ward 1</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
