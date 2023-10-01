@@ -14,6 +14,59 @@ function initMap() {
         removeMarkers();
     });
 
+    //declined business application
+    
+    var declinedBizApplication= {
+        url: "assets/images/map-assets/biz/declined-application.svg", // url
+        scaledSize: new google.maps.Size(65, 65), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
+
+     //Businesses pending approval
+    var pendingApproval= {
+        url: "assets/images/map-assets/biz/pending-approval.svg", // url
+        scaledSize: new google.maps.Size(65, 65), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
+
+    //businesses pending validation
+
+    var pendingValidation= {
+        url: "assets/images/map-assets/biz/initiated-application.svg", // url
+        scaledSize: new google.maps.Size(65, 65), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
+
+    //businesses pending inspections
+
+    var pendingInspection= {
+        url: "assets/images/map-assets/biz/pending-inspection.svg", // url
+        scaledSize: new google.maps.Size(65, 65), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
+
+    //businesses pending certification
+
+    var pendingCertification= {
+        url: "assets/images/map-assets/biz/pending-certification.svg", // url
+        scaledSize: new google.maps.Size(65, 65), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
+
+     //Initiated applications
+
+     var initiatedApplications= {
+        url: "assets/images/map-assets/biz/initiated-application.svg", // url
+        scaledSize: new google.maps.Size(65, 65), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
+
 
 
     //incident icon
@@ -343,7 +396,7 @@ function initMap() {
     //taxi on transit
     addMarker({
         coords: { lat: -1.284319, lng: 36.8238173 },
-        iconImage: taxi_transit,
+        iconImage: declinedBizApplication,
         content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
         <div class="card-body p-0 mb-2">
@@ -419,7 +472,7 @@ function initMap() {
     //taxi on transit
     addMarker({
         coords: { lat: -1.29899, lng: 36.9187 },
-        iconImage: taxi_transit,
+        iconImage: initiatedApplications,
         content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
         <div class="card-body p-0 mb-2">
@@ -494,7 +547,7 @@ function initMap() {
     //Taxi ontransit
     addMarker({
         coords: { lat: -1.27199, lng: 36.8187 },
-        iconImage: taxi_transit,
+        iconImage: pendingCertification,
         content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
         <div class="card-body p-0 mb-2">
@@ -570,7 +623,7 @@ function initMap() {
 
     addMarker({
         coords: { lat: -1.26199, lng: 36.8987 },
-        iconImage: taxi_booked,
+        iconImage: pendingInspection,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
@@ -749,7 +802,7 @@ function initMap() {
     //Taxi incident
     addMarker({
         coords: { lat: -1.2974586, lng: 36.8087993 },
-        iconImage: taxi_incident,
+        iconImage: pendingApproval,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
