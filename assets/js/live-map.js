@@ -1861,7 +1861,7 @@ function initMap() {
                     title: place.name,
                     position: place.geometry.location,
                     icon: icon,
-                    description: `<strong>` + place.name + `</strong><br><p class="text-info text-underline">Click Icon for more options</p>`
+                    description: `<strong>` + place.name + `</strong><br><p class="text-info text-underline text-uppercase">Click Icon To Add Businese's actual location</p>`
                 })
                 markers.push(marker);
 
@@ -1923,6 +1923,8 @@ function initMap() {
                     var newCoords = e.latLng;
 
                     newCoords = newCoords.toString();
+                    
+                   
 
                     var Latitude;
                     var longitude;
@@ -1941,6 +1943,8 @@ function initMap() {
                     <p class="clicked-place">${thePlace}</p>
                     `;
                     toggleBounce(marker);
+
+                    $('.latLngInput').val(Latitude+','+longitude)
 
 
 

@@ -34,6 +34,7 @@
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
     <link href="assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- <link href="assets/css/map.css" id="app-style" rel="stylesheet" type="text/css" /> -->
 
 
 </head>
@@ -1124,7 +1125,7 @@
                         </div>
 
                         <div class="col-12">
-                            <div class="card">
+                            <div class="">
                                 <div class="card-header bg-white boarder-bottom-1 d-none">
                                     <div class="row d-flex justify-content-between">
                                         <div class="col-12">
@@ -1138,7 +1139,7 @@
                                     </div>
 
                                 </div>
-                                <div class="card-body" style="height: 350px;">
+                                <div class="" style="height: 350px;">
                                     <div id="map" class="w-100 mt-1 h-100 live-map-cont main-map-container"></div>
                                 </div>
 
@@ -1146,137 +1147,17 @@
 
                             <div class="">
                                 <div class="position-relative ">
-
-
                                     <!-- map serach input box -->
-                                    <div class="form-group map-searcher">
-
+                                    <div class="form-group map-searcher mt-3 pt-3">
                                         <input type="text" class="form-control form-control-lg text-black" placeholder="Search for a location" id="pac-input">
                                         <button title="Clear search results" class="btn btn-transparent border-0 clear-map"><i class="mdi mdi-close d-none"></i></button>
                                     </div>
-
-                                    <!-- key button -->
-                                    <div class="map-key-card card">
-                                        <div class="card-body">
-                                            <i class="mdi mdi-key-variant"></i>
-                                        </div>
-                                    </div>
-
-                                    <!-- key items -->
-                                    <div class="card map-card animated slideInLeft d-none">
-                                        <span class="close-map-key"><i class="zmdi zmdi-close"></i></span>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Map Key</h4>
-
-                                        </div>
-                                        <div class="listview py-4 map-key">
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/damaged.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Damaged Ad Plates</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/available.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Available Ad Plates</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/rented.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Rented Ad Plates</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/multiple-plates.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Multiple sided Ad Plates</strong></div>                        
-                                                    </div>
-                                                </span>
-
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/rejected.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Rejected Applications</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/pending.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Pending applications</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/approved.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Approved Applications</strong></div>                        
-                                                    </div>
-                                                </span>
-
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/warning.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Incidents</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/active-agent.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>active-agent</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/inactive-agent.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Inactive agents</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/parliament.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>City Hall</strong></div>                        
-                                                    </div>
-                                                </span>
-
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/flag.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Service/Collection Point</strong></div>                        
-                                                    </div>
-                                                </span>
-
-
-
-                                        </div>
-                                    </div>
-
                                 </div>
-
                             </div>
+                        </div>
+
+                        <div class="col-4 d-none">
+                            <input type="text" class="form-control latLngInput" placeholder="LatLng">
                         </div>
 
 

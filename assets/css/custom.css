@@ -1359,6 +1359,29 @@ padding: 0px;
         opacity: 15%;
     }
 
+    .pac-container {
+        z-index: 1008881 !important; /* Adjust this value higher than the modal's z-index */
+    }
+
+    .map-searcher input, #pac-input {
+        top: 11px !important;
+        z-index: 100;
+        left: 210px !important;
+        width: auto;
+        /* padding: 1.475rem 0.75rem; */
+        padding-left: 25px;
+        padding-right: 60px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 392px;
+        height: 40px;
+        /* border-bottom: 1px solid transparent; */
+        /* padding: 12px 104px 11px 64px; */
+        transition-property: background, box-shadow;
+        transition-duration: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    }
+
 
     
     
