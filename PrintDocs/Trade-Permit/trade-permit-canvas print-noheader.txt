@@ -16,8 +16,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
 
     <style>
+        #capture{
+            z-index: 2;
+            position: relative;
+        }
+        .show-print{
+            opacity: 0 !important;
+            /* display: none !important; */
+        }
         canvas{
-            display: none;
+            /* display: none; */
+            /* height: 297mm; */
+            position: absolute;
+            top: 0px;
+            left: 0px;
         }
         
             .print-btn {
@@ -807,8 +819,14 @@
                 box-shadow: none;
                 /* font-size: 18px; */
             }
+            #capture{
+                background: none;
+            }
             .captured{
                 display: none;
+            }
+            .show-print{
+                opacity: 100% !important;
             }
             canvas{
                 display: block !important;
@@ -915,7 +933,7 @@
 </head>
 
 <body>
-    <page size="A4" id="capture"  class="p-2 container w-100 h-100 captured">
+    <page size="A4" id="capture"  class="p-2 container w-100 h-100 ">
 
         <h1 style="text-transform: uppercase;font-size: 137px;position: absolute;transform: rotate(45deg);top: 63%;opacity: 10%;font-weight: 700;color: green; font-family: 'Pridi', serif; left: 13%;">00123-23</h1>
 
@@ -923,7 +941,7 @@
 
         <section class="content-container h-100 w-100 position-relative p-2" style="max-height: 297mm !important">
 
-            <header style="display: flex; height: 47mm; align-items: center; position: relative; width: 100%; justify-content: space-between; padding: 8mm;">
+            <header class="show-print" style="display: flex; height: 47mm; align-items: center; position: relative; width: 100%; justify-content: space-between; padding: 8mm;">
                 <div>
                     <img src="assets/Coat_of_arms_of_Kenya_(Official).svg.png" style="height: 36mm; margin-right: 0mm;">
                 </div>
@@ -971,7 +989,7 @@
                 
             </header>
 
-            <div class="cert-heading lora-heading my-3" style="padding-top: 0px !important; margin-top: 0.2in !important; text-align: center;">
+            <div class="cert-heading lora-heading my-3 show-print" style="padding-top: 0px !important; margin-top: 0.2in !important; text-align: center;">
                 <h1 class="" style="font-family: 'Fondamento', cursive !important; font-size: 60px; margin: 0px; padding: 0px; "><strong style=" font-family: 'Fondamento', cursive !important; ">Single Business Permit</strong></h1>
                 <h6 class=" " style=" margin-top: 0px; padding-top: 0px; font-size: 18px; font-weight: 400;font-family:'Pridi', serif !important;; margin-bottom: 0.2in; padding-bottom: 0px; text-transform: uppercase;">For The Year 2023</h6>
             </div>
