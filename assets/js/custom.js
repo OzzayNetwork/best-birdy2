@@ -901,3 +901,10 @@ $(function () {
     $('.loader-panel').removeClass('d-none')
     $('.bill-modal-footer').addClass('d-none')
   })
+
+  $('.reg-payment').on('click', function(){
+    $(this).parent().parent().addClass('d-none')
+    // alert('clicked')
+    $('.new-vehicles-container-modal').addClass('d-none').siblings('.loader-panel').removeClass('d-none')
+    $('.add-car-modal address').addClass('d-none')
+  })
