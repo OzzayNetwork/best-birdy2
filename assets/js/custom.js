@@ -895,3 +895,9 @@ $(document).ready(function() {
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
+
+  $('.btn-send').on('click', function(){
+    $('.transaction-summary').addClass('d-none')
+    $('.loader-panel').removeClass('d-none')
+    $('.bill-modal-footer').addClass('d-none')
+  })
