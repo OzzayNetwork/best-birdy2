@@ -570,7 +570,7 @@
                                                     <td>YES</td>
                                                     <TD>NO</TD>
                                                     <td>selling Alcohol</td>
-                                                    <td> <button class="btn btn-sm btn-primary">More Details</button></td>
+                                                    <td> <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button></td>
                                                </tr>
 
                                                <tr>
@@ -586,7 +586,7 @@
                                                 <td>YES</td>
                                                 <TD>NO</TD>
                                                 <td>selling Alcohol</td>
-                                                <td> <button class="btn btn-sm btn-primary">More Details</button></td>
+                                                <td> <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button></td>
                                            </tr>
 
                                            <tr>
@@ -602,7 +602,7 @@
                                             <td>YES</td>
                                             <TD>NO</TD>
                                             <td>selling Alcohol</td>
-                                            <td> <button class="btn btn-sm btn-primary">More Details</button></td>
+                                            <td> <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button></td>
                                        </tr>
 
                                        <tr>
@@ -618,7 +618,7 @@
                                         <td>YES</td>
                                         <TD>NO</TD>
                                         <td>selling Alcohol</td>
-                                        <td> <button class="btn btn-sm btn-primary">More Details</button></td>
+                                        <td> <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button></td>
                                    </tr>
                                             </tbody>
                                             <tfoot class="table-dark">
@@ -691,17 +691,17 @@
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Bill details</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Business Captured Details</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-6">
                                     <address>
-                                        <strong class="text-capitalize">Bill Prepared for:</strong><br>
-                                        Kelvin Njuguna AT Mombasa Road<br>
-                                        email@mail.com, 0704 549 859<br>                                   
-                                        ID No. 12345689. Car Plate No. KAB 123P <br/>
+                                        <strong class="text-capitalize">Captured By:</strong><br>
+                                        Kelvin Njuguna<br>
+                                        ICT Officer <br>                                   
+                                         
                                         <br>
                                         On 1 Mar 2022, 10:20 AM
                                         
@@ -716,67 +716,93 @@
                                     </address>
                                 </div>
                             </div>
+
+                            <div class="col-12">
+                                <hr>
+                            </div>
                             <div class="col-12">
                                 <div class="py-2 mt-3">
-                                    <h3 class="font-size-15 fw-bold">ND12368</h3>
+                                    <h3 class="font-size-15 fw-bold">Collected Data</h3>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="table-responsive">
-                                    <table class="table table-nowrap vertical-align-middle">
-                                        <thead class="bg-light">
-                                            <tr>
-                                                <th style="width: 70px;">No.</th>
-                                                <th>Offense</th>
-                                                <th class="text-end">Amount</th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tfoot class="bg-light">
-                                            <tr>
-                                                <td colspan="2" class="border-0 text-end text-right">
-                                                    <strong>Total</strong>
-                                                </td>
-                                                <td class="border-0 text-end">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 11,250</h5>
-                                                </td>
-                                                
-                                            </tr>
-                                        </tfoot>
+                                    <table class="table table-nowrap vertical-align-middle table-sm table-striped">
+                                        
+                                      
                                         <tbody>
-                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
-                                                <td>01</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Driving Without identification plates affixed or plates not fixed in the prescribed manner</p>
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
+                                            <tr>
+                                                <th>Business Name</th>
+                                                <td>Business name goes Here</td>
                                             </tr>
 
-                                            <tr title="Drving a vehicle without a valid inspection certificate inspected">
-                                                <td>02</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Drving a vehicle without a valid inspection certificate inspected</p>
-
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
+                                            <tr>
+                                                <th>Business Category</th>
+                                                <td>The category</td>
                                             </tr>
 
+                                            <tr>
+                                                <th>Business Sub category</th>
+                                                <td>The category</td>
+                                            </tr>
 
+                                            <tr>
+                                                <th>Owner</th>
+                                                <td>The category</td>
+                                            </tr>
 
-                                            
+                                            <tr>
+                                                <th>Owners ID</th>
+                                                <td>The category</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Phone Number</th>
+                                                <td>The category</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Business Description</th>
+                                                <td>jhgjk</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Plot Number</th>
+                                                <td>Isolated</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Sub county and Ward</th>
+                                                <td>Ndhiwa Subcounty, The ward Name</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Physical Address</th>
+                                                <td>Opposite tom Mboya University</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Is Liquor License Applicable to the Business</th>
+                                                <td>YES</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Id Fire Permit applicable to the Business</th>
+                                                <td>No</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Amount Applicable To the Business</th>
+                                                <td>KES 3,900</td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
+                            <div class="col-12">
+                                <hr>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                           
-                            <a href="PrintDocs/Bill/bill.html" target="_blank" type="button" class="btn btn-primary waves-effect waves-light">
-                                <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Bill
-                            </a>
-                        </div>
+                        
                     </div>
                     <!-- /.modal-content -->
                 </div>
