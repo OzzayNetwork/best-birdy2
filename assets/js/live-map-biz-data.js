@@ -456,7 +456,7 @@ function initMap() {
                 <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
             </div>
 
-            <div class="alert alert-danger" role="alert">
+            <div class="alert alert-success" role="alert">
                <strong>Business Category</strong>
                <p>Accomodation & Catering</p>
 
@@ -469,7 +469,7 @@ function initMap() {
                 <strong>Reason for the decline</strong>
                 <h5>Sell of illigal substance</h5>
 
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
+                <a class="text-info text-uppercase mt-4 fw-semibold">Collected By Niga</a>
             </div>
 
            
@@ -477,42 +477,7 @@ function initMap() {
             <div class="card-body">
 
                
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Date Declined
-                            </span>
-                                <div>
-                                Declined on 24 Feb 2023 By Alex Kinoti
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    
-                </ul>
+                
             </div>
         </div>
            
@@ -552,7 +517,7 @@ function initMap() {
                <strong>Amount Paid</strong>
                 <h5>KES 60,000</h5>
 
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
+                <a class="text-info text-uppercase mt-4 fw-semibold">Collected By Niga</a>
             </div>
 
            
@@ -635,7 +600,7 @@ function initMap() {
                <strong>Amount Paid</strong>
                 <h5>KES 60,000</h5>
 
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
+                <a class="text-info text-uppercase mt-4 fw-semibold">Collected By Niga</a>
             </div>
 
            
@@ -643,42 +608,7 @@ function initMap() {
             <div class="card-body">
 
                
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Inspected By Alex Kinoti
-                            </span>
-                                <div>
-                               On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    
-                </ul>
+               
             </div>
         </div>
            
@@ -719,7 +649,7 @@ function initMap() {
                <strong>Amount Paid</strong>
                 <h5>KES 60,000</h5>
 
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
+                <a class="text-info text-uppercase mt-4 fw-semibold">Collected By Niga</a>
             </div>
 
            
@@ -727,40 +657,7 @@ function initMap() {
             <div class="card-body">
 
                
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Details validation 
-                            </span>
-                                <div>
-                                Done By Alex Wanjala on 23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+               
             </div>
         </div>
            
@@ -799,7 +696,7 @@ function initMap() {
                <strong>Renewal Fee Paid</strong>
                 <h5>KES 60,500</h5>
 
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
+                <a class="text-info text-uppercase mt-4 fw-semibold">Collected By Niga</a>
             </div>
 
            
@@ -807,40 +704,7 @@ function initMap() {
             <div class="card-body">
 
                
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Last Renewed 
-                            </span>
-                                <div>
-                                23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+               
             </div>
         </div>
            
@@ -888,40 +752,7 @@ function initMap() {
             <div class="card-body">
 
                
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Last Renewed 
-                            </span>
-                                <div>
-                                23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+               
             </div>
         </div>
            
@@ -1027,40 +858,7 @@ function initMap() {
             <div class="card-body">
 
                
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Last Renewed 
-                            </span>
-                                <div>
-                                23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+               
             </div>
         </div>
            
@@ -1100,7 +898,7 @@ function initMap() {
                <strong>Renewal Fee Paid</strong>
                 <h5>KES 60,500</h5>
 
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
+                <a class="text-info text-uppercase mt-4 fw-semibold">Collected By Niga</a>
             </div>
 
            
@@ -1108,40 +906,7 @@ function initMap() {
             <div class="card-body">
 
                
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Last Renewed 
-                            </span>
-                                <div>
-                                23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+               
             </div>
         </div>
            
@@ -1202,40 +967,7 @@ function initMap() {
             <div class="card-body">
 
                
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Last Renewed 
-                            </span>
-                                <div>
-                                23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+               
             </div>
         </div>
            
@@ -1274,7 +1006,7 @@ function initMap() {
                <strong>Renewal Fee Paid</strong>
                 <h5>KES 60,500</h5>
 
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
+                <a class="text-info text-uppercase mt-4 fw-semibold">Collected By Niga</a>
             </div>
 
            
@@ -1282,40 +1014,7 @@ function initMap() {
             <div class="card-body">
 
                
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Last Renewed 
-                            </span>
-                                <div>
-                                23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+               
             </div>
         </div>
            
@@ -1369,40 +1068,7 @@ function initMap() {
             <div class="card-body">
 
                
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Last Renewed 
-                            </span>
-                                <div>
-                                23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+               
             </div>
         </div>
            
