@@ -643,7 +643,13 @@
                                                     <td>YES</td>
                                                     <TD>NO</TD>
                                                     <td>selling Alcohol</td>
-                                                    <td> <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button></td>
+                                                    <td class="text-right"> 
+                                                        <div class="d-flex align-items-center justify-content-center text-nowrap">
+                                                            <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target=".edit-modal">Edit</button>
+                                                            <button class="btn btn-sm btn-primary mx-2" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button>
+                                                            <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target=".archive-modal">Archive Data</button>
+                                                        </div>
+                                                    </td>
                                                </tr>
 
                                                <tr>
@@ -659,7 +665,13 @@
                                                 <td>YES</td>
                                                 <TD>NO</TD>
                                                 <td>selling Alcohol</td>
-                                                <td> <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button></td>
+                                                <td class="text-right"> 
+                                                    <div class="d-flex align-items-center justify-content-center text-nowrap">
+                                                        <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target=".edit-modal">Edit</button>
+                                                        <button class="btn btn-sm btn-primary mx-2" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button>
+                                                        <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target=".archive-modal">Archive Data</button>
+                                                    </div>
+                                                </td>
                                            </tr>
 
                                            <tr>
@@ -675,7 +687,13 @@
                                             <td>YES</td>
                                             <TD>NO</TD>
                                             <td>selling Alcohol</td>
-                                            <td> <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button></td>
+                                            <td class="text-right"> 
+                                                <div class="d-flex align-items-center justify-content-center text-nowrap">
+                                                    <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target=".edit-modal">Edit</button>
+                                                    <button class="btn btn-sm btn-primary mx-2" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button>
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target=".archive-modal">Archive Data</button>
+                                                </div>
+                                            </td>
                                        </tr>
 
                                        <tr>
@@ -691,7 +709,13 @@
                                         <td>YES</td>
                                         <TD>NO</TD>
                                         <td>selling Alcohol</td>
-                                        <td> <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button></td>
+                                        <td class="text-right"> 
+                                            <div class="d-flex align-items-center justify-content-center text-nowrap">
+                                                <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target=".edit-modal">Edit</button>
+                                                <button class="btn btn-sm btn-primary mx-2" data-bs-toggle="modal" data-bs-target=".receipting-modal">More Details</button>
+                                                <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target=".archive-modal">Archive Data</button>
+                                            </div>
+                                        </td>
                                    </tr>
                                             </tbody>
                                             <tfoot class="table-dark">
@@ -5283,6 +5307,271 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- invoice details -->
+
+            <!-- archive modal -->
+            <div class="modal fade archive-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Archive This Record</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <address>
+                                        <strong class="text-capitalize">Captured By:</strong><br>
+                                        Kelvin Njuguna<br>
+                                        ICT Officer <br>                                   
+                                         
+                                        <br>
+                                        On 1 Mar 2022, 10:20 AM
+                                        
+                                    </address>
+                                </div>
+                                <div class="col-sm-6 text-sm-end d-none">
+                                    <address class="mt-2 mt-sm-0">
+                                        <strong>Payment Method</strong><br>
+                                        <span class="fw-medium">MPESA</span><br>
+                                        Phone No. 0704 549 859<br> <br>
+                                        On 1 Mar 2022, 10:20 AM
+                                    </address>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <hr>
+                            </div>
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">Collected Data</h3>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap vertical-align-middle table-sm table-striped">
+                                        
+                                      
+                                        <tbody>
+                                            <tr>
+                                                <th>Business Name</th>
+                                                <td>Business name goes Here</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Business Category</th>
+                                                <td>The category</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Business Sub category</th>
+                                                <td>The category</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Owner</th>
+                                                <td>The category</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Owners ID</th>
+                                                <td>The category</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Phone Number</th>
+                                                <td>The category</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Business Description</th>
+                                                <td>jhgjk</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Plot Number</th>
+                                                <td>Isolated</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Sub county and Ward</th>
+                                                <td>Ndhiwa Subcounty, The ward Name</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Physical Address</th>
+                                                <td>Opposite tom Mboya University</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Is Liquor License Applicable to the Business</th>
+                                                <td>YES</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Id Fire Permit applicable to the Business</th>
+                                                <td>No</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Amount Applicable To the Business</th>
+                                                <td>KES 3,900</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <hr>
+                            </div>
+
+                            <div class="col-12">
+                                <label>Reason For Deleting</label>
+                                <textarea name="" class="form-control" placeholder="Enter reason for Removing this record" id="" cols="30" rows="5"></textarea>
+                            </div>
+
+                           <div class="col-12">
+                            <button class="btn btn-100 btn-danger text-center d-flex mt-2 w-100 align-items-center justify-content-center">Archive Record</button>
+                           </div>
+                        </div>
+                        
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of achive modal -->
+
+            <!-- edit modal -->
+            <div class="modal fade edit-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Edit This Record</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                       <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <label for="">Business Name</label>
+                                    <input type="text" class="form-control" placeholder="Business name" value="Business name" disabled>
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <label for="">Business Type</label>
+                                    <input type="text" class="form-control" placeholder="Business name" value="Business type" disabled>
+                                </div>
+
+                                <div class="col-4 mb-3">
+                                    <label for="">Owner</label>
+                                    <input type="text" class="form-control" placeholder="Business name" value="Kelvin Omondi" disabled>
+                                </div>
+
+                                
+                                <div class="col-4 mb-3">
+                                    <label for="">ID No.</label>
+                                    <input type="text" class="form-control" placeholder="Business name" value="12345" disabled>
+                                </div>
+
+                                
+                                <div class="col-4 mb-3">
+                                    <label for="">Owner's Phone</label>
+                                    <input type="text" class="form-control" placeholder="Business name" value="0704549859" disabled>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <label for="">Business Description</label>
+                                    <input type="text" class="form-control" placeholder="Business name" value="The discription that was initially inputed by usewr" disabled>
+                                </div>
+
+                                <div class="col-4 mb-3">
+                                    <label for="">Sub County</label>
+                                    <select class="form-control bg-white" title="Select Sub County" data-live-search="true">
+                                        <option value="[object Object]">RACHUONYO SOUTH</option>
+                                        <option value="[object Object]">RACHUONYO EAST</option>
+                                        <option value="[object Object]">RACHUONYO NORTH</option>
+                                        <option value="[object Object]">RANGWE</option>
+                                        <option value="[object Object]">HOMA BAY TOWN</option>
+                                        <option value="[object Object]">NDHIWA</option>
+                                        <option value="[object Object]">SUBA NORTH</option>
+                                        <option value="[object Object]">SUBA SOUTH</option>
+                                        <option value="[object Object]">HOMA BAY HQ</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-4 mb-3">
+                                    <label for="">Ward</label>
+                                    <select class="form-control bg-white" title="Select Ward" data-live-search="true">
+                                        <option value="[object Object]">KABONDO EAST</option>
+                                        <option value="[object Object]">KABONDO WEST</option>
+                                        <option value="[object Object]">KOKWANYO/KAKELO</option>
+                                        <option value="[object Object]">KOJWACH</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-4 mb-3">
+                                    <label for="">Physical Address</label>
+                                   <input type="text " class="form-control" placeholder="Inputed " value="Physical Address">
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <label for="">Business Category</label>
+                                    <select class="form-control bg-white" title="Select Business Activity" data-live-search="true">
+                                        <option value=" ">Select Options</option>
+                                        <option value="1">Single Business Permit</option>
+                                        <option value="5">Distribution of goods In the Entire County</option>
+                                        <option value="28">SBP Bylaws Penalties</option>
+                                        <option value="109">General Traders Shops And Retail Services</option>
+                                        <option value="110">Informal Sector</option>
+                                        <option value="111"> Transport, Storage, Distribution And Communications</option>
+                                        <option value="112"> Accommodation And Catering</option>
+                                        <option value="113"> Distribution Of Goods In The Entire County</option>
+                                        <option value="114"> Agriculture, Forestry And Natural Resources Extraction</option>
+                                        <option value="115"> Professional, Technical And Financial Services</option>
+                                        <option value="116"> Private Education, Health And Entertainment</option>
+                                        <option value="117"> Industrialplants, Factories, Workshop, Contractors</option>
+                                        <option value="118"> Sbp/by-laws Penalties</option>
+                                        <option value="123">SBP Fees</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <label for="">Business Sub Category</label>
+                                    <select class="form-control bg-white" title="Select Sub Categories" data-live-search="true">
+                                        <option
+                                            value="{&quot;feeId&quot;:&quot;133&quot;,&quot;feeDescription&quot;:&quot;Mega distribution company over 15tonnes&quot;,&quot;unitOfMeasure&quot;:&quot;&quot;,&quot;unitFeeAmount&quot;:&quot;80000&quot;,&quot;accountNo&quot;:&quot;&quot;,&quot;incomeTypeId&quot;:&quot;5&quot;,&quot;feeType&quot;:&quot;&quot;,&quot;accountDesc&quot;:&quot;Distribution of goods&quot;,&quot;costCenterNo&quot;:&quot;&quot;,&quot;zone&quot;:&quot;OTHER SUB COUNTIES&quot;,&quot;typeDescription&quot;:&quot;&quot;,&quot;prorated&quot;:&quot;false&quot;,&quot;duration&quot;:&quot;CALENDER YEAR&quot;}">
+                                            Mega distribution company over 15tonnes</option>
+                                        <option
+                                            value="{&quot;feeId&quot;:&quot;134&quot;,&quot;feeDescription&quot;:&quot;Mega distribution company over 15tonnes&quot;,&quot;unitOfMeasure&quot;:&quot;&quot;,&quot;unitFeeAmount&quot;:&quot;80000&quot;,&quot;accountNo&quot;:&quot;&quot;,&quot;incomeTypeId&quot;:&quot;5&quot;,&quot;feeType&quot;:&quot;&quot;,&quot;accountDesc&quot;:&quot;Distribution of goods&quot;,&quot;costCenterNo&quot;:&quot;&quot;,&quot;zone&quot;:&quot;HOMA BAY&quot;,&quot;typeDescription&quot;:&quot;&quot;,&quot;prorated&quot;:&quot;false&quot;,&quot;duration&quot;:&quot;CALENDER YEAR&quot;}">
+                                            Mega distribution company over 15tonnes</option>
+                                        <option
+                                            value="{&quot;feeId&quot;:&quot;135&quot;,&quot;feeDescription&quot;:&quot;Large distribution company 10-15tonnes&quot;,&quot;unitOfMeasure&quot;:&quot;&quot;,&quot;unitFeeAmount&quot;:&quot;70000&quot;,&quot;accountNo&quot;:&quot;&quot;,&quot;incomeTypeId&quot;:&quot;5&quot;,&quot;feeType&quot;:&quot;&quot;,&quot;accountDesc&quot;:&quot;Distribution of goods&quot;,&quot;costCenterNo&quot;:&quot;&quot;,&quot;zone&quot;:&quot;OTHER SUB COUNTIES&quot;,&quot;typeDescription&quot;:&quot;&quot;,&quot;prorated&quot;:&quot;false&quot;,&quot;duration&quot;:&quot;CALENDER YEAR&quot;}">
+                                            Large distribution company 10-15tonnes</option>
+                                        <option
+                                            value="{&quot;feeId&quot;:&quot;136&quot;,&quot;feeDescription&quot;:&quot;Large distribution company 10-15tonnes&quot;,&quot;unitOfMeasure&quot;:&quot;&quot;,&quot;unitFeeAmount&quot;:&quot;70000&quot;,&quot;accountNo&quot;:&quot;&quot;,&quot;incomeTypeId&quot;:&quot;5&quot;,&quot;feeType&quot;:&quot;&quot;,&quot;accountDesc&quot;:&quot;Distribution of goods&quot;,&quot;costCenterNo&quot;:&quot;&quot;,&quot;zone&quot;:&quot;HOMA BAY&quot;,&quot;typeDescription&quot;:&quot;&quot;,&quot;prorated&quot;:&quot;false&quot;,&quot;duration&quot;:&quot;CALENDER YEAR&quot;}">
+                                            Large distribution company 10-15tonnes</option>
+                                        <option
+                                            value="{&quot;feeId&quot;:&quot;137&quot;,&quot;feeDescription&quot;:&quot;Medium distribution company 7-10tonnes&quot;,&quot;unitOfMeasure&quot;:&quot;&quot;,&quot;unitFeeAmount&quot;:&quot;56000&quot;,&quot;accountNo&quot;:&quot;&quot;,&quot;incomeTypeId&quot;:&quot;5&quot;,&quot;feeType&quot;:&quot;&quot;,&quot;accountDesc&quot;:&quot;Distribution of goods&quot;,&quot;costCenterNo&quot;:&quot;&quot;,&quot;zone&quot;:&quot;OTHER SUB COUNTIES&quot;,&quot;typeDescription&quot;:&quot;&quot;,&quot;prorated&quot;:&quot;false&quot;,&quot;duration&quot;:&quot;CALENDER YEAR&quot;}">
+                                            Medium distribution company 7-10tonnes</option>
+                                        <option
+                                            value="{&quot;feeId&quot;:&quot;138&quot;,&quot;feeDescription&quot;:&quot;Medium distribution company 7-10tonnes&quot;,&quot;unitOfMeasure&quot;:&quot;&quot;,&quot;unitFeeAmount&quot;:&quot;56000&quot;,&quot;accountNo&quot;:&quot;&quot;,&quot;incomeTypeId&quot;:&quot;5&quot;,&quot;feeType&quot;:&quot;&quot;,&quot;accountDesc&quot;:&quot;Distribution of goods&quot;,&quot;costCenterNo&quot;:&quot;&quot;,&quot;zone&quot;:&quot;HOMA BAY&quot;,&quot;typeDescription&quot;:&quot;&quot;,&quot;prorated&quot;:&quot;false&quot;,&quot;duration&quot;:&quot;CALENDER YEAR&quot;}">
+                                            Medium distribution company 7-10tonnes</option>
+                                        <option
+                                            value="{&quot;feeId&quot;:&quot;139&quot;,&quot;feeDescription&quot;:&quot;Small distribution company up to 4 To 7 Tones&quot;,&quot;unitOfMeasure&quot;:&quot;&quot;,&quot;unitFeeAmount&quot;:&quot;48000&quot;,&quot;accountNo&quot;:&quot;&quot;,&quot;incomeTypeId&quot;:&quot;5&quot;,&quot;feeType&quot;:&quot;&quot;,&quot;accountDesc&quot;:&quot;Distribution of goods&quot;,&quot;costCenterNo&quot;:&quot;&quot;,&quot;zone&quot;:&quot;OTHER SUB COUNTIES&quot;,&quot;typeDescription&quot;:&quot;&quot;,&quot;prorated&quot;:&quot;false&quot;,&quot;duration&quot;:&quot;CALENDER YEAR&quot;}">
+                                            Small distribution company up to 4 To 7 Tones</option>
+                                        <option
+                                            value="{&quot;feeId&quot;:&quot;140&quot;,&quot;feeDescription&quot;:&quot;Small distribution company up to 3 Tonnes&quot;,&quot;unitOfMeasure&quot;:&quot;&quot;,&quot;unitFeeAmount&quot;:&quot;30000&quot;,&quot;accountNo&quot;:&quot;&quot;,&quot;incomeTypeId&quot;:&quot;5&quot;,&quot;feeType&quot;:&quot;&quot;,&quot;accountDesc&quot;:&quot;Distribution of goods&quot;,&quot;costCenterNo&quot;:&quot;&quot;,&quot;zone&quot;:&quot;HOMA BAY&quot;,&quot;typeDescription&quot;:&quot;&quot;,&quot;prorated&quot;:&quot;false&quot;,&quot;duration&quot;:&quot;CALENDER YEAR&quot;}">
+                                            Small distribution company up to 3 Tonnes</option>
+                                    </select>
+                                </div>
+                            </div>
+                       </div>
+                        
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of edit modal -->
 
             <footer class="footer ">
                 <div class="container-fluid ">
