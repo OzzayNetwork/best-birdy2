@@ -1,4 +1,4 @@
-setTimeout(function() {
+setTimeout(function () {
     $("#subscribeModal").modal("show")
 }, 2e3);
 var options = {
@@ -26,7 +26,7 @@ var options = {
 
         yaxis: {
             labels: {
-                formatter: function(value) {
+                formatter: function (value) {
                     // return "UGX " + value;
                     return numeral(value).format('0,0 a')
                 },
@@ -61,7 +61,12 @@ var options = {
         },
 
         tooltip: {
-            custom: function({ series, seriesIndex, dataPointIndex, w }) {
+            custom: function ({
+                series,
+                seriesIndex,
+                dataPointIndex,
+                w
+            }) {
                 var data = w.globals.initialSeries[seriesIndex].data[dataPointIndex];
 
                 return '<ul>' +
@@ -76,7 +81,12 @@ var options = {
 
         tooltip: {
             y: {
-                formatter: function(value, { series, seriesIndex, dataPointIndex, w }) {
+                formatter: function (value, {
+                    series,
+                    seriesIndex,
+                    dataPointIndex,
+                    w
+                }) {
                     return "UGX " + numeral(value).format('0,0')
 
                 }
@@ -106,7 +116,7 @@ options = {
                     offsetY: 22,
                     fontSize: "16px",
                     color: void 0,
-                    formatter: function(e) {
+                    formatter: function (e) {
                         return e + "%"
                     }
                 }
