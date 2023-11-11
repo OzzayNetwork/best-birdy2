@@ -541,7 +541,7 @@
                             <div class="card">
                                 <div class="card-header bg-white border-bottom d-flex justify-content-between">
                                     <div>
-                                        <h4 class="card-title text-capitalize">registered Vehicles</h4>
+                                        <h4 class="card-title text-capitalize">Payment History</h4>
                                     </div>
                                     <div>
                                         <button  data-toggle="modal" data-target=".add-car-modal" type="button" class="btn btn-primary waves-effect waves-light">
@@ -553,21 +553,32 @@
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
-                                        <div class="flex-grow-1">
-                                            <div class="search-box mb-0 me-3">
-                                                <div class="position-relative">
-                                                    <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..."
-                                                        fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
-                                                    <i class="bx bx-search-alt search-icon"></i>
-                                                </div>
+                                      <div class="flex-grow-1">
+                                        <div class="search-box mb-0 me-3">
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                                                <i class="bx bx-search-alt search-icon"></i>
                                             </div>
                                         </div>
-                                
+                                      </div>
+
+                                        <div class="d-flex">
+                                            <div class="d-flex align-items-center me-3 pe-3">
+                                                <span class="pr-3 fw-semibold">From:</span>
+                                                <input class="form-control" placeholder="Start date" type="date">
+                                                <span class="px-3 fw-semibold">TO:</span>
+                                                <input class="form-control" placeholder="Start date" type="date">
+                                            </div>
+                                            <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                                <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                            </button>
+
+                                        </div>
+
+
                                     </div>
                                     <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal"
-                                            class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i>
-                                            Print Selected Invoices</button>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
                                     </div>
                                 </div>
 
@@ -578,12 +589,12 @@
                                             <thead class="table-dark">
                                                 <tr>
                                                     <th>#</th>
-                                                    <th scope="col">Vehicle</th>
-                                                    <th scope="col">Category</th>
-                                                    <th scope="col" class="">Last Payment Date</th>
-                                                    <th scope="col" class="">Next Payment Date</th>
-                                                    <th scope="col" class="">Current Status</th>
-                                                    <th scope="col" class="text-right">Amout Payable</th>
+                                                    <th scope="col">Receipt No.</th>
+                                                    <th scope="col">Date Invoiced</th>
+                                                    <th scope="col" class="">Payment Date</th>
+                                                    <th scope="col" class="">Payment Mode</th>
+                                                    <th scope="col" class="">Vehicles Paid For</th>
+                                                    <th scope="col" class="text-right">Amount Paid</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -591,28 +602,42 @@
                                                 <tr>
                                                     <th>1.</th>
                                                     <td class="text-uppercase">
-                                                        KAD456Y
+                                                        fty123345
                                                     </td>
                                                     <td>
-                                                        7 seater
+                                                        10 Jan 2023 10:56:45 AM
                                                     </td>
-                                                    <td>
-                                                        10 Jan 2023 10:56 AM <span class="text-uppercase fw-bold">kes 200</span>
+                                                    <td class="fw-bold">
+                                                        10 Jan 2023 10:56 AM
                                                     </td>
 
                                                     <td>
-                                                        By 5 feb 2023
+                                                        <span class="badge rounded-pill bg-success text-uppercase">MPESA</span>
                                                     </td>
-                                                    <td><span class="badge rounded-pill bg-success text-uppercase">compliant</span></td>
-                                                    <td class="text-right text-uppercase fw-bold">KES 500</td>
+                                                    <td>22 OF 56</td>
+                                                    <td class="text-right text-uppercase fw-bold">KES 5000</td>
                                                     <td class="text-right">
-                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-danger btn-sm text-uppercase">Remove Vehicle</button>
+                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-primary btn-sm text-uppercase">PRINT Receipt</button>
                                                     </td>
                                                 </tr>
 
                                                
                                                 
                                             </tbody>
+                                            <tfoot class="table-dark">
+                                                <tr>
+                                                    <td colspan="4">
+                                                        23 Transactions
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge rounded-pill bg-success text-uppercase">MPESA (13)</span>
+                                                        <span class="badge rounded-pill bg-warning text-uppercase">KCB BANK (10)</span>
+                                                    </td>
+                                                    <td>34 Cars</td>
+                                                    <td class="text-right text-uppercase fw-bold">KES 5000</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tfoot>
                                         </table>
                                     </div>
                                 </div>

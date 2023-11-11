@@ -776,7 +776,7 @@
 
             <!-- receipting modal -->
            <!-- payment modal -->
-         <div class="modal fade" id="payment-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
+           <div class="modal fade" id="payment-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
             <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header d-none">
@@ -819,7 +819,7 @@
                             </div>
                         </div>
 
-                        <div class="send-method payment-panel d-none ">
+                        <div class="send-method payment-panel d-none mpesa-pannel">
                             <label for="" class="mb-0 pb-0">Payment Method</label>
                             <p><small class="text-muted">How would you like to send this money?</small></p>
 
@@ -851,28 +851,61 @@
                                                         <label for="floatingnameInput">Phone No.</label>
                                                     </div>
                                                 </div>
+
+                                                <button class="btn w-100 btn-success mt-3 btn-mpesa">
+                                                    Continue
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                   
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button fw-medium collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <img class="rounded-circle" src="assets/images/users/money.jpg" alt="Mobile Money" height="65">
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <p class="m-0 p-0 text-uppercase fw-semibold">bank Receipting</p>                                                
+                                                    <p class="mb-0 p-0"> <small>Enter the receipt number here to confirm payment for this transaction.</small></p>
+
+                                                    
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="form-group">
+                                                    <label for="">Enter The Bank's Receipt Number</label>
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control font-21 text-success form-control-lg" id="phone-input" placeholder="Enter Name">
+                                                        <label for="floatingnameInput">Bank Ref No.</label>
+                                                    </div>
+
+                                                    <button class="btn w-100 btn-warning mt-3 btn-bank">
+                                                        Continue
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     
                                 </div>
                             </div>
                         </div>
                        
-                        <div class="d-none transaction-summary payment-panel">
+                        <div class="d-none transaction-summary payment-panel bank-pannel">
                             <label for="">Transaction Breakdown</label>
                             <div class="border p-4 rounded ">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="text-muted ">
-                                            Bill NO.                                            
+                                            Receipt NO.                                            
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6 align-self-end">
                                         <div class=" text-right text-black">
-                                            BLL12364558T                                         
+                                            RTS12364558T                                         
                                         </div>
                                     </div>
 
@@ -928,7 +961,7 @@
                                     </div>
                                 </div>
 
-                                <div class="mpesa-confirmation ">
+                                <div class="mpesa-confirmation confirmation-container d-none">
                                     <p class="text-muted mt-2">A payment request of <strong class="text-black">KES 1,500</strong> will be sent to <strong class="text-black">phone number (0704549859)</strong> soon after you click the <strong class="text-black text-capitalize">Send Request</strong> button bellow. 
                                         <br>
                                         <br>
@@ -949,6 +982,23 @@
                                          </button>
                                 </div>
 
+                                <div class="bank-confirmation d-none confirmation-container">
+                                  <p class="text-black">Click <strong>'Submit'</strong> to validate the <strong>KCB</strong> receipt and confirmation of the billed amount. Thank you for your assistance in processing payments.</p>
+                                        <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect btn-send waves-light text-center w-100">
+                                            <div class="d-flex justify-content-center align-items-center"> 
+                                                <div class="stk-timer-container d-none justify-content-center align-items-center">
+                                                    <span class="mdi mdi-timer-outline font-16px"></span>
+                                                    <span class="stk-timer px-2"></span>
+                                                </div>
+                                                <div class="justify-content-center align-items-center d-flex">
+                                                    <span class="px-2">Submit</span> 
+                                                    <div class="flip-x"><i class="mdi mdi-reply ms-3 font-16px"></i></div>
+                                                </div>
+
+                                            </div>
+                                         </button>
+                                </div>
+
                                 <div class="my-wallet-confirmation d-none">
                                     <p class="text-muted mt-2 "><strong class="text-uppercase text-black">KES 300</strong> will be deducted from your guardian blink wallet and amount will be credited to <strong class="text-capitalize text-black">Alex's pocket money account</strong>.</p>
                                     <p class="text-muted">confirm transaction by clicking the <strong class="text-capitalize text-black">send money</strong> button.</p>
@@ -960,18 +1010,6 @@
                                 </div>
 
                                 
-                            </div>
-                        </div>
-
-                        <div class="d-none transaction-summary loader-panel">
-                            <div class="p-5 py-0 pt-3 d-flex justify-content-center align-items-center text-center flex-column">
-                                <div class="p-5">
-                                    <div class="spinner-border text-info m-1" role="status">
-                                        <span class="sr-only text-uppercase">Loading...</span>
-                                    </div>
-                                </div>
-                                <h4 class="text-black fw-bold">Payment Being Processed</h4>
-                                <div class="mb-5">Ask Client to be checking their Phone for a payment request thats currently being Processed</div>
                             </div>
                         </div>
                         <div class="text-center d-flex flex-column justify-content-around align-items-center sent-success d-none payment-panel">
@@ -1517,6 +1555,29 @@ Highcharts.chart('StreamRevenueChart', {
     }]
 });
 
+    </script>
+
+    <script>
+       
+
+        $('.btn-mpesa').on('click', function(){
+           // alert("clicked")
+
+            $('.payment-panel').addClass('d-none')
+            $('.bank-pannel').removeClass('d-none')
+            $('.bank-confirmation').addClass('d-none')
+            $('.mpesa-confirmation').removeClass('d-none')
+        })
+
+        $('.btn-bank').on('click', function(){
+           // alert("bank has been clicked")
+            $('.payment-panel').addClass('d-none')
+            $('.bank-pannel').removeClass('d-none')
+            $('.bank-confirmation').removeClass('d-none')
+            $('.mpesa-confirmation').addClass('d-none')
+
+            // $('.bank-confirmation').removeClass()
+        })
     </script>
     
     

@@ -820,6 +820,7 @@ $(document).ready(function() {
         var theCurrentIndex= $(".payment-panel-parent .payment-panel.payment-active-panel").index();
         if(theCurrentIndex!=0){
             $('.payment-panel-parent').find('.payment-active-panel').addClass('d-none').removeClass('payment-active-panel').prev().removeClass('d-none').addClass('payment-active-panel')
+            $('.transaction-summary').addClass('d-none')
         }   
         
     });
