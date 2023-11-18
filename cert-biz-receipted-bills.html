@@ -555,14 +555,15 @@
                                 <div
                                     class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
-                                        role="toolbar">
-                                        <h4 class="card-title text-capitalize mb-0 ">
-                                            SBP Receipted Bills
-                                        </h4>
-                                    </div>
+                                   <small class="fw-bold px-3">Data Filters: </small>
                                     <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
-                                        <label class="text-nowrap mb-0">Business Activity:</label>
+                                        <label class="text-nowrap mb-0 px-2">Date From:</label>
+                                        <input class="form-control pr-3" type="datetime-local" value="2019-08-19T13:45:00" id="example-datetime-local-input">
+
+                                        <label class="text-nowrap mb-0 px-2">Date To:</label>
+                                        <input class="form-control pr-2" type="datetime-local" value="2019-08-19T13:45:00" id="example-datetime-local-input">
+
+                                        <label class="text-nowrap mb-0 px-2">Business Activity:</label>
                                         <select class="form-select mx-2" title="Select Subcounty">
                                             <option>All Business Activites</option>
                                             <option>Homabay Town</option>
@@ -586,11 +587,27 @@
                                         </select>
                                     </div>
                                 </div>
+
+                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom d-flex">
+
+                                     
+                                    <div class="d-flex align-items-center justify-content-center p-3 flex-grow-1"  role="toolbar">
+                                        <form class="app-search p-0 m-0 w-100">
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control w-100" placeholder="Search... eg Business Name, ID Number, Bill Number, etc" spellcheck="false" data-ms-editor="true">
+                                                <span class="bx bx-search-alt"></span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="pr-3">
+                                        <button class="btn btn-primary">Download  </button>
+                                    </div>
+                                </div>
                                 <div class="card-body">
                                     <div class="table-responsive ">
 
                                         <table class="table align-middle table-hover  contacts-table table-striped "
-                                            id="datatable-buttons">
+                                            id="datatable-buttons2">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th scope="col">Receipt No.</th>
