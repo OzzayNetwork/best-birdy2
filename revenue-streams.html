@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Zones and Allocations</title>
+    <title>Revenue Streams</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Keep your finances and membership up to date" name="description" />
     <meta content="Kelvin Njuguna Ndungu" name="author" />
@@ -451,13 +451,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Zone/Collection Point mapping</h4>
+                                <h4 class="mb-sm-0 font-size-18">Revenue Streams</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                        <li class="breadcrumb-item active">Reports</li>
-                                        <li class="breadcrumb-item active">Zone mapping</li>
+                                        <li class="breadcrumb-item active">Set Ups </li>
+                                        <li class="breadcrumb-item active">Revenue Streams</li>
                                     </ol>
                                 </div>
 
@@ -471,10 +471,10 @@
 
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
-                                        <h4 class="mb-0">Registered collection points/Zones</h4>
+                                        <h4 class="mb-0">Revenue Streams</h4>
                                         <div class="d-flex">
                                             <a href="#" type="button" class="btn btn-primary dropdown-toggle option-selector" data-bs-toggle="modal" data-bs-target=".add-modal">
-                                                <i class="mdi mdi-account-multiple-plus-outline  font-size-16"></i> <span class="pl-1 d-md-inline">Add Zone</span>
+                                                <i class="mdi mdi-account-multiple-plus-outline  font-size-16"></i> <span class="pl-1 d-md-inline">Add Stream</span>
                                             </a>
                                         </div>
 
@@ -489,238 +489,100 @@
                                 
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id="">
+                                        <table class="table align-middle  table-nowrap table-hover dt-responsive contacts-table" id="">
                                             <thead class="table-dark">
-                                                <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col">Zone Name</th>
-                                                    <th>Zone category</th>
-                                                    <th scope="col">Ward</th>                                                
-                                                    <th scope="col" class="">Subcounty</th>
-                                                    <th scope="col" class="">Officers</th>
-                                                    <th></th>
-                                                </tr>
+                                                <th colspan="4">
+                                                    Revenue Streams
+                                                </th>
                                             </thead>
+                                            <tfoot class="table-dark">
+                                                <tr>
+                                                     
+                                                    <th colspan="2">23 Revenue Streams</th>
+                                                    <th colspan="2">45 Sources</th>
+                                                </tr>
+                                            </tfoot>
                                             
                                             <tbody>
-                                                <tr class="table-success">
-                                                    <th>1.</th>
-                                                    <th colspan="6">Subcounty Name Goes Here</th>
-                                                </tr>     
-                                                <tr class="table-info">
-                                                    <th>A.</th>
-                                                    <th colspan="6">Ward Name Goes Here</th>
-                                                </tr>  
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr>   
-                                                
-                                                <tr>
-                                                    <td>ii.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr>   
+                                                <tr class="table-light">
+                                                    <th style="width: 50px;">1.</th>
+                                                    <th colspan="2">Parking</th>
+                                                    <td class="text-right">
+                                                        <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target=".add-modal">
+                                                            Edit
+                                                        </button>
 
-                                                <tr>
-                                                    <td>iii.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
+                                                        <button class="btn btn-sm btn-danger">
+                                                            Delete
+                                                        </button>
                                                     </td>
-                                                </tr>   
+                                                </tr>
 
-                                                <tr>
-                                                    <td>iv.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
-                                                
-                                                <tr class="table-info">
-                                                    <th>B.</th>
-                                                    <th colspan="6">Ward Name Goes Here</th>
-                                                </tr>  
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
+                                                <tr class=" ">
+                                                    <th style="width: 50px;"> </th>
+                                                    
+                                                    <th colspan="3">(a) Bus Park</th>
+                                                     
+                                                </tr>
+                                                <tr class=" ">
+                                                    <th style="width: 50px;"> </th>
+                                                    
+                                                    <th colspan="3">(a) Bus Park</th>
+                                                     
+                                                </tr>
+                                                <tr class=" ">
+                                                    <th style="width: 50px;"> </th>
+                                                    
+                                                    <th colspan="3">(a) Bus Park</th>
+                                                     
+                                                </tr>
+                                                <tr class=" ">
+                                                    <th style="width: 50px;"> </th>
+                                                    
+                                                    <th colspan="3">(a) Bus Park</th>
+                                                     
+                                                </tr>
 
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
+                                                <tr class="table-light">
+                                                    <th style="width: 50px;">2.</th>
+                                                    <th colspan="2">Parking</th>
+                                                    <td class="text-right">
+                                                        <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target=".add-modal">
+                                                            Edit
+                                                        </button>
 
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
+                                                        <button class="btn btn-sm btn-danger">
+                                                            Delete
+                                                        </button>
                                                     </td>
-                                                </tr> 
+                                                </tr>
 
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
+                                                <tr class=" ">
+                                                    <th style="width: 50px;"> </th>
+                                                    
+                                                    <th colspan="3">(a) Bus Park</th>
+                                                     
+                                                </tr>
+                                                <tr class=" ">
+                                                    <th style="width: 50px;"> </th>
+                                                    
+                                                    <th colspan="3">(a) Bus Park</th>
+                                                     
+                                                </tr>
+                                                <tr class=" ">
+                                                    <th style="width: 50px;"> </th>
+                                                    
+                                                    <th colspan="3">(a) Bus Park</th>
+                                                     
+                                                </tr>
+                                                <tr class=" ">
+                                                    <th style="width: 50px;"> </th>
+                                                    
+                                                    <th colspan="3">(a) Bus Park</th>
+                                                     
+                                                </tr>
 
-                                                <tr class="table-info">
-                                                    <th>C.</th>
-                                                    <th colspan="6">Ward Name Goes Here</th>
-                                                </tr>  
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
 
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
-
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
-
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
-
-                                                <tr class="table-success">
-                                                    <th>1.</th>
-                                                    <th colspan="6">Subcounty Name Goes Here</th>
-                                                </tr> 
-                                                <tr class="table-info">
-                                                    <th>B.</th>
-                                                    <th colspan="6">Ward Name Goes Here</th>
-                                                </tr>  
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
-
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
-
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
-
-                                                <tr>
-                                                    <td>i.</td>
-                                                    <td>Zone Name</td>
-                                                    <td>Market Place</td>
-                                                    <td>Ward Name</td>
-                                                    <td>Sub county Name</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target=".add-modal"><i class="bx bx-edit-alt"></i> Edit</button>
-                                                    </td>
-                                                </tr> 
-    
-                                                                             
-    
                                             </tbody>
                                         </table>
                                     </div>
@@ -744,77 +606,14 @@
                 <div class="modal-dialog modal-md modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Register A New Zone</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Register Revenue Stream</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-12 mb-3">
-                                    <div class="form-group">
-                                        <label for="">Zone Name</label>
-                                        <input type="text" class="form-control" placeholder="Enter The zone Name">
-                                    </div>
-                                </div>
-
-                                <div class="col-12 mb-3">
-                                    <div class="form-group">
-                                        <label for="" class="mb-0 pb-0">Zone Type</label>
-                                       <p> <small>Select the zone type from the list below</small></p>
-                                        <select class="form-select">
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">Market Place</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">Matau/Bus Stage</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">parking Zone</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">Market Rentals</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">Cess Barriers</a></option>
-                                           
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 mb-3">
-                                    <div class="form-group">
-                                        <label for="" class="mb-0 pb-0">SubCounty</label>
-                                       <p> <small>Select the sub county from below</small></p>
-                                        <select class="form-select">
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMA BAY TOWN</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMABAY HQ</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">KABONDO KASIPUL</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">KARACHUONYO</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">KASIPUL</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">MBITA</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">NDHIWA</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">RANGWE</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">SUBA</a></option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 mb-3">
-                                    <div class="form-group">
-                                        <label for="" class="mb-0 pb-0">Ward</label>
-                                       <p> <small>Select the ward from below</small></p>
-                                        <select class="form-select">
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMA BAY TOWN</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMABAY HQ</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">KABONDO KASIPUL</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">KARACHUONYO</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">KASIPUL</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">MBITA</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">NDHIWA</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">RANGWE</a></option>
-                                            <option value="[object Object]"><a class="dropdown-item" href="#">SUBA</a></option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                
-
-                                <div class="col-12 mb-3">
-                                    <div class="form-group">
-                                        <label for="">Longitude & Latitude</label>
-                                        <p> <small>Enter the location coodinates in the format shown below.</small></p>
-                                        <input type="text" class="form-control" placeholder="Longitude, Latitude">
-                                    </div>
+                                <div class="col-12">
+                                    <label for="">Revenue Stream Name</label>
+                                    <input type="text" class="form-control" placeholder="Revenue Stream Name">
                                 </div>
                             </div>
                         </div>
