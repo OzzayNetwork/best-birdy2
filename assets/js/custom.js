@@ -614,6 +614,18 @@ $(window).on('load', function() {
             $('.landrate-rev').removeClass("d-none").siblings().addClass('d-none')
         }
 
+        if(this.value==="plans"){
+            $('.plans').removeClass("d-none").siblings().addClass('d-none')
+        }
+
+        if(this.value==="Advert"){
+            $('.signs').removeClass("d-none").siblings().addClass('d-none')
+        }
+
+        //alert(this.value)
+
+        
+
         if(this.value==="Others"){
 
             $('.others-rev').removeClass("d-none").siblings().addClass('d-none')

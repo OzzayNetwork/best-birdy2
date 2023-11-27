@@ -1701,14 +1701,16 @@
                                                                         <option value="Landrates">Land Rates</option>
 
                                                                         <option value="Liquor">Liquor</option>
-                                                                        <option value="Others">Advert</option>
+                                                                        <option value="weight">Weight and Measures </option>
+                                                                        <option value="plans">Building Plans</option>
+                                                                        <option value="Advert">Outdoor adverts & Signboard </option>
                                                                         <option value="Others" selected>Others</option>
                                                                   </select>
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-12 rev-options-cont">
-                                                                <div class="row others-rev">
+                                                                <div class="row others-rev d- ">
                                                                     <div class="col-6">
                                                                         <div class="mb-3">
                                                                             <label for="formrow-firstname-input" class="form-label">Account Name</label>
@@ -1825,7 +1827,7 @@
                                                                                 <option value="LandRate">Land Rate</option>
         
                                                                                 <option value="Liquor">Liquor</option>
-                                                                                <option value="Advert">Advert</option>
+                                                                                <option value="signs">Advert</option>
                                                                           </select>
                                                                         </div>
                                                                     </div>
@@ -2138,6 +2140,175 @@
 
                                                                     <div>
                                                                         <button type="button" class="btn btn-primary waves-effect btn-label waves-light"><i class="bx bx-plus label-icon"></i> Bill Item</button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row signs d-none  ">
+                                                                    
+
+                                                                    <div class="col-12">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-firstname-input" class="form-label">Charge Type</label>
+                                                                            <select class="form-control selectpicker bg-white" title="Select Traffic offence" data-live-search="true" title="Select a tenant">
+                                                                                <option value=" "> Out Door Advertisement and Signage </option>
+                                                                                <option value=" ">Banners</option>
+                                                                                <option value=" ">Business Premises Signboards </option>
+                                                                                <option value=" ">Wall Painting and Branding Adverts </option>
+                                                                           </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-12">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-firstname-input" class="form-label">Fee Description</label>
+                                                                            <select class="form-control selectpicker bg-white" title="Select Traffic offence" data-live-search="true" title="Select a tenant">
+                                                                                <option value=" "> Motion screen adverts Per Sq. Meter </option>
+                                                                                <option value=" ">Non-Motion screen adverts Per Sq. Meter· </option>
+                                                                                <option value=" ">Promotion sales of music, CD's in a.van/tent per day </option>
+                                                                                <option value=" ">Promotion - road show per day/per Sub-County </option>
+                                                                                <option value="">Non-Motion screen adverts Per Sq. Meter· </option>
+                                                                           </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-firstname-input" class="form-label">Sub County</label>
+                                                                            <select class="form-control selectpicker bg-white" title="Select Traffic offence" data-live-search="true" title="Select a tenant">
+                                                                                <option value=" ">Meru Town</option>
+                                                                                <option value=" ">Nkubu Town</option>
+                                                                                <option value=" ">South Imenti</option>
+                                                                                <option value=" ">North Imenti</option>
+                                                                                <option value=" ">Central Imenti</option>
+                                                                          </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-firstname-input" class="form-label">Ward</label>
+                                                                            <select class="form-control selectpicker bg-white" title="Select Traffic offence" data-live-search="true" title="Select a tenant">
+                                                                                <option value=" ">Ward 1</option>
+                                                                                <option value=" ">Ward 2</option>
+                                                                                <option value=" ">Ward 3</option>
+                                                                                 
+                                                                          </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-12">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-firstname-input" class="form-label">Details</label>
+                                                                            <textarea name="" id="" cols="30" rows="3" placeholder="More details on the incident" class="form-control" spellcheck="false" data-ms-editor="true"></textarea>
+                                                                        </div>
+                                                                    </div>
+        
+                                                                    
+        
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-email-input" class="form-label">Unit Price</label>
+                                                                            <input type="text" class="form-control" id="formrow-email-input"  placeholder="Enter amount to be paid" disabled>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-email-input" class="form-label">Quantity/Instances</label>
+                                                                            <input type="text" class="form-control" id="formrow-email-input"  placeholder="Enter amount to be paid">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <button type="button" class="btn btn-primary waves-effect btn-label waves-light w-100"><i class="bx bx-plus label-icon"></i> Bill Item</button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row plans d-none ">
+                                                                    
+
+                                                                    <div class="col-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-firstname-input" class="form-label">Property LR No.</label>
+                                                                           <input type="text" class="form-control" placeholder="Enter property Number">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-firstname-input" class="form-label">Charge Type</label>
+                                                                            <select class="form-control selectpicker bg-white" title="Select Traffic offence" data-live-search="true" title="Select a tenant">
+                                                                                <option value=" "> Building Plans Approval charges 	</option>
+                                                                                <option value=" ">Preliminary submission of building plans and proposal</option>
+                                                                                <option value=" ">Additional charges for structural plans</option>
+                                                                                <option value=" ">Landscape scheme plans</option>
+                                                                           </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-12">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-firstname-input" class="form-label">Fee Description</label>
+                                                                            <select class="form-control selectpicker bg-white" title="Select Traffic offence" data-live-search="true" title="Select a tenant">
+                                                                                <option value=" "> Occupation permit 	</option>
+                                                                                <option value=" ">Plot boundary indication fee </option>
+                                                                                <option value=" ">Plot demarcation fee</option>
+                                                                                <option value=" ">Plot rent for un surveyed plot </option>
+                                                                                <option value="">Building inspection­ structural </option>
+                                                                           </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-firstname-input" class="form-label">Sub County</label>
+                                                                            <select class="form-control selectpicker bg-white" title="Select Traffic offence" data-live-search="true" title="Select a tenant">
+                                                                                <option value=" ">Meru Town</option>
+                                                                                <option value=" ">Nkubu Town</option>
+                                                                                <option value=" ">South Imenti</option>
+                                                                                <option value=" ">North Imenti</option>
+                                                                                <option value=" ">Central Imenti</option>
+                                                                          </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-firstname-input" class="form-label">Ward</label>
+                                                                            <select class="form-control selectpicker bg-white" title="Select Traffic offence" data-live-search="true" title="Select a tenant">
+                                                                                <option value=" ">Ward 1</option>
+                                                                                <option value=" ">Ward 2</option>
+                                                                                <option value=" ">Ward 3</option>
+                                                                                 
+                                                                          </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-12">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-firstname-input" class="form-label">Details</label>
+                                                                            <textarea name="" id="" cols="30" rows="3" placeholder="More details on the incident" class="form-control" spellcheck="false" data-ms-editor="true"></textarea>
+                                                                        </div>
+                                                                    </div>
+        
+                                                                    
+        
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-email-input" class="form-label">Unit Price</label>
+                                                                            <input type="text" class="form-control" id="formrow-email-input"  placeholder="Enter amount to be paid" disabled>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-email-input" class="form-label">Quantity/Instances</label>
+                                                                            <input type="text" class="form-control" id="formrow-email-input"  placeholder="Enter amount to be paid">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <button type="button" class="btn btn-primary waves-effect btn-label waves-light w-100"><i class="bx bx-plus label-icon"></i> Bill Item</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
