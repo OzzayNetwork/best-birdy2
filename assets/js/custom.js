@@ -621,6 +621,9 @@ $(window).on('load', function() {
         if(this.value==="Advert"){
             $('.signs').removeClass("d-none").siblings().addClass('d-none')
         }
+        if(this.value==="weight"){
+            $('.weight-row').removeClass("d-none").siblings().addClass('d-none')
+        }
 
         //alert(this.value)
 
