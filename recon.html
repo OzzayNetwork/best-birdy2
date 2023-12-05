@@ -480,22 +480,42 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                                <div class="card-header d-flex justify-content-between align-items-center bg-white border-bottom">
                                     <div>
-                                        <h4 class="card-title m-0 text-uppercase">
+                                        <h4 class="card-title m-0 text-uppercase d-none">
                                             Reconciliations History
                                         </h4>
                                     </div>
                                     <div>
                                         <button class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#singleTrans"><i class="mdi mdi-briefcase-search font-size-16 align-middle me-2"></i> Single Transaction</button>
-                                        <button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#uploadFile" > <i class="mdi-file-document-multiple-outline mdi font-size-16 align-middle me-2"></i>  Upload File</button>
+                                        <button class="btn-dark btn" data-bs-toggle="modal" data-bs-target="#uploadFile" > <i class="mdi-file-document-multiple-outline mdi font-size-16 align-middle me-2"></i>  Upload File</button>
+                                    </div>
+                                </div>
+
+                                <div class="card-header d-flex justify-content-between align-items-center bg-white border-bottom">
+                                    <div>
+                                        <h4 class="card-title m-0 text-uppercase">
+                                            Reconciliations History
+                                        </h4>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="d-flex align-items-center me-3 pe-3">
+                                            <span class="pr-3 fw-semibold">From:</span>
+                                            <input class="form-control" placeholder="Start date" type="date">
+                                            <span class="px-3 fw-semibold">TO:</span>
+                                            <input class="form-control" placeholder="Start date" type="date">
+                                        </div>
+                                        <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                            <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                        </button>
+
                                     </div>
                                 </div>
                                 
                                 <div class="card-body">
                                      
                                     <div class="table-responsive">
-                                        <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id="datatable-buttons">
+                                        <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id=" ">
                                             <thead class="table-dark">
                                                 <tr>
                                                     <th scope="col">Reconciled On</th>
@@ -506,6 +526,8 @@
                                                     <th>
                                                         Reconciled By
                                                     </th>
+                                                    <th class="text-right">Amount Reconciled</th>
+                                                    <th></th>
                                                 </tr>
                                             </thead>
                                             
@@ -529,6 +551,10 @@
                                                     <td>
                                                         Alex Wanjala
                                                     </td>
+                                                    <td class="text-right">KES 12,900</td>
+                                                    <td>
+                                                        <a href="recon-details.html" class="btn btn-sm btn-primary">View Details</a>
+                                                    </td>
                                                 </tr>
 
                                                 <tr>
@@ -550,8 +576,22 @@
                                                     <td>
                                                         Alex Wanjala
                                                     </td>
+                                                    <td class="text-right">KES 12,900</td>
+                                                    <td>
+                                                        <a href="recon-details.html" class="btn btn-sm btn-primary">View Details</a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
+                                            <tfoot class="table-dark">
+                                                <tr>
+                                                    <td class="" colspan="3">23 Recociliations</td>
+                                                    <td class="text-uppercase">KCB Bank:45  MPESA:546 </td>
+                                                    <td>234 of 67000</td>
+                                                    <td>23 Users</td>
+                                                    <td class="text-uppercase text-right">KES 450,000</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tfoot>
                                         </table>
                                     </div>
                                 </div>

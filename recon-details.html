@@ -464,12 +464,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">County Biller Auto Reconciliation</h4>
+                                <h4 class="mb-sm-0 font-size-18">Reconciliations Details</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                        <li class="breadcrumb-item active">Auto Reconciliation</li>
+                                        <li class="breadcrumb-item"><a href="recon.html">Auto Reconciliations</a></li>
+                                        <li class="breadcrumb-item active">Reconciliation Details</li>
                                     </ol>
                                 </div>
 
@@ -483,10 +484,11 @@
                                 <div class="card-header d-flex justify-content-between align-items-center bg-white">
                                     <div>
                                         <h4 class="card-title m-0 text-uppercase">
-                                            Reconciliations History
+                                            Was reconciled on 12 Dec 2023 At 12:54 AM
                                         </h4>
+                                        <small>By Kelvin Kinoti</small>
                                     </div>
-                                    <div>
+                                    <div class="d-none">
                                         <button class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#singleTrans"><i class="mdi mdi-briefcase-search font-size-16 align-middle me-2"></i> Single Transaction</button>
                                         <button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#uploadFile" > <i class="mdi-file-document-multiple-outline mdi font-size-16 align-middle me-2"></i>  Upload File</button>
                                     </div>
@@ -498,60 +500,90 @@
                                         <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id="datatable-buttons">
                                             <thead class="table-dark">
                                                 <tr>
-                                                    <th scope="col">Reconciled On</th>
-                                                    <th scope="col">Date From</th> 
-                                                    <th>Date To</th> 
-                                                    <th>Transactions Type</th>
-                                                    <th>Reconciled Transactions</th>                                              
+                                                    <th scope="col">Ref Number</th>
+                                                    <th scope="col">Transaction Date</th> 
+                                                    <th>Phone  </th> 
+                                                    <th>Invoice No.</th>
+                                                    <th>Sub County</th>                                              
                                                     <th>
-                                                        Reconciled By
+                                                        Zone
                                                     </th>
+                                                    <th>Initiated By</th>
+                                                    <th>Transaction Details</th>
+                                                    <th class="text-right">Amount</th>
                                                 </tr>
                                             </thead>
                                             
                                             <tbody>
                                                 <tr>
-                                                    <td>
-                                                        10 Dec 2023 At 10:45 AM
-                                                    </td>
-                                                    <th>
-                                                        12 Nov 2023 At 10:34 AM
-                                                    </th>
-                                                    <th>
-                                                        30 Nov 2023 At 9:07 PM
-                                                    </th>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase">MPESA</span>
-                                                    </td>
-                                                    <td>
-                                                        22 Of 100 Transactions
-                                                    </td>
-                                                    <td>
-                                                        Alex Wanjala
-                                                    </td>
+                                                    <td class="text-uppercase">rwd5689</td>
+                                                    <td>12 Jan 2023 12:43 AM</td>
+                                                    <td>0704 ****59</td>
+                                                    <td class="text-uppercase">BLL56790</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Bus Park</td>
+                                                    <td>Elvis Weke</td>
+                                                    <td>Daily Parking For KAD123Y</td>
+                                                    <td class="text-right">KES 23,900</td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>
-                                                        10 Dec 2023 At 10:45 AM
-                                                    </td>
-                                                    <th>
-                                                        12 Nov 2023 At 10:34 AM
-                                                    </th>
-                                                    <th>
-                                                        30 Nov 2023 At 9:07 PM
-                                                    </th>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-dark text-uppercase">Bank</span>
-                                                    </td>
-                                                    <td>
-                                                        22 Of 100 Transactions
-                                                    </td>
-                                                    <td>
-                                                        Alex Wanjala
-                                                    </td>
+                                                    <td class="text-uppercase">rwd5689</td>
+                                                    <td>12 Jan 2023 12:43 AM</td>
+                                                    <td>0704 ****59</td>
+                                                    <td class="text-uppercase">BLL56790</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Bus Park</td>
+                                                    <td>Elvis Weke</td>
+                                                    <td>Daily Parking For KAD123Y</td>
+                                                    <td class="text-right">KES 23,900</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-uppercase">rwd5689</td>
+                                                    <td>12 Jan 2023 12:43 AM</td>
+                                                    <td>0704 ****59</td>
+                                                    <td class="text-uppercase">BLL56790</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Bus Park</td>
+                                                    <td>Elvis Weke</td>
+                                                    <td>Daily Parking For KAD123Y</td>
+                                                    <td class="text-right">KES 23,900</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-uppercase">rwd5689</td>
+                                                    <td>12 Jan 2023 12:43 AM</td>
+                                                    <td>0704 ****59</td>
+                                                    <td class="text-uppercase">BLL56790</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Bus Park</td>
+                                                    <td>Elvis Weke</td>
+                                                    <td>Daily Parking For KAD123Y</td>
+                                                    <td class="text-right">KES 23,900</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-uppercase">rwd5689</td>
+                                                    <td>12 Jan 2023 12:43 AM</td>
+                                                    <td>0704 ****59</td>
+                                                    <td class="text-uppercase">BLL56790</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Bus Park</td>
+                                                    <td>Elvis Weke</td>
+                                                    <td>Daily Parking For KAD123Y</td>
+                                                    <td class="text-right">KES 23,900</td>
                                                 </tr>
                                             </tbody>
+                                            <tfoot class="table-dark"> 
+                                                <tr>
+                                                    <th colspan="4"> 22 Transatcions</th>
+                                                    <th>3 Sub Counties</th>
+                                                    <th>3 Zones</th>
+                                                    <th colspan="2">4 Users</th>
+                                                    <th class="text-right">KES 190,000</th>
+                                                </tr>
+                                            </tfoot>
                                         </table>
                                     </div>
                                 </div>
