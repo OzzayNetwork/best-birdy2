@@ -1424,5 +1424,9 @@ position: relative;
 .z-index-3{
 z-index: 3 !important;
 }
+.border-collapse tbody td{
+    border-collapse: collapse !important;
+}
+
 
 
