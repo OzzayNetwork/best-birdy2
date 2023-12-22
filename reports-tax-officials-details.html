@@ -462,21 +462,20 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Revenue Collection County Tax Officials for the period 1 Jan 2023 to 31 Jan 2023</h4>
+                                <h4 class="mb-sm-0 font-size-18">Revenue Collections Reports By Cashiers for 12 Jul 2023 to 12 Jun 2023 </h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item active">Revenue collection by Revenue Stream</li>
+                                        <li class="breadcrumb-item"><a href="#">Reports</a></li>
+                                        <li class="breadcrumb-item active">Revenue Collections By Agents</li>
                                     </ol>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-
-                   
                     <!-- end page title -->
                     <div class="row">
                         <div class="col-12">
@@ -487,7 +486,7 @@
                                       <div class="flex-grow-1">
                                         <div class="search-box mb-0 me-3">
                                             <div class="position-relative">
-                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l">
+                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
                                                 <i class="bx bx-search-alt search-icon"></i>
                                             </div>
                                         </div>
@@ -496,11 +495,31 @@
                                         <div class="d-flex">
                                             <div class="d-flex align-items-center me-3 pe-3">
                                                 <span class="pr-3 fw-semibold">From:</span>
-                                                <input class="form-control"placeholder="Start date" type="date">
+                                                <input class="form-control" placeholder="Start date" type="date">
                                                 <span class="px-3 fw-semibold">TO:</span>
                                                 <input class="form-control" placeholder="Start date" type="date">
+
+                                                
                                             </div>
-                                            <button  data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+
+                                            <select class="form-select w-auto font-13px me-3">
+                                                <option value="10">All Users</option>
+                                                <option value="25">Underperfomers</option>
+                                                <option value="50">Users Below Target</option>
+                                                <option value="100">Performing Users</option>
+                                                <option value="150">Users Above Target</option>
+                                               
+                                            </select>
+
+                                            <select class="form-select w-auto font-13px me-3">
+                                                <option value="10">All Transactions</option>
+                                                <option value="25">MPESA Transactions</option>
+                                                <option value="50">Bank Transactions</option>
+                                               
+                                               
+                                            </select>
+
+                                            <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                                 <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
                                             </button>
 
@@ -509,259 +528,199 @@
 
                                     </div>
                                     <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button"  data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="table-responsive  ">
+                                    <div class="table-responsive ">
 
                                         <table class="table align-middle table-hover  contacts-table table-striped " id="">
                                             <thead class="table-light">
-                                                <tr class="table-dark text-uppercase">
+                                                <tr class="table-dark">
                                                     <th>#</th>
-                                                    <th scope="col">User Role</th>
-                                                    <th class="text-right">	MERU TOWN</th>
-                                                    <th scope="col" class="text-right">SOUTH IMENTI</th>                                                    
-                                                    <th scope="col" class="text-right">MAUA TOWN</th>
-                                                    <th scope="col" class="text-right">BUURI WEST</th>
-                                                    <th scope="col" class="text-right">BUURI EAST</th>
-                                                    <th scope="col" class="text-right">TIGANIA WEST</th>
-                                                    <th scope="col" class="text-right">CENTRAL IMENTI</th>
-                                                    <th scope="col" class="text-right">	NORTH IMENTI</th>
-                                                    <th scope="col" class="text-right">IGEMBE NORTH</th>
-                                                    <th scope="col" class="text-right">NKUBU TOWN</th>
-                                                    <th scope="col" class="text-right">Total</th>
-                                                   
+                                                    <th scope="col">System User</th>
+                                                    <th>Inspections</th>
+                                                    <th scope="col">Transactions</th>     
+                                                    <th>Idle Time</th> 
+                                                    <th class="text-right">Highest Achievement</th> 
+                                                    <th class="text-right">Inspected Revenue</th>      
+                                                    <th class="text-right">Target</th>   
+                                                    <th>Target Achievement</th>                                        
+                                                    <th scope="col" class="text-right">Amount collected</th>
+                                                    <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-tax-officials-details.html">Self Service</a>
+                                                    <td>
+                                                        Kelvin Mburu
+                                                        
                                                     </td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td>22 Min</td>
+                                                    
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                   
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-tax-officials-details.html">Cashiers</a>
+                                                    <td class="table-success fw-bold" data-toggle="tooltip" data-placement="top" title="" data-bs-original-title="Above Target (collectuons above 100%)">
+                                                        108%
+                                                       
+
+                                                        <span class="badge rounded-pill bg-success float-end text-uppercase">Above Target</span>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                   
+                                                    <th class="text-capitalize text-nowrap text-right fw-bold text-dark">KES 320,000</th>
+
+                                                    <td>
+                                                        <div class="d-flex justify-content-end">
+                                                            <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-tax-officials-details.html">Revenue Colectors</a>
+                                                    <td>
+                                                        Kelvin Mburu
+                                                        
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td>22 Min</td>
                                                     
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="table-info fw-bold" data-toggle="tooltip" data-placement="top" title="" data-bs-original-title="Performing (Collections that are 90%-100% of the target)">
+                                                        98%
+
+                                                        <span class="badge rounded-pill bg-info float-end text-uppercase">Performing</span>
+                                                    </td>
+                                                    <th class="text-capitalize text-nowrap text-right fw-bold text-dark">KES 320,000</th>
+
+                                                    <td>
+                                                        <div class="d-flex justify-content-end">
+                                                            <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>3.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-tax-officials-details.html">Revenue Officer</a>
+                                                    <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
+                                                    <td>
+                                                        Kelvin Mburu
+                                                        
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td>22 Min</td>
                                                     
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="table-danger fw-bold" data-toggle="tooltip" data-placement="top" title="" data-bs-original-title="Underperforming (Collections that are 80% and below of the target)">
+                                                        45%
+
+                                                        <span class="badge rounded-pill bg-danger float-end text-uppercase">Underperforming</span>
+                                                    </td>
+                                                    <th class="text-capitalize text-nowrap text-right fw-bold text-dark">KES 320,000</th>
+
+                                                    <td>
+                                                        <div class="d-flex justify-content-end">
+                                                            <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-tax-officials-details.html"> Enforcers</a>
+                                                    <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
+                                                    <td>
+                                                        Kelvin Mburu
+                                                        
                                                     </td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td>22 Min</td>
+                                                    
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                   
-                                                </tr>
+                                                    <td class="table-warning fw-bold" data-toggle="tooltip" data-placement="top" title="" data-bs-original-title="Below Target (Collections that are 80%-90% of the target)">
+                                                        88%
 
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-tax-officials-details.html"> Inspectors</a>
+                                                        <span class="badge rounded-pill bg-warning float-end text-uppercase">Below Target</span>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                   
-                                                </tr>
+                                                    <th class="text-capitalize text-nowrap text-right fw-bold text-dark">KES 320,000</th>
 
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-tax-officials-details.html"> Licensing Officers</a>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end">
+                                                            <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                   
                                                 </tr>
-
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-tax-officials-details.html"> Accountant</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                   
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-tax-officials-details.html"> Revenue Director</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                   
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-tax-officials-details.html"> ICT Officers</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                   
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-tax-officials-details.html"> Impounding fees & Fines </a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                   
-                                                </tr>
-
-                                               
-                                                
                                                 
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
 
-                                                    <th colspan="2">
-                                                        23 Sub Counties
+                                                    <th colspan="">
+                                                        23 Agents
                                                     </th>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
-                                                    
+                                                   <th>
+                                                        
+                                                   </th>
+                                                   <th>53</th>
+                                                   <th>53</th>
+                                                   <th>5 Hrs</th>
+                                                   
+                                                   <td class="text-nowrap text-right " colspan="2">
+                                                        <span class="fw-semibold ">KES 2,000,000</span>
+                                                    </td>
+
+                                                   <td class="text-nowrap text-right " colspan="2">
+                                                    <span class="fw-semibold ">KES 2,000,000</span>
+                                                </td>
+
+
+                                                    <td class="text-nowrap text-right " colspan="">
+                                                        <span class="fw-semibold ">KES 2,000,000</span>
+                                                    </td>
+                                                    <TD></TD>
+
                                                     
                                                 </tr>
 
@@ -879,78 +838,30 @@
             <!-- end of receipting modal -->
 
             <!-- invoice details -->
-            <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal fade target-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Invoice Details</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Target Categorization</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="col-12">
-                                <address>
-                                    <strong>Billed To:</strong><br>
-                                    Kelvin Njuguna<br>
-                                    email@mail.com, 0704 549 859<br>                                   
-                                    Hse No. 410, 90 Degrees By Tsavo
-                                    <br><br>
-                                    1 Mar 2022, 10:20 AM
-                                </address>
-                            </div>
-                            <div class="col-12">
-                                <div class="py-2 mt-3">
-                                    <h3 class="font-size-15 fw-bold">Invoice Details ( <span class="text-primary fw-medium">No. 1237</span> )</h3>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <table class="table table-nowrap">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 70px;">No.</th>
-                                                <th>Item</th>
-                                                <th class="text-end">Amount</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>01</td>
-                                                <td>Rent Deposit</td>
-                                                <td class="text-end">KES 24,500</td>
-                                            </tr>
+                            <div class="row">
+                                <div class="col-12">
+                                    <ol>
+                                        <li class="mb-2">  <strong>Above Target:</strong> Collectors who collect more than their target, i.e., Ratio > 100.</li>
+                                        <li class="mb-2"> <strong>On Target:</strong> Collectors who collect exactly their target, i.e., Ratio = 100.</li>
 
-                                            <tr>
-                                                <td>02</td>
-                                                <td>Monthly Rent</td>
-                                                <td class="text-end">KES 12,000</td>
-                                            </tr>
+                                        <li class="mb-2"><strong>Below Target:</strong> Collectors who collect less than their target, i.e., Ratio < 100.</li>
+                                        <li class="mb-2"><strong>Poor Perfomance:</strong> Collectors who achieved less than 80% of the target.</li>
 
-                                            <tr>
-                                                <td>03</td>
-                                                <td>TAX (18%)</td>
-                                                <td class="text-end">KES 250</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="text-end">Total</td>
-                                                <td class="text-end fw-bold">KES 36,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="text-end">Paid</td>
-                                                <td class="text-end  fw-bold">KES 0.00</td>
-                                            </tr>
+                                        <li class="mb-2"><strong>Zero Collections:</strong> Collectors who did not collect anything</li>
 
-                                            <tr>
-                                                <td colspan="2" class="border-0 text-end">
-                                                    <strong>Balance</strong></td>
-                                                <td class="border-0 text-end">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 36,750</h5>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    </ol>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="modal-footer">
                             <div class="col-12 d-none">
                                 <div class="table-resposive p-4 px-2 pt-2 overflow-visible">
