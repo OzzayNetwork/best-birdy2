@@ -463,12 +463,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Tax Payer Reports for 12 Jun 2023 to 13 Dec 2023</h4>
+                                <h4 class="mb-sm-0 font-size-18">Kelvin's Report for 12 Jun 2023 to 13 Dec 2023</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Reports</a></li>
+                                        <li class="breadcrumb-item"><a href="reports-tax-payer.html">Tax Payer Transactions Reports</a></li>
                                         <li class="breadcrumb-item active">Tax Payer Transactions Reports</li>
                                     </ol>
                                 </div>
@@ -477,6 +478,79 @@
                         </div>
                     </div>
                     <!-- end page title -->
+
+                    <!-- profile brief info -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar-md mr-15px ">
+                                                        <h1 class="avatar-title rounded-circle ">
+                                                                CO
+                                                            </h1>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 align-self-center">
+                                                    <div class="text-muted">                                                        
+                                                        <h5 class="mb-1">Kelvin Njuguna</h5>
+                                                       
+                                                        <p class="text-muted mb-0 d-flex align-items-center">
+                                                            <a href="tel:0704549859" class="d-flex align-items-center"><i class="mdi mdi-phone me-2 font-size-18"></i> 0704 549 859</a> <span class="px-3 px-3">|</span>
+                                                            <a class="d-flex align-items-center" href="mailto:email@email.com"><i class="mdi mdi-email-outline font-size-18 me-2"></i> email@email.com</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="col-lg-8 align-self-center">
+                                            <div class="text-lg-center mt-4 mt-lg-0">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Transactions</p>
+                                                            <h5 class="mb-0">48</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Pending Invoices</p>
+                                                            <h5 class="mb-0">40</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Value Of Pending Invoices</p>
+                                                            <h5 class="mb-0">KES 45,900</h5>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-3">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Last Logged</p>
+                                                            <h5 class="mb-0">18 Jan 2023 3:48 AM</h5>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of brief info -->
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
@@ -503,11 +577,9 @@
                                             </div>
 
                                             <select class="form-select w-auto font-13px me-3">
-                                                <option value="10">All Sub Counties</option>
-                                                <option value="25">Kisumu Central</option>
-                                                <option value="50">Kisumu East</option>
-                                                <option value="100">Kusumu North</option>
-                                               
+                                                <option value="10">Paid Bills/Invoices</option>
+                                                <option value="25">Unpaid Bills/Invoices</option>
+                                                
                                             </select>
 
                                             <select class="form-select w-auto font-13px me-3">
@@ -515,6 +587,14 @@
                                                 <option value="25">MPESA Transactions</option>
                                                 <option value="50">Bank Transactions</option>
                                                
+                                               
+                                            </select>
+
+                                            <select class="form-select w-auto font-13px me-3">
+                                                <option value="10">All Revenue Streams</option>
+                                                <option value="25">Parking</option>
+                                                <option value="50">Markets</option>
+                                                <option value="50">...</option>
                                                
                                             </select>
 
@@ -531,182 +611,103 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="table-responsive overflow-visible">
+                                    <div class="table-responsive ">
 
                                         <table class="table align-middle table-hover  contacts-table table-striped " id="">
-                                            <thead class="table-light">
+                                            <thead class="table-light text-nowrap">
                                                 <tr class="table-dark">
-                                                    <th style="width: 20px;">#</th>
-                                                    <th scope="col">Tax Payer</th>
-                                                    <th>Phone No.</th>
-                                                    <th>ID No.</th>
-                                                    <th>Last Transaction</th>
-                                                    <th scope="col">Unpaid Invoices</th> 
-                                                    <th class="text-right">Unpaid Invoices Value</th> 
-                                                    <th scope="col">Transactions</th>     
-                                                                 
-                                                    <th scope="col" class="text-right">Transactions Value</th>
-                                                    <th></th>
+                                                    <th>Date</th>
+                                                    <th style="width: 20px;">Bill/Invoice No. </th>
+                                                    <th scope="col">Receipt No.</th>
+                                                    <th>Refrence No. (Mpesa Code/ Slip)</th>
+                                                    <th>Payment Mode</th>
+                                                    <th>Served By</th>
+                                                    <th>Sub County</th>
+                                                    <th>Ward</th>
+                                                    <th>Revenue Stream(s)</th>
+                                                    <th>Additional Information</th>
+                                                    <th class="text-right">Amount</th>
+                                                    <td></td>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
+                                               <tr>
+                                                    <td>12 Dec 2023 12:48</td>
+                                                    <td>BLL2536748</td>
+                                                    <td>TGH678990</td>
+                                                    <td>RESGTTYYUH</td>
+                                                    <td>MPESA</td>
+                                                    <td>Kelvin Kinoti</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Rodi</td>
+                                                    <td>Parking</td>
+                                                    <td>Daily Parking (KAD123T)</td>
+                                                    <td class="text-right">KES 700</td>
                                                     <td>
-                                                       <a href="reports-tax-payer-details.html">Kelvin Njuguna</a>
+                                                        <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Receipt</button>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">0704****59</td>
-                                                    <td class="text-capitalize text-nowrap">5689778</td>
-                                                    <td>12 Jan 2023 11:45 AM</td>
-                                                    <td>67</td>
-                                                    <th class="text-capitalize text-nowrap text-right table-danger">KES 320,000</th>
-                                                    <th>45</th>
-                                                    <th class="text-capitalize text-nowrap text-right table-success">KES 320,000</th>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
-                                                    <td>
-                                                       <a href="reports-tax-payer-details.html">Kelvin Njuguna</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">0704****59</td>
-                                                    <td class="text-capitalize text-nowrap">5689778</td>
-                                                    <td>12 Jan 2023 11:45 AM</td>
-                                                    <td>67</td>
-                                                    <th class="text-capitalize text-nowrap text-right table-danger">KES 320,000</th>
-                                                    <th>45</th>
-                                                    <th class="text-capitalize text-nowrap text-right table-success">KES 320,000</th>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
-                                                    <td>
-                                                       <a href="reports-tax-payer-details.html">Kelvin Njuguna</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">0704****59</td>
-                                                    <td class="text-capitalize text-nowrap">5689778</td>
-                                                    <td>12 Jan 2023 11:45 AM</td>
-                                                    <td>67</td>
-                                                    <th class="text-capitalize text-nowrap text-right table-danger">KES 320,000</th>
-                                                    <th>45</th>
-                                                    <th class="text-capitalize text-nowrap text-right table-success">KES 320,000</th>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
-                                                    <td>
-                                                       <a href="reports-tax-payer-details.html">Kelvin Njuguna</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">0704****59</td>
-                                                    <td class="text-capitalize text-nowrap">5689778</td>
-                                                    <td>12 Jan 2023 11:45 AM</td>
-                                                    <td>67</td>
-                                                    <th class="text-capitalize text-nowrap text-right table-danger">KES 320,000</th>
-                                                    <th>45</th>
-                                                    <th class="text-capitalize text-nowrap text-right table-success">KES 320,000</th>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
-                                                    <td>
-                                                       <a href="reports-tax-payer-details.html">Kelvin Njuguna</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">0704****59</td>
-                                                    <td class="text-capitalize text-nowrap">5689778</td>
-                                                    <td>12 Jan 2023 11:45 AM</td>
-                                                    <td>67</td>
-                                                    <th class="text-capitalize text-nowrap text-right table-danger">KES 320,000</th>
-                                                    <th>45</th>
-                                                    <th class="text-capitalize text-nowrap text-right table-success">KES 320,000</th>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="reports-agents-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                
-                                                
+                                               </tr>
+                                               <tr>
+                                                <td>12 Dec 2023 12:48</td>
+                                                <td>BLL2536748</td>
+                                                <td>TGH678990</td>
+                                                <td>RESGTTYYUH</td>
+                                                <td>MPESA</td>
+                                                <td>Kelvin Kinoti</td>
+                                                <td>Homa Bay Town</td>
+                                                <td>Rodi</td>
+                                                <td>Parking</td>
+                                                <td>Daily Parking (KAD123T)</td>
+                                                <td class="text-right">KES 700</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Receipt</button>
+                                                </td>
+                                           </tr>
+                                           <tr>
+                                            <td>12 Dec 2023 12:48</td>
+                                            <td>BLL2536748</td>
+                                            <td>TGH678990</td>
+                                            <td>RESGTTYYUH</td>
+                                            <td>MPESA</td>
+                                            <td>Kelvin Kinoti</td>
+                                            <td>Homa Bay Town</td>
+                                            <td>Rodi</td>
+                                            <td>Parking</td>
+                                            <td>Daily Parking (KAD123T)</td>
+                                            <td class="text-right">KES 700</td>
+                                            <td>
+                                                <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Receipt</button>
+                                            </td>
+                                       </tr>
+                                       <tr>
+                                        <td>12 Dec 2023 12:48</td>
+                                        <td>BLL2536748</td>
+                                        <td>TGH678990</td>
+                                        <td>RESGTTYYUH</td>
+                                        <td>MPESA</td>
+                                        <td>Kelvin Kinoti</td>
+                                        <td>Homa Bay Town</td>
+                                        <td>Rodi</td>
+                                        <td>Parking</td>
+                                        <td>Daily Parking (KAD123T)</td>
+                                        <td class="text-right">KES 700</td>
+                                        <td>
+                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Receipt</button>
+                                        </td>
+                                   </tr>
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
 
-                                                    <th colspan="5">
-                                                        23 Tax Payers
+                                                    <th colspan="8">
+                                                        23 Transactions
                                                     </th>
-                                                   <th>456</th>
+                                                   <th colspan="2"> 4 Revenue Streams</th>
                                                   
                                                    <th class="text-nowrap text-right ">
                                                         <span class="fw-semibold text-danger">KES 2,000,000</span>
                                                     </th>
-                                                    <th>
-                                                        56
-                                                    </th>
-
-
-                                                    <td class="text-nowrap text-right " colspan="">
-                                                        <span class="fw-semibold text-success">KES 2,000,000</span>
-                                                    </td>
+                                                    
                                                     <TD></TD>
 
                                                     
