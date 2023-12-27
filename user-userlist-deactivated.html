@@ -7,14 +7,12 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Hotline Transporters Sacco | All invoices</title>
+    <title>Deactivated Users </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Rental management system by Nouveta LTD" name="description" />
-    <meta content="Kelvin Njuguna" name="author" />
+    <meta content="Keep your finances and membership up to date" name="description" />
+    <meta content="Kelvin Njuguna Ndungu" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.svg">
-    <!-- droping file -->
-    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
 
     <!-- DataTables -->
     <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
@@ -31,11 +29,11 @@
     <!-- custom Css-->
     <link href="assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
 
+
 </head>
 
 <body data-sidebar="dark">
 
-    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
     <!-- Loader -->
     <div id="preloader">
         <div id="status">
@@ -97,7 +95,6 @@
 
 
                 </div>
-
                 <div class="d-flex">
                     <!-- small search -->
                     <div class="dropdown d-inline-block d-lg-none ms-2">
@@ -230,6 +227,8 @@
                             <a class="dropdown-item text-danger" href="auth-login.html"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </header>
@@ -464,14 +463,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Revenue Collections For Kadongo Stage for the period 1 Jan 2023 to 31 Jan 2023</h4>
+                                <h4 class="mb-sm-0 font-size-18">Users register</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item"><a href="reports-zones.html">Revenue Collection By zone</a></li>
-                                        <li class="breadcrumb-item active">Selected Zone</li>
+                                        <li class="breadcrumb-item active">User's Register</li>
                                     </ol>
                                 </div>
 
@@ -480,171 +477,289 @@
                     </div>
                     <!-- end page title -->
 
-                    <div class="row">
-                        <div class="col-12 active">
-                            <div class="card active">
-                                <div class="card-body mini-nav bg-primary pt-2 pb-3 active">
-                                    <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
-                                        <button class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                            <span class="mdi mdi-menu"></span>
-                                        </button>
-                                        <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
-                                            <div class="navbar-nav active">
-                                                <a class="nav-item nav-link" href="report-zone-colecttor.html">Collector Reports</a>
-                                                <a class="nav-item nav-link" href="reports-zone-details.html">Transactions</a>
-                                            </div>
-                                            <div class="navbar-nav text-capitalize">
-                                                <h4 class="mb-0 m-0 card-title text-white">Collections Reports</h4>
-                                            </div>
+                    <!-- eTransactions table -->
 
-                                        </div>
-                                    </nav>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                   
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
-                                      <div class="flex-grow-1">
-                                        <div class="search-box mb-0 me-3">
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l">
-                                                <i class="bx bx-search-alt search-icon"></i>
-                                            </div>
-                                        </div>
-                                      </div>
-
+                                        <h4 class="mb-0">Registered Users</h4>
                                         <div class="d-flex">
-                                            <div class="d-flex align-items-center me-3 pe-3">
-                                                <span class="pr-3 fw-semibold">From:</span>
-                                                <input class="form-control"placeholder="Start date" type="date">
-                                                <span class="px-3 fw-semibold">TO:</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
-                                            </div>
-                                            <button  data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
-                                                <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
-                                            </button>
-
+                                            <a href="user-registration.html" type="button" class="btn btn-primary dropdown-toggle option-selector" data-bs-toggle="offcanvas" data-bs-target="#dt__filter" aria-controls="offcanvasRight">
+                                                <i class="mdi mdi-account-multiple-plus-outline  font-size-16"></i> <span class="pl-1 d-md-inline">Add User(s)</span>
+                                            </a>
                                         </div>
 
 
                                     </div>
                                     <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button"  data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
+
+                                        <button type="button" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="bx  bx-trash label-icon"></i> Delete Contact(s)</button>
+                                        <button type="button" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-plus label-icon"></i> Compose Message</button>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="table-responsive overflow-visible">
+                                <div class="card-header bg-white w-100 border-bottom d-flex">
+                                    <div class="mr-15px">
+                                        <select class="form-select form-control bg-white mr-15px" title="Select System User Type" data-live-search="true" title="Select a tenant" data-style="">
+                                            <option selected value="All users (100)">All users (100)</option>
+                                            <option value="Auditors [0]">Auditors [0]</option>
+                                            <option value="Accountants [2]">Accountants [2]</option>
+                                            <option value="ICT OFFICCERS">ICT OFFICCERS</option>
+                                            <option value="ENFORCEMENT [0]">ENFORCEMENT [0]</option>
+                                      </select>
+                                    </div>
 
-                                        <table class="table align-middle table-hover  contacts-table table-striped " id="">
-                                            <thead class="table-light">
-                                                <tr class="table-dark">
-                                                    <th>#</th>
-                                                    <th>Personel</th>
-                                                    <th scope="col">Role</th>
-                                                    <th class=" ">Phone</th>
-                                                    <th scope="col">Transactions</th> 
-                                                    <th class="text-right">Total AMount Colected</th>
-                                                     
+                                  <div class="flex-grow-1">
+                                    <div class="search-box mb-0 me-2 flex-grow-1">
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control bg-light border-light rounded" placeholder="Search User">
+                                            <i class="bx bx-search-alt search-icon"></i>
+                                        </div>
+                                    </div>
+                                   </div>
+
+                                   
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table align-middle table-nowrap table-hover contacts-table table-striped" id="datatable-buttons">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Contact</th>
+                                                    <th scope="col">Sub County</th>
+                                                    <th scope="col">Ward</th>
+                                                    <th scope="col">Zone</th>
+                                                    <th scope="col">Last Seen</th>
+                                                    <th scope="col">Last Seen Address</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                 <tr>
-                                                    <th>1.</th>
-                                                    <td>Kelvin Njuguna</td>
-                                                    <td>Revenue Colector</td>
-                                                    <td>0704549859</td>
-                                                    <td>1234</td>
-                                                    <td class="text-right">KES 45,000</td>
-                                                    <td></td>
-                                                 </tr>
-
-                                                 <tr>
-                                                    <th>2.</th>
-                                                    <td>Kelvin Njuguna</td>
-                                                    <td>Revenue Colector</td>
-                                                    <td>0704549859</td>
-                                                    <td>1234</td>
-                                                    <td class="text-right">KES 45,000</td>
-                                                    <td></td>
-                                                 </tr>
-
-                                                 <tr>
-                                                    <th>3.</th>
-                                                    <td>Kelvin Njuguna</td>
-                                                    <td>Revenue Colector</td>
-                                                    <td>0704549859</td>
-                                                    <td>1234</td>
-                                                    <td class="text-right">KES 45,000</td>
-                                                    <td></td>
-                                                 </tr>
-                                               
-                                                
-                                                
-                                            </tbody>
-                                            <tfoot class="table-dark">
                                                 <tr>
-                                                    <th></th>
-                                                    <th colspan="3">
-                                                        23 Officials colected
-                                                    </th>
-                                                    <th>456 Transactions</th>
-                                                   
-
-                                                    <td class="text-nowrap text-right " colspan="">
-                                                        <span class="fw-semibold ">KES 2,000,000</span>
+                                                    <td>
+                                                        <a href="use-logs.html" title="click to vie user logs and activities">
+                                                            <div class=" d-flex align-items-center ">
+                                                                <div class="avatar-xs mr-15px ">
+                                                                    <span class="avatar-title rounded-circle ">
+                                                                            D
+                                                                        </span>
+                                                                </div>
+                                                                <div>
+                                                                    <h5 class="font-size-14 mb-1 "><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
+                                                                    <p class="text-muted mb-0 ">Developer</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
                                                     </td>
-                                                  
-                                                    <td></td>
-
-                                                    
+                                                    <td>
+                                                        <div class="d-flex justify-conten flex-column">
+                                                            <p class="text-muted mb-0">
+                                                                <a href="tell:0794795345">0794795345</a>
+                                                            </p>
+                                                            <p class="mb-0">
+                                                                <a href="mailto:sharonwanjiku34@gmail.com">sharonwanjiku34@gmail.com</a>
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        Suba Subcounty
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                       the ward name
+                                                    </td>
+    
+    
+                                                    <td class="text-capitalize">
+                                                       the zone
+    
+                                                    </td>
+    
+                                                    <td class="text-capitalize">
+                                                        Sep 10 2023, 10:56 AM
+     
+                                                     </td>
+                                                    <td>
+                                                       <small>
+                                                            Homa Bay Central Homa Bay Town, Homa Bay, Kenya
+                                                       </small>
+                                                    </td>
+                                                    <td>
+                                                        <a href="use-logs.html" class="btn btn-sm btn-primary" title="Click to view user logs">
+                                                            <i class="mdi mdi-account-details"></i> User Logs
+                                                        </a>
+                                                    </td>
                                                 </tr>
 
-                                            </tfoot>
+                                                <tr>
+                                                    <td>
+                                                        <a href="use-logs.html" title="click to vie user logs and activities">
+                                                            <div class=" d-flex align-items-center ">
+                                                                <div class="avatar-xs mr-15px ">
+                                                                    <span class="avatar-title rounded-circle ">
+                                                                            D
+                                                                        </span>
+                                                                </div>
+                                                                <div>
+                                                                    <h5 class="font-size-14 mb-1 "><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
+                                                                    <p class="text-muted mb-0 ">Developer</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-conten flex-column">
+                                                            <p class="text-muted mb-0">
+                                                                <a href="tell:0794795345">0794795345</a>
+                                                            </p>
+                                                            <p class="mb-0">
+                                                                <a href="mailto:sharonwanjiku34@gmail.com">sharonwanjiku34@gmail.com</a>
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        Suba Subcounty
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                       the ward name
+                                                    </td>
+    
+    
+                                                    <td class="text-capitalize">
+                                                       the zone
+    
+                                                    </td>
+    
+                                                    <td class="text-capitalize">
+                                                        Sep 10 2023, 10:56 AM
+     
+                                                     </td>
+                                                    <td>
+                                                       <small>
+                                                            Homa Bay Central Homa Bay Town, Homa Bay, Kenya
+                                                       </small>
+                                                    </td>
+                                                    <td>
+                                                        <a href="use-logs.html" class="btn btn-sm btn-primary" title="Click to view user logs">
+                                                            <i class="mdi mdi-account-details"></i> User Logs
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <a href="use-logs.html" title="click to vie user logs and activities">
+                                                            <div class=" d-flex align-items-center ">
+                                                                <div class="avatar-xs mr-15px ">
+                                                                    <span class="avatar-title rounded-circle ">
+                                                                            D
+                                                                        </span>
+                                                                </div>
+                                                                <div>
+                                                                    <h5 class="font-size-14 mb-1 "><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
+                                                                    <p class="text-muted mb-0 ">Developer</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-conten flex-column">
+                                                            <p class="text-muted mb-0">
+                                                                <a href="tell:0794795345">0794795345</a>
+                                                            </p>
+                                                            <p class="mb-0">
+                                                                <a href="mailto:sharonwanjiku34@gmail.com">sharonwanjiku34@gmail.com</a>
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        Suba Subcounty
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                       the ward name
+                                                    </td>
+    
+    
+                                                    <td class="text-capitalize">
+                                                       the zone
+    
+                                                    </td>
+    
+                                                    <td class="text-capitalize">
+                                                        Sep 10 2023, 10:56 AM
+     
+                                                     </td>
+                                                    <td>
+                                                       <small>
+                                                            Homa Bay Central Homa Bay Town, Homa Bay, Kenya
+                                                       </small>
+                                                    </td>
+                                                    <td>
+                                                        <a href="use-logs.html" class="btn btn-sm btn-primary" title="Click to view user logs">
+                                                            <i class="mdi mdi-account-details"></i> User Logs
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>
+                                                        <a href="use-logs.html" title="click to vie user logs and activities">
+                                                            <div class=" d-flex align-items-center ">
+                                                                <div class="avatar-xs mr-15px ">
+                                                                    <span class="avatar-title rounded-circle ">
+                                                                            D
+                                                                        </span>
+                                                                </div>
+                                                                <div>
+                                                                    <h5 class="font-size-14 mb-1 "><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
+                                                                    <p class="text-muted mb-0 ">Developer</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-conten flex-column">
+                                                            <p class="text-muted mb-0">
+                                                                <a href="tell:0794795345">0794795345</a>
+                                                            </p>
+                                                            <p class="mb-0">
+                                                                <a href="mailto:sharonwanjiku34@gmail.com">sharonwanjiku34@gmail.com</a>
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        Suba Subcounty
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                       the ward name
+                                                    </td>
+    
+    
+                                                    <td class="text-capitalize">
+                                                       the zone
+    
+                                                    </td>
+    
+                                                    <td class="text-capitalize">
+                                                        Sep 10 2023, 10:56 AM
+     
+                                                     </td>
+                                                    <td>
+                                                       <small>
+                                                            Homa Bay Central Homa Bay Town, Homa Bay, Kenya
+                                                       </small>
+                                                    </td>
+                                                    <td>
+                                                        <a href="use-logs.html" class="btn btn-sm btn-primary" title="Click to view user logs">
+                                                            <i class="mdi mdi-account-details"></i> User Logs
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                     </div>
-                                    
-                                </div>
-
-                                <div class="card-footer bg-white">
-                                    <nav aria-label="Page navigation example " class="d-flex align-items-center justify-content-between">
-
-                                        <div class="d-flex align-items-center">
-                                            <span class="pr-3 pb-0 mb-0 font-13px">
-                                                <span>Rows Per Page</span>
-                                            </span>
-                                            <select class="form-select w-auto font-13px ">
-                                                <option value="10">10 Rows</option>
-                                                <option value="25">25 Rows</option>
-                                                <option value="50">50 Rows</option>
-                                                <option value="100">100 Rows</option>
-                                                <option value="150">150 Rows</option>
-                                                <option value="200">200 Rows</option>
-                                            </select>
-                                        </div>
-
-                                        <ul class="pagination">
-                                            <li class="page-item disabled">
-                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item active">
-                                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">Next</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
                                 </div>
                             </div>
                         </div>
@@ -657,228 +772,81 @@
             </div>
             <!-- End Page-content -->
 
-            <!-- receipting modal -->
-            <div class="modal fade receipting-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Bill details</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Transaction Modal -->
+            <div class="modal fade transaction-detailModal " tabindex="-1 " role="dialog " aria-labelledby="transaction-detailModalLabel " aria-hidden="true ">
+                <div class="modal-dialog modal-dialog-centered " role="document ">
+                    <div class="modal-content ">
+                        <div class="modal-header ">
+                            <h5 class="modal-title " id="transaction-detailModalLabel ">Transactions Details</h5>
+                            <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
                         </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-6">
-                                    <address>
-                                        <strong class="text-capitalize">Bill Prepared for:</strong><br>
-                                        Kelvin Njuguna AT Mombasa Road<br>
-                                        email@mail.com, 0704 549 859<br>                                   
-                                        ID No. 12345689. Car Plate No. KAB 123P <br/>
-                                        <br>
-                                        On 1 Mar 2022, 10:20 AM
-                                        
-                                    </address>
-                                </div>
-                                <div class="col-sm-6 text-sm-end d-none">
-                                    <address class="mt-2 mt-sm-0">
-                                        <strong>Payment Method</strong><br>
-                                        <span class="fw-medium">MPESA</span><br>
-                                        Phone No. 0704 549 859<br> <br>
-                                        On 1 Mar 2022, 10:20 AM
-                                    </address>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="py-2 mt-3">
-                                    <h3 class="font-size-15 fw-bold">ND12368</h3>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <table class="table table-nowrap vertical-align-middle">
-                                        <thead class="bg-light">
-                                            <tr>
-                                                <th style="width: 70px;">No.</th>
-                                                <th>Offense</th>
-                                                <th class="text-end">Amount</th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tfoot class="bg-light">
-                                            <tr>
-                                                <td colspan="2" class="border-0 text-end text-right">
-                                                    <strong>Total</strong>
-                                                </td>
-                                                <td class="border-0 text-end">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 11,250</h5>
-                                                </td>
-                                                
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
-                                                <td>01</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Driving Without identification plates affixed or plates not fixed in the prescribed manner</p>
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
-                                            </tr>
-
-                                            <tr title="Drving a vehicle without a valid inspection certificate inspected">
-                                                <td>02</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Drving a vehicle without a valid inspection certificate inspected</p>
-
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
-                                            </tr>
+                        <div class="modal-body ">
 
 
+                            <div class="table-responsive mt-4 ">
+                                <table class="table align-middle table-nowrap ">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 30% ">
+                                                <p class="mb-0 ">Car Plate Number</p>
+                                            </td>
+                                            <td style="width: 25% ">
+                                                <h5 class="mb-0 text-uppercase ">UAG 1235p</h5>
+                                            </td>
 
-                                            
-                                        </tbody>
-                                    </table>
-                                </div>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0 ">Vehicle Category</p>
+                                            </td>
+                                            <td>
+                                                <h5 class="mb-0 ">Salon Car</h5>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0 ">Payment Date</p>
+                                            </td>
+                                            <td>
+                                                <h5 class="mb-0 ">22 Apr 2022 06:54PM</h5>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0 ">San Diego</p>
+                                            </td>
+                                            <td>
+                                                <h5 class="mb-0 ">1,026</h5>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2 ">
+                                                <p class="mb-0 pb-0 ">Amount Paid</p>
+                                                <h3>UGX 2,000</h3>
+                                            </td>
+                                        </tr>
+                                        <TR>
+                                            <td col-span="2 ">
+                                                <p class="mb-2 ">Attended By<span class="text-primary "> Alex Sebeye</span></p>
+                                                <p class="mb-4 ">Toll taker's No. <span class="text-primary ">0704549859</span></p>
+                                            </td>
+                                        </TR>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                           
-                            <button type="button" class="btn btn-primary waves-effect waves-light">
-                                <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Bill
-                            </button>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
                         </div>
                     </div>
-                    <!-- /.modal-content -->
                 </div>
-                <!-- /.modal-dialog -->
             </div>
-            <!-- end of receipting modal -->
-
-            <!-- invoice details -->
-            <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Invoice Details</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="col-12">
-                                <address>
-                                    <strong>Billed To:</strong><br>
-                                    Kelvin Njuguna<br>
-                                    email@mail.com, 0704 549 859<br>                                   
-                                    Hse No. 410, 90 Degrees By Tsavo
-                                    <br><br>
-                                    1 Mar 2022, 10:20 AM
-                                </address>
-                            </div>
-                            <div class="col-12">
-                                <div class="py-2 mt-3">
-                                    <h3 class="font-size-15 fw-bold">Invoice Details ( <span class="text-primary fw-medium">No. 1237</span> )</h3>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <table class="table table-nowrap">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 70px;">No.</th>
-                                                <th>Item</th>
-                                                <th class="text-end">Amount</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>01</td>
-                                                <td>Rent Deposit</td>
-                                                <td class="text-end">KES 24,500</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>02</td>
-                                                <td>Monthly Rent</td>
-                                                <td class="text-end">KES 12,000</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>03</td>
-                                                <td>TAX (18%)</td>
-                                                <td class="text-end">KES 250</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="text-end">Total</td>
-                                                <td class="text-end fw-bold">KES 36,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="text-end">Paid</td>
-                                                <td class="text-end  fw-bold">KES 0.00</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td colspan="2" class="border-0 text-end">
-                                                    <strong>Balance</strong></td>
-                                                <td class="border-0 text-end">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 36,750</h5>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="col-12 d-none">
-                                <div class="table-resposive p-4 px-2 pt-2 overflow-visible">
-                                    <table class="w-100">
-                                        <tbody>
-                                            <tr data-id="1">
-                                                <td>
-                                                    <label for="" class="">Payment Method</label>
-                                                    <select class="form-control selectpicker w-100 payment-method" data-style="btn-secondary w-100" data-live-search="true" title="Select payment Method">
-                                                        <option value="Mpesa">MPESA</option>
-                                                        <option value="Cash">CASH</option>   
-                                                     </select>
-                                                </td>
-                                                <td class="px-3 ">
-                                                    <div class="phone-num d-none">
-                                                        <label for="">Phone No.</label>
-                                                        <input type="text " class="form-control w-100 d-flex " placeholder="Phone No." spellcheck="false" data-ms-editor="true">
-                                                    </div>
-
-                                                </td>
-                                                <td class="px-3">
-                                                    <label for="">Amount To Be Paid</label>
-                                                    <input type="text " class="form-control w-100 d-flex" placeholder="KES" spellcheck="false" data-ms-editor="true">
-
-                                                </td>
-                                                <td class="text-right float-right">
-                                                    <div class="d-flex flex-column">
-                                                        <label class="opacity-0">Something</label>
-                                                        <a href="#" class="btn btn-primary w-md waves-effect waves-light">Submit</a>
-                                                    </div>
-                                                </td>
+            <!-- end modal -->
 
 
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                </div>
-                            </div>
-                            <div class="float-end">
-                                <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light me-1"><i class="mdi mdi-printer font-16px"></i></a>
-                                <a href="javascript: void(0);" class="btn btn-primary w-md waves-effect waves-light">Receive Payment</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.modal-content -->
-                </div>
-                <!-- /.modal-dialog -->
-            </div>
-            <!-- invoice details -->
 
             <footer class="footer ">
                 <div class="container-fluid ">
@@ -886,11 +854,11 @@
                         <div class="col-sm-6 ">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> © Craft Collect
+                            </script> © Best Birdy
                         </div>
                         <div class="col-sm-6 ">
                             <div class="text-sm-end d-sm-block ">
-                                Homa Bay County Government
+                                Best Birdy Billing system. 
                             </div>
                         </div>
                     </div>
@@ -901,6 +869,8 @@
 
     </div>
     <!-- END layout-wrapper -->
+
+
 
     <!-- Right bar overlay-->
     <div class="rightbar-overlay "></div>
@@ -946,6 +916,11 @@
     <script src="assets/js/app.js "></script>
     <script src="assets/js/custom.js "></script>
 </body>
+
+
+<!-- index.html   13:55:49 GMT -->
+
+</html>
 
 
 <!-- index.html   13:55:49 GMT -->
