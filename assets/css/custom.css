@@ -1427,6 +1427,14 @@ z-index: 3 !important;
 .border-collapse tbody td{
     border-collapse: collapse !important;
 }
+.todays-entries a {
+    color: black;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.todays-entries {
+    display: grid;
+}
 
 
 

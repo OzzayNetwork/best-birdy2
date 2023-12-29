@@ -924,3 +924,22 @@ $(function () {
     $('.new-vehicles-container-modal').addClass('d-none').siblings('.loader-panel').removeClass('d-none')
     $('.add-car-modal address').addClass('d-none')
   })
+
+//   the highlights slider
+
+window.onload=function(){
+	$('.todays-entries').slick({
+	arrows:true,
+	prevArrow:'<button type="button" class="slick-prev"></button>',
+	nextArrow:'<button type="button" class="slick-next"></button>',
+	centerMode:true,
+	slidesToShow:7,
+	speed: 7000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+	slidesToScroll: 1,
+	pauseOnFocus: true,
+	variableWidth: true
+	});
+  };

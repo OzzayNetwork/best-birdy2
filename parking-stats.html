@@ -30,6 +30,10 @@
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
 
+     <!-- // Add the new slick-theme.css if you want the default styling -->
+     <link rel="stylesheet" href="assets/libs/slick/slick.css"/>
+     <link rel="stylesheet" href="assets/libs/slick/slick-theme.css"/>
+
     <!-- owl.carousel css -->
     <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.carousel.min.css">
 
@@ -507,7 +511,7 @@
                     <div class="row ">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Parking Quick Stats</h4>
+                                <h4 class="mb-sm-0 font-size-18">Parking & Parking Related Fees Quick Stats</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -553,7 +557,27 @@
 
 
                                         </div>
-                                    </nav>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="text-uppercase maq-container w-100 d-flex">
+                                        <div class="text-uppercase bg-danger p-3 py-2 fw-bold text-white text-nowrap">
+                                            Today's Highlights
+                                        </div>
+                                        <div class="todays-entries flex-grow-1 py-2 p-3 text-white bg-warning">
+                                            <a class="todays-entries-text">Logged Vehicles: <strong>17,450</strong><span class="opacity-5"> | </span></a>
+                                            <a class="todays-entries-text">Car Queries: <strong>3,231</strong> <span class="opacity-5"> | </span></a>
+                                            <a class="todays-entries-text">Compliant: <strong>3,201</strong> <span class="opacity-5"> | </span></a>
+                                            <a class="todays-entries-text">Non-Compliant: <strong>30</strong> <span class="opacity-5"> | </span></a>
+                                            <a class="todays-entries-text">Due Clamping : <strong>11</strong><span class="opacity-5"> | </span></a>
+                                            <a class="todays-entries-text">Clamped: <strong>19</strong><span class="opacity-5"> | </span></a>
+                                            <a class="todays-entries-text">Bus/Matatu Park Revenue : <strong>KES 108,568</strong><span class="opacity-5"> | </span></a>
+                                            <a class="todays-entries-text">Clamping Revenue : <strong>KES 195,000</strong><span class="opacity-5"> | </span></a>
+                                            <a class="todays-entries-texts">Inactive Agents: 
+                                                    <strong>195 (<span id="agent_percentage" class="mx-1">70</span><span id="agent_percentage_sign">%</span>)</strong>
+                                                        <span class="opacity-5"> | </span>
+                                                    </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -1537,6 +1561,9 @@
     <script src="assets/libs/metismenu/metisMenu.min.js "></script>
     <script src="assets/libs/simplebar/simplebar.min.js "></script>
     <script src="assets/libs/node-waves/waves.min.js "></script>
+
+    <script src="assets/libs/slick/slick.min.js"></script>
+
 
 
 
