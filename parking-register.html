@@ -547,7 +547,7 @@
                                                 <a class="nav-item nav-link" href="parking-bus-park.html">Bus/matatu Parks</a>
                                                 <a class="nav-item nav-link" href="parking-register.html">Vehicles Register</a>
                                                 <a class="nav-item nav-link" href="parking-clamped.html">Clamped Vehicles</a>
-                                                <a class="nav-item nav-link" href="parking-register.html">Vehicles Register</a>
+                                               
 
                                             </div>
 
@@ -686,66 +686,7 @@
                                     </div>
                                    
                                 </div>
-
-                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
-                                     
-
-                                        <div class="d-flex">
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Sub Counties</option>
-                                                <option value="25">Meru Town</option>
-                                                <option value="50">Souht Imenti</option>
-                                                <option value="100">Central Imenti</option>
-                                                <option value="150">Maua Town</option>
-                                                <option value="200">Nkubu Town</option>
-                                            </select>
-
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Stages</option>
-                                                <option value="25">Stage  1</option>
-                                                <option value="50">Stage 2</option>
-                                                <option value="100">Stage 3</option>
-                                                
-                                            </select>
-
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Attendants</option>
-                                                <option value="25">Kelvin Kinoti</option>
-                                                <option value="50">Bahati Bukuku</option>
-                                                <option value="100">John Opio</option>
-                                                <option value="150">Maua Town</option>
-                                                <option value="200">Nkubu Town</option>
-                                            </select>
-
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Logged Vehicles</option>
-                                                <option value="25">Compliant</option>
-                                                <option value="50">Clamped</option>
-                                                <option value="100">Parking Payers</option>
-                                                <option value="150">To Be clamped</option>
-                                                <option value="200">To Be Unclamped</option>
-                                            </select>
-
-                                            <div class="d-flex align-items-center me-3 pe-3">
-                                                <span class="pr-3 fw-semibold">From:</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
-                                                <span class="px-3 fw-semibold">TO:</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
-                                            </div>
-                                            <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
-                                                <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
-                                            </button>
-
-                                        </div>
-
-
-                                    </div>
-                                    <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
-                                    </div>
-                                </div>
+                              
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id="">
@@ -754,15 +695,11 @@
                                                     <th scope="col">#</th>
                                                     <th scope="col">Vehicle</th>
                                                     <th>Category</th>
-                                                    <th>Sub County</th>
-                                                    <th scope="col">Zone</th> 
-                                                    <th>Paid By</th> 
-                                                    <th scope="col" class="">Date Paid</th>      
-                                                    <th scope="col" class="">Effective From</th>                                               
-                                                    <th>Effective To</th>
-                                                    <th>Status</th>
-                                                    <th>Payment Method</th>
-                                                    <th class="text-right">Parking Fee Paid</th>
+                                                    <th>Phone Number(s)</th>
+                                                    <th scope="col">Registered On</th> 
+                                                    <th>Last Seen</th> 
+                                                    <th scope="col" class="">Last Seen</th>                                               
+                                                    <th>Last Seen Addreess</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -772,77 +709,27 @@
                                                     <th>KAD12T</th>
                                                     <td class="text-capitalize">Motor Cycle</td>
                                                     <td>
-                                                        Meru Town
+                                                        0704549859, 0709099890
                                                     </td>
-                                                    <td>Nchiru</td>
+                                                    <td>12 Jan 2023 12:43 AM</td>
                                                     <td>Alex Wanjala (0704549859)</td>
                                                    
                                                     <td>
                                                         12 Jan 2023 10:38AM
                                                     </td>
-                                                    <td>
-                                                        12 Jan 2023 10:40AM 
-                                                    </td>
-                                                    <td>
-                                                        12 Feb 2023 10:40AM 
-                                                    </td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Active</span>
-                                                    </td>
-                                                    <th>
-                                                        MPESA (RETY67890)
-                                                    </th>
+                                                    <td>Off Kisii-Kisumu Rd West Kasipul, Oyugis, Kenya</td>
                                                    
-                                                    <td class="text-right text-uppercase fw-bold">KES 50</td>
                                                     <td class="text-right">
                                                         <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-success btn-sm">View Details</button>
                                                        
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <th>2.</th>
-                                                    <th>KAD12T</th>
-                                                    <td class="text-capitalize">Motor Cycle</td>
-                                                    <td>
-                                                        Meru Town
-                                                    </td>
-                                                    <td>Nchiru</td>
-                                                    <td>Alex Wanjala (0704549859)</td>
-                                                   
-                                                    <td>
-                                                        12 Jan 2023 10:38AM
-                                                    </td>
-                                                    <td>
-                                                        12 Jan 2023 10:40AM 
-                                                    </td>
-                                                    <td>
-                                                        12 Feb 2023 10:40AM 
-                                                    </td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-danger text-uppercase" key="t-new">Expired</span>
-                                                    </td>
-                                                    <th>
-                                                        MPESA (RETY67890)
-                                                    </th>
-                                                   
-                                                    <td class="text-right text-uppercase fw-bold">KES 50</td>
-                                                    <td class="text-right">
-                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-success btn-sm">View Details</button>
-                                                       
-                                                    </td>
-                                                </tr>
+                                                
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
-                                                    <th colspan="2">34 Transactions</th>
-                                                    <th colspan="7">23 Unique Vehicles</th>
-                                                    <th colspan="2" >
-                                                        <span class="badge rounded-pill bg-danger text-uppercase" key="t-new">Expired</span> 12
-
-                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Active</span> 22
-                                                    </th>
-                                                    <th class="text-right">KES 56,000</th>
-                                                    <th></th>
+                                                    <th colspan="9">34 Vehicles</th>
+                                                   
                                                 </tr>
                                             </tfoot>
                                             
