@@ -518,7 +518,8 @@
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Parking</a></li>
                                         <li class="breadcrumb-item"><a href="parking-fleet.html">Fleet manager</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Usiku Sacco Details</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Usiku Sacco</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Deleted Vehicles</a></li>
                                     </ol>
                                 </div>
 
@@ -593,7 +594,7 @@
                                     <div>
                                         <h4 class="card-title text-uppercase">Deleted Vehicles for usiku sacco</h4>
                                     </div>
-                                    <div>
+                                    <div class="d-none">
                                         <button  data-toggle="modal" data-target=".add-car-modal" type="button" class="btn btn-primary waves-effect waves-light">
                                             <i class="bx bx-plus font-size-16 align-middle me-2"></i> Add Vehicles
                                         </button>
@@ -639,14 +640,12 @@
                                             <thead class="table-dark">
                                                 <tr>
                                                     <th>#</th>
-                                                    <th scope="col">Receipt No.</th>
-                                                    <th scope="col">Date Invoiced</th>
-                                                    <th scope="col" class="">Payment Date</th>
-                                                    <th>Period Paid For </th>
-                                                    <th scope="col" class="">Payment Mode</th>
-                                                    <th scope="col" class="">Vehicles Paid For</th>
-                                                    <th>Active Status</th>
-                                                    <th scope="col" class="text-right">Amount Paid</th>
+                                                    <th scope="col">Reg No.</th>
+                                                    <th scope="col">Category</th>
+                                                    <th scope="col" class="">Date Deleted</th>
+                                                    <th>Deleted By</th>
+                                                    <th scope="col" class="">Reason</th>
+                                                    
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -654,74 +653,69 @@
                                                 <tr>
                                                     <th>1.</th>
                                                     <td class="text-uppercase">
-                                                        fty123345
+                                                        KAD234T
                                                     </td>
                                                     <td>
-                                                        10 Jan 2023 10:56:45 AM
+                                                        Matatu 14 Seater
                                                     </td>
                                                     <td class="fw-bold">
                                                         10 Jan 2023 10:56 AM
                                                     </td>
-                                                    <td>Jan 2023</td>
-
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase">MPESA</span>
-                                                    </td>
-                                                    <td>22 OF 56</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase">Active</span>
-                                                    </td>
-                                                    <td class="text-right text-uppercase fw-bold">KES 5000</td>
+                                                    <td>Kelvin Kinoti</td>
+                                                    <td>Vehicle was Involved in an accident</td>
+                                                   
                                                     <td class="text-right">
-                                                        <button data-toggle="modal" data-target=".vehicles-modal" class="btn btn-dark btn-sm text-uppercase">View Vehicles</button>
-                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-primary btn-sm text-uppercase">Print Receipt</button>
-                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-success btn-sm text-uppercase">Download Stickers</button>
+                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-primary btn-sm text-uppercase">Restore Vehicle</button>
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <th>2.</th>
                                                     <td class="text-uppercase">
-                                                        fty123345
+                                                        KAD234T
                                                     </td>
                                                     <td>
-                                                        10 Jan 2023 10:56:45 AM
+                                                        Matatu 14 Seater
                                                     </td>
                                                     <td class="fw-bold">
                                                         10 Jan 2023 10:56 AM
                                                     </td>
-                                                    <td>Dec 2022</td>
-
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase">MPESA</span>
-                                                    </td>
-                                                    <td>22 OF 56</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-danger text-uppercase">Expired</span>
-                                                    </td>
-                                                    <td class="text-right text-uppercase fw-bold">KES 5000</td>
+                                                    <td>Kelvin Kinoti</td>
+                                                    <td>Vehicle was Involved in an accident</td>
+                                                   
                                                     <td class="text-right">
-                                                        <button data-toggle="modal" data-target=".vehicles-modal" class="btn btn-dark btn-sm text-uppercase">View Vehicles</button>
-                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-primary btn-sm text-uppercase">Print Receipt</button>
-                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-success btn-sm text-uppercase d-none">Download Stickers</button>
+                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-primary btn-sm text-uppercase">Restore Vehicle</button>
                                                     </td>
                                                 </tr>
 
+                                                <tr>
+                                                    <th>3.</th>
+                                                    <td class="text-uppercase">
+                                                        KAD234T
+                                                    </td>
+                                                    <td>
+                                                        Matatu 14 Seater
+                                                    </td>
+                                                    <td class="fw-bold">
+                                                        10 Jan 2023 10:56 AM
+                                                    </td>
+                                                    <td>Kelvin Kinoti</td>
+                                                    <td>Vehicle was Involved in an accident</td>
+                                                   
+                                                    <td class="text-right">
+                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-primary btn-sm text-uppercase">Restore Vehicle</button>
+                                                    </td>
+                                                </tr>
+                                              
                                                
                                                 
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
-                                                    <td colspan="5">
-                                                        23 Transactions
+                                                    <td colspan="7">
+                                                        23 Vehicles
                                                     </td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase">MPESA (13)</span>
-                                                        <span class="badge rounded-pill bg-warning text-uppercase">KCB BANK (10)</span>
-                                                    </td>
-                                                    <td>34 Cars</td>
-                                                    <td></td>
-                                                    <td class="text-right text-uppercase fw-bold">KES 5000</td>
-                                                    <td></td>
+                                                    
                                                 </tr>
                                             </tfoot>
                                         </table>
