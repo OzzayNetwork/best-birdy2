@@ -1435,6 +1435,12 @@ z-index: 3 !important;
 .todays-entries {
     display: grid;
 }
+.blue-card-in{
+    background-color: #2c3e8852 !important;
+}
+.fw-light{
+    font-weight: 100 !important;
+}
 
 
 
