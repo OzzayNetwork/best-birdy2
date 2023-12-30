@@ -542,7 +542,7 @@
                                         </button>
                                         <div class="collapse navbar-collapse justify-content-between active"
                                             id="navbarNavAltMarkup">
-                                            <div class="navbar-nav">
+                                           <div class="navbar-nav">
                                                 <a class="nav-item nav-link" href="parking-stats.html">Quick
                                                     Stats</a>
                                                 <a class="nav-item nav-link" href="parking-fleet.html">Seasonal Parking</a>
@@ -552,7 +552,7 @@
                                                 <a class="nav-item nav-link" href="parking-bus-park.html">Bus/matatu Parks</a>
                                                 <a class="nav-item nav-link" href="parking-register.html">Vehicles Register</a>
                                                 <a class="nav-item nav-link" href="parking-clamped.html">Clamped Vehicles</a>
-                                                <a class="nav-item nav-link" href="parking-register.html">Vehicles Register</a>
+                                                <a class="nav-item nav-link" href="parking-archive.html">Sacco's Archives</a>
 
                                             </div>
 
@@ -1041,174 +1041,31 @@
             <!-- add vehicles -->
             <div class="modal fade add-car-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-dialog  modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="myLargeModalLabel">Usiku Sacco</h5>
+                        <h5 class="modal-title" id="myLargeModalLabel">Remove This Vehicle from Usiku Sacco</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <div >
+                   <div class="modal-body">
+                        <div class="row">
                             <div class="col-12">
-                                <address>
-                                    <strong>About Sacco:</strong><br>
-                                    Conatct Person: Kelvin Njuguna<br>
-                                    email@mail.com, 0704 549 859<br>
-                                    Hse No. 410, 90 Degrees By Tsavo
-                                    <br><br>
-                                    Ward, Sub County
-                                </address>
-                            </div>
-                           <div class="new-vehicles-container-modal">
-                            <div class="col-12">
-                                <div class="py-2 mt-3">
-                                    <h3 class="font-size-15 fw-bold">Vehicles to Be newly registered</h3>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="">
-                                    <table class="table table-editable-1 align-middle table-edits">
-                                        <thead class="table-light">
-                                            <tr class="text-uppercase table-dark">
-                                                <th>#</th>
-                                                <th>Vehicle</th>
-                                                <th class="">Category</th>
-                                                <th class="">Owner</th>
-                                                <th>Phone No.</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr data-id="1">
-                                                <td style="width: 80px">1.</td>
-                                                <td class="">
-                                                    <input type="text " class="form-control " placeholder="Enter Plate No." spellcheck="false" data-ms-editor="true">
-                                                </td>
-                                                <td>
-                                                    <select class="form-control selectpicker form-select" data-live-search="true" title="Select Vehicle Category" data-style="form-select btn border">
-                                                        <option value="Sedan">Sedan</option>
-                                                        <option value="SUV">SUV</option>
-                                                        <option value="Truck">Truck</option>
-                                                        <option value="Motorcycle">Motorcycle</option>
-                                                        <option value="Van">Van</option>
-                                                        <!-- Add more vehicle categories here as needed -->
-                                                    </select>
-                                                    
-                                                </td>
-                                                <td class="">
-                                                    <input type="text " class="form-control " placeholder="Owner's Name" spellcheck="false" data-ms-editor="true">
-                                                </td>
-                                                <td class="">
-                                                    <input type="text " class="form-control " placeholder="Owner's Phone No." spellcheck="false" data-ms-editor="true">
-                                                </td>
-
-                                                <td></td>
-
-                                            </tr>
-
-                                            <tr class="cloneCharges d-none">
-                                                <td style="width: 80px " class="categoryIndex ">#</td>
-
-                                                <td class="">
-                                                    <input type="text " class="form-control " placeholder="Enter Plate No." spellcheck="false" data-ms-editor="true">
-                                                </td>
-                                                <td>
-                                                    <select class="form-control" data-live-search="true" title="Select Vehicle Category" data-style="form-select btn border">
-                                                        <option value="Sedan">Sedan</option>
-                                                        <option value="SUV">SUV</option>
-                                                        <option value="Truck">Truck</option>
-                                                        <option value="Motorcycle">Motorcycle</option>
-                                                        <option value="Van">Van</option>
-                                                        <!-- Add more vehicle categories here as needed -->
-                                                    </select>
-                                                    
-                                                </td>
-                                                <td class="">
-                                                    <input type="text " class="form-control " placeholder="Owner's Name" spellcheck="false" data-ms-editor="true">
-                                                </td>
-                                                <td class="">
-                                                    <input type="text " class="form-control " placeholder="Owner's Phone No." spellcheck="false" data-ms-editor="true">
-                                                </td>
-
-
-                                                <td class="text-right cell-change d-flex align-items-center justify-content-end">
-                                                    <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
-                                                </td>
-                                            </tr>
-
-
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <td colspan="7" class="bg-light add-field-1 cursor-pointer">
-                                                    <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add A Vehicle</span></span>
-                                                </td>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                </div>
-
-                                
-                            </div>
-                           </div>
-
-                            <div class="d-none  loader-panel">
-                                <div class="p-5 py-0 pt-3 d-flex justify-content-center align-items-center text-center flex-column">
-                                    <div class="p-5">
-                                        <div class="spinner-border text-info m-1" role="status">
-                                            <span class="sr-only text-uppercase">Loading...</span>
-                                        </div>
-                                    </div>
-                                    <h4 class="text-black fw-bold">Payment Being Processed</h4>
-                                    <div class="mb-5">Ask Client to be checking their Phone for a payment request thats currently being Processed</div>
+                                <p>
+                                    Delete Car with registrtaion number <strong class="text-uppercase">KAD 123T</strong> from Usku Sacco.
+                                </p>
+                                <div>
+                                    <label class="form-label">Reason For Removing The vehicle </label>
+                                    <textarea name="" id="" class="form-control" placeholder="Enter Reason for deleting this vehicle"></textarea>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                   </div>
                     <div class="modal-footer">
-                        <div class="col-12 d-none">
-                            <div class="table-resposive p-4 px-2 pt-2 overflow-visible">
-                                <table class="w-100">
-                                    <tbody>
-                                        <tr data-id="1">
-                                           
-                                            <td class="px-3 ">
-                                                <div class="phone-num d-non">
-                                                    <label>Paying Phone No.</label>
-                                                    <input type="text " class="form-control w-100 d-flex "
-                                                        placeholder="Paying Phone Number" spellcheck="false"
-                                                        data-ms-editor="true">
-                                                </div>
-
-                                            </td>
-                                            <td class="px-3 ">
-                                                <div class="phone-num d-non">
-                                                    <label>Vehicles</label>
-                                                    <input type="text " class="form-control w-100 d-flex "
-                                                        placeholder="Paying Phone Number" spellcheck="false"
-                                                        data-ms-editor="true" disabled value="4 Vehicles">
-                                                </div>
-
-                                            </td>
-                                            <td class="px-3">
-                                                <label>Computed Registration Amount</label>
-                                                <input type="text " class="form-control w-100 d-flex"
-                                                    placeholder="KES" spellcheck="false" data-ms-editor="true" disabled value="8000">
-
-                                            </td>
-                                           
-
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                        </div>
+                       
                         <div class="float-end">
                             
                             <a href="javascript: void(0);"
-                                class="btn btn-primary w-md waves-effect waves-light reg-payment">Done</a>
+                                class="btn btn-danger w-md waves-effect waves-light w-100">Delete</a>
                         </div>
                     </div>
 
