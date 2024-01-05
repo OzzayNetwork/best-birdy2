@@ -646,9 +646,11 @@
                                                     <th scope="col">Vehicle</th>
                                                     <th scope="col">Category</th>
                                                     <th scope="col" class="">Last Payment Date</th>
-                                                    <th scope="col" class="">Next Payment Date</th>
+                                                   
                                                     <th scope="col" class="">Current Status</th>
-                                                    <th scope="col" class="text-right">Amout Payable</th>
+                                                    <th class="text-right">Outstanding Arrears</th>
+                                                    <th scope="col" class="text-right">Parking Fee</th>
+                                                    <th scope="col" class="text-right">Total Payable</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -664,20 +666,55 @@
                                                     <td>
                                                         10 Jan 2023 10:56 AM <span class="text-uppercase fw-bold">kes 200</span>
                                                     </td>
-
-                                                    <td>
-                                                        By 5 feb 2023
-                                                    </td>
                                                     <td><span class="badge rounded-pill bg-success text-uppercase">compliant</span></td>
+                                                    <td class="text-right">
+                                                        KES 340
+                                                    </td>
                                                     <td class="text-right text-uppercase fw-bold">KES 500</td>
                                                     <td class="text-right">
-                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-danger btn-sm text-uppercase">Remove Vehicle</button>
+                                                        <div class="d-flex text-right flex-end justify-content-end">
+                                                            <button type="button" class="btn btn-sm btn-outline-primary waves-effect waves-light me-3 text-uppercase"> <i class="bx bx-left-arrow-alt font-size-16 align-middle me-2"></i> Move Vehicle</button>
+                                                        
+
+                                                        <div class="dropdown">
+                                                           
+
+                                                            <button  role="button" data-bs-toggle="dropdown" aria-haspopup="true" class="btn btn-sm btn-success waves-effect btn-label waves-light text-uppercase"><i class="bx bx-check-double label-icon"></i> More</button>
+    
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="property-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Vehicle Details</a>
+                                                                <a class="dropdown-item" href="property-units.html"><i class="font-size-15 mdi mdi-home-variant me-3"></i>Statements</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-home-edit me-3"></i>Send Reminder</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-plus me-3"></i>Mannualy Add Arrears</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15  dripicons-wrong me-3 text-danger"></i>Move Vehicle</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-car-modal" ><i class="font-size-15  mdi-file-document-multiple mdi me-3 text-info"></i>Delete Vehicle<a>
+                                                                <a class="dropdown-item" href="property-tenant-schedule.html"><i class="font-size-15  mdi-file-clock mdi me-3 text-info"></i>Rent Schedule</a>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        </div>
                                                     </td>
                                                 </tr>
 
                                                
                                                 
                                             </tbody>
+
+                                            <tfoot>
+                                                <tr class="table-dark">
+                                                    <th colspan="4">
+                                                        34 Vehicles
+                                                    </th>
+                                                    <th>
+                                                        <span class="badge rounded-pill bg-success text-uppercase">COMPLIANT (5)</span>
+                                                        <span class="badge rounded-pill bg-danger text-uppercase">UNCOMPLIANT (5)</span>
+                                                    </th>
+                                                    <th class="text-right">KES 4,560</th>
+                                                    <th class="text-right">KES 40,560</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                </tr>
+                                            </tfoot>
                                         </table>
                                     </div>
                                 </div>
