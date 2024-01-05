@@ -673,22 +673,20 @@
                                                     <td class="text-right text-uppercase fw-bold">KES 500</td>
                                                     <td class="text-right">
                                                         <div class="d-flex text-right flex-end justify-content-end">
-                                                            <button type="button" class="btn btn-sm btn-outline-primary waves-effect waves-light me-3 text-uppercase"> <i class="bx bx-left-arrow-alt font-size-16 align-middle me-2"></i> Move Vehicle</button>
-                                                        
+                                                            <button  role="button" data-bs-toggle="dropdown" aria-haspopup="true" class="btn btn-sm btn-primary waves-effect btn-label waves-light text-uppercase me-3"><i class="mdi mdi-shield-check label-icon"></i> Arrears Weiver</button>
 
                                                         <div class="dropdown">
                                                            
 
-                                                            <button  role="button" data-bs-toggle="dropdown" aria-haspopup="true" class="btn btn-sm btn-success waves-effect btn-label waves-light text-uppercase"><i class="bx bx-check-double label-icon"></i> More</button>
+                                                            <button  role="button" data-bs-toggle="dropdown" aria-haspopup="true" class="btn btn-sm btn-warning text-black waves-effect btn-label waves-light text-uppercase"><i class="mdi mdi-arrow-down-drop-circle label-icon"></i> More</button>
     
                                                             <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="property-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Vehicle Details</a>
-                                                                <a class="dropdown-item" href="property-units.html"><i class="font-size-15 mdi mdi-home-variant me-3"></i>Statements</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-home-edit me-3"></i>Send Reminder</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-plus me-3"></i>Mannualy Add Arrears</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15  dripicons-wrong me-3 text-danger"></i>Move Vehicle</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-car-modal" ><i class="font-size-15  mdi-file-document-multiple mdi me-3 text-info"></i>Delete Vehicle<a>
-                                                                <a class="dropdown-item" href="property-tenant-schedule.html"><i class="font-size-15  mdi-file-clock mdi me-3 text-info"></i>Rent Schedule</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".details-modal"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Vehicle Details</a>
+                                                                <a class="dropdown-item" href="parking-fleet-details-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Statements</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".send-sms-modal"><i class="font-size-15 mdi mdi-chat-processing me-3"></i>Send Reminder</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-arrears-modal"><i class="font-size-15 mdi mdi-cash-plus me-3"></i>Mannualy Add Arrears</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".move-car-modal"><i class="font-size-15 mdi mdi-arrow-left-thick  me-3 "></i>Move Vehicle</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-car-modal" ><i class="font-size-15  mdi-delete-forever mdi me-3 text-danger"></i>Delete Vehicle<a>
                                                             </div>
                                                         </div>
                                                         
@@ -1091,42 +1089,460 @@
             <!-- invoice details -->
 
             <!-- add vehicles -->
-            <div class="modal fade add-car-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="myLargeModalLabel">Remove This Vehicle from Usiku Sacco</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                   <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <p>
-                                    Delete Car with registrtaion number <strong class="text-uppercase">KAD 123T</strong> from Usku Sacco.
-                                </p>
-                                <div>
-                                    <label class="form-label">Reason For Removing The vehicle </label>
-                                    <textarea name="" id="" class="form-control" placeholder="Enter Reason for deleting this vehicle"></textarea>
+            <div class="modal fade add-car-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Remove This Vehicle from Usiku Sacco</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>
+                                        Delete Car with registrtaion number <strong class="text-uppercase">KAD 123T</strong> from Usku Sacco.
+                                    </p>
+                                    <div>
+                                        <label class="form-label">Reason For Removing The vehicle </label>
+                                        <textarea name="" id="" class="form-control" placeholder="Enter Reason for deleting this vehicle"></textarea>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                   </div>
-                    <div class="modal-footer">
-                       
-                        <div class="float-end">
-                            
-                            <a href="javascript: void(0);"
-                                class="btn btn-danger w-md waves-effect waves-light w-100">Delete</a>
-                        </div>
                     </div>
+                        <div class="modal-footer">
+                        
+                            <div class="float-end">
+                                
+                                <a href="javascript: void(0);"
+                                    class="btn btn-danger w-md waves-effect waves-light w-100">Delete</a>
+                            </div>
+                        </div>
 
+                    </div>
+                    <!-- /.modal-content -->
                 </div>
-                <!-- /.modal-content -->
+                <!-- /.modal-dialog -->
             </div>
-            <!-- /.modal-dialog -->
-        </div>
             <!-- end of adding vehicles -->
+
+            <!-- move vehicle to another sacco -->
+            <div class="modal fade move-car-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Move vehicle from Ushirika Sacco</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="text-capitalize">
+                                        Move Vehicle with registrtaion number <strong class="text-uppercase">KAD 123T</strong> from Usku Sacco.
+                                    </p>
+                                    <div>
+                                        <label class="form-label text-uppercase">Search for Sacco</label>
+                                        <input class="form-control" type="text" placeholder="Search for Sacco" >
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table dataTable no-footer table-sm" id="datatable-buttons">
+                                            <thead class="table-light">
+                                                <tr>
+    
+                                                    <th></th>
+                                                    <th scope="col">Sacco</th>
+                                                    <th scope="col">Subcounty</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+    
+                                                    <td>
+                                                        <div class="d-flex  align-items-center">
+                                                            <div class="the-mail-checkbox pr-4">
+                                                                <input class="form-check-input" type="radio" name="form-sacco" >
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       Usiku Sacco
+                                                    </td>
+                                                    <td>
+                                                        Meru Town Sub County
+                                                    </td>
+                                                    
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                        <div class="d-flex  align-items-center">
+                                                            <div class="the-mail-checkbox pr-4">
+                                                                <input class="form-check-input" type="radio" name="form-sacco" >
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       Usiku Sacco 4K
+                                                    </td>
+                                                    <td>
+                                                        Meru Town Sub County
+                                                    </td>
+                                                    
+                                                </tr>
+                                                
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="modal-footer">
+                        
+                            <a href="javascript: void(0);" class="btn btn-primary w-md waves-effect waves-light w-100">Move Vehicle</a>
+                        </div>
+
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+
+            <!-- move vehicle to another sacco -->
+
+            <!-- adding arrears -->
+            <div class="modal fade add-arrears-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Manually add arrears to the Vehicle</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="text-capitalize">
+                                       Use this section to manually add Arrears to the vehicle with registration number <strong class="text-uppercase">KAD 123T</strong> for either of the following months. 
+                                    </p>
+                                    <div>
+                                        <label class="form-label text-uppercase">Select the Month(s) the vehicle owes the county in Arrears</label>
+                                       
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table dataTable no-footer table-sm" id="datatable-buttons">
+                                            <thead class="table-light">
+                                                <tr>
+    
+                                                    <th style="width: 20px;"></th>
+                                                    <th scope="col">Month</th>
+                                                    <th scope="col" class="text-right">Amount Payable</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+    
+                                                    <td>
+                                                        <div class="d-flex  align-items-center">
+                                                            <div class="the-mail-checkbox pr-4">
+                                                                <input class="form-check-input" type="checkbox" id="month-1">
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       <label for="month-1">September 2023</label>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        KES 300
+                                                    </td>
+                                                    
+                                                </tr>
+
+                                               
+                                                <tr>
+    
+                                                    <td>
+                                                        <div class="d-flex  align-items-center">
+                                                            <div class="the-mail-checkbox pr-4">
+                                                                <input class="form-check-input" type="checkbox" id="month-2">
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       <label for="month-2">November 2023</label>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        KES 300
+                                                    </td>
+                                                    
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                        <div class="d-flex  align-items-center">
+                                                            <div class="the-mail-checkbox pr-4">
+                                                                <input class="form-check-input" type="checkbox" id="month-3">
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       <label for="month-3">December 2023</label>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        KES 300
+                                                    </td>
+                                                    
+                                                </tr>
+
+                                              
+                                                
+                                                
+                                            </tbody>
+                                            <tfoot>
+                                                <tr class="table-light">
+                                                    <TH></TH>
+                                                    <th>
+                                                        2 Months
+                                                    </th>
+                                                    <th class="text-right">
+                                                        KES 600
+                                                    </th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+
+                                        <div class="alert alert-warning fw-bold mt-3" role="alert">
+                                           Kindly note after submiting this cannot be outdone not unless it is weivered by an authorized official from the county
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="modal-footer">
+                        
+                            <a href="javascript: void(0);" class="btn btn-primary w-md waves-effect waves-light w-100">Submit</a>
+                        </div>
+
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of arrears adding -->
+
+            <!-- sending sms reminders to car owners -->
+            <div class="modal fade send-sms-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Sending payment Reminder</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="text-capitalize">
+                                      Use this section to send a payment reminder to the vehicle owner of vehicle with registration Number  <strong class="text-uppercase">KAD 123T</strong> for either of the following months. 
+                                    </p>
+                                    <div>
+                                        <label class="form-label text-uppercase">Select the Month(s) the vehicle owes the county in Arrears</label>
+                                       
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table dataTable no-footer table-sm" id="datatable-buttons">
+                                            <thead class="table-light">
+                                                <tr>
+    
+                                                    <th style="width: 20px;">#</th>
+                                                    <th scope="col">Month</th>
+                                                    <th scope="col" class="text-right">Amount Payable</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+    
+                                                    <td>
+                                                        1.
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       <label for="month-1">September 2023</label>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        KES 300
+                                                    </td>
+                                                    
+                                                </tr>
+
+                                               
+                                                <tr>
+    
+                                                    <td>
+                                                       2.
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       <label for="month-2">November 2023</label>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        KES 300
+                                                    </td>
+                                                    
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                        3.
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       <label for="month-3">December 2023</label>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        KES 300
+                                                    </td>
+                                                    
+                                                </tr>
+
+                                              
+                                                
+                                                
+                                            </tbody>
+                                            <tfoot>
+                                                <tr class="table-light">
+                                                    <TH></TH>
+                                                    <th>
+                                                        3 Months
+                                                    </th>
+                                                    <th class="text-right">
+                                                        KES 900
+                                                    </th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="modal-footer">
+                        
+                            <a href="javascript: void(0);" class="btn btn-success w-md waves-effect waves-light w-100">Submit</a>
+                        </div>
+
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- sending payment reminders to vehicle owners -->
+
+            <!-- vehicle details modal -->
+            <div class="modal fade details-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Vehicle details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="text-capitalize">
+                                      Use this section to send a payment reminder to the vehicle owner of vehicle with registration Number  <strong class="text-uppercase">KAD 123T</strong> for either of the following months. 
+                                    </p>
+                                    <div>
+                                        <label class="form-label text-uppercase">Select the Month(s) the vehicle owes the county in Arrears</label>
+                                       
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table dataTable no-footer table-sm" id="datatable-buttons">
+                                           
+                                            <tbody>
+                                                <tr>
+    
+                                                    <td>
+                                                        Plate Number
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       KAD123Y
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                        Vehicle Category
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       14 Seater Matatu
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                       Amount Payable Monthly
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       KES 450
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                       Owner
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                        <input type="text" class="from-control form-control-sm" placeholder="Enter Owner's Full Names" >
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                       Owner's Phone No.
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                      <input type="text" class="from-control form-control-sm" placeholder="Enter Owner's Phone" value="0704549859">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                           
+                                        </table>
+
+                                       
+                                    </div>
+
+                                    <div class="alert alert-secondary fw-semibold mt-3" role="alert">
+                                        Remember to submit the changes incase you do any changes
+                                        </div>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="modal-footer">
+                        
+                            <a href="javascript: void(0);" class="btn btn-primary w-md waves-effect waves-light w-100 text-uppercase">Save Changes</a>
+                        </div>
+
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of vehicle details modal -->
 
             <footer class="footer ">
                 <div class="container-fluid ">
