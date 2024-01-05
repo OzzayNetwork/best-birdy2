@@ -673,7 +673,7 @@
                                                     <td class="text-right text-uppercase fw-bold">KES 500</td>
                                                     <td class="text-right">
                                                         <div class="d-flex text-right flex-end justify-content-end">
-                                                            <button  role="button" data-bs-toggle="dropdown" aria-haspopup="true" class="btn btn-sm btn-primary waves-effect btn-label waves-light text-uppercase me-3"><i class="mdi mdi-shield-check label-icon"></i> Arrears Weiver</button>
+                                                            <button  role="button" data-toggle="modal" data-target=".waiver-modal" aria-haspopup="true" class="btn btn-sm btn-primary waves-effect btn-label waves-light text-uppercase me-3"><i class="mdi mdi-shield-check label-icon"></i> Arrears Weiver</button>
 
                                                         <div class="dropdown">
                                                            
@@ -1543,6 +1543,103 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- end of vehicle details modal -->
+
+            <!-- applying waivers onto a vehicle -->
+            <div class="modal fade waiver-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Waiver This Vehicle</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="text-capitalize">
+                                      Use this section to send a payment reminder to the vehicle owner of vehicle with registration Number  <strong class="text-uppercase">KAD 123T</strong> for either of the following months. 
+                                    </p>
+                                    <div>
+                                        <label class="form-label text-uppercase">Select the Month(s) the vehicle owes the county in Arrears</label>
+                                       
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table dataTable no-footer table-sm" id="datatable-buttons">
+                                           
+                                            <tbody>
+                                                <tr>
+    
+                                                    <td>
+                                                        Plate Number
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       KAD123Y
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                        Vehicle Category
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       14 Seater Matatu
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                       Amount Payable Monthly
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                       KES 450
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                       Owner
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                        <input type="text" class="from-control form-control-sm" placeholder="Enter Owner's Full Names" >
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                       Owner's Phone No.
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                      <input type="text" class="from-control form-control-sm" placeholder="Enter Owner's Phone" value="0704549859">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                           
+                                        </table>
+
+                                       
+                                    </div>
+
+                                    <div class="alert alert-secondary fw-semibold mt-3" role="alert">
+                                        Remember to submit the changes incase you do any changes
+                                        </div>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="modal-footer">
+                        
+                            <a href="javascript: void(0);" class="btn btn-primary w-md waves-effect waves-light w-100 text-uppercase">Save Changes</a>
+                        </div>
+
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- applyinf waiver onto a vehicle -->
 
             <footer class="footer ">
                 <div class="container-fluid ">
