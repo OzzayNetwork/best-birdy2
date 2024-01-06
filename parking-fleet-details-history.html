@@ -518,7 +518,8 @@
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Parking</a></li>
                                         <li class="breadcrumb-item"><a href="parking-fleet.html">Fleet manager</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Usiku Sacco Details</a></li>
+                                        <li class="breadcrumb-item"><a href="parking-fleet-details.html">Usiku Sacco Details</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Financial Statements</a></li>
                                     </ol>
                                 </div>
 
@@ -589,16 +590,7 @@
                                              
                         <div class="col-12 px-sm-30px">
                             <div class="card">
-                                <div class="card-header bg-white border-bottom d-flex justify-content-between">
-                                    <div>
-                                        <h4 class="card-title text-capitalize">Payment History For Usiku Sacco</h4>
-                                    </div>
-                                    <div>
-                                        <button  data-toggle="modal" data-target=".add-car-modal" type="button" class="btn btn-primary waves-effect waves-light">
-                                            <i class="bx bx-plus font-size-16 align-middle me-2"></i> Add Vehicles
-                                        </button>
-                                    </div>
-                                </div>
+                               
 
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
@@ -633,7 +625,7 @@
                                 </div>
 
                                 
-                                <div class="card-body">
+                                <div class="card-body d-none">
                                     <div class="table-responsive">
                                         <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table" id="">
                                             <thead class="table-dark">
@@ -724,6 +716,116 @@
                                                     <td></td>
                                                 </tr>
                                             </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table" id="">
+                                            <thead>
+                                                <tr class="table-dark text-uppercase">
+                                                    <th>Date</th>
+                                                    <th>Description</th>
+                                                    <th>Posted By</th>
+                                                    <th>Receipt No.</th>
+                                                    <th class="text-right">Debit</th>
+                                                    <th class="text-right">Credit</th>
+                                                    <th class="text-right">Bal</th>
+                                                </tr>
+                                                <tbody>
+                                                    <tr class="table-info text-uppercase">
+                                                        <th class="" colspan="4">Opening Balance</th>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 0.00</th>
+                                                    </tr>
+                                                    <tr>
+                                                       <th> 1 Jan 2023 12:00 AM </th>
+                                                       <td>Seasonal Parking Ticket For Jan 2023. <a href="#" data-toggle="modal" data-target="#parking-schedule-modal" title="View Parking Fees Schedule" class="fw-semibold">View Fee Schedule (34)</a> </td>
+                                                       <td>Auto</td>
+                                                       <td>-</td>
+                                                       <th class="text-right">KES 4,500</th>
+                                                       <th class="text-right">KES 0.00</th>
+                                                       <th class="text-right">KES 4,500</th>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th> 3 Jan 2023 10:45 AM   </th>
+                                                        <td>Seasonal Parking Ticket For Jan 2023 For added Vehicles. <a href="#" title="View Parking Fees Schedule" class="fw-semibold">View Fee Schedule (36)</a> </td>
+                                                        <td><a href="user-details.html">Added By Josephine Aende</a></td>
+                                                        <td>-</td>
+                                                        <th class="text-right">KES 600</th>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 5,100</th>
+                                                     </tr>
+
+                                                     <tr>
+                                                        <th> 3 Jan 2023 10:45 AM   </th>
+                                                        <td>Invoice of <strong>KES 4,500</strong> Created for 34 Vehicles <a href="#" title="View Invoice" class="fw-semibold" data-toggle="modal" data-target="#invoice-modal">View Invoice (BLL12345678)</a> </td>
+                                                        <td><a href="user-details.html">Served By Josephine Aende</a></td>
+                                                        <td>-</td>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 5,100</th>
+                                                     </tr>
+
+                                                     <tr>
+                                                        <th> 3 Jan 2023 10:56 AM   </th>
+                                                        <td>Receipting of invoice No. BLL12345678 for 32 Vehicles</td>
+                                                        <td><a href="user-details.html">Receipted By Josephine Aende</a></td>
+                                                        <td>
+                                                            <span><a href="" class="fw-semibold" data-toggle="modal" data-target=".receipting-modal">BLL1234909</a></span>
+                                                        </td>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 4,500</th>
+                                                        <th class="text-right">KES 600</th>
+                                                     </tr>
+
+                                                     <tr>
+                                                        <th> 4 Jan 2023 8:54 AM   </th>
+                                                        <td>Waiver for 1 Vehicle. <a href="#" title="View Invoice" class="fw-semibold"  data-toggle="modal" data-target="#waiver-statement-modal">View Waiver info</a></td>
+                                                        <td><a href="user-details.html">Waivered By Joseph Muigai</a></td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 300</th>
+                                                        <th class="text-right">KES 300</th>
+                                                     </tr>
+
+                                                     <tr>
+                                                        <th> 4 Jan 2023 12:56 PM   </th>
+                                                        <td>Invoice of <strong>KES 300</strong> Created for 1 Vehicles <a href="#" title="View Invoice" class="fw-semibold" data-toggle="modal" data-target="#invoice-modal">View Invoice (BLL12345680)</a> </td>
+                                                        <td><a href="user-details.html">Served By Josephine Aende</a></td>
+                                                        <td>-</td>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 300</th>
+                                                     </tr>
+
+                                                     <tr>
+                                                        <th>  4 Jan 2023 01:34 PM   </th>
+                                                        <td>Receipting of invoice No. BLL12345680 for 32 Vehicles</td>
+                                                        <td><a href="user-details.html">Receipted By Josephine Aende</a></td>
+                                                        <td>
+                                                            <span><a href="" class="fw-semibold" data-toggle="modal" data-target=".receipting-modal">BLL1234909</a></span>
+                                                        </td>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 300</th>
+                                                        <th class="text-right">KES 0.00</th>
+                                                     </tr>
+                                                </tbody>
+
+                                                <tfoot>
+                                                    <tr class="table-info text-uppercase">
+                                                        <th class="" colspan="4">Clossing Balance</th>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 0.00</th>
+                                                        <th class="text-right">KES 0.00</th>
+                                                    </tr>
+                                                </tfoot>
+                                            </thead>
                                         </table>
                                     </div>
                                 </div>
@@ -1241,6 +1343,783 @@
         </div>
             <!-- end of adding vehicles -->
 
+            <!-- parking fee schedule modal -->
+            <div class="modal fade" id="parking-schedule-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-none">
+                        <span class="badge badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Receive Payment</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle close-modal" data-dismiss="modal"  aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+    
+                    </div>
+                    <div class="modal-body">
+                        <div >
+                            <div class="col-12">
+                                <address>
+                                    <strong>About Sacco:</strong><br>
+                                    Conatct Person: Kelvin Njuguna<br>
+                                    email@mail.com, 0704 549 859<br>
+                                    Hse No. 410, 90 Degrees By Tsavo
+                                    <br><br>
+                                    Ward, Sub County
+
+                                    <br> <br>
+                                    <span class="text-uppercase">This Parking Fee schedule was created on 1 Jan 2024 at 12:00:00 AM</span>
+                                </address>
+                            </div>
+                           <div class="new-vehicles-container-modal">
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">Vehicle registern Based on Payment</h3>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="">
+                                    <table class="table table-editable-1 align-middle table-edits table-sm">
+                                        <thead class="table-light">
+                                            <tr class="text-uppercase table-dark">
+                                                <th>#</th>
+                                                <th>Vehicle</th>
+                                                <th class="">Category</th>
+                                                <th class="text-right">Seasonal Fee</th>
+                                                <th class="text-right">Arrears</th>
+                                                <th class="text-right">Tot Expected</th>
+                                                
+                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                                <td>1.</td>
+                                                <td>KAD 123Y</td>
+                                                <td>14 Seater</td>
+                                                <td class="text-right text-uppercase">KES 500</td>
+                                                <td class="text-right text-uppercase" >KES 1000</td>
+                                                <td class="text-right text-uppercase" >KES 1500</td>
+                                                
+                                            
+                                            </tr>
+
+                                            <tr>
+                                                <td>2.</td>
+                                                <td>KAD 123Y</td>
+                                                <td>14 Seater</td>
+                                                <td class="text-right text-uppercase">KES 500</td>
+                                                <td class="text-right text-uppercase" >KES 1000</td>
+                                                <td class="text-right text-uppercase" >KES 1500</td>
+                                                
+                                            
+                                            </tr>
+
+                                            <tr>
+                                                <td>3.</td>
+                                                <td>KAD 123Y</td>
+                                                <td>14 Seater</td>
+                                                <td class="text-right text-uppercase">KES 500</td>
+                                                <td class="text-right text-uppercase" >KES 1000</td>
+                                                <td class="text-right text-uppercase" >KES 1500</td>
+                                                
+                                            
+                                            </tr>
+
+                                          
+
+
+                                        </tbody>
+                                        <tfoot>
+                                            <tr class="table-light text-uppercase">
+                                                <th colspan="3">32 Vehicles</th>
+                                               
+                                                <th class="text-right text-uppercase">KES 3500</th>
+                                                <th class="text-right text-uppercase" >KES 2500</th>
+                                                <th class="text-right text-uppercase" >KES 2500</th>
+                                               </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+
+                                
+                            </div>
+                           </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex bill-modal-footer">
+                        <button type="button" class="btn btn-primary waves-effect waves-light">
+                            <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Schedule
+                        </button>
+
+                        <button data-dismiss="modal"  aria-label="Close" type="button" class="btn btn-secondary waves-effect waves-light">
+                            <i class="mdi mdi-close font-size-16 align-middle me-2"></i> Close
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- end of parking fee modal -->
+
+            <!-- created invoices -->
+            <div class="modal fade" id="invoice-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-none">
+                        <span class="badge badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Receive Payment</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle close-modal" data-dismiss="modal"  aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+    
+                    </div>
+                    <div class="modal-body">
+                        <div >
+                            <div class="col-12">
+                                <address>
+                                    <strong>About Sacco:</strong><br>
+                                    Conatct Person: Kelvin Njuguna<br>
+                                    email@mail.com, 0704 549 859<br>
+                                    Hse No. 410, 90 Degrees By Tsavo
+                                    <br><br>
+                                    Ward, Sub County
+
+                                    <br> <br>
+                                    <span class="text-uppercase">This onvoice was created on 1 Jan 2024 at 12:00:00 AM By Josphine</span>
+                                </address>
+                            </div>
+                           <div class="new-vehicles-container-modal">
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">Vehicle registern Based on Payment</h3>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="">
+                                    <table class="table table-nowrap vertical-align-middle table-sm">
+                                        <thead class="bg-light">
+                                            <tr>
+                                                <th style="width: 70px;">No.</th>
+                                                <th>Customer</th>
+                                                <th>Description</th>
+                                                <th class="text-end">Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot class="bg-light">
+                                            <tr>
+                                                <td></td>
+                                                <td class="border-0 text-end text-right" colspan="2"><strong>Total</strong></td>
+                                                <td class="border-0 text-end">
+                                                    <h5 class="m-0 text-uppercase fw-bold">KES 76300</h5>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>1</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDE491F</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>2</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDC578B</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>3</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDL618M</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">Saloon Car</p>
+                                                </td>
+                                                <td class="text-end">KES 1000</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>4</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDB509F</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>5</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDE079B</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>6</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDM014J</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>7</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCX004L</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>8</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDB955X</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>9</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDC336R</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>10</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDH860P</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>11</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDE601B</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>12</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDL420F</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>13</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDL419F</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>14</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCX212B</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>15</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCU876R</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>16</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDK044F</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>17</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDB053U</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">Medium Lorry</p>
+                                                </td>
+                                                <td class="text-end">KES 2200</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>18</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KBZ477E</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">Canter Lorry</p>
+                                                </td>
+                                                <td class="text-end">KES 2200</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>19</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCD549E</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">Saloon Car</p>
+                                                </td>
+                                                <td class="text-end">KES 1000</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>20</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCV687G</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>21</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCQ535Z</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>22</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCY469D</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>23</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCF078T</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>24</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCV105C</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>25</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCN925D</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>26</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCY687D</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>27</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCH026G</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>28</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCH324S</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>29</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCH051F</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>30</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCY548T</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>31</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCN156K</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>32</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCW802E</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>33</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCW801E</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>34</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCP382S</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>35</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCP273W</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>36</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCL085L</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>37</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCJ255M</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>38</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCH225V</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>39</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDD075C</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>40</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCD265U</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>41</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KCB181G</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>42</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KDB018B</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">14 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1800</td>
+                                            </tr>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner"
+                                                value="[object Object]">
+                                                <td>43</td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">KBA683H</p>
+                                                </td>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0">7 seater</p>
+                                                </td>
+                                                <td class="text-end">KES 1500</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                
+                            </div>
+                           </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex bill-modal-footer">
+                        <button type="button" class="btn btn-primary waves-effect waves-light">
+                            <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                        </button>
+
+                        <button data-dismiss="modal"  aria-label="Close" type="button" class="btn btn-secondary waves-effect waves-light">
+                            <i class="mdi mdi-close font-size-16 align-middle me-2"></i> Close
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- created invoices -->
+
+            <!-- waivered vehicle statement -->
+            <div class="modal fade" id="waiver-statement-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-none">
+                        <span class="badge badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Receive Payment</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle close-modal" data-dismiss="modal"  aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+    
+                    </div>
+                    <div class="modal-body">
+                        <div >
+                           
+                           <div class="new-vehicles-container-modal">
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">Waiver Details</h3>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="">
+                                    <table class="table table-editable-1 align-middle table-edits table-sm">
+                                        
+                                        <tbody>
+                                            <tr>
+                                                <th>Reg No.</th>
+                                                <th class="text-right">KAD123Y</th>
+                                             
+                                             </tr>
+
+                                             <tr>
+                                                <th>Category</th>
+                                                <th class="text-right">14 Seater</th>
+                                             
+                                             </tr>
+
+                                             <tr>
+                                                <th>Period in Arrears</th>
+                                                <th class="text-right">2 Months</th>
+                                             
+                                             </tr>
+
+                                           <tr>
+                                               <th>Arrears</th>
+                                               <th class="text-right">KES 5000</th>
+                                            
+                                            </tr>
+
+                                            <tr>
+                                                <th>Amount Waiverd</th>
+                                                <th class="text-right">4000</th>
+                                             
+                                             </tr>
+
+                                             <tr>
+                                                <th>Remaining Balance</th>
+                                                <th class="text-right text-uppercase">kes 100</th>
+                                             
+                                             </tr>
+
+                                             <tr>
+                                                <th>Waivered By</th>
+                                                <th class="text-right text-uppercase">Kelvin Njuguna on 23 Jan 2023 1:45 PM</th>
+                                             
+                                             </tr>
+                                             <tr>
+                                                <th>Reason for Waiver</th>
+                                                <th class="text-right ">Car was involved in an accident</th>
+                                             
+                                             </tr>
+
+                                          
+
+                                          
+
+
+                                        </tbody>
+                                       
+                                    </table>
+                                </div>
+
+                                
+                            </div>
+                           </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex bill-modal-footer">
+                        
+                        <button data-dismiss="modal"  aria-label="Close" type="button" class="btn btn-secondary waves-effect waves-light">
+                            <i class="mdi mdi-close font-size-16 align-middle me-2"></i> Close
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- end of waiver -->
             <footer class="footer ">
                 <div class="container-fluid ">
                     <div class="row ">
