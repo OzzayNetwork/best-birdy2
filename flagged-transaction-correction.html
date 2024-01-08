@@ -336,7 +336,7 @@
                         </li>
 
                         
-                        <li>
+                          <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow text-capitalize">
                                 <i class="dripicons-flag"></i>
                                 <span>Action Center</span>
@@ -344,6 +344,8 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="flagged-transaction-correction.html">Transactions Correction</a></li>
+
+                                <li><a href="flagged-transaction-correction-report.html">Corrected Transactions report</a></li>
                                 <li><a href="flagged-payments.html">unmatched transactions</a></li>
                                 <li><a href="flagged-awaiting.html">Awaiting Receipting</a></li>
                                 <li><a href="flagged-mannualy.html">Mannualy Receipted Transactions </a></li>
@@ -546,7 +548,7 @@
                                                     <td>
                                                         <span class="badge badge-soft-success">MPESA</span> 0723425362
                                                     </td>
-                                                    
+                                                     
                                                    
 
 
@@ -586,27 +588,23 @@
                 <div class="modal-dialog  modal-dialog-centered mb-5">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Approve Transaction</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Transaction Correction</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                        <div class="modal-body">
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="mb-3">
-                                        <label for="formrow-firstname-input" class="form-label">Transaction Amount</label>
-                                         <input type="text" class="form-control" placeholder="Enter Transaction Amount">
-                                    </div>
-                                </div>
+                               
                                 <div class="col-12">
                                     <div class="">
                                         <div class="alert alert-warning" role="alert">
                                             <h4 class="alert-heading">Please Note !</h4>
-                                            <p>Kindly Confrim this transaction is valid by entering the OTP sent to your phone number. To receive the otp click the button right next to it and by doing so you will have confirmed the validity of the transaction </p>
+                                            <p>The bill number must exist and receipted amount should equal the invoiced amount</p>
                                             <hr>
 
-                                            <div class="hstack gap-3">
-                                                <input class="form-control me-auto" type="text" placeholder="Enter OTP" aria-label="Add your item here..." spellcheck="false" data-ms-editor="true">
-                                                <button type="button" class="btn btn-secondary text-nowrap">Get OTP</button>
+                                            <div class="">
+                                                <label for="formrow-firstname-input" class="form-label">Bill Number</label>
+                                                <input class="form-control me-auto" type="text" placeholder="Bill Number" aria-label="Add your item here..." spellcheck="false" data-ms-editor="true">
+                                                
                                                 
                                             </div>
                                              
