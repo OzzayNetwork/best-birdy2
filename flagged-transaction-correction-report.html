@@ -507,25 +507,17 @@
                                     <div class="flex-grow-1">
                                         <div class="search-box mb-0 me-3">
                                             <div class="position-relative">
-                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search For Wrong Bill Number" fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search For Transaction" fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
                                                 <i class="bx bx-search-alt search-icon"></i>
                                             </div>
                                         </div>
+
+
                                     </div>
                             
-                                    <div class="d-none">
-                                        <div class="d-flex align-items-center me-3 pe-3">
-                                            <span class="px-3 fw-semibold">Transaction Type:</span>
-                                            <select class="form-select">
-                                                <option>Matatut</option>
-                                                <option>PSV Saccos</option>
-                                                <option>Motorbike Sub Group</option>
-                                                <option>Private Organizations/Companies</option>
-                                            </select>
-                                             
-                                            
-                                        </div>
-                                        <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize d-none">
+                                    <div class="">
+                                       
+                                        <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                             <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
                                         </button>
                             
@@ -541,12 +533,16 @@
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th>Receipt No.</th>
-                                                    <th>Bill No.</th>
-                                                    <th>Receipted By</th>
-                                                    <th scope="col">Date Receipted</th>
-                                                    <th scope="col">Method</th> 
+                                                    <th>Initial Input</th>
+                                                    <th>Corrected To</th>
+                                                    <th>Bill Description</th>
+                                                    <th>Invoiced By</th>
+                                                    <th>Corrected By</th>
+                                                    <th>Date Receipted</th>
+                                                    <th>Date Corrected</th>
+                                                    <th>Payment Mode</th>
+                                                    <th class="text-right">Amount</th>
                                                     
-                                                    <th class="text-right">Amount Receipted</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -554,7 +550,11 @@
                                                 <tr>
                                                     <td class="col-spa"  >12345</td>
                                                     <td class="col-spa"  >BLL4567</td>
-                                                    <td>Kelvin kinoti</td>
+                                                    <td class="col-spa"  >BLL4567</td>
+                                                    <td>Distribution SBP Permit</td>
+                                                    <td>Self Service (0704549859)</td>
+                                                    <td>Alex Kinoti</td>
+                                                    <td class="text-capitalize text-nowrap">11 Jan 2024 10:45 AM</td>
                                                     <td class="text-capitalize text-nowrap">11 Jan 2024 10:45 AM</td>
                                                     <td>
                                                         <span class="badge badge-soft-success">MPESA</span> 0723425362
@@ -569,10 +569,7 @@
                                                     
   
                                                     <td class="text-right">
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Correct Transaction</button>
-                                                           
-                                                        </div>
+                                                       
                                                     </td>
                                                 </tr>
                                                
@@ -615,7 +612,7 @@
                                             <div class="">
                                                 <label for="formrow-firstname-input" class="form-label">Bill Number</label>
                                                 <input class="form-control me-auto" type="text" placeholder="Bill Number" aria-label="Add your item here..." spellcheck="false" data-ms-editor="true">
-                                                
+                                                <span>Bill Amount:<span class="fw-bold text-black">--</span> </span>
                                                 
                                             </div>
                                              
