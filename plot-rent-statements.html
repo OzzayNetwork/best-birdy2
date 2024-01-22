@@ -582,218 +582,156 @@
                                             
                         <div class="col-12 px-sm-30px">
                             <div class="card">
-                                <div class="card-header bg-white  w-100 border-bottom d-flex justify-content-between align-items-center">
-                                    <h4 class="card-title text-capitalize">
-                                        Plot Rent Register
-                                    </h4>
+                                <div class="card-header bg-white border-bottom d-flex justify-content-between">
+                                    <div>
+                                        <h4 class="card-title text-uppercase">Financial Statements for KAD123Y</h4>
+                                    </div>
+
+                                    <!-- by default filter for the whole year -->
                                     <div class="d-flex">
-                                        
-                                        <button data-bs-toggle="modal" data-bs-target=".add-plot-modal" type="button" class="btn btn-success text-uppercase dropdown-toggle option-selector me-3">
-                                            <i class="bx bx-plus font-size-16"></i> <span class="pl-1 d-md-inline">Add A Plot</span>
+                                        <div class="d-flex align-items-center me-3 pe-3">
+                                            <span class="pr-3 fw-semibold">From:</span>
+                                            <input class="form-control" placeholder="Start date" type="date">
+                                            <span class="px-3 fw-semibold">TO:</span>
+                                            <input class="form-control" placeholder="Start date" type="date">
+                                        </div>
+                                        <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                            <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Statement</span>
                                         </button>
 
                                     </div>
-                                    
-                                </div>
-                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
-                                      <div class="flex-grow-1">
-                                        <div class="search-box mb-0 me-3">
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
-                                                <i class="bx bx-search-alt search-icon"></i>
-                                            </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                   
                                 </div>
 
-                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
-                                     
-
-                                        <div class="d-flex">
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Sub Counties</option>
-                                                <option value="25">Meru Town</option>
-                                                <option value="50">Souht Imenti</option>
-                                                <option value="100">Central Imenti</option>
-                                                <option value="150">Maua Town</option>
-                                                <option value="200">Nkubu Town</option>
-                                            </select>
-
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Wards</option>
-                                                <option value="25">Ward 1</option>
-                                                <option value="50">Ward 2</option>
-                                                <option value="100">Ward 3</option>
-                                                
-                                            </select>
-
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Attendants</option>
-                                                <option value="25">Kelvin Kinoti</option>
-                                                <option value="50">Bahati Bukuku</option>
-                                                <option value="100">John Opio</option>
-                                                <option value="150">Maua Town</option>
-                                                <option value="200">Nkubu Town</option>
-                                            </select>
-
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Plots</option>
-                                                <option value="25">Compliant</option>
-                                                <option value="50">Non Compliant</option>
-                                               
-                                            </select>
-
-                                            <div class="d-flex align-items-center me-3 pe-3">
-                                                <span class="pr-3 fw-semibold text-nowrap">From (Registration Date):</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
-                                                <span class="px-3 fw-semibold">TO:</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
-                                            </div>
-                                            <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
-                                                <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
-                                            </button>
-
-                                        </div>
-
-
-                                    </div>
-                                    <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
-                                    </div>
-                                </div>
+                               
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id="">
+                                        <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table" id="">
                                             <thead class="table-dark">
                                                 <tr>
-                                                    <th scope="col">Plot NO.</th>
-                                                    <th>Plot Size</th>
-                                                    <th>Added By</th>
-                                                    <th>Added On</th>
-                                                    <th scope="col">Owner</th>
-                                                    <th>Phone</th>
-                                                    <th>Email</th>
-                                                    <th>Sub County</th> 
-                                                    <th>Ward</th>
-                                                    <th>Address</th>
-                                                    <th>Status</th>
-                                                    <th scope="col" class="text-right">Arrears</th> 
-                                                    <th scope="col" class="text-right">Annual Rate</th> 
-                                                    <th class="text-right">Balance</th> 
+                                                    <th>Posting Date</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Posted By</th>
+                                                    <th scope="col" class="">Receipt No.</th>
+                                                    <th scope="col" class="text-right">Debit</th>
+                                                    <th class="text-right">Credit</th>
+                                                    <th scope="col" class="text-right">Balance</th>
                                                    
-                                                    
-                                                    <th></th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="text-capitalize">
-                                                <tr>
-                                                    <td>BLK7/141</td>
-                                                    <td>
-                                                        22 HA
-                                                    </td>
-                                                    
-                                                    <td>Kelvin Njuguna</td>
-                                                    <td>22 Jan 2024 12:45 PM</td>
-                                                    <td>Kelvin Kinoti</td>
-                                                    <td>0704549859</td>
-                                                    <td>email@email.com</td>
-                                                    
-                                                    <td>Meru Town Sub County</td>
-                                                    <td>Meru Municipality</td>
-                                                    <td>Opposite Tom Mboya Road</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Compliant</span>
-                                                    </td>
-                                                   <td class="text-right">
-                                                    <span class="fw-bold">KES 45,000</span>
-                                                   </td>
-                                                    <td class="text-right">
-                                                        <span class="fw-bold">KES 7,000</span>
-                                                    </td>
-                                                    <td class="text-right fw-bold">
-                                                        KES 34,800
-                                                    </td>
-                                                   
-                                                   
-                                                    <td>
-                                                        <div class="dropdown">
-                                                           
+                                            <tbody>
 
-                                                            <button  role="button" data-bs-toggle="dropdown" aria-haspopup="true" class="btn btn-sm btn-warning text-black waves-effect btn-label waves-light text-uppercase"><i class="mdi mdi-arrow-down-drop-circle label-icon"></i> More Options</button>
-    
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".details-modal"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Plot Details</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#payment-modal" ><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Bill Client</a>
-                                                                <a class="dropdown-item" href="plot-rent-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Statements</a>
-                                                                <a class="dropdown-item" href="parking-fleet-details-statements.html"><i class="font-size-15 mdi mdi-file-document-edit me-3"></i>Update Rate</a>
-                                                                <a class="dropdown-item" href="parking-fleet-details-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Update Arrears</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".send-sms-modal"><i class="font-size-15 mdi mdi-chat-processing me-3"></i>Send Reminder</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".move-car-modal"><i class="font-size-15 mdi mdi-arrow-left-thick  me-3 "></i>Move Vehicle</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-car-modal" ><i class="font-size-15  mdi-delete-forever mdi me-3 text-danger"></i>Delete Vehicle<a>
-                                                            </div>
-                                                        </div>
+                                                <!-- always rememeber to show the opening balance -->
+                                                <tr class="table-light">
+                                                   <th colspan="4">Opening Balance</th>
+                                                   <th class="text-right">KES 0.00</th>
+                                                   <th class="text-right">KES 0.00</th>
+                                                   <th class="text-right">KES 0.00</th>
+                                               </tr>
+                                               <tr>
+                                                    <td>1 Jan 2024 12:00:00</td>
+                                                    <td>Seasonal Parking Sticker Fees</td>
+                                                    <td>Auto Generated</td>
+                                                    <td></td>
+                                                    <td class="text-right">
+                                                        KES 500
                                                     </td>
+                                                    <td class="text-right"></td>
+                                                    <td class="text-right">KES 500</td>
+                                                    
+                                               </tr>
+
+                                               <tr>
+                                                    <td>5 Jan 2024 09:38 AM</td>
+                                                    <td>Receipting of seasonal parking tickets </td>
+                                                    <td>Served By Alex Kinoti</td>
+                                                    <td>
+                                                        <span><a href="" class="fw-semibold" data-toggle="modal" data-target=".receipting-modal">BLL1234909</a></span>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        -
+                                                    </td>
+                                                    <td class="text-right">KES 500</td>
+                                                    <td class="text-right">KES 0</td>
+                                                    
+                                                </tr>
+
+                                                <tr>
+                                                    <td>1 Feb 2024 12:00:00</td>
+                                                    <td>Seasonal Parking Sticker Fees</td>
+                                                    <td>Auto Generated</td>
+                                                    <td></td>
+                                                    <td class="text-right">
+                                                        KES 500
+                                                    </td>
+                                                    <td class="text-right"></td>
+                                                    <td class="text-right">KES 500</td>
+                                                    
+                                               </tr>
+
+                                               <tr>
+                                                    <td>9 Feb 2024 10:34 AM</td>
+                                                    <td>Manual entry of Arrears</td>
+                                                    <td><a href="user-details.html">By Josephene Were</a></td>
+                                                    <td></td>
+                                                    <td class="text-right">
+                                                        KES 1500
+                                                    </td>
+                                                    <td class="text-right"></td>
+                                                    <td class="text-right">KES 2000</td>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td>23 Feb 2024 12:45 PM</td>
+                                                    <td>Waiver on Arrears <a href="" class="fw-semibold">Tracking No. 12345</a></td>
+                                                    <td><a href="user-details.html">Waivered By Josephene Were</a></td>
+                                                    <td></td>
+                                                    
+                                                    <td class="text-right"></td>
+                                                    <td class="text-right">
+                                                        KES 1000
+                                                    </td>
+                                                    <td class="text-right">KES 1000</td>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td>23 Feb 2024 01:34 PM</td>
+                                                    <td>Receipting of Seasonal Parking Tickets</td>
+                                                    <td><a href="user-details.html">Served By Josephene Were</a></td>
+                                                    <td>
+                                                        <span><a href="" class="fw-semibold" data-toggle="modal" data-target=".receipting-modal">BLL1234909</a></span>
+                                                    </td>
+                                                    <td class="text-right"></td>
+                                                    <td class="text-right">
+                                                        KES 1000
+                                                    </td>
+                                                    <td class="text-right">KES 0.00</td>
+                                                   
                                                 </tr>
                                             </tbody>
-                                            <tfoot class="table-dark">
-                                                <tr>
-                                                    <th colspan="">22 Plots</th>
-                                                    <th>2 Blocks</th>
-                                                    <th colspan="7">34 Owners</th>
-                                                    <th colspan="">22 Ha</th>
-                                                    <th class="text-right">KES 45,000</th>
-                                                    <th class="text-right">KES 345,900</th>
-                                                    <th colspan="2" >
-                                                        <span class="badge rounded-pill bg-danger text-uppercase" key="t-new">Compliant</span> 12
 
-                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Uncompliant</span> 22
-                                                    </th>
-                                                    
+                                            <tfoot>
+                                                <tr class="table-light">
+                                                   <th colspan="4">
+                                                        Closing Balance
+                                                   </th>
+                                                   <th class="text-right">
+                                                             KES 2500
+                                                   </th>
+                                                   <th class="text-right">
+                                                        KES 2500
+                                                   </th>
+                                                   <th class="text-right">
+                                                    KES 0
+                                                   </th>
                                                 </tr>
                                             </tfoot>
-                                            
-                                           
                                         </table>
                                     </div>
                                 </div>
-                                <div class="card-footer bg-white">
-                                    <nav aria-label="Page navigation example " class="d-flex align-items-center justify-content-between">
-
-                                        <div class="d-flex align-items-center">
-                                            <span class="pr-3 pb-0 mb-0 font-13px">
-                                                <span>Rows Per Page</span>
-                                            </span>
-                                            <select class="form-select w-auto font-13px ">
-                                                <option value="10">10 Rows</option>
-                                                <option value="25">25 Rows</option>
-                                                <option value="50">50 Rows</option>
-                                                <option value="100">100 Rows</option>
-                                                <option value="150">150 Rows</option>
-                                                <option value="200">200 Rows</option>
-                                            </select>
-                                        </div>
-
-                                        <ul class="pagination">
-                                            <li class="page-item disabled">
-                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item active">
-                                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">Next</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
