@@ -531,13 +531,13 @@
                     <div class="row ">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Land Rate register</h4>
+                                <h4 class="mb-sm-0 font-size-18">Plot Rent Register</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Parking</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Daily Parking</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Land & Plots</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Plot Rent Register</a></li>
                                     </ol>
                                 </div>
 
@@ -582,10 +582,18 @@
                                             
                         <div class="col-12 px-sm-30px">
                             <div class="card">
-                                <div class="card-header bg-white  w-100 border-bottom">
+                                <div class="card-header bg-white  w-100 border-bottom d-flex justify-content-between align-items-center">
                                     <h4 class="card-title text-capitalize">
-                                        Daily Parking Report for The period 12 Jan 2023 to 13 Jan 2023
+                                        Plot Rent Register
                                     </h4>
+                                    <div class="d-flex">
+                                        
+                                        <button data-bs-toggle="modal" data-bs-target=".add-plot-modal" type="button" class="btn btn-success text-uppercase dropdown-toggle option-selector me-3">
+                                            <i class="bx bx-plus font-size-16"></i> <span class="pl-1 d-md-inline">Add A Plot</span>
+                                        </button>
+
+                                    </div>
+                                    
                                 </div>
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
@@ -618,10 +626,10 @@
                                             </select>
 
                                             <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Zones</option>
-                                                <option value="25">Zone 1</option>
-                                                <option value="50">zone 2</option>
-                                                <option value="100">zone 3</option>
+                                                <option value="10">All Wards</option>
+                                                <option value="25">Ward 1</option>
+                                                <option value="50">Ward 2</option>
+                                                <option value="100">Ward 3</option>
                                                 
                                             </select>
 
@@ -635,16 +643,14 @@
                                             </select>
 
                                             <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Logged Vehicles</option>
+                                                <option value="10">All Plots</option>
                                                 <option value="25">Compliant</option>
-                                                <option value="50">Clamped</option>
-                                                <option value="100">Parking Payers</option>
-                                                <option value="150">To Be clamped</option>
-                                                <option value="200">To Be Unclamped</option>
+                                                <option value="50">Non Compliant</option>
+                                               
                                             </select>
 
                                             <div class="d-flex align-items-center me-3 pe-3">
-                                                <span class="pr-3 fw-semibold">From:</span>
+                                                <span class="pr-3 fw-semibold text-nowrap">From (Registration Date):</span>
                                                 <input class="form-control" placeholder="Start date" type="date">
                                                 <span class="px-3 fw-semibold">TO:</span>
                                                 <input class="form-control" placeholder="Start date" type="date">
@@ -676,10 +682,11 @@
                                                     <th>Sub County</th> 
                                                     <th>Ward</th>
                                                     <th>Address</th>
+                                                    <th>Status</th>
                                                     <th scope="col" class="text-right">Arrears</th> 
                                                     <th scope="col" class="text-right">Annual Rate</th> 
-                                                    <th class="text-right">Amount Paid</th> 
-                                                    <th class="text-right">Amount Payable</th>
+                                                    <th class="text-right">Balance</th> 
+                                                   
                                                     
                                                     <th></th>
                                                 </tr>
@@ -700,21 +707,20 @@
                                                     <td>Meru Town Sub County</td>
                                                     <td>Meru Municipality</td>
                                                     <td>Opposite Tom Mboya Road</td>
+                                                    <td>
+                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Compliant</span>
+                                                    </td>
                                                    <td class="text-right">
                                                     <span class="fw-bold">KES 45,000</span>
                                                    </td>
                                                     <td class="text-right">
                                                         <span class="fw-bold">KES 7,000</span>
                                                     </td>
-                                                    <td class="text-right">
+                                                    <td class="text-right fw-bold">
                                                         KES 34,800
                                                     </td>
-                                                    <td class="text-right">
-                                                        <span class="fw-bold text-black">KES 560,000</span>
-                                                    </td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Compliant</span>
-                                                    </td>
+                                                   
+                                                   
                                                     <td>
                                                         <div class="dropdown">
                                                            
@@ -722,8 +728,11 @@
                                                             <button  role="button" data-bs-toggle="dropdown" aria-haspopup="true" class="btn btn-sm btn-warning text-black waves-effect btn-label waves-light text-uppercase"><i class="mdi mdi-arrow-down-drop-circle label-icon"></i> More Options</button>
     
                                                             <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".details-modal"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Land Details</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".details-modal"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Plot Details</a>
+                                                                <a class="dropdown-item" href="parking-fleet-details-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Collect Payment</a>
                                                                 <a class="dropdown-item" href="parking-fleet-details-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Statements</a>
+                                                                <a class="dropdown-item" href="parking-fleet-details-statements.html"><i class="font-size-15 mdi mdi-file-document-edit me-3"></i>Update Rate</a>
+                                                                <a class="dropdown-item" href="parking-fleet-details-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Update Arrears</a>
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".send-sms-modal"><i class="font-size-15 mdi mdi-chat-processing me-3"></i>Send Reminder</a>
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".move-car-modal"><i class="font-size-15 mdi mdi-arrow-left-thick  me-3 "></i>Move Vehicle</a>
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-car-modal" ><i class="font-size-15  mdi-delete-forever mdi me-3 text-danger"></i>Delete Vehicle<a>
@@ -1321,6 +1330,132 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- end of receipting modal -->
+
+            <!-- add plot modal -->
+            <div class="modal fade add-plot-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Add New Plot</h5>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+
+                            <div class="col-12">
+                                <p class="fw-bold text-black text-uppercase">Plot Details:</p>
+                            </div>
+
+
+                            <div class="col-12">
+                                    <div class="form-group mb-3">
+                                        <label for="">Plot Number</label>
+                                        <input type="text" class="form-control" placeholder="Enter the Plot Number">
+                                    </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-group mb-3">
+                                    <label for="">Select Sub County</label>
+                                    <select class="form-select  font-13px  form-control">
+                                    
+                                        <option value="25">Meru Town</option>
+                                        <option value="50">Souht Imenti</option>
+                                        <option value="100">Central Imenti</option>
+                                        <option value="150">Maua Town</option>
+                                        <option value="200">Nkubu Town</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-group mb-3">
+                                    <label for="">Select Ward</label>
+                                    <select class="form-select  font-13px  form-control">
+                                    
+                                        <option value="25">Ward Name</option>
+                                        <option value="50">Ward Name</option>
+                                        <option value="100">Ward Name</option>
+                                        <option value="150">Ward Name</option>
+                                        <option value="200">Ward Name</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-group mb-3">
+                                    <label for="">Plot Size (Ha)</label>
+                                    <input type="text" class="form-control" placeholder="In Ha">
+                                </div>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <div class="form-group mb-3">
+                                    <label for="">Plot Address</label>
+                                    <input type="text" class="form-control" placeholder="Enter Plot's Physical Address">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <p class="fw-bold text-black text-uppercase">Owner Details:</p>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group mb-3">
+                                    <label for="">Owner's Full Names</label>
+                                    <input type="text" class="form-control" placeholder="eg John Doe">
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="form-group mb-3">
+                                    <label for="">Owner's Email</label>
+                                    <input type="email" class="form-control" placeholder="Email Address">
+                                </div>
+                            </div>
+
+                            <div class="col-6 mb-3">
+                                <div class="form-group mb-3">
+                                    <label for="">Owner's Phone No.</label>
+                                    <input type="text" class="form-control" placeholder="eg 0712345678">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <p class="fw-bold text-black text-uppercase">Plot Fees Details:</p>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="form-group mb-3">
+                                    <label for="">Outstanding Arrears</label>
+                                    <input type="text" class="form-control" placeholder="Enter the arrears">
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="form-group mb-3">
+                                    <label for="">Annual Charges</label>
+                                    <input type="text" class="form-control" placeholder="Enter the annual Charges">
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <a href="PrintDocs/Trade-Permit/permit.html" target="_blank" type="button"
+                            class="btn btn-primary waves-effect waves-light">
+                            <i class="bx bx-check font-size-16 align-middle me-2"></i> Submit
+                        </a>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+            <!-- end of add plot modal -->
 
             <!-- invoice details -->
             <div class="modal fade add-car-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
