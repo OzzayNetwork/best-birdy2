@@ -731,11 +731,9 @@
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".details-modal"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Plot Details</a>
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#payment-modal" ><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Bill Client</a>
                                                                 <a class="dropdown-item" href="plot-rent-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Statements</a>
-                                                                <a class="dropdown-item" href="parking-fleet-details-statements.html"><i class="font-size-15 mdi mdi-file-document-edit me-3"></i>Update Rate</a>
-                                                                <a class="dropdown-item" href="parking-fleet-details-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Update Arrears</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-plot-modal"><i class="font-size-15 mdi mdi-file-document-edit me-3"></i>Edit</a>
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".send-sms-modal"><i class="font-size-15 mdi mdi-chat-processing me-3"></i>Send Reminder</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".move-car-modal"><i class="font-size-15 mdi mdi-arrow-left-thick  me-3 "></i>Move Vehicle</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-car-modal" ><i class="font-size-15  mdi-delete-forever mdi me-3 text-danger"></i>Delete Vehicle<a>
+                                                                
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1658,10 +1656,10 @@
             <!-- land details -->
 
             <div class="modal fade details-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Land Percel Details</h5>
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Plot Details</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                     <div class="modal-body">
@@ -1675,7 +1673,7 @@
                                                 <tr>
     
                                                     <td>
-                                                        LR NO
+                                                        Plot No
                                                     </td>
                                                     <td class="text-uppercase">
                                                        12345
@@ -1685,20 +1683,20 @@
                                                 <tr>
     
                                                     <td>
-                                                        BLOCK NO.
+                                                        Owner
                                                     </td>
                                                     <td class="text-uppercase">
-                                                      Block 7
+                                                      Kelvin Kinoti
                                                     </td>
                                                 </tr>
 
                                                 <tr>
     
                                                     <td>
-                                                       Plot Size
+                                                       Phone Number
                                                     </td>
                                                     <td class="">
-                                                        0.0465 Ha
+                                                        0704549859
 
                                                     </td>
                                                 </tr>
@@ -1706,10 +1704,10 @@
                                                 <tr>
     
                                                     <td>
-                                                      Owner
+                                                      Email Address
                                                     </td>
                                                     <td class="text-capitalize">
-                                                       Kelvin Njuguna Ndungu
+                                                       email@email.com
 
                                                     </td>
                                                 </tr>
@@ -1717,10 +1715,10 @@
                                                 <tr>
     
                                                     <td>
-                                                      Phone Number
+                                                      Sub County
                                                     </td>
                                                     <td class="text-capitalize">
-                                                     0704549859
+                                                     Meru town
                                                     </td>
                                                 </tr>
 
@@ -1728,30 +1726,80 @@
                                                 <tr>
     
                                                     <td>
-                                                      Email
+                                                      Ward
                                                     </td>
                                                     <td class="text-capitalize">
-                                                     0704549859
+                                                     Meru Municipality
                                                     </td>
                                                 </tr>
 
                                                 <tr>
     
                                                     <td>
-                                                       Owner
+                                                       Physical Address
                                                     </td>
                                                     <td class="text-uppercase">
-                                                        <input type="text" class="from-control form-control-sm" placeholder="Enter Owner's Full Names" >
+                                                       Next to The bus station
                                                     </td>
                                                 </tr>
 
                                                 <tr>
     
                                                     <td>
-                                                       Owner's Phone No.
+                                                       Added By
                                                     </td>
                                                     <td class="text-uppercase">
-                                                      <input type="text" class="from-control form-control-sm" placeholder="Enter Owner's Phone" value="0704549859">
+                                                     Alex Wanjala on 22 Jan 2024 at 5:35 PM
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                       Last Edited By
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                     Alex Wanjala on 22 Jan 2024 at 5:35 PM (Fields edited Name, Plot No.)
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                       Most Recent Payment
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                     KES 4,000 On 22 Jan 2024 AT 2:45 PM By Kelvin Using Mpesa(SWERTGHH)
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                       Compliance Status
+                                                    </td>
+                                                    <td class="text-uppercase">
+                                                     Non Compliant
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                       Annual Payable Fees
+                                                    </td>
+                                                    <td class="text-uppercase fw-bold text-black">
+                                                     KES 4,500
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+    
+                                                    <td>
+                                                       Outstanding Balances
+                                                    </td>
+                                                    <td class="text-uppercase fw-bold text-danger">
+                                                     KES 34,000
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -1761,15 +1809,13 @@
                                        
                                     </div>
 
-                                    <div class="alert alert-secondary fw-semibold mt-3" role="alert">
-                                        Remember to submit the changes incase you do any changes
-                                        </div>
+                                    
                                 </div>
                             </div>
                     </div>
                         <div class="modal-footer">
                         
-                            <a href="javascript: void(0);" class="btn btn-primary w-md waves-effect waves-light w-100 text-uppercase">Save Changes</a>
+                            <a href="javascript: void(0);" data-bs-dismiss="modal" aria-label="Close" class="btn btn-primary w-md waves-effect waves-light w-100 text-uppercase">Close Details</a>
                         </div>
 
                     </div>
@@ -1814,12 +1860,18 @@
                                 <div class="success-image mb-4 pb-4 pt-4">
                                     <img src="assets/images/bills.svg" height="200" alt="">                                
                                 </div>
-                                <h4 class="text-black fw-bold">Bill Successfully Created</h4>
-                                <p class="text-muted mb-4">The bill has been created Successfully, you can print the bill or opt to receive payment for this bill.</p>
+                                <h4 class="text-black fw-bold">Create Bill</h4>
+                                <p class="text-muted mb-4">Please input the desired payment amount; otherwise, the total amount displayed is the full payable amount.</p>
+
+                                <div class="form-group mb-4">
+                                    <label for="" class="text-uppercase">Amount to Be Invoiced</label>
+                                    <input type="text" name="" value="4500" placeholder="Enter amount" class="form-control form-control-lg">
+
+                                </div>
                                 <div class="d-flex w-100 pb-2">
                                     <button  type="button" class="btn btn-primary btn-block  me-3 flex-grow-1 print-bill-btn">
                                         <i class="mdi-cash-check mdi font-size-16 align-middle me-2 "></i>
-                                        Receive Payment
+                                        Create Invoice
                                     </button>
                                     <a href="PrintDocs/Bill/bill.html" target="_blank" data-dismiss="" type="button" class="btn btn-outline-secondary waves-effect dismin-modal">Print Bill</a>
                                 </div>
