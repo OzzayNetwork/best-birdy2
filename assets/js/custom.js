@@ -614,6 +614,10 @@ $(window).on('load', function() {
             $('.landrate-rev').removeClass("d-none").siblings().addClass('d-none')
         }
 
+        if(this.value==="plotRent"){
+            $('.plot-rev').removeClass("d-none").siblings().addClass('d-none')
+        }
+
         if(this.value==="plans"){
             $('.plans').removeClass("d-none").siblings().addClass('d-none')
         }
