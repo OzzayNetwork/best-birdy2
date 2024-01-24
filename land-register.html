@@ -583,10 +583,25 @@
                                             
                         <div class="col-12 px-sm-30px">
                             <div class="card">
-                                <div class="card-header bg-white  w-100 border-bottom">
+                                <div class="card-header bg-white  w-100 border-bottom d-flex justify-content-between align-items-center">
                                     <h4 class="card-title text-capitalize">
-                                        Daily Parking Report for The period 12 Jan 2023 to 13 Jan 2023
+                                        Land Rates Register
                                     </h4>
+                                    <div class="d-flex">
+                                        
+                                        <button data-bs-toggle="modal" data-bs-target=".add-plot-modal" type="button" class="btn btn-success text-uppercase dropdown-toggle option-selector me-3">
+                                            <i class="bx bx-plus font-size-16"></i> <span class="pl-1 d-md-inline">Add Property</span>
+                                        </button>
+
+                                        <button data-bs-toggle="modal" data-bs-target=".upload-plot-modal" type="button" class="btn btn-info text-uppercase dropdown-toggle option-selector me-3">
+                                            <i class="mdi mdi-file-document-outline font-size-16"></i> <span class="pl-1 d-md-inline">Upload Property Sheet</span>
+                                        </button>
+
+                                        <button data-bs-toggle="modal" data-bs-target=".add-block-modal" type="button" class="btn btn-secondary text-uppercase dropdown-toggle option-selector me-3">
+                                            <i class="mdi mdi-layers-plus font-size-16"></i> <span class="pl-1 d-md-inline">Add A Block</span>
+                                        </button>
+
+                                    </div>
                                 </div>
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
@@ -1639,6 +1654,298 @@
 
 
             <!-- end of land details -->
+
+             <!-- add plot modal -->
+             <div class="modal fade add-plot-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered ">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Add New Property</h5>
+                         
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="row">
+ 
+                             <div class="col-12">
+                                 <p class="fw-bold text-black text-uppercase">Property Details:</p>
+                             </div>
+ 
+ 
+                             <div class="col-12">
+                                     <div class="form-group mb-3">
+                                         <label for="">LR Number</label>
+                                         <input type="text" class="form-control" placeholder="Enter the Plot Number">
+                                     </div>
+                             </div>
+ 
+                             <div class="col-4">
+                                 <div class="form-group mb-3">
+                                     <label for="">Select Sub County</label>
+                                     <select class="form-select  font-13px  form-control">
+                                     
+                                         <option value="25">Meru Town</option>
+                                         <option value="50">Souht Imenti</option>
+                                         <option value="100">Central Imenti</option>
+                                         <option value="150">Maua Town</option>
+                                         <option value="200">Nkubu Town</option>
+                                     </select>
+                                 </div>
+                             </div>
+ 
+                             <div class="col-4">
+                                 <div class="form-group mb-3">
+                                     <label for="">Select Ward</label>
+                                     <select class="form-select  font-13px  form-control">
+                                     
+                                         <option value="25">Ward Name</option>
+                                         <option value="50">Ward Name</option>
+                                         <option value="100">Ward Name</option>
+                                         <option value="150">Ward Name</option>
+                                         <option value="200">Ward Name</option>
+                                     </select>
+                                 </div>
+                             </div>
+ 
+                             <div class="col-4">
+                                 <div class="form-group mb-3">
+                                     <label for="">Plot Size (Ha)</label>
+                                     <input type="text" class="form-control" placeholder="In Ha">
+                                 </div>
+                             </div>
+ 
+                             <div class="col-12 mb-3">
+                                 <div class="form-group mb-3">
+                                     <label for="">Plot Address</label>
+                                     <input type="text" class="form-control" placeholder="Enter Plot's Physical Address">
+                                 </div>
+                             </div>
+ 
+                             <div class="col-12">
+                                 <p class="fw-bold text-black text-uppercase">Owner Details:</p>
+                             </div>
+ 
+                             <div class="col-12">
+                                 <div class="form-group mb-3">
+                                     <label for="">Owner's Full Names</label>
+                                     <input type="text" class="form-control" placeholder="eg John Doe">
+                                 </div>
+                             </div>
+ 
+                             <div class="col-6">
+                                 <div class="form-group mb-3">
+                                     <label for="">Owner's Email</label>
+                                     <input type="email" class="form-control" placeholder="Email Address">
+                                 </div>
+                             </div>
+ 
+                             <div class="col-6 mb-3">
+                                 <div class="form-group mb-3">
+                                     <label for="">Owner's Phone No.</label>
+                                     <input type="text" class="form-control" placeholder="eg 0712345678">
+                                 </div>
+                             </div>
+ 
+                             <div class="col-12">
+                                 <p class="fw-bold text-black text-uppercase">Plot Fees Details:</p>
+                             </div>
+                             <div class="col-6 mb-3">
+                                 <div class="form-group mb-3">
+                                     <label for="">Outstanding Arrears</label>
+                                     <input type="text" class="form-control" placeholder="Enter the arrears">
+                                 </div>
+                             </div>
+                             <div class="col-6 mb-3">
+                                 <div class="form-group mb-3">
+                                     <label for="">Annual Charges</label>
+                                     <input type="text" class="form-control" placeholder="Enter the annual Charges">
+                                 </div>
+                             </div>
+ 
+ 
+                         </div>
+ 
+                     </div>
+                     <div class="modal-footer">
+ 
+                         <a href="PrintDocs/Trade-Permit/permit.html" target="_blank" type="button"
+                             class="btn btn-primary waves-effect waves-light">
+                             <i class="bx bx-check font-size-16 align-middle me-2"></i> Submit
+                         </a>
+                     </div>
+                 </div>
+                 <!-- /.modal-content -->
+             </div>
+             <!-- /.modal-dialog -->
+         </div>
+             <!-- end of add plot modal -->
+ 
+             <!-- uploading an excel -->
+             <div class="modal fade upload-plot-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered ">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Upload Plots</h5>
+                         
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="row">
+                             <div class="col-12">
+                                 <div class="form-group">
+                                     <label for="" class="text-uppercase mb-3">Upload Excel Sheet</label>
+                                 </div>
+                             </div>
+                             <div class="col-12">
+                                 <div>
+                                     <form action="#" class="dropzone">
+                                         <div class="fallback">
+                                             <input name="file" type="file" multiple="multiple">
+                                         </div>
+                                         <div class="dz-message needsclick">
+                                             <div class="mb-3">
+                                                 <i class="display-4 text-muted bx bxs-cloud-upload"></i>
+                                             </div>
+                                             
+                                             <h4>Drop files here or click to upload.</h4>
+                                         </div>
+                                     </form>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="modal-footer">
+ 
+                         <a href="PrintDocs/Trade-Permit/permit.html" target="_blank" type="button"
+                             class="btn btn-primary waves-effect waves-light">
+                             <i class="bx bx-check font-size-16 align-middle me-2"></i> Submit
+                         </a>
+                     </div>
+                 </div>
+                 <!-- /.modal-content -->
+             </div>
+             <!-- /.modal-dialog -->
+         </div>
+             <!-- end of uploading excel -->
+
+             <!-- adding block -->
+             <div class="modal fade add-block-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered ">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Add A Block</h5>
+                         
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-capitalize">
+                                    Please input the new block details below. If a block with a similar name is already registered, a table will be displayed. It is recommended to use unique block names to ensure accurate data presentation.                                </p>
+                                <div>
+                                    <label class="form-label text-uppercase">Enter Block Name/Number Below</label>
+                                    <input class="form-control" type="text" placeholder="Enter Block Number" >
+                                </div>
+
+                                <div class="mt-3">
+                                    <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table dataTable no-footer table-sm" id="datatable-buttons">
+                                        <thead class="table-light">
+                                            <tr>
+
+                                                <th>#</th>
+                                                <th scope="col">Block Name</th>
+                                                <th scope="col">Subcounty</th>
+                                                <th scope="col">Ward</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                <td>
+                                                   1.
+                                                </td>
+                                                <td class="text-uppercase">
+                                                   Block 7
+                                                </td>
+                                                <td>
+                                                    Sub County Name
+                                                </td>
+                                                <td>
+                                                    Ward Name
+                                                </td>
+                                                
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>
+                                                   2.
+                                                </td>
+                                                <td class="text-uppercase">
+                                                   Block 8
+                                                </td>
+                                                <td>
+                                                    Sub County Name
+                                                </td>
+                                                <td>
+                                                    Ward Name
+                                                </td>
+                                                
+                                            </tr>
+                                            
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="">Sub County</label>
+                                            <select class="form-select  font-13px ">
+                                                <option value="10">All Sub Counties</option>
+                                                <option value="25">Meru Town</option>
+                                                <option value="50">Souht Imenti</option>
+                                                <option value="100">Central Imenti</option>
+                                                <option value="150">Maua Town</option>
+                                                <option value="200">Nkubu Town</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="">Ward</label>
+                                            <select class="form-select  font-13px ">
+                                                <option value="10">All Wards</option>
+                                                <option value="25">Ward Name</option>
+                                                <option value="50">Ward Name</option>
+                                                <option value="100">Ward Name</option>
+                                                <option value="150">Ward Name</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                     <div class="modal-footer">
+ 
+                         <a href="PrintDocs/Trade-Permit/permit.html" target="_blank" type="button"
+                             class="btn btn-primary waves-effect waves-light">
+                             <i class="bx bx-check font-size-16 align-middle me-2"></i> Submit
+                         </a>
+                     </div>
+                 </div>
+                 <!-- /.modal-content -->
+             </div>
+             <!-- /.modal-dialog -->
+         </div>
+             <!-- end of adding block -->
+ 
         </div>
         <!-- end main content-->
 
