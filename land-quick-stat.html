@@ -921,31 +921,51 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <div class="card">
-                                       
-                                        <div class="card-header d-flex justify-content-between bg-white border-bottom">
-                                            <div>
-                                                <h4 class="card-title text-uppercase">Parking Revenue Collections By Sub Counties</h4>
-                                                <p class="">10th Sep 2023 to 17th Sep 2023</p>
-                                            </div>
+                                    <div class="card calc-23">
+                                        <div class="card-header bg-transparent border-bottom">
                                             <div class="">
-                                                <div class="float-end d-flex">
-                                                    <div class="input-group input-group-sm fw-semibold text-uppercase">
-                                                        <label class="input-group-text text-uppercase">From</label>
-                                                        <input class="form-control form-control-sm" type="date" value="2019-08-19" id="example-date-input">
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <h4 class="card-title mb-1">Sub County Financial Landscape and Land Coverage Overview</h4>
+                                                        <p class="">All Revenue Streams</p>
                                                     </div>
 
-                                                    <div class="input-group input-group-sm fw-semibold text-uppercase">
-                                                        <label class="input-group-text text-uppercase">To:</label>
-                                                        <input class="form-control form-control-sm" type="date" value="2019-08-19" id="example-date-input">
+                                                    <div class="float-end">
+                                                        <div
+                                                            class="input-group input-group-sm fw-semibold text-uppercase">
+                                                            <label
+                                                                class="input-group-text text-uppercase">Streams</label>
+                                                            <select class="form-select form-select-sm">
+                                                                <option value="JA" selected="">All Revenue Streams
+                                                                </option>
+                                                                <option value="DE">Daily Parking</option>
+                                                                <option value="NO">Bus Park</option>
+                                                                <option value="OC">Markets</option>
+                                                                <option value="OC">Fish Cess</option>
+                                                            </select>
+
+                                                        </div>
                                                     </div>
+
                                                 </div>
+                                                <ul class="nav nav-tabs nav-tabs-custom card-header-tabs ms-auto"
+                                                    role="tablist">
+                                                    <li class="nav-item"><a class="nav-link active"
+                                                            data-bs-toggle="tab" href="#" role="tab">Today</a>
+                                                    </li>
+                                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
+                                                            href="#" role="tab">Monthly</a></li>
+                                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
+                                                            href="#" role="tab">Financial Year</a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                         <div class="card-body">
-                                            
-                                            <div id="subCounty-collections"></div>
+
+                                            <div id="Map-data" class="h-80" dir="ltr"></div>
                                         </div>
+                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -1701,6 +1721,13 @@
     <!-- numerals number formater -->
     <script src="assets/libs/numeral/numeral.js "></script>
 
+     <!-- highchart map modules -->
+     <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+     <script src="https://code.highcharts.com/highcharts.js"></script>
+     <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+     <script src="https://code.highcharts.com/highcharts-more.js"></script>
+     <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
     <!-- highchart cdns -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
 
@@ -1732,6 +1759,7 @@
 
     <!-- active vs expired certificats -->
     <script src="assets/js/pages/expiredVsActiveCerts.js"></script>
+    <script src="assets/js/landrate-map.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js "></script>
@@ -1972,7 +2000,7 @@
                     }
                 },
                 series: [{
-                    name: 'Land rates',
+                    name: 'Land Rrates',
                     data: data.map(item => item[1]),
                     color: "#6CB8FF"
                 }, {
@@ -1985,17 +2013,17 @@
                     color: "#FF4500"
                 },
                 {
-                    name: 'Seasonal Parking',
+                    name: 'Land Transfers/Sales/Change of Use',
                     data: data.map(item => item[4]),
                     color: "#32CD32"
                 },
                 {
-                    name: 'Clamping Fees',
+                    name: 'Lease Charges/Consent/Transfers',
                     data: data.map(item => item[5]),
                     color: "#FFD700"
                 },
                 {
-                    name: 'Matatu/Bus Park Fees',
+                    name: 'Housing Fees (Rents)',
                     data: data.map(item => item[6]),
                     color: "white"
                 }
