@@ -546,7 +546,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Business Permits</h4>
+                                <h4 class="mb-sm-0 font-size-18">Unpaid Fire Permit Invoices</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -563,7 +563,7 @@
                     <!-- end page title -->
 
                     <!-- tool bar -->
-                 <div class="row">
+                    <div class="row">
                         <div class="col-12 active">
                             <div class="card active">
                                 <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
@@ -578,27 +578,19 @@
                                         <div class="collapse navbar-collapse justify-content-between active"
                                             id="navbarNavAltMarkup">
                                             <div class="navbar-nav">
-                                                <a class="nav-item nav-link" href="cert-biz-stats.html">Dashboard</a>
-                                                <a class="nav-item nav-link" href="cert-biz-ongoing.html">Pending Validation</a>
-
-                                                    <a class="nav-item nav-link" href="cert-biz-inspection.html">Pending Inspection</a>
-                                                <a class="nav-item nav-link" href="cert-biz-suspended.html">Suspended
-                                                    Applications</a>
-                                                <a class="nav-item nav-link" href="cert-biz-approved.html">Approved
-                                                   </a>
-                                                    <a class="nav-item nav-link" href="cert-biz-declined.html">Declined
-                                                        </a>
-                                                <a class="nav-item nav-link" href="cert-biz-active.html">Paid SBPs</a>
-                                                <a class="nav-item nav-link" href="cert-biz-expired.html">Unpaid SBPs</a>
-                                                <a class="nav-item nav-link" href="cert-biz-penalized.html">Penalized
-                                                    SBPs</a>
-                                                <a class="nav-item nav-link" href="cert-biz-unpaid-bills.html">Pending
-                                                    Bills</a>
-                                                <a class="nav-item nav-link"
-                                                    href="cert-biz-receipted-bills.html">SBP Receipts</a>
-                                                    <a class="nav-item nav-link" href="cert-biz-map.html">Map View</a>
-                                                    
+                                                <a class="nav-item nav-link" href="cert-fire-stats.html">Quick Stats</a>
+                                                <a class="nav-item nav-link" href="cert-fire-register.html">Fire Permit Register</a>
+                                                <a class="nav-item nav-link" href="cert-fire-pending.html">Pending Invoices</a>
+                                                <a class="nav-item nav-link" href="cert-fire-potential.html">Potential Businesses</a>
+                                                <a class="nav-item nav-link" href="cert-fire-approval.html">Pending Approval</a>
+                                                <a class="nav-item nav-link" href="cert-fire-active.html">Active Certificates</a>
+                                                <a class="nav-item nav-link" href="cert-fire-expired.html">Expired Certificates</a>
+                                                
                                             </div>
+
+                                            <form class="form-inline my-2 my-lg-0">
+                                                <button class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" type="submit" fdprocessedid="y5ofpm">Invoice A Business</button>
+                                              </form>
                                             
 
                                         </div>
@@ -617,20 +609,20 @@
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
                                         role="toolbar">
-                                        <h4 class="card-title text-capitalize mb-0 ">
-                                            Applications Pending Validation
+                                        <h4 class="card-title mb-0 text-uppercase ">
+                                            Unpaid Fire Permit Invoices
                                         </h4>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
-                                        <label class="text-nowrap mb-0">Business Activity:</label>
+                                        <label class="text-nowrap mb-0">Permit Type:</label>
                                         <select class="form-select mx-2" title="Select Subcounty">
-                                            <option>All Business Activites</option>
+                                            <option>All Permit types</option>
                                             <option>Homabay Town</option>
                                             <option>Ndhiwa</option>
                                             <option>...</option>
                                         </select>
 
-                                        <label class="text-nowrap mb-0 mx-2">Business Sub Category:</label>
+                                        <label class="text-nowrap mb-0 mx-2">Sub County:</label>
                                         <select class="form-select" title="Select Subcounty">
                                             <option>All Sub Categories</option>
                                             <option>Homabay Town</option>
@@ -639,9 +631,9 @@
                                         </select>
 
                                         <select class="form-select mx-3" title="Select Subcounty ">
-                                            <option>All of Sub counties</option>
-                                            <option>Homabay Town</option>
-                                            <option>Ndhiwa</option>
+                                            <option>All Wards</option>
+                                            <option>Ward 1</option>
+                                            <option>Ward 2</option>
                                             <option>...</option>
                                         </select>
                                     </div>
@@ -653,11 +645,12 @@
                                             id="datatable-buttons">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
-                                                    <th scope="col">Receipt No.</th>
+                                                    <th scope="col">Invoice No.</th>
                                                     <th scope="col">Business ID</th>
                                                     <th scope="col">Business Name</th>
-                                                    <th scope="col">Applicatio Date</th>
-                                                    <th>Licensing Officer</th>
+                                                    <th scope="col">Date Invoiced</th>
+                                                    <th scope="col">Certificate Category</th>
+                                                    <th>Invoiced By</th>
                                                     <th>Status</th>
                                                     <th scope="col" class="text-right">Amount Paid</th>
                                                     <th></th>
