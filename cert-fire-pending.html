@@ -651,7 +651,7 @@
                                                     <th scope="col">Date Invoiced</th>
                                                     <th scope="col">Certificate Category</th>
                                                     <th>Invoiced By</th>
-                                                    <th>Status</th>
+                                                    <th class="text-right">Amount Invoiced</th>
                                                     <th scope="col" class="text-right">Amount Paid</th>
                                                     <th></th>
                                                 </tr>
@@ -667,51 +667,38 @@
                                                             class="text-muted">10:56 PM</span>
                                                             (3 Days Ago)
                                                         </td>
-                                                        <td>Tobby Arnold</td>
+                                                        <td>Industry</td>
                                                     
                                                     <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
+                                                       kelvin Njuguna
                                                     </td>
                                                     <td class="text-nowrap text-right ">
                                                         <span class="fw-semibold ">KES 2,000</span>
                                                     </td>
 
                                                     <td>
-                                                        <div class="d-flex justify-content-end">
+                                                        <div class="d-flex justify-content-end align-items-center">
                                                             <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target=".receipting-modal"><i
                                                                     class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
+                                                                Details</button>
                                                             <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
+                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
                                                                 <i
                                                                     class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
+                                                                Print Invoice
                                                             </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
 
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
+                                                           
+                                                            <button type="button"
+                                                            class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target=".receipting-modal"><i
+                                                                class="bx bx-chat font-size-16 align-middle me-2"></i>
+                                                            Resend Invoice SMS</button>
+                                                           
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -725,11 +712,10 @@
                                                             class="text-muted">10:56 PM</span>
                                                             (3 Days Ago)
                                                         </td>
-                                                        <td>Tobby Arnold</td>
+                                                        <td>Super Market</td>
                                                     
                                                     <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
+                                                        Kelvin Njuguna
                                                     </td>
                                                     <td class="text-nowrap text-right ">
                                                         <span class="fw-semibold ">KES 2,000</span>
@@ -931,7 +917,7 @@
             <!-- receipting modal -->
             <div class="modal fade receipting-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered modal-full modal-fullscreen">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-full">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="myLargeModalLabel">Business Details</h5>
@@ -1007,9 +993,28 @@
                                     </div>
                                 </div>
 
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="row">
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-dark border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                                <i class="bx bx-map font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0">Map View</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46449.71551863634!2d36.67523836781685!3d-1.3353441122372378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0cb9ff59a4a3%3A0x4073419e11826405!2sOrbital%20Africa%20%7C%20Land%20%26%20Topo%20Survey%2C%20GPS%2C%20GPR%2C%20GIS%2C%20Mapping%2C%20Drones%2C%20Training%20%26%20Geospatial%20Solutions!5e0!3m2!1sen!2ske!4v1691859398886!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
                                
 
-                                <div class="col-sm-12 col-md-4">
+                                <div class="col-sm-12 col-md-6">
                                     <div class="row">
                                         <div class="col-12 mt-4">
                                             <div class="bg-info border-2 bg-soft p-2 mb-4 d-flex align-items-center">
@@ -1156,7 +1161,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-12 col-md-4">
+                                <div class="col-sm-12 col-md-6">
                                     <div class="row">
                                         <div class="col-12 mt-4">
                                             <div class="bg-warning border-2 bg-soft p-2 mb-4 d-flex align-items-center">
@@ -1260,161 +1265,11 @@
 
                                 </div>
 
-                                <div class="col-sm-12 col-md-4">
-                                    <div class="row">
-                                        <div class="col-12 mt-4">
-                                            <div class="bg-danger border-2 bg-soft p-2 mb-4 d-flex align-items-center">
-                                                <i class="bx bx-phone-call pin font-28 mr-15px"></i>
-                                                <p class="fw-semibold mb-0 pb-0">Location and Contact information</p>
+                               
 
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="table-responsive">
-                                                <table
-                                                    class="table table-nowrap vertical-align-middle table-striped table-sm">
-                                                    <thead class="table-light">
-                                                        <th colspan="3" class="text-right text-uppercase">Verification Status <br> <a href="user-details.html">(By Flex Amondi)</a></th>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr
-                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Business Mobile No.</p>
-                                                            </td>
-                                                            <td class=""><a href="tel:0704549859">0704549859</a></td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
+                               
 
-                                                        </tr>
-
-                                                        <tr
-                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Alternative Phone No</p>
-                                                            </td>
-                                                            <td class=""><a href="tel:0704549859">0704549859</a></td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
-                                                        </tr>
-
-
-
-                                                        <tr
-                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Business Email address</p>
-                                                            </td>
-                                                            <td class=""><a
-                                                                    href="mailto:email@email.com">email@email.com</a>
-                                                            </td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold"> Sub
-                                                                    county</p>
-
-                                                            </td>
-                                                            <td class="">Homabay Town Sub county</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Ward
-                                                                </p>
-
-                                                            </td>
-                                                            <td class=""><a href="tel:0704549859">Rodi Township Ward</a>
-                                                            </td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Physical address/Street</p>
-
-                                                            </td>
-                                                            <td class=""><a href="tel:0704549859">Along Moi Avenue
-                                                                    opposite cooperative Bank</a></td>
-                                                                    <td class="text-right">
-                                                                        <i class="bx bx-check text-success font-28"></i>
-                                                                    </td>
-
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Building Name</p>
-
-                                                            </td>
-                                                            <td class="">ALexis complex</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Stall/Room No.</p>
-
-                                                            </td>
-                                                            <td class="">122</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="col-sm-12 col-md-8">
-                                    <div class="row">
-                                        <div class="col-12 mt-4">
-                                            <div class="bg-dark border-2 bg-soft p-2 mb-4 d-flex align-items-center">
-                                                <i class="bx bx-map font-28 mr-15px"></i>
-                                                <p class="fw-semibold mb-0 pb-0">Map View</p>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div>
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46449.71551863634!2d36.67523836781685!3d-1.3353441122372378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0cb9ff59a4a3%3A0x4073419e11826405!2sOrbital%20Africa%20%7C%20Land%20%26%20Topo%20Survey%2C%20GPS%2C%20GPR%2C%20GIS%2C%20Mapping%2C%20Drones%2C%20Training%20%26%20Geospatial%20Solutions!5e0!3m2!1sen!2ske!4v1691859398886!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="col-sm-12 col-md-4">
+                                <div class="col-sm-12 col-md-12">
                                     <div class="row">
                                         <div class="col-12 mt-4">
                                             <div class="bg-danger border-2 bg-soft p-2 mb-4 d-flex align-items-center">
