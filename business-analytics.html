@@ -778,7 +778,7 @@
 
                     <!-- the tables -->
                     <div class="row">
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-md-6 col-sm-12">
                             <div class="card">
                                 <div class="card-header  bg-white py-3">
                                     <div class="d-flex justify-content-between align-items-center">
@@ -794,9 +794,10 @@
                                             <thead class="table-dark">
                                                 <tr class="font-weight-bold">
                                                     <th scope="col">Sub County</th>
-                                                    <th scope="col">Liquor Outlets</th>
-                                                    <th scope="col">All Businesses</th>
+                                                    <th scope="col">All</th>
+                                                    <th scope="col">Liquor </th>
                                                     <th>Invoiced</th>
+                                                    <th>Paid SBPs</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -804,57 +805,66 @@
                                                     <td scope="row">RACHUONYO NORTH</td>
                                                     <td class="rNorth-alcohol">-</td>
                                                     <td class="rNorth-sbp">-</td>
-                                                    <td>45</td>
+                                                    <td class="table-warning">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    <td class="table-info">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
                                         
                                                 </tr>
                                                 <tr value="[object Object]" style="cursor: pointer;">
                                                     <td scope="row">RACHUONYO EAST</td>
                                                     <td class="rEast-alcohol">-</td>
                                                     <td class="rEast-sbp">-</td>
-                                                    <td>45</td>
+                                                    <td class="table-warning">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    <td class="table-info">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
                                                 </tr>
                                                 <tr value="[object Object]" style="cursor: pointer;">
                                                     <td scope="row">RACHUONYO SOUTH</td>
                                                     <td class="rSouth-alcohol">-</td>
                                                     <td class="rSouth-sbp">-</td>
-                                                    <td>45</td>
+                                                    <td class="table-warning">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    <td class="table-info">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
                                                 </tr>
                                                 <tr value="[object Object]" style="cursor: pointer;">
                                                     <td scope="row">SUBA NORTH</td>
                                                     <td class="SubaNorth-alcohol">-</td>
                                                     <td class="subaNorth-sbp">-</td>
-                                                    <td>45</td>
+                                                    <td class="table-warning">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    <td class="table-info">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
                                                 </tr>
                                                 <tr value="[object Object]" style="cursor: pointer;">
                                                     <td scope="row">RANGWE</td>
                                                     <td class="rangwe-alcohol">-</td>
                                                     <td class="rangwe-sbp">-</td>
-                                                    <td>45</td>
+                                                    <td class="table-warning">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    <td class="table-info">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
                                                 </tr>
                                                 <tr value="[object Object]" style="cursor: pointer;">
                                                     <td scope="row">HOMA BAY TOWN</td>
                                                     <td class="hb-alcohol">-</td>
                                                     <td class="hb-sbp">-</td>
-                                                    <td>45</td>
+                                                    <td class="table-warning">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    <td class="table-info">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
                                                 </tr>
                                                 <tr value="[object Object]" style="cursor: pointer;">
                                                     <td scope="row">NDHIWA</td>
                                                     <td class="ndhiwa-alcohol">-</td>
                                                     <td class="ndhiwa-sbp">-</td>
-                                                    <td>45</td>
+                                                    <td class="table-warning">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    <td class="table-info">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
                                                 </tr>
                                                 <tr value="[object Object]" style="cursor: pointer;">
                                                     <td scope="row">SUBA SOUTH</td>
                                                     <td class="subaSouth-alcohol">-</td>
                                                     <td class="subaSouth-sbp">-</td>
-                                                    <td>45</td>
+                                                    <td class="table-warning">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    <td class="table-info">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
                                                 </tr>
 
                                                 <tr value="[object Object]" style="cursor: pointer;">
                                                     <td scope="row">HOMA BAY HQ</td>
                                                     <td class="hq-alcohol">-</td>
                                                     <td class="hq-sbp">-</td>
-                                                    <td>45</td>
+                                                    <td class="table-warning">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    <td class="table-info">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
                                                 </tr>
 
                                                 
@@ -862,11 +872,12 @@
                                                 
                                                 <!-- Continue replacing ward names in the same manner for other rows -->
 
-                                                <tr style="background: rgb(206, 233, 216);">
+                                                <tr class="table-dark">
                                                     <th><strong>Total</strong></th>
                                                     <th class="alcoholTxt">-</th>
                                                     <th class="sbpTotal">-</th>
-                                                    <th>34</th>
+                                                    <td class="text-warning">45 <span class="fw-bold">(KES 12,000)</span></td>
+                                                    <td class="text-success">45 <span class="fw-bold">(KES 12,000)</span></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -876,7 +887,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-md-6 col-sm-12">
                             <div class="card">
                                 <div class="card-header  bg-white py-3">
                                     <div class="d-flex justify-content-between align-items-center">
@@ -987,7 +998,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-md-12 col-sm-12">
                             <div class="card">
                                 <div class="card-header  bg-white py-3">
                                     <div class="d-flex justify-content-between align-items-center">
