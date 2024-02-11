@@ -1443,4 +1443,25 @@ z-index: 3 !important;
 }
 
 
+.navbar-brand-box {
+    padding: 0 1.5rem;
+    text-align: left;
+    width: 250px
+}
+.portal-title {
+    height: 70px;
+    display: flex;
+    flex-flow: column;
+    padding-top: 15px;
+}
+
+.portal-title h4 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.logo-lg img {
+    margin-right: 12px;
+}
+
 
