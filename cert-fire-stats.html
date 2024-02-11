@@ -617,8 +617,8 @@
                                                                         <i class="mdi mdi-briefcase-edit text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">Registered Businesses</p>
-                                                            <h5 class="mb-0">48</h5>
+                                                            <p class="text-muted text-truncate mb-2">Potential Businessess</p>
+                                                            <h5 class="mb-0">2000</h5>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
@@ -628,8 +628,8 @@
                                                                         <i class="mdi mdi mdi-briefcase-check text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">Pending Applications</p>
-                                                            <h5 class="mb-0">6,503</h5>
+                                                            <p class="text-muted text-truncate mb-2">Invoiced Businesses</p>
+                                                            <h5 class="mb-0">1500</h5>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
@@ -639,7 +639,7 @@
                                                                         <i class="mdi mdi-progress-clock text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">Suspended Applications</p>
+                                                            <p class="text-muted text-truncate mb-2">Unpaid Invoices</p>
                                                             <h5 class="mb-0">180</h5>
 
                                                         </div>
@@ -651,8 +651,8 @@
                                                                         <i class="mdi mdi-progress-clock text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">Active Certs</p>
-                                                            <h5 class="mb-0">5,236</h5>
+                                                            <p class="text-muted text-truncate mb-2">Paid Invoices</p>
+                                                            <h5 class="mb-0">1320</h5>
 
                                                         </div>
                                                     </div>
@@ -664,7 +664,7 @@
                                                                         <i class="mdi mdi-close text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">Expirted Certs</p>
+                                                            <p class="text-muted text-truncate mb-2">Awaiting Approval</p>
                                                             <h5 class="mb-0">22</h5>
 
                                                         </div>
@@ -677,7 +677,7 @@
                                                                         <i class="mdi mdi-clock-alert text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">Penalized Certs</p>
+                                                            <p class="text-muted text-truncate mb-2">Active Certificates</p>
                                                             <h5 class="mb-0">48</h5>
                                                         </div>
                                                     </div>
@@ -701,7 +701,7 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
-                                                    <p class="text-muted mb-2">Value of Pending SBP Bills</p>
+                                                    <p class="text-muted mb-2">Value of Pending Invoices</p>
                                                     <h5 class="mb-0 fw-bold">KES 34,000</h5>
                                                 </div>
 
@@ -722,7 +722,7 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
-                                                    <p class="text-muted mb-2">SBP Collections Today</p>
+                                                    <p class="text-muted mb-2">Today's Collections</p>
                                                     <h5 class="mb-0 fw-bold">KES 34,000</h5>
                                                 </div>
 
@@ -743,7 +743,7 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
-                                                    <p class="text-muted mb-2">SBP Collections Thid Month</p>
+                                                    <p class="text-muted mb-2">This Month's Collections</p>
                                                     <h5 class="mb-0 fw-bold">KES 34,000</h5>
                                                 </div>
 
@@ -764,7 +764,7 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
-                                                    <p class="text-muted mb-2">SBP Collections This year</p>
+                                                    <p class="text-muted mb-2">This Year's Collections</p>
                                                     <h5 class="mb-0 fw-bold">KES 34,000</h5>
                                                 </div>
 
@@ -784,32 +784,124 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 col-md-3 px-sm-30px">
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                    <h4 class="card-title mb-0">Applications By statuses</h4>
-                                    <div id="application-statuses"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-3 px-sm-30px">
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                    <h4 class="card-title mb-0">Certificate Statuses</h4>
-                                    <div id="certificateStatus"></div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="col-sm-12 col-md-6 px-sm-30px">
                             <div class="card">
+
+                                <div class="card-header bg-white border-bottom">
+                                    <h4 class="card-title">Important Statistics</h4>
+                                </div>
                                 
                                 <div class="card-body">
-                                    <h4 class="card-title mb-0">Revenue Perfomance</h4>
-                                    <div id="revenuePerfomance"></div>
+                                    
+                                    <div>
+                                        <div class="table-responsive font-12" style="height: 450px; overflow-y: auto;">
+                                            <table class="table table-striped table-sm font-12 sources-table">
+                                                <thead class="table-dark">
+                                                    <tr class="font-weight-bold">
+                                                        <th scope="col">Sub County</th>
+                                                        <th scope="col">Invoiced Vs Potential</th>
+                                                        <th>Pending Invoices</th>
+                                                        <th>Paid SBPs</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RACHUONYO NORTH</td>
+                                                        <td class="rNorth-alcohol">-</td>
+                                                        <td class="table-danger">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                        <td class="table-success">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                            
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RACHUONYO EAST</td>
+                                                        <td class="rEast-alcohol">-</td>
+                                                       
+                                                        <td class="table-danger">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                        <td class="table-success">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RACHUONYO SOUTH</td>
+                                                        <td class="rSouth-alcohol">-</td>
+                                                        
+                                                        <td class="table-danger">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                        <td class="table-success">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">SUBA NORTH</td>
+                                                        <td class="SubaNorth-alcohol">-</td>
+                                                        
+                                                        <td class="table-danger">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                        <td class="table-success">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RANGWE</td>
+                                                        <td class="rangwe-alcohol">-</td>
+                                                      
+                                                        <td class="table-danger">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                        <td class="table-success">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">HOMA BAY TOWN</td>
+                                                        <td class="hb-alcohol">-</td>
+                                                       
+                                                        <td class="table-danger">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                        <td class="table-success">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">NDHIWA</td>
+                                                        <td class="ndhiwa-alcohol">-</td>
+                                                        
+                                                        <td class="table-danger">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                        <td class="table-success">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">SUBA SOUTH</td>
+                                                        <td class="subaSouth-alcohol">-</td>
+                                                        
+                                                        <td class="table-danger">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                        <td class="table-success">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    </tr>
+    
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">HOMA BAY HQ</td>
+                                                        <td class="hq-alcohol">-</td>
+                                                        
+                                                        <td class="table-danger">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                        <td class="table-success">45 <span class="fw-bold text-dark">(KES 12,000)</span></td>
+                                                    </tr>
+    
+                                                    
+    
+                                                    
+                                                    <!-- Continue replacing ward names in the same manner for other rows -->
+    
+                                                    <tr class="table-dark">
+                                                        <th><strong>Total</strong></th>
+                                                        <th class="alcoholTxt">-</th>
+                                                        
+                                                        <td class="text-danger">45 <span class="fw-bold">(KES 12,000)</span></td>
+                                                        <td class="text-success">45 <span class="fw-bold">(KES 12,000)</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                        <div class="col-sm-12 col-md-6 px-sm-30px">
+                            <div class="card">
+
+                                <div class="card-header bg-white border-bottom">
+                                    <h4 class="card-title">Revenue Perfomance</h4>
+                                </div>
+                                
+                                <div class="card-body">
+                                    
+                                    <div id="revenuePerfomanceFire"></div>
                                 </div>
                             </div>
                         </div>
@@ -1573,6 +1665,86 @@
     <!-- App js -->
     <script src="assets/js/app.js "></script>
     <script src="assets/js/custom.js "></script>
+
+    <script>
+        // Your chart generation code will go here
+document.addEventListener('DOMContentLoaded', function () {
+    // Abbreviate months to three letters
+    function abbreviateMonth(month) {
+        return month.substring(0, 3);
+    }
+    
+    // Prepare the data
+    const data = [
+        ['Jul 2023', 50000, 60000, 55000], // [Month, Last Year, Target, Actual]
+        ['Aug 2023', 55000, 62000, 58000],
+        ['Sep 2023', 52000, 61000, 56000],
+        ['Oct 2023', 53000, 63000, 57000],
+        ['Nov 2023', 54000, 59000, 56000],
+        ['Dec 2023', 60000, 65000, 62000],
+        ['Jan 2024', 58000, 67000, 59000],
+        ['Feb 2024', 59000, 68000, 60000],
+        ['Mar 2024', 61000, 70000, 62000],
+        ['Apr 2024', 60000, 69000, 61000],
+        ['May 2024', 62000, 72000, 63000],
+        ['Jun 2024', 63000, 71000, 64000]
+    ];
+
+    // Set the font family to Montserrat
+    Highcharts.setOptions({
+        chart: {
+            style: {
+                fontFamily: 'Montserrat, sans-serif'
+            }
+        }
+    });
+
+    // Create the bar chart
+    Highcharts.chart('revenuePerfomanceFire', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: data.map(item => abbreviateMonth(item[0]))
+        },
+        yAxis: {
+            title: {
+                text: 'Revenue (KES)'
+            }
+        },
+        legend: {
+            enabled: true
+        },
+        tooltip: {
+            shared: true,
+            pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>KES {point.y}</b><br/>'
+        },
+        plotOptions: {
+            bar: {
+                pointWidth: 20, // Adjust the width of each column
+                stacking: 'normal', // Prevent stacking
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Last Year Collections',
+            data: data.map(item => item[1])
+        }, {
+            name: 'Created Invoices',
+            data: data.map(item => item[2]),
+            color:"red"
+        }, {
+            name: 'This Year Collections',
+            data: data.map(item => item[3]),
+            color:"green"
+        }]
+    });
+});
+
+    </script>
 </body>
 
 
