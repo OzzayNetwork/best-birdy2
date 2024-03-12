@@ -557,7 +557,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18 text-capitalize">New Traffic Offence Bill</h4>
+                                <h4 class="mb-sm-0 font-size-18 text-capitalize">Invoice receipting</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -581,8 +581,17 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <div class="p-3 bg-success bg-soft mb-4">
-                                                        <h4 class="p-0 m-0">Receipt No. 12345689</h4>
+                                                    <div class="p-3 bg-warning bg-soft mb-4 d-flex justify-content-between align-items-center">
+                                                        <h4 class="p-0 m-0">Invoice Receipting (1 Invoice)</h4>
+                                                        <div>
+                                                            <button data-toggle="modal" data-target="#searchBillModal" type="button" class="btn btn-success btn-block w-md" style="margin-left: 10px;">
+                                                                <i class="bx bx-search-alt-2 font-size-16 align-middle me-2"></i> Search To Receipt
+                                                            </button>
+
+                                                            <button data-toggle="modal" data-target="#searchBillModal" type="button" class="btn btn-success btn-block w-md" style="margin-left: 10px;">
+                                                                <i class="bx bx-search-alt-2 font-size-16 align-middle me-2"></i> Seacrh To Merge
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-3 mb-4">
@@ -591,8 +600,8 @@
                                                             <i class="mdi mdi-card-account-details-outline  h2 text-dark"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
-                                                            <p class="text-muted mb-0">ID No.</p>
-                                                            <h5 class="mb-0 font-14px">12345678</h5>
+                                                            <p class="text-muted mb-0">Selected Invoices</p>
+                                                            <h5 class="mb-0 font-14px">2</h5>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -602,8 +611,8 @@
                                                             <i class="mdi mdi-account  h2 text-dark"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
-                                                            <p class="text-muted mb-0">Offender's Full Name</p>
-                                                            <h5 class="mb-0 font-14px">Kelvin Njuguna Ndungu</h5>
+                                                            <p class="text-muted mb-0">Invoice Amount</p>
+                                                            <h5 class="mb-0 font-14px">KES 5,000</h5>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -614,8 +623,8 @@
                                                             <i class="mdi mdi-phone  h2 text-dark"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
-                                                            <p class="text-muted mb-0">Phone No.</p>
-                                                            <h5 class="mb-0 font-14px text-uppercase">0704549859</h5>
+                                                            <p class="text-muted mb-0">Amount Paid</p>
+                                                            <h5 class="mb-0 font-14px text-uppercase">KES 2,000</h5>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -626,8 +635,8 @@
                                                             <i class="mdi mdi-email-outline  h2 text-dark"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
-                                                            <p class="text-muted mb-0">Email Address</p>
-                                                            <h5 class="mb-0 font-14px">Kelvinnjuguna99@gmail.com</h5>
+                                                            <p class="text-muted mb-0">Remaining Balance</p>
+                                                            <h5 class="mb-0 font-14px">KES 3,000</h5>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -637,21 +646,39 @@
                                             <div class="col-12">
                                                 <div class="table-responsive border-1">
                                                     <table class="table table-nowrap vertical-align-middle">
+                                                        <thead class="table-danger">
+                                                            <tr class="vertical-align-middle">
+                                                                <th style="width: 70px;">1.</th>
+                                                                <th class="text-uppercase" colspan="2">
+                                                                    Invoice No:. <span class="fw-bold text-primary">BLL123456</span> | Date: <span class="fw-bold text-primary">12/23/2023 12:56 AM</span>  | Invoice For: <span class="fw-bold text-primary">Mama Ngina Shop</span> 
+                                                                </th>
+                                                                <th class="text-end">
+                                                                    <button data-toggle="modal" data-target="#searchBillModal" type="button" class="btn btn-danger btn-block w-md text-uppercase style="margin-left: 10px;">
+                                                                        <i class="bx bx-x font-size-16 align-middle me-2"></i> Remove Invoice
+                                                                    </button>
+                                                                </th>
+                                                                
+                                                            </tr>
+                                                        </thead>
                                                         <thead class="bg-light">
                                                             <tr>
                                                                 <th style="width: 70px;">No.</th>
-                                                                <th>Offense</th>
+                                                                <th colspan="2">Offense</th>
                                                                 <th class="text-end">Amount</th>
                                                                 
                                                             </tr>
                                                         </thead>
-                                                        <tfoot class="bg-light">
+                                                        <tfoot class="bg-light text-uppercase">
                                                             <tr>
-                                                                <td colspan="2" class="border-0 text-end text-right">
-                                                                    <strong>Total</strong>
+                                                                <td></td>
+                                                                <td class="">
+                                                                    <strong>Invoice Totals</strong>
+                                                                </td>
+                                                                <td class="text-right text-uppercase">
+                                                                    Amount Paid: KES 0.00
                                                                 </td>
                                                                 <td class="border-0 text-end text-right">
-                                                                    <h5 class="m-0 text-uppercase fw-bold">KES 1,500</h5>
+                                                                    <h5 class="m-0 text-uppercase fw-bold">Bal: KES 1,500</h5>
                                                                 </td>
                                                                
                                                             </tr>
@@ -659,8 +686,8 @@
                                                         <tbody>
                                                             <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
                                                                 <td>01</td>
-                                                                <td>
-                                                                    <p class="mb-0 p-0 m-0">Driving Without identification plates affixed or plates not fixed in the prescribed manner</p>
+                                                                <td colspan="2">
+                                                                    <p class="mb-0 p-0 m-0">Bunners (X2)</p>
                                                                 </td>
                                                                 <td class="text-end text-right">KES 1,000</td>
                                                                 
@@ -668,8 +695,8 @@
 
                                                             <tr title="Drving a vehicle without a valid inspection certificate inspected">
                                                                 <td>02</td>
-                                                                <td>
-                                                                    <p class="mb-0 p-0 m-0">Drving a vehicle without a valid inspection certificate inspected</p>
+                                                                <td colspan="2">
+                                                                    <p class="mb-0 p-0 m-0">Single Business Permit AApplication (X3)</p>
 
                                                                 </td>
                                                                 <td class="text-end text-right">KES 500</td>
@@ -681,6 +708,11 @@
                                                             
                                                         </tbody>
                                                     </table>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center w-100">
+                                                    <button type="button" class="btn btn-lg btn-dark waves-effect waves-light w-100">
+                                                        <i class="mdi mdi-cash-plus font-size-16 align-middle me-2"></i> Search & Add Invoice (Multi Receipting)
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
