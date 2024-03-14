@@ -1463,5 +1463,20 @@ z-index: 3 !important;
 .logo-lg img {
     margin-right: 12px;
 }
+.initial-placeholder-receipting{
+    min-height: 70vh;
+}
+.initial-placeholder-receipting img{
+    height: 50px;
+}
+.border-solid{
+    border-style: solid !important;
+}
+.font-size-28{
+    font-size: 28px !important;
+}
+.font-size-21{
+    font-size: 21px !important;
+}
 
 

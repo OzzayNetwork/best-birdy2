@@ -574,6 +574,35 @@
                     <!-- eTransactions table -->
 
                     <div class="row">
+                        <!-- use this when the selections are empty -->
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex text-center align-items-center justify-content-center">
+                                        <div class="row d-flex text-center align-items-center justify-content-center initial-placeholder-receipting">
+                                            <div class="col-sm-12 col-lg-6 col-md-6">
+                                                <div class="p-4 border-radius border-solid border-primary border-2">
+                                                    <div class="img mb-4 pt-3">
+                                                        <img src="assets/images/animatedIcons/icons8-search.gif" class="img" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h4 class="card-title text-uppercase text-dark">Invoice Receipting</h4>
+                                                        <p>This section allows you to receipt existing bills. Search for unpaid invoices to proceed. You can also use this section to pay for multiple invoices at once.</p>
+                                                        <p class="fw-semibold text-capitalize" >Search For an invoice to continue</p>
+
+                                                        <button type="button" class="btn btn-lg btn-success btn-block w-100 mt-5 mb-3" data-dismiss="modal">
+                                                            <i class="bx bx-search-alt-2 font-size-28 align-middle me-2 "></i>
+                                                            Search For Invoice
+                                                    </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of emptiness -->
                         <div class="col-12">
                             <div class="row d-flex justify-content-center align-items-center">
                                 <div class="col-12">
@@ -582,23 +611,38 @@
                                             <div class="row">
                                                 <div class="col-12">
                                                     <div class="p-3 bg-warning bg-soft mb-4 d-flex justify-content-between align-items-center">
-                                                        <h4 class="p-0 m-0">Invoice Receipting (1 Invoice)</h4>
-                                                        <div>
-                                                            <button data-toggle="modal" data-target="#searchBillModal" type="button" class="btn btn-success btn-block w-md" style="margin-left: 10px;">
-                                                                <i class="bx bx-search-alt-2 font-size-16 align-middle me-2"></i> Search To Receipt
+                                                        <h4 class="p-0 m-0 fw-bold text-dark">Invoice Receipting (2 Invoice(s))</h4>
+                                                        <div class="text-uppercase"> 
+                                                            <button data-toggle="modal" data-target="#clearModal" type="button" class="btn btn-danger btn-block w-md text-uppercase fw-bold" style="margin-left: 10px;">
+                                                                <i class="bx bx-trash font-size-21 align-middle me-2"></i> Clear
                                                             </button>
 
-                                                            <button data-toggle="modal" data-target="#searchBillModal" type="button" class="btn btn-success btn-block w-md" style="margin-left: 10px;">
-                                                                <i class="bx bx-search-alt-2 font-size-16 align-middle me-2"></i> Seacrh To Merge
+                                                            <button data-toggle="modal" data-target="#subscribeModal" type="button" title="You can use this if you want to include another invoice to pay along with the one you've already searched for" class="btn btn-primary btn-block w-md text-uppercase fw-bold"style="margin-left: 10px;">
+                                                                <i class="bx bx-folder-plus font-size-21 align-middle me-2"></i> Search To Add
                                                             </button>
+
+                                                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                                Tooltip on top
+                                                            </button>
+
+                                                            <button data-toggle="modal" data-target="#subscribeModal" type="button" class="btn btn-success btn-block w-md text-uppercase fw-bold"style="margin-left: 10px;">
+                                                                <i class="bx bx-search-alt-2 font-size-21 align-middle me-2"></i> Search Invoice
+                                                            </button>
+
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-3 mb-4">
                                                     <div class="d-flex">
-                                                        <div class="flex-shrink-0 me-3 align-self-center">
-                                                            <i class="mdi mdi-card-account-details-outline  h2 text-dark"></i>
+                                                       
+
+                                                        <div class="avatar-sm mx-auto me-3">
+                                                            <span class="avatar-title rounded-circle bg-primary font-21">
+                                                                <i class="bx bx-receipt text-white"></i>
+                                                            </span>
                                                         </div>
+
                                                         <div class="flex-grow-1">
                                                             <p class="text-muted mb-0">Selected Invoices</p>
                                                             <h5 class="mb-0 font-14px">2</h5>
@@ -607,8 +651,10 @@
                                                 </div>
                                                 <div class="col-3 mb-4">
                                                     <div class="d-flex">
-                                                        <div class="flex-shrink-0 me-3 align-self-center">
-                                                            <i class="mdi mdi-account  h2 text-dark"></i>
+                                                        <div class="avatar-sm mx-auto me-3">
+                                                            <span class="avatar-title rounded-circle bg-dark font-21">
+                                                                <i class="mdi mdi-cash-multiple text-white"></i>
+                                                            </span>
                                                         </div>
                                                         <div class="flex-grow-1">
                                                             <p class="text-muted mb-0">Invoice Amount</p>
@@ -619,8 +665,10 @@
 
                                                 <div class="col-3 mb-4">
                                                     <div class="d-flex">
-                                                        <div class="flex-shrink-0 me-3 align-self-center">
-                                                            <i class="mdi mdi-phone  h2 text-dark"></i>
+                                                        <div class="avatar-sm mx-auto me-3">
+                                                            <span class="avatar-title rounded-circle bg-info font-21">
+                                                                <i class="mdi mdi-cash-check text-white"></i>
+                                                            </span>
                                                         </div>
                                                         <div class="flex-grow-1">
                                                             <p class="text-muted mb-0">Amount Paid</p>
@@ -631,8 +679,10 @@
 
                                                 <div class="col-3 mb-4">
                                                     <div class="d-flex">
-                                                        <div class="flex-shrink-0 me-3 align-self-center">
-                                                            <i class="mdi mdi-email-outline  h2 text-dark"></i>
+                                                        <div class="avatar-sm mx-auto me-3">
+                                                            <span class="avatar-title rounded-circle bg-danger font-21">
+                                                                <i class="mdi mdi-cash-remove text-white"></i>
+                                                            </span>
                                                         </div>
                                                         <div class="flex-grow-1">
                                                             <p class="text-muted mb-0">Remaining Balance</p>
@@ -643,9 +693,9 @@
                                                 
                                             </div>
 
-                                            <div class="col-12">
-                                                <div class="table-responsive border-1">
-                                                    <table class="table table-nowrap vertical-align-middle">
+                                            <div class="col-12 mt-4">
+                                                <div class="table-responsive border-1 mb-3">
+                                                    <table class="table table-nowrap vertical-align-middle table-bordered">
                                                         <thead class="table-danger">
                                                             <tr class="vertical-align-middle">
                                                                 <th style="width: 70px;">1.</th>
@@ -653,7 +703,11 @@
                                                                     Invoice No:. <span class="fw-bold text-primary">BLL123456</span> | Date: <span class="fw-bold text-primary">12/23/2023 12:56 AM</span>  | Invoice For: <span class="fw-bold text-primary">Mama Ngina Shop</span> 
                                                                 </th>
                                                                 <th class="text-end">
-                                                                    <button data-toggle="modal" data-target="#searchBillModal" type="button" class="btn btn-danger btn-block w-md text-uppercase style="margin-left: 10px;">
+                                                                    <a href="PrintDocs/Bill/bill.html" target="new"  type="button" class="btn btn-info btn-block w-md btn-sm text-uppercase fw-bold" style="margin-left: 10px;">
+                                                                        <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                                    </a>
+
+                                                                    <button data-toggle="modal" data-target="" type="button" class="btn btn-danger btn-block w-md btn-sm text-uppercase fw-bold" style="margin-left: 10px;">
                                                                         <i class="bx bx-x font-size-16 align-middle me-2"></i> Remove Invoice
                                                                     </button>
                                                                 </th>
@@ -663,22 +717,43 @@
                                                         <thead class="bg-light">
                                                             <tr>
                                                                 <th style="width: 70px;">No.</th>
-                                                                <th colspan="2">Offense</th>
+                                                                <th colspan="2">Item Description (x QTY)</th>
                                                                 <th class="text-end">Amount</th>
                                                                 
                                                             </tr>
                                                         </thead>
-                                                        <tfoot class="bg-light text-uppercase">
+                                                        <tfoot class="bg-light text-uppercase table-bordered">
                                                             <tr>
                                                                 <td></td>
-                                                                <td class="">
-                                                                    <strong>Invoice Totals</strong>
+                                                                
+                                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                                    Invoice Sub Total
                                                                 </td>
-                                                                <td class="text-right text-uppercase">
-                                                                    Amount Paid: KES 0.00
+                                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                                    KES 1,500
+                                                                </td>
+                                                               
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                
+                                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                                    Amount Paid
+                                                                </td>
+                                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                                    KES 0.00
+                                                                </td>
+                                                               
+                                                            </tr>
+
+                                                            <tr class="table-success">
+                                                                <td></td>
+                                                                
+                                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                                    Outstanding Balance
                                                                 </td>
                                                                 <td class="border-0 text-end text-right">
-                                                                    <h5 class="m-0 text-uppercase fw-bold">Bal: KES 1,500</h5>
+                                                                    <h5 class="m-0 text-uppercase fw-bold">KES 1,500</h5>
                                                                 </td>
                                                                
                                                             </tr>
@@ -709,16 +784,125 @@
                                                         </tbody>
                                                     </table>
                                                 </div>
-                                                <div class="d-flex align-items-center justify-content-center w-100">
+
+                                                <div class="table-responsive border-1 mb-3">
+                                                    <table class="table table-nowrap vertical-align-middle table-bordered">
+                                                        <thead class="table-danger">
+                                                            <tr class="vertical-align-middle">
+                                                                <th style="width: 70px;">2.</th>
+                                                                <th class="text-uppercase" colspan="2">
+                                                                    Invoice No:. <span class="fw-bold text-primary">BLL789956</span> | Date: <span class="fw-bold text-primary">12/23/2023 12:56 AM</span>  | Invoice For: <span class="fw-bold text-primary">Mama Ngina Shop</span> 
+                                                                </th>
+                                                                <th class="text-end">
+                                                                    <a href="PrintDocs/Bill/bill.html" target="new"  type="button" class="btn btn-info btn-block w-md btn-sm text-uppercase fw-bold" style="margin-left: 10px;">
+                                                                        <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                                    </a>
+
+                                                                    <button data-toggle="modal" data-target="#removeBillModal" type="button" class="btn btn-danger btn-block w-md btn-sm text-uppercase fw-bold" style="margin-left: 10px;">
+                                                                        <i class="bx bx-x font-size-16 align-middle me-2"></i> Remove Invoice
+                                                                    </button>
+                                                                </th>
+                                                                
+                                                            </tr>
+                                                        </thead>
+                                                        <thead class="bg-light">
+                                                            <tr>
+                                                                <th style="width: 70px;">No.</th>
+                                                                <th colspan="2">Item Description (x QTY)</th>
+                                                                <th class="text-end">Amount</th>
+                                                                
+                                                            </tr>
+                                                        </thead>
+                                                        <tfoot class="bg-light text-uppercase table-bordered">
+                                                            <tr>
+                                                                <td></td>
+                                                                
+                                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                                    Invoice Sub Total
+                                                                </td>
+                                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                                    KES 3,500
+                                                                </td>
+                                                               
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                
+                                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                                    Amount Paid
+                                                                </td>
+                                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                                    KES 2,000
+                                                                </td>
+                                                               
+                                                            </tr>
+
+                                                            <tr class="table-success">
+                                                                <td></td>
+                                                                
+                                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                                    Outstanding Balance
+                                                                </td>
+                                                                <td class="border-0 text-end text-right">
+                                                                    <h5 class="m-0 text-uppercase fw-bold">KES 1,500</h5>
+                                                                </td>
+                                                               
+                                                            </tr>
+                                                        </tfoot>
+                                                        <tbody>
+                                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                                <td>01</td>
+                                                                <td colspan="2">
+                                                                    <p class="mb-0 p-0 m-0">Bunners (X2)</p>
+                                                                </td>
+                                                                <td class="text-end text-right">KES 3,000</td>
+                                                                
+                                                            </tr>
+
+                                                            <tr title="Drving a vehicle without a valid inspection certificate inspected">
+                                                                <td>02</td>
+                                                                <td colspan="2">
+                                                                    <p class="mb-0 p-0 m-0">Single Business Permit AApplication (X3)</p>
+
+                                                                </td>
+                                                                <td class="text-end text-right">KES 500</td>
+                                                                
+                                                            </tr>
+                
+                
+                
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="d-flex align-items-center justify-content-center w-100 d-none">
                                                     <button type="button" class="btn btn-lg btn-dark waves-effect waves-light w-100">
                                                         <i class="mdi mdi-cash-plus font-size-16 align-middle me-2"></i> Search & Add Invoice (Multi Receipting)
                                                     </button>
                                                 </div>
                                             </div>
+
+                                            
                                         </div>
-                                        <div class="card-footer bg-white py-4">
-                                            <div class="col-auto">
-                                                <button type="submit" data-toggle="modal" data-target="#payment-modal" class="btn btn-primary chat-send w-md waves-effect waves-light"><span class="d-none d-sm-inline-block me-2">Receive Payment</span> <i class="mdi mdi-send"></i></button>
+                                        <div class="card-footer bg-white py-4 border-top mt-5">
+                                            <div class="col-12">
+                                                <div class="p-3 bg-info bg-soft mb-0 d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h4 class="card-title">Seleected Invoices Summary</h4>
+                                                        <ul class="pl-3">
+                                                            <li>BLL123456 - KES 1,500</li>
+                                                            <li>BLL90890 - KES 1,500</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <h4 class="card-title text-uppercase">Total Amount Payable (2 Invoice(s))</h4>
+                                                        <h2 class="mb-3">KES 3,000</h2>
+
+                                                        <button type="button" data-toggle="modal" data-target="#payment-modal" class="btn btn-primary waves-effect btn-label waves-light fw-bold text-uppercase">
+                                                            <i class="mdi mdi-send label-icon"></i> Receipt Invoice(s)</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -726,6 +910,8 @@
                             </div>
                         </div>
                         <!-- end col -->
+
+                        
                     </div>
 
                     <!-- end row -->
@@ -953,6 +1139,53 @@
                 </div>
             </div>
             <!-- end of payment modal -->
+
+            <!-- delete modal -->
+            <div class="modal fade" id="clearModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content pt-4">
+                    
+                    <div class="modal-body ">
+                        <div class="text-center mb-4 ">
+                            
+
+                            <div class="d-flex pb-4 align-items-center justify-content-center">
+                                <div>
+                                    <img src="assets/images/animatedIcons/icons8-list-is-empty.gif" class="img" alt="">
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center ">
+                                <div class="col-xl-10 ">
+                                    <h4 class="text-primary text-uppercase">Start Afresh</h4>
+                                    <p class="text-muted font-size-14 mb-4 ">                                       
+                                        Are you sure you want to clear the previously searched invoices and start afresh?
+                                    </p>
+
+                                    <form>
+                                       
+                                        <div class="d-flex justify-content-between">
+                                            <button type="button" class="btn btn-danger btn-block w-100" data-dismiss="modal">
+                                               
+                                            Clear Selections
+                                        </button>
+
+                                        <button type="button" class="btn btn btn-outline-secondary waves-effect btn-block w-100" data-dismiss="modal">
+                                            
+                                            Close
+                                        </button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            <!-- end of delete modal -->
 
 
 
