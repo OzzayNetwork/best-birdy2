@@ -550,14 +550,14 @@
                     <div class="row ">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">New Sacco/Sub Group</h4>
+                                <h4 class="mb-sm-0 font-size-18">New Rental Property</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Parking</a></li>
-                                        <li class="breadcrumb-item"><a href="parking-fleet.html">Fleet Manager</a></li>
-                                        <li class="breadcrumb-item"><a href="#">New Sacco/Sub Group</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Stall Rents</a></li>
+                                        <li class="breadcrumb-item"><a href="#">New Stall</a></li>
+                                       
                                     </ol>
                                 </div>
 
@@ -569,7 +569,7 @@
                     <!-- tool bar -->
                     <div class="row">
                         <div class="col-12 active">
-                           <div class="card active">
+                            <div class="card active">
                                 <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
                                     <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
                                         <button
@@ -581,43 +581,17 @@
                                         </button>
                                         <div class="collapse navbar-collapse justify-content-between active"
                                             id="navbarNavAltMarkup">
-                                           <div class="navbar-nav">
-                                                <a class="nav-item nav-link" href="parking-stats.html">Quick
+                                            <div class="navbar-nav">
+                                                <a class="nav-item nav-link" href="housing-quick-stat.html">Quick
                                                     Stats</a>
-                                                <a class="nav-item nav-link" href="parking-fleet.html">Seasonal Parking</a>
-                                                <a class="nav-item nav-link" href="parking-street.html">Daily Parking</a>
-                                                <a class="nav-item nav-link" href="parking-seasonal.html">Monthly Parking</a>
-                                                <a class="nav-item nav-link" href="parking-weekly.html">Weekly Parking</a>
-                                                <a class="nav-item nav-link" href="parking-bus-park.html">Bus/matatu Parks</a>
-                                                <a class="nav-item nav-link" href="parking-register.html">Vehicles Register</a>
-                                                <a class="nav-item nav-link" href="parking-clamped.html">Clamped Vehicles</a>
-                                                <a class="nav-item nav-link" href="parking-archive.html">Sacco's Archives</a>
+                                                <a class="nav-item nav-link" href="housing-register.html">Rentals
+                                                    Register</a>
 
                                             </div>
 
 
                                         </div>
-                                </div>
-                                <div class="card-body p-0">
-                                    <div class="text-uppercase maq-container w-100 d-flex">
-                                        <div class="text-uppercase bg-danger p-3 py-2 fw-bold text-white text-nowrap">
-                                            Today's Highlights
-                                        </div>
-                                        <div class="todays-entries flex-grow-1 py-2 p-3 text-white bg-warning">
-                                            <a class="todays-entries-text">Logged Vehicles: <strong>17,450</strong><span class="opacity-5"> | </span></a>
-                                            <a class="todays-entries-text">Car Queries: <strong>3,231</strong> <span class="opacity-5"> | </span></a>
-                                            <a class="todays-entries-text">Compliant: <strong>3,201</strong> <span class="opacity-5"> | </span></a>
-                                            <a class="todays-entries-text">Non-Compliant: <strong>30</strong> <span class="opacity-5"> | </span></a>
-                                            <a class="todays-entries-text">Due Clamping : <strong>11</strong><span class="opacity-5"> | </span></a>
-                                            <a class="todays-entries-text">Clamped: <strong>19</strong><span class="opacity-5"> | </span></a>
-                                            <a class="todays-entries-text">Bus/Matatu Park Revenue : <strong>KES 108,568</strong><span class="opacity-5"> | </span></a>
-                                            <a class="todays-entries-text">Clamping Revenue : <strong>KES 195,000</strong><span class="opacity-5"> | </span></a>
-                                            <a class="todays-entries-texts">Inactive Agents: 
-                                                    <strong>195 (<span id="agent_percentage" class="mx-1">70</span><span id="agent_percentage_sign">%</span>)</strong>
-                                                        <span class="opacity-5"> | </span>
-                                                    </a>
-                                        </div>
-                                    </div>
+                                    </nav>
                                 </div>
                             </div>
 
@@ -630,7 +604,7 @@
                             <div class="card">
                                 <div class="card-header">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h4 class="card-title mb-0 pb-0">New sacco/Sub Group Registration</h4>
+                                        <h4 class="card-title mb-0 pb-0 text-uppercase">New Property Registration</h4>
                                         <div class="d-none">
                                             <button data-toggle="modal" data-target="#new-category" class="btn btn-primary waves-effect waves-light"><i class="bx bx-list-plus font-size-16 align-middle me-2"></i> Add New Category</button>
                                         </div>
@@ -640,7 +614,7 @@
                                     <div class="row">
                                         <div class="col-md-3 col-sm-12 mb-3">
                                             <div class="form-group">
-                                                <label for="">Sacco/Sub Group Name</label>
+                                                <label for="">Property/Estate Name</label>
                                                 <input type="text" placeholder="Enter the Product Name" class="form-control">
                                             </div>
                                         </div>
@@ -675,15 +649,119 @@
 
                                         <div class="col-md-3 col-sm-12 mb-3">
                                             <div class="form-group">
-                                                <label for="">Physical Address</label>
-                                                <input type="text" placeholder="Enter Address" class="form-control">
+                                                <label for="ward">Zone</label>
+                                                <select class="selectpicker show-tick form-control" data-live-search="true" title="Select Zone" data-style="form-select btn border" id="ward">
+                                                    <option value="Imenti North">Imenti North</option>
+                                                    <option value="Imenti South">Imenti South</option>
+                                                    <option value="Igembe North">Igembe North</option>
+                                                    <option value="Igembe Central">Igembe Central</option>
+                                                    <option value="Igembe South">Igembe South</option>
+                                                    <!-- Add more wards here as needed -->
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                     
+
+                                       
+                                        
+                                       
+
+                                        <div class="col-12">
+                                            <div class="bg-warning border-2 bg-soft p-4 mb-4 d-flex flex-column mt-3">
+                                               <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="fw-semibold mb-0">Add Units</h5>
+                                                    <div>
+                                                        <input class="form-control" type="file" id="formFile" placeholder="Upload File">
+                                                    </div>
+                                               </div>
+                                                <p class="mb-2 d-none">Enter details of member vehicles to the new Sacco/Sub Group</p>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="">
+                                                <table class="table table-editable-1 align-middle table-edits">
+                                                    <thead class="table-light">
+                                                        <tr class="text-uppercase table-dark">
+                                                            <th>#</th>
+                                                            <th>Unit Name/No.</th>
+                                                            <th class="">Unit Category</th>
+                                                            <th class="">Monthly Rent</th>
+                                                          
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr data-id="1">
+                                                            <td style="width: 80px">1.</td>
+                                                            <td class="">
+                                                                <input type="text " class="form-control " placeholder="Enter Plate No." spellcheck="false" data-ms-editor="true">
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-control selectpicker form-select" data-live-search="true" title="Select Vehicle Category" data-style="form-select btn border">
+                                                                    <option value="Sedan">Sedan</option>
+                                                                    <option value="SUV">SUV</option>
+                                                                    <option value="Truck">Truck</option>
+                                                                    <option value="Motorcycle">Motorcycle</option>
+                                                                    <option value="Van">Van</option>
+                                                                    <!-- Add more vehicle categories here as needed -->
+                                                                </select>
+                                                                
+                                                            </td>
+                                                            <td class="">
+                                                                <input type="text " class="form-control " placeholder="Monthly Rent" spellcheck="false" data-ms-editor="true">
+                                                            </td>
+                                                           
+
+                                                            <td></td>
+
+                                                        </tr>
+
+                                                        <tr class="cloneCharges d-none">
+                                                            <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                            <td class="">
+                                                                <input type="text " class="form-control " placeholder="Enter Plate No." spellcheck="false" data-ms-editor="true">
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-control selectpicker form-select" data-live-search="true" title="Select Vehicle Category" data-style="form-select btn border">
+                                                                    <option value="Sedan">Sedan</option>
+                                                                    <option value="SUV">SUV</option>
+                                                                    <option value="Truck">Truck</option>
+                                                                    <option value="Motorcycle">Motorcycle</option>
+                                                                    <option value="Van">Van</option>
+                                                                    <!-- Add more vehicle categories here as needed -->
+                                                                </select>
+                                                                
+                                                            </td>
+                                                            <td class="">
+                                                                <input type="text " class="form-control " placeholder="Monthly Rent" spellcheck="false" data-ms-editor="true">
+                                                            </td>
+
+                                                            <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                                <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                            </td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                                <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add A Unit</span></span>
+                                                            </td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
                                             </div>
                                         </div>
 
                                         <div class="col-12 mb-3">
                                             <div class="form-group">
                                                 <hr>
-                                                <label for="" class="fw-semibold text-primary text-uppercase">Main Office/Stage Location</label>
+                                                <label for="" class="fw-semibold text-primary text-uppercase">Select The Physical Address From the Map</label>
                                                 
                                             </div>
                                         </div>
@@ -720,143 +798,14 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-12 mb-3">
-                                            <div class="form-group">
-                                                <hr>
-                                                <label for="" class="fw-semibold text-primary text-uppercase">Contact Person's Information</label>
-                                                
-                                            </div>
-                                        </div>
                                         
-                                        <div class="col-md-3 col-sm-6 mb-3">
-                                            <div class="form-group">
-                                                <label for="">Full Names</label>
-                                                <input type="text" placeholder="Enter Name" class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-3 col-sm-6 mb-3">
-                                            <div class="form-group">
-                                                <label for="">Role</label>
-                                                <select class="selectpicker show-tick form-control" data-live-search="true" title="Select Role" data-style="form-select btn border" id="ward">
-                                                    <option value="CEO">CEO</option>
-                                                    <option value="Manager">Manager</option>
-                                                    <option value="Sales Representative">Secretary</option>
-                                                    
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-12 col-md-3 col-lg-3 mb-3">
-                                            <div class="form-group">
-                                                <label for="">Phone NO.</label>
-                                                <input type="text" placeholder="Enter Phone Number" class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="bg-warning border-2 bg-soft p-4 mb-4 d-flex flex-column mt-3">
-                                               <div class="d-flex justify-content-between align-items-center">
-                                                    <h5 class="fw-semibold mb-0">Add Vehicles</h5>
-                                                    <div>
-                                                        <input class="form-control" type="file" id="formFile" placeholder="Upload File">
-                                                    </div>
-                                               </div>
-                                                <p class="mb-2 d-none">Enter details of member vehicles to the new Sacco/Sub Group</p>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="">
-                                                <table class="table table-editable-1 align-middle table-edits">
-                                                    <thead class="table-light">
-                                                        <tr class="text-uppercase table-dark">
-                                                            <th>#</th>
-                                                            <th>Vehicle</th>
-                                                            <th class="">Category</th>
-                                                            <th class="">Owner</th>
-                                                            <th>Phone No.</th>
-                                                            <th></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr data-id="1">
-                                                            <td style="width: 80px">1.</td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Enter Plate No." spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                            <td>
-                                                                <select class="form-control selectpicker form-select" data-live-search="true" title="Select Vehicle Category" data-style="form-select btn border">
-                                                                    <option value="Sedan">Sedan</option>
-                                                                    <option value="SUV">SUV</option>
-                                                                    <option value="Truck">Truck</option>
-                                                                    <option value="Motorcycle">Motorcycle</option>
-                                                                    <option value="Van">Van</option>
-                                                                    <!-- Add more vehicle categories here as needed -->
-                                                                </select>
-                                                                
-                                                            </td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Owner's Name" spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Owner's Phone No." spellcheck="false" data-ms-editor="true">
-                                                            </td>
-
-                                                            <td></td>
-
-                                                        </tr>
-
-                                                        <tr class="cloneCharges d-none">
-                                                            <td style="width: 80px " class="categoryIndex ">#</td>
-
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Enter Plate No." spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                            <td>
-                                                                <select class="form-control selectpicker form-select" data-live-search="true" title="Select Vehicle Category" data-style="form-select btn border">
-                                                                    <option value="Sedan">Sedan</option>
-                                                                    <option value="SUV">SUV</option>
-                                                                    <option value="Truck">Truck</option>
-                                                                    <option value="Motorcycle">Motorcycle</option>
-                                                                    <option value="Van">Van</option>
-                                                                    <!-- Add more vehicle categories here as needed -->
-                                                                </select>
-                                                                
-                                                            </td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Owner's Name" spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Owner's Phone No." spellcheck="false" data-ms-editor="true">
-                                                            </td>
-
-
-                                                            <td class="text-right cell-change d-flex align-items-center justify-content-end">
-                                                                <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
-                                                            </td>
-                                                        </tr>
-
-
-                                                    </tbody>
-                                                    <tfoot>
-                                                        <tr>
-                                                            <td colspan="7" class="bg-light add-field-1 cursor-pointer">
-                                                                <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add A Vehicle</span></span>
-                                                            </td>
-                                                        </tr>
-                                                    </tfoot>
-                                                </table>
-                                            </div>
-                                        </div>
                                         <div class="col-12 d-flex justify-content-end pt-4">
                                             <button type="button" class="btn btn-outline-dark waves-effect waves-light mr-3 d-none">
                                                 <i class="bx bx-x font-size-16 align-middle me-2"></i> Clear Form
                                             </button>
                                             
                                             <button type="button" class="btn btn-primary waves-effect waves-light w-100">
-                                                <i class="bx bx-check-double font-size-16 align-middle me-2"></i> Add Sacco/Sub Group
+                                                <i class="bx bx-check-double font-size-16 align-middle me-2"></i> Add Property
                                             </button>
                                         </div>
                                     </div>
