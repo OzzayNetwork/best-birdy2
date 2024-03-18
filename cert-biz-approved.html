@@ -649,13 +649,14 @@
                                 <div class="card-body">
                                     <div class="table-responsive ">
 
-                                        <table class="table align-middle table-hover  contacts-table table-striped "
-                                            id="datatable-buttons">
+                                        <table class="table align-middle table-hover  contacts-table table-striped text-nowrap" id="datatable-buttons">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th scope="col">Receipt No.</th>
                                                     <th scope="col">Business ID</th>
                                                     <th scope="col">Business Name</th>
+                                                    <th>Sub Category</th>
+                                                    <th>Sub County</th>
                                                     <th scope="col">Applicatio Date</th>
                                                     <th>Licensing Officer</th>
                                                     <th>Status</th>
@@ -670,6 +671,8 @@
                                                     <td class="text-capitalize text-nowrap">
                                                         <a href="">The Wire</a>
                                                     </td>
+                                                    <td>Transaport and Infrastructure</td>
+                                                    <td>Hoam Bay town</td>
                                                     <td class="text-capitalize text-nowrap">10 Jan 2022 <span
                                                             class="text-muted">10:56 PM</span>
                                                             (3 Days Ago)
@@ -703,19 +706,17 @@
                                                                     data-bs-toggle="dropdown" aria-haspopup="true">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </a>
-
+                                                                
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal"
                                                                         data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View Receipt(s)</a>
+                                                                    <a  data-bs-toggle="modal" data-bs-target=".edit-modal" class="dropdown-item " href="# ">
+                                                                        <i class="font-size-15 mdi mdi-file-document-edit me-3 "></i>Edit Business Details</a>
                                                                     <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                            class="font-size-15 bx bx-printer me-3 "></i>Print Certificate</a>
                                                                     <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
+                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Print Invoice</a>
 
                                                                 </div>
                                                             </div>
@@ -732,7 +733,7 @@
                                                    
 
 
-                                                    <th class="text-nowrap" colspan="4">23 Applications</th>
+                                                    <th class="text-nowrap" colspan="6">23 Applications</th>
                                                    
                                                     <td></td>
                                                    
@@ -1500,6 +1501,120 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- invoice details -->
+
+
+             <!-- edit modal -->
+             <div class="modal fade edit-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h5 class="modal-title" id="myLargeModalLabel">Edit Business Details</h5>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="row">
+
+
+                             <div class="col-4 mb-3">
+                                 <label for="">Business Name</label>
+                                 <input type="text" class="form-control" placeholder="Business name"
+                                     value="The Business" >
+                             </div>
+
+                             <div class="col-4 mb-3">
+                                 <label for="">Certt of Incoporation/ID No.</label>
+                                 <input type="text" class="form-control" placeholder="Business name" value="12345678" >
+                             </div>
+
+
+                             <div class="col-4 mb-3">
+                                 <label for="">Owner's Full Names</label>
+                                 <input type="text" class="form-control" placeholder="Business name" value="Kelvin Njuguna Ndungu">
+                             </div>
+
+
+                             <div class="col-4 mb-3">
+                                 <label for="">Owner's Phone</label>
+                                 <input type="text" class="form-control" placeholder="Business name"
+                                     value="0704549859" >
+                             </div>
+
+                             <div class="col-4 mb-3">
+                                 <label for="">Postal Address</label>
+                                 <input type="text" class="form-control" placeholder="Business name"
+                                     value="123-067 Nakuru" >
+                             </div>
+
+                             <div class="col-4 mb-3">
+                                <label for="">Plot No.</label>
+                                <input type="text" class="form-control" placeholder="Plot No."
+                                    value="123/123/BLOCK HB 120" >
+                            </div>
+
+                            <div class="col-4 mb-3">
+                                <label for="">Year</label>
+                                <select class="form-control bg-white" title="Select Sub County"
+                                    data-live-search="true">
+                                    <option value="[object Object]" selected >2023</option>
+                                    <option value="[object Object]">2024</option>
+                                   
+                                </select>
+                            </div>
+
+                            <div class="col-4 mb-3">
+                                <label for="">Sub County</label>
+                                <select class="form-control bg-white" title="Select Sub County"
+                                    data-live-search="true">
+                                    <option value="[object Object]" selected >Sub county 1</option>
+                                    <option value="[object Object]">Sub County 2</option>
+                                   
+                                </select>
+                            </div>
+
+                            <div class="col-4 mb-3">
+                                <label for="">Ward</label>
+                                <select class="form-control bg-white" title="Select Sub County"
+                                    data-live-search="true">
+                                    <option value="[object Object]" selected >Ward 1</option>
+                                    <option value="[object Object]">Ward 2</option>
+                                   
+                                </select>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="">Physical Address</label>
+                                <input type="text " class="form-control" placeholder="Inputed " value="Besides Tumaini Suoermarket" >
+                            </div>
+
+                            <div class="col-6 mb-3">
+                                <label for="">Business Category</label>
+                                <input type="text " class="form-control" placeholder="Inputed " value="Transport and Communications" disabled >
+                            </div>
+
+                            <div class="col-6 mb-3">
+                                <label for="">Business Sub Category</label>
+                                <input type="text " class="form-control" placeholder="Inputed " value="Matatu with 12 Members" disabled >
+                            </div>
+                         </div>
+                     </div>
+
+                     <div class="modal-footer">
+                         <button
+                             class="btn btn-success text-center d-flex w-100 align-items-center justify-content-center">
+                             Save Changes
+                         </button>
+                     </div>
+
+                 </div>
+                 <!-- /.modal-content -->
+             </div>
+             <!-- /.modal-dialog -->
+         </div>
+         <!-- end of edit modal -->
+
+
+
 
             <footer class="footer ">
                 <div class="container-fluid ">
