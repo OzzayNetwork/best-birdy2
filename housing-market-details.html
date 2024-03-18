@@ -560,9 +560,9 @@
                                     </h4>
                                     <div class="d-flex">
                                         
-                                        <button data-bs-toggle="modal" data-bs-target=".add-plot-modal" type="button" class="btn btn-success text-uppercase dropdown-toggle option-selector me-3">
+                                        <a href="housing-new-unit.html" type="button" class="btn btn-success text-uppercase dropdown-toggle option-selector me-3">
                                             <i class="bx bx-plus font-size-16"></i> <span class="pl-1 d-md-inline">Add Unit</span>
-                                        </button>
+                                        </a>
 
                                        
 
@@ -667,7 +667,7 @@
     
                                                             <div class="dropdown-menu dropdown-menu-end">
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".vaccate-modal"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Vacate Unit</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#payment-modal" ><i class="font-size-15 mdi mdi mdi-receipt me-3"></i>Bill Client</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#payment-modal " ><i class="font-size-15 mdi mdi mdi-receipt me-3"></i>Bill Client</a>
                                                                 <a class="dropdown-item" href="housing-marlet-details-rental-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Statements</a>
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".edit-modal"><i class="font-size-15 mdi mdi-file-document-edit me-3"></i>Edit</a>
                                                                 <a class="dropdown-item" href="housing-market-details-history.html" data-toggle="modal" data-target=".send-sms-modal"><i class="font-size-15 mdi mdi-chat-processing me-3"></i>Tenancy History</a>
@@ -700,7 +700,7 @@
     
                                                             <div class="dropdown-menu dropdown-menu-end">
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".vaccate-modal"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Vacate Unit</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#payment-modal" ><i class="font-size-15 mdi mdi mdi-receipt me-3"></i>Bill Client</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#tenant-modal" ><i class="font-size-15 mdi mdi mdi-receipt me-3"></i>Assign Tenant</a>
                                                                 <a class="dropdown-item" href="housing-marlet-details-rental-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Statements</a>
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".edit-modal"><i class="font-size-15 mdi mdi-file-document-edit me-3"></i>Edit</a>
                                                                 <a class="dropdown-item" href="housing-market-details-history.html" data-toggle="modal" data-target=".send-sms-modal"><i class="font-size-15 mdi mdi-chat-processing me-3"></i>Tenancy History</a>
@@ -1403,6 +1403,74 @@
                 </div>
             </div>
             <!-- editing modal -->
+
+            <!-- assigning tenant modal -->
+            <div class="modal fade edit-modal" id="tenant-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title text-capitalize" id="exampleModalLongTitle">Assign tenant for Unit Number 123/HMB/879</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body steps-container">
+                        <div class="row the-step biz-info active">
+                            <div class="col-12 mb-3">
+                                <label for="">Tenant's Full Names</label>
+                                <input type="text" class="form-control" placeholder="Enter Tenant's Full Names">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="">Tenant's ID Number</label>
+                                <input type="text" class="form-control" placeholder="Enter ID Number">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="">Phone Number</label>
+                                <input type="text" class="form-control" placeholder="Enter Phone Number">
+                            </div>
+
+                        </div>
+    
+                        <div class="row the-step biz-additional-info d-none">
+                            <div class="col-12">
+                                <div class="alert alert-warning" role="alert">
+                                    You are changing something that needs two OTPs, which I sent to the first and second approver. You need to get the OTPs from them and enter them in order, because if you enter them wrong, you can't continue. You also need to enter them exactly as they are, without any spaces or punctuation marks. Thank you for your cooperation.
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="">First Approver</label>
+                               <input class="form-control " placeholder="Enter OTP">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="">Second Approver</label>
+                               <input class="form-control " placeholder="Enter OTP">
+                            </div>
+
+                        </div>
+    
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex modal-next-prev-container">
+                            <button type="button" class="btn btn-outline-secondary btn-prev waves-effect waves-effect waves-light me-3">
+                                <i class="bx bx-left-arrow-alt font-size-16 align-middle me-2"></i> Previouse
+                            </button>
+    
+                            <button type="button" class="btn btn-primary waves-effect waves-effect waves-light btn-next">
+                                Next <i class="bx bx-right-arrow-alt font-size-16 align-middle me-2"></i>
+                            </button>
+    
+                            <button type="button" class="btn btn-submit btn-success d-none ml-3 ms-3 waves-effect waves-effect waves-light btn-next">
+                                <i class="bx bx-check-double font-size-16 align-middle me-2"></i> Finish 
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- end of assigning tenant modal -->
 
            
 
