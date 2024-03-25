@@ -919,6 +919,21 @@ $(function () {
   $('.btn-send').on('click', function(){
     $('.transaction-summary').addClass('d-none')
     $('.loader-panel').removeClass('d-none')
+    $('#payment-modal .close-modal').addClass('d-none')
+    // $('.new-alcohol-application').modal("close")
+
+    // closing the invoicing modal
+    $('.new-alcohol-application .btn-close').click()
+
+    // closing loader
+    setTimeout(function() {
+        $('.loader-panel').addClass('d-none')
+        $('.sent-success').removeClass('d-none')
+        $('#payment-modal .close-modal').removeClass('d-none')
+        }, 4000); // 4000 milliseconds = 4 seconds
+
+
+    $('.modal-footer-btn-pay').addClass('d-none')
     $('.bill-modal-footer').addClass('d-none')
   })
 
@@ -965,8 +980,10 @@ $('.generate-invoice-btn').on('click', function(e){
    setTimeout(function() {
     $('.billing-receipting-loader').addClass('d-none')
     $('.generated-invoice').removeClass('d-none')
-}, 4000); // 4000 milliseconds = 4 seconds
+    }, 4000); // 4000 milliseconds = 4 seconds
 })
+
+
 
 
 //   the highlights slider
