@@ -622,7 +622,7 @@
                                     <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
                                         
 
-                                        <label class="text-nowrap mb-0 mx-2">Business Category:</label>
+                                        <label class="text-nowrap mb-0 mx-2">Licence Category:</label>
                                         <select class="form-select" title="Select Subcounty">
                                             <option>All Categories</option>
                                             <option>Category One</option>
@@ -630,7 +630,7 @@
                                             <option>...</option>
                                         </select>
 
-                                        <label class="text-nowrap mb-0 mx-2">Sub Category:</label>
+                                        <label class="text-nowrap mb-0 mx-2">Licence Sub Category:</label>
                                         <select class="form-select" title="Select Subcounty">
                                             <option>All Sub Categories</option>
                                             <option>Sub Category 1</option>
@@ -708,8 +708,9 @@
                                                     <th scope="col">Business</th>
                                                     <th scope="col">Applicant</th>
                                                     <th scope="col">Phone</th>
-                                                    <th scope="col">Business Sub Category</th>
-                                                   
+                                                    <!-- kindly note the licence sub category will be picked during insopection to be displayed here as opposed to showiing the business sub category -->
+                                                    <th scope="col">Licence Sub Category</th>
+                                                    <th scope="col">Application Duration</th>
                                                     <th scope="col">Sub County</th>
                                                     <th>Date Inspected</th>
                                                     <th>Date Paid</th>
@@ -731,7 +732,7 @@
                                                     <td class="text-capitalize text-nowrap">
                                                         <a href="">Bars and Resturants</a>
                                                     </td>
-                                                    
+                                                    <td>12 Months</td>
                                                     <td>Mwea Sub County</td>
                                                     <td>12 Dec 2023 12:45 AM</td>
                                                     <td>22 Dec 2023 10:12 AM</td>
@@ -772,7 +773,7 @@
                                             <tfoot class="table-dark">
                                                 <tr>
 
-                                                    <th colspan="9">
+                                                    <th colspan="10">
                                                         23 Applications
                                                     </th>
 
@@ -1508,8 +1509,9 @@
                                                     </div>
                                                     <div class="event-down-icon">
                                                         <i
-                                                        class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
+                                                            class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
                                                     </div>
+
 
                                                     <div class="mt-3 px-3">
                                                         <p class="text-muted text-capitalize"><a
@@ -1528,8 +1530,9 @@
                                                     </div>
                                                     <div class="event-down-icon">
                                                         <i
-                                                            class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
+                                                            class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
                                                     </div>
+
 
                                                     <div class="mt-3 px-3">
                                                         <p class="text-muted text-capitalize"><a
@@ -1877,6 +1880,60 @@
 
                                         <div class="col-12 mt-4">
                                             <div class="bg-warning bg-soft border-2  p-2 mb-4 d-flex align-items-center text-black">
+                                                <i class="mdi mdi-fountain-pen-tip font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0 text-uppercase">Licence Application Details</p>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                    
+                                                    <tbody>
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Date Inspected</p>
+                                                            </td>
+                                                            <td class="">12 Jan 2024 12:56 AM (22 Days Ago)</td>
+                                                            
+
+                                                        </tr>
+
+
+
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Licence Category</p>
+                                                            </td>
+                                                            <td class="">General Retail License </td>
+                                                            
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Licence Sub Category</p>
+                                                            </td>
+                                                            <td class="">(6 months) Off License  Urban areas</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Licence Duration</p>
+                                                            </td>
+                                                            <td class="">6 Months</td>
+                                                        </tr>                                                       
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-warning bg-soft border-2  p-2 mb-4 d-flex align-items-center text-black">
                                                 <i class="bx bx-search-alt font-28 mr-15px"></i>
                                                 <p class="fw-semibold mb-0 pb-0 text-uppercase">Inspection Notes</p>
 
@@ -1902,17 +1959,17 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-7 mb-3">
+                                        <div class="col-12 mb-3">
                                             <div class="row">
-                                                <div class="col-12">
-                                                    <div>
-                                                        <label class="mb-0">Minutes Number</label>
+                                                <div class="col-6">
+                                                    <div class="mb-3">
+                                                        <label class="">Minutes Number</label>
                                                         <input type="" class="form-control" placeholder="Enter Minutes Number" name="" value="">
                                                     </div>
                                                 </div>
 
-                                                <div class="col-sm-12">                                                        
-                                                    <div class="mt-3">
+                                                <div class="col-6">                                                        
+                                                    <div class="mb-3">
                                                         <label for="formFile" class="form-label">Upload Minutes</label>
                                                         <input class="form-control" type="file" id="formFile" placeholder="Select the Minutes File">
                                                     </div>
@@ -1921,43 +1978,88 @@
                                                 <div class="col-xl-12 col-sm-12 text-capitalize">
                                                     <div class="mt-4">
                                                         <h5 class="font-size-14 mb-2">Was this Application approved?</h5>
-                                                        <div class="form-check mb-3">
-                                                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked="">
-                                                            <label class="form-check-label" for="formRadios1">
-                                                                Yes, It was approved
-                                                            </label>
+                                                        <div class="d-flex">
+                                                            <div class="form-check mb-3">
+                                                                <input class="form-check-input" type="radio" name="application-confirmation" id="confirm-yes" value="yes" checked="">
+                                                                <label class="form-check-label" for="confirm-yes">
+                                                                    Yes, It was approved
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check mx-4">
+                                                                <input class="form-check-input" type="radio" name="application-confirmation" id="confirm-no" value="No">
+                                                                <label class="form-check-label" for="confirm-no">
+                                                                    No it was declined
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios2">
-                                                            <label class="form-check-label" for="formRadios2">
-                                                                No it was declined
-                                                            </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="row approved-applications d-none ">
+                                                        <div class="col-12">
+                                                            <div class="mb-4 mt-2">
+                                                                <div class="alert alert-secondary border-2 border-primary" role="alert">
+                                                                    <h6 class="fw-semibold text-black text-uppercase">Confirmation of Applicant Eligibility</h6>
+                                                                    <p>
+                                                                        Check the box below to confirm that the applicant is eligible to proceed with payment for the license processing, having met the requirements as stipulated by the <strong class="fw-semibold text-black">Alcoholic Drinks Control Act</strong>.
+                                                                     </p>
+                                                                    <hr>
+                                                                    <p class="mb-0"><div class="form-check mb-3 fw-semibold text-black">
+                                                                        <input class="form-check-input" type="checkbox" id="eligibility-check">
+                                                                        <label class="form-check-label" for="eligibility-check">
+                                                                            Confirm Applicant Eligibility under Alcoholic Drinks Control Act
+                                                                        </label>
+                                                                    </div></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <div>
+                                                                <div class="d-flex flex-column">
+                                                                    <label class="mb-0">Commitee Review Notes</label>
+                                                                    <small class="mb-3">Write below some key notes that were made during the review</small>
+                                                                </div>
+                                                                <textarea name="" id="" cols="30" rows="5" class="form-control mb-2" placeholder="Enter your Remarks" spellcheck="false" data-ms-editor="true"></textarea>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+
+                                                        <div class="mt-3">
+                                                            <button target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn text-uppercase" disabled>
+                                                                <i class="mdi mdi-sticker-check-outline font-size-16 align-middle me-2"></i> Approve APplication
+                                                            </button>
+                                                        </div>
+                
+                                                    </div>
+                                                    <div class="row declined-applications d-none">
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <div class="d-flex flex-column">
+                                                                    <label class="mb-0">Enter Reasons for rejecting this application</label>
+                                                                    <small class="mb-3">Please write below the reasons for rejecting this application</small>
+                                                                </div>
+                                                                <textarea name="" id="" cols="30" rows="5" class="form-control mb-2" placeholder="Enter the reasons" spellcheck="false" data-ms-editor="true"></textarea>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="mt-3">
+                                                            <button target="_blank" type="button" class="btn btn-danger waves-effect waves-light w-100 generate-invoice-btn text-uppercase" disabled>
+                                                                <i class="bx bx-x font-size-16 align-middle me-2"></i> Decline Application
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col-5 mb-3">
-                                            <div>
-                                                <div class="d-flex flex-column">
-                                                    <label class="mb-0">Court Review Notes</label>
-                                                   
-                                                </div>
-                                                <textarea name="" id="" cols="30" rows="5" class="form-control mb-2" placeholder="Enter your Remarks" spellcheck="false" data-ms-editor="true"></textarea>
-                                                <small class="mb-3">Write below some key notes that were made during the review</small>
-                                            </div>
-                                            
-                                        </div>
+                                      
 
                                       
 
-                                        <div class="mt-3">
-                                            <button target="_blank" type="button" class="btn btn-primary waves-effect waves-light w-100 generate-invoice-btn text-uppercase">
-                                                Submit
-                                            </button>
-                                        </div>
-
+                                       
                                        
                                     </div>
                                 </div>
