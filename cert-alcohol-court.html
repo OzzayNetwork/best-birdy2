@@ -1980,7 +1980,7 @@
                                                         <h5 class="font-size-14 mb-2">Was this Application approved?</h5>
                                                         <div class="d-flex">
                                                             <div class="form-check mb-3">
-                                                                <input class="form-check-input" type="radio" name="application-confirmation" id="confirm-yes" value="yes" checked="">
+                                                                <input class="form-check-input" type="radio" name="application-confirmation" id="confirm-yes" value="yes">
                                                                 <label class="form-check-label" for="confirm-yes">
                                                                     Yes, It was approved
                                                                 </label>
@@ -2027,7 +2027,7 @@
                                                         </div>
 
                                                         <div class="mt-3">
-                                                            <button target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn text-uppercase" disabled>
+                                                            <button target="_blank" type="button" class="btn btn-approve btn-success waves-effect waves-light w-100 generate-invoice-btn text-uppercase" disabled>
                                                                 <i class="mdi mdi-sticker-check-outline font-size-16 align-middle me-2"></i> Approve APplication
                                                             </button>
                                                         </div>
@@ -2040,13 +2040,13 @@
                                                                     <label class="mb-0">Enter Reasons for rejecting this application</label>
                                                                     <small class="mb-3">Please write below the reasons for rejecting this application</small>
                                                                 </div>
-                                                                <textarea name="" id="" cols="30" rows="5" class="form-control mb-2" placeholder="Enter the reasons" spellcheck="false" data-ms-editor="true"></textarea>
+                                                                <textarea name="" id="" cols="30" rows="5" class="form-control mb-2 text-decline" placeholder="Enter the reasons" spellcheck="false" data-ms-editor="true"></textarea>
                                                                 
                                                             </div>
                                                             
                                                         </div>
                                                         <div class="mt-3">
-                                                            <button target="_blank" type="button" class="btn btn-danger waves-effect waves-light w-100 generate-invoice-btn text-uppercase" disabled>
+                                                            <button target="_blank" type="button" class="btn btn-decline btn-danger waves-effect waves-light w-100 generate-invoice-btn text-uppercase" disabled>
                                                                 <i class="bx bx-x font-size-16 align-middle me-2"></i> Decline Application
                                                             </button>
                                                         </div>
@@ -2180,6 +2180,47 @@
      <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8&callback=initMap ">
      </script>
      <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8&callback=initMap&libraries=places&v=weekly " defer>
+     </script>
+
+     <script>
+        $("body").on('change', '[name="application-confirmation"]', function() {
+            var theVal = $(this).val();
+            if (theVal == "yes") {
+                // alert('checked');
+                $('.approved-applications').removeClass('d-none').siblings().addClass("d-none")
+            }
+            if (theVal == "No") {
+                // alert('checked');
+                $('.declined-applications').removeClass('d-none').siblings().addClass("d-none")
+            }
+
+        });
+
+        $("body").on('change', '#eligibility-check', function() {
+            if ($(this).prop('checked')) {
+                $(".btn-approve").prop('disabled', false)
+            } else {
+                $(".btn-approve").prop('disabled', true)
+            }
+
+        });
+
+        $('.text-decline').keyup(function(){
+            var theVal=$(this).text()
+
+            var inputLength = $(this).val().length;
+            if (inputLength > 10) {
+                // Your code to run if the number of characters exceeds 10
+                $('.btn-decline').prop('disabled', false)
+            }
+
+            if (inputLength < 11) {
+                // Your code to run if the number of characters exceeds 10
+                $('.btn-decline').prop('disabled', true)
+            }
+
+           
+        })
      </script>
 </body>
 
