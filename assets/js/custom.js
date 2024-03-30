@@ -924,6 +924,7 @@ $(function () {
 
     // closing the invoicing modal
     $('.new-alcohol-application .btn-close').click()
+    $('#receivePay .btn-close').click()
 
     // closing loader
     setTimeout(function() {

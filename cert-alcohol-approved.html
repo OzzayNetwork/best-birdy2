@@ -550,14 +550,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Approved Liquor License Applications</h4>
+                                <h4 class="mb-sm-0 font-size-18">Applications Awaiting Certification</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Certificates & Licenses</a></li>
                                         <li class="breadcrumb-item"><a href="#">Alcoholic Drinks Licences</a></li>
-                                        <li class="breadcrumb-item active">Approved Applications</li>
+                                        <li class="breadcrumb-item active">Awaiting Certification</li>
                                     </ol>
                                 </div>
 
@@ -586,7 +586,7 @@
                                                 <a class="nav-item nav-link" href="cert-alcohol-ongoing.html">Ongoing Applications</a>
                                                 <a class="nav-item nav-link" href="cert-alcohol-inspection.html">Pending Inspection</a>
                                                 <a class="nav-item nav-link" href="cert-alcohol-court.html">Pending Court Review</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-approved.html">Approved For Certification</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-approved.html">Awaiting Certification</a>
                                                 <a class="nav-item nav-link" href="cert-alcohol-declined.html">Declined </a>
                                                 <a class="nav-item nav-link" href="cert-alcohol-cert-invoices.html">Certificate Invoices</a>
                                                 <a class="nav-item nav-link" href="cert-alcohol-active.html">Active Certificates</a>
@@ -616,13 +616,13 @@
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
                                         role="toolbar">
                                         <h4 class="card-title mb-0 text-uppercase ">
-                                            APPROVED LIQUOR LICENSE APPLICATIONS
+                                            Applications Awaiting Certification
                                         </h4>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
                                         
 
-                                        <label class="text-nowrap mb-0 mx-2">Business Category:</label>
+                                        <label class="text-nowrap mb-0 mx-2">Licence Category:</label>
                                         <select class="form-select" title="Select Subcounty">
                                             <option>All Categories</option>
                                             <option>Category One</option>
@@ -630,7 +630,7 @@
                                             <option>...</option>
                                         </select>
 
-                                        <label class="text-nowrap mb-0 mx-2">Sub Category:</label>
+                                        <label class="text-nowrap mb-0 mx-2">Licence Sub Category:</label>
                                         <select class="form-select" title="Select Subcounty">
                                             <option>All Sub Categories</option>
                                             <option>Sub Category 1</option>
@@ -705,19 +705,19 @@
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th scope="col">Invoice NO.</th>
-                                                    <th scope="col">Business</th>
+                                                    <th scope="col">Establishment Name</th>
                                                     <th scope="col">Applicant</th>
                                                     <th scope="col">Phone</th>
-                                                    <th scope="col">Business Sub Category</th>
-                                                   
+                                                    <!-- kindly note the licence sub category will be picked during insopection to be displayed here as opposed to showiing the business sub category -->
+                                                    <th scope="col">Licence Sub Category</th>
+                                                    <th scope="col">Application Duration</th>
                                                     <th scope="col">Sub County</th>
                                                     <th>Date Inspected</th>
-                                                    <th>Date Paid</th>
-                                                   
+                                                    <th>Date Paid</th>                                                   
                                                     <th scope="col" class="text-right">Instalments</th>
-                                                    <th scope="col" class="text-right">Amount Paid</th>
-                                                    <th class="text-right">Invoiced By</th>
-                                                    <th>Receipted By</th>
+                                                    <th scope="col" class="text-right">Invoiced Amount</th>
+                                                    <th scope="col" class="text-right">Paid</th>
+                                                    <th scope="col" class="text-right">Pending</th>
                                                     <th>Inspected By</th>
                                                     <th></th>
                                                 </tr>
@@ -731,7 +731,7 @@
                                                     <td class="text-capitalize text-nowrap">
                                                         <a href="">Bars and Resturants</a>
                                                     </td>
-                                                    
+                                                    <td>12 Months</td>
                                                     <td>Mwea Sub County</td>
                                                     <td>12 Dec 2023 12:45 AM</td>
                                                     <td>22 Dec 2023 10:12 AM</td>
@@ -739,15 +739,14 @@
                                                    
                                                   
                                                     <td class="text-right">
-                                                        500.00
+                                                        5,500
                                                     </td>
-                                                    <td class="text-capitalize">Amos Weru</td>
+                                                    <td class="text-capitalize"> 0.00</td>
+                                                    <td class="text-capitalize"> 5,500</td>
                                                     <td class="text-capitalize">
                                                        kelvin Njuguna
                                                     </td>
-                                                    <td class="text-capitalize">
-                                                        Sammy Zayne
-                                                     </td>
+                                                   
                                                     <td>
                                                         <div class="d-flex justify-content-end align-items-center">
                                                             <button type="button"
@@ -763,27 +762,43 @@
                                                                 Invoice
                                                             </a>
 
+                                                            <button type="button"
+                                                            class="btn btn-warning text-black btn-sm waves-effect waves-light text-nowrap"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#receivePay"><i
+                                                                class="bx bx-send font-size-16 align-middle me-2"></i>
+                                                            Receive Payment</button>
+
                                                            
                                                         </div>
                                                     </td>
                                                 </tr>
 
                                             </tbody>
-                                            <tfoot class="table-dark">
+                                            <tfoot class="table-dark text-uppercase">
                                                 <tr>
 
-                                                    <th colspan="9">
-                                                        23 Applications
+                                                    <th colspan="10">
+                                                        23 Invoices
                                                     </th>
 
                                                     
                                                    
                                                     <th  class="text-right">
-                                                        500.00
+                                                        KES 58,000
                                                     </th>
 
+                                                    <th  class="text-right">
+                                                        KES 18,000
+                                                    </th>
+
+                                                    <th  class="text-right">
+                                                        KES 300,650
+                                                    </th>
+
+
                                                     
-                                                    <th colspan="4"></th>
+                                                    <th colspan="2"></th>
                                                 </tr>
 
                                             </tfoot>
@@ -799,6 +814,129 @@
                 <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
+
+              <!-- End of receipting modal -->
+              <div class="modal fade" id="receivePay" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Receive Payment for Invoice</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-bs-label="Close"></button>
+                    </div>
+                    <div class="modal-body receipt-billing-modal-body">
+                        <div class="billing-receipting-loader d-none">
+                            <div class="loader-modal p-5">
+                                <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
+                                    <div class="spinner-border text-dark m-1" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <p class="pt-4 fw-strong text-uppercase">Generating Invoice Please Wait</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- generated invoice results -->
+                        <div class="row generated-invoice">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <address>
+                                            <strong class="text-capitalize">Invoice Prepared for:</strong>
+                                            <br>Establishment Name: <span class="fw-semibold text-black">The Bar And Grill</span><br>
+                                           Phone: <span class="fw-semibold text-black">0704549859</span>
+                                           <br>
+                                            <br> Prepared on 2023-12-15 10:34:49 By Jane Waweru</address></div>
+                                </div>
+                               <div class="table-responsive">
+                                <table class="table table-nowrap vertical-align-middle table-bordered ">
+                                    <thead class="table-dark">
+                                        <tr class="vertical-align-middle">
+                                            <th style="width: 70px;">1.</th>
+                                            <th class="text-uppercase" colspan="3">
+                                                Invoice No:. <span class="fw-bold text-warning">BLL123456</span> 
+                                            </th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <thead class="bg-light">
+                                        <tr>
+                                            <th style="width: 70px;">No.</th>
+                                            <th colspan="2">Item Description (X QTY)</th>
+                                            <th class="text-end">Amount</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tfoot class="bg-light text-uppercase table-bordered">
+                                        <tr>
+                                            <td></td>
+                                            
+                                            <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                Invoice Sub Total
+                                            </td>
+                                            <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                KES 500
+                                            </td>
+                                           
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            
+                                            <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                Amount Paid
+                                            </td>
+                                            <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                KES 0.00
+                                            </td>
+                                           
+                                        </tr>
+
+                                        <tr class="table-success">
+                                            <td></td>
+                                            
+                                            <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                Total Payable
+                                            </td>
+                                            <td class="border-0 text-end text-right">
+                                                <h5 class="m-0 text-uppercase fw-bold">KES 500</h5>
+                                            </td>
+                                           
+                                        </tr>
+                                    </tfoot>
+                                    <tbody class="text-uppercase">
+                                        <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                            <td>01</td>
+                                            <td colspan="2">
+                                                <p class="mb-0 p-0 m-0">General Retail License (6 Month License)</p>
+                                            </td>
+                                            <td class="text-end text-right">KES 5,000</td>
+                                            
+                                        </tr>
+
+                                     
+
+
+
+                                        
+                                    </tbody>
+                                </table>
+                               </div>
+
+                               <div class="d-flex text-right justify-content-end align-self-end">
+                                <button type="button" data-toggle="modal" data-target="#payment-modal" class="btn btn-primary waves-effect btn-label waves-light fw-bold text-uppercase me-3">
+                                    <i class="mdi mdi-send label-icon"></i> Receipt Invoice
+                                </button>
+                                <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light fw-semibold text-uppercase" type="button"><i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Invoice</a> 
+                               </div>
+                            </div>
+                        </div>
+                        <!-- end of generated receipt results -->
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+            <!-- Application details modal -->
 
             <!-- Bill creation modal -->
             <div class="modal fade new-alcohol-application" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
@@ -1231,6 +1369,7 @@
             <!-- end of bill creation modal -->
 
             <!-- Receipting Modal -->
+
             <div class="modal fade" id="payment-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1461,9 +1600,7 @@
                 </div>
                 </div>
             </div>
-            <!-- End of receipting modal -->
-
-            <!-- Application details modal -->
+          
             <div class="modal fade receipting-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered modal-full">
@@ -1508,8 +1645,9 @@
                                                     </div>
                                                     <div class="event-down-icon">
                                                         <i
-                                                        class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
+                                                            class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
                                                     </div>
+
 
                                                     <div class="mt-3 px-3">
                                                         <p class="text-muted text-capitalize"><a
@@ -1528,8 +1666,9 @@
                                                     </div>
                                                     <div class="event-down-icon">
                                                         <i
-                                                            class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
+                                                            class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
                                                     </div>
+
 
                                                     <div class="mt-3 px-3">
                                                         <p class="text-muted text-capitalize"><a
@@ -1538,20 +1677,21 @@
                                                 </div>
                                             </div>
 
-                                            <div class="item event-list active">
+                                            <div class="item event-list">
                                                 <div>
                                                     <div class="event-date">
-                                                        <div class="text-primary mb-1">-</div>
-                                                        <h5 class="mb-4">court Review</h5>
+                                                        <div class="text-primary mb-1">13 Jan 2024 11:54 AM</div>
+                                                        <h5 class="mb-4">Approved</h5>
                                                     </div>
                                                     <div class="event-down-icon">
                                                         <i
-                                                        class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
+                                                            class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
                                                     </div>
 
                                                     <div class="mt-3 px-3">
                                                         <p class="text-muted text-capitalize"><a
-                                                                href="user-details.html">-</a></p>
+                                                                href="user-details.html">Derric Mtungati</a></p>
+                                                                <p class="text-muted text-capitalize mb-1"><a href="PrintDocs/Receipts/receipts-HOMabay county.html"><i class="bx bx-receipt"></i> Certificate Invoice</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1877,6 +2017,80 @@
 
                                         <div class="col-12 mt-4">
                                             <div class="bg-warning bg-soft border-2  p-2 mb-4 d-flex align-items-center text-black">
+                                                <i class="mdi mdi-fountain-pen-tip font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0 text-uppercase">Licence Application Details</p>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                    
+                                                    <tbody>
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Date Inspected</p>
+                                                            </td>
+                                                            <td class="">12 Jan 2024 12:56 AM (22 Days Ago)</td>
+                                                            
+
+                                                        </tr>
+
+
+
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Licence Category</p>
+                                                            </td>
+                                                            <td class="">General Retail License </td>
+                                                            
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Licence Sub Category</p>
+                                                            </td>
+                                                            <td class="">(6 months) Off License  Urban areas</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Licence Duration</p>
+                                                            </td>
+                                                            <td class="">6 Months</td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Date Approved for Invoicing</p>
+                                                            </td>
+                                                            <td class="text-uppercase">12 Jan 2024 11:23 AM</td>
+                                                        </tr> 
+                                                        
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Invoice Number</p>
+                                                            </td>
+                                                            <td><a href="PrintDocs/Bill/bill.html" target="new">BLL575758657</a></td>
+                                                        </tr> 
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Invoiced Amount</p>
+                                                            </td>
+                                                            <td class="text-uppercase">KES 5,600</td>
+                                                        </tr> 
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-warning bg-soft border-2  p-2 mb-4 d-flex align-items-center text-black">
                                                 <i class="bx bx-search-alt font-28 mr-15px"></i>
                                                 <p class="fw-semibold mb-0 pb-0 text-uppercase">Inspection Notes</p>
 
@@ -1895,69 +2109,55 @@
 
 
                                         <div class="col-12 mt-4">
-                                            <div class="bg-warning border-2  p-2 mb-4 d-flex align-items-center text-black">
+                                            <div class="bg-warning bg-light border-2  p-2 mb-4 d-flex align-items-center text-black">
                                                 <i class="mdi mdi-file-eye font-28 mr-15px"></i>
                                                 <p class="fw-semibold mb-0 pb-0 text-uppercase">Courte Review Outcome</p>
 
                                             </div>
                                         </div>
 
-                                        <div class="col-7 mb-3">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div>
-                                                        <label class="mb-0">Minutes Number</label>
-                                                        <input type="" class="form-control" placeholder="Enter Minutes Number" name="" value="">
-                                                    </div>
-                                                </div>
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                    
+                                                    <tbody>
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Approval Minutes Number</p>
+                                                            </td>
+                                                            <td class="">1234567</td>
+                                                            
 
-                                                <div class="col-sm-12">                                                        
-                                                    <div class="mt-3">
-                                                        <label for="formFile" class="form-label">Upload Minutes</label>
-                                                        <input class="form-control" type="file" id="formFile" placeholder="Select the Minutes File">
-                                                    </div>
-                                                </div>
+                                                        </tr>
 
-                                                <div class="col-xl-12 col-sm-12 text-capitalize">
-                                                    <div class="mt-4">
-                                                        <h5 class="font-size-14 mb-2">Was this Application approved?</h5>
-                                                        <div class="form-check mb-3">
-                                                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked="">
-                                                            <label class="form-check-label" for="formRadios1">
-                                                                Yes, It was approved
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios2">
-                                                            <label class="form-check-label" for="formRadios2">
-                                                                No it was declined
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Minutes Document</p>
+                                                            </td>
+                                                            <td><a href="PrintDocs/Bill/bill.html" target="new">BLL575758657</a></td>
+                                                        </tr>
+
+                                                       
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
 
-                                        <div class="col-5 mb-3">
-                                            <div>
-                                                <div class="d-flex flex-column">
-                                                    <label class="mb-0">Court Review Notes</label>
-                                                   
-                                                </div>
-                                                <textarea name="" id="" cols="30" rows="5" class="form-control mb-2" placeholder="Enter your Remarks" spellcheck="false" data-ms-editor="true"></textarea>
-                                                <small class="mb-3">Write below some key notes that were made during the review</small>
+                                        
+
+                                        
+
+                                        <div class="col-12">
+                                            <div class="alert alert-success" role="alert">
+                                                <h4 class="alert-heading">Approval Details</h4>
+                                                <p>This application is duly approved since the applicant met all the set standards.</p>
+                                                <hr>
+                                                <p class="mb-0 fw-semibold text-uppercase">Approved By Sammy Zayne</p>
                                             </div>
-                                            
                                         </div>
-
-                                      
-
-                                        <div class="mt-3">
-                                            <button target="_blank" type="button" class="btn btn-primary waves-effect waves-light w-100 generate-invoice-btn text-uppercase">
-                                                Submit
-                                            </button>
-                                        </div>
-
                                        
                                     </div>
                                 </div>
@@ -1978,6 +2178,10 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- end of application details modal -->
+
+            <!-- receive payment modal -->
+            
+            <!-- receive payment modal -->
 
             <footer class="footer ">
                 <div class="container-fluid ">
@@ -2078,6 +2282,47 @@
      <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8&callback=initMap ">
      </script>
      <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8&callback=initMap&libraries=places&v=weekly " defer>
+     </script>
+
+     <script>
+        $("body").on('change', '[name="application-confirmation"]', function() {
+            var theVal = $(this).val();
+            if (theVal == "yes") {
+                // alert('checked');
+                $('.approved-applications').removeClass('d-none').siblings().addClass("d-none")
+            }
+            if (theVal == "No") {
+                // alert('checked');
+                $('.declined-applications').removeClass('d-none').siblings().addClass("d-none")
+            }
+
+        });
+
+        $("body").on('change', '#eligibility-check', function() {
+            if ($(this).prop('checked')) {
+                $(".btn-approve").prop('disabled', false)
+            } else {
+                $(".btn-approve").prop('disabled', true)
+            }
+
+        });
+
+        $('.text-decline').keyup(function(){
+            var theVal=$(this).text()
+
+            var inputLength = $(this).val().length;
+            if (inputLength > 10) {
+                // Your code to run if the number of characters exceeds 10
+                $('.btn-decline').prop('disabled', false)
+            }
+
+            if (inputLength < 11) {
+                // Your code to run if the number of characters exceeds 10
+                $('.btn-decline').prop('disabled', true)
+            }
+
+           
+        })
      </script>
 </body>
 
