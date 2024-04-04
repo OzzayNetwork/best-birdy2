@@ -1478,5 +1478,8 @@ z-index: 3 !important;
 .font-size-21{
     font-size: 21px !important;
 }
+.verticle-middle{
+    vertical-align: center !important;
+}
 
 
