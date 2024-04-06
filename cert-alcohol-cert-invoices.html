@@ -550,14 +550,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Declined ALCOHOLIC DRINKS LICENCES Applications</h4>
+                                <h4 class="mb-sm-0 font-size-18">ALCOHOLIC DRINKS LICENCES Invoices</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Certificates & Licenses</a></li>
                                         <li class="breadcrumb-item"><a href="#">Alcoholic Drinks Licences</a></li>
-                                        <li class="breadcrumb-item active">Pending Review</li>
+                                        <li class="breadcrumb-item active">Invoices</li>
                                     </ol>
                                 </div>
 
@@ -615,19 +615,20 @@
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
                                         role="toolbar">
-                                        <h4 class="card-title mb-0 text-uppercase ">
-                                            Declined Applications
-                                        </h4>
+                                        <div class="btn-group text-uppercase" role="group" aria-label="Basic example">
+                                            <a href="cert-alcohol-cert-invoices.html" class="btn btn-outline-primary active" aria-current="page">Pending Invoices</a>
+                                            <a href="cert-alcohol-cert-invoices-paid.html" class="btn btn-outline-primary">Paid Invoices</a>                                           
+                                        </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
                                         
 
-                                        <label class="text-nowrap mb-0 mx-2">Licence Category:</label>
+                                        <label class="text-nowrap mb-0 mx-2">Invoice Type</label>
                                         <select class="form-select" title="Select Subcounty">
-                                            <option>All Categories</option>
-                                            <option>Category One</option>
-                                            <option>Category Two</option>
-                                            <option>...</option>
+                                            <option>All Invoices</option>
+                                            <option>Applications</option>
+                                            <option>Certification Invoices</option>
+                                           
                                         </select>
 
                                         <label class="text-nowrap mb-0 mx-2">Licence Sub Category:</label>
@@ -698,82 +699,372 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <div class="table-responsive text-nowrap">
-
-                                        <table class="table align-middle table-hover  contacts-table table-striped "
-                                            id="datatable-buttons">
+                                    <div class="table-responsive">
+                                        <table class="table align-middle table-hover contacts-table table-striped" id="datatable-buttons">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
-                                                    <th scope="col">Tracking NO.</th>
-                                                    <th scope="col">Business</th>
-                                                    <th scope="col">Applicant</th>
-                                                    <th scope="col">Phone</th>
-                                                    <!-- kindly note the licence sub category will be picked during insopection to be displayed here as opposed to showiing the business sub category -->
-                                                    <th scope="col">Licence Sub Category</th>
-                                                    <th scope="col">Application Duration</th>
-                                                    <th scope="col">Sub County</th>
-                                                    <th>Reason</th>
-                                                    <th>Date Inspected</th>
-                                                    <th>Date Declined</th>
-                                                    <th>Inspected By</th>
-                                                    <th>Declned By</th>
+                                                    <th class="text-nowrap" scope="col">NO.</th>
+                                                    <th class="text-nowrap" scope="col">Bill No</th>
+                                                    <th class="text-nowrap" scope="col">Establishment</th>
+                                                    <th class="text-nowrap" scope="col">Description</th>
+                                                    <th class="text-nowrap" scope="col">Sub County</th>
+                                                    <th class="text-nowrap" scope="col">Ward</th>
+                                                    <th class="text-nowrap" scope="col">Zone</th>
+                                                    <th class="text-nowrap" scope="col">Attendant</th>
+                                                    <th class="text-nowrap text-right" scope="col">Billed Amount</th>
+                                                    <th class="text-nowrap text-right" scope="col">Amount Paid</th>
+                                                    <th class="text-nowrap text-right" scope="col">Balance</th>
+                                                    <th class="text-nowrap" scope="col">Status</th>
+                                                    <th class="text-nowrap" scope="col">Date</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">AL001</td>
-                                                    <td class="text-capitalize text-nowrap">Big Boyz Club</td>
-                                                    <td class="text-capitalize text-nowrap">Amos Wadibo</td>
-                                                    <td class="text-capitalize text-nowrap">0702549859</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">Bars and Resturants</a>
-                                                    </td>
-                                                    <td>12 Months</td>
-                                                    <td>Mwea Sub County</td>
-                                                    <td>The Club is near a Primary School</td>
-                                                    <td>12 Dec 2023 12:45 AM</td>
-                                                    <td>22 Dec 2023 10:12 AM</td>
-                                                    <td>Cleo Tom</td>
-                                                   
-                                                  
-                                                   
-                                                    <td class="text-capitalize">
-                                                       kelvin Njuguna
-                                                    </td>
-                                                    
+                                                <tr value="[object Object]">
+                                                    <td class="text-capitalize text-nowrap">1</td>
+                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
+                                                    <td class="text-capitalize text-nowrap">Waridi Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">Alcoholic Licensce Application Fee</td>
+                                                    <td class="text-capitalize text-nowrap">RACHUONYO SOUTH</td>
+                                                    <td class="text-capitalize text-nowrap">SOUTH KASIPUL</td>
+                                                    <td class="text-capitalize text-nowrap">Oyugis Cattle Auction</td>
+                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;50.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;0.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;50.00</span></td>
                                                     <td>
-                                                        <div class="d-flex justify-content-end align-items-center">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
-                                                                <i
-                                                                    class="bx bx-receipt font-size-16 align-middle me-2"></i>
-                                                                Invoice
-                                                            </a>
-
-                                                           
+                                                        <!----><span class="badge badge-soft-danger text-uppercase">UNPAID</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">2024-04-05 13:00:42.650049</span></td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end"><button
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
+                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
+                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
+                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
+                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
+                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
+                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
+                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
+                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
+                                                            </div>
                                                         </div>
                                                     </td>
                                                 </tr>
-
+                                                <tr value="[object Object]">
+                                                    <td class="text-capitalize text-nowrap">2</td>
+                                                    <td class="text-capitalize text-nowrap">BLL0405010144146</td>
+                                                    <td class="text-capitalize text-nowrap">Waridi Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">Alcoholic Licensce Application Fee</td>
+                                                    <td class="text-capitalize text-nowrap">RACHUONYO SOUTH</td>
+                                                    <td class="text-capitalize text-nowrap">SOUTH KASIPUL</td>
+                                                    <td class="text-capitalize text-nowrap">Oyugis Cattle Auction</td>
+                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;50.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;0.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;50.00</span></td>
+                                                    <td>
+                                                        <!----><span class="badge badge-soft-danger text-uppercase">UNPAID</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">2024-04-05 13:00:42.525904</span></td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end"><button
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
+                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
+                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
+                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
+                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
+                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
+                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
+                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
+                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr value="[object Object]">
+                                                    <td class="text-capitalize text-nowrap">3</td>
+                                                    <td class="text-capitalize text-nowrap">BLL0405010137651</td>
+                                                    <td class="text-capitalize text-nowrap">Waridi Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">Alcoholic Licensce Application Fee</td>
+                                                    <td class="text-capitalize text-nowrap">HOMA BAY TOWN</td>
+                                                    <td class="text-capitalize text-nowrap">HOMA BAY CENTRAL</td>
+                                                    <td class="text-capitalize text-nowrap">Rodi cattle auction</td>
+                                                    <td class="text-capitalize text-nowrap">SHEILA AGOSA OTIENO</td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;100.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;0.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;100.00</span></td>
+                                                    <td>
+                                                        <!----><span class="badge badge-soft-danger text-uppercase">UNPAID</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">2024-04-05 13:00:36.035726</span></td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end"><button
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
+                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
+                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
+                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
+                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
+                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
+                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
+                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
+                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr value="[object Object]">
+                                                    <td class="text-capitalize text-nowrap">4</td>
+                                                    <td class="text-capitalize text-nowrap">BLL0405010134301</td>
+                                                    <td class="text-capitalize text-nowrap">Waridi Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">Alcoholic Licensce Application Fee</td>
+                                                    <td class="text-capitalize text-nowrap">RACHUONYO SOUTH</td>
+                                                    <td class="text-capitalize text-nowrap">SOUTH KASIPUL</td>
+                                                    <td class="text-capitalize text-nowrap">Oyugis Cattle Auction</td>
+                                                    <td class="text-capitalize text-nowrap">WILKISTA AWINO MINGUSA</td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;100.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;0.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;100.00</span></td>
+                                                    <td>
+                                                        <!----><span class="badge badge-soft-danger text-uppercase">UNPAID</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">2024-04-05 13:00:32.692975</span></td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end"><button
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
+                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
+                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
+                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
+                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
+                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
+                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
+                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
+                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr value="[object Object]">
+                                                    <td class="text-capitalize text-nowrap">5</td>
+                                                    <td class="text-capitalize text-nowrap">BLL0405010133890</td>
+                                                    <td class="text-capitalize text-nowrap">Waridi Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">MATATU/BUS PARK</td>
+                                                    <td class="text-capitalize text-nowrap">RANGWE</td>
+                                                    <td class="text-capitalize text-nowrap">EAST GEM</td>
+                                                    <td class="text-capitalize text-nowrap">RANGWE BARRIER</td>
+                                                    <td class="text-capitalize text-nowrap">Tom Opiyo Abok</td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;80.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;0.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;80.00</span></td>
+                                                    <td>
+                                                        <!----><span class="badge badge-soft-danger text-uppercase">UNPAID</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">2024-04-05 13:00:32.280516</span></td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end"><button
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
+                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
+                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
+                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
+                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
+                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
+                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
+                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
+                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr value="[object Object]">
+                                                    <td class="text-capitalize text-nowrap">6</td>
+                                                    <td class="text-capitalize text-nowrap">BLL0405010132239</td>
+                                                    <td class="text-capitalize text-nowrap">Waridi Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">Alcoholic Licensce Application Fee</td>
+                                                    <td class="text-capitalize text-nowrap">RACHUONYO SOUTH</td>
+                                                    <td class="text-capitalize text-nowrap">EAST KAMAGAK</td>
+                                                    <td class="text-capitalize text-nowrap">Oyugis market</td>
+                                                    <td class="text-capitalize text-nowrap">ROSEMARY AKINYI JOHN</td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;100.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;0.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;100.00</span></td>
+                                                    <td>
+                                                        <!----><span class="badge badge-soft-danger text-uppercase">UNPAID</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">2024-04-05 13:00:31.114928</span></td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end"><button
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
+                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
+                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
+                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
+                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
+                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
+                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
+                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
+                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr value="[object Object]">
+                                                    <td class="text-capitalize text-nowrap">7</td>
+                                                    <td class="text-capitalize text-nowrap">PKN040501012427</td>
+                                                    <td class="text-capitalize text-nowrap">Waridi Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">Whole Sale certificate</td>
+                                                    <td class="text-capitalize text-nowrap">NDHIWA</td>
+                                                    <td class="text-capitalize text-nowrap">KANYAMWA KOSEWE</td>
+                                                    <td class="text-capitalize text-nowrap">Mirogi market</td>
+                                                    <td class="text-capitalize text-nowrap">Bensone Were</td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;20.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;20.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;0.00</span></td>
+                                                    <td><span class="badge badge-soft-danger text-uppercase">UNPAID</span>
+                                                        <!---->
+                                                    </td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">2024-04-05 13:00:22.657372</span></td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end"><button
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
+                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
+                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
+                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
+                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
+                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
+                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
+                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
+                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr value="[object Object]">
+                                                    <td class="text-capitalize text-nowrap">8</td>
+                                                    <td class="text-capitalize text-nowrap">BLL0405010123608</td>
+                                                    <td class="text-capitalize text-nowrap">Waridi Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">Alcoholic Licensce Application Fee</td>
+                                                    <td class="text-capitalize text-nowrap">RACHUONYO SOUTH</td>
+                                                    <td class="text-capitalize text-nowrap">EAST KAMAGAK</td>
+                                                    <td class="text-capitalize text-nowrap">Oyugis market</td>
+                                                    <td class="text-capitalize text-nowrap">ROSEMARY AKINYI JOHN</td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;100.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;0.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;100.00</span></td>
+                                                    <td>
+                                                        <!----><span class="badge badge-soft-danger text-uppercase">UNPAID</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">2024-04-05 13:00:22.368252</span></td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end"><button
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
+                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
+                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
+                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
+                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
+                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
+                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
+                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
+                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr value="[object Object]">
+                                                    <td class="text-capitalize text-nowrap">9</td>
+                                                    <td class="text-capitalize text-nowrap">BLL0405010123173</td>
+                                                    <td class="text-capitalize text-nowrap">Waridi Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">Whole Sale certificate</td>
+                                                    <td class="text-capitalize text-nowrap">RACHUONYO SOUTH</td>
+                                                    <td class="text-capitalize text-nowrap">SOUTH KASIPUL</td>
+                                                    <td class="text-capitalize text-nowrap">Oyugis market</td>
+                                                    <td class="text-capitalize text-nowrap">MILLICENT ATIENO OSICHO</td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;50.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;50.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;0.00</span></td>
+                                                    <td><span class="badge badge-soft-danger text-uppercase">UNPAID</span>
+                                                        <!---->
+                                                    </td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">2024-04-05 13:00:22.368188</span></td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end"><button
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
+                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
+                                                                    data-bs-toggle="dropdown" role="button" aria-expanded="false"><i
+                                                                        class="bx bx-dots-vertical-rounded"></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end" style=""><a class="dropdown-item"
+                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
+                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
+                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
+                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
+                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
+                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr value="[object Object]">
+                                                    <td class="text-capitalize text-nowrap">10</td>
+                                                    <td class="text-capitalize text-nowrap">BLL0405010116820</td>
+                                                    <td class="text-capitalize text-nowrap">Waridi Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">Alcoholic Licensce Application Fee</td>
+                                                    <td class="text-capitalize text-nowrap">RACHUONYO SOUTH</td>
+                                                    <td class="text-capitalize text-nowrap">EAST KAMAGAK</td>
+                                                    <td class="text-capitalize text-nowrap">Oyugis market</td>
+                                                    <td class="text-capitalize text-nowrap">ROSEMARY AKINYI JOHN</td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;100.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;0.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;100.00</span></td>
+                                                    <td>
+                                                        <!----><span class="badge badge-soft-danger text-uppercase">UNPAID</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">2024-04-05 13:00:15.210807</span></td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end"><button
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
+                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
+                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
+                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
+                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
+                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
+                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
+                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
+                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
-
-                                                    <th colspan="13">
-                                                        23 Applications
-                                                    </th>
-                                                   
+                                                    <th class="text-nowrap text-right">10 Bills </th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;750.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;70.00</span></td>
+                                                    <td class="text-nowrap text-right"><span class="fw-semibold">KES&nbsp;680.00</span></td>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
                                                 </tr>
-
                                             </tfoot>
                                         </table>
+                                        <!---->
+                                        <!---->
                                     </div>
                                 </div>
                             </div>
