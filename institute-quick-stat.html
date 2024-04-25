@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Desk Birdy | Parking Quick Stats</title>
+    <title>Desk Birdy | Business Permits</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Rental management system by Nouveta LTD" name="description" />
     <meta content="Kelvin Njuguna" name="author" />
@@ -20,10 +20,6 @@
     <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
         type="text/css" />
-
-         <!-- // Add the new slick-theme.css if you want the default styling -->
-     <link rel="stylesheet" href="assets/libs/slick/slick.css"/>
-     <link rel="stylesheet" href="assets/libs/slick/slick-theme.css"/>
 
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -551,17 +547,17 @@
                 <div class="container-fluid">
 
                     <!-- start page title -->
-                    <div class="row ">
+                    <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">New Unit(s) Registration</h4>
+                                <h4 class="mb-sm-0 font-size-18">Fire Certificate Quick Stats</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Stall Rents</a></li>
-                                        <li class="breadcrumb-item"><a href="#">New Stall</a></li>
-                                       
+                                        <li class="breadcrumb-item"><a href="#">Certificates & Licenses</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Fire Certificates</a></li>
+                                        <li class="breadcrumb-item active">Quick Stats</li>
                                     </ol>
                                 </div>
 
@@ -570,285 +566,386 @@
                     </div>
                     <!-- end page title -->
 
-                    <!-- tool bar -->
-                    <div class="row">
-                        <div class="col-12 active">
-                            <div class="card active">
-                                <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
-                                    <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
-                                        <button
-                                            class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary"
-                                            type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                                            aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                                            aria-label="Toggle navigation">
-                                            <span class="mdi mdi-menu"></span>
-                                        </button>
-                                        <div class="collapse navbar-collapse justify-content-between active"
-                                            id="navbarNavAltMarkup">
-                                            <div class="navbar-nav">
-                                                <a class="nav-item nav-link" href="housing-quick-stat.html">Quick
-                                                    Stats</a>
-                                                <a class="nav-item nav-link" href="housing-register.html">Rentals
-                                                    Register</a>
-
+                  <!-- tool bar -->
+                  <div class="row">
+                    <div class="col-12 active">
+                        <div class="card active">
+                            <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
+                                <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
+                                    <button
+                                        class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary"
+                                        type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                                        aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="mdi mdi-menu"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse justify-content-between active"
+                                        id="navbarNavAltMarkup">
+                                        <div class="navbar-nav">
+                                                <a class="nav-item nav-link" href="cert-alcohol-stats.html">Quick Stats</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-ongoing.html">Ongoing Applications</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-inspection.html">Pending Inspection</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-court.html">Pending Court Review</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-approved.html">Awaiting Certification</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-declined.html">Declined </a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-cert-invoices.html">Invoices</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-active.html">Active Certificates</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-expired.html">Expired Certificates</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-map.html">Map View</a>
                                             </div>
 
+                                        <form class="form-inline my-2 my-lg-0">
+                                            <button type="button"  class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" data-toggle="modal" data-target=".new-alcohol-application">New Application</button>
+                                          </form>
+                                        
 
-                                        </div>
-                                    </nav>
-                                </div>
+                                    </div>
+                                </nav>
                             </div>
-
                         </div>
+
                     </div>
+                </div>
                     <!-- end of toolbar -->
                     <div class="row">
-                                             
-                        <div class="col-12 px-sm-30px">
+                        <div class="col-lg-12 px-sm-30px">
                             <div class="card">
-                                <div class="card-header">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h4 class="card-title mb-0 pb-0 text-uppercase">Add Units(s)</h4>
-                                        <div class="d-none">
-                                            <button data-toggle="modal" data-target="#new-category" class="btn btn-primary waves-effect waves-light"><i class="bx bx-list-plus font-size-16 align-middle me-2"></i> Add New Category</button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-md-3 col-sm-12 mb-3">
-                                            <div class="form-group">
-                                                <label for="">Property/Estate Name</label>
-                                                <input type="text" placeholder="Enter the Product Name" class="form-control" value="Homa Bay Modern Market" disabled>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-12 mb-3">
-                                            <div class="form-group">
-                                                <label for="subcounty">Sub-County</label>
-                                                <select class="selectpicker show-tick form-control" data-live-search="true" title="Select Sub-County" data-style="form-select btn border" id="subcounty" disabled>
-                                                    <option value="Igembe North" selected>Igembe North</option>
-                                                    <option value="Igembe Central">Igembe Central</option>
-                                                    <option value="Igembe South">Igembe South</option>
-                                                    <option value="Imenti North">Imenti North</option>
-                                                    <option value="Imenti South">Imenti South</option>
-                                                    <!-- Add more sub-counties here as needed -->
-                                                </select>
-                                            </div>
-                                        </div>
-                                        
-
-                                        <div class="col-md-3 col-sm-12 mb-3">
-                                            <div class="form-group">
-                                                <label for="ward">Ward</label>
-                                                <select class="selectpicker show-tick form-control" data-live-search="true" title="Select Ward" data-style="form-select btn border" id="ward" disabled>
-                                                    <option value="Imenti North">Imenti North</option>
-                                                    <option value="Imenti South" selected>The Ward</option>
-                                                    <option value="Igembe North">Igembe North</option>
-                                                    <option value="Igembe Central">Igembe Central</option>
-                                                    <option value="Igembe South">Igembe South</option>
-                                                    <!-- Add more wards here as needed -->
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-3 col-sm-12 mb-3">
-                                            <div class="form-group">
-                                                <label for="ward">Zone</label>
-                                                <select class="selectpicker show-tick form-control" data-live-search="true" title="Select Zone" data-style="form-select btn border" id="ward" disabled>
-                                                    <option value="Imenti North">Imenti North</option>
-                                                    <option value="Imenti South">Imenti South</option>
-                                                    <option value="Igembe North">Igembe North</option>
-                                                    <option value="Igembe Central">Igembe Central</option>
-                                                    <option value="Igembe South" selected>Kisauni Market</option>
-                                                    <!-- Add more wards here as needed -->
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                     
-
                                        
-                                        
-                                       
-
-                                        <div class="col-12">
-                                            <div class="bg-warning border-2 bg-soft p-4 mb-4 d-flex flex-column mt-3">
-                                               <div class="d-flex justify-content-between align-items-center">
-                                                    <h5 class="fw-semibold mb-0 text-uppercase">Update Unit(s)</h5>
-                                                    <div>
-                                                        <input class="form-control" type="file" id="formFile" placeholder="Upload File">
-                                                    </div>
-                                               </div>
-                                                <p class="mb-2 d-none">Enter details of member vehicles to the new Sacco/Sub Group</p>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="">
-                                                <table class="table table-editable-1 align-middle table-edits">
-                                                    <thead class="table-light">
-                                                        <tr class="text-uppercase table-dark">
-                                                            <th>#</th>
-                                                            <th>Unit No.</th>
-                                                            <th class="">Unit Category</th>
-                                                            <th class="">Monthly Rent</th>
-                                                            <th class="">Arrears</th>
-                                                            <th>Tenant</th>
-                                                            <th>ID No</th>
-                                                            <th>Phone NO.</th>
-                                                            <th></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr data-id="1">
-                                                            <td style="width: 80px">1.</td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Unit No." spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                            <td>
-                                                                <select class="form-control selectpicker form-select" data-live-search="true" title="Unit Category" data-style="form-select btn border">
-                                                                    <option value="Sedan">Sedan</option>
-                                                                    <option value="SUV">SUV</option>
-                                                                    <option value="Truck">Truck</option>
-                                                                    <option value="Motorcycle">Motorcycle</option>
-                                                                    <option value="Van">Van</option>
-                                                                    <!-- Add more vehicle categories here as needed -->
-                                                                </select>
-                                                                
-                                                            </td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Monthly Rent" spellcheck="false" data-ms-editor="true">
-                                                            </td>
-
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Outstanding Arrears" spellcheck="false" data-ms-editor="true">
-                                                            </td>
-
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Enter Full Names" spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="ID/PPT No." spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Phone No." spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                           
-
-                                                            <td></td>
-
-                                                        </tr>
-
-                                                        <tr class="cloneCharges d-none">
-                                                            <td style="width: 80px " class="categoryIndex ">#</td>
-
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Unit No" spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                            <td>
-                                                                <select class="form-control selectpicker form-select" data-live-search="true" title="Unit Category" data-style="form-select btn border">
-                                                                    <option value="Sedan">Sedan</option>
-                                                                    <option value="SUV">SUV</option>
-                                                                    <option value="Truck">Truck</option>
-                                                                    <option value="Motorcycle">Motorcycle</option>
-                                                                    <option value="Van">Van</option>
-                                                                    <!-- Add more vehicle categories here as needed -->
-                                                                </select>
-                                                                
-                                                            </td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Monthly Rent" spellcheck="false" data-ms-editor="true">
-                                                            </td>
-
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Outstanding Arrears" spellcheck="false" data-ms-editor="true">
-                                                            </td>
-
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Enter Full Names" spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="ID/PPT No." spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                            <td class="">
-                                                                <input type="text " class="form-control " placeholder="Phone No." spellcheck="false" data-ms-editor="true">
-                                                            </td>
-                                                           
-
-                                                            <td class="text-right cell-change d-flex align-items-center justify-content-end">
-                                                                <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
-                                                            </td>
-                                                        </tr>
-
-
-                                                    </tbody>
-                                                    <tfoot>
-                                                        <tr>
-                                                            <td colspan="9" class="bg-light add-field-1 cursor-pointer">
-                                                                <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add A Unit</span></span>
-                                                            </td>
-                                                        </tr>
-                                                    </tfoot>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 mb-3">
-                                            <div class="form-group">
-                                                <hr>
-                                                <label for="" class="fw-semibold text-primary text-uppercase">Select The Physical Address From the Map</label>
-                                                
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="">
-                                                <div class="card-header bg-white boarder-bottom-1 d-none">
-                                                    <div class="row d-flex justify-content-between">
-                                                        <div class="col-12">
-                                                            <div class="search-box mb-2 me-2">
-                                                                <div class="position-relative">
-                                                                    <input type="text" class="form-control bg-light border-light rounded map-searcher" id="pac-inpu" placeholder="Search for location">
-                                                                    <i class="bx bx-search-alt search-icon"></i>
-                                                                </div>
+                                        <div class="col-sm-12 align-self-center text-capitalize">
+                                            <div class="text-lg-left mt-4 mt-lg-0">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-info font-size-16">
+                                                                        <i class="mdi mdi-briefcase-edit text-white"></i>
+                                                                    </span>
                                                             </div>
+                                                            <p class="text-muted text-truncate mb-2">Identified Outlets</p>
+                                                            <h5 class="mb-0">2000</h5>
                                                         </div>
                                                     </div>
-                
-                                                </div>
-                                                <div class="" style="height: 350px;">
-                                                    <div id="map" class="w-100 mt-1 h-100 live-map-cont main-map-container"></div>
-                                                </div>
-                
-                                            </div>
-                
-                                            <div class="">
-                                                <div class="position-relative ">
-                                                    <!-- map serach input box -->
-                                                    <div class="form-group map-searcher mt-3 pt-3">
-                                                        <input type="text" class="form-control form-control-lg text-black" placeholder="Search for a location" id="pac-input">
-                                                        <button title="Clear search results" class="btn btn-transparent border-0 clear-map"><i class="mdi mdi-close d-none"></i></button>
+                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle font-size-16">
+                                                                        <i class="mdi mdi mdi-briefcase-check text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Pending Application Invoices</p>
+                                                            <h5 class="mb-0">1500</h5>
+                                                        </div>
                                                     </div>
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-pink font-size-16">
+                                                                        <i class="mdi mdi-progress-clock text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Ongoing Inspection</p>
+                                                            <h5 class="mb-0">180</h5>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-whatsApp font-size-16">
+                                                                        <i class="mdi mdi-progress-clock text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Pending Certification Invoices</p>
+                                                            <h5 class="mb-0">1320</h5>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-warning font-size-16">
+                                                                        <i class="mdi mdi-close text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Awaiting Approval</p>
+                                                            <h5 class="mb-0">22</h5>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-danger font-size-16">
+                                                                        <i class="mdi mdi-clock-alert text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Active Certificates</p>
+                                                            <h5 class="mb-0">48</h5>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
 
+                                      
 
-                                        <div class="col-12 d-flex justify-content-end pt-4">
-                                            <button type="button" class="btn btn-outline-dark waves-effect waves-light mr-3 d-none">
-                                                <i class="bx bx-x font-size-16 align-middle me-2"></i> Clear Form
-                                            </button>
-                                            
-                                            <button type="button" class="btn btn-primary waves-effect waves-light w-100 text-uppercase">
-                                                <i class="bx bx-check-double font-size-16 align-middle me-2"></i> Update Property/Estate
-                                            </button>
-                                        </div>
                                     </div>
-
+                                    <!-- end row -->
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-xl-12 px-sm-30px">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">Value of Pending Invoices</p>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                </div>
+
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-danger font-size-20">
+                                                        <i class="mdi mdi-account-cash"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="mb-0"> From 34 Businesses</p>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">Today's Collections</p>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                </div>
+
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                        <i class="mdi mdi-calendar-text-outline "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 18.89%</span> Target Margin</p>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">This Month's Collections</p>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                </div>
+
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                        <i class="mdi mdi-calendar-month-outline "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 8.41%</span> Target Margin</p>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">This Year's Collections</p>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                </div>
+
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                        <i class="mdi mdi-calendar-check-outline "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 8.41%</span> Target Margin</p>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                               
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-7 px-sm-30px">
+                            <div class="card">
+
+                                <div class="card-header bg-white border-bottom">
+                                    <div class="d-sm-flex flex-wrap">
+                                        <h4 class="card-title mb-4">Important Statistics</h4>
+                                        <div class="ms-auto">
+                                            <a href="javascript:void(0);" class="btn btn-primary"><i class="bx bx-plus align-middle"></i> Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-body">
+                                    
+                                    <div>
+                                        <div class="table-responsive font-12" style="height: 450px; overflow-y: auto;">
+                                            <table class="table table-striped table-sm font-12 verticle-middle">
+                                                <thead class="table-dark">
+                                                    <tr class="font-weight-bold">
+                                                        <th scope="col" rowspan="2">Sub County</th>
+                                                        <th colspan="2" >Identified Businesses</th>
+                                                        <th scope="col" class="text-right" colspan="2">Application Invoices</th>
+                                                        <th class="text-right" colspan="2">Certification Invoices</th>                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <th>SBPs</th>
+                                                        <th>Liqure Outlets</th>
+                                                        <th class="text-right">Pending</th>
+                                                        <th class="text-right">Paid</th>
+                                                        <th class="text-right">Pending</th>
+                                                        <th class="text-right">Paid</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RACHUONYO NORTH</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                            
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RACHUONYO EAST</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RACHUONYO SOUTH</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">SUBA NORTH</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RANGWE</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">HOMA BAY TOWN</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">NDHIWA</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">SUBA SOUTH</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+    
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">HOMA BAY HQ</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+    
+                                                    
+    
+                                                    
+                                                    <!-- Continue replacing ward names in the same manner for other rows -->
+    
+                                                    <tr class="table-dark">
+                                                        <th><strong>Total</strong></th>
+                                                        <th class="alcoholTxt">12</th>
+                                                        <th class="alcoholTxt">123</th>
+                                                        <td class="text-danger text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
+                                                        <td class="text-success text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
+                                                        <td class="text-danger text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
+                                                        <td class="text-success text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                        <div class="col-sm-12 col-md-5 px-sm-30px">
+                            <div class="card">
+
+                                <div class="card-header bg-white border-bottom">
+                                    <h4 class="card-title">Revenue Perfomance</h4>
+                                </div>
+                                
+                                <div class="card-body">
+                                    
+                                    <div id="revenuePerfomanceFire"></div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <!-- end row -->
@@ -1357,10 +1454,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46449.71551863634!2d36.67523836781685!3d-1.3353441122372378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0cb9ff59a4a3%3A0x4073419e11826405!2sOrbital%20Africa%20%7C%20Land%20%26%20Topo%20Survey%2C%20GPS%2C%20GPR%2C%20GIS%2C%20Mapping%2C%20Drones%2C%20Training%20%26%20Geospatial%20Solutions!5e0!3m2!1sen!2ske!4v1691859398886!5m2!1sen!2ske"
-                                                    width="100%" height="450" style="border:0;" allowfullscreen=""
-                                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46449.71551863634!2d36.67523836781685!3d-1.3353441122372378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0cb9ff59a4a3%3A0x4073419e11826405!2sOrbital%20Africa%20%7C%20Land%20%26%20Topo%20Survey%2C%20GPS%2C%20GPR%2C%20GIS%2C%20Mapping%2C%20Drones%2C%20Training%20%26%20Geospatial%20Solutions!5e0!3m2!1sen!2ske!4v1691859398886!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                             </div>
                                         </div>
                                     </div>
@@ -1521,6 +1615,437 @@
             </div>
             <!-- invoice details -->
 
+            <!-- Bill creation modal -->
+            <div class="modal fade new-alcohol-application" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header liq-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Alcoholic Drinks Licence New Application</h5>
+                           
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pb-4 searching-modal-body">
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="">Search or Input establishment details</label>
+                                    <select class="form-select liq-search-method" >
+                                        <option value="">Select Search Method</option>
+                                        <option value="search">Search from Existing Registered Businesses</option>
+                                        <option class="register">Unregestered Business</option>                                      
+                                    </select>
+
+                                   
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <!-- searching for an already registered business that has a valid certificate generated from the system -->
+                                <div class="col-12 business-id-search d-none">
+                                    <label for="">Search For Business To continue</label>
+                                    <div class="input-group mb-3">
+                                        
+                                        <input type="text" class="form-control" placeholder="Enter Business ID">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light search-bz-btn">
+                                            <i class="bx bx-search-alt-2 font-size-16 align-middle me-2"></i> Search
+                                        </button>
+                                      </div>
+
+                                      <!-- business serach results start here display only  when there are results to be shown -->
+                                      <div class="row pt-3">
+
+                                        <!-- use this loader when serching for the business -->
+                                        <div  class="searching-biz-loader d-none">
+                                            <div class="loader-modal p-5">
+                                                <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
+                                                    <div class="spinner-border text-dark m-1" role="status">
+                                                        <span class="sr-only fw-bold">Searching</span>
+                                                    </div>
+                                                    <p class="pt-4 fw-strong text-uppercase fw-bold">Please wait patiently while our system looks <br> for the business.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 biz-search-results d-none">
+                                            <table class="table table-sm text-uppercase table-striped">
+                                                <thead class="table-dark">
+                                                    <th colspan="2">Search Results for Business with <span class="text-warning">Business ID 1234</span></th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>
+                                                            Name of Establishment
+                                                        </th>
+                                                        <td>
+                                                            The big Palace Bar and Grill
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th>
+                                                            Sub County
+                                                        </th>
+                                                        <td>
+                                                            Rachuonyo South Subcounty
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th>
+                                                            Ward
+                                                        </th>
+                                                        <td>
+                                                            Name of the Ward
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th>
+                                                            Physical Address
+                                                        </th>
+                                                        <td>
+                                                            Next to the Big Super Market
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th>
+                                                            Building/Name of Premiscess
+                                                        </th>
+                                                        <td>
+                                                            The big Tower
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th>
+                                                            Postal Address
+                                                        </th>
+                                                        <td>
+                                                            123-100009 Eldoret
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th>
+                                                            Applicant's Name
+                                                        </th>
+                                                        <td>
+                                                            John Doe
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th>
+                                                            Phone Number
+                                                        </th>
+                                                        <td>
+                                                            0701234567
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th>
+                                                            Email Address
+                                                        </th>
+                                                        <td>
+                                                            email@mail.com
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <button  target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn">
+                                                        <i class="mdi mdi-checkbox-multiple-marked font-size-16 align-middle me-2"></i> Generate Invoice
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- use this for a search that has no results -->
+                                        <div class="col-12 no-results d-none">
+                                            <div class="p-4 border-radius border-solid border-primary border-2 d-flex flex-column align-items-center justify-content-center">
+                                                <div class="img mb-4 pt-3">
+                                                    <img src="assets/images/no-result-found-icon.svg" style="height: 65px;" class="img" alt="">
+                                                </div>
+                                                <div class="text-center">
+                                                    <h4 class="card-title text-uppercase text-dark">No results Found</h4>
+                                                    <p>
+                                                        The business ID you entered does not correspond to any registered business. Please try your search again <br> to find the desired results.</p>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                      </div>
+                                      <!-- end of business serach results -->
+                                </div>
+
+
+                                <!-- form for registering ann unregistered business -->
+                                <div class="col-12 unregistered-biz-cont d-none">
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label for="formrow-firstname-input" class="form-label">Name of Establishment</label>
+                                            <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter the Business Name" spellcheck="false" data-ms-editor="true">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-8">
+                                            <div class="row">
+
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="formrow-firstname-input" class="form-label">Name of Premices</label>
+                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Building Name" spellcheck="false" data-ms-editor="true">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12 col-md-6">
+                                                    <label class="text-nowrap">Sub County</label>
+                                                    <select class="form-select mb-3" title="Select Subcounty">
+                                                        <option>Homa Bay town</option>
+                                                        <option>Ndhiwa</option>
+                                                        <option>...</option>
+                                                    </select>            
+                                                </div>
+        
+                                                <div class="col-sm-12 col-md-6">
+                                                    <label class="text-nowrap">Ward</label>
+                                                    <select class="form-select mb-3" title="Select Subcounty">
+                                                        <option>Homa Bay town</option>
+                                                        <option>Ndhiwa</option>
+                                                        <option>...</option>
+                                                    </select>
+            
+                                                </div>
+        
+                                                <div class="col-sm-12 col-md-6">
+                                                    <label class="text-nowrap">Zone eg Market, </label>
+                                                    <select class="form-select mb-3" title="Select Subcounty">
+                                                        <option>Homa Bay town</option>
+                                                        <option>Ndhiwa</option>
+                                                        <option>...</option>
+                                                    </select>
+            
+                                                </div>
+
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="formrow-firstname-input" class="form-label">Applicant's Name</label>
+                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="eg John Doe" spellcheck="false" data-ms-editor="true">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="formrow-firstname-input" class="form-label">Applicant's Postal Address</label>
+                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="eg 123-001200 Nairobi" spellcheck="false" data-ms-editor="true">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                           <div class="row">
+                                                <div class="col-12">
+                                                    <div class="mb-3">
+                                                        <label for="formrow-firstname-input" class="form-label">Physical Address</label>
+                                                        <textarea placeholder="Enter the Business's Physical Address" class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                                                    </div> 
+                                                </div>
+                                           </div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="mb-3">
+                                                <label for="formrow-firstname-input" class="form-label">Appilicant's Phone</label>
+                                                <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter Phone Number" spellcheck="false" data-ms-editor="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="mb-3">
+                                                <label for="formrow-firstname-input" class="form-label">Appilicant's Email</label>
+                                                <input type="email" class="form-control" id="formrow-firstname-input" placeholder="email@email.com" spellcheck="false" data-ms-editor="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-3">
+                                            <h4 class="text-capitalize">Establishment's Physical location</h4>
+                                            <p>Select the address where this establishmnet is located from this map.</p>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="">
+                                                <div class="card-header bg-white boarder-bottom-1 d-none">
+                                                    <div class="row d-flex justify-content-between">
+                                                        <div class="col-12">
+                                                            <div class="search-box mb-2 me-2">
+                                                                <div class="position-relative">
+                                                                    <input type="text" class="form-control bg-light border-light rounded map-searcher" id="pac-inpu" placeholder="Search for location">
+                                                                    <i class="bx bx-search-alt search-icon"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                
+                                                </div>
+                                                <div class="" style="height: 350px;">
+                                                    <div id="map" class="w-100 mt-1 h-100 live-map-cont main-map-container"></div>
+                                                </div>
+                
+                                            </div>
+                
+                                            <div class="">
+                                                <div class="position-relative ">
+                                                    <!-- map serach input box -->
+                                                    <div class="form-group map-searcher mt-3 pt-3">
+                                                        <input type="text" class="form-control form-control-lg text-black" placeholder="Search for a location" id="pac-input">
+                                                        <button title="Clear search results" class="btn btn-transparent border-0 clear-map"><i class="mdi mdi-close d-none"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button  target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn">
+                                                <i class="mdi mdi-checkbox-multiple-marked font-size-16 align-middle me-2"></i> Generate Invoice
+                                            </button>
+                                        </div>
+                
+                                       
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- matters payment and billing starts here -->
+
+                        <div class="modal-body d-none receipt-billing-modal-body">
+                            <div class="billing-receipting-loader">
+                                <div class="loader-modal p-5">
+                                    <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
+                                        <div class="spinner-border text-dark m-1" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                        <p class="pt-4 fw-strong text-uppercase">Generating Invoice Please Wait</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- generated invoice results -->
+                            <div class="row generated-invoice d-none">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <address>
+                                                <strong class="text-capitalize">Invoice Prepared for:</strong>
+                                                <br>Establishment Name: <span class="fw-semibold text-black">The Bar And Grill</span><br>
+                                               Phone: <span class="fw-semibold text-black">0704549859</span>
+                                               <br>
+                                                <br> Prepared on 2023-12-15 10:34:49 By Jane Waweru</address></div>
+                                    </div>
+                                   <div class="table-responsive">
+                                    <table class="table table-nowrap vertical-align-middle table-bordered ">
+                                        <thead class="table-dark">
+                                            <tr class="vertical-align-middle">
+                                                <th style="width: 70px;">1.</th>
+                                                <th class="text-uppercase" colspan="3">
+                                                    Invoice No:. <span class="fw-bold text-warning">BLL123456</span> 
+                                                </th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <thead class="bg-light">
+                                            <tr>
+                                                <th style="width: 70px;">No.</th>
+                                                <th colspan="2">Item Description (X QTY)</th>
+                                                <th class="text-end">Amount</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tfoot class="bg-light text-uppercase table-bordered">
+                                            <tr>
+                                                <td></td>
+                                                
+                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                    Invoice Sub Total
+                                                </td>
+                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                    KES 500
+                                                </td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                
+                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                    Amount Paid
+                                                </td>
+                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                    KES 0.00
+                                                </td>
+                                               
+                                            </tr>
+
+                                            <tr class="table-success">
+                                                <td></td>
+                                                
+                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                    Total Payable
+                                                </td>
+                                                <td class="border-0 text-end text-right">
+                                                    <h5 class="m-0 text-uppercase fw-bold">KES 500</h5>
+                                                </td>
+                                               
+                                            </tr>
+                                        </tfoot>
+                                        <tbody class="text-uppercase">
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                <td>01</td>
+                                                <td colspan="2">
+                                                    <p class="mb-0 p-0 m-0"> ALCOHOLIC DRINKS LICENCE Application (X1)</p>
+                                                </td>
+                                                <td class="text-end text-right">KES 500</td>
+                                                
+                                            </tr>
+
+                                         
+
+
+
+                                            
+                                        </tbody>
+                                    </table>
+                                   </div>
+
+                                   <div class="d-flex text-right justify-content-end align-self-end">
+                                    <button type="button" data-toggle="modal" data-target="#payment-modal" class="btn btn-primary waves-effect btn-label waves-light fw-bold text-uppercase me-3">
+                                        <i class="mdi mdi-send label-icon"></i> Receipt Invoice
+                                    </button>
+                                    <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light fw-semibold text-uppercase" type="button"><i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Invoice</a> 
+                                   </div>
+                                </div>
+                            </div>
+                            <!-- end of generated receipt results -->
+                        </div>
+
+                        
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of bill creation modal -->
+
+
             <footer class="footer ">
                 <div class="container-fluid ">
                     <div class="row ">
@@ -1540,6 +2065,8 @@
         </div>
         <!-- end main content-->
 
+
+
     </div>
     <!-- END layout-wrapper -->
 
@@ -1549,11 +2076,11 @@
     <script src="assets/libs/jquery/jquery.min.js "></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
-        </script>
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
-        </script>
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+        crossorigin="anonymous "></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
     <script src="assets/libs/metismenu/metisMenu.min.js "></script>
     <script src="assets/libs/simplebar/simplebar.min.js "></script>
@@ -1599,334 +2126,98 @@
     <!-- timeline init js -->
     <script src="assets/js/pages/timeline.init.js"></script>
 
-    <!-- Application statuses -->
-    <script src="assets/js/pages/applicationStatuses.js"></script>
+     <!-- Application statuses -->
+     <script src="assets/js/pages/applicationStatuses.js"></script>
 
-    <!-- revenue perfomance -->
-    <script src="assets/js/pages/revenuePwerfomance.js"></script>
+     <!-- revenue perfomance -->
+     <script src="assets/js/pages/revenuePwerfomance.js"></script>
 
-    <!-- active vs expired certificats -->
-    <script src="assets/js/pages/expiredVsActiveCerts.js"></script>
-
-     <!-- Table Editable plugin -->
-     <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
-     <script src="assets/js/pages/table-editable.int.js"></script>
+     <!-- active vs expired certificats -->
+     <script src="assets/js/pages/expiredVsActiveCerts.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js "></script>
     <script src="assets/js/custom.js "></script>
 
-    <script src="assets/libs/slick/slick.min.js"></script>
-
-    <!-- //rentals vs other income sources for housing department -->
-
-    <script src="assets/js/live-map.js"></script>
-
-    <!-- axios to be used for geocoding -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js " integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin=" anonymous "></script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl3dCvpVQUs04SOTCHgITw4Ts79-dRcfI&callback=initMap ">
-    </script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl3dCvpVQUs04SOTCHgITw4Ts79-dRcfI&callback=initMap&libraries=places&v=weekly " defer>
-    </script>
-
-
-
-    <!-- Script to generate the chart -->
     <script>
-        // Function to generate a random value between min and max
-        function getRandomValue(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
+        // Your chart generation code will go here
+document.addEventListener('DOMContentLoaded', function () {
+    // Abbreviate months to three letters
+    function abbreviateMonth(month) {
+        return month.substring(0, 3);
+    }
+    
+    // Prepare the data
+    const data = [
+        ['Jul 2023', 50000, 60000, 55000], // [Month, Last Year, Target, Actual]
+        ['Aug 2023', 55000, 62000, 58000],
+        ['Sep 2023', 52000, 61000, 56000],
+        ['Oct 2023', 53000, 63000, 57000],
+        ['Nov 2023', 54000, 59000, 56000],
+        ['Dec 2023', 60000, 65000, 62000],
+        ['Jan 2024', 58000, 67000, 59000],
+        ['Feb 2024', 59000, 68000, 60000],
+        ['Mar 2024', 61000, 70000, 62000],
+        ['Apr 2024', 60000, 69000, 61000],
+        ['May 2024', 62000, 72000, 63000],
+        ['Jun 2024', 63000, 71000, 64000]
+    ];
 
-        // Function to generate revenue data
-        function generateRevenueData() {
-            const data = [{
-                name: 'Rentals',
-                y: getRandomValue(500000, 1000000),
-                drilldown: 'rentals'
-            }, {
-                name: 'Other Revenue Streams',
-                y: getRandomValue(500000, 1000000),
-                drilldown: 'others'
-            }];
-            return data;
-        }
-
-        // Function to generate drilldown data
-        function generateDrilldownData() {
-            const rentalsData = [
-                ['Oyugis Market', getRandomValue(500000, 1000000)],
-                ['Modern Market', getRandomValue(500000, 1000000)],
-                ['Mbita Market', getRandomValue(500000, 1000000)]
-            ];
-
-            const othersData = [
-                ['Site Value Rates', getRandomValue(500000, 1000000)],
-                ['Estate Development Fees', getRandomValue(500000, 1000000)],
-                ['Survey/Subdivision Fees', getRandomValue(500000, 1000000)],
-                ['Housing Development Fees', getRandomValue(500000, 1000000)]
-            ];
-
-            return {
-                rentals: rentalsData,
-                others: othersData
-            };
-        }
-
-        // Create the initial pie chart
-        const revenueChart = Highcharts.chart('revenueSources', {
-            chart: {
-                type: 'pie'
-            },
-            title: {
-                text: null
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: true,
-                        format: '<b>{point.name}</b>: {point.percentage:.1f} %'
-                    }
-                }
-            },
-            tooltip: {
-                pointFormat: '<b>{point.name}</b>: KES {point.y}'
-            },
-            series: [{
-                name: 'Collections',
-                colorByPoint: true,
-                data: generateRevenueData()
-            }],
-            drilldown: {
-                series: [{
-                    id: 'rentals',
-                    data: generateDrilldownData().rentals
-                }, {
-                    id: 'others',
-                    data: generateDrilldownData().others
-                }]
+    // Set the font family to Montserrat
+    Highcharts.setOptions({
+        chart: {
+            style: {
+                fontFamily: 'Montserrat, sans-serif'
             }
-        });
-
-        function resetDrillDown() {
-            revenueChart.options.drilldown.series.forEach(function (series) {
-                series.remove();
-            });
         }
+    });
 
-
-        $('.daily-rev-source').on('click', function () {
-            // alert("daily is clicked")
-            //write a code that changes data when daily navigation is clicked
-            revenueChart.options.drilldown.series.forEach(function (series) {
-                series.remove();
-            });
-
-            const dailyData = generateRevenueData();
-            revenueChart.series[0].setData(dailyData);
-        })
-
-        $('.weekly-rev-source').on('click', function () {
-            //alert("weekly is clicked")
-            //write a code that changes data when weekly navigation is clicked
-
-
-            const weeklyData = generateRevenueData();
-            revenueChart.series[0].setData(weeklyData);
-        })
-
-        $('.monthly-rev-source').on('click', function () {
-            //alert("weekly is clicked")
-            //write a code that changes data when weekly navigation is clicked
-
-
-            const monthlyData = generateRevenueData();
-            revenueChart.series[0].setData(monthlyData);
-        })
-
-        $('.year-rev-source').on('click', function () {
-            //alert("weekly is clicked")
-            //write a code that changes data when weekly navigation is clicked
-
-
-            const yearData = generateRevenueData();
-            revenueChart.series[0].setData(yearData);
-        })
-    </script>
-
-    <!-- script comparing weekly collections -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Abbreviate days of the week to three letters
-            function abbreviateDay(day) {
-                return day.substring(0, 3);
-            }
-    
-            // Prepare the data
-            const data = [
-                ['Mon', 5000, 5500, 5200], // [Day, Daily Target, Last Week, This Week]
-                ['Tue', 5200, 5800, 5400],
-                ['Wed', 5100, 5600, 5300],
-                ['Thu', 5300, 5900, 5500],
-                ['Fri', 5400, 6000, 5600],
-                ['Sat', 5500, 6100, 5700],
-                ['Sun', 5300, 5900, 5500]
-            ];
-    
-            // Set the font family to Montserrat
-            Highcharts.setOptions({
-                chart: {
-                    style: {
-                        fontFamily: 'Montserrat, sans-serif'
-                    },
-                    backgroundColor: 'transparent'
-                }
-            });
-    
-            // Create the weekly column chart
-            Highcharts.chart('weekly-rev', {
-                chart: {
-                    type: 'column'
-                },
-                title: {
-                    text: null
-                },
-                xAxis: {
-                    categories: data.map(item => abbreviateDay(item[0])),
-                    labels: {
-                        style: {
-                            color: 'white'
-                        }
-                    }
-                },
-                yAxis: {
-                    title: {
-                        text: 'Revenue (KES)',
-                        style: {
-                            color: 'white'
-                        }
-                    },
-                    labels: {
-                        style: {
-                            color: 'white'
-                        }
-                    },
-                    gridLineWidth: 1,
-                    gridLineColor: 'rgba(255, 255, 255, 0.5)',
-                    gridLineDashStyle: 'dot'
-                },
-                legend: {
-                    enabled: true,
-                    itemStyle: {
-                        color: 'white'
-                    }
-                },
-                tooltip: {
-                    shared: true,
-                    pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>KES {point.y}</b><br/>',
-                    backgroundColor: '#023382',
-                    style: {
-                        color: 'white'
-                    }
-                },
-                plotOptions: {
-                    column: { // Use column plot options
-                      
-                     
-                        borderWidth: 0,
-                        borderRadius: 0, // Remove border radius
-                        colors: ['#023382', '#FFA500', '#FFD700', '#FF4500'] // Set custom column colors
-                    }
-                },
-                series: [{
-                    name: 'Daily Target',
-                    data: data.map(item => item[1]),
-                    color:"#6CB8FF"
-                }, {
-                    name: 'Last Week',
-                    data: data.map(item => item[2]),
-                    color:"#3C9EFF"
-                }, {
-                    name: 'This Week',
-                    data: data.map(item => item[3]),
-                    color:"#FF4500"
-                }]
-            });
-        });
-    </script>
-
-    <!-- annual revenue collections by housing revenue streams -->
-    <script>
-        // Data for the chart
-const data = [
-    ['Jul 23', 80000, 120000, 90000, 70000, 95000],
-    ['Aug 23', 82000, 125000, 92000, 71000, 97000],
-    ['Sep 23', 81000, 123000, 91000, 72000, 96000],
-    ['Oct 23', 83000, 126000, 93000, 73000, 98000],
-    ['Nov 23', 85000, 128000, 95000, 75000, 100000],
-    ['Dec 23', 88000, 130000, 98000, 78000, 103000],
-    ['Jan 24', 86000, 129000, 97000, 76000, 101000],
-    ['Feb 24', 87000, 132000, 99000, 77000, 102000],
-    ['Mar 24', 89000, 134000, 101000, 79000, 104000],
-    ['Apr 24', 88000, 131000, 98000, 78000, 103000],
-    ['May 24', 90000, 135000, 102000, 80000, 105000],
-    ['Jun 24', 91000, 137000, 103000, 81000, 106000]
-];
-
-// Create the stacked column chart
-Highcharts.chart('StreamRevenueChart', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Revenue Sources for Housing Department'
-    },
-    xAxis: {
-        categories: data.map(item => item[0])
-    },
-    yAxis: {
+    // Create the bar chart
+    Highcharts.chart('revenuePerfomanceFire', {
+        chart: {
+            type: 'column'
+        },
         title: {
-            text: 'Revenue (KES)'
-        }
-    },
-    tooltip: {
-        shared: true,
-        valueSuffix: ' KES'
-    },
-    plotOptions: {
-        column: {
-            stacking: 'normal'
-        }
-    },
-    series: [{
-        name: 'Stall Rents',
-        data: data.map(item => item[1])
-    }, {
-        name: 'Housing Development Fees',
-        data: data.map(item => item[2])
-    }, {
-        name: 'Site Value Rates Fees',
-        data: data.map(item => item[3])
-    }, {
-        name: 'Estate Development Fees',
-        data: data.map(item => item[4])
-    }, {
-        name: 'Survey/Subdivision Fees',
-        data: data.map(item => item[5])
-    }]
+            text: null
+        },
+        xAxis: {
+            categories: data.map(item => abbreviateMonth(item[0]))
+        },
+        yAxis: {
+            title: {
+                text: 'Revenue (KES)'
+            }
+        },
+        legend: {
+            enabled: true
+        },
+        tooltip: {
+            shared: true,
+            pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>KES {point.y}</b><br/>'
+        },
+        plotOptions: {
+            bar: {
+                pointWidth: 20, // Adjust the width of each column
+                stacking: 'normal', // Prevent stacking
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Last Year Collections',
+            data: data.map(item => item[1])
+        }, {
+            name: 'Created Invoices',
+            data: data.map(item => item[2]),
+            color:"red"
+        }, {
+            name: 'This Year Collections',
+            data: data.map(item => item[3]),
+            color:"green"
+        }]
+    });
 });
 
     </script>
-    
-    
-    
-    
-    
-    <!-- end of weekly collections -->
-
-
 </body>
 
 
