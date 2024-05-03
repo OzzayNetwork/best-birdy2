@@ -509,12 +509,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Deactivated System Users</h4>
+                                <h4 class="mb-sm-0 font-size-18">Deactivated Users Logs</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Deactivated Users</li>
+                                        <li class="breadcrumb-item"><a href="index.html">System Users</a></li>
+                                        <li class="breadcrumb-item active">Deactivated Users Logs</li>
                                     </ol>
                                 </div>
 
@@ -531,7 +532,7 @@
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                         <h4 class="mb-0">Deactivated Users</h4>
-                                        <div class="d-flex">
+                                        <div class="d-none">
                                             <a href="user-registration.html" type="button" class="btn btn-primary dropdown-toggle option-selector" data-bs-toggle="offcanvas" data-bs-target="#dt__filter" aria-controls="offcanvasRight">
                                                 <i class="mdi mdi-account-multiple-plus-outline  font-size-16"></i> <span class="pl-1 d-md-inline">Add User(s)</span>
                                             </a>
@@ -569,257 +570,89 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table align-middle table-nowrap table-hover contacts-table table-striped" id="datatable-buttons">
+                                        <table class="table align-middle table-nowrap table-hover contacts-table table-striped" id="#">
                                             <thead class="table-dark">
                                                 <tr>
                                                     <th scope="col">Name</th>
-                                                    <th scope="col">Contact</th>
-                                                    <th scope="col">Last Seen</th>
-                                                    <th>Date Deactivated</th>
-                                                    <th>Deactivated By</th>
-                                                    <th>Reason For Deactivation</th>
-                                                    <th scope="col">Last Seen Address</th>
+                                                    <th scope="col">Phone</th>
+                                                    <th scope="col">Deactivated By</th>
+                                                    <th scope="col">Deactivated On</th>
+                                                    <th>Deactivation Reasons</th>
+                                                    <th>Reactivated By</th>
+                                                    <th>Deactivation Duration</th>
+                                                    <th>Current status</th>
+                                                    <th scope="col">Reactivated On</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
+                                                    <td>Kelvin Njuguna</td>
+                                                    <td>0704549859</td>
+                                                    <td>Antony Waswa</td>
+                                                    <td>12 Jan 2024 12:54 AM</td>
+                                                    <td>The employee was on leave</td>
+                                                    <td>Amos Were</td>
+                                                    <td>4 Days</td>
                                                     <td>
-                                                        <a href="use-logs.html" title="click to vie user logs and activities">
-                                                            <div class=" d-flex align-items-center ">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                            D
-                                                                        </span>
-                                                                </div>
-                                                                <div>
-                                                                    <h5 class="font-size-14 mb-1 "><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                                    <p class="text-muted mb-0 ">Developer</p>
-                                                                </div>
-                                                            </div>
-                                                        </a>
+                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">active</span>
                                                     </td>
+                                                    <td>16 Jan 2024 12:59 AM</td>
                                                     <td>
-                                                        <div class="d-flex justify-conten flex-column">
-                                                            <p class="text-muted mb-0">
-                                                                <a href="tell:0794795345">0794795345</a>
-                                                            </p>
-                                                            <p class="mb-0">
-                                                                <a href="mailto:sharonwanjiku34@gmail.com">sharonwanjiku34@gmail.com</a>
-                                                            </p>
-                                                        </div>
+                                                        <button class="btn btn-sm btn-primary text-uppercase" data-bs-toggle="modal"  data-bs-target="#deactivationDetails">More Details</button>
                                                     </td>
-                                                   
-    
-                                                    <td class="text-capitalize">
-                                                        Sep 10 2023, 10:56 AM
-                                                     </td>
-
-                                                     <td class="text-capitalize">
-                                                        Sep 10 2023, 10:56 AM
-                                                     </td>
-                                                     <td>Alex Wanjala</td>
-
-                                                     <td>
-                                                        The user was made redadant
-                                                     </td>
-
+                                                </tr>   
+                                                
+                                                <tr>
+                                                    <td>Kelvin Njuguna</td>
+                                                    <td>0704549859</td>
+                                                    <td>Antony Waswa</td>
+                                                    <td>12 Jan 2024 12:54 AM</td>
+                                                    <td>The employee was on leave</td>
+                                                    <td>Amos Were</td>
+                                                    <td>4 Days</td>
                                                     <td>
-                                                       <small>
-                                                            Homa Bay Central Homa Bay Town, Homa Bay, Kenya
-                                                       </small>
+                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">active</span>
                                                     </td>
-                                                    
-                                                    
+                                                    <td>16 Jan 2024 12:59 AM</td>
                                                     <td>
-                                                        <a href="use-logs.html" class="btn btn-sm btn-primary" title="Click to view user logs">
-                                                            <i class="mdi mdi-account-details"></i> User Logs
-                                                        </a>
-                                                        <button class="btn btn-success btn-sm mx-3" data-bs-toggle="modal"  data-bs-target="#deactivatingAccount"><i class="mdi mdi-key"></i> Activate Account </button>
-
+                                                        <button class="btn btn-sm btn-primary text-uppercase" data-bs-toggle="modal"  data-bs-target="#deactivationDetails">More Details</button>
                                                     </td>
-                                                </tr>
+                                                </tr>   
 
                                                 <tr>
+                                                    <td>Kelvin Njuguna</td>
+                                                    <td>0704549859</td>
+                                                    <td>Antony Waswa</td>
+                                                    <td>12 Jan 2024 12:54 AM</td>
+                                                    <td>The employee was on leave</td>
+                                                    <td>Amos Were</td>
+                                                    <td>4 Days</td>
                                                     <td>
-                                                        <a href="use-logs.html" title="click to vie user logs and activities">
-                                                            <div class=" d-flex align-items-center ">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                            D
-                                                                        </span>
-                                                                </div>
-                                                                <div>
-                                                                    <h5 class="font-size-14 mb-1 "><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                                    <p class="text-muted mb-0 ">Developer</p>
-                                                                </div>
-                                                            </div>
-                                                        </a>
+                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">active</span>
                                                     </td>
+                                                    <td>16 Jan 2024 12:59 AM</td>
                                                     <td>
-                                                        <div class="d-flex justify-conten flex-column">
-                                                            <p class="text-muted mb-0">
-                                                                <a href="tell:0794795345">0794795345</a>
-                                                            </p>
-                                                            <p class="mb-0">
-                                                                <a href="mailto:sharonwanjiku34@gmail.com">sharonwanjiku34@gmail.com</a>
-                                                            </p>
-                                                        </div>
+                                                        <button class="btn btn-sm btn-primary text-uppercase" data-bs-toggle="modal"  data-bs-target="#deactivationDetails">More Details</button>
                                                     </td>
-                                                   
-    
-                                                    <td class="text-capitalize">
-                                                        Sep 10 2023, 10:56 AM
-                                                     </td>
-
-                                                     <td class="text-capitalize">
-                                                        Sep 10 2023, 10:56 AM
-                                                     </td>
-                                                     <td>Alex Wanjala</td>
-
-                                                     <td>
-                                                        The user was made redadant
-                                                     </td>
-
-                                                    <td>
-                                                       <small>
-                                                            Homa Bay Central Homa Bay Town, Homa Bay, Kenya
-                                                       </small>
-                                                    </td>
-
-                                                    
-                                                    
-                                                    
-                                                    <td>
-                                                        <a href="use-logs.html" class="btn btn-sm btn-primary" title="Click to view user logs">
-                                                            <i class="mdi mdi-account-details"></i> User Logs
-                                                        </a>
-
-                                                        <button class="btn btn-success btn-sm mx-3" data-bs-toggle="modal"  data-bs-target="#deactivatingAccount">
-                                                            <i class="mdi mdi-key"></i> Activate Account
-                                                        </button>
-
-                                                    </td>
-                                                </tr>
+                                                </tr>   
 
                                                 <tr>
+                                                    <td>Kelvin Njuguna</td>
+                                                    <td>0704549859</td>
+                                                    <td>Antony Waswa</td>
+                                                    <td>12 Jan 2024 12:54 AM</td>
+                                                    <td>The employee was on leave</td>
+                                                    <td>Amos Were</td>
+                                                    <td>4 Days</td>
                                                     <td>
-                                                        <a href="use-logs.html" title="click to vie user logs and activities">
-                                                            <div class=" d-flex align-items-center ">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                            D
-                                                                        </span>
-                                                                </div>
-                                                                <div>
-                                                                    <h5 class="font-size-14 mb-1 "><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                                    <p class="text-muted mb-0 ">Developer</p>
-                                                                </div>
-                                                            </div>
-                                                        </a>
+                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">active</span>
                                                     </td>
+                                                    <td>16 Jan 2024 12:59 AM</td>
                                                     <td>
-                                                        <div class="d-flex justify-conten flex-column">
-                                                            <p class="text-muted mb-0">
-                                                                <a href="tell:0794795345">0794795345</a>
-                                                            </p>
-                                                            <p class="mb-0">
-                                                                <a href="mailto:sharonwanjiku34@gmail.com">sharonwanjiku34@gmail.com</a>
-                                                            </p>
-                                                        </div>
+                                                        <button class="btn btn-sm btn-primary text-uppercase" data-bs-toggle="modal"  data-bs-target="#deactivationDetails">More Details</button>
                                                     </td>
-                                                   
-    
-                                                    <td class="text-capitalize">
-                                                        Sep 10 2023, 10:56 AM
-                                                     </td>
-
-                                                     <td class="text-capitalize">
-                                                        Sep 10 2023, 10:56 AM
-                                                     </td>
-                                                     <td>Alex Wanjala</td>
-
-                                                     <td>
-                                                        The user was made redadant
-                                                     </td>
-
-                                                    <td>
-                                                       <small>
-                                                            Homa Bay Central Homa Bay Town, Homa Bay, Kenya
-                                                       </small>
-                                                    </td>
-                                                    
-                                                    
-                                                    <td>
-                                                        <a href="use-logs.html" class="btn btn-sm btn-primary" title="Click to view user logs">
-                                                            <i class="mdi mdi-account-details"></i> User Logs
-                                                        </a>
-
-                                                        <button class="btn btn-success btn-sm mx-3" data-bs-toggle="modal"  data-bs-target="#deactivatingAccount"><i class="mdi mdi-key"></i> Activate Account </button>
-
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <a href="use-logs.html" title="click to vie user logs and activities">
-                                                            <div class=" d-flex align-items-center ">
-                                                                <div class="avatar-xs mr-15px ">
-                                                                    <span class="avatar-title rounded-circle ">
-                                                                            D
-                                                                        </span>
-                                                                </div>
-                                                                <div>
-                                                                    <h5 class="font-size-14 mb-1 "><a href="javascript: void(0); " class="text-dark text-capitalize">Kelvin Njuguna</a></h5>
-                                                                    <p class="text-muted mb-0 ">Developer</p>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex justify-conten flex-column">
-                                                            <p class="text-muted mb-0">
-                                                                <a href="tell:0794795345">0794795345</a>
-                                                            </p>
-                                                            <p class="mb-0">
-                                                                <a href="mailto:sharonwanjiku34@gmail.com">sharonwanjiku34@gmail.com</a>
-                                                            </p>
-                                                        </div>
-                                                    </td>
-                                                   
-    
-                                                    <td class="text-capitalize">
-                                                        Sep 10 2023, 10:56 AM
-                                                     </td>
-
-                                                     <td class="text-capitalize">
-                                                        Sep 10 2023, 10:56 AM
-                                                     </td>
-                                                     <td>Alex Wanjala</td>
-
-                                                     <td>
-                                                        The user was made redadant
-                                                     </td>
-
-                                                    <td>
-                                                       <small>
-                                                            Homa Bay Central Homa Bay Town, Homa Bay, Kenya
-                                                       </small>
-                                                    </td>
-                                                    
-                                                    
-                                                    <td>
-                                                        <a href="use-logs.html" class="btn btn-sm btn-primary" title="Click to view user logs">
-                                                            <i class="mdi mdi-account-details"></i> User Logs
-                                                        </a>
-
-                                                        <button class="btn btn-success btn-sm mx-3" data-bs-toggle="modal"  data-bs-target="#deactivatingAccount"><i class="mdi mdi-key"></i> Activate Account </button>
-
-                                                      
-                                                    </td>
-                                                </tr>
-
-                                             
+                                                </tr>   
                                             </tbody>
                                         </table>
                                     </div>
@@ -910,11 +743,11 @@
             <!-- end modal -->
 
             <!-- deactivating user modal -->
-            <div class="modal fade" id="deactivatingAccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="deactivationDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Reactivate Kelvin Otati's Account</h5>
+                      <h5 class="modal-title" id="exampleModalLongTitle">Deactivation Details</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -922,11 +755,63 @@
                     <div class="modal-body">
                       <div class="row">
                         <div class="col-12">
-                            <h6>Click the button below to confirm reactivation of Kelvin's Account</h6>
+                            <table class="table table-sm m-0 table-striped">                               
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Date Deactivated</th>
+                                        <td>12 Jan 2024 11:34 AM</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Reason</th>
+                                        <td>The employee was on leave</td>                                        
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Deactivated By</th>
+                                        <td>Amos Waswa</td>                                        
+                                    </tr> 
+
+                                    <tr>
+                                        <th scope="row">Deactivation Duration</th>
+                                        <td>4 Days</td>                                        
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Current Status</th>
+                                        <td class="text-uppercase">Active</td>                                        
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Date Reactivated</th>
+                                        <td>16 Jan 2024 11:34 AM</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Reactivated By</th>
+                                        <td>Alex Weke</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Phone Number</th>
+                                        <td>0704549859</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Email address</th>
+                                        <td>email@123.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">ID NO.</th>
+                                        <td>12345678</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </div>
                       </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer d-none">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                       <button type="button" class="btn btn-primary">Reactivate</button>
                     </div>
