@@ -422,7 +422,7 @@
                         </li>
 
 
-                        <li>
+                       <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="bx bx-file"></i>
                                 <span>Reports</span>
@@ -437,6 +437,8 @@
                                 <li class="text-capitalize"><a href="reports-agents.html">Agents Daily Reports</a></li>
                                 <li class="text-capitalize"><a href="reports-departments.html">Departmental Reports</a>
                                 </li>
+
+                                <li class="text-capitalize"><a href="reports-sources.html">Collection Sources</a></li>
                             </ul>
                         </li>
 
@@ -949,7 +951,9 @@
                                                             data-bs-target=".disable-user-modal" style="cursor: pointer;">Active</span>
                                                         <!---->
                                                     </td>
-                                                    <td><button class="btn btn-danger btn-sm mx-3" data-bs-toggle="modal"
+                                                    <td>
+                                                        <button class="btn btn-dark btn-sm mx-3" data-bs-toggle="modal" data-bs-target=".edit-role"><i class="bx bx-edit-alt"></i>Edit User Role </button>
+                                                        <button class="btn btn-danger btn-sm mx-3" data-bs-toggle="modal"
                                                             data-bs-target=".disable-user-modal"><i class="bx bx-edit-alt"></i>Disable User </button>
                                                         <!----><button class="btn btn-danger btn-sm mx-3" data-bs-toggle="modal"
                                                             data-bs-target=".reset-password-modal"><i class="bx bx-edit-alt"></i>Reset Password </button><button
@@ -7504,6 +7508,40 @@
                 </div>
               </div>
             <!-- disable user modal end -->
+
+            <!-- editing role -->
+            <div class="modal fade edit-role"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Edit Kelvin Otati's System User Role</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12">
+                            <div>
+                                <label class="form-label">Select Role</label>
+                                <select class="form-select" fdprocessedid="8ch9lx">
+                                    <option>Select</option>
+                                    <option>Large select</option>
+                                    <option>Small select</option>
+                                </select>
+                                <small>Select the new role for Kelvin Otati</small>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- end of editing roles -->
 
 
             <footer class="footer ">
