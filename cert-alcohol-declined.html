@@ -604,6 +604,7 @@
                                                 <a class="nav-item nav-link" href="cert-alcohol-court.html">Pending Court Review</a>
                                                 <a class="nav-item nav-link" href="cert-alcohol-approved.html">Awaiting Certification</a>
                                                 <a class="nav-item nav-link" href="cert-alcohol-declined.html">Declined </a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-restored.html">Restored Applications </a>
                                                 <a class="nav-item nav-link" href="cert-alcohol-cert-invoices.html">Invoices</a>
                                                 <a class="nav-item nav-link" href="cert-alcohol-active.html">Active Certificates</a>
                                                 <a class="nav-item nav-link" href="cert-alcohol-expired.html">Expired Certificates</a>
@@ -760,8 +761,7 @@
                                                     
                                                     <td>
                                                         <div class="d-flex justify-content-end align-items-center">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target=".receipting-modal"><i
                                                                     class="bx bx-show font-size-16 align-middle me-2"></i>
@@ -772,6 +772,13 @@
                                                                     class="bx bx-receipt font-size-16 align-middle me-2"></i>
                                                                 Invoice
                                                             </a>
+
+                                                            <button type="button"
+                                                            class="btn btn-warning text-black btn-sm waves-effect waves-light text-nowrap"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#restore-application"><i
+                                                                class="bx bx-reset font-size-16 align-middle me-2"></i>
+                                                            Renstate</button>
 
                                                            
                                                         </div>
@@ -801,6 +808,95 @@
                 <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
+
+            <!-- restoration of a blocked application -->
+           
+            </div>
+            <div class="modal fade" id="restore-application" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Reason for Restoration</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+
+                        <div class="col-12 mt-4">
+                            <div class="bg-info border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                <i class="bx bx-briefcase-alt-2 font-28 mr-15px"></i>
+                                <p class="fw-semibold mb-0 pb-0">Application Details</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="table-responsive">
+                                <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                    
+                                    <tbody>
+                                        <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                            <td>
+                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Owner's Name</p>
+                                            </td>
+                                            <td class="">Kelvin Njuguna</td>
+                                            
+
+                                        </tr>
+
+                                        <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                            <td>
+                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                    Business Name</p>
+                                            </td>
+                                            <td class="">Toti Club</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Minutes Number</p>
+
+                                            </td>
+                                            <td class="">12345</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Minutes Document</p>
+
+                                            </td>
+                                            <td class=""><a href="assets/images/4F14477E.jpg" target="new">Minutes Documet</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="alert alert-danger" role="alert">
+                                <h4 class="alert-heading">Reason for Initial decline</h4>
+                                <p>The club is close to a primary school</p>
+                                <hr>
+                                <p class="mb-0">Submited By <span class="fw-semibold">Kelvin Kinoti</span> on 12 Oct 2023 at 12:34 AM</p>
+                            </div>
+                        </div>
+
+                            <div class="col-12">
+                                <label for="">Reason for Restoration</label>
+                                <textarea name="" class="form-control mb-4 restoration-reason-input"  placeholder="Enter Reason for Restoration" cols="30" rows="10"></textarea>
+                            </div>
+
+                            
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary submit-restoration-reason" disabled>Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of restoration modal -->
 
             <!-- Bill creation modal -->
             <div class="modal fade new-alcohol-application" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
@@ -2159,6 +2255,25 @@
             if (inputLength < 11) {
                 // Your code to run if the number of characters exceeds 10
                 $('.btn-decline').prop('disabled', true)
+            }
+
+           
+        })
+     </script>
+
+     <script>
+         $('.restoration-reason-input').keyup(function(){
+            var theVal=$(this).text()
+
+            var inputLength = $(this).val().length;
+            if (inputLength > 10) {
+                // Your code to run if the number of characters exceeds 10
+                $('.submit-restoration-reason').prop('disabled', false)
+            }
+
+            if (inputLength < 11) {
+                // Your code to run if the number of characters exceeds 10
+                $('.submit-restoration-reason').prop('disabled', true)
             }
 
            

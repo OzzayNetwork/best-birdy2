@@ -991,6 +991,7 @@ $('.generate-invoice-btn').on('click', function(e){
 
 
 
+
 //   the highlights slider
 
 window.onload=function(){
