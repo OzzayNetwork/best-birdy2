@@ -597,18 +597,20 @@
                                     </button>
                                     <div class="collapse navbar-collapse justify-content-between active"
                                         id="navbarNavAltMarkup">
-                                         <div class="navbar-nav">
-                                                <a class="nav-item nav-link" href="cert-alcohol-stats.html">Quick Stats</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-ongoing.html">Ongoing Applications</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-inspection.html">Pending Inspection</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-court.html">Pending Court Review</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-approved.html">Awaiting Certification</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-declined.html">Declined </a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-restored.html">Restored Applications </a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-cert-invoices.html">Invoices</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-active.html">Active Certificates</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-expired.html">Expired Certificates</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-map.html">Map View</a>
+                                          <div class="navbar-nav">
+                                                <a class="nav-item nav-link" href="cert-alcohol-stats.html" title="Quick stats">Overview</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-ongoing.html" title="Newly registered applications">Applications</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-inspection.html" title="applications pending inspection">Pending Inspection</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-court.html" title="Applications pending court/Commitee review">Court Review</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-approval1.html" title="Applications pending court/Commitee review">1st Approval</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-finalApproval.html" title="Applications pending court/Commitee review">Final Approval</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-approved.html" title="Invoices for Approved Applications">Approved</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-declined.html" title="Get to see a list of all declined applications">Declined </a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-restored.html" title="Applications that were once declined but got restored at some point">Restored</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-cert-invoices.html" title="Table with all invoices relating to ALCOHOLIC DRINKS LICENCE">Invoices</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-active.html" title="List of all active ALCOHOLIC DRINKS LICENCE">Active</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-expired.html" title="List of Outlets with expired certificates">Expired</a>
+                                                <a class="nav-item nav-link" href="cert-alcohol-map.html" title="Mapping on the Certificates">Map</a>
                                             </div>
 
                                         <form class="form-inline my-2 my-lg-0">
@@ -725,6 +727,7 @@
                                                     <th scope="col">Business</th>
                                                     <th scope="col">Applicant</th>
                                                     <th scope="col">Phone</th>
+                                                    <th>Reason Restored</th>                                                   
                                                     <!-- kindly note the licence sub category will be picked during insopection to be displayed here as opposed to showiing the business sub category -->
                                                     <th scope="col">Licence Sub Category</th>
                                                     <th scope="col">Application Duration</th>
@@ -746,6 +749,7 @@
                                                     <td class="text-capitalize text-nowrap">Big Boyz Club</td>
                                                     <td class="text-capitalize text-nowrap">Amos Wadibo</td>
                                                     <td class="text-capitalize text-nowrap">0702549859</td>
+                                                    <td>The applicant complied with the initially raised concerns</td>
                                                     <td class="text-capitalize text-nowrap">
                                                         <a href="">Bars and Resturants</a>
                                                     </td>
@@ -790,7 +794,7 @@
                                             <tfoot class="table-dark">
                                                 <tr>
 
-                                                    <th colspan="10">
+                                                    <th colspan="11">
                                                         23 Applications
                                                     </th>
 
@@ -1966,6 +1970,41 @@
                                                 <p class="mb-0 fw-semibold text-uppercase">Inspected By Sammy Zayne</p>
                                             </div>
                                         </div>
+
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-dark bg-soft border-2  p-2 mb-4 d-flex align-items-center text-black">
+                                                <i class="mdi mdi-file-cancel-outline font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0 text-uppercase">Reasons For Decline</p>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="alert alert-danger" role="alert">
+                                                <p>The Club is to close to a school</p>
+                                                <hr>
+                                                <p class="mb-0 fw-semibold ">Was rejected by Alex Wanjala</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-warning bg-soft border-2  p-2 mb-4 d-flex align-items-center text-black">
+                                                <i class="bx bx-search-alt font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0 text-uppercase">Reasons For Restoration</p>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="alert alert-success" role="alert">
+                                                <p>The applicant was wrongly dissaproved</p>
+                                                <hr>
+                                                <p class="mb-0 fw-semibold ">Was Restored by Kelvin Waswa</p>
+                                            </div>
+                                        </div>
+
+
 
 
                                         <div class="col-12 mt-4">
