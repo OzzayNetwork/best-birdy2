@@ -1482,4 +1482,47 @@ z-index: 3 !important;
     vertical-align: center !important;
 }
 
+.stats-container >div{
+    margin-right: 1rem;
+}
+
+.stats-container >div h6{
+    color: #ffffffad;
+}
+.stats-head{
+    color: white;
+    background: #00226c;
+}
+.stats-card-cont{
+    background-color: #1b3c8e;
+    
+}
+.stats-container>div{
+    background: #123382;
+    border-right: 1px solid #00BCD4;
+    border-left: 1 px solid #00BCD4;
+    
+}
+.single-stat-cont {
+    border-right:1px solid #03a9f430; 
+}
+/* 
+.stats-container .single-stat-cont{
+    background: #123382;
+    border-right: 1px solid #00BCD4;
+    
+} */
+ .stats-card-cont{
+    width: 100%;
+    overflow: hidden;
+ }
+
+.stats-container i{
+    color: #00BCD4;
+}
+
+.stats-container .avatar-xs span{
+    background-color: #2c4ea3;
+}
+
 
