@@ -59,8 +59,6 @@
 
     <!-- Begin page -->
     <div id="layout-wrapper">
-
-
         <header id="page-topbar">
             <div class="navbar-header">
                 <div class="d-flex">
@@ -239,7 +237,6 @@
                 </div>
             </div>
         </header>
-
         <!-- ========== Left Sidebar Start ========== -->
         <div class="vertical-menu">
 
@@ -519,9 +516,6 @@
             </div>
         </div>
         <!-- Left Sidebar End -->
-
-
-
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
@@ -534,13 +528,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Bank Statements for KCB Acc No. 1234566</h4>
+                                <h4 class="mb-sm-0 font-size-18">Bank Statement for KCB Acc No. 1234566</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Flagged Transactions</a></li>
-                                        <li class="breadcrumb-item active">Bank Statements</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Action Center</a></li>
+                                        <li class="breadcrumb-item"><a href="flagged-bank-statements.html">Bank Statements</a></li>
+                                        <li class="breadcrumb-item active">File Name Goes Here</li>
                                     </ol>
                                 </div>
 
@@ -553,9 +548,12 @@
                             <div class="card">
                                 <div class="card-header d-flex justify-content-between align-items-center bg-white border-bottom">
                                     <div>
-                                        <h4 class="card-title m-0 text-uppercase">
-                                            Reconciliations History
-                                        </h4>
+                                        <div>
+                                            <h4 class="card-title m-0 text-uppercase">
+                                                File Name Goes Here
+                                            </h4>
+                                            <span>Uploaded By Alex Wanjala on 23 Jan 2024 at 12:45 AM</span>
+                                        </div>
                                     </div>
                                     <div class="d-flex">
                                         <div class="d-flex align-items-center me-3 pe-3">
@@ -581,8 +579,9 @@
                                                     <th>Bank Ref NO.</th>
                                                     <th>Transaction Details</th>
                                                     <th>Value Date</th>
+                                                    <th title="Invoice/Bill Number for receipted transaction">Bill No.</th>
                                                     <th>Date Receipted</th>
-                                                    <th>Status</th>      
+                                                    <th>Receipted By</th>      
                                                     <th class="text-right">Money Out</th>
                                                     <th class="text-right">Money In</th>                                                                                                
                                                     <th></th>                                                   
@@ -591,27 +590,34 @@
                                             
                                             <tbody>
                                               <tr>
-                                                <td>12 Jan 2024 11:56 AM</td>
-                                                <td>Alex Wanjala</td>
-                                                <td>11 Jan 2024 12:00 AM To 12 Jan 2024 11:59 PM</td>
-                                                <td>KCB - 12345890</td>
-                                                <td>34</td>
-                                                <td>23 of 34</td>
+                                                <td>24/06/2024</td>
+                                                <td>FT241767ZS8V</td>
+                                                <td>Ag Dpst SZD917Y5VASD COMPLIANCE CERTIFICATE KAN</td>
+                                                <td>24/06/2024</td>
+                                                <td>BLL1234567</td>
+                                                <td>25/06/2024</td>
+                                                <td>
+                                                   
+                                                     By <span>Kelvin Njuguna</span>
+                                                </td>
+                                                <td class="text-right">0</td>
                                                 <td class="text-right">KES 45,000,000</td>
                                                 <td>
-                                                    <a href="flagged-bank-statements-details.html" class="btn-sm btn-primary text-uppercase">view statement</a>
-                                                    <button class="btn-sm btn-success text-uppercase">Download</button>
+                                                    <button data-toggle="modal" data-target="#transDetails" class="btn-sm btn-success text-uppercase">Details</button>
                                                 </td>
                                               </tr>
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
-                                                    <td class="" colspan="3">23 Recociliations</td>
-                                                    <td class="text-uppercase">KCB Bank:45  MPESA:546 </td>
-                                                    <td>234 of 67000</td>
-                                                    <td>23 Users</td>
-                                                    <td class="text-uppercase text-right">KES 450,000</td>
-                                                    <td></td>
+                                                    
+                                                    <td colspan="7">
+                                                        <span class="badge rounded-pill bg-info text-uppercase" key="t-new">24 Transactions</span>
+                                                        <span class="badge rounded-pill bg-success text-uppercase mx-4" key="t-new">14 Receipted</span>
+                                                        <span class="badge rounded-pill bg-warning text-dark text-uppercase " key="t-new">10 Not Receipted</span>
+                                                    </td>
+                                                    <th  class="text-right">KES 0.00</th>
+                                                    <th class="text-right">KES 45,678,990</th>
+                                                    <th></th>
                                                 </tr>
                                             </tfoot>
                                         </table>
@@ -716,64 +722,86 @@
                 </div>
               </div>
             <!-- end of changing revenue stream modal -->
-            <div class="modal fade" id="singleTrans" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="transDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Transaction Search</h5>
+                      <h5 class="modal-title" id="exampleModalLongTitle">Transaction Details</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col-lg-12">
-                                <div>
-                                    <label class="form-label">Select File Source</label>
-                                    <select class="form-control  form-select" title="Select Revenue Stream" data-live-search="true" title="Select a tenant">
-                                        <option value=" ">MPESA Transactions</option>
-                                        <option value=" ">KCB BANK Transactions</option>
-                                  </select>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="mt-3">
-                                    <label class="form-label">Enter Refrece code (MPESA Transaction Code)</label>
-                                    <input type="text" placeholder="Enter Transaction Code" class="form-control">
-                                </div>
-                            </div>
+                          
 
                             <!-- show alerts here once transactions are uploaded -->
 
                             <div class="col-12">
                                 <div class="mt-2">
-                                    <div class="alert alert-danger" role="alert">
-                                        <a href="javascript: void(0);" class="alert-link">Transaction Not Found.</a> Try again.
+
+                                    <!-- for receipted transactions -->
+                                    <div class="alert alert-success" role="alert">
+                                        <P>Payment Status</P>
+                                        <span class="fw-semibold text-black">Receipted</span>
                                     </div>
                                 </div>
 
                                 <div class="mt-2">
-                                    <div class="alert alert-success" role="alert">
-                                        <a href="javascript: void(0);" class="alert-link">Transaction succesfully Reconciled </a>  
-                                        </div>
+
+                                    <!-- for transactions yet to be receipted -->
+                                    <div class="alert alert-warning" role="alert">
+                                        <P>Payment Status</P>
+                                        <span class="fw-semibold text-black">Receipted</span>
+                                    </div>
                                 </div>
 
                                 <div class="px-3 border-1">
                                     <table class="table-sm table">
+
                                         <tr>
-                                            <th>Transaction Code</th>
+                                            <th>Bank</th>
+                                            <td>KCB</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Account Number</th>
+                                            <td>1234566</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Bank Ref No.</th>
                                             <td>RCTYIOS</td>
                                         </tr>
 
                                         <tr>
-                                            <th>Paid By</th>
-                                            <td>Kelvin Kinot</td>
+                                            <th>Transaction Details</th>
+                                            <td>Ag Dpst SZD917Y5VASD COMPLIANCE CERTIFICATE KAN</td>
                                         </tr>
 
                                         <tr>
-                                            <th>Phone No. </th>
-                                            <td>0704****59</td>
+                                            <th>Transaction Date</th>
+                                            <td>12/03/2024</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Value Date</th>
+                                            <td>12/03/2024</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Date Receipted</th>
+                                            <td>12/03/2024</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Receipted By</th>
+                                            <td>Kelvin Njuguna</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Paid By</th>
+                                            <td>Kelvin Otati</td>
                                         </tr>
 
                                         <tr>
@@ -782,43 +810,24 @@
                                         </tr>
 
                                         <tr>
-                                            <th>Transaction Date</th>
-                                            <td>12 Dec 2023 11:38 PM</td>
+                                            <th>Receipt No.</th>
+                                            <td>BLL5587878798</td>
                                         </tr>
 
                                         <tr>
-                                            <th>Sub County</th>
-                                            <td>Homa Bay town</td>
+                                            <th>Money Out</th>
+                                            <td>0</td>
                                         </tr>
 
                                         <tr>
-                                            <th>Zone</th>
-                                            <td>Homa Bay Town Bus Park</td>
+                                            <th>Money In</th>
+                                            <td>KES 12,000</td>
                                         </tr>
 
-                                        <tr>
-                                            <th>Payment For</th>
-                                            <td>KBD123Y Daily Parking</td>
-                                        </tr>
-
-                                        <tr>
-                                            <th>Initiated By</th>
-                                            <td>Tom Otieno</td>
-                                        </tr>
+                                      
                                     </table>
                                 </div>
-
-                                <div class="mt-2">
-                                    <div class="alert alert-secondary" role="alert">
-                                          Failed <a href="javascript: void(0);" class="alert-link">Transactio had been reconciled initially</a>  
-                                    </div>
-                                </div>
                             </div>
-
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 mt-2">Continue</button>
-                            </div>
-                            
                         </div>
                     </div>
 
@@ -837,7 +846,7 @@
               </div>
             <!-- end of transaction modal -->
 
-            single transaction <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
