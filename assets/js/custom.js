@@ -984,6 +984,19 @@ $('.generate-invoice-btn').on('click', function(e){
     }, 4000); // 4000 milliseconds = 4 seconds
 })
 
+//invoicing for fire certifictae
+$('.go-to-assesment').on('click', function(){
+    // alert("clicked")
+    $('.business-id-search').addClass('d-none')
+    $('.fire-assesment').removeClass('d-none')
+    $('.business-selector').addClass('d-none')
+})
+
+$('.assesment-done-btn').on('click', function(){
+    $('.fire-assesment').addClass('d-none')
+    $('.fire-invoice-creator').removeClass('d-none')
+})
+
 
 
 

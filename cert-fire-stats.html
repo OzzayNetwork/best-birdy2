@@ -1627,7 +1627,7 @@
                             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body pb-4 searching-modal-body">
-                            <div class="row">
+                            <div class="row business-selector">
                                 <div class="col-md-12 mb-3">
                                     <label for="">Search or Input establishment details</label>
                                     <select class="form-select liq-search-method" >
@@ -1642,8 +1642,8 @@
 
                             <div class="row">
 
-                                <!-- searching for an already registered business that has a valid certificate generated from the system -->
-                                <div class="col-12 business-id-search d-non">
+                                <!-- existing business -->
+                                <div class="col-12 business-id-search d-none">
                                     <label for="">Search For Business To continue</label>
                                     <div class="input-group mb-3">
                                         
@@ -1657,7 +1657,7 @@
                                       <div class="row pt-3">
 
                                         <!-- use this loader when serching for the business -->
-                                        <div  class="searching-biz-loader d-non">
+                                        <div  class="searching-biz-loader d-none">
                                             <div class="loader-modal p-5">
                                                 <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
                                                     <div class="spinner-border text-dark m-1" role="status">
@@ -1667,7 +1667,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <div class="col-12 biz-search-results d-none">
                                             <table class="table table-sm text-uppercase table-striped">
                                                 <thead class="table-dark">
@@ -1759,142 +1758,14 @@
 
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <button  target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn d-flex justify-content-center align-items-center">
+                                                    <button  target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 go-to-assesment d-flex justify-content-center align-items-center">
                                                         Next  <i class="dripicons-arrow-thin-right font-size-16 align-middle me-2 d-flex align-items-center mx-2"></i>
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col-12 fire-invoicing">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="alert alert-primary" role="alert"> 
-                                                        <h6 class="mb-0 pb-0">Fire Safety Risk Assesment</h6>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-12">
-                                                    <h5 for="">Safety Measures in Place</h5>
-                                                    <p>Select from below any Safety measure already deployed by the Business. You can include additional measures </p>
-                                                    
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="">
-                                                        <table class="table table-editable-1 align-middle table-edits">
-                                                            <thead class="table-light">
-                                                                <tr class="text-uppercase table-dark">
-                                                                    <th>#</th>
-                                                                    <th class="">Safety Measure</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr data-id="1">
-                                                                    <td style="width: 20px">1.</td>
-                                                                    <td class="pl-0 px-0">
-                                                                        <div class="d-flex">
-                                                                            <div class="form-check form-check-primary mb-0 d-flex align-items-center">
-                                                                                <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure1" >
-                                                                                <label class="form-check-label" for="measure1">
-                                                                                    They have a rare escape Route
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                   
-        
-                                                                </tr>
-
-                                                                <tr data-id="1">
-                                                                    <td style="width: 20px">2.</td>
-                                                                    <td class="pl-0 px-0">
-                                                                        <div class="d-flex">
-                                                                            <div class="form-check form-check-primary mb-0 d-flex align-items-center">
-                                                                                <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure2" >
-                                                                                <label class="form-check-label" for="measure2">
-                                                                                    General house Keeping is good
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                   
-        
-                                                                </tr>
-
-                                                                <tr data-id="1">
-                                                                    <td style="width: 20px">3.</td>
-                                                                    <td class="pl-0 px-0">
-                                                                        <div class="d-flex">
-                                                                            <div class="form-check form-check-primary mb-0 d-flex align-items-center">
-                                                                                <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure3" >
-                                                                                <label class="form-check-label" for="measure3">
-                                                                                    Adequate fire signs
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>                                                                   
-        
-                                                                </tr>
-
-                                                                <tr data-id="1">
-                                                                    <td style="width: 20px">4.</td>
-                                                                    <td class="pl-0 px-0">
-                                                                        <div class="d-flex">
-                                                                            <div class="form-check form-check-primary mb-0 d-flex align-items-center">
-                                                                                <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure4" >
-                                                                                <label class="form-check-label" for="measure4">
-                                                                                    Electrical installation done to reccomended standards
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>                                                                   
-        
-                                                                </tr>
-        
-                                                                <tr class="cloneCharges d-none">
-                                                                    <td style="width: 80px " class="categoryIndex ">#</td>
-        
-                                                                    <td class="">
-                                                                        <input type="text " class="form-control " placeholder="Enter Plate No." spellcheck="false" data-ms-editor="true">
-                                                                    </td>
-                                                                    <td>
-                                                                        <select class="form-control selectpicker form-select" data-live-search="true" title="Select Vehicle Category" data-style="form-select btn border">
-                                                                            <option value="Sedan">Sedan</option>
-                                                                            <option value="SUV">SUV</option>
-                                                                            <option value="Truck">Truck</option>
-                                                                            <option value="Motorcycle">Motorcycle</option>
-                                                                            <option value="Van">Van</option>
-                                                                            <!-- Add more vehicle categories here as needed -->
-                                                                        </select>
-                                                                        
-                                                                    </td>
-                                                                    <td class="">
-                                                                        <input type="text " class="form-control " placeholder="Owner's Name" spellcheck="false" data-ms-editor="true">
-                                                                    </td>
-                                                                    <td class="">
-                                                                        <input type="text " class="form-control " placeholder="Owner's Phone No." spellcheck="false" data-ms-editor="true">
-                                                                    </td>
-        
-        
-                                                                    <td class="text-right cell-change d-flex align-items-center justify-content-end">
-                                                                        <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
-                                                                    </td>
-                                                                </tr>
-        
-        
-                                                            </tbody>
-                                                            <tfoot>
-                                                                <tr>
-                                                                    <td colspan="7" class="bg-light add-field-1 cursor-pointer">
-                                                                        <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Additional Measures</span></span>
-                                                                    </td>
-                                                                </tr>
-                                                            </tfoot>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
                                         <!-- use this for a search that has no results -->
                                         <div class="col-12 no-results d-none">
                                             <div class="p-4 border-radius border-solid border-primary border-2 d-flex flex-column align-items-center justify-content-center">
@@ -1914,6 +1785,265 @@
                                       <!-- end of business serach results -->
                                 </div>
 
+                                <!-- fire assesment -->
+                                <div class="col-12 fire-assesment d-none">
+                                    <div class="row">
+
+                                        <div class="col-12">
+                                            <h6>Bsiness Name: The name of the business goes here</h6>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="alert alert-primary" role="alert"> 
+                                                <h6 class="mb-0 pb-0">Fire Safety Risk Assesment</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <h5 for="">Safety Measures in Place</h5>
+                                            <p>Select from below any Safety measure already deployed by the Business. You can include additional measures </p>
+                                            
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <div class="">
+                                                <table class="table table-editable-1 align-middle table-edits">
+                                                    <thead class="table-light">
+                                                        <tr class="text-uppercase table-dark">
+                                                            <th>#</th>
+                                                            <th class="" colspan="2">Safety Measure</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr data-id="1">
+                                                            <td style="width: 20px">1.</td>
+                                                            <td class="pl-0 px-0" colspan="2">
+                                                                <div class="d-flex" >
+                                                                    <div class="form-check form-check-primary mb-0 d-flex align-items-center">
+                                                                        <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure1" >
+                                                                        <label class="form-check-label" for="measure1">
+                                                                            They have a rare escape Route
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                           
+
+                                                        </tr>
+
+                                                        <tr data-id="1">
+                                                            <td style="width: 20px">2.</td>
+                                                            <td class="pl-0 px-0" colspan="2">
+                                                                <div class="d-flex">
+                                                                    <div class="form-check form-check-primary mb-0 d-flex align-items-center">
+                                                                        <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure2" >
+                                                                        <label class="form-check-label" for="measure2">
+                                                                            General house Keeping is good
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                           
+
+                                                        </tr>
+
+                                                        <tr data-id="1">
+                                                            <td style="width: 20px">3.</td>
+                                                            <td class="pl-0 px-0" colspan="2">
+                                                                <div class="d-flex">
+                                                                    <div class="form-check form-check-primary mb-0 d-flex align-items-center">
+                                                                        <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure3" >
+                                                                        <label class="form-check-label" for="measure3">
+                                                                            Adequate fire signs
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </td>                                                                   
+
+                                                        </tr>
+
+                                                        <tr data-id="1">
+                                                            <td style="width: 20px">4.</td>
+                                                            <td class="pl-0 px-0" colspan="2">
+                                                                <div class="d-flex">
+                                                                    <div class="form-check form-check-primary mb-0 d-flex align-items-center">
+                                                                        <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure4" >
+                                                                        <label class="form-check-label" for="measure4">
+                                                                            Electrical installation done to reccomended standards
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </td>                                                                   
+
+                                                        </tr>
+
+                                                        <tr class="cloneCharges d-none">
+                                                            <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                            <td class="">
+                                                                <input type="text " class="form-control " placeholder="Additional Measuree" spellcheck="false" data-ms-editor="true">
+                                                            </td>
+                                                            
+
+                                                            <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                                <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                            </td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                                <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Additional Measures</span></span>
+                                                            </td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <h5 for="">Fire Safetey Recomendations</h5>
+                                            <p>Enter any recomendations that the applicant should fullfill below.</p>
+                                            
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="">
+                                                <table class="table table-editable-3 align-middle table-edits">
+                                                    <thead class="table-light">
+                                                        <tr class="text-uppercase table-dark">
+                                                            <th>#</th>
+                                                            <th class="2" colspan="2" >Recomendations</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr data-id="1">
+                                                            <td style="width: 20px">1.</td>
+                                                            <td class="" colspan="">
+                                                                <input type="text " class="form-control " placeholder="Enter Recomendation" spellcheck="false" data-ms-editor="true">
+                                                            </td>                                                                  
+
+                                                        </tr>
+
+                                                        
+
+                                                        <tr class="cloneCharges d-none">
+                                                            <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                            <td class="">
+                                                                <input type="text " class="form-control " placeholder="Enter recomendation" spellcheck="false" data-ms-editor="true">
+                                                            </td>
+                                                            
+
+                                                            <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                                <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-3 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                            </td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td colspan="7" class="bg-light add-field-3 cursor-pointer">
+                                                                <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Additional Measures</span></span>
+                                                            </td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 assesment-done-btn d-flex justify-content-center align-items-center">
+                                                Next  <i class="dripicons-arrow-thin-right font-size-16 align-middle me-2 d-flex align-items-center mx-2"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- fire invoicing -->
+                                <div class="col-12 fire-invoice-creator pt-4 d-none">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <label for="">Permit Type/category</label>
+                                            <select class="form-select">
+                                                <option value=""  disabled>Select Permit Type</option>
+                                                <option value="search">Permit Type 1</option>
+                                                <option class="register">Permit Type 2</option>                                      
+                                            </select>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <label for="">Quantity</label>
+                                           <input type="text" class="form-control" placeholder="Enter Quantity">
+                                        </div>
+
+                                        <div class="col-12 pt-4">
+                                            <h5 for="">Other Possible Fire and Safety fees</h5>
+                                            <p>select any other fee's/levies that are applicable to the business in relation to fire. remember to indicate quantities where applicable</p>
+                                            
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="">
+                                                <table class="table table-editable-2 align-middle table-edits">
+                                                    <thead class="table-light">
+                                                        <tr class="text-uppercase table-dark">
+                                                            <th>#</th>
+                                                            <th class="2" colspan="2" >Servive</th>
+                                                            <th>Qty</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr data-id="1">
+                                                            <td style="width: 20px">1.</td>
+                                                            <td class="" colspan="2">
+                                                                <input type="text " class="form-control " placeholder="Enter Recomendation" spellcheck="false" data-ms-editor="true">
+                                                            </td>   
+                                                            <td>
+                                                                <input type="text " class="form-control " placeholder="Quantity" spellcheck="false" data-ms-editor="true">
+                                                            </td>                                                               
+
+                                                        </tr>
+
+                                                        
+
+                                                        <tr class="cloneCharges d-none">
+                                                            <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                            <td class="">
+                                                                <input type="text " class="form-control " placeholder="Enter recomendation" spellcheck="false" data-ms-editor="true">
+                                                            </td>
+                                                            <td>
+                                                                <input type="text " class="form-control " placeholder="Quantity" spellcheck="false" data-ms-editor="true">
+                                                            </td>         
+                                                            
+
+                                                            <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                                <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                            </td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td colspan="7" class="bg-light add-field-2 cursor-pointer">
+                                                                <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Additional Measures</span></span>
+                                                            </td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn d-flex justify-content-center align-items-center">
+                                                Next  <i class="dripicons-arrow-thin-right font-size-16 align-middle me-2 d-flex align-items-center mx-2"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- form for registering ann unregistered business -->
                                 <div class="col-12 unregistered-biz-cont d-none">
@@ -2107,7 +2237,7 @@
                                                     Invoice Sub Total
                                                 </td>
                                                 <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    KES 500
+                                                    KES 1,500
                                                 </td>
                                                
                                             </tr>
@@ -2130,7 +2260,7 @@
                                                     Total Payable
                                                 </td>
                                                 <td class="border-0 text-end text-right">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 500</h5>
+                                                    <h5 class="m-0 text-uppercase fw-bold">KES 1,500</h5>
                                                 </td>
                                                
                                             </tr>
@@ -2139,13 +2269,20 @@
                                             <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
                                                 <td>01</td>
                                                 <td colspan="2">
-                                                    <p class="mb-0 p-0 m-0"> ALCOHOLIC DRINKS LICENCE Application (X1)</p>
+                                                    <p class="mb-0 p-0 m-0"> Petrol Station Compliance Certificate (X1)</p>
+                                                </td>
+                                                <td class="text-end text-right">KES 1,500</td>
+                                                
+                                            </tr>
+
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                <td>02</td>
+                                                <td colspan="2">
+                                                    <p class="mb-0 p-0 m-0"> Application Fee (X1)</p>
                                                 </td>
                                                 <td class="text-end text-right">KES 500</td>
                                                 
                                             </tr>
-
-                                         
 
 
 
@@ -2172,6 +2309,239 @@
                 <!-- /.modal-dialog -->
             </div>
              <!-- end of fire invoice -->
+
+             <!-- receipting invoice modal -->
+             <div class="modal fade" id="payment-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-none">
+                        <span class="badge badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Receive Payment</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle close-modal" data-dismiss="modal"  aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge  badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Receive Payment</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle pull-right close-modal" data-dismiss="modal" aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+                        </div>
+
+                        <div class="payment-panel-parent">
+                            
+                            <div class="send-method payment-panel payment-active-panel">
+                                <label for="" class="mb-0 pb-0">Payment Method</label>
+                                <p><small class="text-muted">How would you like to send this money?</small></p>
+    
+                                <div>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button fw-medium" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <img class="rounded-circle" src="assets/images/users/mpesa.jpg" alt="Mobile Money" height="65">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <p class="m-0 p-0 text-uppercase fw-semibold">MPESA</p>                                                
+                                                        <p class="mb-0 p-0"> <small>A payment request will be sent directly to the customer</small></p>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div>
+                                                        <p>
+                                                            A payment request of <strong class="text-black">KES 1,500</strong> will be sent to the MPESA number you enter below.
+                                                        </p>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">MPESA Number</label>
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control font-21 text-success form-control-lg" id="phone-input" placeholder="Enter Name">
+                                                            <label for="floatingnameInput">Phone No.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button fw-medium collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <img class="rounded-circle" src="assets/images/users/money.jpg" alt="Mobile Money" height="65">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <p class="m-0 p-0 text-uppercase fw-semibold">Cash</p>                                                
+                                                        <p class="mb-0 p-0"> <small>By selecting this option you confirm that you have received the payment inform of cash</small></p>
+    
+                                                        
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    
+                                                    <div class="form-check form-check-primary mb-3">
+                                                        <input class="form-check-input" type="checkbox" id="confirm-cash">
+                                                        <label class="form-check-label" for="confirm-cash">
+                                                            Confirm having received <strong>KES 1,500.00</strong>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none transaction-summary payment-panel">
+                                <label for="">Transaction Breakdown</label>
+                                <div class="border p-4 rounded ">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="text-muted ">
+                                                Receipt NO.                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                RTS12364558T                                         
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Receipt For                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                Alex Wanjala                                         
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Payment Method                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                MPESA                                         
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Transaction Amount                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                KES 1,500                                        
+                                            </div>
+                                        </div>
+    
+                                        
+                                        <div class="col-12 text-black"><hr class="mb-0 pb-0"></div>
+    
+                                        <div class="col-lg-6 text-uppercase">
+                                            <div class="text-muted mt-2 font-21">
+                                                Total                                          
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end text-uppercase">
+                                            <div class=" text-right text-black font-21 fw-bold">
+                                                KES 1,500                                        
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="mpesa-confirmation ">
+                                        <p class="text-muted mt-2">A payment request of <strong class="text-black">KES 1,500</strong> will be sent to <strong class="text-black">phone number (0704549859)</strong> soon after you click the <strong class="text-black text-capitalize">Send Request</strong> button bellow. 
+                                            <br>
+                                            <br>
+                                            Remember to <strong class="text-black">Check your phone</strong> to confirm payment by entering your Mpesa pin.</p>
+
+                                            <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect btn-send waves-light text-center w-100">
+                                                <div class="d-flex justify-content-center align-items-center"> 
+                                                    <div class="stk-timer-container d-none justify-content-center align-items-center">
+                                                        <span class="mdi mdi-timer-outline font-16px"></span>
+                                                        <span class="stk-timer px-2"></span>
+                                                    </div>
+                                                    <div class="justify-content-center align-items-center d-flex">
+                                                        <span class="px-2">Send Request</span> 
+                                                        <div class="flip-x"><i class="mdi mdi-reply ms-3 font-16px"></i></div>
+                                                    </div>
+
+                                                </div>
+                                             </button>
+                                    </div>
+
+                                    <div class="my-wallet-confirmation d-none">
+                                        <p class="text-muted mt-2 "><strong class="text-uppercase text-black">KES 300</strong> will be deducted from your guardian blink wallet and amount will be credited to <strong class="text-capitalize text-black">Alex's pocket money account</strong>.</p>
+                                        <p class="text-muted">confirm transaction by clicking the <strong class="text-capitalize text-black">send money</strong> button.</p>
+                                        
+                                        <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect waves-light text-center w-100">
+                                            <div class="d-flex justify-content-center align-items-center"> <span class="mx-2">Send Money</span> <div class="flip-x"><i class="mdi mdi-reply flip-x ms-3 font-16px"></i></div></div>
+                                         </button>
+
+                                    </div>
+    
+                                    
+                                </div>
+                            </div>
+                            <div class="d-none loader-panel">
+                                <div class="loader-modal p-5">
+                                    <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
+                                        <div class="spinner-border text-dark m-1" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                        <p class="pt-4 fw-strong text-uppercase">Processing Payment Please Wait <br>
+                                        <span class="fw-semibold text-black">STK Push sent to client</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center d-flex flex-column justify-content-around align-items-center sent-success d-none payment-panel p-4">
+                                <div class="success-image mb-4">
+                                    <img src="assets/images/transactionReceipt-confirm.png" style="height: 65px;"  height="200" alt="">                                
+                                </div>
+                                <h4 class="text-blink-primary fw-bold">Transaction Complete</h4>
+                                <p class="text-muted mb-4"><strong class="text-black">KES 1,500.00</strong> has been received for <strong class="text-black">Invoice No. YUB48997.  </strong> The receipt Number for this transaction is <strong class="text-black">YUB48997.  </strong> </p>
+                                <p>Feel free to dismiss this pop-up or print the receipt for this transaction at your convenience.</p>
+    
+                                <a href="PrintDocs/Receipts/receipts.html" target="new" type="button" class="btn btn-primary waves-effect waves-light w-100 mb-5 btn-lg">
+                                    <i class="bx bxs-printer font-size-16 align-middle me-2"></i> Print Receipt
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex modal-footer-btn-pay">
+                        <button href="javascript: void(0);" disabled class="btn btn-outline-light waves-effect waves-light payment-prev"> <i class="mdi mdi-arrow-left ms-1"></i> Previouse </button>
+                        <button href="javascript: void(0);" class="btn btn-primary waves-effect waves-light payment-next">Next <i class="mdi mdi-arrow-right ms-1"></i></button>
+                        <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect waves-light text-center d-none">
+                           <div class="d-flex justify-content-center align-items-center"> <span>Send Money</span> <div class="flip-x"><i class="mdi mdi-reply flip-x ms-3 font-16px"></i></div></div>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- end of receipting modal -->
 
             <footer class="footer ">
                 <div class="container-fluid ">
@@ -2259,6 +2629,12 @@
 
      <!-- active vs expired certificats -->
      <script src="assets/js/pages/expiredVsActiveCerts.js"></script>
+
+     
+     <!-- Table Editable plugin -->
+     <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
+     <script src="assets/js/pages/table-editable.int.js"></script>
+
 
     <!-- App js -->
     <script src="assets/js/app.js "></script>
