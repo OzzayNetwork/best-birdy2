@@ -524,13 +524,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Receipted Transactions Report</h4>
+                                <h4 class="mb-sm-0 font-size-18">MPESA PAYBILL 12345</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item text-capitalize"><a href="#">Reports</a></li>
                                         <li class="breadcrumb-item text-capitalize"><a href="#">Receipted Transactions</a></li>
+                                        <li class="breadcrumb-item text-capitalize"><a href="#">Mpesa Paybill 1234</a></li>
                                     </ol>
                                 </div>
 
@@ -555,6 +556,17 @@
 
                                         <div class="d-flex">
                                             <div class="d-flex align-items-center me-3 pe-3">
+
+                                                <span class="pr-3 fw-semibold">Payment Method:</span>
+                                                <select class="form-select w-auto font-13px me-3">
+                                                    <option value="" disabled>Select Method</option>
+                                                    <option value="10">All Methods</option>
+                                                    <option value="25">STK Push</option>
+                                                    <option value="50">Payment Correction</option>
+                                                    <option value="100">Mpesa Paybill Manual Entry</option>
+                                                    <option value="150">Bank Transaction OTP</option>
+                                                </select>
+
                                                 <span class="pr-3 fw-semibold">From:</span>
                                                 <input class="form-control" placeholder="Start date" type="date">
                                                 <span class="px-3 fw-semibold">TO:</span>
@@ -578,14 +590,14 @@
                                         <table class="table align-middle table-hover contacts-table table-striped" id="">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
-                                                    <th>#</th>
-                                                    <th scope="col">Payment Source</th>
-                                                    <th>Account Name</th>
-                                                    <th>Type</th>
-                                                    <th>Transactions</th>
-                                                    <th>Receipted Transactions</th>
-                                                    <th scope="col">Pending Receipting</th>    
-                                                    <th>Account Administrator</th>                                                
+                                                    <th>Ref No.</th>
+                                                    <th scope="col">Date Paid</th>
+                                                    <th>Date Receipted</th>
+                                                    <th>Paid by</th>
+                                                    <th>Phone No.</th>
+                                                    <th>Method</th>
+                                                    <th scope="col">Invoice No.</th>    
+                                                    <th>Receipted By</th>                                                
                                                     <th scope="col" class="text-right">Receipted Amount</th>
                                                     <th class="text-right"></th>
                                                 </tr>
@@ -593,47 +605,71 @@
 
                                           <tbody>
                                             <tr>
-                                                <th>1.</th>
-                                                <td class="text-uppercase fw-bold text-black">MPESA PAY BILL NO. 123456</td>
-                                                <td class="text-uppercase">Revenue Account</td>
-                                                <td class="fw-bold text-black text-uppercase">MPESA</td>
-                                                <td>56</td>
-                                                <td>50</td>
-                                                <td>6</td>
-                                                <td>Kelvin Gitonga</td>
-                                                <td class="text-right"><strong>KES 570,780 (80%)</strong></td>
+                                                <th>HBJJHDYTD794</th>
+                                                <td class="text-uppercase">12 Jul 2023 11:56:34 AM</td>
+                                                <td class="text-uppercase">12 Jul 2023 11:58:45 AM</td>
+                                                <td class="text-black text-uppercase">Kelvin Ndungu</td>
+                                                <td>0704549859</td>
+                                                <td>STK Push</td>
+                                                <td>BLL123456</td>
+                                                <td class="text-uppercase">Kelvin Gitonga</td>
+                                                <td class="text-right"><strong>KES 570,780</strong></td>
                                                 <td class="text-right">
-                                                    <a class="btn btn-sm btn-primary text-uppercase" href="reports-transactions-view.html">View Details</a>
+                                                    <a class="btn btn-sm btn-primary text-uppercase d-none" href="reports-transactions-view.html">View Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>HBJJHDYTD794</th>
+                                                <td class="text-uppercase">12 Jul 2023 11:56:34 AM</td>
+                                                <td class="text-uppercase">12 Jul 2023 11:58:45 AM</td>
+                                                <td class="text-black text-uppercase">Kelvin Ndungu</td>
+                                                <td>0704549859</td>
+                                                <td>MPESA PAYBILL</td>
+                                                <td>BLL123456</td>
+                                                <td class="text-uppercase">Kelvin Gitonga</td>
+                                                <td class="text-right"><strong>KES 570,780</strong></td>
+                                                <td class="text-right">
+                                                    <a class="btn btn-sm btn-primary text-uppercase d-none" href="reports-transactions-view.html">View Details</a>
                                                 </td>
                                             </tr>
 
                                             <tr>
-                                                <th>2.</th>
-                                                <td class="text-uppercase fw-bold text-black">KCB Bank Acc NO. 123456</td>
-                                                <td class="text-uppercase">KCB Revenue Account</td>
-                                                <td class="fw-bold text-black text-uppercase">BANK</td>
-                                                <td>56</td>
-                                                <td>50</td>
-                                                <td>6</td>
-                                                <td>Kelvin Gitonga</td>
-                                                <td class="text-right"><strong>KES 570,780 (80%)</strong></td>
+                                                <th>HBJJHDYTD794</th>
+                                                <td class="text-uppercase">12 Jul 2023 11:56:34 AM</td>
+                                                <td class="text-uppercase">12 Jul 2023 11:58:45 AM</td>
+                                                <td class="text-black text-uppercase">Kelvin Ndungu</td>
+                                                <td>0704549859</td>
+                                                <td>TRANSACTION CORRECTION</td>
+                                                <td>BLL123456</td>
+                                                <td class="text-uppercase">Kelvin Gitonga</td>
+                                                <td class="text-right"><strong>KES 570,780</strong></td>
                                                 <td class="text-right">
-                                                    <a class="btn btn-sm btn-primary text-uppercase" href="reports-transactions-view.html" >View Details</a>
+                                                    <a class="btn btn-sm btn-primary text-uppercase d-none" href="reports-transactions-view.html">View Details</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>HBJJHDYTD794</th>
+                                                <td class="text-uppercase">12 Jul 2023 11:56:34 AM</td>
+                                                <td class="text-uppercase">12 Jul 2023 11:58:45 AM</td>
+                                                <td class="text-black text-uppercase">Kelvin Ndungu</td>
+                                                <td>0704549859</td>
+                                                <td>BANK PAYMENT OTP</td>
+                                                <td>BLL123456</td>
+                                                <td class="text-uppercase">Kelvin Gitonga</td>
+                                                <td class="text-right"><strong>KES 570,780</strong></td>
+                                                <td class="text-right">
+                                                    <a class="btn btn-sm btn-primary text-uppercase d-none" href="reports-transactions-view.html">View Details</a>
                                                 </td>
                                             </tr>
                                           </tbody>
                                             
                                             <tfoot class="table-dark">
                                                 <tr>
-                                                    <th colspan="4">4 Sources</th>
-                                                    <th>560</th>
-                                                    <th>500</th>
-                                                    <th>60</th>
-                                                    <th>34</th>
-                                                    <th class="text-right"><strong>KES 570,780 (80%)</strong></th>
-                                                    <th class=""></th>
-
-                                                    
+                                                    <th colspan="7">4 Transactions</th>     
+                                                    <th>4 users</th>                                               
+                                                    <th class="text-right"><strong>KES 570,780</strong></th>
+                                                    <th class=""></th>                                                   
                                                 
                                                 </tr>
                                             </tfoot>
