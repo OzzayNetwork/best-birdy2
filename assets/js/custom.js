@@ -1074,3 +1074,26 @@ $('.send-otp-inv').on('click', function(){
     }, 2000);
 })
 
+$('.bank-nxt-bank').on('click', function(){
+    $('.bank-inputs').addClass('d-none').siblings().removeClass('d-none')
+})
+
+$('.bank-otp-input').on('keyup', function(){
+    var theIputVal=$(this).val()
+    if(theIputVal!=""){
+        $(".btn-otp-submit").prop('disabled', false);
+    }
+
+    if(theIputVal===""){
+        $(".btn-otp-submit").prop('disabled', true);
+    }
+})
+
+$('.btn-otp-edit').on('click', function(){
+    $('.bank-inputs').removeClass('d-none').siblings().addClass('d-none')  
+})
+
+$('.btn-otp-submit').on('click', function(){
+    $('.payment-next').click()
+})
+

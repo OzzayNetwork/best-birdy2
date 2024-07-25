@@ -1015,7 +1015,7 @@
                                                         <img class="rounded-circle" src="assets/images/users/money.jpg" alt="Mobile Money" height="65">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <p class="m-0 p-0 text-uppercase fw-semibold">Cash</p>                                                
+                                                        <p class="m-0 p-0 text-uppercase fw-semibold">BANK</p>                                                
                                                         <p class="mb-0 p-0"> <small>By selecting this option you confirm that you have received the payment inform of cash</small></p>
     
                                                         
@@ -1024,13 +1024,62 @@
                                             </h2>
                                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                    
+                                                   <div class="bank-inputs">
+                                                    <div class="mb-3">
+                                                        <label for="">Select Bank</label>
+                                                        <select name="" id="" class="form-select">
+                                                            <option value="" disabled>Select Bank Account</option>
+                                                            <option value="">KCB - 1245475</option>
+                                                            <option value="">Cooperative Bank - 56789</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Bank refrence Number</label>
+                                                        <input type="text" class="form-control" placeholder="Enter Ref No.">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Payer's Full Names</label>
+                                                        <input type="text" class="form-control" placeholder="Enter full Names">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Payer's Phone Number</label>
+                                                        <input type="text" class="form-control" placeholder="Enter Phone Number">
+                                                    </div>
+
                                                     <div class="form-check form-check-primary mb-3">
                                                         <input class="form-check-input" type="checkbox" id="confirm-cash">
                                                         <label class="form-check-label" for="confirm-cash">
-                                                            Confirm having received <strong>KES 1,500.00</strong>
+                                                            Confirm to have received the cheque or receipt for <strong>KES 1,500.00</strong> from the client
                                                         </label>
                                                     </div>
+
+                                                    <button class="btn btn-primary w-100 text-uppercase bank-nxt-bank">Next</button>
+                                                   </div>
+
+                                                   <div class="bank-input d-none">
+                                                        <p>
+                                                            An OTP has been sent to the client's phone number: <strong class="text-black">0712345678</strong>. Please ask them to check their messages. If they haven't received it, ask them to enable promotional messages and try again. <a href="#" title="Resend OTP">If necessary, you can click here to retry sending the OTP</a>.
+                                                        </p>
+                                                        <div class="form-group">
+                                                            <label for="">OTP</label>
+                                                            <div class="form-floating mb-3">
+                                                                <input type="text" class="form-control font-21 text-success form-control-lg bank-otp-input" id="phone-input" placeholder="Enter Name" spellcheck="false" data-ms-editor="true">
+                                                                <label for="floatingnameInput">Enter OTP sent to Client's Phone</label>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn btn-light waves-effect me-3 btn-otp-edit">
+                                                                <i class="bx bxs-edit-alt font-size-16 align-middle me-2"></i> Edit
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary waves-effect btn-otp-submit" disabled>
+                                                                Next  <i class="bx bx-right-arrow-alt font-size-16 align-middle"></i>
+                                                            </button>
+                                                        </div>
+                                                   </div>
                                                 </div>
                                             </div>
                                         </div>
