@@ -1023,3 +1023,54 @@ window.onload=function(){
 	variableWidth: true
 	});
   };
+
+//   selecting dire search method
+  $('.fire-search-method').on('change', function(e){
+    var theVal=$(this).val()
+    // alert(theVal)
+    //alert(theVal)
+    if(theVal=="search"){
+        $('.business-id-search').removeClass('d-none').siblings().addClass('d-none')
+    }
+
+    if(theVal=="Paid-incoice"){
+        $('.inv-results').removeClass('d-none').siblings().addClass('d-none')
+        //alert("paid invoices")
+    }
+})
+
+// ??seraching for invoice
+$('.inv-serach-btn').on('click', function(){
+    
+    $('.inv-loader').removeClass('d-none')
+    $('.inv-details-cont').removeClass('d-none')
+    setTimeout(function() {
+        $('.inv-loader').addClass('d-none');
+        $('.invoice-details').removeClass('d-none')
+        $('.inv-results').addClass('d-none')
+        $('.business-selector').addClass('d-none')
+    }, 2000);
+})
+
+$('.btn-inv-details').on('click', function(){
+    $(this).parent().parent().addClass('d-none').siblings().addClass('d-none')
+    $('.assesment-invoice').removeClass('d-none')
+})
+
+$('.btn-assesment-nv').on('click', function(){
+    $(this).parent().parent().addClass('d-none').siblings().addClass('d-none')
+    $('.otp-invoice').removeClass('d-none')
+})
+
+
+$('.send-otp-inv').on('click', function(){
+    $(this).parent().parent().addClass('d-none').siblings().addClass('d-none')
+    $('.inv-loader').removeClass('d-none')
+
+    setTimeout(function() {
+        $('.inv-loader').addClass('d-none');
+        $('.invoice-success-certificate').removeClass('d-none')
+        
+    }, 2000);
+})
+

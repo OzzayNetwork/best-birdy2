@@ -11514,10 +11514,10 @@
                             <div class="row business-selector">
                                 <div class="col-md-12 mb-3">
                                     <label for="">Search or Input establishment details</label>
-                                    <select class="form-select liq-search-method" >
+                                    <select class="form-select fire-search-method" >
                                         <option value="">Select Search Method</option>
                                         <option value="search">Search from Existing Registered Businesses</option>
-                                        <option class="register">Unregestered Business</option>                                      
+                                        <option value="Paid-incoice">Use Paid Invoice</option>                                      
                                     </select>
 
                                    
@@ -11929,142 +11929,432 @@
                                     </div>
                                 </div>
 
-                                <!-- form for registering ann unregistered business -->
-                                <div class="col-12 unregistered-biz-cont d-none">
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="formrow-firstname-input" class="form-label">Name of Establishment</label>
-                                            <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter the Business Name" spellcheck="false" data-ms-editor="true">
-                                        </div>
-                                    </div>
+                                <!-- Form for invoice search -->
+                                <div class="col-12 inv-results d-none">
                                     <div class="row">
-                                        <div class="col-sm-12 col-md-8">
-                                            <div class="row">
+                                        <div class="col-12">
+                                            <div class="mb-3 mt-5">
+                                                <label for="formrow-firstname-input" class="form-label">Search for Invoice</label>
+                                                <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter Invoivece Number" spellcheck="false" data-ms-editor="true">
+                                            </div>
+                                        </div>
 
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Name of Premices</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Building Name" spellcheck="false" data-ms-editor="true">
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100 text-center text-uppercase inv-serach-btn mb-3">
+                                                Search
+                                            </button>
+                                        </div>
+                                    </div>                                   
+                                </div>
+
+                                <!-- Results for business search with invoice -->
+                                 <div class="col-12 inv-details-cont">
+
+                                    <!-- invoice loader -->
+                                     <div class="row inv-loader d-none">
+                                        <div  class="">
+                                            <div class="loader-modal p-5">
+                                                <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
+                                                    <div class="spinner-border text-dark m-1" role="status">
+                                                        <span class="sr-only fw-bold">Searching</span>
                                                     </div>
+                                                    <p class="pt-4 fw-strong text-uppercase fw-bold">Please wait patiently while our system looks <br> for Invoice.</p>
                                                 </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                     
 
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Sub County</label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>            
-                                                </div>
+                                    <!-- the invoice and business details -->
+
+                                    <!-- show this for an already paid invoice -->
+                                   <div class="row invoice-details d-none">
+                                        <div class="col-12">
+                                            <div>
+                                                <table class="table table-sm text-uppercase table-striped">
+                                                    <thead class="">
+                                                        <tr class="table-dark">
+                                                            <th colspan="2">Invoice Details <span class="text-warning">Invoice Number ID 1234</span></th>
+                                                        </tr>
+                                                        <tr class="table-light">
+                                                            <th class="text-uppercase">Invoice Item</th>
+                                                            <th class="text-uppercase text-right">Amount</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>
+                                                                SBP Registration fee
+                                                            </th>
+                                                            <td class="text-right">
+                                                                KES 3000
+                                                            </td>
+                                                        </tr>
         
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Ward</label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>
-            
-                                                </div>
+                                                        <tr>
+                                                            <th>
+                                                                Fire inspection Fees
+                                                            </th>
+                                                            <td class="text-right">
+                                                                KES 3000
+                                                            </td>
+                                                        </tr>
         
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Zone eg Market, </label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>
-            
-                                                </div>
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Applicant's Name</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="eg John Doe" spellcheck="false" data-ms-editor="true">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Applicant's Postal Address</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="eg 123-001200 Nairobi" spellcheck="false" data-ms-editor="true">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-4">
-                                           <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Physical Address</label>
-                                                        <textarea placeholder="Enter the Business's Physical Address" class="form-control" name="" id="" cols="30" rows="10"></textarea>
-                                                    </div> 
-                                                </div>
-                                           </div>
-                                        </div>
-
-                                        <div class="col-sm-12 col-md-6">
-                                            <div class="mb-3">
-                                                <label for="formrow-firstname-input" class="form-label">Appilicant's Phone</label>
-                                                <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter Phone Number" spellcheck="false" data-ms-editor="true">
+                                                        <tr>
+                                                            <th>
+                                                                Small enterprice
+                                                            </th>
+                                                            <td class="text-right">
+                                                                KES 3000
+                                                            </td>
+                                                        </tr>
+        
+                                                       
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr class="table-success">
+                                                            <th>Sub Total</th>
+                                                            <th class="text-right">KES 5,500</th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
                                             </div>
                                         </div>
 
-                                        <div class="col-sm-12 col-md-6">
-                                            <div class="mb-3">
-                                                <label for="formrow-firstname-input" class="form-label">Appilicant's Email</label>
-                                                <input type="email" class="form-control" id="formrow-firstname-input" placeholder="email@email.com" spellcheck="false" data-ms-editor="true">
+                                        <div class="col-12">
+                                            <div class="alert alert-success" role="alert">
+                                               <h6 class="fw-bold text-uppercase">The invoice has been paid For</h6>
                                             </div>
                                         </div>
 
-                                        <div class="col-12 mt-3">
-                                            <h4 class="text-capitalize">Establishment's Physical location</h4>
-                                            <p>Select the address where this establishmnet is located from this map.</p>
+                                        <div class="col-12 mt-4">
+                                            <div>
+                                                <table class="table table-sm text-uppercase table-striped">
+                                                    <thead class="table-dark">
+                                                        <tr><th colspan="2">Search Results for Business with <span class="text-warning">Business ID 1234</span></th>
+                                                    </tr></thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>
+                                                                Name of Establishment
+                                                            </th>
+                                                            <td>
+                                                                The big Palace Bar and Grill
+                                                            </td>
+                                                        </tr>
+    
+                                                        <tr>
+                                                            <th>
+                                                                Sub County
+                                                            </th>
+                                                            <td>
+                                                                Rachuonyo South Subcounty
+                                                            </td>
+                                                        </tr>
+    
+                                                        <tr>
+                                                            <th>
+                                                                Ward
+                                                            </th>
+                                                            <td>
+                                                                Name of the Ward
+                                                            </td>
+                                                        </tr>
+    
+                                                        <tr>
+                                                            <th>
+                                                                Physical Address
+                                                            </th>
+                                                            <td>
+                                                                Next to the Big Super Market
+                                                            </td>
+                                                        </tr>
+    
+                                                        <tr>
+                                                            <th>
+                                                                Building/Name of Premiscess
+                                                            </th>
+                                                            <td>
+                                                                The big Tower
+                                                            </td>
+                                                        </tr>
+    
+                                                        <tr>
+                                                            <th>
+                                                                Postal Address
+                                                            </th>
+                                                            <td>
+                                                                123-100009 Eldoret
+                                                            </td>
+                                                        </tr>
+    
+                                                        <tr>
+                                                            <th>
+                                                                Applicant's Name
+                                                            </th>
+                                                            <td>
+                                                                John Doe
+                                                            </td>
+                                                        </tr>
+    
+                                                        <tr>
+                                                            <th>
+                                                                Phone Number
+                                                            </th>
+                                                            <td>
+                                                                0701234567
+                                                            </td>
+                                                        </tr>
+    
+                                                        <tr>
+                                                            <th>
+                                                                Email Address
+                                                            </th>
+                                                            <td>
+                                                                email@mail.com
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100 btn-inv-details ">Next</button>
+                                        </div>
+                                   </div>
+
+
+                                   <!-- application assesment form for invoice searched businesses-->
+                                    <div class="row assesment-invoice d-none">
+
+                                        <div class="col-12">
+                                            <h6>Bsiness Name: The name of the business goes here</h6>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="alert alert-primary" role="alert"> 
+                                                <h6 class="mb-0 pb-0">Fire Safety Risk Assesment</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <h5 for="">Safety Measures in Place</h5>
+                                            <p>Select from below any Safety measure already deployed by the Business. You can include additional measures </p>
+                                            
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <div class="">
+                                                <table class="table table-editable-1 align-middle table-edits">
+                                                    <thead class="table-light">
+                                                        <tr class="text-uppercase table-dark">
+                                                            <th>#</th>
+                                                            <th class="" colspan="2">Safety Measure</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr data-id="1">
+                                                            <td style="width: 20px">1.</td>
+                                                            <td class="pl-0 px-0" colspan="2">
+                                                                <div class="d-flex" >
+                                                                    <div class="form-check form-check-primary mb-0 d-flex align-items-center">
+                                                                        <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure1" >
+                                                                        <label class="form-check-label" for="measure1">
+                                                                            They have a rare escape Route
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                           
+
+                                                        </tr>
+
+                                                        <tr data-id="1">
+                                                            <td style="width: 20px">2.</td>
+                                                            <td class="pl-0 px-0" colspan="2">
+                                                                <div class="d-flex">
+                                                                    <div class="form-check form-check-primary mb-0 d-flex align-items-center">
+                                                                        <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure2" >
+                                                                        <label class="form-check-label" for="measure2">
+                                                                            General house Keeping is good
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                           
+
+                                                        </tr>
+
+                                                        <tr data-id="1">
+                                                            <td style="width: 20px">3.</td>
+                                                            <td class="pl-0 px-0" colspan="2">
+                                                                <div class="d-flex">
+                                                                    <div class="form-check form-check-primary mb-0 d-flex align-items-center">
+                                                                        <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure3" >
+                                                                        <label class="form-check-label" for="measure3">
+                                                                            Adequate fire signs
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </td>                                                                   
+
+                                                        </tr>
+
+                                                        <tr data-id="1">
+                                                            <td style="width: 20px">4.</td>
+                                                            <td class="pl-0 px-0" colspan="2">
+                                                                <div class="d-flex">
+                                                                    <div class="form-check form-check-primary mb-0 d-flex align-items-center">
+                                                                        <input class="form-check-input w-auto h-auto me-3" type="checkbox" id="measure4" >
+                                                                        <label class="form-check-label" for="measure4">
+                                                                            Electrical installation done to reccomended standards
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </td>                                                                   
+
+                                                        </tr>
+
+                                                        <tr class="cloneCharges d-none">
+                                                            <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                            <td class="">
+                                                                <input type="text " class="form-control " placeholder="Additional Measuree" spellcheck="false" data-ms-editor="true">
+                                                            </td>
+                                                            
+
+                                                            <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                                <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                            </td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                                <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Additional Measures</span></span>
+                                                            </td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <h5 for="">Fire Safetey Recomendations</h5>
+                                            <p>Enter any recomendations that the applicant should fullfill below.</p>
+                                            
                                         </div>
 
                                         <div class="col-12">
                                             <div class="">
-                                                <div class="card-header bg-white boarder-bottom-1 d-none">
-                                                    <div class="row d-flex justify-content-between">
-                                                        <div class="col-12">
-                                                            <div class="search-box mb-2 me-2">
-                                                                <div class="position-relative">
-                                                                    <input type="text" class="form-control bg-light border-light rounded map-searcher" id="pac-inpu" placeholder="Search for location">
-                                                                    <i class="bx bx-search-alt search-icon"></i>
-                                                                </div>
+                                                <table class="table table-editable-3 align-middle table-edits">
+                                                    <thead class="table-light">
+                                                        <tr class="text-uppercase table-dark">
+                                                            <th>#</th>
+                                                            <th class="2" colspan="2" >Recomendations</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr data-id="1">
+                                                            <td style="width: 20px">1.</td>
+                                                            <td class="" colspan="">
+                                                                <input type="text " class="form-control " placeholder="Enter Recomendation" spellcheck="false" data-ms-editor="true">
+                                                            </td>                                                                  
+
+                                                        </tr>
+
+                                                        
+
+                                                        <tr class="cloneCharges d-none">
+                                                            <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                            <td class="">
+                                                                <input type="text " class="form-control " placeholder="Enter recomendation" spellcheck="false" data-ms-editor="true">
+                                                            </td>
+                                                            
+
+                                                            <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                                <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-3 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                            </td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td colspan="7" class="bg-light add-field-3 cursor-pointer">
+                                                                <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Additional Measures</span></span>
+                                                            </td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 d-flex justify-content-center align-items-center btn-assesment-nv">
+                                                Next  <i class="dripicons-arrow-thin-right font-size-16 align-middle me-2 d-flex align-items-center mx-2"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sending OTP to the customer during invoicing -->
+                                     <div class="row otp-invoice d-none">
+                                        <div class="col-12">
+
+                                            <div class="col-12">
+                                                <h5>Certificate Type and Verification</h5>
+                                            </div>
+
+                                           <div class="row">
+                                                <div class="col-12 mb-3">
+                                                    <label for="">Certificate Category</label>
+                                                    <select class="form-select liq-search-method">
+                                                        <option value="">Select Certificate Type</option>
+                                                        <option value="">Certififcta Category 1</option>
+                                                        <option value="">Certififcta Category 2</option>   
+                                                        <option value="">Certififcta Category 3</option>
+                                                        <option value="">Certififcta Category 4</option>                                      
+                                                    </select>
+                                                </div>
+                                           </div>
+
+                                           
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="" class="mb-0">OTP</label>
+                                                    <p>An OTP has been sent to the phone number ending in <strong class="text-black">***123</strong>. Please share the OTP to complete the process.</p>
+                                                    <input type="text" class="form-control" placeholder="Enter OTP">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100 text-uppercase mt-4 send-otp-inv">Submit</button>
+                                        </div>
+                                     </div>
+
+                                     <!-- succesfull creation of the certificates -->
+                                      <div class="row invoice-success-certificate d-none">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="col-8">
+                                                <div class="text-center d-flex justify-content-center align-items-center flex-column">
+                                                    <div class="w-100 my-4 d-flex align-items-center justify-content-center">
+                                                        <div class="avatar-md">
+                                                            <div class="avatar-title bg-light rounded-circle text-success font-size-28">
+                                                                <i class="bx bx-check-double"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                
-                                                </div>
-                                                <div class="" style="height: 350px;">
-                                                    <div id="map" class="w-100 mt-1 h-100 live-map-cont main-map-container"></div>
-                                                </div>
-                
-                                            </div>
-                
-                                            <div class="">
-                                                <div class="position-relative ">
-                                                    <!-- map serach input box -->
-                                                    <div class="form-group map-searcher mt-3 pt-3">
-                                                        <input type="text" class="form-control form-control-lg text-black" placeholder="Search for a location" id="pac-input">
-                                                        <button title="Clear search results" class="btn btn-transparent border-0 clear-map"><i class="mdi mdi-close d-none"></i></button>
-                                                    </div>
+                                                    <h4>Succesfully Created</h4>
+                                                    <p>The Permit has been succesfully created. Click the button bellow to print the respective certificate. Otherwise you can ignore.</p>
+                                                    <a href="PrintDocs/Fire Permit/homabya trade permit.html" target="new" class="btn btn-success mt-4 text-uppercase mb-4">Print Certificate</a>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="col-12">
-                                            <button  target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn">
-                                                <i class="mdi mdi-checkbox-multiple-marked font-size-16 align-middle me-2"></i> Generate Invoice
-                                            </button>
-                                        </div>
-                
-                                       
-
-                                        
-                                    </div>
-                                </div>
+                                      </div>
+                                 </div>
                             </div>
                         </div>
 
