@@ -1632,7 +1632,7 @@
          <!-- modal for SBP top Up -->
 
          <div class="modal fade" id="topUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalCenterTitle">SBP Top Up</h5>
@@ -1641,25 +1641,286 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
+                    <div class="row top-up-inputs">
                         <div class="col-12 mb-3">
-
+                            <div class="card-body bg-light d-flex mb-4 mt-4">
+                                <p class=" mb-0 ">
+                                    <i class="mdi mdi-office-building-outline text-success align-middle me-3 font-size-24 ml-5 mr-5 "></i>
+                                </p>
+                                <div>
+                                    <p class="text-muted mb-0 ">Business Name</p>
+                                    <p class="mb-0 ">
+                                        <strong class="fw-semibold">
+                                            <span class="">Andrew Alex Tokens Enterprice</span>
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 mb-3">
+
+                        <div class="col-4 mb-3">
+                            <label for="">Sub County</label>
+                            <select name="" class="form-select form-control" id="">
+                                <option value="" disabled>Select Sub County</option>
+                                <option value="">Subcounty 1</option>
+                                <option value="">Subcounty Two</option>
+                            </select>
+                        </div>
+
+                        <div class="col-4 mb-3">
+                            <label for="">Ward</label>
+                            <select name="" class="form-select form-control" id="">
+                                <option value="" disabled>Select Ward</option>
+                                <option value="">Ward 1</option>
+                                <option value="">Ward Two</option>
+                            </select>
+                        </div>
+
+                        <div class="col-4 mb-3">
+                            <label for="">Zone</label>
+                            <select name="" class="form-select form-control" id="">
+                                <option value="" disabled>Select Zone</option>
+                                <option value="">zone 1</option>
+                                <option value="">Zone Two</option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-6 mb-3">
                             <label for="">Business Category</label>
-                            <input type="text" class="form-control" placeholder="Business name"
-                                value="The Business" >
+                            <select name="" class="form-select form-control" id="">
+                                <option value="" disabled>Select Business Category</option>
+                                <option value="">Business Category 1</option>
+                                <option value="">Business Category Two</option>
+                            </select>
                         </div>
 
-                        <div class="col-12 mb-3">
+                        <div class="col-6 mb-3">
                             <label for="">Business SUb Category</label>
-                            <input type="text" class="form-control" placeholder="Business name"
-                                value="The Business" >
+                            <select name="" class="form-select form-control" id="">
+                                <option value="" disabled>Select Business Sub category</option>
+                                <option value="">Business Sub Category 1</option>
+                                <option value="">Business Sub Category Two</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 mb-4">
+                            <label for="">Other Charges</label>
+                            <select name="" class="form-select form-control" id="">
+                                <option value="" disabled>Select Other Charges</option>
+                                <option value="">Other SBP Charges</option>
+                                <option value="">SBP Charges two</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 mb-2">
+                            <h5 for="">Other Charges</h5>
+                        </div>
+
+                        <div class="col-12 mb-4">
+                            <div class="form-check form-check-primary mb-3">
+                                <input class="form-check-input" type="checkbox" id="formCheckcolor1" >
+                                <label class="form-check-label" for="formCheckcolor1">
+                                    Registration fee
+                                </label>
+                            </div>
+
+                            <div class="form-check form-check-primary mb-3">
+                                <input class="form-check-input" type="checkbox" id="formCheckcolor2">
+                                <label class="form-check-label" for="formCheckcolor2">
+                                    Printing Fees
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <hr>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="d-flex text-uppercase justify-content-end" >
+                                <button type="button" class="btn btn-secondary mr-3 text-uppercase d-none" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary me-3 mx-3 text-uppercase btn-top-nxt">Next</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row top-up-summary mt-3 d-none">
+
+                        <div class="col-12">
+                            <div class="card-body bg-light d-flex mb-4 mt-4">
+                                <p class=" mb-0 ">
+                                    <i class="mdi mdi-office-building-outline text-success align-middle me-3 font-size-24 ml-5 mr-5 "></i>
+                                </p>
+                                <div>
+                                    <p class="text-muted mb-0 ">Business Name</p>
+                                    <p class="mb-0 ">
+                                        <strong class="fw-semibold">
+                                            <span class="">Andrew Alex Tokens Enterprice</span>
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                       <div class="col-12 mb-3">
+                        <table class="table table-sm text-uppercase table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th colspan="">Changes Done as a result of the top Up</th>
+                                    <th>Previouse</th>
+                                    <th>Change</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <!-- include  <strong class="text-danger">*</strong> where a change was done -->
+                                <tr>
+                                    <th>
+                                        Subcounty <strong class="text-danger">*</strong>
+                                    </th>
+                                    <td>
+                                        Homa Bay
+                                    </td>
+                                    <td>Rachuonyo North</td>
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                        Ward  <strong class="text-danger">*</strong>
+                                    </th>
+                                    <td>
+                                        Homabay Central
+                                    </td>
+
+                                    <td>
+                                        Kindu Bay
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                        Zone <strong class="text-danger">*</strong>
+                                    </th>
+                                    <td class="">
+                                        Soko Mjinga
+                                    </td>
+
+                                    <td class="">
+                                        Soko Mjinga sana
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                        Business Category <strong class="text-danger">*</strong>
+                                    </th>
+                                    <td>
+                                        The Business Category
+                                    </td>
+                                    <td>
+                                        The New Business category
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                        Business Sub category <strong class="text-danger">*</strong>
+                                    </th>
+                                    <td>
+                                        Sub Category
+                                    </td>
+                                    <td>
+                                        New Sub category
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                       Previouse Amount <strong class="text-danger">*</strong>
+                                    </th>
+                                    <td>
+                                        KES 4,000
+                                    </td>
+                                    <td>
+                                        KES 6,500
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                       </div>
+
+                       <div class="col-12 mb-3">
+                        <div class="card-body bg-light d-flex mb-4 mt-4">
+                            <p class=" mb-0 ">
+                                <i class="mdi mdi-cash-multiple text-primary align-middle me-3 font-size-24 ml-5 mr-5 "></i>
+                            </p>
+                            <div>
+                                <p class="text-muted mb-0 ">Amount Billable</p>
+                                <p class="mb-0 ">
+                                    <strong class="fw-semibold">
+                                        <span class="">KES 1,500</span>
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-secondary text-uppercase btn-top-prev">Previouse</button>
+                            <button class="btn text-uppercase btn-success mx-3 top-up-bill-gen" >
+                                generate Bill
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="row  d-none top-up-bill-creation">
+                        <div class="justify-content-center align-items-center d-flex mb-4">
+                            <div class="col-7">
+                                <div class="top-up-loader">
+                                    <div class="loader-modal p-5">
+                                        <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
+                                            <div class="spinner-border text-dark m-1" role="status">
+                                                <span class="sr-only fw-bold">Loading</span>
+                                            </div>
+                                            <p class="pt-4 fw-strong text-uppercase fw-bold">Generating top up Invoice bill <br> Kindly wait</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="payment-panel-parent d-none">
+                                    <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
+                                        <div class="success-image mb-4 pb-4 pt-4">
+                                            <img src="assets/images/bills.svg" height="200" alt="">                                
+                                        </div>
+                                        <h4 class="text-black fw-bold text-uppercase">Top Up Bill created succesfully</h4>
+                                        <p class="text-muted mb-4">The bill has been created Successfully, you can print the bill or opt to receive payment for this bill.</p>
+                                        <div class="d-flex w-100 pb-2">
+
+                                            <!-- data-bs-dismiss="modal" -->
+                                            <button type="button" class="btn btn-primary btn-block  me-3 flex-grow-1 top-up-btn text-uppercase" >
+                                                <i class="mdi-cash-check mdi font-size-16 align-middle me-2 "></i>
+                                                Receipt Payment
+                                            </button>
+                                            <a href="PrintDocs/Bill/bill.html" target="_blank" data-dismiss="" type="button" class="btn btn-outline-secondary waves-effect dismin-modal text-uppercase">Print Bill</a>
+                                        </div>
+                                    </div>        
+                                </div>
+    
+                                
+                            </div>
                         </div>
                     </div>
                   
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer d-none">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
@@ -1668,6 +1929,280 @@
           </div>
 
           <!-- end of SBP Top up -->
+
+          <!-- Payment modal -->
+             <!-- payment modal -->
+             <div class="modal fade" id="payment-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-none">
+                        <span class="badge badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Receive Payment</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle close-modal" data-dismiss="modal"  aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge  badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Receive Payment</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle pull-right close-modal" data-dismiss="modal" aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+                        </div>
+
+                        <div class="payment-panel-parent">
+                            
+                            <div class="send-method payment-panel payment-active-panel">
+                                <label for="" class="mb-0 pb-0">Payment Method</label>
+                                <p><small class="text-muted">How would you like to send this money?</small></p>
+    
+                                <div>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button fw-medium" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <img class="rounded-circle" src="assets/images/users/mpesa.jpg" alt="Mobile Money" height="65">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <p class="m-0 p-0 text-uppercase fw-semibold">MPESA</p>                                                
+                                                        <p class="mb-0 p-0"> <small>A payment request will be sent directly to the customer</small></p>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div>
+                                                        <p>
+                                                            A payment request of <strong class="text-black">KES 1,500</strong> will be sent to the MPESA number you enter below.
+                                                        </p>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">MPESA Number</label>
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control font-21 text-success form-control-lg" id="phone-input" placeholder="Enter Name">
+                                                            <label for="floatingnameInput">Phone No.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button fw-medium collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <img class="rounded-circle" src="assets/images/users/money.jpg" alt="Mobile Money" height="65">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <p class="m-0 p-0 text-uppercase fw-semibold">BANK</p>                                                
+                                                        <p class="mb-0 p-0"> <small>By selecting this option you confirm that you have received the payment inform of cash</small></p>
+    
+                                                        
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                   <div class="bank-inputs">
+                                                    <div class="mb-3">
+                                                        <label for="">Select Bank</label>
+                                                        <select name="" id="" class="form-select">
+                                                            <option value="" disabled>Select Bank Account</option>
+                                                            <option value="">KCB - 1245475</option>
+                                                            <option value="">Cooperative Bank - 56789</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Bank refrence Number</label>
+                                                        <input type="text" class="form-control" placeholder="Enter Ref No.">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Payer's Full Names</label>
+                                                        <input type="text" class="form-control" placeholder="Enter full Names">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Payer's Phone Number</label>
+                                                        <input type="text" class="form-control" placeholder="Enter Phone Number">
+                                                    </div>
+
+                                                    <div class="form-check form-check-primary mb-3">
+                                                        <input class="form-check-input" type="checkbox" id="confirm-cash">
+                                                        <label class="form-check-label" for="confirm-cash">
+                                                            Confirm to have received the cheque or receipt for <strong>KES 1,500.00</strong> from the client
+                                                        </label>
+                                                    </div>
+
+                                                    <button class="btn btn-primary w-100 text-uppercase bank-nxt-bank">Next</button>
+                                                   </div>
+
+                                                   <div class="bank-input d-none">
+                                                        <p>
+                                                            An OTP has been sent to the client's phone number: <strong class="text-black">0712345678</strong>. Please ask them to check their messages. If they haven't received it, ask them to enable promotional messages and try again. <a href="#" title="Resend OTP">If necessary, you can click here to retry sending the OTP</a>.
+                                                        </p>
+                                                        <div class="form-group">
+                                                            <label for="">OTP</label>
+                                                            <div class="form-floating mb-3">
+                                                                <input type="text" class="form-control font-21 text-success form-control-lg bank-otp-input" id="phone-input" placeholder="Enter Name" spellcheck="false" data-ms-editor="true">
+                                                                <label for="floatingnameInput">Enter OTP sent to Client's Phone</label>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn btn-light waves-effect me-3 btn-otp-edit">
+                                                                <i class="bx bxs-edit-alt font-size-16 align-middle me-2"></i> Edit
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary waves-effect btn-otp-submit" disabled>
+                                                                Next  <i class="bx bx-right-arrow-alt font-size-16 align-middle"></i>
+                                                            </button>
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none transaction-summary payment-panel">
+                                <label for="">Transaction Breakdown</label>
+                                <div class="border p-4 rounded ">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="text-muted ">
+                                                Receipt NO.                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                RTS12364558T                                         
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Receipt For                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                Alex Wanjala                                         
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Payment Method                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                MPESA                                         
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Transaction Amount                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                KES 1,500                                        
+                                            </div>
+                                        </div>
+    
+                                        
+                                        <div class="col-12 text-black"><hr class="mb-0 pb-0"></div>
+    
+                                        <div class="col-lg-6 text-uppercase">
+                                            <div class="text-muted mt-2 font-21">
+                                                Total                                          
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end text-uppercase">
+                                            <div class=" text-right text-black font-21 fw-bold">
+                                                KES 1,500                                        
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="mpesa-confirmation ">
+                                        <p class="text-muted mt-2">A payment request of <strong class="text-black">KES 1,500</strong> will be sent to <strong class="text-black">phone number (0704549859)</strong> soon after you click the <strong class="text-black text-capitalize">Send Request</strong> button bellow. 
+                                            <br>
+                                            <br>
+                                            Remember to <strong class="text-black">Check your phone</strong> to confirm payment by entering your Mpesa pin.</p>
+
+                                            <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect btn-send waves-light text-center w-100">
+                                                <div class="d-flex justify-content-center align-items-center"> 
+                                                    <div class="stk-timer-container d-none justify-content-center align-items-center">
+                                                        <span class="mdi mdi-timer-outline font-16px"></span>
+                                                        <span class="stk-timer px-2"></span>
+                                                    </div>
+                                                    <div class="justify-content-center align-items-center d-flex">
+                                                        <span class="px-2">Send Request</span> 
+                                                        <div class="flip-x"><i class="mdi mdi-reply ms-3 font-16px"></i></div>
+                                                    </div>
+
+                                                </div>
+                                             </button>
+                                    </div>
+
+                                    <div class="my-wallet-confirmation d-none">
+                                        <p class="text-muted mt-2 "><strong class="text-uppercase text-black">KES 300</strong> will be deducted from your guardian blink wallet and amount will be credited to <strong class="text-capitalize text-black">Alex's pocket money account</strong>.</p>
+                                        <p class="text-muted">confirm transaction by clicking the <strong class="text-capitalize text-black">send money</strong> button.</p>
+                                        
+                                        <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect waves-light text-center w-100">
+                                            <div class="d-flex justify-content-center align-items-center"> <span class="mx-2">Send Money</span> <div class="flip-x"><i class="mdi mdi-reply flip-x ms-3 font-16px"></i></div></div>
+                                         </button>
+
+                                    </div>
+    
+                                    
+                                </div>
+                            </div>
+                            <div class="text-center d-flex flex-column justify-content-around align-items-center sent-success d-none payment-panel">
+                                <div class="success-image mb-4">
+                                    <img src="assets/images/payment-confirmation-images/sent.svg" height="200" alt="">                                
+                                </div>
+                                <h4 class="text-blink-primary fw-bold">Transaction Complete</h4>
+                                <p class="text-muted mb-4"><strong class="text-black">KES 1,500.00</strong> has been received for <strong class="text-black">Bill No. YUB48997</strong></p>
+    
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex">
+                        <button href="javascript: void(0);" disabled class="btn btn-outline-light waves-effect waves-light payment-prev"> <i class="mdi mdi-arrow-left ms-1"></i> Previouse </button>
+                        <button href="javascript: void(0);" class="btn btn-primary waves-effect waves-light payment-next">Next <i class="mdi mdi-arrow-right ms-1"></i></button>
+                        <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect waves-light text-center d-none">
+                           <div class="d-flex justify-content-center align-items-center"> <span>Send Money</span> <div class="flip-x"><i class="mdi mdi-reply flip-x ms-3 font-16px"></i></div></div>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- end of payment modal -->
+
+            <!-- helps in opening payment modal -->
+            <a  data-bs-toggle="modal" data-bs-target="#payment-modal" class="dropdown-item d-non open-payment" href="# "><i class="font-size-15 bx bxs-upvote me-3 "></i>Open Payment Modal</a>
+
+          <!-- end of payment modal -->
 
 
 
@@ -1747,6 +2282,30 @@
     <!-- App js -->
     <script src="assets/js/app.js "></script>
     <script src="assets/js/custom.js "></script>
+
+    <script>
+        $('.btn-top-nxt').on('click', function(){
+            $('.top-up-summary').removeClass('d-none').siblings().addClass('d-none')
+        })
+
+        $('.btn-top-prev').on('click', function(){
+            $('.top-up-summary').removeClass('d-none').siblings().addClass('d-none')
+        })
+
+        $('.top-up-bill-gen').on('click', function(){
+            $('.top-up-bill-creation').removeClass('d-none').siblings().addClass('d-none')
+
+            setTimeout(function() {
+                $('.top-up-bill-creation .top-up-loader').addClass('d-none');
+                $('.top-up-bill-creation .payment-panel-parent').removeClass('d-none')                
+            }, 2000);
+        })
+
+        $('.top-up-btn').on('click', function(){
+            //alert("clicked")
+            $('.open-payment').click()
+        })
+    </script>
 </body>
 
 
