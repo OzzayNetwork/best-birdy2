@@ -727,19 +727,13 @@
                                                                 <a class="text-muted font-size-16" role="button"
                                                                     data-bs-toggle="dropdown" aria-haspopup="true">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-                                                                
+                                                                </a>                                                                
                                                                 <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View Receipt(s)</a>
-                                                                    <a  data-bs-toggle="modal" data-bs-target=".edit-modal" class="dropdown-item " href="# ">
-                                                                        <i class="font-size-15 mdi mdi-file-document-edit me-3 "></i>Edit Business Details</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 bx bx-printer me-3 "></i>Print Certificate</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Print Invoice</a>
-
+                                                                    <a  data-bs-toggle="modal" data-bs-target="#topUpModal" class="dropdown-item " href="# "><i class="font-size-15 bx bxs-upvote me-3 "></i>Top Up</a>
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View Receipt(s)</a>
+                                                                    <a  data-bs-toggle="modal" data-bs-target=".edit-modal" class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-file-document-edit me-3 "></i>Edit Business Details</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 bx bx-printer me-3 "></i>Print Certificate</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Print Invoice</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1634,6 +1628,46 @@
              <!-- /.modal-dialog -->
          </div>
          <!-- end of edit modal -->
+
+         <!-- modal for SBP top Up -->
+
+         <div class="modal fade" id="topUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">SBP Top Up</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="">Business Category</label>
+                            <input type="text" class="form-control" placeholder="Business name"
+                                value="The Business" >
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label for="">Business SUb Category</label>
+                            <input type="text" class="form-control" placeholder="Business name"
+                                value="The Business" >
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end of SBP Top up -->
 
 
 
