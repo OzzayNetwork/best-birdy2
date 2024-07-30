@@ -1097,3 +1097,16 @@ $('.btn-otp-submit').on('click', function(){
     $('.payment-next').click()
 })
 
+// generating notices
+$('.gen-notice').on('click', function(){
+    $('.single-notice-generator').addClass('d-none').siblings('.justify-content-center').removeClass('d-none')
+
+    setTimeout(function() {
+        $('.notice-loader').addClass('d-none');
+        $('.notice-created-cont').removeClass('d-none')
+        
+    }, 2000);
+
+   
+})
+
