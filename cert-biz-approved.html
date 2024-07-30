@@ -739,6 +739,60 @@
                                                         </div>
                                                     </td>
                                                 </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">1234567</td>
+                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="">The Wire</a>
+                                                    </td>
+                                                    <td>Transaport and Infrastructure</td>
+                                                    <td>Hoam Bay town</td>
+                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
+                                                            class="text-muted">10:56 PM</span>
+                                                            (3 Days Ago)
+                                                        </td>
+                                                        <td>Tobby Arnold</td>
+                                                    
+                                                    <td>
+
+                                                        <!-- hide the print certificate button when its showing this status -->
+                                                         <span class="badge badge-soft-warning text-uppercase">Pending Top Up</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 2,000</span>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target=".receipting-modal"><i
+                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
+                                                                Application Details</button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
+                                                                class="btn btn-success btn-sm waves-effect waves-light">
+                                                                <i
+                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
+                                                                Print Receipt
+                                                            </a>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted font-size-16" role="button"
+                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </a>                                                                
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a  data-bs-toggle="modal" data-bs-target="#topUpModal" class="dropdown-item " href="# "><i class="font-size-15 bx bxs-upvote me-3 "></i>Top Up</a>
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View Receipt(s)</a>
+                                                                    <a  data-bs-toggle="modal" data-bs-target=".edit-modal" class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-file-document-edit me-3 "></i>Edit Business Details</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 bx bx-printer me-3 "></i>Print Certificate</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Print Invoice</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                                 
 
 
@@ -1635,13 +1689,22 @@
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">SBP Top Up</h5>
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Active SBP Top up</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
                     <div class="row top-up-inputs">
+
+                        <div class="col-12">
+                            <div class="alert alert-warning" role="alert">
+                                <span class="fw-bold">Please enter the correct items that should have been invoiced for the business to continue.</span>
+                            </div>
+                        </div>
+
+
+
                         <div class="col-12 mb-3">
                             <div class="card-body bg-light d-flex mb-4 mt-4">
                                 <p class=" mb-0 ">
@@ -1669,6 +1732,7 @@
                             </div>
                         </div>
 
+                      
                         <div class="col-4 mb-3">
                             <label for="">Sub County</label>
                             <select name="" class="form-select form-control" id="">
