@@ -2691,19 +2691,29 @@
     
     
                                 <h4 class="text-black fw-bold text-uppercase">Create Multiple Notices</h4>
-                                <p class="text-muted mb-4">A Demand Notice with Reference Number <strong class="text-dark">DEM12345</strong> for <strong class="text-dark">KES 50,800</strong> has been sent to <strong class="text-dark">Michael Kinoti</strong> via mobile number <strong class="text-dark">0705549859</strong>. You may also print a physical copy to share with the client.</p>
-                                <p class="text-muted mb-4">Click the button below to print the document.</p>
+                                <p class="text-muted mb-4">By clicking the button below, <strong class="text-black">34 Demand Notices</strong> for 34 plots will be created and respective messages sent to the ratable owners. .</p>
+                                <p class="text-muted mb-4">If you prefer to send a single Demand Notice, search for the plot from the table and click the <strong class="text-black">"Send Demand Notice"</strong> button to continue.</p>
                                 
-                                <div class="d-flex w-100 pb-2">
-    
+                                <div class="d-flex w-100 pb-4">
                                     <!-- data-bs-dismiss="modal" -->
-                                    <a href="PrintDocs/Demand-notice/demand-notice.html" target="new" type="button" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase">
-                                        <i class="bx bx-printer font-size-16 align-middle me-2 "></i>
-                                        Print Notice
-                                    </a>
+                                    <button  type="button" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase">
+                                        <i class="bx bx-analyse font-size-16 align-middle me-2 "></i>
+                                        Generate Notices
+                                    </button>
                                 </div>
                             </div>        
                         </div> 
+
+                        <div class="notice-loader">
+                            <div class="loader-modal p-5">
+                                <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
+                                    <div class="spinner-border text-dark m-1" role="status">
+                                        <span class="sr-only fw-bold">Loading</span>
+                                    </div>
+                                    <p class="pt-4 fw-strong text-uppercase fw-bold">Generating Demand notice <br> Kindly wait</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
               
