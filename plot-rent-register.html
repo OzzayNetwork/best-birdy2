@@ -783,7 +783,7 @@
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#payment-modal" ><i class="font-size-15 mdi mdi mdi-receipt me-3"></i>Bill Client</a>
                                                                 <a class="dropdown-item" href="plot-rent-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Statements</a>
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-plot-modal"><i class="font-size-15 mdi mdi-file-document-edit me-3"></i>Edit</a>
-
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".plot-transfer"><i class="font-size-15 mdi mdi-arrow-expand me-3 text-primary"></i>Plot Transfer</a>
                                                                 <!-- only show for plots that have outstanding balances -->
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#demandNotice"><i class="font-size-15 mdi mdi-alert-outline me-2 me-3 text-danger"></i>Send Demand Notice</a>
                                                                 
@@ -2498,6 +2498,115 @@
                 </div>
             </div>
             <!-- billing on the spot -->
+
+            
+
+            <!-- doing plot transfer -->
+            <div class="modal fade plot-transfer" id="" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered " role="document">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <span class="badge badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white d-none">Plot Transfer for Plot No. 12345/12345</span>
+
+                        <h4 class="modal-title">Plot Transfer for Plot No. 12345/12345</h4>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle close-modal" data-dismiss="modal"  aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+    
+                    </div>
+                    <div class="modal-body">
+                        <div class="row d-none">
+                            <div class="col-6 mb-3">
+                                <label for="">SUb County</label>
+                                <input type="text" class="form-control" placeholder="sub County" disabled value="Homa Bay town">
+                            </div>
+
+                            <div class="col-6 mb-3">
+                                <label for="">Market/Zone</label>
+                                <input type="text" class="form-control" placeholder="sub County" value="Soko Mjinga" disabled>
+                            </div>
+
+                            <div class="col-6 mb-3">
+                                <label for="">Owner's Name</label>
+                                <input type="text" class="form-control" placeholder="sub County" value="Enter Owner's Name" title="Enter ">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <label for="">Transfer Option</label>
+                                <select name="" class="form-select" id="">
+                                    <option value="" disabled>Select an Option</option>
+                                    <option value="new-bill">Generate Invoice</option>
+                                    <option value="">Paid Invoice</option>
+                                    
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                               <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <label for="">Invoice Number</label>
+                                        <input type="text" class="form-control" placeholder="Enter Bill/Invoice Number">
+                                    </div>
+
+                                   <div class="col-12">
+                                        <div class="alert alert-success d-none" role="alert">
+                                            <i class="mdi mdi-check-all me-2 me-2"></i>  Corresponding Bill Found
+                                        </div>
+
+                                        <div class="alert alert-danger d-none" role="alert">
+                                            <i class="mdi mdi-block-helper me-2"></i>  The invoice found is not applicable
+                                        </div>
+
+                                        <div class="alert alert-danger d-none" role="alert">
+                                            <i class="mdi mdi-alert-outline me-2 me-2"></i>  Corresponding Bill Not Found
+                                        </div>
+                                   </div>
+                                    <div class="col-12 mt-3">
+                                        <button class="btn btn-primary w-100">Continue</button>
+                                    </div>
+                               </div>
+
+                               <div class="row">
+                                    <div class="col-12">
+                                        <table class="table table-sm table-striped">
+                                            <tr>
+                                                <th>Invoice Number</th>
+                                                <td>BOFLF00875</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Paid By</th>
+                                                <td>Kelvin njuguna</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Date Paid</th>
+                                                <td>12 Jan 2024</td>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex d-none bill-modal-footer">
+                        <button href="javascript: void(0);" disabled class="btn btn-outline-light waves-effect waves-light payment-prev"> <i class="mdi mdi-arrow-left ms-1"></i> Previouse </button>
+                        <button href="javascript: void(0);" class="btn btn-primary waves-effect waves-light payment-next">Next <i class="mdi mdi-arrow-right ms-1"></i></button>
+                        <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect waves-light text-center d-none">
+                           <div class="d-flex justify-content-center align-items-center"> <span>Send Money</span> <div class="flip-x"><i class="mdi mdi-reply flip-x ms-3 font-16px"></i></div></div>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
         <!-- end main content-->
 
