@@ -1101,12 +1101,22 @@ $('.btn-otp-submit').on('click', function(){
 $('.gen-notice').on('click', function(){
     $('.single-notice-generator').addClass('d-none').siblings('.justify-content-center').removeClass('d-none')
 
-    setTimeout(function() {
-        $('.notice-loader').addClass('d-none');
-        $('.notice-created-cont').removeClass('d-none')
-        
-    }, 2000);
+   
 
    
 })
 
+// generateing multiple invoices
+$('.notice-gen').on('click', function(){
+  
+    
+    $('.notice-loader-2').removeClass('d-none')
+    $('.notice-created-cont').addClass('d-none')
+
+    setTimeout(function() {
+        $('.notice-loader-2').addClass('d-none');
+        $('.notice-created-cont-2').removeClass('d-none')
+        
+    }, 2000);
+ 
+})

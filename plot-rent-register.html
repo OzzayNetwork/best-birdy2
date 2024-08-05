@@ -339,6 +339,7 @@
                                 <li><a href="land-quick-stat.html">Quick Stats</a></li>
                                 <li><a href="land-register.html">Land Rates</a></li>
                                 <li><a href="plot-rent-register.html">Plot Rents</a></li>
+                                <li><a href="plot-rent-notices.html">Demand Notices</a></li>
                             </ul>
                         </li>
 
@@ -579,6 +580,7 @@
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Land & Plots</a></li>
                                         <li class="breadcrumb-item"><a href="#">Plot Rent Register</a></li>
+                                        
                                     </ol>
                                 </div>
 
@@ -607,6 +609,7 @@
                                                     Stats</a>
                                                 <a class="nav-item nav-link" href="land-register.html">Land Rate Register</a>
                                                 <a class="nav-item nav-link" href="plot-rent-register.html">Plot Rent Register</a>
+                                                <a class="nav-item nav-link" href="plot-rent-notices.html">Demand Notices</a>
 
                                             </div>
 
@@ -2674,9 +2677,9 @@
 
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer a-flex align-items-center justify-content-center">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-6 col-sm-12 col-md-7 col-lg-6">
+                    <div class="col-6 col-sm-12 col-md-7 col-lg-7">
                         <div class="notice-created-cont">
                             <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
                                 
@@ -2696,7 +2699,7 @@
                                 
                                 <div class="d-flex w-100 pb-4">
                                     <!-- data-bs-dismiss="modal" -->
-                                    <button  type="button" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase">
+                                    <button  type="button" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase notice-gen">
                                         <i class="bx bx-analyse font-size-16 align-middle me-2 "></i>
                                         Generate Notices
                                     </button>
@@ -2704,16 +2707,45 @@
                             </div>        
                         </div> 
 
-                        <div class="notice-loader">
-                            <div class="loader-modal p-5">
+                        <div class="notice-loader-2 d-none">
+                            <div class="loader-modal">
                                 <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
                                     <div class="spinner-border text-dark m-1" role="status">
                                         <span class="sr-only fw-bold">Loading</span>
                                     </div>
-                                    <p class="pt-4 fw-strong text-uppercase fw-bold">Generating Demand notice <br> Kindly wait</p>
+                                    <p class="pt-4 fw-strong text-uppercase fw-bold no-wrap text-no-wrap">Generating Demand notice <br> Kindly wait</p>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="notice-created-cont-2 d-none">
+                            <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
+                                
+    
+                                <div class="flex-shrink-0 align-self-center  mb-4 pb-4 pt-4">
+                                    <div class="avatar-sm rounded-circle bg-success mini-stat-icon">
+                                        <span class="avatar-title rounded-circle bg-success">
+                                            <i class="mdi-check-all mdi font-size-24"></i>
+                                        </span>
+                                    </div>
+                                </div>
+    
+    
+                                <h4 class="text-black fw-bold text-uppercase">Demand Notices Created</h4>
+                                <p class="text-muted mb-4"><strong class="text-black">456 demand notices for 456 parcels</strong> have been created and sent to the respective owners.</p>
+                                <p class="text-muted mb-4">Click below to view the sent notices</p>
+                                
+                                <div class="d-flex w-100 pb-2">
+    
+                                    <!-- data-bs-dismiss="modal" -->
+                                    <a href="PrintDocs/Demand-notice/demand-notice.html" target="new" type="button" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase">
+                                        <i class="bx bx-printer font-size-16 align-middle me-2 "></i>
+                                        View Notices
+                                    </a>
+                                </div>
+                            </div>        
+                        </div>    
+
                     </div>
                 </div>
               
