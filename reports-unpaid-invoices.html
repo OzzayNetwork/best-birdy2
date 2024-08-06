@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Hotline Transporters Sacco | All invoices</title>
+    <title>Unpaid Invoices Reports</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Rental management system by Nouveta LTD" name="description" />
     <meta content="Kelvin Njuguna" name="author" />
@@ -531,43 +531,38 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Revenue team Line up</h4>
+                                <h4 class="mb-sm-0 font-size-18">Revenue Collection by Streams for the period 1 Jan 2023 to 31 Jan 2023</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item"><a href="reports-subconty.html">Revenue collection by county</a></li>
-                                        <li class="breadcrumb-item active">Karachuonyo Sub County</li>
-                                        <li class="breadcrumb-item active">Revenue Team Line up</li>
+                                        <li class="breadcrumb-item active">Revenue collection by Revenue Stream</li>
                                     </ol>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <!-- end page title -->
 
-                    <!-- toolbar start -->
-                    <div class="row">
+                  
+
+                     <!-- tool bar -->
+                     <div class="row">
                         <div class="col-12 active">
                             <div class="card active">
-                                <div class="card-body pt-2 pb-3 active">
-                                    <nav class="navbar navbar-expand-md navbar-white bg-white py-2 active">
+                                <div class="card-body mini-nav bg-primary pt-2 pb-3 active">
+                                    <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
                                         <button class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                          <span class="mdi mdi-menu"></span>
+                                            <span class="mdi mdi-menu"></span>
                                         </button>
                                         <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
                                             <div class="navbar-nav active">
-                                                <a class="nav-item nav-link" href="reports-subconty-details.html">All Transactions</a>
-                                                <a class="nav-item nav-link" href="reports-subconty-streams.html">Revenue Streams</a>
-                                                <a class="nav-item nav-link" href="reports-subconty-zones.html">Collection Zones</a>
-                                                <a class="nav-item nav-link" href="reports-subconty-agents.html">Revenue Team Perfomance</a>
-                                                <a class="nav-item nav-link" href="reports-subconty-team.html">Revenue Team Lineup</a>
-                                               
+                                                <a class="nav-item nav-link" href="reports-streams.html">Summarized</a>
+                                                <a class="nav-item nav-link" href="reports-streams-subcounties.html">Sub counties</a>
                                             </div>
                                             <div class="navbar-nav text-capitalize">
-                                                <h4 class="mb-0 m-0 card-title">Homabay Sub county</h4>
+                                                <h4 class="mb-0 m-0 card-title text-white">Sammarized Revenue Streams Report</h4>
                                             </div>
 
                                         </div>
@@ -577,7 +572,8 @@
 
                         </div>
                     </div>
-                    <!-- toobar end -->
+                    <!-- end of toolbar -->
+                    <!-- end page title -->
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
@@ -619,13 +615,9 @@
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th>#</th>
-                                                    <th scope="col">System Role</th>
-                                                    <th>Collections</th>
-                                                    <th>Inspections</th>
-                                                    <th>Supervisory Calls Made</th>
-                                                    <th>Calls Received</th>
-                                                    <th scope="col">Total Number</th>
-                                                    <th class="text-right">Inspections Value</th>                                                    
+                                                    <th scope="col">Revenue Stream</th>
+                                                    <th>Total Transactions</th>
+                                                    <th scope="col">Total Agents</th>                                                    
                                                     <th scope="col" class="text-right">Amount collected</th>
                                                     <th></th>
                                                 </tr>
@@ -634,18 +626,14 @@
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subcounty-team-details.html">Collectors</a>
+                                                        <a href="reports-subconty-details.html">CESS</a>
                                                     </td>
-                                                    <td>23</td>
-                                                    <td class="text-capitalize text-nowrap">225</td>
-                                                    <td class="text-capitalize text-nowrap">0</td>
-                                                    <td>45</td>
-                                                    <td><span class="fw-bold">456</span></td>
-                                                    <td class="text-capitalize text-nowrap text-right text-primary fw-bold">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right text-success fw-bold">KES 567,900</td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
-                                                            <a type="button" href="reports-subcounty-team-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                            <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
                                                             <div class="dropdown">
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
@@ -658,22 +646,18 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
-                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subcounty-team-details.html">Inspectors</a>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-subconty-details.html">Single Business Permit</a>
                                                     </td>
-                                                    <td>23</td>
-                                                    <td class="text-capitalize text-nowrap">225</td>
-                                                    <td class="text-capitalize text-nowrap">0</td>
-                                                    <td>45</td>
-                                                    <td><span class="fw-bold">456</span></td>
-                                                    <td class="text-capitalize text-nowrap text-right text-primary fw-bold">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right text-success fw-bold">KES 567,900</td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
-                                                             <a type="button" href="reports-subcounty-team-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+
                                                             <div class="dropdown">
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
@@ -688,19 +672,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>3.</strong></td>
-                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subcounty-team-details.html">Enforcers</a>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-subconty-details.html">Cess</a>
                                                     </td>
-                                                    <td>23</td>
-                                                    <td class="text-capitalize text-nowrap">225</td>
-                                                    <td class="text-capitalize text-nowrap">0</td>
-                                                    <td>45</td>
-                                                    <td><span class="fw-bold">456</span></td>
-                                                    <td class="text-capitalize text-nowrap text-right text-primary fw-bold">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right text-success fw-bold">KES 567,900</td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
-                                                             <a type="button" href="reports-subcounty-team-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+
                                                             <div class="dropdown">
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
@@ -715,19 +696,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
-                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subcounty-team-details.html">Licensing Officers</a>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-subconty-details.html">Parking</a>
                                                     </td>
-                                                    <td>23</td>
-                                                    <td class="text-capitalize text-nowrap">225</td>
-                                                    <td class="text-capitalize text-nowrap">0</td>
-                                                    <td>45</td>
-                                                    <td><span class="fw-bold">456</span></td>
-                                                    <td class="text-capitalize text-nowrap text-right text-primary fw-bold">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right text-success fw-bold">KES 567,900</td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
-                                                             <a type="button" href="reports-subcounty-team-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+
                                                             <div class="dropdown">
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
@@ -742,19 +720,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>5.</strong></td>
-                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subcounty-team-details.html">Deputy Directors</a>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-subconty-details.html">Unreconcyled Transactions</a>
                                                     </td>
-                                                    <td>23</td>
-                                                    <td class="text-capitalize text-nowrap">225</td>
-                                                    <td class="text-capitalize text-nowrap">0</td>
-                                                    <td>45</td>
-                                                    <td><span class="fw-bold">456</span></td>
-                                                    <td class="text-capitalize text-nowrap text-right text-primary fw-bold">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right text-success fw-bold">KES 567,900</td>
+                                                    <td class="text-capitalize text-nowrap">22</td>
+                                                    <td class="text-capitalize text-nowrap">18</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
-                                                             <a type="button" href="reports-subcounty-team-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+
                                                             <div class="dropdown">
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
@@ -767,63 +742,6 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>6.</strong></td>
-                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subcounty-team-details.html">ICT Support</a>
-                                                    </td>
-                                                    <td>23</td>
-                                                    <td class="text-capitalize text-nowrap">225</td>
-                                                    <td class="text-capitalize text-nowrap">0</td>
-                                                    <td>45</td>
-                                                    <td><span class="fw-bold">456</span></td>
-                                                    <td class="text-capitalize text-nowrap text-right text-primary fw-bold">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right text-success fw-bold">KES 567,900</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                             <a type="button" href="reports-subcounty-team-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>7.</strong></td>
-                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subcounty-team-details.html">Revenue Officers</a>
-                                                    </td>
-                                                    <td>23</td>
-                                                    <td class="text-capitalize text-nowrap">225</td>
-                                                    <td class="text-capitalize text-nowrap">0</td>
-                                                    <td>45</td>
-                                                    <td><span class="fw-bold">456</span></td>
-                                                    <td class="text-capitalize text-nowrap text-right text-primary fw-bold">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right text-success fw-bold">KES 567,900</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                             <a type="button" href="reports-subcounty-team-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                               
                                                 
                                                 
                                             </tbody>
@@ -833,18 +751,10 @@
                                                     <th colspan="2">
                                                         23 Sub Counties
                                                     </th>
-                                                    <th>34</th>
-                                                    <th>56</th>
-                                                    <th>78</th>
-                                                    <th>67</th>
                                                    <th>
                                                         45
                                                    </th>
-                                                   
-
-                                                   <td class="text-nowrap text-right " colspan="">
-                                                        <span class="fw-semibold ">KES 2,000,000</span>
-                                                    </td>
+                                                   <th>53</th>
 
                                                     <td class="text-nowrap text-right " colspan="">
                                                         <span class="fw-semibold ">KES 2,000,000</span>
@@ -904,102 +814,70 @@
             <!-- End Page-content -->
 
             <!-- receipting modal -->
-            <div class="modal fade receipting-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal fade download-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Bill details</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Download Report</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-12">
                                     <address>
-                                        <strong class="text-capitalize">Bill Prepared for:</strong><br>
-                                        Kelvin Njuguna AT Mombasa Road<br>
-                                        email@mail.com, 0704 549 859<br>                                   
-                                        ID No. 12345689. Car Plate No. KAB 123P <br/>
-                                        <br>
-                                        On 1 Mar 2022, 10:20 AM
-                                        
+                                        <strong class="text-capitalize">Report Title</strong><br>
+                                        Revenue Collections By Subcounties in Homabay County
                                     </address>
                                 </div>
-                                <div class="col-sm-6 text-sm-end d-none">
-                                    <address class="mt-2 mt-sm-0">
-                                        <strong>Payment Method</strong><br>
-                                        <span class="fw-medium">MPESA</span><br>
-                                        Phone No. 0704 549 859<br> <br>
-                                        On 1 Mar 2022, 10:20 AM
-                                    </address>
+
+                                <div class="col-12">
+                                    <label><strong>Report Date Range</strong></label>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="py-2 mt-3">
-                                    <h3 class="font-size-15 fw-bold">ND12368</h3>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-sm-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Date From</label>
+                                                <input class="form-control"placeholder="Start date" type="date">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-sm-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Date To</label>
+                                                <input class="form-control"placeholder="Start date" type="date">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <table class="table table-nowrap vertical-align-middle">
-                                        <thead class="bg-light">
-                                            <tr>
-                                                <th style="width: 70px;">No.</th>
-                                                <th>Offense</th>
-                                                <th class="text-end">Amount</th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tfoot class="bg-light">
-                                            <tr>
-                                                <td colspan="2" class="border-0 text-end text-right">
-                                                    <strong>Total</strong>
-                                                </td>
-                                                <td class="border-0 text-end">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 11,250</h5>
-                                                </td>
-                                                
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
-                                                <td>01</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Driving Without identification plates affixed or plates not fixed in the prescribed manner</p>
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
-                                            </tr>
 
-                                            <tr title="Drving a vehicle without a valid inspection certificate inspected">
-                                                <td>02</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Drving a vehicle without a valid inspection certificate inspected</p>
-
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
-                                            </tr>
-
-
-
-                                            
-                                        </tbody>
-                                    </table>
+                                <div class="col-12">
+                                    <label><strong>Select File Type</strong></label>
+                                    <select class="form-select">
+                                        <option>Select Document Type</option>
+                                        <option>PDF file</option>
+                                        <option>Excel File</option>
+                                    </select>
                                 </div>
+
+                                <div class="col-12">
+                                    <button  type="button" class="btn btn-primary dropdown-toggle option-selector text-capitalize w-100 mt-5">
+                                        <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                    </button>
+                                </div>
+                                
                             </div>
-                        </div>
-                        <div class="modal-footer">
                            
-                            <button type="button" class="btn btn-primary waves-effect waves-light">
-                                <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Bill
-                            </button>
                         </div>
+                       
                     </div>
                     <!-- /.modal-content -->
                 </div>
                 <!-- /.modal-dialog -->
             </div>
             <!-- end of receipting modal -->
+
+           
 
             <!-- invoice details -->
             <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
