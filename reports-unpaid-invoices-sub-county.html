@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Unpaid Invoices Reports</title>
+    <title>Unpaid Invoices By Revenue Streams</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Rental management system by Nouveta LTD" name="description" />
     <meta content="Kelvin Njuguna" name="author" />
@@ -235,7 +235,7 @@
         </header>
 
         <!-- ========== Left Sidebar Start ========== -->
-        <div class="vertical-menu">
+       <div class="vertical-menu">
 
             <div data-simplebar class="h-100">
 
@@ -531,13 +531,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Unpaid Invoices by Streams for the period 1 Jan 2023 to 31 Jan 2023</h4>
+                                <h4 class="mb-sm-0 font-size-18">Revenue Collection by Streams for the period 1 Jan 2023 to 31 Jan 2023</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item active">Unpaid Invoices By Revenue Streams</li>
+                                        <li class="breadcrumb-item active">Revenue collection by Revenue Stream</li>
                                     </ol>
                                 </div>
 
@@ -545,10 +545,8 @@
                         </div>
                     </div>
 
-                  
-
-                     <!-- tool bar -->
-                     <div class="row">
+                    <!-- tool bar -->
+                    <div class="row">
                         <div class="col-12 active">
                             <div class="card active">
                                 <div class="card-body mini-nav bg-primary pt-2 pb-3 active">
@@ -558,11 +556,11 @@
                                         </button>
                                         <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
                                             <div class="navbar-nav active">
-                                                <a class="nav-item nav-link" href="reports-unpaid-invoices.html">Summarized</a>
-                                                <a class="nav-item nav-link" href="reports-unpaid-invoices-sub-county.html">Sub counties</a>
+                                                <a class="nav-item nav-link" href="reports-streams.html">Summarized</a>
+                                                <a class="nav-item nav-link" href="reports-streams-subcounties.html">Sub counties</a>
                                             </div>
                                             <div class="navbar-nav text-capitalize">
-                                                <h4 class="mb-0 m-0 card-title text-white text-uppercase">Sammarized Report on Unpaid Invoices</h4>
+                                                <h4 class="mb-0 m-0 card-title text-white">Revenue streams Perfomance By Sub County</h4>
                                             </div>
 
                                         </div>
@@ -609,138 +607,481 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="table-responsive overflow-visible">
+                                    <div class="table-responsive  ">
 
                                         <table class="table align-middle table-hover  contacts-table table-striped " id="">
                                             <thead class="table-light">
-                                                <tr class="table-dark">
+                                                <tr class="table-dark text-uppercase">
                                                     <th>#</th>
                                                     <th scope="col">Revenue Stream</th>
-                                                    <th>Invoices</th>
-                                                    <th scope="col">Officers</th>                                                    
-                                                    <th scope="col" class="text-right">Invoices Value</th>
-                                                    <th></th>
+                                                    <th class="text-right">	MERU TOWN</th>
+                                                    <th scope="col" class="text-right">SOUTH IMENTI</th>                                                    
+                                                    <th scope="col" class="text-right">MAUA TOWN</th>
+                                                    <th scope="col" class="text-right">BUURI WEST</th>
+                                                    <th scope="col" class="text-right">BUURI EAST</th>
+                                                    <th scope="col" class="text-right">TIGANIA WEST</th>
+                                                    <th scope="col" class="text-right">CENTRAL IMENTI</th>
+                                                    <th scope="col" class="text-right">	NORTH IMENTI</th>
+                                                    <th scope="col" class="text-right">IGEMBE NORTH</th>
+                                                    <th scope="col" class="text-right">NKUBU TOWN</th>
+                                                    <th scope="col" class="text-right">Total</th>
+                                                   
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">CESS</a>
+                                                        <a href="reports-stream-details.html">Parking</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Single Business Permit</a>
+                                                        <a href="reports-stream-details.html">Cess</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>3.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Cess</a>
+                                                        <a href="reports-stream-details.html">Markets Fees</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Parking</a>
+                                                        <a href="reports-stream-details.html"> Outdoor adverts. & Signboard </a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
 
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> Building plans </a>
                                                     </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> Plot Rent </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> House rent/Stall rent </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> Slaughter houses fee </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> Meat Inspection and Veterinary Services </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> Impounding fees & Fines </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> Toilets fee </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> Application fees </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> Income from county properties/Estates </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> Fire section fee </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html">  Refuse collection fee  </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html">  Transfer & Subdivision fee  </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html">  Sale of County  Documents. </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html">  Audit Fees/Sacco registartion  </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html">  Weight and Measures  </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html">  Surrender of Imprest/Salary </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> Burial permit (MTRH)  </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html"> Library Fees  </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
+                                                </tr>
+
+                                                
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="reports-stream-details.html">Miscelleniouse </a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                   
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>5.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-subconty-details.html">Unreconcyled Transactions</a>
+                                                        <a href="reports-stream-details.html">Unreconciled Transactions</a>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    
                                                 </tr>
                                                 
                                                 
@@ -751,16 +1092,18 @@
                                                     <th colspan="2">
                                                         23 Sub Counties
                                                     </th>
-                                                   <th>
-                                                        45
-                                                   </th>
-                                                   <th>53</th>
-
-                                                    <td class="text-nowrap text-right " colspan="">
-                                                        <span class="fw-semibold ">KES 2,000,000</span>
-                                                    </td>
-                                                    <TD></TD>
-
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
+                                                    <th class="text-capitalize text-nowrap text-right">KES 220,000</th>
+                                                    
                                                     
                                                 </tr>
 
@@ -876,8 +1219,6 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- end of receipting modal -->
-
-           
 
             <!-- invoice details -->
             <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
