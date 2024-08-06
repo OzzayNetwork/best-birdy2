@@ -1120,3 +1120,68 @@ $('.notice-gen').on('click', function(){
     }, 2000);
  
 })
+
+//plot transfers
+$('.transfer-select').on('change', function(){
+    var theOptionSelected=$(this).val()
+    // alert(theOptionSelected)
+
+    if(theOptionSelected=="paid invoice"){
+        $('.invoice-number-input').removeClass('d-none').siblings('.new-billing-transfer').addClass('d-none')                          
+    }
+
+    if(theOptionSelected=="bill-new"){
+        $('.new-billing-transfer').removeClass('d-none').siblings('.invoice-number-input').addClass('d-none')                          
+    }
+})
+
+
+$('.invoice-number-input .invoice-num-input').on('keyup', function(){
+    var theIputVal=$(this).val()
+    if(theIputVal!=""){
+        $(".invoice-search").prop('disabled', false);
+    }
+
+    if(theIputVal===""){
+        $(".invoice-search").prop('disabled', true);
+    }
+})
+
+
+
+$('.invoice-number-input .invoice-search').on('click', function(){
+    // alert("clicked")
+    $(this).children('.spinner-border').removeClass('d-none').siblings().addClass('d-none')
+
+    setTimeout(function() {
+        $('.invoice-number-input').addClass('d-none').siblings('.invoice-results').removeClass('d-none')
+        $('.transafer-option-selector').addClass('d-none')        
+    }, 2000);
+})
+
+$('.transfer-cancel').on('click', function(){    
+    location.reload();
+})
+
+$('.transafer-nxt').on('click', function(){
+    $('.invoice-results').addClass('d-none').siblings('.new-owner-form').removeClass('d-none')
+})
+
+$('.finish-transfer').on('click', function(){
+    $(this).children('.spinner-border').removeClass('d-none').siblings().addClass('d-none')
+
+    setTimeout(function() {
+        $('.new-owner-form').addClass('d-none').siblings('.transfer-successful').removeClass('d-none')        
+    }, 2000);
+   // 
+})
+
+$('.download-receipt-transfer').on('click', function(){
+    
+
+    setTimeout(function() {
+        location.reload();
+    }, 800);
+   // 
+})
+                                

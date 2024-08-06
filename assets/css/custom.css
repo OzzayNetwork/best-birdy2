@@ -1524,5 +1524,9 @@ z-index: 3 !important;
 .stats-container .avatar-xs span{
     background-color: #2c4ea3;
 }
+.invoice-search .spinner-border{
+    height: 20px;
+    width: 20px;
+}
 
 
