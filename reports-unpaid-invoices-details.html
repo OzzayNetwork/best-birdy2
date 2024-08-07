@@ -600,20 +600,40 @@
                                         </div>
                                       </div>
 
-                                        <div class="d-flex">
-                                            <div class="d-flex align-items-center me-3 pe-3">
-                                                <span class="pr-3 fw-semibold">From:</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
-                                                <span class="px-3 fw-semibold">TO:</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
-                                            </div>
+                                        
+
+                                        <div class="input-group  fw-semibold text-uppercase me-3" title="Select the end date for which the invoices were supposedly created">
+                                            <label class="input-group-text text-uppercase">Sub County</label>
+                                            <select name="" class="form-select me-3 id="">
+                                                <option value="" disabled>Select Sub county</option>
+                                                <option value="" selected>All Sub Counties</option>
+                                                <option value="">Homa Bay</option>
+                                                <option value="">Rangwe</option>
+                                            </select>
+
+                                            <label class="input-group-text text-uppercase">Stream</label>
+                                            <select name="" class="form-select" id="">
+                                                <option value="" disabled>Select Revenue Stream</option>
+                                                <option value="" selected>All Revenue streams</option>
+                                                <option value="">Parking</option>
+                                                <option value="">SBP</option>
+                                                <option value="">Health Permits</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-group  fw-semibold text-uppercase me-3" title="Select the end date for which the invoices were supposedly created">
+                                            <label class="input-group-text text-uppercase">From</label>
+                                            <input class="form-control" placeholder="Start date" type="date">
+
+                                            <label class="input-group-text text-uppercase">To</label>
+                                            <input class="form-control me-3" placeholder="Start date" type="date">
+
                                             <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                                 <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
                                             </button>
-
                                         </div>
 
-
+                                       
                                     </div>
                                     <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
                                         <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
@@ -624,7 +644,7 @@
 
                                         <table class="table align-middle table-hover  contacts-table table-striped " id="">
                                             <thead class="table-light">
-                                                <tr class="table-dark">
+                                                <tr class="table-dark t">
 
                                                     <th scope="col">Invoice No.</th>
                                                     <th scope="col">Date Created</th>
