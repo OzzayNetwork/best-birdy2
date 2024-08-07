@@ -577,13 +577,25 @@
                                         <div class="d-flex">
                                             <div class="input-group  fw-semibold text-uppercase me-3" title="Select the end date for which the invoices were supposedly created">
                                                 <label class="input-group-text text-uppercase">Sub County</label>
-                                                <select name="" class="form-select" id="">
+                                                <select name="" class="form-select me-3 id="">
                                                     <option value="" disabled>Select Sub county</option>
                                                     <option value="" selected>All Sub Counties</option>
                                                     <option value="">Homa Bay</option>
                                                     <option value="">Rangwe</option>
                                                 </select>
+
+                                                <label class="input-group-text text-uppercase">Payment Method</label>
+                                                <select name="" class="form-select" id="">
+                                                    <option value="" disabled>Select Payment Method/Sources</option>
+                                                    <option value="" selected>All Payment Channels</option>
+                                                    <option value="">Mpesa (Paybill No. 12345)</option>
+                                                    <option value="">Mpesa (Paybill No. 891)</option>
+                                                    <option value="">Bank (KCB ACC NO. 1235656)</option>
+                                                </select>
                                             </div>
+
+                                           
+
 
                                             <button  data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                                 <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
@@ -600,194 +612,111 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                        </div>
+                                    </div>
                                     <div class="table-responsive">
 
-                                        <table class="table align-middle table-hover  contacts-table table-striped " id="">
+                                        <!-- Show all the receipts for the selected period. If a bill was paid in multiple installments, include all the receipts for those payments, as long as they fall within the selected duration. -->
+
+                                        <table class="table align-middle table-hover  contacts-table table-striped text-uppercase" id="">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
-
-                                                    <th scope="col">Invoice No.</th>
-                                                    <th scope="col">Date Created</th>
-                                                    <th scope="col">Invoiced To</th>
-                                                    <th scope="col">Sub county</th>
-                                                    <th scope="col" class="text-nowrap">Ward</th>
-                                                    <th scope="col" class="text-nowrap text-right">Amount Paid</th>
-                                                    <th scope="col" class="text-nowrap text-right">Invoice Value</th>
-                                                    <th scope="col" class="text-right text-nowrap">Outstanding Balance</th>
+                                                    <th scope="col" class="text-nowrap">Invoice No.</th>
+                                                    <th scope="col" class="text-nowrap">Date Created</th>
+                                                    <th scope="col" class="text-nowrap">Invoiced By</th>
+                                                    <th scope="col" class="text-nowrap">Invoiced To</th>
+                                                    <th scope="col" class="text-nowrap">Date Paid</th>
+                                                    <th scope="col" class="text-nowrap">Receipt No.</th>
+                                                    <th scope="col" class="text-nowrap">Date Receipted</th>
+                                                    <th scope="col" class="text-nowrap">Payment Method</th>
+                                                    <th scope="col" class="text-right text-nowrap">Invoice Amount</th>
+                                                    <th scope="col" class="text-right text-nowrap">Receipt Amount</th>
+                                                    <th scope="col" class="text-right text-nowrap">Current Balance</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
+                                          
                                             <tbody>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
-                                                    <td>11 Jan 2023 11:34 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        Njugi Enterproce
-                                                    </td>
-                                                    
-                                                    <td>
-                                                        Homa Bay Town
-                                                    </td>
-
-                                                    <td class="text-capitalize text-nowrap ">
-                                                       CBD
-                                                    </td>
-
-                                                    <td class="text-capitalize text-right text-info">
-                                                        0
-                                                    </td>
-                                                    <td class="text-capitalize text-right">
-                                                        2000
-                                                    </td>
-                                                    <td class="text-nowrap text-right text-danger fw-bold">
-                                                        2000
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
-                                                          
-                                                        </div>
-                                                    </td>
+                                                    <td>BLL123455</td>
+                                                    <td>12 Dec 2023 11:34 AM</td>
+                                                    <td>Kelvin Test</td>
+                                                    <td>Big Wise Technologies</td>
+                                                    <td>12 Dec 2023 12:45 AM</td>
+                                                    <td>REC9879FFVF</td>
+                                                    <td>31 Jun 2024 12:46 AM</td>
+                                                    <td>MPESA (#sdhggyug)</td>
+                                                    <td class="text-right">3,000</td>
+                                                    <td class="text-right">2,000</td>
+                                                    <td class="text-right">1,000</td>
+                                                    <td></td>
                                                 </tr>
-
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
-                                                    <td>11 Jan 2023 11:34 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        Njugi Enterproce
-                                                    </td>
-                                                    
-                                                    <td>
-                                                        Homa Bay Town
-                                                    </td>
-
-                                                    <td class="text-capitalize text-nowrap ">
-                                                       CBD
-                                                    </td>
-
-                                                    <td class="text-capitalize text-right text-info">
-                                                        0
-                                                    </td>
-                                                    <td class="text-capitalize text-right">
-                                                        2000
-                                                    </td>
-                                                    <td class="text-nowrap text-right text-danger fw-bold">
-                                                        2000
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
-                                                          
-                                                        </div>
-                                                    </td>
+                                                    <td>BLL123456</td>
+                                                    <td>15 Dec 2023 09:20 AM</td>
+                                                    <td>Jane Doe</td>
+                                                    <td>Smart Tech Ltd</td>
+                                                    <td>18 Dec 2023 03:30 PM</td>
+                                                    <td>REC1234ABCD</td>
+                                                    <td>01 Jul 2024 09:30 AM</td>
+                                                    <td>Bank (#abc123)</td>
+                                                    <td class="text-right">5,000</td>
+                                                    <td class="text-right">5,000</td>
+                                                    <td class="text-right">0</td>
+                                                    <td></td>
                                                 </tr>
-
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
-                                                    <td>11 Jan 2023 11:34 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        Njugi Enterproce
-                                                    </td>
-                                                    
-                                                    <td>
-                                                        Homa Bay Town
-                                                    </td>
-
-                                                    <td class="text-capitalize text-nowrap ">
-                                                       CBD
-                                                    </td>
-
-                                                    <td class="text-capitalize text-right text-info">
-                                                        0
-                                                    </td>
-                                                    <td class="text-capitalize text-right">
-                                                        2000
-                                                    </td>
-                                                    <td class="text-nowrap text-right text-danger fw-bold">
-                                                        2000
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
-                                                          
-                                                        </div>
-                                                    </td>
+                                                    <td>BLL123457</td>
+                                                    <td>20 Dec 2023 02:45 PM</td>
+                                                    <td>John Smith</td>
+                                                    <td>Innovatech</td>
+                                                    <td>22 Dec 2023 01:15 PM</td>
+                                                    <td>REC5678EFGH</td>
+                                                    <td>02 Jul 2024 10:00 AM</td>
+                                                    <td>bANK (#xyz789)</td>
+                                                    <td class="text-right">2,500</td>
+                                                    <td class="text-right">2,500</td>
+                                                    <td class="text-right">0</td>
+                                                    <td></td>
                                                 </tr>
-
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
-                                                    <td>11 Jan 2023 11:34 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        Njugi Enterproce
-                                                    </td>
-                                                    
-                                                    <td>
-                                                        Homa Bay Town
-                                                    </td>
-
-                                                    <td class="text-capitalize text-nowrap ">
-                                                       CBD
-                                                    </td>
-
-                                                    <td class="text-capitalize text-right text-info">
-                                                        0
-                                                    </td>
-                                                    <td class="text-capitalize text-right">
-                                                        2000
-                                                    </td>
-                                                    <td class="text-nowrap text-right text-danger fw-bold">
-                                                        2000
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
-                                                          
-                                                        </div>
-                                                    </td>
+                                                    <td>BLL123458</td>
+                                                    <td>25 Dec 2023 04:50 PM</td>
+                                                    <td>Emily Clark</td>
+                                                    <td>Alpha Solutions</td>
+                                                    <td>27 Dec 2023 11:00 AM</td>
+                                                    <td>REC9101IJKL</td>
+                                                    <td>03 Jul 2024 11:30 AM</td>
+                                                    <td>mpesa (#cash001)</td>
+                                                    <td class="text-right">4,000</td>
+                                                    <td class="text-right">3,000</td>
+                                                    <td class="text-right">1,000</td>
+                                                    <td></td>
                                                 </tr>
-
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
-                                                    <td>11 Jan 2023 11:34 AM</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        Njugi Enterproce
-                                                    </td>
-                                                    
-                                                    <td>
-                                                        Homa Bay Town
-                                                    </td>
-
-                                                    <td class="text-capitalize text-nowrap ">
-                                                       CBD
-                                                    </td>
-
-                                                    <td class="text-capitalize text-right text-info">
-                                                        0
-                                                    </td>
-                                                    <td class="text-capitalize text-right">
-                                                        2000
-                                                    </td>
-                                                    <td class="text-nowrap text-right text-danger fw-bold">
-                                                        2000
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
-                                                          
-                                                        </div>
-                                                    </td>
+                                                    <td>BLL123459</td>
+                                                    <td>30 Dec 2023 08:10 AM</td>
+                                                    <td>Michael Brown</td>
+                                                    <td>Beta Innovations</td>
+                                                    <td>02 Jan 2024 09:45 AM</td>
+                                                    <td>REC1122MNOP</td>
+                                                    <td>04 Jul 2024 02:00 PM</td>
+                                                    <td>bank (#cheque456)</td>
+                                                    <td class="text-right">6,000</td>
+                                                    <td class="text-right">4,000</td>
+                                                    <td class="text-right">2,000</td>
+                                                    <td></td>
                                                 </tr>
-                                                
                                             </tbody>
-                                            <tfoot class="table-dark text-uppercase">
+                                            
+                                            <tfoot class="table-dark text-uppercase text-nowrap">
                                                 <tr>
 
-                                                    <th class="text-capitalize text-nowrap" colspan="5">23 Invoices</th>
+                                                    <th class="text-nowrap" colspan="5">23 Invoices</th>
+                                                    <th colspan="3">45 Receipts</th>
 
                                                     <th class="text-right">4000</th>
                                                     <th class="text-right">4000</th>
