@@ -652,7 +652,12 @@
                                                     <td class="text-right">3,000</td>
                                                     <td class="text-right">2,000</td>
                                                     <td class="text-right">1,000</td>
-                                                    <td></td>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <a href="PrintDocs/Bill/bill.html" target="new" class="btn-sm btn-primary me-3">Invoice</a>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="new" class="btn-sm btn-success">Receipt</a>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>BLL123456</td>
@@ -666,7 +671,12 @@
                                                     <td class="text-right">5,000</td>
                                                     <td class="text-right">5,000</td>
                                                     <td class="text-right">0</td>
-                                                    <td></td>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <a href="PrintDocs/Bill/bill.html" target="new" class="btn-sm btn-primary me-3">Invoice</a>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="new" class="btn-sm btn-success">Receipt</a>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>BLL123457</td>
@@ -680,7 +690,12 @@
                                                     <td class="text-right">2,500</td>
                                                     <td class="text-right">2,500</td>
                                                     <td class="text-right">0</td>
-                                                    <td></td>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <a href="PrintDocs/Bill/bill.html" target="new" class="btn-sm btn-primary me-3">Invoice</a>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="new" class="btn-sm btn-success">Receipt</a>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>BLL123458</td>
@@ -694,7 +709,12 @@
                                                     <td class="text-right">4,000</td>
                                                     <td class="text-right">3,000</td>
                                                     <td class="text-right">1,000</td>
-                                                    <td></td>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <a href="PrintDocs/Bill/bill.html" target="new" class="btn-sm btn-primary me-3">Invoice</a>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="new" class="btn-sm btn-success">Receipt</a>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>BLL123459</td>
@@ -708,7 +728,12 @@
                                                     <td class="text-right">6,000</td>
                                                     <td class="text-right">4,000</td>
                                                     <td class="text-right">2,000</td>
-                                                    <td></td>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <a href="PrintDocs/Bill/bill.html" target="new" class="btn-sm btn-primary me-3">Invoice</a>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="new" class="btn-sm btn-success">Receipt</a>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                             
@@ -965,6 +990,76 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- invoice details -->
+
+            <div class="modal fade analysis-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Invoice Period Analysis Overview: Creation vs. Payment Periods</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <div class="row p-3">
+                                <div class="col-12 mb-5">
+                                    <div class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+                                        <h4 class="alert-heading">About Invoice Comparison Overview</h4>
+                                        <p class="mb-1">This section allows you to compare invoices based on two distinct date ranges:</p>
+                                        <ol>
+                                            <li><strong>Creation Period:</strong> Select the date range during which invoices were created.</li>
+                                            <li><strong>Payment Period:</strong> Choose the date range when these invoices were paid.</li>
+                                        </ol>
+                                        <p>The comparison will show which invoices were created within <strong>the selected creation period</strong> but remained unpaid, and which of these were paid within <strong>the chosen payment period</strong>. This helps in analyzing and tracking invoice status and payment trends.</p>
+                                       
+                                    </div>
+                                </div>
+
+                                <!-- by default select the duration for the previouse financial year eg July 1st 2023 to June 31 2023 -->
+
+                                <div class="col-12 mb-3">
+                                    <label for="">Invoice Creation Period</label>
+                                    <div class="d-flex">
+                                        <div class="input-group  fw-semibold text-uppercase me-3" title="Select the start date for which the invoices were supposedly created">
+                                            <label class="input-group-text text-uppercase">Date From</label>
+                                            <input class="form-control " type="date" value="2019-08-19" id="example-date-input">
+                                        </div>
+
+                                        <div class="input-group  fw-semibold text-uppercase" title="Select the end date for which the invoices were supposedly created">
+                                            <label class="input-group-text text-uppercase">Date To</label>
+                                            <input class="form-control " type="date" value="2019-08-19" id="example-date-input">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <!-- by default select the duration for the current financial year eg July 1st 2024 to June 31 2024 -->
+
+                                <div class="col-12 mb-3">
+                                    <label for="">Invoice Payment Period</label>
+                                    <div class="d-flex">
+                                        <div class="input-group  fw-semibold text-uppercase me-3" title="Select the start date for which the invoices were receipted">
+                                            <label class="input-group-text text-uppercase">Date From</label>
+                                            <input class="form-control " type="date" value="2019-08-19" id="example-date-input">
+                                        </div>
+
+                                        <div class="input-group  fw-semibold text-uppercase" title="Select the end date for which the invoices were supposedly receipted">
+                                            <label class="input-group-text text-uppercase">Date To</label>
+                                            <input class="form-control " type="date" value="2019-08-19" id="example-date-input">
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           
+                            <div class="float-end">
+                               <button class="btn btn-primary text-uppercase">Submit </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
 
             <footer class="footer ">
                 <div class="container-fluid ">
