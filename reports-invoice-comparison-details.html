@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>NTSA | Keep Our Roads safe</title>
+    <title>Unpaid Invoices Reports</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Rental management system by Nouveta LTD" name="description" />
     <meta content="Kelvin Njuguna" name="author" />
@@ -119,6 +119,9 @@
                         </div>
                     </div>
 
+
+
+
                     <div class="dropdown d-none d-lg-inline-block ms-1">
                         <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
                                 <i class="bx bx-fullscreen"></i>
@@ -209,7 +212,6 @@
                             </div>
                         </div>
                     </div>
-
 
 
                     <div class="dropdown d-inline-block">
@@ -530,6 +532,7 @@
         <!-- Left Sidebar End -->
 
 
+
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
@@ -542,14 +545,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">MPESA PAYBILL 12345</h4>
+                                <h4 class="mb-sm-0 font-size-18">Periodic analysis details</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item text-capitalize"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item text-capitalize"><a href="#">Receipted Transactions</a></li>
-                                        <li class="breadcrumb-item text-capitalize"><a href="#">Mpesa Paybill 1234</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Reports</a></li>
+                                        <li class="breadcrumb-item active"><a href="reports-invoice-comparison-streamSubcounty.html">Invoice Periodic Analysis</a></li>
+                                        <li class="breadcrumb-item active">Creation (Jan 1 - Dec 31, 2024) vs. Payment (Jan 1 - Dec 31, 2025)</li>
                                     </ol>
                                 </div>
 
@@ -561,141 +564,245 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                       <div class="flex-grow-1">
                                         <div class="search-box mb-0 me-3">
                                             <div class="position-relative">
-                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l">
                                                 <i class="bx bx-search-alt search-icon"></i>
                                             </div>
                                         </div>
                                       </div>
 
                                         <div class="d-flex">
-                                            <div class="d-flex align-items-center me-3 pe-3">
-
-                                                <span class="pr-3 fw-semibold">Payment Method:</span>
-                                                <select class="form-select w-auto font-13px me-3">
-                                                    <option value="" disabled>Select Method</option>
-                                                    <option value="10">All Methods</option>
-                                                    <option value="25">STK Push</option>
-                                                    <option value="50">Payment Correction</option>
-                                                    <option value="100">Mpesa Paybill Manual Entry</option>
-                                                    <option value="150">Bank Transaction OTP</option>
+                                            <div class="input-group  fw-semibold text-uppercase me-3" title="Select the end date for which the invoices were supposedly created">
+                                                <label class="input-group-text text-uppercase">Sub County</label>
+                                                <select name="" class="form-select" id="">
+                                                    <option value="" disabled>Select Sub county</option>
+                                                    <option value="" selected>All Sub Counties</option>
+                                                    <option value="">Homa Bay</option>
+                                                    <option value="">Rangwe</option>
                                                 </select>
-
-                                                <span class="pr-3 fw-semibold">From:</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
-                                                <span class="px-3 fw-semibold">TO:</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
                                             </div>
-                                            <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+
+                                            <button  data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                                 <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
                                             </button>
+
+                                            <button type="button" class="btn btn-secondary waves-effect waves-light my-2 my-sm-0 text-uppercase text-uppercase" data-toggle="modal" data-target=".analysis-modal">Select Period</button>
 
                                         </div>
 
 
                                     </div>
                                     <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
+                                        <button type="button"  data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
 
-                                        <table class="table align-middle table-hover contacts-table table-striped" id="">
+                                        <table class="table align-middle table-hover  contacts-table table-striped " id="">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
-                                                    <th>Ref No.</th>
-                                                    <th scope="col">Date Paid</th>
-                                                    <th>Date Receipted</th>
-                                                    <th>Paid by</th>
-                                                    <th>Phone No.</th>
-                                                    <th>Method</th>
-                                                    <th scope="col">Invoice No.</th>    
-                                                    <th>Receipted By</th>                                                
-                                                    <th scope="col" class="text-right">Receipted Amount</th>
-                                                    <th class="text-right"></th>
+
+                                                    <th scope="col">Invoice No.</th>
+                                                    <th scope="col">Date Created</th>
+                                                    <th scope="col">Invoiced To</th>
+                                                    <th scope="col">Sub county</th>
+                                                    <th scope="col" class="text-nowrap">Ward</th>
+                                                    <th scope="col" class="text-nowrap text-right">Amount Paid</th>
+                                                    <th scope="col" class="text-nowrap text-right">Invoice Value</th>
+                                                    <th scope="col" class="text-right text-nowrap">Outstanding Balance</th>
+                                                    <th></th>
                                                 </tr>
                                             </thead>
-
-                                          <tbody>
-                                            <tr>
-                                                <th>HBJJHDYTD794</th>
-                                                <td class="text-uppercase">12 Jul 2023 11:56:34 AM</td>
-                                                <td class="text-uppercase">12 Jul 2023 11:58:45 AM</td>
-                                                <td class="text-black text-uppercase">Kelvin Ndungu</td>
-                                                <td>0704549859</td>
-                                                <td>STK Push</td>
-                                                <td>BLL123456</td>
-                                                <td class="text-uppercase">Kelvin Gitonga</td>
-                                                <td class="text-right"><strong>KES 570,780</strong></td>
-                                                <td class="text-right">
-                                                    <a class="btn btn-sm btn-primary text-uppercase d-none" href="reports-transactions-view.html">View Details</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>HBJJHDYTD794</th>
-                                                <td class="text-uppercase">12 Jul 2023 11:56:34 AM</td>
-                                                <td class="text-uppercase">12 Jul 2023 11:58:45 AM</td>
-                                                <td class="text-black text-uppercase">Kelvin Ndungu</td>
-                                                <td>0704549859</td>
-                                                <td>MPESA PAYBILL</td>
-                                                <td>BLL123456</td>
-                                                <td class="text-uppercase">Kelvin Gitonga</td>
-                                                <td class="text-right"><strong>KES 570,780</strong></td>
-                                                <td class="text-right">
-                                                    <a class="btn btn-sm btn-primary text-uppercase d-none" href="reports-transactions-view.html">View Details</a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <th>HBJJHDYTD794</th>
-                                                <td class="text-uppercase">12 Jul 2023 11:56:34 AM</td>
-                                                <td class="text-uppercase">12 Jul 2023 11:58:45 AM</td>
-                                                <td class="text-black text-uppercase">Kelvin Ndungu</td>
-                                                <td>0704549859</td>
-                                                <td>TRANSACTION CORRECTION</td>
-                                                <td>BLL123456</td>
-                                                <td class="text-uppercase">Kelvin Gitonga</td>
-                                                <td class="text-right"><strong>KES 570,780</strong></td>
-                                                <td class="text-right">
-                                                    <a class="btn btn-sm btn-primary text-uppercase d-none" href="reports-transactions-view.html">View Details</a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <th>HBJJHDYTD794</th>
-                                                <td class="text-uppercase">12 Jul 2023 11:56:34 AM</td>
-                                                <td class="text-uppercase">12 Jul 2023 11:58:45 AM</td>
-                                                <td class="text-black text-uppercase">Kelvin Ndungu</td>
-                                                <td>0704549859</td>
-                                                <td>BANK PAYMENT OTP</td>
-                                                <td>BLL123456</td>
-                                                <td class="text-uppercase">Kelvin Gitonga</td>
-                                                <td class="text-right"><strong>KES 570,780</strong></td>
-                                                <td class="text-right">
-                                                    <a class="btn btn-sm btn-primary text-uppercase d-none" href="reports-transactions-view.html">View Details</a>
-                                                </td>
-                                            </tr>
-                                          </tbody>
-                                            
-                                            <tfoot class="table-dark">
+                                            <tbody>
                                                 <tr>
-                                                    <th colspan="7">4 Transactions</th>     
-                                                    <th>4 users</th>                                               
-                                                    <th class="text-right"><strong>KES 570,780</strong></th>
-                                                    <th class=""></th>                                                   
+                                                    <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
+                                                    <td>11 Jan 2023 11:34 AM</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        Njugi Enterproce
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        Homa Bay Town
+                                                    </td>
+
+                                                    <td class="text-capitalize text-nowrap ">
+                                                       CBD
+                                                    </td>
+
+                                                    <td class="text-capitalize text-right text-info">
+                                                        0
+                                                    </td>
+                                                    <td class="text-capitalize text-right">
+                                                        2000
+                                                    </td>
+                                                    <td class="text-nowrap text-right text-danger fw-bold">
+                                                        2000
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
+                                                          
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
+                                                    <td>11 Jan 2023 11:34 AM</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        Njugi Enterproce
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        Homa Bay Town
+                                                    </td>
+
+                                                    <td class="text-capitalize text-nowrap ">
+                                                       CBD
+                                                    </td>
+
+                                                    <td class="text-capitalize text-right text-info">
+                                                        0
+                                                    </td>
+                                                    <td class="text-capitalize text-right">
+                                                        2000
+                                                    </td>
+                                                    <td class="text-nowrap text-right text-danger fw-bold">
+                                                        2000
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
+                                                          
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
+                                                    <td>11 Jan 2023 11:34 AM</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        Njugi Enterproce
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        Homa Bay Town
+                                                    </td>
+
+                                                    <td class="text-capitalize text-nowrap ">
+                                                       CBD
+                                                    </td>
+
+                                                    <td class="text-capitalize text-right text-info">
+                                                        0
+                                                    </td>
+                                                    <td class="text-capitalize text-right">
+                                                        2000
+                                                    </td>
+                                                    <td class="text-nowrap text-right text-danger fw-bold">
+                                                        2000
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
+                                                          
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
+                                                    <td>11 Jan 2023 11:34 AM</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        Njugi Enterproce
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        Homa Bay Town
+                                                    </td>
+
+                                                    <td class="text-capitalize text-nowrap ">
+                                                       CBD
+                                                    </td>
+
+                                                    <td class="text-capitalize text-right text-info">
+                                                        0
+                                                    </td>
+                                                    <td class="text-capitalize text-right">
+                                                        2000
+                                                    </td>
+                                                    <td class="text-nowrap text-right text-danger fw-bold">
+                                                        2000
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
+                                                          
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
+                                                    <td>11 Jan 2023 11:34 AM</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        Njugi Enterproce
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        Homa Bay Town
+                                                    </td>
+
+                                                    <td class="text-capitalize text-nowrap ">
+                                                       CBD
+                                                    </td>
+
+                                                    <td class="text-capitalize text-right text-info">
+                                                        0
+                                                    </td>
+                                                    <td class="text-capitalize text-right">
+                                                        2000
+                                                    </td>
+                                                    <td class="text-nowrap text-right text-danger fw-bold">
+                                                        2000
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
+                                                          
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                                 
+                                            </tbody>
+                                            <tfoot class="table-dark text-uppercase">
+                                                <tr>
+
+                                                    <th class="text-capitalize text-nowrap" colspan="5">23 Invoices</th>
+
+                                                    <th class="text-right">4000</th>
+                                                    <th class="text-right">4000</th>
+                                                    <td class="text-nowrap text-right " >
+                                                        <span class="fw-semibold ">25,500</span>
+                                                    </td>
+
+                                                    <td>
+
+                                                    </td>
                                                 </tr>
                                             </tfoot>
                                         </table>
                                     </div>
-                                    
                                 </div>
-
                                 <div class="card-footer bg-white">
                                     <nav aria-label="Page navigation example " class="d-flex align-items-center justify-content-between">
 
@@ -732,6 +839,7 @@
                         </div>
                         <!-- end col -->
                     </div>
+
                     <!-- end row -->
                 </div>
                 <!-- container-fluid -->
@@ -739,94 +847,62 @@
             <!-- End Page-content -->
 
             <!-- receipting modal -->
-            <div class="modal fade receipting-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal fade download-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Receipt Details</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Download Report</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-12">
                                     <address>
-                                        <strong class="text-capitalize">Received from:</strong><br>
-                                        Kelvin Njuguna<br>
-                                        email@mail.com, 0704 549 859<br>                                   
-                                        ID No. 423-410. 
-                                        
+                                        <strong class="text-capitalize">Report Title</strong><br>
+                                        Revenue Collections By Subcounties in Homabay County
                                     </address>
                                 </div>
-                                <div class="col-sm-6 text-sm-end">
-                                    <address class="mt-2 mt-sm-0">
-                                        <strong>Payment Method</strong><br>
-                                        <span class="fw-medium">MPESA</span><br>
-                                        Phone No. 0704 549 859<br> <br>
-                                        On 1 Mar 2022, 10:20 AM
-                                    </address>
+
+                                <div class="col-12">
+                                    <label><strong>Report Date Range</strong></label>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="py-2 mt-3">
-                                    <h3 class="font-size-15 fw-bold">ND12368</h3>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-sm-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Date From</label>
+                                                <input class="form-control"placeholder="Start date" type="date">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-sm-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Date To</label>
+                                                <input class="form-control"placeholder="Start date" type="date">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <table class="table table-nowrap vertical-align-middle">
-                                        <thead class="bg-light">
-                                            <tr>
-                                                <th style="width: 70px;">No.</th>
-                                                <th>Offense</th>
-                                                <th class="text-end">Amount</th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tfoot class="bg-light">
-                                            <tr>
-                                                <td colspan="2" class="border-0 text-end text-right">
-                                                    <strong>Total</strong>
-                                                </td>
-                                                <td class="border-0 text-end">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 11,250</h5>
-                                                </td>
-                                                
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
-                                                <td>01</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Driving Without identification plates affixed or plates not fixed in the prescribed manner</p>
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
-                                            </tr>
 
-                                            <tr title="Drving a vehicle without a valid inspection certificate inspected">
-                                                <td>02</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Drving a vehicle without a valid inspection certificate inspected</p>
-
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
-                                            </tr>
-
-
-
-                                            
-                                        </tbody>
-                                    </table>
+                                <div class="col-12">
+                                    <label><strong>Select File Type</strong></label>
+                                    <select class="form-select">
+                                        <option>Select Document Type</option>
+                                        <option>PDF file</option>
+                                        <option>Excel File</option>
+                                    </select>
                                 </div>
+
+                                <div class="col-12">
+                                    <button  type="button" class="btn btn-primary dropdown-toggle option-selector text-capitalize w-100 mt-5">
+                                        <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                    </button>
+                                </div>
+                                
                             </div>
-                        </div>
-                        <div class="modal-footer">
                            
-                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" type="button" class="btn btn-primary waves-effect waves-light">
-                                <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Receipt
-                            </a>
                         </div>
+                       
                     </div>
                     <!-- /.modal-content -->
                 </div>
@@ -834,21 +910,23 @@
             </div>
             <!-- end of receipting modal -->
 
+           
+
             <!-- invoice details -->
             <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Receipt Invoice</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Invoice Details</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="col-12">
                                 <address>
-                                    <strong>receipt For:</strong><br>
+                                    <strong>Billed To:</strong><br>
                                     Kelvin Njuguna<br>
                                     email@mail.com, 0704 549 859<br>                                   
-                                    Member No. 410-123
+                                    Hse No. 410, 90 Degrees By Tsavo
                                     <br><br>
                                     1 Mar 2022, 10:20 AM
                                 </address>
@@ -969,7 +1047,7 @@
                         </div>
                         <div class="col-sm-6 ">
                             <div class="text-sm-end d-sm-block ">
-                                Best Birdy Billing system. 
+                                County Billing System
                             </div>
                         </div>
                     </div>
@@ -1028,7 +1106,5 @@
 
 
 <!-- index.html   13:55:49 GMT -->
-
-</html>dex.html 13:55:49 GMT -->
 
 </html>
