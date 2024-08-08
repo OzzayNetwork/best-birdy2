@@ -629,6 +629,11 @@
                                                 <a class="nav-item nav-link" href="plot-rent-notices.html">Demand Notices</a>
                                                 <a class="nav-item nav-link" href="plot-pending-transfers.html">Pending Transfers</a>
                                                 <a class="nav-item nav-link" href="plot-approved-transfers.html">Approved Transfers</a>
+                                                <a class="nav-item nav-link" href="plot-rejected-transfers.html">Declined Transfers</a>
+                                                <a class="nav-item nav-link" href="plot-re-submitted-transfers.html">Re-Submitted Transfers</a>
+                                                <a class="nav-item nav-link" href="plot-history.html">Ownership History</a>
+                                                <a class="nav-item nav-link" href="plot-waiver.html">Waivers</a>
+                                                
                                             </div>
 
 
@@ -2523,6 +2528,29 @@
                         
                         <tbody>
 
+                            <tr>
+                                <th>
+                                    Minutes Number
+                                </th>
+                                <td>
+                                    min13375345
+                                </td>
+                                
+                               
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    Minutes Document
+                                </th>
+                                <td>
+                                    <a href="#" class="text-lowecase">uyguyuihihkkljkl</a>
+                                </td>
+                                
+                               
+                            </tr>
+
+
                             <!-- include  <strong class="text-danger">*</strong> where a change was done -->
                             <tr>
                                 <th>
@@ -2612,6 +2640,9 @@
                             <label for="floatingnameInput">Enter The OTP</label>
                         </div>
 
+                        <!-- The OTP message being sent to the user -->
+                        <!-- Your OTP for verification is: 12345 Please enter this OTP in the system to verify your Plot Transfer Approval. -->
+
                         <button class="btn btn-primary w-100 approve-transfer text-uppercase mb-4">
                             <div class="spinner-border text-white  d-none m-0" height="20px" width="20px" role="status">
                                 <span class="sr-only">Loading...</span>
@@ -2650,6 +2681,74 @@
                                     <button href="plot-approved-transfers.html" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase download-receipt-transfer">
                                         <i class="bx bx-printer font-size-16 align-middle me-2 "></i>
                                         View Approved Transfers
+                                    </button>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row decline-appplication-cont d-none">
+                   <div class="col-12">
+                    <h4 class="card-title text-uppercase  text-black">Decline Transfer Appplication</h4>
+                    <p>An OTP (One-Time Password) has been sent to the phone number <strong class="text-black">+2547***234</strong>, which is registered under your account. Please enter the OTP sent to your phone in the text box below to verify the transfer.</p>
+                    <label for="">Enter OTP</label>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingnameInput" placeholder="OTP Verrificatiom" spellcheck="false" data-ms-editor="true">
+                        <label for="floatingnameInput">Enter The OTP</label>
+                    </div>
+
+                    
+                   </div>
+
+
+                   <div class="col-12 mb-3">
+                        <label for="">Reason For Decline</label>
+                        <textarea name="" placeholder="Enter Reason For Decline" class="form-control" id=""></textarea>
+                   </div>
+
+                   <div class="col-12 mt-4">
+                    <DIV class="d-flex text-uppercase align-items-center justify-content-center mb-4">
+                        <button type="button" class="btn btn-outline-secondary waves-effect me-3 text-uppercase transfer-back">Back</button>
+                        <button class="btn btn-danger w-100 reject-transfer text-uppercase">
+                            <div class="spinner-border text-white  d-none m-0" height="20px" width="20px" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+
+                            <div><i class="mdi mdi-close"></i> Reject Application</div>
+                        </button>
+                    </DIV>
+                   </div>
+                </div>
+
+                <div class="row rejection-successful d-none">
+                    <div class="d-flex align-items-center justify-content-center w-100">
+                        <div class="col-6 dcol-sm-12 col-md-8 col-lg-6">
+                            <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
+                        
+    
+                                <div class="flex-shrink-0 align-self-center  mb-4 pb-4 pt-4">
+                                    <div class="avatar-sm rounded-circle bg-success mini-stat-icon">
+                                        <span class="avatar-title rounded-circle bg-warning text-black text-dark">
+                                            <i class="mdi-alert mdi font-size-24"></i>
+                                        </span>
+                                    </div>
+                                </div>
+        
+        
+                                <h4 class="text-black fw-bold text-uppercase">Transfer Application Declined</h4>
+                                <p class="text-muted mb-4">
+                                    The property transfer request for <strong class="fw-bold">Plot Number LR5768</strong> has been successfully rejected. The applicant, <strong class="fw-bold">Jane Doe Mwendwa</strong>, has been notified via SMS at <strong class="fw-bold">+2547***1234</strong>.
+                                </p>
+                                <p class="text-muted mb-4">Click below to navigate to the table with rejected applications.</p>
+                                
+                                <div class="d-flex w-100 pb-4">
+        
+                                    <!-- data-bs-dismiss="modal" -->
+                                    <button href="plot-rejected-transfers.html" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase download-receipt-transfer">
+                                    
+                                        View Rejected Applications
                                     </button>
                                 </div>
                             </div> 
@@ -3139,6 +3238,9 @@ Highcharts.chart('StreamRevenueChart', {
 
         $('.approve-transfer').on('click', function(){
 
+            //Message to be sent to client after approval
+            //Dear [Client Name], your property transfer application has been approved. The property is now officially recognized as yours, and you are the ratable owner. Please note that your outstanding balance is [Outstanding Balance Amount]. Kindly ensure timely payment
+            
             var theButton=$(this)
             theButton.children('.spinner-border ').removeClass('d-none').siblings().addClass('d-none')
 
@@ -3148,6 +3250,31 @@ Highcharts.chart('StreamRevenueChart', {
                $('.transfer-successful-done').removeClass('d-none').siblings().addClass('d-none')
             }, 2000);
         })
+
+
+        //declining transfer application
+        $('.tranfer-decline').on('click', function(){
+            $('.decline-appplication-cont').removeClass('d-none').siblings().addClass('d-none')
+
+        })
+        $('.transfer-back').on('click', function(){
+            $('.transfer-approval-details').removeClass('d-none').siblings().addClass('d-none')
+        })
+
+
+        $('.reject-transfer').on('click', function(){
+
+            var theButton=$(this)
+            theButton.children('.spinner-border ').removeClass('d-none').siblings().addClass('d-none')
+
+            setTimeout(function() {
+                theButton.children('.spinner-border').addClass('d-none').siblings().removeClass('d-none')      
+              // $('.approval-otp-cont').addClass('d-none')
+               $('.rejection-successful').removeClass('d-none').siblings().addClass('d-none')
+            }, 2000);
+        })
+
+        
     </script>
     
     
