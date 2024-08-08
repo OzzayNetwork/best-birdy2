@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Desk Birdy | Parking Quick Stats</title>
+    <title>Declined Transfers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Rental management system by Nouveta LTD" name="description" />
     <meta content="Kelvin Njuguna" name="author" />
@@ -590,13 +590,13 @@
                     <div class="row ">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Propertiese Pending Approval</h4>
+                                <h4 class="mb-sm-0 font-size-18">Declined Transfers</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Land & Plots</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Transfers Pending Approval</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Declined Transfers</a></li>
                                         
                                     </ol>
                                 </div>
@@ -652,9 +652,56 @@
                             <div class="card">
                                 <div class="card-header bg-white  w-100 border-bottom d-flex justify-content-between align-items-center">
                                     <h4 class="card-title text-uppercase">
-                                        Transfers Pending Approval
+                                        Declined Application
                                     </h4>
-                                    <div class="d-none">
+
+                                    <div class="d-flex">
+                                        <div class="input-group  fw-semibold text-uppercase input-group-sm">
+                                            <label class="input-group-text text-uppercase">Source</label>
+                                            <select class="form-select w-auto font-13px form-select-sm">
+                                                <option value="10">All Sources</option>
+                                                <option value="25">Plot Rent</option>
+                                                <option value="50">Land Rate</option>
+                                                <option value="100">Stall Rent</option>                                               
+                                            </select>
+                                        </div>
+
+                                        <div class="input-group  fw-semibold text-uppercase input-group-sm flex-nowrap">
+                                            <label class="input-group-text text-uppercase">Sub County</label>
+                                            <select class="form-select w-auto font-13px me-0 form-select-sm">
+                                                <option value="10" disabled>Select Sub County</option>
+                                                <option value="10">All Sub Counties</option>
+                                                <option value="25">Homa Bay Town</option>
+                                                <option value="50">Rangwe</option>
+                                                <option value="100">Rachuonyo South</option>                                               
+                                            </select>
+                                        </div>
+
+                                        <div class="input-group  fw-semibold text-uppercase input-group-sm flex-nowrap">
+                                            <label class="input-group-text text-uppercase">Zone/market</label>
+                                            <select class="form-select w-auto font-13px me-3 form-select-sm">
+                                                <option value="10" disabled>Select zone or market</option>
+                                                <option value="10">All Zones</option>
+                                                <option value="25">Soko Mjinga</option>
+                                                <option value="50">Bus park</option>
+                                                <option value="100">Rachuonyo South</option>                                               
+                                            </select>
+                                        </div>
+
+                                       
+
+                                        <div class="input-group  fw-semibold text-uppercase input-group-sm">
+                                            <label class="input-group-text text-uppercase">Date From</label>
+                                            <input class="form-control form-control" type="date" value="2019-08-19" id="example-date-input">
+                                        </div>
+
+                                        <div class="input-group  fw-semibold text-uppercase input-group-sm">
+                                            <label class="input-group-text text-uppercase">Date To</label>
+                                            <input class="form-control form-control" type="date" value="2019-08-19" id="example-date-input">
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex d-none">
                                         
                                         <button data-bs-toggle="modal" data-bs-target=".add-plot-modal" type="button" class="btn btn-success text-uppercase dropdown-toggle option-selector me-3">
                                             <i class="bx bx-plus font-size-16"></i> <span class="pl-1 d-md-inline">Add A Plot</span>
@@ -665,7 +712,7 @@
                                         </button>
 
                                         <!-- sending demand notice to multiple people -->
-                                        <button data-bs-toggle="modal" data-bs-target=".trans-approval" type="button" class="btn btn-danger text-uppercase dropdown-toggle option-selector me-3">
+                                        <button data-bs-toggle="modal" data-bs-target="#demandNoticeMul" type="button" class="btn btn-danger text-uppercase dropdown-toggle option-selector me-3">
                                             <i class="mdi mdi-alert-outline font-size-16"></i> <span class="pl-1 d-md-inline">Demand Notice</span>
                                         </button>
 
@@ -683,123 +730,53 @@
                                             </div>
                                         </div>
                                       </div>
+
+                                      <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                        <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                        </button>
                                     </div>
                                    
                                 </div>
 
-                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
-                                     
-
-                                        <div class="d-flex">
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Sub Counties</option>
-                                                <option value="25">Meru Town</option>
-                                                <option value="50">Souht Imenti</option>
-                                                <option value="100">Central Imenti</option>
-                                                <option value="150">Maua Town</option>
-                                                <option value="200">Nkubu Town</option>
-                                            </select>
-
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Wards</option>
-                                                <option value="25">Ward 1</option>
-                                                <option value="50">Ward 2</option>
-                                                <option value="100">Ward 3</option>
-                                                
-                                            </select>
-
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Attendants</option>
-                                                <option value="25">Kelvin Kinoti</option>
-                                                <option value="50">Bahati Bukuku</option>
-                                                <option value="100">John Opio</option>
-                                                <option value="150">Maua Town</option>
-                                                <option value="200">Nkubu Town</option>
-                                            </select>
-
-                                            <select class="form-select w-auto font-13px mx-3">
-                                                <option value="10">All Plots</option>
-                                                <option value="25">Compliant</option>
-                                                <option value="50">Non Compliant</option>
-                                               
-                                            </select>
-
-                                            <div class="d-flex align-items-center me-3 pe-3">
-                                                <span class="pr-3 fw-semibold text-nowrap">From (Registration Date):</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
-                                                <span class="px-3 fw-semibold">TO:</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
-                                            </div>
-                                            <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
-                                                <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
-                                            </button>
-
-                                        </div>
-
-
-                                    </div>
-                                    <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
-                                    </div>
-                                </div>
+                               
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id="">
                                             <thead class="table-dark">
                                                 <tr>
                                                     <th scope="col">Property NO.</th>
-                                                    <th>Application Date</th>
-                                                    <th>Current Owner</th>
-                                                    <th>New Owner</th>
-                                                    <th scope="col">Transfer Initiated By</th>
                                                     <th>Invoice No.</th>
-                                                    <th>Receipt No.</th>
-                                                  
-                                                    <th>Sub County</th> 
-                                                    <th>Market/Zone</th>
-                                                   
-                                                    <th class="text-right">Transfer AMount</th>
+                                                    <th>Applicant</th>
+                                                    <th>Date Declined</th>                                                    
+                                                    <th scope="col">Declined By</th>
+                                                    <th>Approver's Phone</th>
+                                                    <th>Minutes No.</th>
+                                                    <th>Minutes Document</th>
+                                                    <th>Sub County</th>   
+                                                    <th>Zone/Market</th>                                                 
+                                                    <th class="text-right">Transfer Fee Paid</th> 
                                                     <th></th>
                                                 </tr>
-
-                                                
-                                                
                                             </thead>
-                                            <tfoot class="table-dark">
-                                                <tr class="text-uppercase">
-                                                    <th colspan="2">34 Applications</th>
-                                                    <th colspan="2">23 Owners</th>
-                                                    <th colspan="3">23 Officials</th>
-                                                    <th>34 Sub counties</th>
-                                                    <th>23 wards</th>
-                                                    <th colspan="" class="text-right">56,000</th>
-                                                    <th></th>
-                                                </tr>
-                                            </tfoot>
                                             <tbody class="text-uppercase">
-                                                <tr>
-                                                    <td>Blk12345</td>
-                                                    <td>12 Nov 2023 12:45PM (22 Days Ago)</td>
-                                                    <td>Amos KAbuthi</td>
-                                                    <td>ALex Wanjala</td>
-                                                    <td>Dennis Chur Chur</td>
-                                                    <td>BLL343534</td>
-                                                    <td>BHGU68678</td>
-                                                    <Td>Homa Bay town</Td>
-                                                    <td>Soko Mjinga</td>
-                                                    <td class="text-right fw-bold">34,000</td>
-                                                    <td>
-                                                        
-                                                        <button class="btn btn-success btn-sm  text-uppercase me-3" data-bs-toggle="modal"  data-bs-target=".trans-approval" >Transfer Approval</button>
-                                                        <a href="PrintDocs/Receipts/receipts-HOMabay county.html" target="new" class="btn btn-primary btn-sm btn-trans-approval text-uppercase">View Bill</a>
-                                                    </td>
-                                                </tr>
-                                                
+                                              <tr>
+                                                <td>BLK12345</td>
+                                                <td title="Click to view the respective invoice"><a href="PrintDocs/Bill/bill.html" target="new">Bll123456</a></td>
+                                                <td>Kelvin Otati</td>
+                                                <td>12 Jan 2024 11:54 AM</td>
+                                                <td>Alex Wanjala</td>
+                                                <td title="The phone number where the OTP for approval was sent.">0704549859</td>
+                                                <td>UYYU7R889</td>
+                                                <td title="Link to the minutes document that approved this application."><a href="" target="new">the_document_title</a></td>
+                                                <td>Homa Bay town</td>
+                                                <td>SOko Mjinga</td>
+                                                <td class="text-right fw-bold"> 2,000</td>
+                                                <th>
+                                                    <button data-bs-toggle="modal" data-bs-target=".trans-approval" type="button" class="btn btn-primary btn-sm text-uppercase" title="click to view furthure details specific to this approval">More Detaisls</button>
+                                                </th>
+                                              </tr>
+                                               
                                             </tbody>
-                                            
-                                            
                                            
                                         </table>
                                     </div>
@@ -2392,6 +2369,154 @@
 
                             <div class="col-12">
 
+                                
+                               <div class="row invoice-number-input d-none">
+                                    <div class="col-12 mb-3">
+                                        <label for="">Invoice Number</label>
+                                        <input type="text" class="form-control invoice-num-input" placeholder="Enter Bill/Invoice Number">
+                                    </div>
+
+                                   <div class="col-12">
+                                        <div class="alert alert-success d-none" role="alert">
+                                            <i class="mdi mdi-check-all me-2 me-2"></i>  Corresponding Bill Found
+                                        </div>
+
+                                        <div class="alert alert-danger d-none" role="alert">
+                                            <i class="mdi mdi-block-helper me-2"></i>  The invoice found is not applicable
+                                        </div>
+
+                                        <div class="alert alert-danger d-none" role="alert">
+                                            <i class="mdi mdi-alert-outline me-2 me-2"></i>  Corresponding Bill Not Found
+                                        </div>
+                                   </div>
+                                    <div class="col-12 mt-3">
+                                        <button class="btn btn-primary w-100 invoice-search" disabled>
+                                            <div class="spinner-border text-white  d-none m-0" height="20px" width="20px" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+
+                                            <div><i class="bx bx-search"></i> Invoice Search</div>
+                                        </button>
+                                    </div>
+                               </div>
+
+                               <div class="new-billing-transfer d-non">
+
+                               </div>
+
+
+                               <div class="row invoice-results d-none">
+                                    <div class="col-12 mb-3">
+                                        <table class="table table-sm table-striped">
+                                            <tr>
+                                                <th>Invoice Number</th>
+                                                <td>BOFLF00875</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>invoiced By</th>
+                                                <td>Ann Mwiti</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Receipted By</th>
+                                                <td>Ken Waswa</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Paid By</th>
+                                                <td>Kelvin njuguna</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Date Paid</th>
+                                                <td>12 Jan 2024 12:45 Am</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Date Billed</th>
+                                                <td>12 Jan 2024 12:59 AM</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Payment Mode</th>
+                                                <td>KCB Acc No. 1234</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Ref No.</th>
+                                                <td>123446</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Payment Mode</th>
+                                                <td>KCB Acc No. 1234</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Transafer Fee Paid</th>
+                                                <td>KES 2,000</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-12">
+                                      <div class="d-flex">
+                                        <button class="btn btn-danger text-uppercase me-3 transfer-cancel">Cancel</button>
+                                        <button class="btn btn-primary flex-grow-1 text-uppercase transafer-nxt">Next</button>                                        
+                                      </div>
+                                    </div>
+                               </div>
+
+                               <div class="row new-owner-form d-none">
+                                    <div class="col-12">
+                                        <div class="alert alert-secondary fw-bold mb-4" role="alert">
+                                            Please fill in the details below for the new owner. Note that any changes made will be subject to approval once payment is completed/Cleared.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+                                        <label for="">Owner's Name <strong class="fw-bold text-danger">*</strong></label>
+                                        <input type="" class="form-control" placeholder="New Owner's Name" title="Enter new owner's Full Names" name="" value="">
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+                                        <label for="">Owner's ID Number <strong class="fw-bold text-danger">*</strong></label>
+                                        <input type="" class="form-control" placeholder="Enter ID Number" title="Enter new owner's ID Number" name="" value="">
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+                                        <label for="">Phone Number <strong class="fw-bold text-danger">*</strong></label>
+                                        <input type="" class="form-control" placeholder="Enter owner's Phone" title="Enter new owner's Phone Number" name="" value="">
+                                    </div>
+
+                                    <div class="col-12 mb-4 ">
+                                            <div class="border-1 border border-secondary p-4 ">
+                                                <h5 class="my-0 text-dark mb-1">Minutes Details</h5>
+                                                <p class="mb-4">Use this section to detail the minutes that led to the approval of the transfer.</p>
+                                                <div class="row">
+                                                    <div class="col-12 mb-4">
+                                                        <label for="">Minute Number <strong class="fw-bold text-danger">*</strong></label>
+                                                        <input type="" class="form-control" placeholder="Enter owner's Phone" title="Enter Minutes Number" name="" value="">
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <label for="">Minutes File <strong class="fw-bold text-danger">*</strong></label>
+                                                        <input class="form-control" id="formFileSm" type="file" placeholder="Select File">
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="col-12 mt-3">
+                                        <button class="btn btn-primary w-100 finish-transfer text-uppercase" >
+                                            <div class="spinner-border text-white  d-none m-0" height="20px" width="20px" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+
+                                            <div><i class="mdi mdi-check"></i>Finish</div>
+                                        </button>
+                                    </div>
+                               </div>
 
                                <div class="row transfer-successful d-none">
                                 <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
@@ -2442,323 +2567,160 @@
     <!-- END layout-wrapper -->
 
     <!--single demand notice start -->
-    <div class="modal fade trans-approval" id="" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="demandNotice" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-uppercase" id="staticBackdropLabel">Transfer Approvals</h5>
+              <h5 class="modal-title" id="staticBackdropLabel">Demand Notice</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                
-                <div class="row transfer-approval-details mt-3">
+               <div class="row single-notice-generator">
+                    <div class="col-6">
+                        <address>
+                            <strong class="text-capitalize">Owner's name : Kelvin Nuguna Ndungu</strong><br>
+                            Phone No. 0704549859<br>
+                            Email: email@email.com<br>                                   
+                            ID No. 12345689. Car Plate No. KAB 123P <br>
+                            <br>
+                            Date 1 Mar 2022
+                            
+                        </address>
+                    </div>
+                    <div class="col-12">
+                        <div class="table-responsive text-uppercase">
+                            <table class="table table-nowrap table-bordered vertical-align-middle ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="3">Property Details</th>
+                                    </tr>
+                                </thead>
+                            
+                                <tbody>
+                                    <tr>
+                                        <td  class="">
+                                        UPN No.: <strong>1234</strong>
+                                        </td>
+                                        <td  class="">
+                                            Block No.: <strong>1234</strong>
+                                        </td>    
+                                        <td  class="">
+                                            Plot No.: <strong>1234/79090</strong>
+                                        </td>                                    
+                                    </tr>
+
+                                    <tr>
+                                        <td  class="">
+                                        Subcouny <strong>1234</strong>
+                                        </td>
+                                        <td  class="">
+                                            Ward <strong>1234</strong>
+                                        </td>    
+                                        <td  class="">
+                                            Zone/Market <strong>1234/79090</strong>
+                                        </td>                                    
+                                    </tr>
+
+                                    
+                                    <tr>
+                                        <td colspan="3"  class="">
+                                        Rate Payer <strong>Kelvin Kimotho</strong>
+                                        </td>
+                                                                
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="3"  class="">
+                                        Physical Address <strong>Mombasa road, Kwelel tower</strong>
+                                        </td>
+                                                                
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="3"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th colspan="2" class="table-secondary">Details of Charges</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            Last Billed For Year
+                                        </th>
+                                        <th>2023</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            Annual Charges
+                                        </th>
+                                        <th>KES 15,000</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            Current Balance
+                                        </th>
+                                        <th class="text-info">KES 5,200</th>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
                     <div class="col-12">
-                        <div class="card-body bg-light d-flex mb-4 mt-4">
-                            <p class=" mb-0 ">
-                                <i class="mdi mdi-map-legend text-success align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                            </p>
-                            <div>
-                                <p class="text-muted mb-0 ">Plot Details</p>
-                                <p class="mb-0 ">
-                                    <strong class="fw-semibold">
-                                        <span class="">Plot No. BLK 123/2345 | Size: 0.25 Acres | Sub County: Homa Bay Town | MKT/Zone: Soko Mjinga</span>
-                                    </strong>
-                                </p>
+                        <button type="button" class="btn btn-secondary text-uppercase" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary text-uppercase gen-notice">Generate Notice</button>
+                    </div>
+               </div>
+
+               <div class="row align-items-center justify-content-center d-none">
+                <div class="col-7">
+                    <div class="notice-loader">
+                        <div class="loader-modal p-5">
+                            <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
+                                <div class="spinner-border text-dark m-1" role="status">
+                                    <span class="sr-only fw-bold">Loading</span>
+                                </div>
+                                <p class="pt-4 fw-strong text-uppercase fw-bold">Generating Demand notice <br> Kindly wait</p>
                             </div>
                         </div>
                     </div>
+                    <div class="notice-created-cont d-none">
+                        <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
+                            
 
-                   
-
-                   <div class="col-12 mb-4">
-                    <table class="table table-sm text-uppercase table-striped">
-                        <thead class="table-dark">
-                            <tr>
-                                <th colspan="">Transfer Details</th>
-                                <th>Current</th>
-                                <th>Change</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            <!-- include  <strong class="text-danger">*</strong> where a change was done -->
-                            <tr>
-                                <th>
-                                    Owner's Name <strong class="text-danger">*</strong>
-                                </th>
-                                <td>
-                                    Kelvin Njuguna
-                                </td>
-                                <td>Kelvin otati</td>
-                            </tr>
-
-                            <tr>
-                                <th>
-                                    Phone Number  <strong class="text-danger">*</strong>
-                                </th>
-                                <td>
-                                    0704549859
-                                </td>
-
-                                <td>
-                                    0709789789
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th>
-                                    Email Address <strong class="text-danger">*</strong>
-                                </th>
-                                <td class="">
-                                    email@email.com
-                                </td>
-
-                                <td class="">
-                                    newemail@email.com
-                                </td>
-                            </tr>
-
-                           
-                        </tbody>
-                    </table>
-                   </div>
-
-                   <div class="col-6 mb-3">
-                    <table class="table table-sm text-uppercase table-striped">
-                        
-                        <tbody>
-
-                            <tr>
-                                <th>
-                                    Minutes Number
-                                </th>
-                                <td>
-                                    min13375345
-                                </td>
-                                
-                               
-                            </tr>
-
-                            <tr>
-                                <th>
-                                    Minutes Document
-                                </th>
-                                <td>
-                                    <a href="#" class="text-lowecase">uyguyuihihkkljkl</a>
-                                </td>
-                                
-                               
-                            </tr>
-
-
-                            <!-- include  <strong class="text-danger">*</strong> where a change was done -->
-                            <tr>
-                                <th>
-                                    Application date
-                                </th>
-                                <td>
-                                    12 Jan 2023 12:56 AM
-                                </td>
-                                
-                               
-                            </tr>
-
-                            <tr>
-                                <th>
-                                    Date receipted
-                                </th>
-                                <td>
-                                    16 Feb 2023 11:51 AM
-                                </td>
-                                
-                            </tr>
-
-
-                            <tr>
-                                <th>
-                                    Invoice Number
-                                </th>
-                                <td>
-                                    <a href="PrintDocs/Bill/bill.html" title="View Invoice" target="new">Bll 1234</a>
-                                </td>
-                                
-                            </tr>
-
-                         
-
-                           
-                        </tbody>
-                    </table>
-                </div>
-
-                   <div class="col-12 mb-3">
-                    <div class="card-body bg-light d-flex mb-4 mt-4">
-                        <p class=" mb-0 ">
-                            <i class="mdi mdi-cash-multiple text-primary align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                        </p>
-                        <div>
-                            <p class="text-muted mb-0 ">Amount Paid</p>
-                            <p class="mb-0 ">
-                                <strong class="fw-semibold">
-                                    <span class="">KES 1,500</span>
-                                </strong>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="col-12">
-                    <div class="d-flex justify-content-end d-flex">
-                        <button class="btn text-uppercase btn-danger me-3 tranfer-decline">
-                            Decline Application
-                        </button>
-                     
-                        <button class="btn text-uppercase btn-success mx-3 transfer-approve">
-                            Approve
-                        </button>
-                    </div>
-                </div>
-                </div>
-
-                <div class="row approval-otp-cont my-4 d-none">
-                   <div class="d-flex align-items-center justify-content-center">
-                    <div class="col-sm-12 col-md-7 col-lg-6 text-center">
-                        <div class="">
-                            <div class="d-flex align-items-center justify-content-center  mb-4 pb-4 pt-4">
-                                <div class="avatar-md rounded-circle bg-primary mini-stat-icon">
-                                    <span class="avatar-title rounded-circle bg-primary">
-                                        <i class="mdi mdi-shield-key-outline fs-1 text"></i>
+                            <div class="flex-shrink-0 align-self-center  mb-4 pb-4 pt-4">
+                                <div class="avatar-sm rounded-circle bg-success mini-stat-icon">
+                                    <span class="avatar-title rounded-circle bg-success">
+                                        <i class="mdi-check-all mdi font-size-24"></i>
                                     </span>
                                 </div>
                             </div>
-                        </div>
-                        <h4 class="card-title text-uppercase  text-black">OTP Approval</h4>
-                        <p class="mb-4">An OTP (One-Time Password) has been sent to the phone number <strong class="text-black">+2547***234</strong>, which is registered under your account. Please enter the OTP sent to your phone in the text box below to verify the transfer.</p>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Enter Name" spellcheck="false" data-ms-editor="true">
-                            <label for="floatingnameInput">Enter The OTP</label>
-                        </div>
 
-                        <!-- The OTP message being sent to the user -->
-                        <!-- Your OTP for verification is: 12345 Please enter this OTP in the system to verify your Plot Transfer Approval. -->
 
-                        <button class="btn btn-primary w-100 approve-transfer text-uppercase mb-4">
-                            <div class="spinner-border text-white  d-none m-0" height="20px" width="20px" role="status">
-                                <span class="sr-only">Loading...</span>
+                            <h4 class="text-black fw-bold text-uppercase">Demand Notice Sent</h4>
+                            <p class="text-muted mb-4">A Demand Notice with Reference Number <strong class="text-dark">DEM12345</strong> for <strong class="text-dark">KES 50,800</strong> has been sent to <strong class="text-dark">Michael Kinoti</strong> via mobile number <strong class="text-dark">0705549859</strong>. You may also print a physical copy to share with the client.</p>
+                            <p class="text-muted mb-4">Click the button below to print the document.</p>
+                            
+                            <div class="d-flex w-100 pb-2">
+
+                                <!-- data-bs-dismiss="modal" -->
+                                <a href="PrintDocs/Demand-notice/demand-notice.html" target="new" type="button" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase">
+                                    <i class="bx bx-printer font-size-16 align-middle me-2 "></i>
+                                    Print Notice
+                                </a>
                             </div>
-
-                            <div><i class="mdi mdi-check"></i> Approve Application</div>
-                        </button>
-                    </div>
-                   </div>
+                        </div>        
+                    </div>                    
                 </div>
-
-                <div class="row transfer-successful-done d-none">
-                    <div class="d-flex align-items-center justify-content-center w-100">
-                        <div class="col-6 dcol-sm-12 col-md-8 col-lg-6">
-                            <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
-                        
-    
-                                <div class="flex-shrink-0 align-self-center  mb-4 pb-4 pt-4">
-                                    <div class="avatar-sm rounded-circle bg-success mini-stat-icon">
-                                        <span class="avatar-title rounded-circle bg-success">
-                                            <i class="mdi-check-all mdi font-size-24"></i>
-                                        </span>
-                                    </div>
-                                </div>
-        
-        
-                                <h4 class="text-black fw-bold text-uppercase">Plot Successfuly Transfered</h4>
-                                <p class="text-muted mb-4">
-                                    The property transfer request for <strong class="fw-bold">Plot Number LR5768</strong> has been successfully completed and is pending approval.
-                                </p>
-                                <p class="text-muted mb-4">Click Below to downlod the respective Receipt.</p>
-                                
-                                <div class="d-flex w-100 pb-4">
-        
-                                    <!-- data-bs-dismiss="modal" -->
-                                    <button href="plot-approved-transfers.html" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase download-receipt-transfer">
-                                        <i class="bx bx-printer font-size-16 align-middle me-2 "></i>
-                                        View Approved Transfers
-                                    </button>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="row decline-appplication-cont d-none">
-                   <div class="col-12">
-                    <h4 class="card-title text-uppercase  text-black">Decline Transfer Appplication</h4>
-                    <p>An OTP (One-Time Password) has been sent to the phone number <strong class="text-black">+2547***234</strong>, which is registered under your account. Please enter the OTP sent to your phone in the text box below to verify the transfer.</p>
-                    <label for="">Enter OTP</label>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingnameInput" placeholder="OTP Verrificatiom" spellcheck="false" data-ms-editor="true">
-                        <label for="floatingnameInput">Enter The OTP</label>
-                    </div>
-
-                    
-                   </div>
-
-
-                   <div class="col-12 mb-3">
-                        <label for="">Reason For Decline</label>
-                        <textarea name="" placeholder="Enter Reason For Decline" class="form-control" id=""></textarea>
-                   </div>
-
-                   <div class="col-12 mt-4">
-                    <DIV class="d-flex text-uppercase align-items-center justify-content-center mb-4">
-                        <button type="button" class="btn btn-outline-secondary waves-effect me-3 text-uppercase transfer-back">Back</button>
-                        <button class="btn btn-danger w-100 reject-transfer text-uppercase">
-                            <div class="spinner-border text-white  d-none m-0" height="20px" width="20px" role="status">
-                                <span class="sr-only">Loading...</span>
-                            </div>
-
-                            <div><i class="mdi mdi-close"></i> Reject Application</div>
-                        </button>
-                    </DIV>
-                   </div>
-                </div>
-
-                <div class="row rejection-successful d-none">
-                    <div class="d-flex align-items-center justify-content-center w-100">
-                        <div class="col-6 dcol-sm-12 col-md-8 col-lg-6">
-                            <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
-                        
-    
-                                <div class="flex-shrink-0 align-self-center  mb-4 pb-4 pt-4">
-                                    <div class="avatar-sm rounded-circle bg-success mini-stat-icon">
-                                        <span class="avatar-title rounded-circle bg-warning text-black text-dark">
-                                            <i class="mdi-alert mdi font-size-24"></i>
-                                        </span>
-                                    </div>
-                                </div>
-        
-        
-                                <h4 class="text-black fw-bold text-uppercase">Transfer Application Declined</h4>
-                                <p class="text-muted mb-4">
-                                    The property transfer request for <strong class="fw-bold">Plot Number LR5768</strong> has been successfully rejected. The applicant, <strong class="fw-bold">Jane Doe Mwendwa</strong>, has been notified via SMS at <strong class="fw-bold">+2547***1234</strong>.
-                                </p>
-                                <p class="text-muted mb-4">Click below to navigate to the table with rejected applications.</p>
-                                
-                                <div class="d-flex w-100 pb-4">
-        
-                                    <!-- data-bs-dismiss="modal" -->
-                                    <button href="plot-rejected-transfers.html" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase download-receipt-transfer">
-                                    
-                                        View Rejected Applications
-                                    </button>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    
-                </div>
+               </div>
             </div>
-           
+            <div class="modal-footer">
+              
+            </div>
           </div>
         </div>
       </div>
@@ -2854,6 +2816,208 @@
         </div>
       </div>
       <!-- end of multiple invoices creator -->
+
+        <!-- plot transfer details modal -->
+        <div class="modal fade trans-approval" id="" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-uppercase" id="staticBackdropLabel">Propety Transfer Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="row transfer-approval-details mt-3">
+    
+                        <div class="col-12">
+                            <div class="card-body bg-light d-flex mb-4">
+                                <p class=" mb-0 ">
+                                    <i class="mdi mdi-map-legend text-success align-middle me-3 font-size-24 ml-5 mr-5 "></i>
+                                </p>
+                                <div>
+                                    <p class="text-muted mb-0 ">Plot Details</p>
+                                    <p class="mb-0 ">
+                                        <strong class="fw-semibold">
+                                            <span class="">Plot No. BLK 123/2345 | Size: 0.25 Acres | Sub County: Homa Bay Town | MKT/Zone: Soko Mjinga</span>
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                       
+    
+                       <div class="col-12 mb-4">
+                        <table class="table table-sm text-uppercase table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th colspan="">Transfer Details</th>
+                                    <th>Previouse Owner</th>
+                                    <th>New Owner</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                                <!-- include  <strong class="text-danger">*</strong> where a change was done -->
+                                <tr>
+                                    <th>
+                                        Owner's Name <strong class="text-danger">*</strong>
+                                    </th>
+                                    <td>
+                                        Kelvin Njuguna
+                                    </td>
+                                    <td>Kelvin otati</td>
+                                </tr>
+    
+                                <tr>
+                                    <th>
+                                        Phone Number  <strong class="text-danger">*</strong>
+                                    </th>
+                                    <td>
+                                        0704549859
+                                    </td>
+    
+                                    <td>
+                                        0709789789
+                                    </td>
+                                </tr>
+    
+                                <tr>
+                                    <th>
+                                        Email Address <strong class="text-danger">*</strong>
+                                    </th>
+                                    <td class="">
+                                        email@email.com
+                                    </td>
+    
+                                    <td class="">
+                                        newemail@email.com
+                                    </td>
+                                </tr>
+    
+                               
+                            </tbody>
+                        </table>
+                       </div>
+    
+                       <div class="col-6 mb-3">
+                        <table class="table table-sm text-uppercase table-striped">
+                            
+                            <tbody>
+    
+                                <tr>
+                                    <th>
+                                        Minutes Number
+                                    </th>
+                                    <td>
+                                        min13375345
+                                    </td>
+                                    
+                                   
+                                </tr>
+    
+                                <tr>
+                                    <th>
+                                        Minutes Document
+                                    </th>
+                                    <td>
+                                        <a href="#" class="text-lowecase">uyguyuihihkkljkl</a>
+                                    </td>
+                                    
+                                   
+                                </tr>
+    
+    
+                                <!-- include  <strong class="text-danger">*</strong> where a change was done -->
+                                <tr>
+                                    <th>
+                                        Application date
+                                    </th>
+                                    <td>
+                                        12 Jan 2023 12:56 AM
+                                    </td>
+                                    
+                                   
+                                </tr>
+    
+                                <tr>
+                                    <th>
+                                        Date receipted
+                                    </th>
+                                    <td>
+                                        16 Feb 2023 11:51 AM
+                                    </td>
+                                    
+                                </tr>
+    
+    
+
+                                <tr>
+                                    <th>
+                                        Date Approved
+                                    </th>
+                                    <td>
+                                        16 Feb 2023 11:51 AM
+                                    </td>
+                                    
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                        Approved By
+                                    </th>
+                                    <td>
+                                        Name: Kelvin Njuguna Phone: 0704549859
+                                    </td>
+                                    
+                                </tr>
+    
+    
+    
+    
+                                <tr>
+                                    <th>
+                                        Invoice Number
+                                    </th>
+                                    <td>
+                                        <a href="PrintDocs/Bill/bill.html" title="View Invoice" target="new">Bll 1234</a>
+                                    </td>
+                                    
+                                </tr>
+    
+                             
+    
+                               
+                            </tbody>
+                        </table>
+                    </div>
+    
+                       <div class="col-12 mb-3">
+                        <div class="card-body bg-light d-flex mb-4 mt-4">
+                            <p class=" mb-0 ">
+                                <i class="mdi mdi-cash-multiple text-primary align-middle me-3 font-size-24 ml-5 mr-5 "></i>
+                            </p>
+                            <div>
+                                <p class="text-muted mb-0 ">Amount Paid</p>
+                                <p class="mb-0 ">
+                                    <strong class="fw-semibold">
+                                        <span class="">KES 1,500</span>
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+    
+                    </div>
+    
+                  
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        <!-- end of plot transfer details modal -->
 
     <!-- Right bar overlay-->
     <div class="rightbar-overlay "></div>
@@ -3221,61 +3385,6 @@ Highcharts.chart('StreamRevenueChart', {
     }]
 });
 
-    </script>
-
-    <!-- //script for managing approval and rejection of plot transfer applications -->
-
-    <script>
-
-        // approving an application
-        
-           
-        $('.transfer-approve').on('click', function(){
-            // alert("clicked")          
-          
-            $('.transfer-approval-details').addClass('d-none').siblings('.approval-otp-cont').removeClass('d-none')
-        })
-
-
-        $('.approve-transfer').on('click', function(){
-
-            //Message to be sent to client after approval
-            //Dear [Client Name], your property transfer application has been approved. The property is now officially recognized as yours, and you are the ratable owner. Please note that your outstanding balance is [Outstanding Balance Amount]. Kindly ensure timely payment
-            
-            var theButton=$(this)
-            theButton.children('.spinner-border ').removeClass('d-none').siblings().addClass('d-none')
-
-            setTimeout(function() {
-                theButton.children('.spinner-border').addClass('d-none').siblings().removeClass('d-none')      
-               $('.approval-otp-cont').addClass('d-none')
-               $('.transfer-successful-done').removeClass('d-none').siblings().addClass('d-none')
-            }, 2000);
-        })
-
-
-        //declining transfer application
-        $('.tranfer-decline').on('click', function(){
-            $('.decline-appplication-cont').removeClass('d-none').siblings().addClass('d-none')
-
-        })
-        $('.transfer-back').on('click', function(){
-            $('.transfer-approval-details').removeClass('d-none').siblings().addClass('d-none')
-        })
-
-
-        $('.reject-transfer').on('click', function(){
-
-            var theButton=$(this)
-            theButton.children('.spinner-border ').removeClass('d-none').siblings().addClass('d-none')
-
-            setTimeout(function() {
-                theButton.children('.spinner-border').addClass('d-none').siblings().removeClass('d-none')      
-              // $('.approval-otp-cont').addClass('d-none')
-               $('.rejection-successful').removeClass('d-none').siblings().addClass('d-none')
-            }, 2000);
-        })
-
-        
     </script>
     
     
