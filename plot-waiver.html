@@ -590,13 +590,13 @@
                     <div class="row ">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Re-Submited Transfers</h4>
+                                <h4 class="mb-sm-0 font-size-18">Waivers</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Land & Plots</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Re-Submited Transfers</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Waivers</a></li>
                                         
                                     </ol>
                                 </div>
@@ -651,74 +651,18 @@
                             <div class="card">
                                 <div class="card-header bg-white  w-100 border-bottom d-flex justify-content-between align-items-center">
                                     <h4 class="card-title text-uppercase">
-                                        Re-submited Transfers
+                                        Waivers
                                     </h4>
 
-                                    <div class="d-flex">
-                                        <div class="input-group  fw-semibold text-uppercase input-group-sm">
-                                            <label class="input-group-text text-uppercase">Source</label>
-                                            <select class="form-select w-auto font-13px form-select-sm">
-                                                <option value="10">All Sources</option>
-                                                <option value="25">Plot Rent</option>
-                                                <option value="50">Land Rate</option>
-                                                <option value="100">Stall Rent</option>                                               
-                                            </select>
-                                        </div>
-
-                                        <div class="input-group  fw-semibold text-uppercase input-group-sm flex-nowrap">
-                                            <label class="input-group-text text-uppercase">Sub County</label>
-                                            <select class="form-select w-auto font-13px me-0 form-select-sm">
-                                                <option value="10" disabled="">Select Sub County</option>
-                                                <option value="10">All Sub Counties</option>
-                                                <option value="25">Homa Bay Town</option>
-                                                <option value="50">Rangwe</option>
-                                                <option value="100">Rachuonyo South</option>                                               
-                                            </select>
-                                        </div>
-
-                                        <div class="input-group  fw-semibold text-uppercase input-group-sm flex-nowrap">
-                                            <label class="input-group-text text-uppercase">Zone/market</label>
-                                            <select class="form-select w-auto font-13px me-3 form-select-sm">
-                                                <option value="10" disabled="">Select zone or market</option>
-                                                <option value="10">All Zones</option>
-                                                <option value="25">Soko Mjinga</option>
-                                                <option value="50">Bus park</option>
-                                                <option value="100">Rachuonyo South</option>                                               
-                                            </select>
-                                        </div>
-
-                                       
-
-                                        <div class="input-group  fw-semibold text-uppercase input-group-sm">
-                                            <label class="input-group-text text-uppercase">Date From</label>
-                                            <input class="form-control form-control" type="date" value="2019-08-19" id="example-date-input">
-                                        </div>
-
-                                        <div class="input-group  fw-semibold text-uppercase input-group-sm">
-                                            <label class="input-group-text text-uppercase">Date To</label>
-                                            <input class="form-control form-control" type="date" value="2019-08-19" id="example-date-input">
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex d-none">
-                                        
+                                    
+                                    <div class="d-flex d-non">
                                         <button data-bs-toggle="modal" data-bs-target=".add-plot-modal" type="button" class="btn btn-success text-uppercase dropdown-toggle option-selector me-3">
-                                            <i class="bx bx-plus font-size-16"></i> <span class="pl-1 d-md-inline">Add A Plot</span>
+                                            <i class="bx bx-calendar font-size-16"></i> <span class="pl-1 d-md-inline">New waiver</span>
                                         </button>
-
-                                        <button data-bs-toggle="modal" data-bs-target=".upload-plot-modal" type="button" class="btn btn-info text-uppercase dropdown-toggle option-selector me-3">
-                                            <i class="mdi mdi-file-document-outline font-size-16"></i> <span class="pl-1 d-md-inline">Upload Plots</span>
-                                        </button>
-
-                                        <!-- sending demand notice to multiple people -->
-                                        <button data-bs-toggle="modal" data-bs-target="#demandNoticeMul" type="button" class="btn btn-danger text-uppercase dropdown-toggle option-selector me-3">
-                                            <i class="mdi mdi-alert-outline font-size-16"></i> <span class="pl-1 d-md-inline">Demand Notice</span>
-                                        </button>
-
                                     </div>
                                     
                                 </div>
-                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+                                <div class="card-header bg-white pt-0 pr-0 p-0 d-none justify-content-between align-items-center w-100 border-bottom">
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                       <div class="flex-grow-1">
@@ -739,55 +683,49 @@
                                         <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id="">
                                             <thead class="table-dark">
                                                 <tr>
-                                                    <th scope="col">Property NO.</th>
-                                                    <th>Application Date</th>
-                                                    <th>Current Owner</th>
-                                                    <th>New Owner</th>
-                                                    <th scope="col">Re Submited By</th>
-                                                    <th>Resubmission Reason</th>
-                                                    <th>Invoice No.</th>
-                                                    <th>Receipt No.</th>
-                                                  
-                                                    <th>Sub County</th> 
-                                                    <th>Market/Zone</th>
-                                                   
-                                                    <th class="text-right">Transfer AMount</th>
+                                                    <th>Date Created</th>
+                                                    <th scope="col">Date From</th>
+                                                    <th>date To</th>
+                                                    <th>Waiver Duration</th>
+                                                    <th>Applied By</th>
+                                                    <th title="Total number of beneficiaries who received property waivers">Waiver Beneficiaries</th>
+                                                    <th scope="col" class="text-right">Amount waivered</th>
+                                                    <th class="text-right">Amount Collected</th>
                                                     <th></th>
+                                                    
                                                 </tr>
 
                                                 
                                                 
                                             </thead>
                                             <tfoot class="table-dark">
-                                                <tr class="text-uppercase">
-                                                    <th colspan="2">34 Applications</th>
-                                                    <th colspan="2">23 Owners</th>
-                                                    <th colspan="4">23 Officials</th>
-                                                    <th>34 Sub counties</th>
-                                                    <th>23 wards</th>
-                                                    <th colspan="" class="text-right">56,000</th>
+                                                <tr>
+                                                    <th colspan="3">12 waivers</th>
+                                                    <th colspan="2">430 days</th>
+                                                    <th>345 of 789</th>
+                                                    <th class="text-right">345,900,900 of 23,466,.567</th>
+                                                    <th class="text-right">345,900,900 of 23,466,.567</th>
                                                     <th></th>
+
                                                 </tr>
                                             </tfoot>
+                                            
                                             <tbody class="text-uppercase">
-                                                <tr>
-                                                    <td>Blk12345</td>
-                                                    <td>12 Nov 2023 12:45PM (22 Days Ago)</td>
-                                                    <td>Amos KAbuthi</td>
-                                                    <td>ALex Wanjala</td>
-                                                    <td><strong>User:</strong>Dennis Chur Chur <strong>Phone: </strong> 0704549859</td>
-                                                    <td>Wrongly rejected</td>
-                                                    <td>BLL343534</td>
-                                                    <td>BHGU68678</td>
-                                                    <Td>Homa Bay town</Td>
-                                                    <td>Soko Mjinga</td>
-                                                    <td class="text-right fw-bold">34,000</td>
+                                               <tr>
+                                                    <td>12 Jan 2024 11:34 AM</td>
+                                                    <td>1 Feb 2024</td>
+                                                    <td>1 Mar 2024</td>
+                                                    <td>30 Days</td>
+                                                    <td><strong>User:</strong> ALex Wanjala <strong>Phone:</strong>0704549859</td>
+                                                    <td title="Properties that benefited from waivers on plots in arrears">34 0f 60 Propertiese</td>
+                                                    <td class="text-right" title="Total amount waived vs. potential">56,000 of 345,000</td>
+                                                    <th class="text-right" title="Total amount collected vs. potential">460,000 of 1,345,000</th>
                                                     <td>
-                                                        
-                                                        <button class="btn btn-success btn-sm  text-uppercase me-3" data-bs-toggle="modal"  data-bs-target=".trans-approval" >Initiate Approval</button>
-                                                        <a href="PrintDocs/Receipts/receipts-HOMabay county.html" target="new" class="btn btn-primary btn-sm btn-trans-approval text-uppercase">View Bill</a>
+                                                        <a href="plot-waiver-details.html" class="btn btn-sm btn-primary text-uppercase">Payments report</a>
                                                     </td>
-                                                </tr>
+                                               </tr>
+
+                                              
                                                 
                                             </tbody>
                                             
@@ -1371,126 +1309,45 @@
             <div class="modal-dialog modal-lg modal-dialog-centered ">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Add New Plot</h5>
+                        <h5 class="modal-title text-uppercase" id="myLargeModalLabel">New Waiver</h5>
                         
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <div class="row">
-
-                            <div class="col-12">
-                                <p class="fw-bold text-black text-uppercase">Plot Details:</p>
+                   <div class="modal-body">
+                    <div class="row p-3">
+                        <div class="col-12 mb-5">
+                            <div class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+                                <h4 class="alert-heading">About Invoice Comparison Overview</h4>
+                                <p class="mb-1">This section allows you to compare invoices based on two distinct date ranges:</p>
+                                <ol>
+                                    <li><strong>Creation Period:</strong> Select the date range during which invoices were created.</li>
+                                    <li><strong>Payment Period:</strong> Choose the date range when these invoices were paid.</li>
+                                </ol>
+                                <p>The comparison will show which invoices were created within <strong>the selected creation period</strong> but remained unpaid, and which of these were paid within <strong>the chosen payment period</strong>. This helps in analyzing and tracking invoice status and payment trends.</p>
+                               
                             </div>
-
-
-                            <div class="col-12">
-                                    <div class="form-group mb-3">
-                                        <label for="">Plot Number</label>
-                                        <input type="text" class="form-control" placeholder="Enter the Plot Number">
-                                    </div>
-                            </div>
-
-                            <div class="col-4">
-                                <div class="form-group mb-3">
-                                    <label for="">Select Sub County</label>
-                                    <select class="form-select  font-13px  form-control">
-                                    
-                                        <option value="25">Meru Town</option>
-                                        <option value="50">Souht Imenti</option>
-                                        <option value="100">Central Imenti</option>
-                                        <option value="150">Maua Town</option>
-                                        <option value="200">Nkubu Town</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-4">
-                                <div class="form-group mb-3">
-                                    <label for="">Select Ward</label>
-                                    <select class="form-select  font-13px  form-control">
-                                    
-                                        <option value="25">Ward Name</option>
-                                        <option value="50">Ward Name</option>
-                                        <option value="100">Ward Name</option>
-                                        <option value="150">Ward Name</option>
-                                        <option value="200">Ward Name</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-4">
-                                <div class="form-group mb-3">
-                                    <label for="">Plot Size (Ha)</label>
-                                    <input type="text" class="form-control" placeholder="In Ha">
-                                </div>
-                            </div>
-
-                            <div class="col-4">
-                                <div class="form-group mb-3">
-                                    <label for="">Longitude</label>
-                                    <input type="text" class="form-control" placeholder="Selected Longitude" readonly>
-                                </div>
-                            </div>
-
-                            <div class="col-4">
-                                <div class="form-group mb-3">
-                                    <label for="">Latitude</label>
-                                    <input type="text" class="form-control" placeholder="Selected Latitude" readonly>
-                                </div>
-                            </div>
-
-                            <div class="col-12 mb-3">
-                                <div class="form-group mb-3">
-                                    <label for="">Plot Address</label>
-                                    <input type="text" class="form-control" placeholder="Enter Plot's Physical Address">
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <p class="fw-bold text-black text-uppercase">Owner Details:</p>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="form-group mb-3">
-                                    <label for="">Owner's Full Names</label>
-                                    <input type="text" class="form-control" placeholder="eg John Doe">
-                                </div>
-                            </div>
-
-                            <div class="col-6">
-                                <div class="form-group mb-3">
-                                    <label for="">Owner's Email</label>
-                                    <input type="email" class="form-control" placeholder="Email Address">
-                                </div>
-                            </div>
-
-                            <div class="col-6 mb-3">
-                                <div class="form-group mb-3">
-                                    <label for="">Owner's Phone No.</label>
-                                    <input type="text" class="form-control" placeholder="eg 0712345678">
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <p class="fw-bold text-black text-uppercase">Plot Fees Details:</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <div class="form-group mb-3">
-                                    <label for="">Outstanding Arrears</label>
-                                    <input type="text" class="form-control" placeholder="Enter the arrears">
-                                </div>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <div class="form-group mb-3">
-                                    <label for="">Annual Charges</label>
-                                    <input type="text" class="form-control" placeholder="Enter the annual Charges">
-                                </div>
-                            </div>
-
-
                         </div>
 
-                    </div>
+                        <!-- by default select the duration for the previouse financial year eg July 1st 2023 to June 31 2023 -->
+
+                        <div class="col-12 mb-3">
+                            <label for="">Waiver Period</label>
+                            <div class="d-flex">
+                                <div class="input-group  fw-semibold text-uppercase me-3" title="Select the start date for which the invoices were supposedly created">
+                                    <label class="input-group-text text-uppercase">Start Date</label>
+                                    <input class="form-control " type="date" value="2019-08-19" id="example-date-input">
+                                </div>
+
+                                <div class="input-group  fw-semibold text-uppercase" title="Select the end date for which the invoices were supposedly created">
+                                    <label class="input-group-text text-uppercase">Date To</label>
+                                    <input class="form-control " type="date" value="2019-08-19" id="example-date-input">
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                   </div>
+                   </div>
                     <div class="modal-footer">
 
                         <a href="PrintDocs/Trade-Permit/permit.html" target="_blank" type="button"
