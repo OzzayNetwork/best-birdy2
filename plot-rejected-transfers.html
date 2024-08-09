@@ -749,7 +749,7 @@
                                                     <th>Applicant</th>
                                                     <th>Date Declined</th>                                                    
                                                     <th scope="col">Declined By</th>
-                                                    <th>Approver's Phone</th>
+                                                    <th>Reason</th>                                                    
                                                     <th>Minutes No.</th>
                                                     <th>Minutes Document</th>
                                                     <th>Sub County</th>   
@@ -764,15 +764,17 @@
                                                 <td title="Click to view the respective invoice"><a href="PrintDocs/Bill/bill.html" target="new">Bll123456</a></td>
                                                 <td>Kelvin Otati</td>
                                                 <td>12 Jan 2024 11:54 AM</td>
-                                                <td>Alex Wanjala</td>
-                                                <td title="The phone number where the OTP for approval was sent.">0704549859</td>
+                                                <td><strong>User:</strong> Alex Wanjala <strong>Phone:</strong> 0704549859</td>
+                                                <td title="The phone number where the OTP for approval was sent.">Under Payment</td>
                                                 <td>UYYU7R889</td>
                                                 <td title="Link to the minutes document that approved this application."><a href="" target="new">the_document_title</a></td>
                                                 <td>Homa Bay town</td>
                                                 <td>SOko Mjinga</td>
                                                 <td class="text-right fw-bold"> 2,000</td>
                                                 <th>
-                                                    <button data-bs-toggle="modal" data-bs-target=".trans-approval" type="button" class="btn btn-primary btn-sm text-uppercase" title="click to view furthure details specific to this approval">More Detaisls</button>
+                                                    <button data-bs-toggle="modal" data-bs-target=".trans-approval" type="button" class="btn btn-primary btn-sm text-uppercase me-3" title="click to view furthure details specific to this approval">More Details</button>
+                                                    <button data-bs-toggle="modal" data-bs-target=".trans-resubmited" type="button" class="btn btn-dark btn-sm text-uppercase" title="click to view furthure details specific to this approval">Request Re-Approval</button>
+
                                                 </th>
                                               </tr>
                                                
@@ -2832,7 +2834,7 @@
                         <div class="col-12">
                             <div class="card-body bg-light d-flex mb-4">
                                 <p class=" mb-0 ">
-                                    <i class="mdi mdi-map-legend text-success align-middle me-3 font-size-24 ml-5 mr-5 "></i>
+                                    <i class="mdi mdi-map-legend text-danger align-middle me-3 font-size-24 ml-5 mr-5 "></i>
                                 </p>
                                 <div>
                                     <p class="text-muted mb-0 ">Plot Details</p>
@@ -2900,7 +2902,7 @@
                         </table>
                        </div>
     
-                       <div class="col-6 mb-3">
+                       <div class="col-7 mb-3">
                         <table class="table table-sm text-uppercase table-striped">
                             
                             <tbody>
@@ -2954,7 +2956,7 @@
 
                                 <tr>
                                     <th>
-                                        Date Approved
+                                        Date Declined
                                     </th>
                                     <td>
                                         16 Feb 2023 11:51 AM
@@ -2962,9 +2964,19 @@
                                     
                                 </tr>
 
+                                <tr class="table-danger">
+                                    <th>
+                                        Reason For Decline
+                                    </th>
+                                    <td>
+                                        <i>Under Payment.</i>
+                                    </td>
+                                    
+                                </tr>
+
                                 <tr>
                                     <th>
-                                        Approved By
+                                        Declined By
                                     </th>
                                     <td>
                                         Name: Kelvin Njuguna Phone: 0704549859
@@ -3007,6 +3019,8 @@
                             </div>
                         </div>
                     </div>
+
+                   
                     
     
                     </div>
@@ -3018,6 +3032,276 @@
             </div>
           </div>
         <!-- end of plot transfer details modal -->
+
+        <!-- modal for resubmiting rejected application -->
+        <div class="modal fade trans-resubmited" id="" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-uppercase" id="staticBackdropLabel">resubmit for Approval</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row reapproval-details">
+                        <div class="col-12">
+                            <div class="card-body bg-light d-flex mb-4">
+                                <p class=" mb-0 ">
+                                    <i class="mdi mdi-map-legend text-danger align-middle me-3 font-size-24 ml-5 mr-5 "></i>
+                                </p>
+                                <div>
+                                    <p class="text-muted mb-0 ">Plot Details</p>
+                                    <p class="mb-0 ">
+                                        <strong class="fw-semibold">
+                                            <span class="">Plot No. BLK 123/2345 | Size: 0.25 Acres | Sub County: Homa Bay Town | MKT/Zone: Soko Mjinga</span>
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-4">
+                            <table class="table table-sm text-uppercase table-striped">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th colspan="">Transfer Details</th>
+                                        <th>Previouse Owner</th>
+                                        <th>New Owner</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+        
+                                    <!-- include  <strong class="text-danger">*</strong> where a change was done -->
+                                    <tr>
+                                        <th>
+                                            Owner's Name <strong class="text-danger">*</strong>
+                                        </th>
+                                        <td>
+                                            Kelvin Njuguna
+                                        </td>
+                                        <td>Kelvin otati</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <th>
+                                            Phone Number  <strong class="text-danger">*</strong>
+                                        </th>
+                                        <td>
+                                            0704549859
+                                        </td>
+        
+                                        <td>
+                                            0709789789
+                                        </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <th>
+                                            Email Address <strong class="text-danger">*</strong>
+                                        </th>
+                                        <td class="">
+                                            email@email.com
+                                        </td>
+        
+                                        <td class="">
+                                            newemail@email.com
+                                        </td>
+                                    </tr>
+        
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="col-7 mb-3">
+                            <table class="table table-sm text-uppercase table-striped">
+                                
+                                <tbody>
+        
+                                    <tr>
+                                        <th>
+                                            Minutes Number
+                                        </th>
+                                        <td>
+                                            min13375345
+                                        </td>
+                                        
+                                       
+                                    </tr>
+        
+                                    <tr>
+                                        <th>
+                                            Minutes Document
+                                        </th>
+                                        <td>
+                                            <a href="#" class="text-lowecase">uyguyuihihkkljkl</a>
+                                        </td>
+                                        
+                                       
+                                    </tr>
+        
+        
+                                    <!-- include  <strong class="text-danger">*</strong> where a change was done -->
+                                    <tr>
+                                        <th>
+                                            Application date
+                                        </th>
+                                        <td>
+                                            12 Jan 2023 12:56 AM
+                                        </td>
+                                        
+                                       
+                                    </tr>
+        
+                                    <tr>
+                                        <th>
+                                            Date receipted
+                                        </th>
+                                        <td>
+                                            16 Feb 2023 11:51 AM
+                                        </td>
+                                        
+                                    </tr>
+        
+        
+    
+                                    <tr>
+                                        <th>
+                                            Date Declined
+                                        </th>
+                                        <td>
+                                            16 Feb 2023 11:51 AM
+                                        </td>
+                                        
+                                    </tr>
+    
+                                    <tr class="table-danger">
+                                        <th>
+                                            Reason For Decline
+                                        </th>
+                                        <td>
+                                            <i>Under Payment.</i>
+                                        </td>
+                                        
+                                    </tr>
+    
+                                    <tr>
+                                        <th>
+                                            Declined By
+                                        </th>
+                                        <td>
+                                            Name: Kelvin Njuguna Phone: 0704549859
+                                        </td>
+                                        
+                                    </tr>
+        
+        
+        
+        
+                                    <tr>
+                                        <th>
+                                            Invoice Number
+                                        </th>
+                                        <td>
+                                            <a href="PrintDocs/Bill/bill.html" title="View Invoice" target="new">Bll 1234</a>
+                                        </td>
+                                        
+                                    </tr>
+        
+                                 
+        
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-success text-uppercase resubmit-nxt">
+                                    Next
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row reaproval-otp d-none">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="col-sm-12 col-md-7 col-lg-6 text-center">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-center  mb-4 pb-4 pt-4">
+                                            <div class="avatar-md rounded-circle bg-primary mini-stat-icon">
+                                                <span class="avatar-title rounded-circle bg-primary">
+                                                    <i class="mdi mdi-lock-open-check-outline fs-1 text"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="card-title text-uppercase  text-black">OTP Approval</h4>
+                                    <p class="mb-4">An OTP (One-Time Password) has been sent to the phone number <strong class="text-black">+2547***234</strong>, which is registered under your account. Please enter the OTP sent to your phone in the text box below to verify the Re-Approval</p>
+                                    
+                                    <div class="form-floating mb-3">
+                                        <textarea type="text" class="form-control" id="floatingnameInput" placeholder="Enter Name" spellcheck="false" data-ms-editor="true"></textarea>
+                                        <label for="floatingnameInput">Enter Reason For Re-Approval</label>
+                                    </div>
+                                    
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingnameInput" placeholder="Enter Name" spellcheck="false" data-ms-editor="true">
+                                        <label for="floatingnameInput">Enter The OTP</label>
+                                    </div>
+            
+                                    <!-- The OTP message being sent to the user -->
+                                    <!-- Your OTP for verification is: 12345 Please enter this OTP in the system to verify your Plot Transfer Approval. -->
+                                    <button type="button" class="btn btn-outline-secondary waves-effect text-uppercase mb-4 reaproval-back mt-2 w-100">back</button>
+            
+                                    <button class="btn btn-primary w-100 approve-transfer text-uppercase mb-2">
+                                        <div class="spinner-border text-white  d-none m-0" height="20px" width="20px" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+            
+                                        <div><i class="mdi mdi-check"></i> Send For Re-approval</div>
+                                    </button>
+                                </div>
+                               </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-none resubmission-approved">
+                        <div class="d-flex align-items-center justify-content-center w-100">
+                            <div class="col-6 dcol-sm-12 col-md-8 col-lg-6">
+                                <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
+                            
+        
+                                    <div class="flex-shrink-0 align-self-center  mb-4 pb-4 pt-4">
+                                        <div class="avatar-sm rounded-circle bg-success mini-stat-icon">
+                                            <span class="avatar-title rounded-circle bg-success">
+                                                <i class="mdi-check-all mdi font-size-24"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+            
+            
+                                    <h4 class="text-black fw-bold text-uppercase">Application succesfully Re submitted</h4>
+                                    <p class="text-muted mb-4">
+                                        The property transfer request for Plot Number LR5768 has been resubmitted and is now pending approval.                                    </p>
+                                    <p class="text-muted mb-4">Click Below to view the Re-Submitted Transfers</p>
+                                    
+                                    <div class="d-flex w-100 pb-4">
+            
+                                        <!-- data-bs-dismiss="modal" -->
+                                        <button href="plot-re-submitted-transfers.html" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase download-receipt-transfer">
+                                            <i class="mdi mdi-file-sync-outline font-size-16 align-middle me-2 "></i>
+                                            Re Submitted Transfers
+                                        </button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- end of resubmission -->
 
     <!-- Right bar overlay-->
     <div class="rightbar-overlay "></div>
@@ -3386,7 +3670,34 @@ Highcharts.chart('StreamRevenueChart', {
 });
 
     </script>
-    
+
+
+    <!-- re submiting application for approval -->
+     <script>
+        $('.resubmit-nxt').on('click', function(){
+            $('.reaproval-otp').removeClass('d-none').siblings().addClass('d-none')
+        })
+
+        $('.reaproval-back').on('click',function(){
+            $('.reapproval-details').removeClass('d-none').siblings().addClass('d-none')
+        })
+
+        $('.approve-transfer').on('click', function(){
+           $('.spinner-border ').removeClass('d-none').siblings().addClass('d-none') 
+
+           var theButton=$(this)
+
+           setTimeout(function() {
+                theButton.children('.spinner-border').addClass('d-none').siblings().removeClass('d-none')      
+              // $('.approval-otp-cont').addClass('d-none')
+               $('.resubmission-approved').removeClass('d-none').siblings().addClass('d-none')
+            }, 2000);
+        })
+
+        
+
+     </script>
+    <!-- end of reaproval -->
     
     
     
