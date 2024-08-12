@@ -651,25 +651,9 @@
                         <div class="col-12 px-sm-30px">
                             <div class="card">
                                 <div class="card-header bg-white  w-100 border-bottom d-flex justify-content-between align-items-center">
-                                    <h4 class="card-title text-capitalize">
-                                        Plot Rent Register
+                                    <h4 class="card-title text-uppercase">
+                                        For the Period 12 Jan 2024 - 30 Jan 2024
                                     </h4>
-                                    <div class="d-flex">
-                                        
-                                        <button data-bs-toggle="modal" data-bs-target=".add-plot-modal" type="button" class="btn btn-success text-uppercase dropdown-toggle option-selector me-3">
-                                            <i class="bx bx-plus font-size-16"></i> <span class="pl-1 d-md-inline">Add A Plot</span>
-                                        </button>
-
-                                        <button data-bs-toggle="modal" data-bs-target=".upload-plot-modal" type="button" class="btn btn-info text-uppercase dropdown-toggle option-selector me-3">
-                                            <i class="mdi mdi-file-document-outline font-size-16"></i> <span class="pl-1 d-md-inline">Upload Plots</span>
-                                        </button>
-
-                                        <!-- sending demand notice to multiple people -->
-                                        <button data-bs-toggle="modal" data-bs-target="#demandNoticeMul" type="button" class="btn btn-danger text-uppercase dropdown-toggle option-selector me-3">
-                                            <i class="mdi mdi-alert-outline font-size-16"></i> <span class="pl-1 d-md-inline">Demand Notice</span>
-                                        </button>
-
-                                    </div>
                                     
                                 </div>
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
@@ -687,7 +671,7 @@
                                    
                                 </div>
 
-                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+                                <div class="card-header bg-white pt-0 pr-0 p-0 d-none justify-content-between align-items-center w-100 border-bottom">
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                      
@@ -748,238 +732,65 @@
                                     <div class="table-responsive">
                                         <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id="">
                                             <thead class="table-dark">
-                                                <tr>
+                                                <tr class="text-uppercase">
                                                     <th scope="col">Plot NO.</th>
-                                                    <th>Plot Size</th>
-                                                    <th>Added By</th>
-                                                    <th>Added On</th>
-                                                    <th scope="col">Owner</th>
+                                                    <th>Owner</th>
                                                     <th>Phone</th>
-                                                    <th>Email</th>
-                                                    <th>Sub County</th> 
-                                                    <th>Ward</th>
-                                                    <th>Address</th>
-                                                    <th>Status</th>
-                                                    <th scope="col" class="text-right">Arrears</th> 
-                                                    <th scope="col" class="text-right">Annual Rate</th> 
-                                                    <th class="text-right">Balance</th> 
+                                                    <th>Sub County</th>
+                                                    <th>Zone/Market</th>
+                                                   
+                                                    <th class="text-right">Waivered Penalties</th>
+                                                    <th scope="col" class="text-uppercase text-right">Amount Collected</th>  
                                                     <th></th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="text-capitalize">
+                                           <tbody class="text-uppercase">
                                                 <tr>
-                                                    <td>BLK7/141</td>
-                                                    <td>
-                                                        22 HA
-                                                    </td>
-                                                    
-                                                    <td>Kelvin Njuguna</td>
-                                                    <td>22 Jan 2024 12:45 PM</td>
-                                                    <td>Kelvin Kinoti</td>
+                                                    <td>BLK123/7890</td>
+                                                    <td>Kelvin Ndungu</td>
                                                     <td>0704549859</td>
-                                                    <td>email@email.com</td>
-                                                    
-                                                    <td>Meru Town Sub County</td>
-                                                    <td>Meru Municipality</td>
-                                                    <td>Opposite Tom Mboya Road</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Compliant</span>
-                                                    </td>
-                                                   <td class="text-right">
-                                                    <span class="fw-bold">KES 45,000</span>
-                                                   </td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Soko Mjinga</td>
+                                                    <td class="text-right">KES 56,900</td>
+                                                    <td class="text-right fw-bold">KES 500,000</td>
                                                     <td class="text-right">
-                                                        <span class="fw-bold">KES 7,000</span>
-                                                    </td>
-                                                    <td class="text-right fw-bold">
-                                                        KES 34,800
-                                                    </td>
-                                                   
-                                                   
-                                                    <td>
-                                                        <div class="dropdown">
-                                                           
-
-                                                            <button  role="button" data-bs-toggle="dropdown" aria-haspopup="true" class="btn btn-sm btn-warning text-black waves-effect btn-label waves-light text-uppercase"><i class="mdi mdi-arrow-down-drop-circle label-icon"></i> More Options</button>
-    
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".details-modal"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Plot Details</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#payment-modal" ><i class="font-size-15 mdi mdi mdi-receipt me-3"></i>Bill Client</a>
-                                                                <a class="dropdown-item" href="plot-rent-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Statements</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-plot-modal"><i class="font-size-15 mdi mdi-file-document-edit me-3"></i>Edit</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".plot-transfer"><i class="font-size-15 mdi mdi-arrow-expand me-3 text-primary"></i>Plot Transfer</a>
-                                                                <!-- only show for plots that have outstanding balances -->
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#demandNotice"><i class="font-size-15 mdi mdi-alert-outline me-2 me-3 text-danger"></i>Send Demand Notice</a>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BLK7/141</td>
-                                                    <td>
-                                                        22 HA
-                                                    </td>
-                                                    
-                                                    <td>Kelvin Njuguna</td>
-                                                    <td>22 Jan 2024 12:45 PM</td>
-                                                    <td>Kelvin Kinoti</td>
-                                                    <td>0704549859</td>
-                                                    <td>email@email.com</td>
-                                                    
-                                                    <td>Meru Town Sub County</td>
-                                                    <td>Meru Municipality</td>
-                                                    <td>Opposite Tom Mboya Road</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Compliant</span>
-                                                    </td>
-                                                   <td class="text-right">
-                                                    <span class="fw-bold">KES 45,000</span>
-                                                   </td>
-                                                    <td class="text-right">
-                                                        <span class="fw-bold">KES 7,000</span>
-                                                    </td>
-                                                    <td class="text-right fw-bold">
-                                                        KES 34,800
-                                                    </td>
-                                                   
-                                                   
-                                                     <td>
-                                                        <div class="dropdown">
-                                                           
-
-                                                            <button  role="button" data-bs-toggle="dropdown" aria-haspopup="true" class="btn btn-sm btn-warning text-black waves-effect btn-label waves-light text-uppercase"><i class="mdi mdi-arrow-down-drop-circle label-icon"></i> More Options</button>
-    
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".details-modal"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Plot Details</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#payment-modal" ><i class="font-size-15 mdi mdi mdi-receipt me-3"></i>Bill Client</a>
-                                                                <a class="dropdown-item" href="plot-rent-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Statements</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-plot-modal"><i class="font-size-15 mdi mdi-file-document-edit me-3"></i>Edit</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".plot-transfer"><i class="font-size-15 mdi mdi-arrow-expand me-3 text-primary"></i>Plot Transfer</a>
-                                                                <!-- only show for plots that have outstanding balances -->
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#demandNotice"><i class="font-size-15 mdi mdi-alert-outline me-2 me-3 text-danger"></i>Send Demand Notice</a>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BLK7/141</td>
-                                                    <td>
-                                                        22 HA
-                                                    </td>
-                                                    
-                                                    <td>Kelvin Njuguna</td>
-                                                    <td>22 Jan 2024 12:45 PM</td>
-                                                    <td>Kelvin Kinoti</td>
-                                                    <td>0704549859</td>
-                                                    <td>email@email.com</td>
-                                                    
-                                                    <td>Meru Town Sub County</td>
-                                                    <td>Meru Municipality</td>
-                                                    <td>Opposite Tom Mboya Road</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Compliant</span>
-                                                    </td>
-                                                   <td class="text-right">
-                                                    <span class="fw-bold">KES 45,000</span>
-                                                   </td>
-                                                    <td class="text-right">
-                                                        <span class="fw-bold">KES 7,000</span>
-                                                    </td>
-                                                    <td class="text-right fw-bold">
-                                                        KES 34,800
-                                                    </td>
-                                                   
-                                                   
-                                                     <td>
-                                                        <div class="dropdown">
-                                                           
-
-                                                            <button  role="button" data-bs-toggle="dropdown" aria-haspopup="true" class="btn btn-sm btn-warning text-black waves-effect btn-label waves-light text-uppercase"><i class="mdi mdi-arrow-down-drop-circle label-icon"></i> More Options</button>
-    
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".details-modal"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Plot Details</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#payment-modal" ><i class="font-size-15 mdi mdi mdi-receipt me-3"></i>Bill Client</a>
-                                                                <a class="dropdown-item" href="plot-rent-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Statements</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-plot-modal"><i class="font-size-15 mdi mdi-file-document-edit me-3"></i>Edit</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".plot-transfer"><i class="font-size-15 mdi mdi-arrow-expand me-3 text-primary"></i>Plot Transfer</a>
-                                                                <!-- only show for plots that have outstanding balances -->
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#demandNotice"><i class="font-size-15 mdi mdi-alert-outline me-2 me-3 text-danger"></i>Send Demand Notice</a>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BLK7/141</td>
-                                                    <td>
-                                                        22 HA
-                                                    </td>
-                                                    
-                                                    <td>Kelvin Njuguna</td>
-                                                    <td>22 Jan 2024 12:45 PM</td>
-                                                    <td>Kelvin Kinoti</td>
-                                                    <td>0704549859</td>
-                                                    <td>email@email.com</td>
-                                                    
-                                                    <td>Meru Town Sub County</td>
-                                                    <td>Meru Municipality</td>
-                                                    <td>Opposite Tom Mboya Road</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Compliant</span>
-                                                    </td>
-                                                   <td class="text-right">
-                                                    <span class="fw-bold">KES 45,000</span>
-                                                   </td>
-                                                    <td class="text-right">
-                                                        <span class="fw-bold">KES 7,000</span>
-                                                    </td>
-                                                    <td class="text-right fw-bold">
-                                                        KES 34,800
-                                                    </td>
-                                                   
-                                                   
-                                                     <td>
-                                                        <div class="dropdown">
-                                                           
-
-                                                            <button  role="button" data-bs-toggle="dropdown" aria-haspopup="true" class="btn btn-sm btn-warning text-black waves-effect btn-label waves-light text-uppercase"><i class="mdi mdi-arrow-down-drop-circle label-icon"></i> More Options</button>
-    
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".details-modal"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Plot Details</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#payment-modal" ><i class="font-size-15 mdi mdi mdi-receipt me-3"></i>Bill Client</a>
-                                                                <a class="dropdown-item" href="plot-rent-statements.html"><i class="font-size-15 mdi mdi-microsoft-excel me-3"></i>Statements</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".add-plot-modal"><i class="font-size-15 mdi mdi-file-document-edit me-3"></i>Edit</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".plot-transfer"><i class="font-size-15 mdi mdi-arrow-expand me-3 text-primary"></i>Plot Transfer</a>
-                                                                <!-- only show for plots that have outstanding balances -->
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#demandNotice"><i class="font-size-15 mdi mdi-alert-outline me-2 me-3 text-danger"></i>Send Demand Notice</a>
-                                                                
-                                                            </div>
-                                                        </div>
+                                                        <button class="btn btn-sm btn-info text-uppercase"  data-bs-toggle="modal" data-bs-target="#paymentInfo">payment info</button>
                                                     </td>
                                                 </tr>
 
-                                               
-                                            </tbody>
-                                            <tfoot class="table-dark">
                                                 <tr>
-                                                    <th colspan="">22 Plots</th>
-                                                    <th colspan="9">22 Ha</th>
-                                                    <th class="text-right">
-                                                        <span class="badge rounded-pill bg-danger text-uppercase" key="t-new">Compliant</span> 12
+                                                    <td>BLK123/7890</td>
+                                                    <td>Kelvin Ndungu</td>
+                                                    <td>0704549859</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Soko Mjinga</td>
+                                                    <td class="text-right">KES 56,900</td>
+                                                    <td class="text-right fw-bold">KES 500,000</td>
+                                                    <td class="text-right">
+                                                        <button class="btn btn-sm btn-info text-uppercase"  data-bs-toggle="modal" data-bs-target="#paymentInfo">payment info</button>
+                                                    </td>
+                                                </tr>
 
-                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Uncompliant</span> 22
-                                                    </th>
-                                                    
-                                                    <th class="text-right">KES 45,000</th>
-                                                    <th class="text-right">KES 345,900</th>
-                                                    <th class="text-right">KES 345,900</th>
-                                                   
-                                                    <th>
-
-                                                    </th>
-                                                    
+                                                <tr>
+                                                    <td>BLK123/7890</td>
+                                                    <td>Kelvin Ndungu</td>
+                                                    <td>0704549859</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Soko Mjinga</td>
+                                                    <td class="text-right">KES 56,900</td>
+                                                    <td class="text-right fw-bold">KES 500,000</td>
+                                                    <td class="text-right">
+                                                        <button class="btn btn-sm btn-info text-uppercase"  data-bs-toggle="modal" data-bs-target="#paymentInfo">payment info</button>
+                                                    </td>
+                                                </tr>
+                                           </tbody>
+                                            <tfoot class="table-dark text-uppercase">
+                                                <tr>
+                                                    <th>22 Properties</th>
+                                                    <th colspan="4">12 Owners</th>
+                                                    <th class="text-right"> kes 54,900</th>
+                                                    <th class="text-right"> kes 790,000,890</th>
+                                                    <th></th>
                                                 </tr>
                                             </tfoot>
                                             
@@ -2933,91 +2744,59 @@
      <!-- single demand notice end -->
 
      <!-- multiple demand notices creator -->
-     <div class="modal fade" id="demandNoticeMul" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     <div class="modal fade" id="paymentInfo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Multiple Demand Notices Creation</h5>
+              <h5 class="modal-title" id="staticBackdropLabel">Payment Info During Weiver</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="row">
+                    <div class="col-12">
+                        <table class="table table text-uppercase">
+                            <thead class="table-light">
+                                <tr>
+                                    <td>#</td>
+                                    <td>Receipt No.</td>
+                                    <th>Date</th>
+                                    <th class="text-right">Paid</th>
+                                    <th class="text-right"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>DHDJ8900F</td>
+                                    <td>12 Jan 2024 11:56 AM</td>
+                                    <td class="text-right">KES 2000</td>
+                                    <td class="text-right">
+                                        <a href="PrintDocs/Receipts/receipts.html" class="btn-sm btn-primary text-uppercase" target="new">View Receipt</a>
+                                    </td>
+                                </tr>
 
-                </div>
-            </div>
-            <div class="modal-footer a-flex align-items-center justify-content-center">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-6 col-sm-12 col-md-7 col-lg-7">
-                        <div class="notice-created-cont">
-                            <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
-                                
-    
-                                <div class="flex-shrink-0 align-self-center  mb-4 pb-4 pt-4">
-                                    <div class="avatar-sm rounded-circle bg-success mini-stat-icon">
-                                        <span class="avatar-title rounded-circle bg-danger">
-                                            <i class="mdi-alert-outline mdi font-size-24"></i>
-                                        </span>
-                                    </div>
-                                </div>
-    
-    
-                                <h4 class="text-black fw-bold text-uppercase">Create Multiple Notices</h4>
-                                <p class="text-muted mb-4">By clicking the button below, <strong class="text-black">34 Demand Notices</strong> for 34 plots will be created and respective messages sent to the ratable owners. .</p>
-                                <p class="text-muted mb-4">If you prefer to send a single Demand Notice, search for the plot from the table and click the <strong class="text-black">"Send Demand Notice"</strong> button to continue.</p>
-                                
-                                <div class="d-flex w-100 pb-4">
-                                    <!-- data-bs-dismiss="modal" -->
-                                    <button  type="button" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase notice-gen">
-                                        <i class="bx bx-analyse font-size-16 align-middle me-2 "></i>
-                                        Generate Notices
-                                    </button>
-                                </div>
-                            </div>        
-                        </div> 
-
-                        <div class="notice-loader-2 d-none">
-                            <div class="loader-modal">
-                                <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
-                                    <div class="spinner-border text-dark m-1" role="status">
-                                        <span class="sr-only fw-bold">Loading</span>
-                                    </div>
-                                    <p class="pt-4 fw-strong text-uppercase fw-bold no-wrap text-no-wrap">Generating Demand notice <br> Kindly wait</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="notice-created-cont-2 d-none">
-                            <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
-                                
-    
-                                <div class="flex-shrink-0 align-self-center  mb-4 pb-4 pt-4">
-                                    <div class="avatar-sm rounded-circle bg-success mini-stat-icon">
-                                        <span class="avatar-title rounded-circle bg-success">
-                                            <i class="mdi-check-all mdi font-size-24"></i>
-                                        </span>
-                                    </div>
-                                </div>
-    
-    
-                                <h4 class="text-black fw-bold text-uppercase">Demand Notices Created</h4>
-                                <p class="text-muted mb-4"><strong class="text-black">456 demand notices for 456 parcels</strong> have been created and sent to the respective owners.</p>
-                                <p class="text-muted mb-4">Click below to view the sent notices</p>
-                                
-                                <div class="d-flex w-100 pb-4">
-    
-                                    <!-- data-bs-dismiss="modal" -->
-                                    <a href="plot-rent-notices.html"  class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase">
-                                        <i class="bx bx-printer font-size-16 align-middle me-2 "></i>
-                                        View Notices
-                                    </a>
-                                </div>
-                            </div>        
-                        </div>    
-
+                                <tr>
+                                    <td>2.</td>
+                                    <td>DHDJ8900F</td>
+                                    <td>12 Jan 2024 11:56 AM</td>
+                                    <td class="text-right">KES 2000</td>
+                                    <td class="text-right">
+                                        <a href="PrintDocs/Receipts/receipts.html" class="btn-sm btn-primary text-uppercase" target="new">View Receipt</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="text-uppercase">
+                                <tr>
+                                    <th class="text-left" colspan="3">2 Receipts</th>
+                                    <th class="text-right">kes 45,000</th>
+                                    <th></th>
+                                </tr>
+                            </tfoot>
+                        </table>
                     </div>
                 </div>
-              
             </div>
+           
           </div>
         </div>
       </div>
