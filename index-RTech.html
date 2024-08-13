@@ -19,6 +19,19 @@
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
+
+
+     <!-- // Add the new slick-theme.css if you want the default styling -->
+     <link rel="stylesheet" href="assets/libs/slick/slick.css"/>
+     <link rel="stylesheet" href="assets/libs/slick/slick-theme.css"/>
+
+
+     <!-- owl.carousel css -->
+     <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.carousel.min.css">
+
+     <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.theme.default.min.css">
+
+
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
     <link href="assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
@@ -51,15 +64,23 @@
             <div class="navbar-header">
                 <div class="d-flex">
                     <!-- LOGO -->
-                    <div class="navbar-brand-box"><a class="logo logo-dark"><span class="logo-sm"><img alt="" height="22"
-                        src="./assets/images/logo.svg"></span><span class="logo-lg"></span></a><a
-                            class="logo logo-light d-flex"><span class="logo-sm"><img alt="" height="50"
-                                    src="assets/images/Uasin_Gishu_County_Government_logo.png"></span><span class="logo-lg"><img alt="" height="45"
-                                    src="assets/images/Uasin_Gishu_County_Government_logo.png"></span>
-                            <div class="portal-title">
-                                <h4 class="text-white">County Biller</h4>
-                                <h6 class="text-muted mb-0 text-white opacity-75"> Uasin Gishu County</h6>
-                            </div>
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo.svg" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-dark.png" alt="" height="17">
+                            </span>
+                        </a>
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/the-logo.png" alt="" height="50">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-text-white.png" alt="" height="45">
+                            </span>
                         </a>
                     </div>
 
@@ -279,6 +300,7 @@
                         </li>
 
 
+
                         <li>
                             <a href="live-monitoring.html" class="waves-effect">
                                 <i class="bx bx-user-voice"></i><span>Live Monitoring</span>
@@ -390,7 +412,7 @@
                         </li>
 
                         
-                       <li>
+                        <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow text-capitalize">
                                 <i class="dripicons-flag"></i>
                                 <span>Action Center</span>
@@ -447,7 +469,7 @@
                                 <i class="bx bx-calendar-check"></i><span>Auto Reconciliation</span>
                             </a>
                         </li> 
-                         <li class="">
+                        <li class="">
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi-certificate mdi"></i>
                                 <span>Certificates & Licenses</span>
@@ -465,7 +487,6 @@
                             </ul>
                         </li>
 
-
                         <li class="">
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="dripicons-browser-upload"></i>
@@ -480,7 +501,7 @@
                         </li>
 
 
-                      <li>
+                        <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="bx bx-file"></i>
                                 <span>Reports</span>
@@ -517,7 +538,7 @@
                         </li>
 
 
-                         <li>
+                        <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi mdi-monitor-multiple"></i>
                                 <span>System Users</span>
@@ -527,6 +548,7 @@
                                 <li><a href="user-userlist-deactivated.html">Deactivated Users</a></li>
                                 <li><a href="user-userlist-deactivated-logs.html">Deactivated Accounts Logs</a></li>
                                 <li><a href="user-registration.html">Add a system user</a></li>
+                                <li><a href="user-system-logs.html">System Logs</a></li>
                             </ul>
                         </li>
 
@@ -574,7 +596,7 @@
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Deactivated Users Logs</a></li>
 
                                     </ol>
                                 </div>
@@ -584,12 +606,114 @@
                     </div>
                     <!-- end page title -->
                     <div class="row">
-                        <div class="col-lg-12 px-sm-30px">
+                        <div class="col-12">
+                            <div class="card d-flex flex-row">
+                                <div class="card-body stats-head align-items-center d-flex">
+                                    <div class=" text-uppercase align-items-center">
+                                        <h6 class="mb-0 pb-0 text-white">Today's Higlights</h6>
+                                    </div>
+                                </div>
+                                <div class="card-body stats-card-cont">
+                                   <div class="stats-container d-flex todays-stats-cont" >
+                                        <div class="single-stat-cont text-uppercase d-flex justify-content-between align-items-center p-3 mr-3">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title rounded-circle text-black font-size-18">
+                                                    <i class="mdi mdi-parking"></i>
+                                                </span>
+                                            </div>
+                                            <h6 class="pb-0 mb-0 fw-bold mr-5 pr-2">Parking</h6>
+                                            <h6 class="pb-0 mb-0 fw-bold">KES 45,000</h6>
+                                        </div>
+
+                                        <div class="single-stat-cont text-uppercase d-flex justify-content-between align-items-center p-3 mr-3">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title rounded-circle text-black font-size-18">
+                                                    <i class="mdi mdi-briefcase-check"></i>
+                                                </span>
+                                            </div>
+                                            <h6 class="pb-0 mb-0 fw-bold mr-5 pr-2">Single Business Permit</h6>
+                                            <h6 class="pb-0 mb-0 fw-bold">KES 45,000</h6>
+                                        </div>
+
+                                        <div class="single-stat-cont text-uppercase d-flex justify-content-between align-items-center p-3 mr-3">
+
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title rounded-circle text-black font-size-18">
+                                                    <i class="mdi mdi-dump-truck"></i>
+                                                </span>
+                                            </div>
+                                            <h6 class="pb-0 mb-0 fw-bold mr-5 pr-2">CESS</h6>
+                                            <h6 class="pb-0 mb-0 fw-bold">KES 45,000</h6>
+                                        </div>
+
+                                        <div class="single-stat-cont text-uppercase d-flex justify-content-between align-items-center p-3 mr-3">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title rounded-circle text-black font-size-18">
+                                                    <i class="mdi mdi-fish"></i>
+                                                </span>
+                                            </div>
+                                            <h6 class="pb-0 mb-0 fw-bold mr-5 pr-2">Fish Cess</h6>
+                                            <h6 class="pb-0 mb-0 fw-bold">KES 45,000</h6>
+                                        </div>
+
+
+                                        <div class="single-stat-cont text-uppercase d-flex justify-content-between align-items-center p-3 mr-3">
+
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title rounded-circle text-black font-size-18">
+                                                    <i class="mdi mdi-office-building"></i>
+                                                </span>
+                                            </div>
+
+                                            <h6 class="pb-0 mb-0 fw-bold mr-5 pr-2">Building Permit</h6>
+                                            <h6 class="pb-0 mb-0 fw-bold">KES 45,000</h6>
+                                        </div>
+
+                                        <div class="single-stat-cont text-uppercase d-flex justify-content-between align-items-center p-3 mr-3">
+
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title rounded-circle text-black font-size-18">
+                                                    <i class="mdi mdi-bus-side"></i>
+                                                </span>
+                                            </div>
+
+                                            <h6 class="pb-0 mb-0 fw-bold mr-5 pr-2">Bus Park Fees</h6>
+                                            <h6 class="pb-0 mb-0 fw-bold">KES 45,000</h6>
+                                        </div>
+
+                                        <div class="single-stat-cont text-uppercase d-flex justify-content-between align-items-center p-3 mr-3">
+
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title rounded-circle text-black font-size-18">
+                                                    <i class="mdi mdi-bus-side"></i>
+                                                </span>
+                                            </div>
+
+                                            <h6 class="pb-0 mb-0 fw-bold mr-5 pr-2">Bus Park Fees</h6>
+                                            <h6 class="pb-0 mb-0 fw-bold">KES 45,000</h6>
+                                        </div>
+
+                                        <div class="single-stat-cont text-uppercase d-flex justify-content-between align-items-center p-3 mr-3">
+
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title rounded-circle text-black font-size-18">
+                                                    <i class="mdi mdi-bus-side"></i>
+                                                </span>
+                                            </div>
+
+                                            <h6 class="pb-0 mb-0 fw-bold mr-5 pr-2">Bus Park Fees</h6>
+                                            <h6 class="pb-0 mb-0 fw-bold">KES 45,000</h6>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 px-sm-30px d-none">
                             <div class="card quick-stats-cont">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-12 mb-3 d-flex justify-content-between align-items-center">
-                                            <h6 class="text-white m-0 p-0 text-uppercase">Live Stats</h6>
+                                            <h6 class="text-white m-0 p-0 text-uppercase">Today's Live Stats</h6>
                                             <div class="d-none">
                                                 <div class="form-group mb-0"><label for="" class="">Contact
                                                         Group</label>
@@ -655,14 +779,14 @@
                                                 <div class="row">
                                                     <div class="col-sm-6 col-md-3 col-lg-3 mb-5 mb-md-0 quick-stat">
                                                         <div><img src="assets/images/index-icons/check.svg" alt="">
-                                                            <div class="avatar-xs mb-3 d-none"><span
+                                                            <div class="avatar-xs mb-3 d-non"><span
                                                                     class="avatar-title rounded-circle font-size-16"><i
                                                                         class="mdi mdi mdi-briefcase-check text-white"></i></span>
                                                             </div>
                                                             <div>
-                                                                <p class="text-muted mb-2 text-uppercase">Zero Collectors</p>
+                                                                <p class="text-muted mb-2 text-uppercase">Parking</p>
                                                                 <h5 class="mb-0"><span
-                                                                        class="per-rand-num">213</span></h5>
+                                                                        class="per-rand-num">KES 213</span></h5>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -720,7 +844,7 @@
                             <div class="card member-wedges-card">
                                 <div class="card-body p-0">
                                     <div id="map" dir="ltr"
-                                        style="height: 287px; position: relative; overflow: hidden;">
+                                        style="height: 390px; position: relative; overflow: hidden;">
                                         <div
                                             style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
                                             <div class="gm-style"
@@ -1354,10 +1478,22 @@
                                     <div class="card calc-heigt8">
                                         <div class="card-body">
                                             <div class="d-flex mb-3 flex-column">
-                                                <div class="avatar-xs-2 me-3 mb-3"><span
-                                                        class="avatar-title rounded-circle bg-dark bg-soft text-success font-size-18"><i
-                                                            class="mdi mdi-calendar-text-outline h2 mb-0 pb-0 text-black"></i></span>
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <div class="avatar-xs-2 me-3 ">
+                                                        <span  class="avatar-title rounded-circle bg-dark bg-soft text-success font-size-18">
+                                                            <i class="mdi mdi-calendar-text-outline h2 mb-0 pb-0 text-black"></i>
+                                                        </span>
+                                                    </div>
+
+                                                    <select class="form-select form-control-sm">
+                                                        <option selected>All Sources</option>
+                                                        <option>Revenue Paybill 12345</option>
+                                                        <option>Revenue Paybill 12345</option>
+                                                        <option>Another Source</option>
+                                                    </select>
                                                 </div>
+
+                                                
                                                 <div class="d-flex flex-column">
                                                     <h5 class="font-size-14 mb-0 mt-3 text-black fw-semibold">Daily
                                                         Transactions</h5>
@@ -1379,6 +1515,20 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="card-footer border-top alert-primary text-uppercase alert m-0 border-radius-0">
+                                            <div class="d-flex justify-content-between w-100 fw-bold" title="Own sorce revenue collections for today">
+                                                <span class="mr-2">OSR</span>
+                                                <span class="text-right">56,000 (55%)</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer border-top alert-success text-uppercase alert m-0 border-radius-0">
+                                            <div class="d-flex justify-content-between w-100 fw-bold " title="Health Related Revenues for Today">
+                                                <span class="mr-2">Health Revenues</span>
+                                                <span class="text-right">56,000 (45%)</span>
+                                            </div>
+                                        </div>
+
                                         <div class="card-footer bg-black p-4 text-capitalize">
                                             <p class="text-light opacity-75">Achieved <strong
                                                     class="opacity-100 text-warning-alt">43.52%</strong> of <strong
@@ -1400,11 +1550,23 @@
                                 <div class="col-sm-4">
                                     <div class="card calc-heigt8">
                                         <div class="card-body">
-                                            <div class="d-flex mb-3 flex-column">
-                                                <div class="avatar-xs-2 me-3 mb-3"><span
+                                            <div class="d-flex flex-column">
+                                               
+
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <div class="avatar-xs-2 me-3"><span
                                                         class="avatar-title rounded-circle bg-success bg-soft text-success font-size-18"><i
                                                             class="mdi mdi-calendar-month-outline h2 mb-0 pb-0 text-success"></i></span>
                                                 </div>
+
+                                                    <select class="form-select form-control-sm">
+                                                        <option selected>All Sources</option>
+                                                        <option>Revenue Paybill 12345</option>
+                                                        <option>Revenue Paybill 12345</option>
+                                                        <option>Another Source</option>
+                                                    </select>
+                                                </div>
+
                                                 <div class="d-flex flex-column">
                                                     <h5 class="font-size-14 mb-0 mt-3 text-black fw-semibold">Monthly
                                                         Transactions</h5>
@@ -1427,6 +1589,21 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="card-footer border-top alert-secondary text-uppercase alert m-0 border-radius-0">
+                                            <div class="d-flex justify-content-between w-100 fw-bold" title="Own sorce revenue collections for the Month">
+                                                <span class="mr-2">OSR</span>
+                                                <span class="text-right">56,000 (55%)</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer border-top alert-info text-uppercase alert m-0 border-radius-0">
+                                            <div class="d-flex justify-content-between w-100 fw-bold " title="Health Revenues collections for this Month">
+                                                <span class="mr-2">Health Revenues</span>
+                                                <span class="text-right">56,000 (45%)</span>
+                                            </div>
+                                        </div>
+
                                         <div class="card-footer bg-primary-alt p-4 text-capitalize">
                                             <p class="text-light opacity-75">Achieved <strong
                                                     class="opacity-100 text-warning-alt">36.67%</strong> of <strong
@@ -1448,11 +1625,24 @@
                                 <div class="col-sm-4">
                                     <div class="card calc-heigt8">
                                         <div class="card-body">
+
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="avatar-xs-2 me-3"><span
+                                                    class="avatar-title rounded-circle bg-dark bg-soft text-success font-size-18"><i
+                                                        class="mdi mdi-calendar-check-outline h2 mb-0 pb-0 text-black"></i></span>
+                                            </div>
+
+                                                <select class="form-select form-control-sm">
+                                                    <option selected>All Sources</option>
+                                                    <option>Revenue Paybill 12345</option>
+                                                    <option>Revenue Paybill 12345</option>
+                                                    <option>Another Source</option>
+                                                </select>
+                                                
+                                            </div>
+
                                             <div class="d-flex mb-3 flex-column">
-                                                <div class="avatar-xs-2 me-3 mb-3"><span
-                                                        class="avatar-title rounded-circle bg-dark bg-soft text-success font-size-18"><i
-                                                            class="mdi mdi-calendar-check-outline h2 mb-0 pb-0 text-black"></i></span>
-                                                </div>
+                                               
                                                 <div class="d-flex flex-column">
                                                     <h5 class="font-size-14 mb-0 mt-3 text-black fw-semibold">This
                                                         Financial Year</h5>
@@ -1475,6 +1665,22 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="card-footer border-top alert-primary text-uppercase alert m-0 border-radius-0">
+                                            <div class="d-flex justify-content-between w-100 fw-bold" title="Own sorce revenue collections for this Financial Year">
+                                                <span class="mr-2">OSR</span>
+                                                <span class="text-right">56,000 (55%)</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer border-top alert-success text-uppercase alert m-0 border-radius-0">
+                                            <div class="d-flex justify-content-between w-100 fw-bold " title="Health Revenues collections for this Financial Year">
+                                                <span class="mr-2">Health Revenues</span>
+                                                <span class="text-right">56,000 (45%)</span>
+                                            </div>
+                                        </div>
+
+                                        
                                         <div class="card-footer bg-black p-4 text-capitalize">
                                             <p class="text-light opacity-75">Achieved <strong
                                                     class="opacity-100 text-warning-alt">5.85%</strong> of <strong
@@ -1532,35 +1738,35 @@
                                                     <tbody class="align-middle">
                                                         <tr value="[object Object]" style="cursor: pointer;">
                                                             <!-- if the collections are above target -->
-                                                            <td scope="row"><small class="mdi mdi-rectangle text-success "></small> Turbo</td>
+                                                            <td scope="row"><small class="mdi mdi-rectangle text-success "></small> Mvita</td>
                                                             <td class="text-right">93,681 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
                                                             <td class="text-right" class="">1,675,191 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                         </tr>
                                                         <tr value="[object Object]" style="cursor: pointer;">
                                                             <!-- if collections are performing in relation to the target -->
-                                                            <td scope="row"><small class="mdi mdi-rectangle text-info "></small> Soy</td>
+                                                            <td scope="row"><small class="mdi mdi-rectangle text-info "></small> Nyali</td>
                                                             <td class="text-right">97,220 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
                                                             <td class="text-right">1,493,250 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                         </tr>
                                                         <tr value="[object Object]" style="cursor: pointer;">
                                                             <!-- if collections are below target in relation to the target -->
-                                                            <td scope="row"><small class="mdi mdi-rectangle text-warning"></small> Ainabkoi </td>
+                                                            <td scope="row"><small class="mdi mdi-rectangle text-warning"></small> Likoni</td>
                                                             <td class="text-right">55,630 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
                                                             <td class="text-right">1,147,013 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                         </tr>
                                                         <tr value="[object Object]" style="cursor: pointer;">
                                                             <!-- if collections are underperforming in relation to the target -->
-                                                            <td scope="row"><small class="mdi mdi-rectangle text-danger"></small> Moiben </td>
+                                                            <td scope="row"><small class="mdi mdi-rectangle text-danger"></small> Changamwe</td>
                                                             <td class="text-right">74,120 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
                                                             <td class="text-right">705,642 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                         </tr>
                                                         <tr value="[object Object]" style="cursor: pointer;">
-                                                            <td scope="row"><small class="mdi mdi-rectangle text-success"></small> Kesses </td>
+                                                            <td scope="row"><small class="mdi mdi-rectangle text-success"></small> Jomvu</td>
                                                             <td class="text-right">53,660 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
                                                             <td class="text-right">647,090 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                         </tr>
                                                         <tr value="[object Object]" style="cursor: pointer;">
-                                                            <td scope="row"><small class="mdi mdi-rectangle text-success"></small> Kapsaret </td>
+                                                            <td scope="row"><small class="mdi mdi-rectangle text-success"></small> Kisauni</td>
                                                             <td class="text-right">67,800 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
                                                             <td class="text-right">616,541 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
                                                         </tr>
@@ -2406,6 +2612,8 @@
         <script src="assets/libs/simplebar/simplebar.min.js "></script>
         <script src="assets/libs/node-waves/waves.min.js "></script>
 
+      
+
         <!-- Bootstrap select -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js "></script>
 
@@ -2439,9 +2647,15 @@
         <script src="assets/js/pages/county-revenue.js"></script>
 
 
+         <!-- owl.carousel js -->
+        <script src="assets/libs/owl.carousel/owl.carousel.min.js"></script>
+
+
 
         <script src="assets/js/map.js"></script>
         <script src="assets/js/collected-rev.js"></script>
+
+        <script src="assets/libs/slick/slick.min.js"></script>
 
 
 
@@ -2869,6 +3083,28 @@
 
 
         <!-- Add the back button HTML element -->
+
+
+
+        <!-- stats corosel -->
+         <script>
+            window.onload=function(){
+                $('.todays-stats-cont').slick({
+                arrows:true,
+                prevArrow:'<button type="button" class="slick-prev"></button>',
+                nextArrow:'<button type="button" class="slick-next"></button>',
+                centerMode:true,
+                slidesToShow:7,
+                speed: 7000,
+                autoplay: true,
+                autoplaySpeed: 0,
+                cssEase: 'linear',
+                slidesToScroll: 1,
+                pauseOnFocus: true,
+                variableWidth: true
+                });
+            };
+         </script>
 
 
 
