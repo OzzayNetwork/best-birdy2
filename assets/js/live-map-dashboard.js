@@ -436,341 +436,7 @@ function initMap() {
     //taxi on transit
     addMarker({
         coords: { lat: -1.284319, lng: 36.8238173 },
-        iconImage: declinedBizApplication,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-            <div class="card-body p-0 mb-2">
-                   <div class="d-flex">
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-16 mb-1 text-capitalize">
-                       Mbiti Traders
-                        
-                       </h5>
-                       <p class="text-truncate  text-uppercase text-grey mb-4">230 Meteres from Sub County headquaters</p>
-                   </div>
-                   </div>
-            </div>
-
-            <div class="alert alert-info">
-                <strong>Business Location</strong>                
-                <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-            </div>
-
-            <div class="alert alert-danger" role="alert">
-               <strong>Business Category</strong>
-               <p>Accomodation & Catering</p>
-
-               <strong>Business Sub Category</strong>
-               <p>Large high standard lodging house/hotel D class with over 100 rooms</p>
-
-               <strong>Amount Paid</strong>
-                <h5>KES 60,000</h5>
-
-                <strong>Reason for the decline</strong>
-                <h5>Sell of illigal substance</h5>
-
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
-            </div>
-
-           
-
-            <div class="card-body">
-
-               
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Date Declined
-                            </span>
-                                <div>
-                                Declined on 24 Feb 2023 By Alex Kinoti
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-           
-            `
-    });
-
-    //initiated application
-    addMarker({
-        coords: { lat: -1.29899, lng: 36.9187 },
-        iconImage: initiatedApplications,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-            <div class="card-body p-0 mb-2">
-                   <div class="d-flex">
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-16 mb-1 text-capitalize">
-                       Kelvin Kev Phone And Accessories
-                        
-                       </h5>
-                       <p class="text-truncate  text-uppercase text-grey mb-4">230 Meteres from Sub County headquaters</p>
-                   </div>
-                   </div>
-            </div>
-
-            <div class="alert alert-info">
-                <strong>Business Location</strong>                
-                <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-            </div>
-
-            <div class="alert alert-success" role="alert">
-               <strong>Business Category</strong>
-               <p>Accomodation & Catering</p>
-
-               <strong>Business Sub Category</strong>
-               <p>Large high standard lodging house/hotel D class with over 100 rooms</p>
-
-               <strong>Amount Paid</strong>
-                <h5>KES 60,000</h5>
-
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
-            </div>
-
-           
-
-            <div class="card-body">
-
-               
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Payment of SBP Application Fees
-                            </span>
-                                <div>
-                               On 22 Oct 2023 11:34 AM Via KCB Bank
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-           
-            `
-    });
-
-    //Pending certification
-    addMarker({
-        coords: { lat: -1.27199, lng: 36.8187 },
-        iconImage: pendingCertification,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-            <div class="card-body p-0 mb-2">
-                   <div class="d-flex">
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-16 mb-1 text-capitalize">
-                       Kelvin Kev Phone And Accessories
-                        
-                       </h5>
-                       <p class="text-truncate  text-uppercase text-grey mb-4">230 Meteres from Sub County headquaters</p>
-                   </div>
-                   </div>
-            </div>
-
-            <div class="alert alert-info">
-                <strong>Business Location</strong>                
-                <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-            </div>
-
-            <div class="alert alert-success" role="alert">
-               <strong>Business Category</strong>
-               <p>Accomodation & Catering</p>
-
-               <strong>Business Sub Category</strong>
-               <p>Large high standard lodging house/hotel D class with over 100 rooms</p>
-
-               <strong>Amount Paid</strong>
-                <h5>KES 60,000</h5>
-
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
-            </div>
-
-           
-
-            <div class="card-body">
-
-               
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Inspected By Alex Kinoti
-                            </span>
-                                <div>
-                               On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-           
-            `
-    });
-
-    //Pending inspespection
-
-    addMarker({
-        coords: { lat: -1.26199, lng: 36.8987 },
-        iconImage: pendingInspection,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-            <div class="card-body p-0 mb-2">
-                   <div class="d-flex">
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-16 mb-1 text-capitalize">
-                       Kelvin Kev Phone And Accessories
-                        
-                       </h5>
-                       <p class="text-truncate  text-uppercase text-grey mb-4">230 Meteres from Sub County headquaters</p>
-                   </div>
-                   </div>
-            </div>
-
-            <div class="alert alert-info">
-                <strong>Business Location</strong>                
-                <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-            </div>
-
-            <div class="alert alert-success" role="alert">
-               <strong>Business Category</strong>
-               <p>Accomodation & Catering</p>
-
-               <strong>Business Sub Category</strong>
-               <p>Large high standard lodging house/hotel D class with over 100 rooms</p>
-
-               <strong>Amount Paid</strong>
-                <h5>KES 60,000</h5>
-
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
-            </div>
-
-           
-
-            <div class="card-body">
-
-               
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Details validation 
-                            </span>
-                                <div>
-                                Done By Alex Wanjala on 23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-           
-            `
-    });
-
-    //compliant businbesses
-    addMarker({
-        coords: { lat: -1.29889, lng: 36.8186003 },
-        iconImage: activeBusiness,
+        iconImage: inactiveAgent,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body px-0 mb-3">
@@ -847,17 +513,17 @@ function initMap() {
             `
     });
 
-    // business thats due
+    //initiated application
     addMarker({
-        coords: { lat: -1.29889, lng: 36.8386003 },
-        iconImage: toBeRenewed,
+        coords: { lat: -1.29899, lng: 36.9187 },
+        iconImage: inactiveAgent,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body px-0 mb-3">
                    <div class="d-flex">
                    <div class="flex-grow-1 overflow-hidden pe-5">
                        <h5 class="text-truncate font-size-16 mb-1 text-capitalize">
-                        Nakumat Supermarket
+                        Big Mich Hotel
                        </h5>
                        <p class="text-truncate  text-uppercase text-grey mb-4">30 Meteres from Sub County headquaters</p>
                    </div>
@@ -869,18 +535,17 @@ function initMap() {
                 <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
             </div>
 
-            <div class="alert alert-warning" role="alert">
+            <div class="alert alert-success" role="alert">
                <strong>Business Category</strong>
                <p>Accomodation & Catering</p>
 
                <strong>Business Sub Category</strong>
                <p>Large high standard lodging house/hotel D class with over 100 rooms</p>
 
-               <strong>Renewal Fee</strong>
-                <h5>KES 60,000</h5>
+               <strong>Renewal Fee Paid</strong>
+                <h5>KES 60,500</h5>
 
-                <strong>Accumulated Penalty</strong>
-                <h5>KES 0.00</h5>
+                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
             </div>
 
            
@@ -926,6 +591,220 @@ function initMap() {
         </div>
            
             `
+    });
+
+    //Pending certification
+    addMarker({
+        coords: { lat: -1.27199, lng: 36.8187 },
+        iconImage: inactiveAgent,
+        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
+        <div class="card mb-0">
+            <div class="card-body px-0 mb-3">
+                   <div class="d-flex">
+                   <div class="flex-grow-1 overflow-hidden pe-5">
+                       <h5 class="text-truncate font-size-16 mb-1 text-capitalize">
+                        Big Mich Hotel
+                       </h5>
+                       <p class="text-truncate  text-uppercase text-grey mb-4">30 Meteres from Sub County headquaters</p>
+                   </div>
+                   </div>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>Business Location</strong>                
+                <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
+            </div>
+
+            <div class="alert alert-success" role="alert">
+               <strong>Business Category</strong>
+               <p>Accomodation & Catering</p>
+
+               <strong>Business Sub Category</strong>
+               <p>Large high standard lodging house/hotel D class with over 100 rooms</p>
+
+               <strong>Renewal Fee Paid</strong>
+                <h5>KES 60,500</h5>
+
+                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
+            </div>
+
+           
+
+            <div class="card-body">
+
+               
+                <ul class="verti-timeline list-unstyled">        
+                    <li class="event-list">
+                        <div class="event-timeline-dot">
+                            <i class="mdi mdi-square font-size-18 text-black"></i>
+                        </div>
+                        <div class="d-flex">
+                            
+                            <div class="flex-grow-1">
+                            <span class="text-muted">
+                             Application date
+                            </span>
+                                <div>
+                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event-list">
+                        <div class="event-timeline-dot">
+                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
+                        </div>
+                        <div class="d-flex">
+                           
+                            <div class="flex-grow-1">
+                            <span class="text-muted">
+                             Last Renewed 
+                            </span>
+                                <div>
+                                23 Oct 2023 at 4:34 PM
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+           
+            `
+    });
+
+    //Pending inspespection
+
+    addMarker({
+        coords: { lat: -1.26199, lng: 36.8987 },
+        iconImage: inactiveAgent,
+        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
+        <div class="card mb-0">
+            <div class="card-body px-0 mb-3">
+                   <div class="d-flex">
+                   <div class="flex-grow-1 overflow-hidden pe-5">
+                       <h5 class="text-truncate font-size-16 mb-1 text-capitalize">
+                        Big Mich Hotel
+                       </h5>
+                       <p class="text-truncate  text-uppercase text-grey mb-4">30 Meteres from Sub County headquaters</p>
+                   </div>
+                   </div>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>Business Location</strong>                
+                <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
+            </div>
+
+            <div class="alert alert-success" role="alert">
+               <strong>Business Category</strong>
+               <p>Accomodation & Catering</p>
+
+               <strong>Business Sub Category</strong>
+               <p>Large high standard lodging house/hotel D class with over 100 rooms</p>
+
+               <strong>Renewal Fee Paid</strong>
+                <h5>KES 60,500</h5>
+
+                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
+            </div>
+
+           
+
+            <div class="card-body">
+
+               
+                <ul class="verti-timeline list-unstyled">        
+                    <li class="event-list">
+                        <div class="event-timeline-dot">
+                            <i class="mdi mdi-square font-size-18 text-black"></i>
+                        </div>
+                        <div class="d-flex">
+                            
+                            <div class="flex-grow-1">
+                            <span class="text-muted">
+                             Application date
+                            </span>
+                                <div>
+                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event-list">
+                        <div class="event-timeline-dot">
+                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
+                        </div>
+                        <div class="d-flex">
+                           
+                            <div class="flex-grow-1">
+                            <span class="text-muted">
+                             Last Renewed 
+                            </span>
+                                <div>
+                                23 Oct 2023 at 4:34 PM
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+           
+            `
+    });
+
+    //compliant businbesses
+    addMarker({
+        coords: { lat: -1.29889, lng: 36.8186003 },
+        iconImage: activeBusiness,
+        iconImage: activeAgent,
+        content: `<p class="d-none">agent|plate num</p>
+            <h6 class="text-capitalize align-items-center">
+            <div class="d-flex align-items-center">
+                    <span class="active-agent mr-3"></span> 
+                    <h5 class="mb-0 pb-0">Alex Wanjala <small><strong>(Online)</strong></small></h5>
+            </div>
+            
+            <p>Revenue Officer Ndhiwa Subcounty</p>
+            </h6>
+             <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+             <div class="listview text-align-left text-capitalize pl-0">  
+             <div class="listview__header text-align-left text-capitalize text-left">
+             <strong>Validated 22 of 54 Businesses</strong>
+             </div> 
+             <div class="progress"> 
+             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+             </div>
+             </p> `
+    });
+
+    // business thats due
+    addMarker({
+        coords: { lat: -1.29889, lng: 36.8386003 },
+        iconImage: activeAgent,
+        content: `<p class="d-none">agent|plate num</p>
+            <h6 class="text-capitalize align-items-center">
+            <div class="d-flex align-items-center">
+                    <span class="active-agent mr-3"></span> 
+                    <h5 class="mb-0 pb-0">Alex Wanjala <small><strong>(Online)</strong></small></h5>
+            </div>
+            
+            <p>Revenue Officer Ndhiwa Subcounty</p>
+            </h6>
+             <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+             <div class="listview text-align-left text-capitalize pl-0">  
+             <div class="listview__header text-align-left text-capitalize text-left">
+             <strong>Validated 22 of 54 Businesses</strong>
+             </div> 
+             <div class="progress"> 
+             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+             </div>
+             </p> `
     });
 
     // Revenue officers
@@ -984,168 +863,54 @@ function initMap() {
     //Penalized business a business is penalizewd once they ahaventt renewd their business license by march of that year.
     addMarker({
         coords: { lat: -1.2974586, lng: 36.8087993 },
-        iconImage: penalizedBusiness,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-            <div class="card-body px-0 mb-3">
-                   <div class="d-flex">
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-16 mb-1 text-capitalize">
-                        Kings Hospital
-                       </h5>
-                       <p class="text-truncate  text-uppercase text-grey mb-4">30 Meteres from Sub County headquaters</p>
-                   </div>
-                   </div>
+        iconImage: activeAgent,
+        content: `<p class="d-none">agent|plate num</p>
+            <h6 class="text-capitalize align-items-center">
+            <div class="d-flex align-items-center">
+                    <span class="active-agent mr-3"></span> 
+                    <h5 class="mb-0 pb-0">Alex Wanjala <small><strong>(Online)</strong></small></h5>
             </div>
-
-            <div class="alert alert-info">
-                <strong>Business Location</strong>                
-                <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-            </div>
-
-            <div class="alert alert-danger" role="alert">
-               <strong>Business Category</strong>
-               <p>Accomodation & Catering</p>
-
-               <strong>Business Sub Category</strong>
-               <p>Large high standard lodging house/hotel D class with over 100 rooms</p>
-
-               <strong>pending SBP Amount</strong>
-                <h5>KES 60,500</h5>
-
-                <strong>Period In Arrears</strong>
-                <h5>4 Months 2 Days</h5>
-
-                <strong>Accumulated Penalties</strong>
-                <h5>KES 400 (25%)</h5>
-
-                
-            </div>
-
-           
-
-            <div class="card-body">
-
-               
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Last Renewed 
-                            </span>
-                                <div>
-                                23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-           
-            `
+            
+            <p>Revenue Officer Ndhiwa Subcounty</p>
+            </h6>
+             <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+             <div class="listview text-align-left text-capitalize pl-0">  
+             <div class="listview__header text-align-left text-capitalize text-left">
+             <strong>Validated 22 of 54 Businesses</strong>
+             </div> 
+             <div class="progress"> 
+             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+             </div>
+             </p> `
     });
 
 
     //active business
     addMarker({
         coords: { lat: -1.29948, lng: 36.8151453 },
-        iconImage:activeBusiness,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-            <div class="card-body px-0 mb-3">
-                   <div class="d-flex">
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-16 mb-1 text-capitalize">
-                        Big Mich Hotel
-                       </h5>
-                       <p class="text-truncate  text-uppercase text-grey mb-4">30 Meteres from Sub County headquaters</p>
-                   </div>
-                   </div>
+        iconImage: activeAgent,
+        content: `<p class="d-none">agent|plate num</p>
+            <h6 class="text-capitalize align-items-center">
+            <div class="d-flex align-items-center">
+                    <span class="active-agent mr-3"></span> 
+                    <h5 class="mb-0 pb-0">Alex Wanjala <small><strong>(Online)</strong></small></h5>
             </div>
-
-            <div class="alert alert-info">
-                <strong>Business Location</strong>                
-                <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-            </div>
-
-            <div class="alert alert-success" role="alert">
-               <strong>Business Category</strong>
-               <p>Accomodation & Catering</p>
-
-               <strong>Business Sub Category</strong>
-               <p>Large high standard lodging house/hotel D class with over 100 rooms</p>
-
-               <strong>Renewal Fee Paid</strong>
-                <h5>KES 60,500</h5>
-
-                <a class="text-info text-uppercase mt-4 fw-semibold">Receipt No. 123457</a>
-            </div>
-
-           
-
-            <div class="card-body">
-
-               
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Last Renewed 
-                            </span>
-                                <div>
-                                23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-           
-            `
+            
+            <p>Revenue Officer Ndhiwa Subcounty</p>
+            </h6>
+             <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+             <div class="listview text-align-left text-capitalize pl-0">  
+             <div class="listview__header text-align-left text-capitalize text-left">
+             <strong>Validated 22 of 54 Businesses</strong>
+             </div> 
+             <div class="progress"> 
+             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+             </div>
+             </p> `
     });
 
     //incidents
@@ -1164,88 +929,33 @@ function initMap() {
 
     addMarker({
         coords: { lat: -1.294219, lng: 36.806824 },
-        iconImage: toBeRenewed,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-            <div class="card-body px-0 mb-3">
-                   <div class="d-flex">
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-16 mb-1 text-capitalize">
-                        Nakumat Supermarket
-                       </h5>
-                       <p class="text-truncate  text-uppercase text-grey mb-4">30 Meteres from Sub County headquaters</p>
-                   </div>
-                   </div>
+        iconImage: activeAgent,
+        content: `<p class="d-none">agent|plate num</p>
+            <h6 class="text-capitalize align-items-center">
+            <div class="d-flex align-items-center">
+                    <span class="active-agent mr-3"></span> 
+                    <h5 class="mb-0 pb-0">Alex Wanjala <small><strong>(Online)</strong></small></h5>
             </div>
-
-            <div class="alert alert-info">
-                <strong>Business Location</strong>                
-                <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-            </div>
-
-            <div class="alert alert-warning" role="alert">
-               <strong>Business Category</strong>
-               <p>Accomodation & Catering</p>
-
-               <strong>Business Sub Category</strong>
-               <p>Large high standard lodging house/hotel D class with over 100 rooms</p>
-
-               <strong>Renewal Fee</strong>
-                <h5>KES 60,000</h5>
-
-                <strong>Accumulated Penalty</strong>
-                <h5>KES 0.00</h5>
-            </div>
-
-           
-
-            <div class="card-body">
-
-               
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Last Renewed 
-                            </span>
-                                <div>
-                                23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-           
-            `
+            
+            <p>Revenue Officer Ndhiwa Subcounty</p>
+            </h6>
+             <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+             <div class="listview text-align-left text-capitalize pl-0">  
+             <div class="listview__header text-align-left text-capitalize text-left">
+             <strong>Validated 22 of 54 Businesses</strong>
+             </div> 
+             <div class="progress"> 
+             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+             </div>
+             </p> `
     });
 
     //active business
     addMarker({
         coords: { lat: -1.2925606, lng: 36.7809636 },
-        iconImage: activeBusiness,
+        iconImage: inactiveAgent,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body px-0 mb-3">
@@ -1326,87 +1036,27 @@ function initMap() {
     // penalized business
     addMarker({
         coords: { lat: -1.2924789, lng: 36.8243687 },
-        iconImage: penalizedBusiness,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-            <div class="card-body px-0 mb-3">
-                   <div class="d-flex">
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-16 mb-1 text-capitalize">
-                        Kings Hospital
-                       </h5>
-                       <p class="text-truncate  text-uppercase text-grey mb-4">30 Meteres from Sub County headquaters</p>
-                   </div>
-                   </div>
+        iconImage: inactiveAgent,
+        content: `<p class="d-none">agent|plate num</p>
+            <h6 class="text-capitalize align-items-center">
+            <div class="d-flex align-items-center">
+                    <span class="active-agent mr-3"></span> 
+                    <h5 class="mb-0 pb-0">Alex Wanjala <small><strong>(Online)</strong></small></h5>
             </div>
-
-            <div class="alert alert-info">
-                <strong>Business Location</strong>                
-                <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-            </div>
-
-            <div class="alert alert-danger" role="alert">
-               <strong>Business Category</strong>
-               <p>Accomodation & Catering</p>
-
-               <strong>Business Sub Category</strong>
-               <p>Large high standard lodging house/hotel D class with over 100 rooms</p>
-
-               <strong>pending SBP Amount</strong>
-                <h5>KES 60,500</h5>
-
-                <strong>Period In Arrears</strong>
-                <h5>4 Months 2 Days</h5>
-
-                <strong>Accumulated Penalties</strong>
-                <h5>KES 400 (25%)</h5>
-
-                
-            </div>
-
-           
-
-            <div class="card-body">
-
-               
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Application date
-                            </span>
-                                <div>
-                                Done By Elvice Weke On 22 Oct 2023 11:34 AM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Last Renewed 
-                            </span>
-                                <div>
-                                23 Oct 2023 at 4:34 PM
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-           
-            `
+            
+            <p>Revenue Officer Ndhiwa Subcounty</p>
+            </h6>
+             <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+             <div class="listview text-align-left text-capitalize pl-0">  
+             <div class="listview__header text-align-left text-capitalize text-left">
+             <strong>Validated 22 of 54 Businesses</strong>
+             </div> 
+             <div class="progress"> 
+             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+             </div>
+             </p> `
     });
 
     //buss park
@@ -1420,51 +1070,27 @@ function initMap() {
     //Taxi offline
     addMarker({
         coords: { lat: -1.27576, lng: 36.834851 },
-        iconImage: subCountyOffices,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-            <div class="card-body p-0 mb-2">
-                   <div class="d-flex">
-                   
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Ndhiwa Sub County
-                        <div class="rating-star">
-                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                            </div>
-                       </h5>                      
-                   </div>
-
-                   
-                   </div>
+        iconImage: activeAgent,
+        content: `<p class="d-none">agent|plate num</p>
+            <h6 class="text-capitalize align-items-center">
+            <div class="d-flex align-items-center">
+                    <span class="active-agent mr-3"></span> 
+                    <h5 class="mb-0 pb-0">Alex Wanjala <small><strong>(Online)</strong></small></h5>
             </div>
-
-            <div class="alert alert-info mb-2" role="alert">
-                <strong>Registered Businesses</strong>
-                22 Businesses
-            </div>
-
-            <div class="alert alert-success mb-2" role="alert">
-                <strong>Paid SBPs</strong>
-                14 Businesses
-            </div>
-
-            <div class="alert alert-danger mb-2" role="alert">
-                <strong>Unpaid SBPs</strong>
-                8 Businesses
-            </div>
-
-            <div class="alert alert-warning mb-2" role="alert">
-                <strong>Ongoing Applications</strong>
-                23 Applications
-            </div>
-
             
-
-           
-        </div>
-           
-            `
+            <p>Revenue Officer Ndhiwa Subcounty</p>
+            </h6>
+             <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+             <div class="listview text-align-left text-capitalize pl-0">  
+             <div class="listview__header text-align-left text-capitalize text-left">
+             <strong>Validated 22 of 54 Businesses</strong>
+             </div> 
+             <div class="progress"> 
+             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+             </div>
+             </p> `
     });
 
     //add marker function

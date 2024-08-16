@@ -1017,6 +1017,12 @@ function getRandomNumber(min,max){
     return Math.floor(Math.random()*(max-min+1))+min
 }
 
+// function for calculating percentage achievement
+
+function calculatePercentage(value, target) {
+    return ((value / target) * 100).toFixed(2); // Percentage rounded to 2 decimal places
+}
+
 
 function changingLegendColor(){
     //alert("we changing axis color")
@@ -1082,273 +1088,56 @@ function changingSeriesData(){
     }
 
     Mapchart.series[0].update({
-        "data": [
-            {
-                //Langata north
-                    "id": "id0",
-                "y": 0,
-                value: getRandomNumber(min,max)
-            },
-            {
-               //Dagoreti South
-                    "id": "id1",
-                "y": 1,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Kibra
-                    "id": "id2",
-                "y": 2,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Dagoreti North
-                    "id": "id3",
-                "y": 3,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Starehe
-                    "id": "id4",
-                "y": 4,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //westlands
-                    "id": "id5",
-                "y": 5,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Embakasi South
-                    "id": "id6",
-                "y": 6,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Makadara
-                    "id": "id7",
-                "y": 7,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Embakasi west
-                    "id": "id8",
-                "y": 8,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Embakasi Central
-                    "id": "id9",
-                "y": 9,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Meru
-                //Kamkunji
-                    "id": "id10",
-                "y": 10,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Tharaka Nithi
-                //Embakasi North
-                    "id": "id11",
-                "y": 11,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Embu
-                //Embakasi East
-                    "id": "id12",
-                "y": 12,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Machakos county
-                //Kasarani
-                    "id": "id13",
-                "y": 13,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //makueni county
-                //Ruaraka
-                    "id": "id14",
-                "y": 14,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Mathare
-                    "id": "id15",
-                "y": 15,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Roysambu
-                    "id": "id16",
-                "y": 16,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Langata
-                    "id": "id17",
-                "y": 17,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Unmatched
-                    "id": "id18",
-                "y": 18,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Langata
-                    "id": "id19",
-                "y": 19,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_18",
-                "y": 20,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_31",
-                "y": 21,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_25",
-                "y": 22,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_23",
-                "y": 23,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_24",
-                "y": 24,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_30",
-                "y": 25,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_29",
-                "y": 26,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_28",
-                "y": 27,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_27",
-                "y": 28,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_26",
-                "y": 29,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_35",
-                "y": 30,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_36",
-                "y": 31,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_32",
-                "y": 32,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_46",
-                "y": 33,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_33",
-                "y": 34,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_34",
-                "y": 35,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_38",
-                "y": 36,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_37",
-                "y": 37,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_39",
-                "y": 38,
-                value: 6732,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_40",
-                "y": 39,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_41",
-                "y": 40,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Siaya
-                "id": "County_42",
-                "y": 41,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_45",
-                "y": 42,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Homabay
-                "id": "County_43",
-                "y": 43,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Migori
-                "id": "County_44",
-                "y": 44,
-                value: getRandomNumber(min,max)
-            },
-            {
-                "id": "County_10",
-                "y": 45,
-                value: getRandomNumber(min,max)
-            },
-            {
-                //Kitui county
-                "id": "County_15",
-                "y": 46,
-                value: getRandomNumber(min,max)
-            }
-        ]
+       "data": [
+    { "id": "id0", "y": 0, "value": 29000, "target": 30000, "percentage": 96.7 }, // Langata North
+    { "id": "id1", "y": 1, "value": 24500, "target": 25000, "percentage": 98.0 }, // Dagoreti South
+    { "id": "id2", "y": 2, "value": 26000, "target": 27000, "percentage": 96.3 }, // Kibra
+    { "id": "id3", "y": 3, "value": 27500, "target": 28000, "percentage": 98.2 }, // Dagoreti North
+    { "id": "id4", "y": 4, "value": 30000, "target": 31000, "percentage": 96.8 }, // Starehe
+    { "id": "id5", "y": 5, "value": 31500, "target": 32000, "percentage": 98.4 }, // Westlands
+    { "id": "id6", "y": 6, "value": 32500, "target": 33000, "percentage": 98.5 }, // Embakasi South
+    { "id": "id7", "y": 7, "value": 33000, "target": 34000, "percentage": 97.1 }, // Makadara
+    { "id": "id8", "y": 8, "value": 34500, "target": 35000, "percentage": 98.6 }, // Embakasi West
+    { "id": "id9", "y": 9, "value": 35500, "target": 36000, "percentage": 98.6 }, // Embakasi Central
+    { "id": "id10", "y": 10, "value": 36500, "target": 37000, "percentage": 98.6 }, // Meru / Kamkunji
+    { "id": "id11", "y": 11, "value": 37000, "target": 38000, "percentage": 97.4 }, // Tharaka Nithi / Embakasi North
+    { "id": "id12", "y": 12, "value": 38000, "target": 39000, "percentage": 97.4 }, // Embu / Embakasi East
+    { "id": "id13", "y": 13, "value": 39500, "target": 40000, "percentage": 98.8 }, // Machakos County / Kasarani
+    { "id": "id14", "y": 14, "value": 40500, "target": 41000, "percentage": 98.8 }, // Makueni County / Ruaraka
+    { "id": "id15", "y": 15, "value": 41500, "target": 42000, "percentage": 98.8 }, // Mathare
+    { "id": "id16", "y": 16, "value": 42500, "target": 43000, "percentage": 98.8 }, // Roysambu
+    { "id": "id17", "y": 17, "value": 43000, "target": 44000, "percentage": 97.7 }, // Langata
+    { "id": "id18", "y": 18, "value": 44000, "target": 45000, "percentage": 97.8 }, // Unmatched
+    { "id": "id19", "y": 19, "value": 45000, "target": 46000, "percentage": 97.8 }, // Langata
+    { "id": "County_18", "y": 20, "value": 46000, "target": 47000, "percentage": 97.9 },
+    { "id": "County_31", "y": 21, "value": 47000, "target": 48000, "percentage": 97.9 },
+    { "id": "County_25", "y": 22, "value": 48000, "target": 49000, "percentage": 98.0 },
+    { "id": "County_23", "y": 23, "value": 49000, "target": 50000, "percentage": 98.0 },
+    { "id": "County_24", "y": 24, "value": 50000, "target": 51000, "percentage": 98.0 },
+    { "id": "County_30", "y": 25, "value": 51000, "target": 52000, "percentage": 98.1 },
+    { "id": "County_29", "y": 26, "value": 52000, "target": 53000, "percentage": 98.1 },
+    { "id": "County_28", "y": 27, "value": 53000, "target": 54000, "percentage": 98.1 },
+    { "id": "County_27", "y": 28, "value": 54000, "target": 55000, "percentage": 98.2 },
+    { "id": "County_26", "y": 29, "value": 55000, "target": 56000, "percentage": 98.2 },
+    { "id": "County_35", "y": 30, "value": 56000, "target": 57000, "percentage": 98.2 },
+    { "id": "County_36", "y": 31, "value": 57000, "target": 58000, "percentage": 98.3 },
+    { "id": "County_32", "y": 32, "value": 58000, "target": 59000, "percentage": 98.3 },
+    { "id": "County_46", "y": 33, "value": 59000, "target": 60000, "percentage": 98.3 },
+    { "id": "County_33", "y": 34, "value": 60000, "target": 61000, "percentage": 98.4 },
+    { "id": "County_34", "y": 35, "value": 61000, "target": 62000, "percentage": 98.4 },
+    { "id": "County_38", "y": 36, "value": 62000, "target": 63000, "percentage": 98.4 },
+    { "id": "County_37", "y": 37, "value": 63000, "target": 64000, "percentage": 98.4 },
+    { "id": "County_39", "y": 38, "value": 64000, "target": 65000, "percentage": 98.5 },
+    { "id": "County_40", "y": 39, "value": 65000, "target": 66000, "percentage": 98.5 },
+    { "id": "County_41", "y": 40, "value": 66000, "target": 67000, "percentage": 98.5 },
+    { "id": "County_42", "y": 41, "value": 67000, "target": 68000, "percentage": 98.5 }, // Siaya
+    { "id": "County_45", "y": 42, "value": 68000, "target": 69000, "percentage": 98.6 },
+    { "id": "County_43", "y": 43, "value": 69000, "target": 70000, "percentage": 98.6 }, // Homabay
+    { "id": "County_44", "y": 44, "value": 70000, "target": 71000, "percentage": 98.6 }, // Migori
+    { "id": "County_10", "y": 45, "value": 71000, "target": 72000, "percentage": 98.6 },
+    { "id": "County_15", "y": 46, "value": 72000, "target": 73000, "percentage": 98.6 } // Kitui County
+]
+
     })
    
 }
@@ -1379,7 +1168,7 @@ $('.map-time').on('change', function(){
     changingSeriesData()
 })
 // Initiate the chart
-var max=9000000,min=90000
+var max=70000,min=10000
 const Mapchart=Highcharts.mapChart('Map-data', {
     
     series: [
@@ -1410,281 +1199,68 @@ const Mapchart=Highcharts.mapChart('Map-data', {
             style: {
                 fontFamily: '"Poppins",sans-serif'
             },
-           "mapData": KisumuMapData,
-            "data": [
-                {
-                    //Langata north
-                    "id": "id0",
-                    "y": 0,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                   //Dagoreti South
-                    "id": "id1",
-                    "y": 1,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Kibra
-                    "id": "id2",
-                    "y": 2,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Dagoreti North
-                    "id": "id3",
-                    "y": 3,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Starehe
-                    "id": "id4",
-                    "y": 4,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //westlands
-                    "id": "id5",
-                    "y": 5,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Embakasi South
-                    "id": "id6",
-                    "y": 6,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Makadara
-                    "id": "id7",
-                    "y": 7,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Embakasi west
-                    "id": "id8",
-                    "y": 8,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Embakasi Central
-                    "id": "id9",
-                    "y": 9,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Meru
-                    //Kamkunji
-                    "id": "id10",
-                    "y": 10,
-                    value:getRandomNumber(min,max)
-                },
-                {
-                    //Tharaka Nithi
-                    //Embakasi North
-                    "id": "id11",
-                    "y": 11,
-                    value:getRandomNumber(min,max)
-                },
-                {
-                    //Embu
-                    //Embakasi East
-                    "id": "id12",
-                    "y": 12,
-                    value:getRandomNumber(min,max)
-                },
-                {
-                    //Machakos county
-                    //Kasarani
-                    "id": "id13",
-                    "y": 13,
-                    value:getRandomNumber(min,max)
-                },
-                {
-                    //makueni county
-                    //Ruaraka
-                    "id": "id14",
-                    "y": 14,
-                    value:getRandomNumber(min,max)
-                },
-                {
-                    //Mathare
-                    "id": "id15",
-                    "y": 15,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Roysambu
-                    "id": "id16",
-                    "y": 16,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Langata
-                    "id": "id17",
-                    "y": 17,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Unmatched
-                    "id": "id18",
-                    "y": 18,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Langata
-                    "id": "id19",
-                    "y": 19,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_18",
-                    "y": 20,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_31",
-                    "y": 21,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_25",
-                    "y": 22,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_23",
-                    "y": 23,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_24",
-                    "y": 24,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_30",
-                    "y": 25,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_29",
-                    "y": 26,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_28",
-                    "y": 27,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_27",
-                    "y": 28,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_26",
-                    "y": 29,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_35",
-                    "y": 30,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_36",
-                    "y": 31,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_32",
-                    "y": 32,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_46",
-                    "y": 33,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_33",
-                    "y": 34,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_34",
-                    "y": 35,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_38",
-                    "y": 36,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_37",
-                    "y": 37,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_39",
-                    "y": 38,
-                    value: 6732,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_40",
-                    "y": 39,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_41",
-                    "y": 40,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Siaya
-                    "id": "County_42",
-                    "y": 41,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_45",
-                    "y": 42,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Homabay
-                    "id": "County_43",
-                    "y": 43,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Migori
-                    "id": "County_44",
-                    "y": 44,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    "id": "County_10",
-                    "y": 45,
-                    value: getRandomNumber(min,max)
-                },
-                {
-                    //Kitui county
-                    "id": "County_15",
-                    "y": 46,
-                    value: getRandomNumber(min,max)
-                }
-            ],
+           "mapData": homaBayMapData,
+          "data": [
+    { "id": "id0", "y": 0, "value": 25, "target": 30000, "Collections": 24000 },   // Langata North
+    { "id": "id1", "y": 1, "value": 35, "target": 25000, "Collections": 20000 },  // Dagoreti South
+    { "id": "id2", "y": 2, "value": 82, "target": 27000, "Collections": 22000 },   // Kibra
+    { "id": "id3", "y": 3, "value": 105, "target": 28000, "Collections": 25200 },  // Dagoreti North
+    { "id": "id4", "y": 4, "value": 90, "target": 31000, "Collections": 27900 },   // Starehe
+    { "id": "id5", "y": 5, "value": 25, "target": 32000, "Collections": 28800 },   // Westlands
+    { "id": "id6", "y": 6, "value": 80, "target": 33000, "Collections": 26400 },   // Embakasi South
+    { "id": "id7", "y": 7, "value": 50, "target": 34000, "Collections": 30600 },   // Makadara
+    { "id": "id8", "y": 8, "value": 95, "target": 35000, "Collections": 33250 },   // Embakasi West
+    { "id": "id9", "y": 9, "value": 90, "target": 36000, "Collections": 32400 },   // Embakasi Central
+    { "id": "id10", "y": 10, "value": 95, "target": 37000, "Collections": 35150 }, // Meru / Kamkunji
+    { "id": "id11", "y": 11, "value": 105, "target": 38000, "Collections": 34200 }, // Tharaka Nithi / Embakasi North
+    { "id": "id12", "y": 12, "value": 110, "target": 39000, "Collections": 36550 }, // Embu / Embakasi East
+    { "id": "id13", "y": 13, "value": 15, "target": 40000, "Collections": 38000 },  // Machakos County / Kasarani
+    { "id": "id14", "y": 14, "value": 90, "target": 41000, "Collections": 36900 },  // Makueni County / Ruaraka
+    { "id": "id15", "y": 15, "value": 134, "target": 42000, "Collections": 39900 }, // Mathare
+    { "id": "id16", "y": 16, "value": 120, "target": 43000, "Collections": 38700 }, // Roysambu
+    { "id": "id17", "y": 17, "value": 25, "target": 44000, "Collections": 39600 },  // Langata
+    { "id": "id18", "y": 18, "value": 105, "target": 45000, "Collections": 40500 }, // Unmatched
+    { "id": "id19", "y": 19, "value": 115, "target": 46000, "Collections": 41400 }, // Langata
+    { "id": "County_18", "y": 20, "value": 50, "target": 47000, "Collections": 44650 },  // County_18
+    { "id": "County_31", "y": 21, "value": 95, "target": 48000, "Collections": 45600 },  // County_31
+    { "id": "County_25", "y": 22, "value": 95, "target": 49000, "Collections": 46550 },  // County_25
+    { "id": "County_23", "y": 23, "value": 96, "target": 50000, "Collections": 48000 },  // County_23
+    { "id": "County_24", "y": 24, "value": 115, "target": 51000, "Collections": 48900 }, // County_24
+    { "id": "County_30", "y": 25, "value": 100, "target": 52000, "Collections": 49400 }, // County_30
+    { "id": "County_29", "y": 26, "value": 95, "target": 53000, "Collections": 50400 },  // County_29
+    { "id": "County_28", "y": 27, "value": 95, "target": 54000, "Collections": 51300 },  // County_28
+    { "id": "County_27", "y": 28, "value": 95, "target": 55000, "Collections": 52250 },  // County_27
+    { "id": "County_26", "y": 29, "value": 110, "target": 56000, "Collections": 53120 }, // County_26
+    { "id": "County_35", "y": 30, "value": 105, "target": 57000, "Collections": 54150 }, // County_35
+    { "id": "County_36", "y": 31, "value": 90, "target": 58000, "Collections": 55100 },  // County_36
+    { "id": "County_32", "y": 32, "value": 105, "target": 59000, "Collections": 56050 }, // County_32
+    { "id": "County_46", "y": 33, "value": 95, "target": 60000, "Collections": 57300 },  // County_46
+    { "id": "County_33", "y": 34, "value": 95, "target": 61000, "Collections": 57900 },  // County_33
+    { "id": "County_34", "y": 35, "value": 100, "target": 62000, "Collections": 58800 }, // County_34
+    { "id": "County_38", "y": 36, "value": 115, "target": 63000, "Collections": 59850 }, // County_38
+    { "id": "County_37", "y": 37, "value": 90, "target": 64000, "Collections": 60800 },  // County_37
+    { "id": "County_39", "y": 38, "value": 105, "target": 65000, "Collections": 61750 }, // County_39
+    { "id": "County_40", "y": 39, "value": 95, "target": 66000, "Collections": 62700 },  // County_40
+    { "id": "County_41", "y": 40, "value": 115, "target": 67000, "Collections": 63650 }, // County_41
+    { "id": "County_42", "y": 41, "value": 105, "target": 68000, "Collections": 64600 }, // Siaya
+    { "id": "County_45", "y": 42, "value": 95, "target": 69000, "Collections": 65550 },  // County_45
+    { "id": "County_43", "y": 43, "value": 130, "target": 70000, "Collections": 66500 }, // Homabay
+    { "id": "County_44", "y": 44, "value": 95, "target": 71000, "Collections": 67450 },  // Migori
+    { "id": "County_10", "y": 45, "value": 125, "target": 72000, "Collections": 68400 }, // County_10
+    { "id": "County_15", "y": 46, "value": 134, "target": 73000, "Collections": 69350 }  // Kitui County
+]
+
+,
+
+        // Now calculate the percentage for each entry
+       
             dataLabels: {
                 enabled: true,
                 color: '#FFFFFF',
                 formatter: function () {
                     return '<span style="font-weight:500; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">' + this.point.name + ': </span>' +
-                        '<span style="font-size: 18px; color: yellow; vertical-align: middle; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">&bull;</span> KES ' +
-                        Highcharts.numberFormat(this.point.value, 0);
+                        '<span style="font-size: 18px; color: yellow; vertical-align: middle; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">&bull;</span> ' +
+                        Highcharts.numberFormat(this.point.value)+"%";
                 },
                 style: {
                     textOutline: 'none' // Remove text outline (optional)
@@ -1702,12 +1278,21 @@ const Mapchart=Highcharts.mapChart('Map-data', {
     },
 
     tooltip: {
-        pointFormat: '<span style="font-weight:500;">{point.name} Sub County: </span>KES {point.value}',
+        pointFormatter: function() {
+            // Calculate percentage achievement
+            const percentageAchievement = ((this.value / this.target) * 100).toFixed(2);
+            
+            // Return the formatted string for the tooltip
+            return '<br><span style="font-weight:500; text-transform:uppercase; margin-bottom:15px;">' + this.name + ' Sub County</span><br><br>' +
+                   '<span style="font-weight:50;">Collected Revenue: </span>KES ' + this.Collections + '<br>' +
+                   '<span style="font-weight:50;">Revenue Target: </span>KES ' + this.target + '<br>' +
+                   '<span style="font-weight:50;">Percentage Achievement: </span>' + this.value + '%';
+        },
         shared: true
     },
-
+    
     chart: {
-        height: "70%",
+        height: "70%", 
         style: {
             fontFamily: '"Poppins",sans-serif'
         }
@@ -1716,7 +1301,7 @@ const Mapchart=Highcharts.mapChart('Map-data', {
     title: {
         text: null,
         style: {
-            fontSize: '14px' 
+            fontSize: '12px' 
          }
     },
 
@@ -1739,7 +1324,8 @@ const Mapchart=Highcharts.mapChart('Map-data', {
     },
 
     colorAxis: {
-        min: 1,
+        min: 0,
+        max:100,
         minColor: '#FFFFFF',
         maxColor: Highcharts.getOptions().colors[0],
         visible: true,
@@ -1757,12 +1343,29 @@ const Mapchart=Highcharts.mapChart('Map-data', {
             [0.6, '#4b67af'],
             [0.7, '#103d8e'],
             [1, '#00226c']
-        ] 
+        ],
+
+        // color coding based on perfomace
+        stops: [
+            [0, '#dc3545'],  // Below 30% - Bright Red (to highlight poor performance)
+            [0.8, '#ffb703'], // 30% to 60% - Bright Orange (for below average)
+            [0.9, '#2ca02c'], // 60% to 100% - Bright Green (for good performance)
+            [1, '#1f77b4']    // Above 100% - Dark Blue (for exceptional performance)
+        ],
     },
     dataLabels: {
         enabled: true,
         color: '#FFFFFF',
-        format: '<span style="font-weight:500;">{point.name} Sub County: </span>KES {point.value}',
+        format: '<span style="font-weight:500;">{point.name} Sub County: </span>{point.value}',
+        style: {
+            textOutline: 'none' // Remove text outline (optional)
+        }
+    },
+
+    dataLabels: {
+        enabled: true,
+        color: '#FFFFFF',
+        format: '<span style="font-weight:500;">{point.name} Sub County: </span>{point.value}%',
         style: {
             textOutline: 'none' // Remove text outline (optional)
         }
@@ -1778,5 +1381,9 @@ const Mapchart=Highcharts.mapChart('Map-data', {
             verticalAlign: 'bottom'
         }
     },
+});
+
+data.forEach(function(entry) {
+    entry.percentage = calculatePercentage(entry.value, entry.target);
 });
 
