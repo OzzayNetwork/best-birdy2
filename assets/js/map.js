@@ -1199,10 +1199,10 @@ const Mapchart=Highcharts.mapChart('Map-data', {
             style: {
                 fontFamily: '"Poppins",sans-serif'
             },
-           "mapData": homaBayMapData,
+           "mapData": KisumuMapData,
           "data": [
-    { "id": "id0", "y": 0, "value": 25, "target": 30000, "Collections": 24000 },   // Langata North
-    { "id": "id1", "y": 1, "value": 35, "target": 25000, "Collections": 20000 },  // Dagoreti South
+    { "id": "id0", "y": 0, "value": 1, "target": 30000, "Collections": 24000 },   // Langata North
+    { "id": "id1", "y": 1, "value": 19, "target": 25000, "Collections": 20000 },  // Dagoreti South
     { "id": "id2", "y": 2, "value": 82, "target": 27000, "Collections": 22000 },   // Kibra
     { "id": "id3", "y": 3, "value": 105, "target": 28000, "Collections": 25200 },  // Dagoreti North
     { "id": "id4", "y": 4, "value": 90, "target": 31000, "Collections": 27900 },   // Starehe
@@ -1258,7 +1258,7 @@ const Mapchart=Highcharts.mapChart('Map-data', {
                 enabled: true,
                 color: '#FFFFFF',
                 formatter: function () {
-                    return '<span style="font-weight:500; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">' + this.point.name + ': </span>' +
+                    return '<span style="font-weight:500; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); text-transform:uppercase">' + this.point.name + ': </span>' +
                         '<span style="font-size: 18px; color: yellow; vertical-align: middle; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">&bull;</span> ' +
                         Highcharts.numberFormat(this.point.value)+"%";
                 },
@@ -1347,10 +1347,10 @@ const Mapchart=Highcharts.mapChart('Map-data', {
 
         // color coding based on perfomace
         stops: [
-            [0, '#dc3545'],  // Below 30% - Bright Red (to highlight poor performance)
-            [0.8, '#ffb703'], // 30% to 60% - Bright Orange (for below average)
-            [0.9, '#2ca02c'], // 60% to 100% - Bright Green (for good performance)
-            [1, '#1f77b4']    // Above 100% - Dark Blue (for exceptional performance)
+            [0, '#dc3545'],  // Below 30% - Bright Red (to highlight poor performance) - Under performing
+            [0.8, '#ffb703'], // 30% to 60% - Bright Orange (for below average)- below Average
+            [0.9, '#2ca02c'], // 60% to 100% - Bright Green (for good performance)- Performing
+            [1, '#1f77b4']    // Above 100% - Dark Blue (for exceptional performance)- above target
         ],
     },
     dataLabels: {

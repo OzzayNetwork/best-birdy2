@@ -1630,6 +1630,9 @@ opacity: 25%;
 #active-users-comparison{
     background: #eff2f7;
 }
+.text-underline{
+    text-decoration: underline !important;
+}
 
 
 
