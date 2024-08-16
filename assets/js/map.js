@@ -1707,7 +1707,7 @@ const Mapchart=Highcharts.mapChart('Map-data', {
     },
 
     chart: {
-        height: 600,
+        height: "70%",
         style: {
             fontFamily: '"Poppins",sans-serif'
         }

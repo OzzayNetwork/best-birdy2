@@ -607,7 +607,7 @@
                  
                     <!-- quick stats -->
                     <div class="row">
-                        <div class="col-xl-4 px-sm-30px d-non">
+                        <div class="col-xl-5 col-lg-4 px-sm-30px d-non col-md-12">
                             <div class="card member-wedges-card">
                                 <div class="card-header bg-transparent border-bottom">
                                     <div class="">
@@ -632,12 +632,14 @@
                                     </div>
                                 </div>
                                <div class="card-body">
-                                    <div id="container-revenue" style="height: 350px; width: 100%;"></div>
-                                    <div></div>
+                                    <div id="revstreamtwo" style="height: 350px; width: 100%;"></div>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a href="reports-stream-details.html" class="btn btn-primary btn-sm">View More <i class="bx bx-right-arrow-alt"></i></a>
+                                    </div>
                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-8 px-sm-30px">
+                        <div class="col-lg-8 col-xl-7 px-sm-30px col-md-12">
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="card calc-heigt8 card-blue-1 card-green-1">
@@ -677,7 +679,7 @@
 
                                         <div class="card-footer  text-uppercase  m-0 border-radius-0 rev-type-cont">
                                             <div class="d-flex justify-content-between w-100 fw-bold text-white" title="Health Related Revenues for Today">
-                                                <span class="mr-2">Health Revenues</span>
+                                                <span class="mr-2">Health </span>
                                                 <span class="text-right">432,890 (45%)</span>
                                             </div>
                                             <!-- the length of the percentage holder shopuld be equivalent to how much revenue it has contributed in % -->
@@ -741,7 +743,7 @@
 
                                         <div class="card-footer  text-uppercase  m-0 border-radius-0 rev-type-cont">
                                             <div class="d-flex justify-content-between w-100 fw-bold text-white" title="Health Related Revenues for Today">
-                                                <span class="mr-2">Health Revenues</span>
+                                                <span class="mr-2">Health </span>
                                                 <span class="text-right">432,890 (45%)</span>
                                             </div>
                                             <!-- the length of the percentage holder shopuld be equivalent to how much revenue it has contributed in % -->
@@ -805,7 +807,7 @@
 
                                         <div class="card-footer  text-uppercase  m-0 border-radius-0 rev-type-cont">
                                             <div class="d-flex justify-content-between w-100 fw-bold text-white" title="Health Related Revenues for Today">
-                                                <span class="mr-2">Health Revenues</span>
+                                                <span class="mr-2">Health </span>
                                                 <span class="text-right">432,890 (5%)</span>
                                             </div>
                                             <!-- the length of the percentage holder shopuld be equivalent to how much revenue it has contributed in % -->
@@ -883,7 +885,7 @@
 
                                         <div class="card-footer border-top alert-info text-uppercase alert m-0 border-radius-0">
                                             <div class="d-flex justify-content-between w-100 fw-bold " title="Health Revenues collections for this Month">
-                                                <span class="mr-2">Health Revenues</span>
+                                                <span class="mr-2">Health </span>
                                                 <span class="text-right">56,000 (45%)</span>
                                             </div>
                                         </div>
@@ -959,7 +961,7 @@
 
                                         <div class="card-footer border-top alert-success text-uppercase alert m-0 border-radius-0">
                                             <div class="d-flex justify-content-between w-100 fw-bold " title="Health Revenues collections for this Financial Year">
-                                                <span class="mr-2">Health Revenues</span>
+                                                <span class="mr-2">Health </span>
                                                 <span class="text-right">56,000 (45%)</span>
                                             </div>
                                         </div>
@@ -987,6 +989,164 @@
                             </div>
                         </div>
                         <!-- end of quick stats -->
+
+                        <!-- map view starts here -->
+                         <div class="col-12">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-7 col-sm-12 col-md-7 d-flex flex-column">
+                                        <div class="bg-primary bg-soft w-100 h-50  position-relative flex-grow-1 " id="map">
+                                          
+                                        </div>
+
+                                        <!-- the map key starts here -->
+                                        <div class="border-right-1">
+                                           
+
+                                           <div class="row">
+                                                <div class="col-7 col-sm-12 col-md-7 border-right-1">
+                                                    <div class="p-3">
+                                                        <div class="text-muted my-3 me-0 d-flex align-items-end mb-3 justify-content-end">
+                                                            <div class="me-3">
+                                                                <div class="d-flex">
+                                                                    <h4 class="mb-0">345</h4>
+                                                                    <div>
+                                                                        <span class="badge bg-success ms-1 align-bottom badge-sm" title="users newly added into the system in the last 7 days">+3</span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="mb-0 text-nowrap">Registered Users</p>
+                                                            </div>
+
+                                                            <div class="input-group input-group-sm   fw-semibold text-uppercase me-0" title="Select the end date for which the invoices were supposedly created">
+                                                                
+                                                                <select name="" class="form-select">
+                                                                    <option value="" disabled="">Select category</option>
+                                                                    <option value="" selected="">All Categories</option>
+                                                                    <option value="">Collectors</option>
+                                                                    <option value="">Licensing Officers</option>
+                                                                    <option value="">Revenue Officer</option>
+                                                                </select>
+                
+                                                              
+                                                                <select name="" class="form-select" id="">
+                                                                    <option value="" disabled="">Select Sub County</option>
+                                                                    <option value="" selected="">All Sub Counties</option>
+                                                                    <option value="">Homa Bay Town</option>
+                                                                    <option value="">Rachuonyo South</option>
+                                                                    <option value="">Rachuonyo North</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <!-- users graph -->
+                                                        <div id="user-accounts" class="border-info p-1"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 col-sm-12 col-md-5">
+                                                    <div class="p-3">
+                                                        <div class="input-group input-group-sm pt-4  fw-semibold text-uppercase me-0" title="Select the end date for which the invoices were supposedly created">
+                                                                
+                                                            <select name="" class="form-select w-auto">
+                                                                <option value="" disabled="">Select category</option>                                                              
+                                                                <option value="" selected>Collectors</option>
+                                                                <option value="">Licensing Officers</option>
+                                                                <option value="">Revenue Officer</option>
+                                                            </select>
+            
+                                                        </div>
+
+                                                        <div id="active-users-comparison"></div>
+                                                        <div class="d-flex mt-3">
+                                                            <div>
+                                                                <div class="avatar-xs me-3">
+                                                                    <span class="avatar-title rounded-circle bg-danger bg-soft text-danger font-size-18">
+                                                                        <i class="mdi mdi-exclamation-thick"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 ">
+                                                                <div>
+                                                                    <h5 class="font-size-14">Urgent !</h5>
+                                                                    <p class="text-muted">Over <strong class="text-danger">90%</strong> of <strong class="text-danger">Rachuonyo North</strong> collectors are inactive, threatening revenue collections. Immediate action is needed!</p>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                        </div>
+                                        <!-- end of map keys -->
+                                         
+                                    </div>
+                                    <div class="col-sm-12 col-md-5">
+                                        <div class="card-body pl-0">
+                                            <div>
+                                                <h4 class="card-title">Revenue Perfomance By Sub County</h4>
+                                                <hr>
+                                            </div>
+
+                                            <div id="Map-data" class="border-info p-1"></div>
+                                            <div class="table-responsive font-12">
+                                                <table class="table table-sm font-12 sources-table text-uppercase text-blac">
+                                                    <thead>
+                                                        <tr class="font-weight-bold table-light text-black">
+                                                            <th scope="col">Sub County</th>
+                                                            <th scope="col" class="text-right">Today <span class="mdi mdi-menu-down text-danger fs-5"></span></th>
+                                                            <th scope="col" class="text-right">FY <span class="mdi mdi-menu-down text-danger fs-5"></span></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="align-middle text-uppercase ">
+                                                        <tr value="[object Object]" style="cursor: pointer;" class="text-uppercase">
+                                                            <!-- if the collections are above target -->
+                                                            <th scope="row"><small class="mdi mdi-rectangle text-success "></small> Mvita</th>
+                                                            <td class="text-right">93,681 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right">1,675,191 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
+                                                        </tr>
+                                                        <tr value="[object Object]" style="cursor: pointer;">
+                                                            <!-- if collections are performing in relation to the target -->
+                                                            <th scope="row"><small class="mdi mdi-rectangle text-info "></small> Nyali</th>
+                                                            <td class="text-right">97,220 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right">1,493,250 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
+                                                        </tr>
+                                                        <tr value="[object Object]" style="cursor: pointer;">
+                                                            <!-- if collections are below target in relation to the target -->
+                                                            <th scope="row"><small class="mdi mdi-rectangle text-warning"></small> Likoni</th>
+                                                            <td class="text-right">55,630 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right">1,147,013 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
+                                                        </tr>
+                                                        <tr value="[object Object]" style="cursor: pointer;">
+                                                            <!-- if collections are underperforming in relation to the target -->
+                                                            <th scope="row"><small class="mdi mdi-rectangle text-danger"></small> Changamwe</th>
+                                                            <td class="text-right">74,120 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right">705,642 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
+                                                        </tr>
+                                                        <tr value="[object Object]" style="cursor: pointer;">
+                                                            <th scope="row"><small class="mdi mdi-rectangle text-success"></small> Jomvu</th>
+                                                            <td class="text-right">53,660 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right">647,090 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
+                                                        </tr>
+                                                        <tr value="[object Object]" style="cursor: pointer;">
+                                                            <th scope="row"><small class="mdi mdi-rectangle text-success"></small> Kisauni</th>
+                                                            <td class="text-right">67,800 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right">616,541 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
+                                                        </tr>
+                                                        <tr style="background: rgb(206, 233, 216);" class="text-black">
+                                                            <th><small class="mdi mdi-rectangle text-danger"></small> <strong>Total</strong></th>
+                                                            <th class="text-right">KES 515,371 <span class="mdi mdi-menu-down text-danger fs-5"></span></th>
+                                                            <th class="text-right">KES 7,237,787 <span class="mdi mdi-menu-down text-danger fs-5"></span></th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                
+                                            </div>
+                                       </div> 
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <!-- end of map view -->
 
                         <!-- table view -->
                         <div class="col-12 px-sm-30px">
@@ -1022,37 +1182,37 @@
                                                     <tbody class="align-middle">
                                                         <tr value="[object Object]" style="cursor: pointer;">
                                                             <!-- if the collections are above target -->
-                                                            <td scope="row"><small class="mdi mdi-rectangle text-success "></small> Mvita</td>
-                                                            <td class="text-right">93,681 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
-                                                            <td class="text-right" class="">1,675,191 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
+                                                            <th scope="row"><small class="mdi mdi-rectangle text-success text-black fw-bold"></small> Mvita</th>
+                                                            <td class="text-right">93,681 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right" class="">1,675,191 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
                                                         </tr>
                                                         <tr value="[object Object]" style="cursor: pointer;">
                                                             <!-- if collections are performing in relation to the target -->
                                                             <td scope="row"><small class="mdi mdi-rectangle text-info "></small> Nyali</td>
-                                                            <td class="text-right">97,220 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
-                                                            <td class="text-right">1,493,250 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
+                                                            <td class="text-right">97,220 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right">1,493,250 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
                                                         </tr>
                                                         <tr value="[object Object]" style="cursor: pointer;">
                                                             <!-- if collections are below target in relation to the target -->
                                                             <td scope="row"><small class="mdi mdi-rectangle text-warning"></small> Likoni</td>
-                                                            <td class="text-right">55,630 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
-                                                            <td class="text-right">1,147,013 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
+                                                            <td class="text-right">55,630 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right">1,147,013 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
                                                         </tr>
                                                         <tr value="[object Object]" style="cursor: pointer;">
                                                             <!-- if collections are underperforming in relation to the target -->
                                                             <td scope="row"><small class="mdi mdi-rectangle text-danger"></small> Changamwe</td>
-                                                            <td class="text-right">74,120 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
-                                                            <td class="text-right">705,642 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
+                                                            <td class="text-right">74,120 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right">705,642 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
                                                         </tr>
                                                         <tr value="[object Object]" style="cursor: pointer;">
                                                             <td scope="row"><small class="mdi mdi-rectangle text-success"></small> Jomvu</td>
-                                                            <td class="text-right">53,660 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
-                                                            <td class="text-right">647,090 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
+                                                            <td class="text-right">53,660 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right">647,090 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
                                                         </tr>
                                                         <tr value="[object Object]" style="cursor: pointer;">
                                                             <td scope="row"><small class="mdi mdi-rectangle text-success"></small> Kisauni</td>
-                                                            <td class="text-right">67,800 <span class="mdi mdi-menu-up text-success fs-4"></span></td>
-                                                            <td class="text-right">616,541 <span class="mdi mdi-menu-down text-danger fs-4"></span></td>
+                                                            <td class="text-right">67,800 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
+                                                            <td class="text-right">616,541 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
                                                         </tr>
                                                         <tr style="background: rgb(206, 233, 216);">
                                                             <th><strong>Total</strong></th>
@@ -1778,14 +1938,14 @@
                                                         <label
                                                             class="input-group-text text-uppercase">Subcounties</label>
                                                        <select class="form-select form-select-sm">
-    <option value="JA" selected>All Subcounties</option>
-    <option value="Mvita">Mvita Subcounty</option>
-    <option value="Nyali">Nyali Subcounty</option>
-    <option value="Likoni">Likoni Subcounty</option>
-    <option value="Changamwe">Changamwe Subcounty</option>
-    <option value="Jomvu">Jomvu Subcounty</option>
-    <option value="Kisauni">Kisauni Subcounty</option>
-</select>
+                                                            <option value="JA" selected>All Subcounties</option>
+                                                            <option value="Mvita">Mvita Subcounty</option>
+                                                            <option value="Nyali">Nyali Subcounty</option>
+                                                            <option value="Likoni">Likoni Subcounty</option>
+                                                            <option value="Changamwe">Changamwe Subcounty</option>
+                                                            <option value="Jomvu">Jomvu Subcounty</option>
+                                                            <option value="Kisauni">Kisauni Subcounty</option>
+                                                        </select>
 
 
                                                     </div>
@@ -2558,7 +2718,322 @@
 
         </script>
 
+        <!-- comparisson two -->
 
+        <script>
+           
+           Highcharts.chart('revstreamtwo', {
+    colors: ['#285430', '#5F8D4E', '#D4D4CE'],
+    chart: {
+        type: 'column',
+        inverted: true,
+        polar: true,
+        style: {
+            fontFamily: 'Montserrat, sans-serif' // Apply Montserrat font
+        }
+    },
+    title: {
+        text: null,
+        align: 'left',
+        style: {
+            fontWeight: 'bold' // Make the title bold
+        }
+    },
+    tooltip: {
+        outside: true,
+        shared: true,
+        style: {
+            fontSize: '10px', // Set font size to 10px
+            fontWeight: 'bold', // Make tooltip text bold
+            fontFamily: 'Montserrat, sans-serif' // Apply Montserrat font
+        },
+        headerFormat: '<span class="pb-3" style="font-size: 12px; font-weight: bold; text-transform: uppercase; margin-bottom:7px;">{point.key}</span><br/>', // Bold and capitalize title
+        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b class="text-right">KES {point.y}</b><br/>' // Show series name and value
+    },
+    pane: {
+        size: '85%',
+        innerSize: '20%',
+        endAngle: 270
+    },
+    xAxis: {
+        tickInterval: 1,
+        labels: {
+            align: 'right',
+            useHTML: true,
+            allowOverlap: true,
+            step: 1,
+            y: 3,
+            style: {
+                fontSize: '12px' // Reduce font size to 12px
+                /* fontWeight: 'bold' */ // Commented out to keep labels normal
+            }
+        },
+        lineWidth: 0,
+        gridLineWidth: 0,
+        categories: [
+            'CESS Fees <span class="f16"><span id="flag" class="flag no">' +
+            '</span></span>',
+            'Parking <span class="f16"><span id="flag" class="flag us">' +
+            '</span></span>',
+            'SBP <span class="f16"><span id="flag" class="flag de">' +
+            '</span></span>',
+            'Market Fees <span class="f16"><span id="flag" class="flag at">' +
+            '</span></span>',
+            'Plot Rent Fees <span class="f16"><span id="flag" class="flag ca">' +
+            '</span></span>'
+        ]
+    },
+    yAxis: {
+        lineWidth: 0,
+        tickInterval: 25000, // Adjusted tick interval for better readability
+        reversedStacks: false,
+        endOnTick: true,
+        showLastLabel: true,
+        gridLineWidth: 0,
+        labels: {
+            style: {
+                fontSize: '12px', // Reduce font size to 12px
+                fontWeight: 'bold' // Make the y-axis labels bold
+            }
+        }
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            borderWidth: 0,
+            pointPadding: 0,
+            groupPadding: 0.15,
+            borderRadius: '0%',
+            dataLabels: {
+                enabled: false // Disable data labels
+            }
+        }
+    },
+    legend: {
+        itemStyle: {
+            fontSize: '10px', // Set font size of legend labels to 10px
+            fontWeight: 'bold', // Make legend labels bold
+            fontFamily: 'Montserrat, sans-serif' // Apply Montserrat font
+        }
+    },
+    series: [{
+        name: 'Mpesa Payments',
+        data: [80000, 70000, 60000, 40000, 50000] // Original values
+    }, {
+        name: 'Bank Payments',
+        data: [50000, 60000, 50000, 40000, 30000] // Original values
+    }, {
+        name: 'Unpaid Invoices',
+        data: [30000, 40000, 30000, 20000, 20000] // Original values
+    }]
+});
+
+
+      </script>
+
+      <!-- the user accounts bar graph -->
+       <script>
+        Highcharts.chart('user-accounts', {
+    chart: {
+        type: 'bar',
+        height: 150, // Set the height of the chart to 200px
+        with:'100%'
+    },
+    title: {
+        text: null // Remove the title
+    },
+    xAxis: {
+        categories: ['User Accounts'],
+        lineWidth: 0, // Remove the X-axis line
+        labels: {
+            enabled: false // Disable X-axis labels
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: null // Remove the Y-axis title
+        },
+        gridLineWidth: 0, // Remove grid lines
+        labels: {
+            enabled: false // Disable Y-axis labels
+        }
+    },
+    legend: {
+        layout: 'horizontal', // Align legend items horizontally
+        align: 'left', // Align the legend to the left
+        verticalAlign: 'bottom', // Align the legend to the bottom
+        x: -10, // Offset from the left edge
+        y: 0, // Offset from the top edge
+        reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal',
+            pointWidth: 30, // Set the width of the column
+            dataLabels: {
+                enabled: true
+            },
+            borderWidth: 2 // Increase the border width around each bar
+        }
+    },
+    tooltip: {
+        pointFormat: '<span style="color:black">{series.name}</span>: <b>KES {point.y}</b> ({point.percentage:.1f}%)<br/>', // Show value and percentage
+        shared: false // Show tooltip for individual series
+    },
+    series: [{
+        name: 'Active Users',
+        data: [700], // Adjusted data
+        color: '#28a745' // Green color for Active Users
+    }, {
+        name: 'Inactive Users',
+        data: [140], // Adjusted data
+        color: '#dc3545' // Red color for Inactive Users
+    }, {
+        name: 'Dormant Users',
+        data: [105], // Adjusted data
+        color: '#ffc107' // Yellow color for Dormant Users
+    }, {
+        name: 'Offline Users',
+        data: [56], // Adjusted data
+        color: '#6c757d' // Gray color for Offline Users
+    }, {
+        name: 'Blocked Users',
+        data: [35], // Adjusted data
+        color: '#17a2b8' // Teal color for Blocked Users
+    }, {
+        name: 'Deactivated Users',
+        data: [21], // Adjusted data
+        color: '#343a40' // Dark gray color for Deactivated Users
+    }],
+    exporting: {
+        enabled: false // Disable the export options button
+    }
+});
+
+       </script>
+       <!-- end of user accounts graph -->
+
+
+       <!-- active users comparison -->
+        <script>
+            Highcharts.chart('active-users-comparison', {
+
+chart: {
+    type: 'gauge',
+    plotBackgroundColor: null,
+    plotBackgroundImage: null,
+    plotBorderWidth: 0,
+    plotShadow: false,
+    height: '60%'
+},
+
+title: {
+    text: '' // Set to an empty string to remove the title
+},
+
+pane: {
+    startAngle: -90,
+    endAngle: 89.9,
+    background: null,
+    center: ['50%', '75%'],
+    size: '110%'
+},
+
+// Disable exporting options
+exporting: {
+    enabled: false
+},
+
+// the value axis
+yAxis: {
+    min: 0,
+    max: 100, // Gauge max value set to 100 for percentage
+    tickPixelInterval: 72,
+    tickPosition: 'inside',
+    tickColor: Highcharts.defaultOptions.chart.backgroundColor || '#FFFFFF',
+    tickLength: 20,
+    tickWidth: 2,
+    minorTickInterval: null,
+    labels: {
+        distance: 20,
+        style: {
+            fontSize: '14px'
+        },
+        format: '{value}%' // Show percentage on labels
+    },
+    lineWidth: 0,
+    plotBands: [{
+        from: 0,
+        to: 50,
+        color: '#DF5353', // Red for poor performance (more inactive users)
+        thickness: 20
+    }, {
+        from: 50,
+        to: 75,
+        color: '#DDDF0D', // Yellow for average performance
+        thickness: 20
+    }, {
+        from: 75,
+        to: 100,
+        color: '#55BF3B', // Green for good performance (more active users)
+        thickness: 20
+    }]
+},
+
+series: [{
+    name: 'Active Users',
+    data: [70], // Percentage of active users
+    tooltip: {
+        valueSuffix: '%'
+    },
+    dataLabels: {
+        format: '{y}%, {x} Active users', // Shows percentage and actual number of active users
+        borderWidth: 0,
+        color: (
+            Highcharts.defaultOptions.title &&
+            Highcharts.defaultOptions.title.style &&
+            Highcharts.defaultOptions.title.style.color
+        ) || '#333333',
+        style: {
+            fontSize: '16px'
+        },
+        formatter: function() {
+            const totalUsers = 1000; // Replace with the actual total number of users
+            const activeUsers = (this.y / 100) * totalUsers;
+            return `${this.y}%, ${Math.round(activeUsers)} users`;
+        }
+    },
+    dial: {
+        radius: '80%',
+        backgroundColor: 'gray',
+        baseWidth: 12,
+        baseLength: '0%',
+        rearLength: '0%'
+    },
+    pivot: {
+        backgroundColor: 'gray',
+        radius: 6
+    }
+}]
+});
+
+
+        </script>
+       <!-- end of active users comparisons -->
+
+       <!-- map view -->
+        
+    <!-- the map -->
+    <script src="assets/js/live-map-dashboard.js"></script>
+
+    <!-- axios to be used for geocoding -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js " integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin=" anonymous "></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl3dCvpVQUs04SOTCHgITw4Ts79-dRcfI&callback=initMap ">
+    </script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl3dCvpVQUs04SOTCHgITw4Ts79-dRcfI&callback=initMap&libraries=places&v=weekly " defer>
+    </script>
+        <!-- end of map view -->
 
 
 

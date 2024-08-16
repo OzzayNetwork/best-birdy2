@@ -1618,6 +1618,19 @@ opacity: 25%;
     background-size: cover;
     
 }
+.highcharts-credits{
+    display: none;
+}
+.border-right-1{
+    border-right: 1px solid #eff2f7;
+}
+#user-accounts{
+    border: #607D8B solid 1px;
+}
+#active-users-comparison{
+    background: #eff2f7;
+}
+
 
 
 
