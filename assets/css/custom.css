@@ -754,11 +754,13 @@ table.logs-table tr td {
 }
 
 body[data-sidebar=dark] .navbar-brand-box {
-    background: #00226c;
+    background: #006215;
 }
 
 body[data-sidebar=dark] .vertical-menu {
-    background: #023382;
+    background: linear-gradient(to bottom, rgb(0 98 21), rgb(5 2 88 / 6%)), url("../images/side-bar-img/boat2.jpg");
+background-size: cover; /* Adjust if you need the gradient to cover the whole element */
+background-position: bottom;
 }
 
 .navbar-brand-box .logo-sm {
@@ -769,6 +771,9 @@ body[data-sidebar=dark] .vertical-menu {
 
 body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul ul {
     background-color: #0b5604;
+    background-image: url(/assets/images/side-bar-img/);
+
+   
 }
 
 body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a {
