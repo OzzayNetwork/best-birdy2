@@ -758,7 +758,8 @@ body[data-sidebar=dark] .navbar-brand-box {
 }
 
 body[data-sidebar=dark] .vertical-menu {
-    background: linear-gradient(to bottom, rgb(0 98 21), rgb(5 2 88 / 6%)), url("../images/side-bar-img/boat2.jpg");
+    background: linear-gradient(to bottom, rgb(0 98 21), rgb(5 2 88 / 36%)), url("../images/side-bar-img/boat2.jpg");
+
 background-size: cover; /* Adjust if you need the gradient to cover the whole element */
 background-position: bottom;
 }
