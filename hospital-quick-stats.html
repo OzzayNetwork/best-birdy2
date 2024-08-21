@@ -599,13 +599,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Alcoholic Drinks Licence Quick Stats</h4>
+                                <h4 class="mb-sm-0 font-size-18">Hospital Revenues Certificate</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Certificates & Licenses</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Fire Certificates</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Hospital Collections</a></li>
                                         <li class="breadcrumb-item active">Quick Stats</li>
                                     </ol>
                                 </div>
@@ -631,23 +630,17 @@
                                     <div class="collapse navbar-collapse justify-content-between active"
                                         id="navbarNavAltMarkup">
                                         <div class="navbar-nav">
-                                                <a class="nav-item nav-link" href="cert-alcohol-stats.html" title="Quick stats">Overview</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-ongoing.html" title="Newly registered applications">Applications</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-inspection.html" title="applications pending inspection">Pending Inspection</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-court.html" title="Applications pending court/Commitee review">Court Review</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-approval1.html" title="Applications pending court/Commitee review">1st Approval</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-finalApproval.html" title="Applications pending court/Commitee review">Final Approval</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-approved.html" title="Invoices for Approved Applications">Approved</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-declined.html" title="Get to see a list of all declined applications">Declined </a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-restored.html" title="Applications that were once declined but got restored at some point">Restored</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-cert-invoices.html" title="Table with all invoices relating to ALCOHOLIC DRINKS LICENCE">Invoices</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-active.html" title="List of all active ALCOHOLIC DRINKS LICENCE">Active</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-expired.html" title="List of Outlets with expired certificates">Expired</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-map.html" title="Mapping on the Certificates">Map</a>
+                                                <a class="nav-item nav-link" href="hospital-quick-stats.html" title="Quick stats">Overview</a>
+                                                <a class="nav-item nav-link" href="hospital-sources.html" title="Newly registered applications">Revenue Sources</a>
+                                                <a class="nav-item nav-link" href="hospital-unpaid-invoices.html" title="applications pending inspection">Unpaid Invoices</a>
+                                                <a class="nav-item nav-link" href="hospital-daily-cllections.html" title="Applications pending court/Commitee review">Daily Collections</a>
+                                                <a class="nav-item nav-link" href="hospital-facilities.html" title="Applications pending court/Commitee review">Collections By Facilities</a>
+                                                <a class="nav-item nav-link" href="hospital-invoices.html" title="Applications pending court/Commitee review">Receipted Invoices</a>
+                                                
                                             </div>
 
                                         <form class="form-inline my-2 my-lg-0">
-                                            <button type="button"  class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" data-toggle="modal" data-target=".new-alcohol-application">New Application</button>
+                                            <button type="button"  class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" data-toggle="modal" data-target=".new-hospital-invoice">Create Invoice</button>
                                           </form>
                                         
 
@@ -1668,428 +1661,144 @@
             <!-- invoice details -->
 
             <!-- Bill creation modal -->
-            <div class="modal fade new-alcohol-application" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+            <div class="modal fade new-hospital-invoice" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header liq-header">
-                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Alcoholic Drinks Licence New Application</h5>
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Create New Invoice</h5>
                            
                             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body pb-4 searching-modal-body">
-                            <div class="row">
-                                <div class="col-md-12 mb-3">
-                                    <label for="">Search or Input establishment details</label>
-                                    <select class="form-select liq-search-method" >
-                                        <option value="">Select Search Method</option>
-                                        <option value="search">Search from Existing Registered Businesses</option>
-                                        <option class="register">Unregestered Business</option>                                      
-                                    </select>
-
-                                   
+                       <div class="modal-body">
+                            <div class="row selecting-service">
+                                <div class="col-6">
+                                    <div class="">
+                                        <label for="">Clients Full Names</label>
+                                        <input type="text" class="form-control mb-4" placeholder="eg Jane Doe">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="row">
+                                <div class="col-6">
+                                    <div class="">
+                                        <label for="">Phone Number</label>
+                                        <input type="text" class="form-control mb-4" placeholder="eg 0704549859">
+                                    </div>
+                                </div>
 
-                                <!-- searching for an already registered business that has a valid certificate generated from the system -->
-                                <div class="col-12 business-id-search d-none">
-                                    <label for="">Search For Business To continue</label>
-                                    <div class="input-group mb-3">
-                                        
-                                        <input type="text" class="form-control" placeholder="Enter Business ID">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light search-bz-btn">
-                                            <i class="bx bx-search-alt-2 font-size-16 align-middle me-2"></i> Search
-                                        </button>
-                                      </div>
+                                <div class="col-6">
+                                    <div class="">
+                                        <label for="">Email Address</label>
+                                        <input type="email" class="form-control mb-4" placeholder="eg email@email.com">
+                                    </div>
+                                </div>
 
-                                      <!-- business serach results start here display only  when there are results to be shown -->
-                                      <div class="row pt-3">
-
-                                        <!-- use this loader when serching for the business -->
-                                        <div  class="searching-biz-loader d-none">
-                                            <div class="loader-modal p-5">
-                                                <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
-                                                    <div class="spinner-border text-dark m-1" role="status">
-                                                        <span class="sr-only fw-bold">Searching</span>
-                                                    </div>
-                                                    <p class="pt-4 fw-strong text-uppercase fw-bold">Please wait patiently while our system looks <br> for the business.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 biz-search-results d-none">
-                                            <table class="table table-sm text-uppercase table-striped">
-                                                <thead class="table-dark">
-                                                    <th colspan="2">Search Results for Business with <span class="text-warning">Business ID 1234</span></th>
+                              
+                                <!-- creatong the new invoice modal -->
+                                <div class="col-12 mt-2">
+                                    <div class="col-12">
+                                        <div class="">
+                                            <table class="table table-editable-1 align-middle table-edits">
+                                                <thead class="table-light">
+                                                    <tr class="text-uppercase table-dark">
+                                                        <th>#</th>
+                                                        <th>Service Category</th>
+                                                        <th class="">Service sub Category</th>
+                                                        
+                                                        <th></th>
+                                                    </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <th>
-                                                            Name of Establishment
-                                                        </th>
+                                                    <tr data-id="1">
+                                                        <td style="width: 80px">1.</td>
+                                                        <td class="">
+                                                            <select class="form-control selectpicker form-select" data-live-search="true" title="Select Service Category" data-style="form-select btn border">
+                                                                <option value="" disabled>Select Service Category</option>
+                                                                <option value=""> Service Category one</option>
+                                                                <option value=""> Service Category two</option>
+                                                                <option value=""> Service Category three</option>
+                                                                <option value=""> Service Category four</option>
+                                                                <option value=""> Service Category five</option>
+                                                            </select>
+                                                        </td>
                                                         <td>
-                                                            The big Palace Bar and Grill
+                                                            <select class="form-control selectpicker form-select" data-live-search="true" title="Select Service Subcategory" data-style="form-select btn border">
+                                                                <option value="" disabled>Select Service Category</option>
+                                                                <option value="">Category one</option>
+                                                                <option value="">Category two</option>
+                                                                <option value="">Category three</option>
+                                                                <option value="">Category four</option>
+                                                                <option value="">Category five</option>
+                                                            </select>
+                                                            
+                                                        </td>
+                                                       
+                                                        <td></td>
+
+                                                    </tr>
+
+                                                    <tr class="cloneCharges d-none">
+                                                        <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                        <td class="">
+                                                            <select class="form-control selectpicker form-select" data-live-search="true" title="Select Service Category" data-style="form-select btn border">
+                                                                <option value="" disabled>Select Service Category</option>
+                                                                <option value=""> Service Category one</option>
+                                                                <option value=""> Service Category two</option>
+                                                                <option value=""> Service Category three</option>
+                                                                <option value=""> Service Category four</option>
+                                                                <option value=""> Service Category five</option>
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <select class="form-control selectpicker form-select" data-live-search="true" title="Select Service Subcategory" data-style="form-select btn border">
+                                                                <option value="" disabled>Select Service Category</option>
+                                                                <option value="">Category one</option>
+                                                                <option value="">Category two</option>
+                                                                <option value="">Category three</option>
+                                                                <option value="">Category four</option>
+                                                                <option value="">Category five</option>
+                                                            </select>
+                                                            
+                                                        </td>
+                                                        
+
+                                                        <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                            <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
                                                         </td>
                                                     </tr>
 
-                                                    <tr>
-                                                        <th>
-                                                            Sub County
-                                                        </th>
-                                                        <td>
-                                                            Rachuonyo South Subcounty
-                                                        </td>
-                                                    </tr>
 
-                                                    <tr>
-                                                        <th>
-                                                            Ward
-                                                        </th>
-                                                        <td>
-                                                            Name of the Ward
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Physical Address
-                                                        </th>
-                                                        <td>
-                                                            Next to the Big Super Market
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Building/Name of Premiscess
-                                                        </th>
-                                                        <td>
-                                                            The big Tower
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Postal Address
-                                                        </th>
-                                                        <td>
-                                                            123-100009 Eldoret
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Applicant's Name
-                                                        </th>
-                                                        <td>
-                                                            John Doe
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Phone Number
-                                                        </th>
-                                                        <td>
-                                                            0701234567
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Email Address
-                                                        </th>
-                                                        <td>
-                                                            email@mail.com
-                                                        </td>
-                                                    </tr>
                                                 </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                            <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add Service</span></span>
+                                                        </td>
+                                                    </tr>
+                                                </tfoot>
                                             </table>
-
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <button  target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn">
-                                                        <i class="mdi mdi-checkbox-multiple-marked font-size-16 align-middle me-2"></i> Generate Invoice
-                                                    </button>
-                                                </div>
-                                            </div>
                                         </div>
-
-
-                                        <!-- use this for a search that has no results -->
-                                        <div class="col-12 no-results d-none">
-                                            <div class="p-4 border-radius border-solid border-primary border-2 d-flex flex-column align-items-center justify-content-center">
-                                                <div class="img mb-4 pt-3">
-                                                    <img src="assets/images/no-result-found-icon.svg" style="height: 65px;" class="img" alt="">
-                                                </div>
-                                                <div class="text-center">
-                                                    <h4 class="card-title text-uppercase text-dark">No results Found</h4>
-                                                    <p>
-                                                        The business ID you entered does not correspond to any registered business. Please try your search again <br> to find the desired results.</p>
-                                                    
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                      </div>
-                                      <!-- end of business serach results -->
+                                    </div>
                                 </div>
 
 
-                                <!-- form for registering ann unregistered business -->
-                                <div class="col-12 unregistered-biz-cont d-none">
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="formrow-firstname-input" class="form-label">Name of Establishment</label>
-                                            <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter the Business Name" spellcheck="false" data-ms-editor="true">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-8">
-                                            <div class="row">
 
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Name of Premices</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Building Name" spellcheck="false" data-ms-editor="true">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Sub County</label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>            
-                                                </div>
-        
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Ward</label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>
-            
-                                                </div>
-        
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Zone eg Market, </label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>
-            
-                                                </div>
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Applicant's Name</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="eg John Doe" spellcheck="false" data-ms-editor="true">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Applicant's Postal Address</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="eg 123-001200 Nairobi" spellcheck="false" data-ms-editor="true">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-4">
-                                           <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Physical Address</label>
-                                                        <textarea placeholder="Enter the Business's Physical Address" class="form-control" name="" id="" cols="30" rows="10"></textarea>
-                                                    </div> 
-                                                </div>
-                                           </div>
-                                        </div>
-
-                                        <div class="col-sm-12 col-md-6">
-                                            <div class="mb-3">
-                                                <label for="formrow-firstname-input" class="form-label">Appilicant's Phone</label>
-                                                <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter Phone Number" spellcheck="false" data-ms-editor="true">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-12 col-md-6">
-                                            <div class="mb-3">
-                                                <label for="formrow-firstname-input" class="form-label">Appilicant's Email</label>
-                                                <input type="email" class="form-control" id="formrow-firstname-input" placeholder="email@email.com" spellcheck="false" data-ms-editor="true">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 mt-3">
-                                            <h4 class="text-capitalize">Establishment's Physical location</h4>
-                                            <p>Select the address where this establishmnet is located from this map.</p>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="">
-                                                <div class="card-header bg-white boarder-bottom-1 d-none">
-                                                    <div class="row d-flex justify-content-between">
-                                                        <div class="col-12">
-                                                            <div class="search-box mb-2 me-2">
-                                                                <div class="position-relative">
-                                                                    <input type="text" class="form-control bg-light border-light rounded map-searcher" id="pac-inpu" placeholder="Search for location">
-                                                                    <i class="bx bx-search-alt search-icon"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                
-                                                </div>
-                                                <div class="" style="height: 350px;">
-                                                    <div id="map" class="w-100 mt-1 h-100 live-map-cont main-map-container"></div>
-                                                </div>
-                
-                                            </div>
-                
-                                            <div class="">
-                                                <div class="position-relative ">
-                                                    <!-- map serach input box -->
-                                                    <div class="form-group map-searcher mt-3 pt-3">
-                                                        <input type="text" class="form-control form-control-lg text-black" placeholder="Search for a location" id="pac-input">
-                                                        <button title="Clear search results" class="btn btn-transparent border-0 clear-map"><i class="mdi mdi-close d-none"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <button  target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn">
-                                                <i class="mdi mdi-checkbox-multiple-marked font-size-16 align-middle me-2"></i> Generate Invoice
-                                            </button>
-                                        </div>
-                
-                                       
-
-                                        
-                                    </div>
+                                <div class="col-12 mt-5">
+                                    <button class="btn w-100 text-uppercase button btn-primary">Next</button>
                                 </div>
-                            </div>
-                        </div>
 
-                        <!-- matters payment and billing starts here -->
-
-                        <div class="modal-body d-none receipt-billing-modal-body">
-                            <div class="billing-receipting-loader">
-                                <div class="loader-modal p-5">
-                                    <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
-                                        <div class="spinner-border text-dark m-1" role="status">
-                                            <span class="sr-only">Loading...</span>
-                                        </div>
-                                        <p class="pt-4 fw-strong text-uppercase">Generating Invoice Please Wait</p>
-                                    </div>
-                                </div>
                             </div>
 
-                            <!-- generated invoice results -->
-                            <div class="row generated-invoice d-none">
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <address>
-                                                <strong class="text-capitalize">Invoice Prepared for:</strong>
-                                                <br>Establishment Name: <span class="fw-semibold text-black">The Bar And Grill</span><br>
-                                               Phone: <span class="fw-semibold text-black">0704549859</span>
-                                               <br>
-                                                <br> Prepared on 2023-12-15 10:34:49 By Jane Waweru</address></div>
-                                    </div>
-                                   <div class="table-responsive">
-                                    <table class="table table-nowrap vertical-align-middle table-bordered ">
-                                        <thead class="table-dark">
-                                            <tr class="vertical-align-middle">
-                                                <th style="width: 70px;">1.</th>
-                                                <th class="text-uppercase" colspan="3">
-                                                    Invoice No:. <span class="fw-bold text-warning">BLL123456</span> 
-                                                </th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <thead class="bg-light">
-                                            <tr>
-                                                <th style="width: 70px;">No.</th>
-                                                <th colspan="2">Item Description (X QTY)</th>
-                                                <th class="text-end">Amount</th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tfoot class="bg-light text-uppercase table-bordered">
-                                            <tr>
-                                                <td></td>
-                                                
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    Invoice Sub Total
-                                                </td>
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    KES 500
-                                                </td>
-                                               
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    Amount Paid
-                                                </td>
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    KES 0.00
-                                                </td>
-                                               
-                                            </tr>
-
-                                            <tr class="table-success">
-                                                <td></td>
-                                                
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    Total Payable
-                                                </td>
-                                                <td class="border-0 text-end text-right">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 500</h5>
-                                                </td>
-                                               
-                                            </tr>
-                                        </tfoot>
-                                        <tbody class="text-uppercase">
-                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
-                                                <td>01</td>
-                                                <td colspan="2">
-                                                    <p class="mb-0 p-0 m-0"> ALCOHOLIC DRINKS LICENCE Application (X1)</p>
-                                                </td>
-                                                <td class="text-end text-right">KES 500</td>
-                                                
-                                            </tr>
-
-                                         
-
-
-
-                                            
-                                        </tbody>
-                                    </table>
-                                   </div>
-
-                                   <div class="d-flex text-right justify-content-end align-self-end">
-                                    <button type="button" data-toggle="modal" data-target="#payment-modal" class="btn btn-primary waves-effect btn-label waves-light fw-bold text-uppercase me-3">
-                                        <i class="mdi mdi-send label-icon"></i> Receipt Invoice
-                                    </button>
-                                    <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light fw-semibold text-uppercase" type="button"><i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Invoice</a> 
-                                   </div>
-                                </div>
+                            <div class="invoice-details row">
+                               <div class="col-6">
+                                <address>
+                                    <strong class="text-capitalize">Invoice For:</strong><br>
+                                    Kelvin Otati Mugure<br>
+                                    email@mail.com, 0704 549 859<br>                                   
+                                </address>
+                               </div>
                             </div>
-                            <!-- end of generated receipt results -->
-                        </div>
-
-                        
+                       </div>                        
                     </div>
                     <!-- /.modal-content -->
                 </div>
@@ -2186,6 +1895,10 @@
 
      <!-- active vs expired certificats -->
      <script src="assets/js/pages/expiredVsActiveCerts.js"></script>
+
+      <!-- Table Editable plugin -->
+      <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
+      <script src="assets/js/pages/table-editable.int.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js "></script>
