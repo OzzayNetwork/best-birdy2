@@ -654,129 +654,279 @@
                     <!-- end of toolbar -->
                  <div class="row">
                   <div class="col-12">
-                   <div class="card">
-                    <div class="card-body">
-                        <!-- Main Category: Outpatient Services -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="alert alert-primary fw-bold text-capitalize" role="alert">
-                                    A. Outpatient Services Price List
+                    <div class="card">
+                        <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+
+                            <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+                                <h4 class="card-title text-uppercase mb-0 ">
+                                    Unpaid Invoices for the period 1 January 2024 to 30 January 2024
+                                </h4>
+
+                              
+
+                            </div>
+                           
+                        </div>
+                        <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+
+                            <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+                              <div class="flex-grow-1">
+                                <div class="search-box mb-0 me-3">
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                                        <i class="bx bx-search-alt search-icon"></i>
+                                    </div>
                                 </div>
+                              </div>
+
+                                
+
+                                <div class="input-group  fw-semibold text-uppercase me-3" title="Select the end date for which the invoices were supposedly created">
+                                    <label class="input-group-text text-uppercase">Sub County</label>
+                                    <select name="" class="form-select me-3">
+                                        <option value="" disabled>Select Sub county</option>
+                                        <option value="" selected>All Sub Counties</option>
+                                        <option value="">Homa Bay</option>
+                                        <option value="">Rangwe</option>
+                                    </select>
+
+                                    <label class="input-group-text text-uppercase">Hospital</label>
+                                    <select name="" class="form-select" id="">
+                                        <option value="" disabled>Select Hospital</option>
+                                        <option value="" selected>All Hospitals</option>
+                                        <option value="">Kakadara Hospital</option>
+                                        <option value="">General five Hospital</option>
+                                        <option value="">Homa Hospital</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group  fw-semibold text-uppercase me-3" title="Select the end date for which the invoices were supposedly created">
+                                    <label class="input-group-text text-uppercase">From</label>
+                                    <input class="form-control" placeholder="Start date" type="date">
+
+                                    <label class="input-group-text text-uppercase">To</label>
+                                    <input class="form-control me-3" placeholder="Start date" type="date">
+
+                                    <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                        <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                    </button>
+                                </div>
+
+                               
+                            </div>
+                            <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
+                                <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
                             </div>
                         </div>
-                        <div class="table-responsive mb-5">
+                        <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered border-success mb-0 table-striped">
-                                    <thead class="table-dark">
-                                        <tr>
-                                            <th style="width: 20px;">#</th>
-                                            <th>Billable Item/ Sub-Service</th>
-                                            <th class="text-right">Charges (KES)</th>
+
+                                <table class="table align-middle table-hover  contacts-table table-striped " id="">
+                                    <thead class="table-light">
+                                        <tr class="table-dark t">
+
+                                            <th scope="col">Invoice No.</th>
+                                            <th scope="col">Date Created</th>
+                                            <th scope="col">Invoiced To</th>
+                                            <th scope="col" class="text-nowrap" title="eg Number plate, Business ID, Property Numbers etc">Entity Identifire</th>
+                                            <th scope="col">Sub county</th>
+                                            <th scope="col" class="text-nowrap">Ward</th>
+                                            <th scope="col" class="text-nowrap text-right">Amount Paid</th>
+                                            <th scope="col" class="text-nowrap text-right">Invoice Value</th>
+                                            <th scope="col" class="text-right text-nowrap">Outstanding Balance</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row">1.</th>
-                                            <td>General Consultation</td>
-                                            <td class="text-right">KES 500</td>
+                                            <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
+                                            <td>11 Jan 2023 11:34 AM</td>
+                                            <td class="text-capitalize text-nowrap">
+                                                Njugi Enterproce
+                                            </td>
+                                            <td>12345</td>
+                                            
+                                            <td>
+                                                Homa Bay Town
+                                            </td>
+
+                                            <td class="text-capitalize text-nowrap ">
+                                               CBD
+                                            </td>
+
+                                            <td class="text-capitalize text-right text-info">
+                                                0
+                                            </td>
+                                            <td class="text-capitalize text-right">
+                                                2000
+                                            </td>
+                                            <td class="text-nowrap text-right text-danger fw-bold">
+                                                2000
+                                            </td>
+
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
+                                                  
+                                                </div>
+                                            </td>
                                         </tr>
+
                                         <tr>
-                                            <th scope="row">2.</th>
-                                            <td>Specialist Consultation</td>
-                                            <td class="text-right">KES 1,500</td>
+                                            <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
+                                            <td>11 Jan 2023 11:34 AM</td>
+                                            <td class="text-capitalize text-nowrap">
+                                                Njugi Enterproce
+                                            </td>
+                                            <td>KAD 123T</td>
+                                            
+                                            <td>
+                                                Homa Bay Town
+                                            </td>
+
+                                            <td class="text-capitalize text-nowrap ">
+                                               CBD
+                                            </td>
+
+                                            <td class="text-capitalize text-right text-info">
+                                                0
+                                            </td>
+                                            <td class="text-capitalize text-right">
+                                                2000
+                                            </td>
+                                            <td class="text-nowrap text-right text-danger fw-bold">
+                                                2000
+                                            </td>
+
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
+                                                  
+                                                </div>
+                                            </td>
                                         </tr>
+
                                         <tr>
-                                            <th scope="row">3.</th>
-                                            <td>Laboratory Tests (Basic)</td>
-                                            <td class="text-right">KES 1,200</td>
+                                            <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
+                                            <td>11 Jan 2023 11:34 AM</td>
+                                            <td class="text-capitalize text-nowrap">
+                                                Njugi Enterproce
+                                            </td>
+                                            <td>12345</td>
+                                            
+                                            <td>
+                                                Homa Bay Town
+                                            </td>
+
+                                            <td class="text-capitalize text-nowrap ">
+                                               CBD
+                                            </td>
+
+                                            <td class="text-capitalize text-right text-info">
+                                                0
+                                            </td>
+                                            <td class="text-capitalize text-right">
+                                                2000
+                                            </td>
+                                            <td class="text-nowrap text-right text-danger fw-bold">
+                                                2000
+                                            </td>
+
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
+                                                  
+                                                </div>
+                                            </td>
                                         </tr>
+
                                         <tr>
-                                            <th scope="row">4.</th>
-                                            <td>Laboratory Tests (Advanced)</td>
-                                            <td class="text-right">KES 3,000</td>
+                                            <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
+                                            <td>11 Jan 2023 11:34 AM</td>
+                                            <td class="text-capitalize text-nowrap">
+                                                Njugi Enterproce
+                                            </td>
+                                            <td>12345</td>
+                                            <td>
+                                                Homa Bay Town
+                                            </td>
+
+                                            <td class="text-capitalize text-nowrap ">
+                                               CBD
+                                            </td>
+
+                                            <td class="text-capitalize text-right text-info">
+                                                0
+                                            </td>
+                                            <td class="text-capitalize text-right">
+                                                2000
+                                            </td>
+                                            <td class="text-nowrap text-right text-danger fw-bold">
+                                                2000
+                                            </td>
+
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
+                                                  
+                                                </div>
+                                            </td>
                                         </tr>
+
                                         <tr>
-                                            <th scope="row">5.</th>
-                                            <td>Minor Procedures (e.g., Wound Dressing)</td>
-                                            <td class="text-right">KES 2,000</td>
+                                            <td class="text-capitalize text-nowrap">BLLFSFDS23423</td>
+                                            <td>11 Jan 2023 11:34 AM</td>
+                                            <td class="text-capitalize text-nowrap">
+                                                Njugi Enterproce
+                                            </td>
+                                            <td>12345</td>
+                                            <td>
+                                                Homa Bay Town
+                                            </td>
+
+                                            <td class="text-capitalize text-nowrap ">
+                                               CBD
+                                            </td>
+
+                                            <td class="text-capitalize text-right text-info">
+                                                0
+                                            </td>
+                                            <td class="text-capitalize text-right">
+                                                2000
+                                            </td>
+                                            <td class="text-nowrap text-right text-danger fw-bold">
+                                                2000
+                                            </td>
+
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
+                                                  
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                            <th scope="row">6.</th>
-                                            <td>Pharmacy Services (Prescribed Medication)</td>
-                                            <td class="text-right">KES 800</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">7.</th>
-                                            <td>Immunization (Per Dose)</td>
-                                            <td class="text-right">KES 500</td>
-                                        </tr>
+                                        
                                     </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    
-                        <!-- Main Category: Inpatient Services -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="alert alert-primary fw-bold text-capitalize" role="alert">
-                                    B. Inpatient Services Price List
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table-responsive mb-5">
-                            <div class="table-responsive">
-                                <table class="table table-bordered border-success mb-0 table-striped">
-                                    <thead class="table-dark">
+                                    <tfoot class="table-dark text-uppercase">
                                         <tr>
-                                            <th style="width: 20px;">#</th>
-                                            <th>Billable Item/ Sub-Service</th>
-                                            <th class="text-right">Charges (KES)</th>
+
+                                            <th class="text-uppercase text-nowrap" colspan="6">23 Invoices</th>
+
+                                            <th class="text-right text-info">4000</th>
+                                            <th class="text-right">4000</th>
+                                            <td class="text-nowrap text-right " >
+                                                <span class="fw-semibold text-danger">25,500</span>
+                                            </td>
+
+                                            <td>
+
+                                            </td>
                                         </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1.</th>
-                                            <td>Ward Bed Charges (Per Day)</td>
-                                            <td class="text-right">KES 1,500</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2.</th>
-                                            <td>Surgical Procedure (Minor)</td>
-                                            <td class="text-right">KES 7,000</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3.</th>
-                                            <td>Surgical Procedure (Major)</td>
-                                            <td class="text-right">KES 25,000</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">4.</th>
-                                            <td>Maternity (Normal Delivery)</td>
-                                            <td class="text-right">KES 10,000</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">5.</th>
-                                            <td>Maternity (Caesarean Section)</td>
-                                            <td class="text-right">KES 30,000</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">6.</th>
-                                            <td>Intensive Care Unit (ICU) (Per Day)</td>
-                                            <td class="text-right">KES 15,000</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">7.</th>
-                                            <td>High Dependency Unit (HDU) (Per Day)</td>
-                                            <td class="text-right">KES 10,000</td>
-                                        </tr>
-                                    </tbody>
+                                    </tfoot>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    
-                    
-                   </div>
                   </div>  
                  </div>
                     <!-- end row -->
