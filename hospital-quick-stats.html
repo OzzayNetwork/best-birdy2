@@ -1664,7 +1664,7 @@
             <div class="modal fade new-hospital-invoice" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <div class="modal-header liq-header">
+                        <div class="modal-header ">
                             <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Create New Invoice</h5>
                            
                             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
@@ -1695,14 +1695,16 @@
                               
                                 <!-- creatong the new invoice modal -->
                                 <div class="col-12 mt-2">
+                                   <div class="row">
                                     <div class="col-12">
-                                        <div class="">
+                                        <div class="table-responsive">
                                             <table class="table table-editable-1 align-middle table-edits">
                                                 <thead class="table-light">
                                                     <tr class="text-uppercase table-dark">
                                                         <th>#</th>
                                                         <th>Service Category</th>
                                                         <th class="">Service sub Category</th>
+                                                        <th>QTY</th>
                                                         
                                                         <th></th>
                                                     </tr>
@@ -1730,6 +1732,9 @@
                                                                 <option value="">Category five</option>
                                                             </select>
                                                             
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control form-control-sm" placeholder="Quantity">
                                                         </td>
                                                        
                                                         <td></td>
@@ -1760,6 +1765,10 @@
                                                             </select>
                                                             
                                                         </td>
+
+                                                        <td>
+                                                            <input type="text" class="form-control form-control-sm" placeholder="Quantity">
+                                                        </td>
                                                         
 
                                                         <td class="text-right cell-change d-flex align-items-center justify-content-end">
@@ -1779,17 +1788,19 @@
                                             </table>
                                         </div>
                                     </div>
+                                  
+                                   </div>
                                 </div>
 
 
 
                                 <div class="col-12 mt-5">
-                                    <button class="btn w-100 text-uppercase button btn-primary">Next</button>
+                                    <button class="btn w-100 text-uppercase button btn-primary hospital-invoice-nxt">Next</button>
                                 </div>
 
                             </div>
 
-                            <div class="invoice-details row">
+                            <div class="invoice-details row d-none">
                                <div class="col-6">
                                 <address>
                                     <strong class="text-capitalize">Invoice For:</strong><br>
@@ -1797,6 +1808,96 @@
                                     email@mail.com, 0704 549 859<br>                                   
                                 </address>
                                </div>
+
+                               <div class="col-12">
+                                <div class="table-responsive border-1 mb-3">
+                                    <table class="table table-nowrap vertical-align-middle table-bordered">
+                                        <thead class="table-danger">
+                                            <tr class="vertical-align-middle">
+                                                <th class="text-uppercase" colspan="3">
+                                                    Invoice Details
+                                                </th>
+                                                <th class="text-end">
+                                                    <a href="PrintDocs/Bill/bill.html" target="new" type="button" class="btn btn-info btn-block w-md btn-sm text-uppercase fw-bold" style="margin-left: 10px;">
+                                                        <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                    </a>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <thead class="bg-light">
+                                            <tr>
+                                                <th style="width: 70px;">No.</th>
+                                                <th colspan="2">Service Description (x QTY)</th>
+                                                <th class="text-end">Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot class="bg-light text-uppercase table-bordered">
+                                            <tr>
+                                                <td></td>
+                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                    Invoice Sub Total
+                                                </td>
+                                                <td class="text-right fw-bold text-uppercase">
+                                                    KES 5,500
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                    Amount Paid
+                                                </td>
+                                                <td class="text-right fw-bold text-uppercase">
+                                                    KES 0.00
+                                                </td>
+                                            </tr>
+                                            <tr class="table-success">
+                                                <td></td>
+                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                    Outstanding Balance
+                                                </td>
+                                                <td class="border-0 text-end">
+                                                    <h5 class="m-0 text-uppercase fw-bold">KES 5,500</h5>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr title="General Medical Consultation">
+                                                <td>01</td>
+                                                <td colspan="2">
+                                                    <p class="mb-0 p-0 m-0">General Consultation (X1)</p>
+                                                </td>
+                                                <td class="text-end">KES 1,000</td>
+                                            </tr>
+                                            <tr title="Laboratory Tests">
+                                                <td>02</td>
+                                                <td colspan="2">
+                                                    <p class="mb-0 p-0 m-0">Full Blood Count Test (X1)</p>
+                                                </td>
+                                                <td class="text-end">KES 1,500</td>
+                                            </tr>
+                                            <tr title="Radiology Services">
+                                                <td>03</td>
+                                                <td colspan="2">
+                                                    <p class="mb-0 p-0 m-0">Chest X-ray (X1)</p>
+                                                </td>
+                                                <td class="text-end">KES 2,000</td>
+                                            </tr>
+                                            <tr title="Pharmacy Services">
+                                                <td>04</td>
+                                                <td colspan="2">
+                                                    <p class="mb-0 p-0 m-0">Prescribed Medication (X2)</p>
+                                                </td>
+                                                <td class="text-end">KES 1,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                </div>
+                               </div>
+
+                               <div class="col-12">
+                                    <button class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#payment-modal">Receipt Transaction</button>
+                                </div>
                             </div>
                        </div>                        
                     </div>
@@ -1805,6 +1906,275 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- end of bill creation modal -->
+
+
+            <!-- receive payment modal -->
+            <div class="modal fade" id="payment-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-none">
+                        <span class="badge badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Receive Payment</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle close-modal" data-dismiss="modal"  aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge  badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Receive Payment</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle pull-right close-modal" data-dismiss="modal" aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+                        </div>
+
+                        <div class="payment-panel-parent">
+                            
+                            <div class="send-method payment-panel payment-active-panel">
+                                <label for="" class="mb-0 pb-0">Payment Method</label>
+                                <p><small class="text-muted">How would you like to send this money?</small></p>
+    
+                                <div>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button fw-medium" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <img class="rounded-circle" src="assets/images/users/mpesa.jpg" alt="Mobile Money" height="65">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <p class="m-0 p-0 text-uppercase fw-semibold">MPESA</p>                                                
+                                                        <p class="mb-0 p-0"> <small>A payment request will be sent directly to the customer</small></p>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div>
+                                                        <p>
+                                                            A payment request of <strong class="text-black">KES 1,500</strong> will be sent to the MPESA number you enter below.
+                                                        </p>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">MPESA Number</label>
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control font-21 text-success form-control-lg" id="phone-input" placeholder="Enter Name">
+                                                            <label for="floatingnameInput">Phone No.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button fw-medium collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <img class="rounded-circle" src="assets/images/users/money.jpg" alt="Mobile Money" height="65">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <p class="m-0 p-0 text-uppercase fw-semibold">BANK</p>                                                
+                                                        <p class="mb-0 p-0"> <small>By selecting this option you confirm that you have received the payment inform of cash</small></p>
+    
+                                                        
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                   <div class="bank-inputs">
+                                                    <div class="mb-3">
+                                                        <label for="">Select Bank</label>
+                                                        <select name="" id="" class="form-select">
+                                                            <option value="" disabled>Select Bank Account</option>
+                                                            <option value="">KCB - 1245475</option>
+                                                            <option value="">Cooperative Bank - 56789</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Bank refrence Number</label>
+                                                        <input type="text" class="form-control" placeholder="Enter Ref No.">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Payer's Full Names</label>
+                                                        <input type="text" class="form-control" placeholder="Enter full Names">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Payer's Phone Number</label>
+                                                        <input type="text" class="form-control" placeholder="Enter Phone Number">
+                                                    </div>
+
+                                                    <div class="form-check form-check-primary mb-3">
+                                                        <input class="form-check-input" type="checkbox" id="confirm-cash">
+                                                        <label class="form-check-label" for="confirm-cash">
+                                                            Confirm to have received the cheque or receipt for <strong>KES 1,500.00</strong> from the client
+                                                        </label>
+                                                    </div>
+
+                                                    <button class="btn btn-primary w-100 text-uppercase bank-nxt-bank">Next</button>
+                                                   </div>
+
+                                                   <div class="bank-input d-none">
+                                                        <p>
+                                                            An OTP has been sent to the client's phone number: <strong class="text-black">0712345678</strong>. Please ask them to check their messages. If they haven't received it, ask them to enable promotional messages and try again. <a href="#" title="Resend OTP">If necessary, you can click here to retry sending the OTP</a>.
+                                                        </p>
+                                                        <div class="form-group">
+                                                            <label for="">OTP</label>
+                                                            <div class="form-floating mb-3">
+                                                                <input type="text" class="form-control font-21 text-success form-control-lg bank-otp-input" id="phone-input" placeholder="Enter Name" spellcheck="false" data-ms-editor="true">
+                                                                <label for="floatingnameInput">Enter OTP sent to Client's Phone</label>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn btn-light waves-effect me-3 btn-otp-edit">
+                                                                <i class="bx bxs-edit-alt font-size-16 align-middle me-2"></i> Edit
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary waves-effect btn-otp-submit" disabled>
+                                                                Next  <i class="bx bx-right-arrow-alt font-size-16 align-middle"></i>
+                                                            </button>
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none transaction-summary payment-panel">
+                                <label for="">Transaction Breakdown</label>
+                                <div class="border p-4 rounded ">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="text-muted ">
+                                                Receipt NO.                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                RTS12364558T                                         
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Receipt For                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                Alex Wanjala                                         
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Payment Method                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                MPESA                                         
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Transaction Amount                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                KES 1,500                                        
+                                            </div>
+                                        </div>
+    
+                                        
+                                        <div class="col-12 text-black"><hr class="mb-0 pb-0"></div>
+    
+                                        <div class="col-lg-6 text-uppercase">
+                                            <div class="text-muted mt-2 font-21">
+                                                Total                                          
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end text-uppercase">
+                                            <div class=" text-right text-black font-21 fw-bold">
+                                                KES 1,500                                        
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="mpesa-confirmation ">
+                                        <p class="text-muted mt-2">A payment request of <strong class="text-black">KES 1,500</strong> will be sent to <strong class="text-black">phone number (0704549859)</strong> soon after you click the <strong class="text-black text-capitalize">Send Request</strong> button bellow. 
+                                            <br>
+                                            <br>
+                                            Remember to <strong class="text-black">Check your phone</strong> to confirm payment by entering your Mpesa pin.</p>
+
+                                            <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect btn-send waves-light text-center w-100">
+                                                <div class="d-flex justify-content-center align-items-center"> 
+                                                    <div class="stk-timer-container d-none justify-content-center align-items-center">
+                                                        <span class="mdi mdi-timer-outline font-16px"></span>
+                                                        <span class="stk-timer px-2"></span>
+                                                    </div>
+                                                    <div class="justify-content-center align-items-center d-flex">
+                                                        <span class="px-2">Send Request</span> 
+                                                        <div class="flip-x"><i class="mdi mdi-reply ms-3 font-16px"></i></div>
+                                                    </div>
+
+                                                </div>
+                                             </button>
+                                    </div>
+
+                                    <div class="my-wallet-confirmation d-none">
+                                        <p class="text-muted mt-2 "><strong class="text-uppercase text-black">KES 300</strong> will be deducted from your guardian blink wallet and amount will be credited to <strong class="text-capitalize text-black">Alex's pocket money account</strong>.</p>
+                                        <p class="text-muted">confirm transaction by clicking the <strong class="text-capitalize text-black">send money</strong> button.</p>
+                                        
+                                        <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect waves-light text-center w-100">
+                                            <div class="d-flex justify-content-center align-items-center"> <span class="mx-2">Send Money</span> <div class="flip-x"><i class="mdi mdi-reply flip-x ms-3 font-16px"></i></div></div>
+                                         </button>
+
+                                    </div>
+    
+                                    
+                                </div>
+                            </div>
+                            <div class="text-center d-flex flex-column justify-content-around align-items-center sent-success d-none payment-panel">
+                                <div class="success-image mb-4">
+                                    <img src="assets/images/payment-confirmation-images/sent.svg" height="200" alt="">                                
+                                </div>
+                                <h4 class="text-blink-primary fw-bold">Transaction Complete</h4>
+                                <p class="text-muted mb-4"><strong class="text-black">KES 1,500.00</strong> has been received for <strong class="text-black">Bill No. YUB48997</strong></p>
+    
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex">
+                        <button href="javascript: void(0);" disabled class="btn btn-outline-light waves-effect waves-light payment-prev"> <i class="mdi mdi-arrow-left ms-1"></i> Previouse </button>
+                        <button href="javascript: void(0);" class="btn btn-primary waves-effect waves-light payment-next">Next <i class="mdi mdi-arrow-right ms-1"></i></button>
+                        <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect waves-light text-center d-none">
+                           <div class="d-flex justify-content-center align-items-center"> <span>Send Money</span> <div class="flip-x"><i class="mdi mdi-reply flip-x ms-3 font-16px"></i></div></div>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- end of payment modal -->
 
 
             <footer class="footer ">

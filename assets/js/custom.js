@@ -1184,4 +1184,10 @@ $('.download-receipt-transfer').on('click', function(){
     }, 800);
    // 
 })
+
+$('.hospital-invoice-nxt').on('click', function(){
+    $('.selecting-service').addClass('d-none')
+    $('.invoice-details').removeClass('d-none').siblings().addClass('d-none')
+
+})
                                 
