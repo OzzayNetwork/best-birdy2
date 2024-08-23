@@ -16,6 +16,14 @@
     <!-- droping file -->
     <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
 
+    <!-- calender plugins -->
+    <link href="assets/libs/%40fullcalendar/core/main.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/%40fullcalendar/daygrid/main.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/%40fullcalendar/bootstrap/main.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/%40fullcalendar/timegrid/main.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- end of caldenr plugins -->
+
     <!-- DataTables -->
     <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
@@ -599,13 +607,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Revenue Sources Chart of Accounts</h4>
+                                <h4 class="mb-sm-0 font-size-18">Daily Health revenue collections </h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Hospital Collections</a></li>
-                                        <li class="breadcrumb-item active">Revenue Sources</li>
+                                        <li class="breadcrumb-item active">Daily Collections</li>
                                     </ol>
                                 </div>
 
@@ -715,124 +723,9 @@
                                 <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table align-middle table-hover contacts-table table-striped" id="">
-                                    <thead class="table-light">
-                                        <tr class="table-dark t">
-                                            <th scope="col">Invoice No.</th>
-                                            <th scope="col">Date Created</th>
-                                            <th scope="col">Invoiced To</th>
-                                            <th scope="col" class="text-nowrap" title="Phone Number">Phone Number</th>
-                                            <th scope="col">Sub county</th>
-                                            <th scope="col" class="text-nowrap">Hospital</th>
-                                            <th scope="col" class="text-nowrap text-right">Amount Paid</th>
-                                            <th scope="col" class="text-nowrap text-right">Invoice Value</th>
-                                            <th scope="col" class="text-right text-nowrap">Outstanding Balance</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-capitalize text-nowrap">MKLFSDW99876</td>
-                                            <td>5 Mar 2023 09:20 AM</td>
-                                            <td class="text-capitalize text-nowrap">Kanyiri Holdings</td>
-                                            <td>0701 234 567</td>
-                                            <td>Rongo</td>
-                                            <td class="text-capitalize text-nowrap">Rongo Sub-County Hospital</td>
-                                            <td class="text-capitalize text-right text-info">1000</td>
-                                            <td class="text-capitalize text-right">3000</td>
-                                            <td class="text-nowrap text-right text-danger fw-bold">2000</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                
-                                        <tr>
-                                            <td class="text-capitalize text-nowrap">BHKLSER47283</td>
-                                            <td>18 Feb 2023 03:15 PM</td>
-                                            <td class="text-capitalize text-nowrap">Mwangi Ltd.</td>
-                                            <td>0712 345 678</td>
-                                            <td>Kuria East</td>
-                                            <td class="text-capitalize text-nowrap">Kuria East Sub-County Hospital</td>
-                                            <td class="text-capitalize text-right text-info">500</td>
-                                            <td class="text-capitalize text-right">2500</td>
-                                            <td class="text-nowrap text-right text-danger fw-bold">2000</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                
-                                        <tr>
-                                            <td class="text-capitalize text-nowrap">PLKJGFD12345</td>
-                                            <td>22 Jul 2023 01:45 PM</td>
-                                            <td class="text-capitalize text-nowrap">Mumo Ventures</td>
-                                            <td>0723 456 789</td>
-                                            <td>Migori</td>
-                                            <td class="text-capitalize text-nowrap">Migori County Referral Hospital</td>
-                                            <td class="text-capitalize text-right text-info">0</td>
-                                            <td class="text-capitalize text-right">1500</td>
-                                            <td class="text-nowrap text-right text-danger fw-bold">1500</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                
-                                        <tr>
-                                            <td class="text-capitalize text-nowrap">QWERFDS89076</td>
-                                            <td>2 Apr 2023 11:30 AM</td>
-                                            <td class="text-capitalize text-nowrap">Ngugi Enterprises</td>
-                                            <td>0734 567 890</td>
-                                            <td>Nyatike</td>
-                                            <td class="text-capitalize text-nowrap">Nyatike Sub-County Hospital</td>
-                                            <td class="text-capitalize text-right text-info">0</td>
-                                            <td class="text-capitalize text-right">2000</td>
-                                            <td class="text-nowrap text-right text-danger fw-bold">2000</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                
-                                        <tr>
-                                            <td class="text-capitalize text-nowrap">ASDFGDS12345</td>
-                                            <td>29 May 2023 02:50 PM</td>
-                                            <td class="text-capitalize text-nowrap">Kimani Ltd.</td>
-                                            <td>0745 678 901</td>
-                                            <td>Suna East</td>
-                                            <td class="text-capitalize text-nowrap">Suna East Sub-County Hospital</td>
-                                            <td class="text-capitalize text-right text-info">500</td>
-                                            <td class="text-capitalize text-right">2500</td>
-                                            <td class="text-nowrap text-right text-danger fw-bold">2000</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoice</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot class="table-dark text-uppercase">
-                                        <tr>
-                                            <th class="text-uppercase text-nowrap" colspan="6">5 Invoices</th>
-                                            <th class="text-right text-info">2000</th>
-                                            <th class="text-right">11500</th>
-                                            <td class="text-nowrap text-right">
-                                                <span class="fw-semibold text-danger">9500</span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                                
-                            </div>
-                        </div>
+                       <div class="card-body">
+                            <div id="calendar"></div>
+                       </div>
                     </div>
                   </div>  
                  </div>
@@ -2113,89 +2006,27 @@
       <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
       <script src="assets/js/pages/table-editable.int.js"></script>
 
+      <!-- calender plugins -->
+        <!-- plugin js -->
+        <script src="assets/libs/moment/min/moment.min.js"></script>
+        <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
+        <script src="assets/libs/%40fullcalendar/core/main.min.js"></script>
+        <script src="assets/libs/%40fullcalendar/bootstrap/main.min.js"></script>
+        <script src="assets/libs/%40fullcalendar/daygrid/main.min.js"></script>
+        <script src="assets/libs/%40fullcalendar/timegrid/main.min.js"></script>
+        <script src="assets/libs/%40fullcalendar/interaction/main.min.js"></script>
+        <!-- end of calneder plugins -->
+
     <!-- App js -->
     <script src="assets/js/app.js "></script>
     <script src="assets/js/custom.js "></script>
 
-    <script>
-        // Your chart generation code will go here
-document.addEventListener('DOMContentLoaded', function () {
-    // Abbreviate months to three letters
-    function abbreviateMonth(month) {
-        return month.substring(0, 3);
-    }
-    
-    // Prepare the data
-    const data = [
-        ['Jul 2023', 50000, 60000, 55000], // [Month, Last Year, Target, Actual]
-        ['Aug 2023', 55000, 62000, 58000],
-        ['Sep 2023', 52000, 61000, 56000],
-        ['Oct 2023', 53000, 63000, 57000],
-        ['Nov 2023', 54000, 59000, 56000],
-        ['Dec 2023', 60000, 65000, 62000],
-        ['Jan 2024', 58000, 67000, 59000],
-        ['Feb 2024', 59000, 68000, 60000],
-        ['Mar 2024', 61000, 70000, 62000],
-        ['Apr 2024', 60000, 69000, 61000],
-        ['May 2024', 62000, 72000, 63000],
-        ['Jun 2024', 63000, 71000, 64000]
-    ];
+     <!-- Calendar init -->
+     <script src="assets/js/pages/calendars-full.init.js"></script>
 
-    // Set the font family to Montserrat
-    Highcharts.setOptions({
-        chart: {
-            style: {
-                fontFamily: 'Montserrat, sans-serif'
-            }
-        }
-    });
+     <!-- App js -->
+     <script src="assets/js/app.js"></script>
 
-    // Create the bar chart
-    Highcharts.chart('revenuePerfomanceFire', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: null
-        },
-        xAxis: {
-            categories: data.map(item => abbreviateMonth(item[0]))
-        },
-        yAxis: {
-            title: {
-                text: 'Revenue (KES)'
-            }
-        },
-        legend: {
-            enabled: true
-        },
-        tooltip: {
-            shared: true,
-            pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>KES {point.y}</b><br/>'
-        },
-        plotOptions: {
-            bar: {
-                pointWidth: 20, // Adjust the width of each column
-                stacking: 'normal', // Prevent stacking
-                borderWidth: 0
-            }
-        },
-        series: [{
-            name: 'Last Year Collections',
-            data: data.map(item => item[1])
-        }, {
-            name: 'Created Invoices',
-            data: data.map(item => item[2]),
-            color:"red"
-        }, {
-            name: 'This Year Collections',
-            data: data.map(item => item[3]),
-            color:"green"
-        }]
-    });
-});
-
-    </script>
 </body>
 
 
