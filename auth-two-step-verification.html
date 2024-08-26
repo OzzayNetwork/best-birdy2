@@ -78,13 +78,22 @@
 
                                         <div class="avatar-md mx-auto">
                                             <div class="avatar-title rounded-circle bg-light">
-                                                <i class="bx bxs-envelope h1 mb-0 text-primary"></i>
+                                                <i class="bx bx-message-dots h1 mb-0 text-dark"></i>
                                             </div>
                                         </div>
-                                        <div class="p-2 mt-4">
+                                        <div class="p-2 mt-4 text-lef">
 
-                                            <h4>Verify your email</h4>
-                                            <p class="mb-5">Please enter the 4 digit code sent to <span class="fw-semibold">example@abc.com</span></p>
+                                            <h4 class="text-uppercase fw-bolder">Two-Step Verification</h4>
+                                            <div class="phone-otp-options">
+                                                <h4 class="mb-4"><small class="mb-5 d-non text-capitalize">OTP sent to <span class="fw-semibold">2547******59</span></small></h4>
+                                                <p class="mb-5">To confirm your identity, please enter the verification code sent to the mobile number registered with your account. Verrify in <strong class="otp-timer text-uppercase"  id="countdown">60</strong> <strong class="text-uppercase">Sec</strong></p>
+                                            </div>
+
+                                            <div class="email-otp-options d-none">
+                                                <h4 class="mb-4"><small class="mb-5 d-non text-capitalize">OTP sent to <span class="fw-semibold text-lowercase">al*********la@gmail.com</span></small></h4>
+                                                <p class="mb-5">To confirm your identity, please enter the verification code sent to the email address registered with your account. Verrify in <strong class="otp-timer text-uppercase"  id="emailCountDown">60</strong> <strong class="text-uppercase">Sec</strong></p>
+                                            </div>
+                                           
 
                                             <form>
                                                 <div class="row">
@@ -118,9 +127,16 @@
                                                 </div>
                                             </form>
 
-                                            <div class="mt-4">
-                                                <a href="auth-password-confirmation.html" class="btn btn-success w-md">Next</a>
+                                            <div class="mt-4 mb-4 w-100">
+                                                <a href="auth-password-confirmation.html" class="btn btn-success w-100">Next</a>
                                             </div>
+
+                                            <div class="other-otp-options d-none">
+                                                <p class="mb-5"><strong class="text-uppercase mb-3">Didn't receive an OTP?</strong></p>
+                                                <p> <a href="#" class="text-capitalize otp-options  text-left text-underline">Resend OTP to the phone.</a></p>
+                                                <a href="#" class="text-capitalize otp-options email-option  text-left text-underline">Click here to have it sent to your email as an alternative.</a>
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -163,6 +179,51 @@
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+
+
+
+    <script>
+        var seconds = 60;
+        var seconds2 = 60;
+
+        $('.email-option').on('click', function(){
+            $('.email-otp-options').removeClass('d-none')
+            $('.phone-otp-options').addClass('d-none')
+           // alert("clickeed")
+
+            $('.other-otp-options').addClass('d-none')
+            emailcountdown()
+        })
+    
+    function countdown() {
+        if (seconds >= 0) {
+            $("#countdown").text(seconds);
+            seconds--;
+            setTimeout(countdown, 1000);
+        }
+        if(seconds==0){
+            $('.other-otp-options').removeClass('d-none')
+
+        }
+    }
+
+    function emailcountdown() {
+        
+        if (seconds2 >= 0) {
+            $("#emailCountDown").text(seconds2);
+            seconds2--;
+            setTimeout(emailcountdown, 1000);
+        }
+        if(seconds2==0){
+            $('.other-otp-options').removeClass('d-none')
+
+        }
+    }
+
+    countdown()
+    
+   
+    </script>
 
 </body>
 
