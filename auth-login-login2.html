@@ -68,15 +68,29 @@
                                             <input type="text" class="form-control" id="username" placeholder="Enter username">
                                         </div>
                 
-                                        <div class="mb-3">
+                                        <div class="mb-5">
                                             <label class="form-label">Password</label>
                                             <div class="input-group auth-pass-inputgroup">
                                                 <input type="password" class="form-control" placeholder="Enter password" aria-label="Password" aria-describedby="password-addon">
                                                 <button class="btn btn-light " type="button" id="password-addon"><i class="mdi mdi-eye-outline"></i></button>
                                             </div>
                                         </div>
+                                        
 
-                                        <div class="form-check">
+                                        <div class="mb-3 mt-3">
+
+                                            <div class="alert alert-warning mt-3" role="alert">
+                                                <p class="text-dark">By using our services, you agree to the collection and processing of your data for the purpose of enhancing user experience, in accordance with our privacy policy and applicable regulations.</p>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="remember-check-agree">
+                                                    <label class="form-check-label fw-bold " for="remember-check-agree">
+                                                        Agree to the terms and Conditions
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-check d-none">
                                             <input class="form-check-input" type="checkbox" id="remember-check">
                                             <label class="form-check-label" for="remember-check">
                                                 Remember me
