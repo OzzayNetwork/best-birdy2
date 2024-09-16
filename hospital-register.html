@@ -657,16 +657,18 @@
                   <div class="col-12">
                     <div class="card">
                         <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-
                             <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                 <h4 class="card-title text-uppercase mb-0 ">
-                                    Revenue Collections by Facilities for the period 1 jan 2024 to 30 Jan 2024
+                                    All health Facilities for Machakos County
                                 </h4>
-                            </div>
-                           
+                                <div>
+                                    <button data-bs-toggle="modal" data-bs-target=".new-hospital-modal" type="button" class="btn text-uppercase btn-success dropdown-toggle option-selector me-3">
+                                        <i class="mdi mdi-plus  font-size-16"></i> <span class="pl-1 d-md-inline">Add Facility</span>
+                                    </button>
+                                </div>
+                            </div>                           
                         </div>
                         <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-
                             <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                               <div class="flex-grow-1">
                                 <div class="search-box mb-0 me-3">
@@ -720,110 +722,115 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table align-middle table-hover contacts-table table-striped" id="">
-                                    <thead class="table-light">
+                                    <thead class="table-light text-uppercase">
                                         <tr class="table-dark t">
                                             <th scope="col">SN</th>
-                                            <th scope="col">Facility/Hospital</th>
+                                            <th scope="col">Hospital Name</th>
                                             <th scope="col">Sub County</th>
-                                            <th scope="col" class="text-nowrap" title="Phone Number">Ward</th>
-                                            <th scope="col" class="text-nowrap">Paid Invoices</th>
-                                            <th scope="col" class="text-nowrap text-right">Invoices Value</th>
-                                            <th scope="col" class="text-nowrap text-right">Pending</th>
-                                            <th scope="col" class="text-right text-nowrap">Collected</th>
-                                            <th></th>
+                                            <th scope="col">Ward</th>
+                                            <th scope="col" class="text-nowrap">Type/Level</th>
+                                            <th scope="col" class="text-nowrap">NHIF Code</th>
+                                            <th scope="col" class="text-nowrap">Registered Users</th>
+                                            <th scope="col" class="text-nowrap text-right">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td class="text-capitalize text-nowrap">1</td>
-                                            <td>Kanyambao Hospital</td>
-                                            <td class="text-capitalize text-nowrap">Nairobi Kenya Subcounty</td>
-                                            <td>Raswo Ward</td>
-                                            <td>345</td>
-                                            <td class="text-capitalize text-nowrap text-right">KES 45,000</td>
-                                            <td class="text-capitalize text-right text-danger">KES 1,000</td>
-                                            <td class="text-capitalize text-right text-info fw-bold">KES 3,000</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <a type="button" href="hospital-facilities-details.html" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoices</a>
-                                                </div>
+                                            <td>Kenyatta National Hospital</td>
+                                            <td class="text-capitalize text-nowrap">Nairobi County</td>
+                                            <td>Upper Hill</td>
+                                            <td>Level 6</td>
+                                            <td class="text-capitalize text-nowrap">001001</td>
+                                            <td>1,250</td>
+                                            <td class="text-capitalize text-right">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#viewDetailsModal1" class="btn btn-primary waves-effect btn-label waves-light me-3 btn-sm text-uppercase">
+                                                    <i class="dripicons-preview label-icon"></i> View Details
+                                                </button>
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal1" class="btn btn-dark waves-effect btn-label waves-light btn-sm text-uppercase">
+                                                    <i class="mdi mdi-playlist-edit label-icon"></i> Edit
+                                                </button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="text-capitalize text-nowrap">2</td>
-                                            <td>Machakos General</td>
-                                            <td class="text-capitalize text-nowrap">Machakos County</td>
-                                            <td>Mwala Ward</td>
-                                            <td>567</td>
-                                            <td class="text-capitalize text-nowrap text-right">KES 55,000</td>
-                                            <td class="text-capitalize text-right text-danger">KES 2,500</td>
-                                            <td class="text-capitalize text-right text-info fw-bold">KES 4,000</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <a type="button" href="hospital-facilities-details.html" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoices</a>
-                                                </div>
+                                            <td>Moi Teaching and Referral Hospital</td>
+                                            <td class="text-capitalize text-nowrap">Uasin Gishu County</td>
+                                            <td>Eldoret East</td>
+                                            <td>Level 6</td>
+                                            <td class="text-capitalize text-nowrap">001002</td>
+                                            <td>980</td>
+                                            <td class="text-capitalize text-right">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#viewDetailsModal2" class="btn btn-primary waves-effect btn-label waves-light me-3 btn-sm text-uppercase">
+                                                    <i class="dripicons-preview label-icon"></i> View Details
+                                                </button>
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal2" class="btn btn-dark waves-effect btn-label waves-light btn-sm text-uppercase">
+                                                    <i class="mdi mdi-playlist-edit label-icon"></i> Edit
+                                                </button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="text-capitalize text-nowrap">3</td>
-                                            <td>Kisumu Referral</td>
-                                            <td class="text-capitalize text-nowrap">Kisumu County</td>
-                                            <td>Nyando Ward</td>
-                                            <td>654</td>
-                                            <td class="text-capitalize text-nowrap text-right">KES 85,000</td>
-                                            <td class="text-capitalize text-right text-danger">KES 3,000</td>
-                                            <td class="text-capitalize text-right text-info fw-bold">KES 5,000</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <a type="button" href="hospital-facilities-details.html" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoices</a>
-                                                </div>
+                                            <td>Machakos Level 5 Hospital</td>
+                                            <td class="text-capitalize text-nowrap">Machakos County</td>
+                                            <td>Mwala</td>
+                                            <td>Level 5</td>
+                                            <td class="text-capitalize text-nowrap">002003</td>
+                                            <td>720</td>
+                                            <td class="text-capitalize text-right">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#viewDetailsModal3" class="btn btn-primary waves-effect btn-label waves-light me-3 btn-sm text-uppercase">
+                                                    <i class="dripicons-preview label-icon"></i> View Details
+                                                </button>
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal3" class="btn btn-dark waves-effect btn-label waves-light btn-sm text-uppercase">
+                                                    <i class="mdi mdi-playlist-edit label-icon"></i> Edit
+                                                </button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="text-capitalize text-nowrap">4</td>
-                                            <td>Garissa Hospital</td>
-                                            <td class="text-capitalize text-nowrap">Garissa County</td>
-                                            <td>Balambala Ward</td>
-                                            <td>234</td>
-                                            <td class="text-capitalize text-nowrap text-right">KES 30,000</td>
-                                            <td class="text-capitalize text-right text-danger">KES 1,500</td>
-                                            <td class="text-capitalize text-right text-info fw-bold">KES 2,000</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <a type="button" href="hospital-facilities-details.html" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoices</a>
-                                                </div>
+                                            <td>Kisumu County Referral Hospital</td>
+                                            <td class="text-capitalize text-nowrap">Kisumu County</td>
+                                            <td>Kisumu Central</td>
+                                            <td>Level 5</td>
+                                            <td class="text-capitalize text-nowrap">003004</td>
+                                            <td>850</td>
+                                            <td class="text-capitalize text-right">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#viewDetailsModal4" class="btn btn-primary waves-effect btn-label waves-light me-3 btn-sm text-uppercase">
+                                                    <i class="dripicons-preview label-icon"></i> View Details
+                                                </button>
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal4" class="btn btn-dark waves-effect btn-label waves-light btn-sm text-uppercase">
+                                                    <i class="mdi mdi-playlist-edit label-icon"></i> Edit
+                                                </button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="text-capitalize text-nowrap">5</td>
-                                            <td>Eldoret County Hospital</td>
-                                            <td class="text-capitalize text-nowrap">Uasin Gishu County</td>
-                                            <td>Kapseret Ward</td>
-                                            <td>489</td>
-                                            <td class="text-capitalize text-nowrap text-right">KES 65,000</td>
-                                            <td class="text-capitalize text-right text-danger">KES 2,000</td>
-                                            <td class="text-capitalize text-right text-info fw-bold">KES 3,500</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <a type="button" href="hospital-facilities-details.html" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Invoices</a>
-                                                </div>
+                                            <td>Mombasa County Referral Hospital</td>
+                                            <td class="text-capitalize text-nowrap">Mombasa County</td>
+                                            <td>Kisauni</td>
+                                            <td>Level 5</td>
+                                            <td class="text-capitalize text-nowrap">004005</td>
+                                            <td>670</td>
+                                            <td class="text-capitalize text-right">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#viewDetailsModal5" class="btn btn-primary waves-effect btn-label waves-light me-3 btn-sm text-uppercase">
+                                                    <i class="dripicons-preview label-icon"></i> View Details
+                                                </button>
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal5" class="btn btn-dark waves-effect btn-label waves-light btn-sm text-uppercase">
+                                                    <i class="mdi mdi-playlist-edit label-icon"></i> Edit
+                                                </button>
                                             </td>
                                         </tr>
+                                        <!-- Continue adding rows as needed -->
                                     </tbody>
                                     <tfoot class="table-dark text-uppercase">
                                         <tr>
-                                            <th class="text-uppercase text-nowrap" colspan="4">5 Invoices</th>
-                                            <th class="">20</th>
-                                            <th class="text-right">KES 115,000</th>
-                                            <td class="text-nowrap text-right">
-                                                <span class="fw-semibold text-danger">KES 9,500</span>
-                                            </td>
-                                            <th class="text-info text-right">KES 57,500</th>
-                                            <td></td>
+                                            <th></th>
+                                            <th colspan="5">56 Facilities</th>
+                                            <th>56 Users</th>
+                                            <th></th>
                                         </tr>
                                     </tfoot>
                                 </table>
-                                
                                 
                             </div>
                         </div>
@@ -2012,6 +2019,102 @@
                 </div>
             </div>
             <!-- end of payment modal -->
+
+            <!-- registering  a new hospital -->
+            <div class="modal fade new-hospital-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Register A New Health Facility</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="">Facility Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter The Facility Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-8 mb-3">
+                                    <div class="form-group">
+                                        <label for="" class="mb-0 pb-0">Facility Type</label>                                      
+                                        <select class="form-select">
+                                            <option value="level_2" disabled>Select hospital level type</option>
+                                            <option value="level_2">Level Two: Dispensaries and Clinics</option>
+                                            <option value="level_3">Level Three: Health Centers</option>
+                                            <option value="level_4">Level Four: Sub-County Hospitals</option>
+                                            <option value="level_5">Level Five: County Referral Hospitals</option>
+                                            <option value="level_6">Level Six: National Referral Hospitals</option>                                           
+                                        </select>
+                                        <p> <small>Select the hospital type</small></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="" class="mb-0 pb-0">NHIF Code</label>                                     
+                                        <input type="text" class="form-control" placeholder="Enter Code" title="Enter the NHIF code assigned to this hospital">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="" class="mb-0 pb-0">SubCounty</label>
+                                     
+                                        <select class="form-select">
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMA BAY TOWN</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMABAY HQ</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KABONDO KASIPUL</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KARACHUONYO</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KASIPUL</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">MBITA</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">NDHIWA</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">RANGWE</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">SUBA</a></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="" class="mb-0 pb-0">Ward</label>
+                                     
+                                        <select class="form-select">
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMA BAY TOWN</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMABAY HQ</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KABONDO KASIPUL</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KARACHUONYO</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KASIPUL</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">MBITA</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">NDHIWA</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">RANGWE</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">SUBA</a></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="" class="mb-0 pb-0">Longitude & Latitude</label>
+                                        <p> <small>Enter the coodiantes in the following pattern Longitude,Latitude</small></p>
+                                        <input type="text" class="form-control" placeholder="Longitude, Latitude">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button class="btn btn-primary w-100" title="Click to save">DONE</button>                           
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+             <!-- end of registration -->
 
 
             <footer class="footer ">
