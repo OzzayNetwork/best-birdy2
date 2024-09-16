@@ -599,14 +599,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Fire Certificate Quick Stats</h4>
+                                <h4 class="mb-sm-0 font-size-18">Revenue Collections by Facility</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Certificates & Licenses</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Fire Certificates</a></li>
-                                        <li class="breadcrumb-item active">Quick Stats</li>
+                                        <li class="breadcrumb-item"><a href="#">Hospital Collections</a></li>
+                                        <li class="breadcrumb-item active">Collections By Facilities</li>
                                     </ol>
                                 </div>
 
@@ -630,24 +629,19 @@
                                     </button>
                                     <div class="collapse navbar-collapse justify-content-between active"
                                         id="navbarNavAltMarkup">
-                                         <div class="navbar-nav">
-                                                <a class="nav-item nav-link" href="cert-alcohol-stats.html" title="Quick stats">Overview</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-ongoing.html" title="Newly registered applications">Applications</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-inspection.html" title="applications pending inspection">Pending Inspection</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-court.html" title="Applications pending court/Commitee review">Court Review</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-approval1.html" title="Applications pending court/Commitee review">1st Approval</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-finalApproval.html" title="Applications pending court/Commitee review">Final Approval</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-approved.html" title="Invoices for Approved Applications">Approved</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-declined.html" title="Get to see a list of all declined applications">Declined </a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-restored.html" title="Applications that were once declined but got restored at some point">Restored</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-cert-invoices.html" title="Table with all invoices relating to ALCOHOLIC DRINKS LICENCE">Invoices</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-active.html" title="List of all active ALCOHOLIC DRINKS LICENCE">Active</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-expired.html" title="List of Outlets with expired certificates">Expired</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-map.html" title="Mapping on the Certificates">Map</a>
+                                        <div class="navbar-nav">
+                                                <a class="nav-item nav-link" href="hospital-quick-stats.html" title="Quick stats">Overview</a>
+                                                <a class="nav-item nav-link" href="hospital-sources.html" title="Newly registered applications">Chart of Accounts</a>
+                                                <a class="nav-item nav-link" href="hospital-unpaid-invoices.html" title="applications pending inspection">Unpaid Invoices</a>
+                                                <a class="nav-item nav-link" href="hospital-daily-cllections.html" title="Applications pending court/Commitee review">Daily Collections</a>
+                                                <a class="nav-item nav-link" href="hospital-facilities.html" title="Applications pending court/Commitee review">Collections By Facilities</a>
+                                                <a class="nav-item nav-link" href="hospital-invoices.html" title="Applications pending court/Commitee review">Receipted Invoices</a>
+                                                <a class="nav-item nav-link" href="hospital-register.html" title="Applications pending court/Commitee review">Facilities</a>
+                                                <a class="nav-item nav-link" href="hospital-map.html" title="Applications pending court/Commitee review">Map View</a>
                                             </div>
 
                                         <form class="form-inline my-2 my-lg-0">
-                                            <button type="button"  class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" data-toggle="modal" data-target=".new-alcohol-application">New Application</button>
+                                            <button type="button"  class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" data-toggle="modal" data-target=".new-hospital-invoice">Create Invoice</button>
                                           </form>
                                         
 
@@ -659,347 +653,190 @@
                     </div>
                 </div>
                     <!-- end of toolbar -->
-                    <div class="row">
-                        <div class="col-lg-12 px-sm-30px">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                       
-                                        <div class="col-sm-12 align-self-center text-capitalize">
-                                            <div class="text-lg-left mt-4 mt-lg-0">
-                                                <div class="row">
-                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
-                                                        <div>
-                                                            <div class="avatar-xs mb-3">
-                                                                <span class="avatar-title rounded-circle bg-info font-size-16">
-                                                                        <i class="mdi mdi-briefcase-edit text-white"></i>
-                                                                    </span>
-                                                            </div>
-                                                            <p class="text-muted text-truncate mb-2">Identified Outlets</p>
-                                                            <h5 class="mb-0">2000</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
-                                                        <div>
-                                                            <div class="avatar-xs mb-3">
-                                                                <span class="avatar-title rounded-circle font-size-16">
-                                                                        <i class="mdi mdi mdi-briefcase-check text-white"></i>
-                                                                    </span>
-                                                            </div>
-                                                            <p class="text-muted text-truncate mb-2">Pending Application Invoices</p>
-                                                            <h5 class="mb-0">1500</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
-                                                        <div>
-                                                            <div class="avatar-xs mb-3">
-                                                                <span class="avatar-title rounded-circle bg-pink font-size-16">
-                                                                        <i class="mdi mdi-progress-clock text-white"></i>
-                                                                    </span>
-                                                            </div>
-                                                            <p class="text-muted text-truncate mb-2">Ongoing Inspection</p>
-                                                            <h5 class="mb-0">180</h5>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
-                                                        <div>
-                                                            <div class="avatar-xs mb-3">
-                                                                <span class="avatar-title rounded-circle bg-whatsApp font-size-16">
-                                                                        <i class="mdi mdi-progress-clock text-white"></i>
-                                                                    </span>
-                                                            </div>
-                                                            <p class="text-muted text-truncate mb-2">Pending Certification Invoices</p>
-                                                            <h5 class="mb-0">1320</h5>
-
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
-                                                        <div>
-                                                            <div class="avatar-xs mb-3">
-                                                                <span class="avatar-title rounded-circle bg-warning font-size-16">
-                                                                        <i class="mdi mdi-close text-white"></i>
-                                                                    </span>
-                                                            </div>
-                                                            <p class="text-muted text-truncate mb-2">Awaiting Approval</p>
-                                                            <h5 class="mb-0">22</h5>
-
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
-                                                        <div>
-                                                            <div class="avatar-xs mb-3">
-                                                                <span class="avatar-title rounded-circle bg-danger font-size-16">
-                                                                        <i class="mdi mdi-clock-alert text-white"></i>
-                                                                    </span>
-                                                            </div>
-                                                            <p class="text-muted text-truncate mb-2">Active Certificates</p>
-                                                            <h5 class="mb-0">48</h5>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                      
-
-                                    </div>
-                                    <!-- end row -->
+                 <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                        <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+                            <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+                                <h4 class="card-title text-uppercase mb-0 ">
+                                    All health Facilities for Machakos County
+                                </h4>
+                                <div>
+                                    <button data-bs-toggle="modal" data-bs-target=".new-hospital-modal" type="button" class="btn text-uppercase btn-success dropdown-toggle option-selector me-3">
+                                        <i class="mdi mdi-plus  font-size-16"></i> <span class="pl-1 d-md-inline">Add Facility</span>
+                                    </button>
                                 </div>
-                            </div>
+                            </div>                           
                         </div>
-
-                        <div class="col-xl-12 px-sm-30px">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex flex-wrap">
-                                                <div class="me-3">
-                                                    <p class="text-muted mb-2">Value of Pending Invoices</p>
-                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
-                                                </div>
-
-                                                <div class="avatar-sm ms-auto">
-                                                    <div class="avatar-title bg-light rounded-circle text-danger font-size-20">
-                                                        <i class="mdi mdi-account-cash"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-body border-top py-3">
-                                            <p class="mb-0"> From 34 Businesses</p>
-                                        </div>
+                        <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+                            <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+                              <div class="flex-grow-1">
+                                <div class="search-box mb-0 me-3">
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                                        <i class="bx bx-search-alt search-icon"></i>
                                     </div>
-                                </div><!--end col-->
-                                <div class="col-lg-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex flex-wrap">
-                                                <div class="me-3">
-                                                    <p class="text-muted mb-2">Today's Collections</p>
-                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
-                                                </div>
+                                </div>
+                              </div>
 
-                                                <div class="avatar-sm ms-auto">
-                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
-                                                        <i class="mdi mdi-calendar-text-outline "></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-body border-top py-3">
-                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 18.89%</span> Target Margin</p>
-                                        </div>
-                                    </div>
-                                </div><!--end col-->
-                                <div class="col-lg-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex flex-wrap">
-                                                <div class="me-3">
-                                                    <p class="text-muted mb-2">This Month's Collections</p>
-                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
-                                                </div>
+                                
 
-                                                <div class="avatar-sm ms-auto">
-                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
-                                                        <i class="mdi mdi-calendar-month-outline "></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-body border-top py-3">
-                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 8.41%</span> Target Margin</p>
-                                        </div>
-                                    </div>
-                                </div><!--end col-->
-                                <div class="col-lg-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex flex-wrap">
-                                                <div class="me-3">
-                                                    <p class="text-muted mb-2">This Year's Collections</p>
-                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
-                                                </div>
+                                <div class="input-group  fw-semibold text-uppercase me-3" title="Select the end date for which the invoices were supposedly created">
+                                    <label class="input-group-text text-uppercase">Sub County</label>
+                                    <select name="" class="form-select me-3">
+                                        <option value="" disabled>Select Sub county</option>
+                                        <option value="" selected>All Sub Counties</option>
+                                        <option value="">Homa Bay</option>
+                                        <option value="">Rangwe</option>
+                                    </select>
 
-                                                <div class="avatar-sm ms-auto">
-                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
-                                                        <i class="mdi mdi-calendar-check-outline "></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-body border-top py-3">
-                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 8.41%</span> Target Margin</p>
-                                        </div>
-                                    </div>
-                                </div><!--end col-->
+                                    <label class="input-group-text text-uppercase">Wards</label>
+                                    <select name="" class="form-select" id="">
+                                        <option value="" disabled>Select Ward</option>
+                                        <option value="" selected>All Wards</option>
+                                        <option value="">Ward 1</option>
+                                        <option value="">Ward 2</option>
+                                        <option value="">Ward 3</option>
+                                      
+                                    </select>
+                                </div>
+
+                                <div class="input-group  fw-semibold text-uppercase me-3" title="Select the end date for which the invoices were supposedly created">
+                                    <label class="input-group-text text-uppercase">From</label>
+                                    <input class="form-control" placeholder="Start date" type="date">
+
+                                    <label class="input-group-text text-uppercase">To</label>
+                                    <input class="form-control me-3" placeholder="Start date" type="date">
+
+                                    <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                        <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                    </button>
+                                </div>
+
                                
                             </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-7 px-sm-30px">
-                            <div class="card">
-
-                                <div class="card-header bg-white border-bottom">
-                                    <div class="d-sm-flex flex-wrap">
-                                        <h4 class="card-title mb-4">Important Statistics</h4>
-                                        <div class="ms-auto">
-                                            <a href="javascript:void(0);" class="btn btn-primary"><i class="bx bx-plus align-middle"></i> Download</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="card-body">
-                                    
-                                    <div>
-                                        <div class="table-responsive font-12" style="height: 450px; overflow-y: auto;">
-                                            <table class="table table-striped table-sm font-12 verticle-middle">
-                                                <thead class="table-dark">
-                                                    <tr class="font-weight-bold">
-                                                        <th scope="col" rowspan="2">Sub County</th>
-                                                        <th colspan="2" >Identified Businesses</th>
-                                                        <th scope="col" class="text-right" colspan="2">Application Invoices</th>
-                                                        <th class="text-right" colspan="2">Certification Invoices</th>                                                       
-                                                    </tr>
-                                                    <tr>
-                                                        <th>SBPs</th>
-                                                        <th>Liqure Outlets</th>
-                                                        <th class="text-right">Pending</th>
-                                                        <th class="text-right">Paid</th>
-                                                        <th class="text-right">Pending</th>
-                                                        <th class="text-right">Paid</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">RACHUONYO NORTH</td>
-                                                        <td class="rNorth-alcohol">23</td>
-                                                        <td class="rNorth-alcohol">3</td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                            
-                                                    </tr>
-                                                    <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">RACHUONYO EAST</td>
-                                                        <td class="rNorth-alcohol">23</td>
-                                                        <td class="rNorth-alcohol">3</td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                    </tr>
-                                                    <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">RACHUONYO SOUTH</td>
-                                                        <td class="rNorth-alcohol">23</td>
-                                                        <td class="rNorth-alcohol">3</td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                    </tr>
-                                                    <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">SUBA NORTH</td>
-                                                        <td class="rNorth-alcohol">23</td>
-                                                        <td class="rNorth-alcohol">3</td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                    </tr>
-                                                    <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">RANGWE</td>
-                                                        <td class="rNorth-alcohol">23</td>
-                                                        <td class="rNorth-alcohol">3</td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                    </tr>
-                                                    <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">HOMA BAY TOWN</td>
-                                                        <td class="rNorth-alcohol">23</td>
-                                                        <td class="rNorth-alcohol">3</td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                    </tr>
-                                                    <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">NDHIWA</td>
-                                                        <td class="rNorth-alcohol">23</td>
-                                                        <td class="rNorth-alcohol">3</td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                    </tr>
-                                                    <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">SUBA SOUTH</td>
-                                                        <td class="rNorth-alcohol">23</td>
-                                                        <td class="rNorth-alcohol">3</td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                    </tr>
-    
-                                                    <tr value="[object Object]" style="cursor: pointer;">
-                                                        <td scope="row">HOMA BAY HQ</td>
-                                                        <td class="rNorth-alcohol">23</td>
-                                                        <td class="rNorth-alcohol">3</td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
-                                                    </tr>
-    
-                                                    
-    
-                                                    
-                                                    <!-- Continue replacing ward names in the same manner for other rows -->
-    
-                                                    <tr class="table-dark">
-                                                        <th><strong>Total</strong></th>
-                                                        <th class="alcoholTxt">12</th>
-                                                        <th class="alcoholTxt">123</th>
-                                                        <td class="text-danger text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
-                                                        <td class="text-success text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
-                                                        <td class="text-danger text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
-                                                        <td class="text-success text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-    
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
+                                <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
                             </div>
                         </div>
-
-                      
-                        <div class="col-sm-12 col-md-5 px-sm-30px">
-                            <div class="card">
-
-                                <div class="card-header bg-white border-bottom">
-                                    <h4 class="card-title">Revenue Perfomance</h4>
-                                </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table align-middle table-hover contacts-table table-striped" id="">
+                                    <thead class="table-light text-uppercase">
+                                        <tr class="table-dark t">
+                                            <th scope="col">SN</th>
+                                            <th scope="col">Hospital Name</th>
+                                            <th scope="col">Sub County</th>
+                                            <th scope="col">Ward</th>
+                                            <th scope="col" class="text-nowrap">Type/Level</th>
+                                            <th scope="col" class="text-nowrap">NHIF Code</th>
+                                            <th scope="col" class="text-nowrap">Registered Users</th>
+                                            <th scope="col" class="text-nowrap text-right">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-capitalize text-nowrap">1</td>
+                                            <td>Kenyatta National Hospital</td>
+                                            <td class="text-capitalize text-nowrap">Nairobi County</td>
+                                            <td>Upper Hill</td>
+                                            <td>Level 6</td>
+                                            <td class="text-capitalize text-nowrap">001001</td>
+                                            <td>1,250</td>
+                                            <td class="text-capitalize text-right">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#viewDetailsModal1" class="btn btn-primary waves-effect btn-label waves-light me-3 btn-sm text-uppercase">
+                                                    <i class="dripicons-preview label-icon"></i> View Details
+                                                </button>
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal1" class="btn btn-dark waves-effect btn-label waves-light btn-sm text-uppercase">
+                                                    <i class="mdi mdi-playlist-edit label-icon"></i> Edit
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-capitalize text-nowrap">2</td>
+                                            <td>Moi Teaching and Referral Hospital</td>
+                                            <td class="text-capitalize text-nowrap">Uasin Gishu County</td>
+                                            <td>Eldoret East</td>
+                                            <td>Level 6</td>
+                                            <td class="text-capitalize text-nowrap">001002</td>
+                                            <td>980</td>
+                                            <td class="text-capitalize text-right">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#viewDetailsModal2" class="btn btn-primary waves-effect btn-label waves-light me-3 btn-sm text-uppercase">
+                                                    <i class="dripicons-preview label-icon"></i> View Details
+                                                </button>
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal2" class="btn btn-dark waves-effect btn-label waves-light btn-sm text-uppercase">
+                                                    <i class="mdi mdi-playlist-edit label-icon"></i> Edit
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-capitalize text-nowrap">3</td>
+                                            <td>Machakos Level 5 Hospital</td>
+                                            <td class="text-capitalize text-nowrap">Machakos County</td>
+                                            <td>Mwala</td>
+                                            <td>Level 5</td>
+                                            <td class="text-capitalize text-nowrap">002003</td>
+                                            <td>720</td>
+                                            <td class="text-capitalize text-right">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#viewDetailsModal3" class="btn btn-primary waves-effect btn-label waves-light me-3 btn-sm text-uppercase">
+                                                    <i class="dripicons-preview label-icon"></i> View Details
+                                                </button>
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal3" class="btn btn-dark waves-effect btn-label waves-light btn-sm text-uppercase">
+                                                    <i class="mdi mdi-playlist-edit label-icon"></i> Edit
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-capitalize text-nowrap">4</td>
+                                            <td>Kisumu County Referral Hospital</td>
+                                            <td class="text-capitalize text-nowrap">Kisumu County</td>
+                                            <td>Kisumu Central</td>
+                                            <td>Level 5</td>
+                                            <td class="text-capitalize text-nowrap">003004</td>
+                                            <td>850</td>
+                                            <td class="text-capitalize text-right">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#viewDetailsModal4" class="btn btn-primary waves-effect btn-label waves-light me-3 btn-sm text-uppercase">
+                                                    <i class="dripicons-preview label-icon"></i> View Details
+                                                </button>
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal4" class="btn btn-dark waves-effect btn-label waves-light btn-sm text-uppercase">
+                                                    <i class="mdi mdi-playlist-edit label-icon"></i> Edit
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-capitalize text-nowrap">5</td>
+                                            <td>Mombasa County Referral Hospital</td>
+                                            <td class="text-capitalize text-nowrap">Mombasa County</td>
+                                            <td>Kisauni</td>
+                                            <td>Level 5</td>
+                                            <td class="text-capitalize text-nowrap">004005</td>
+                                            <td>670</td>
+                                            <td class="text-capitalize text-right">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#viewDetailsModal5" class="btn btn-primary waves-effect btn-label waves-light me-3 btn-sm text-uppercase">
+                                                    <i class="dripicons-preview label-icon"></i> View Details
+                                                </button>
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal5" class="btn btn-dark waves-effect btn-label waves-light btn-sm text-uppercase">
+                                                    <i class="mdi mdi-playlist-edit label-icon"></i> Edit
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <!-- Continue adding rows as needed -->
+                                    </tbody>
+                                    <tfoot class="table-dark text-uppercase">
+                                        <tr>
+                                            <th></th>
+                                            <th colspan="5">56 Facilities</th>
+                                            <th>56 Users</th>
+                                            <th></th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
                                 
-                                <div class="card-body">
-                                    
-                                    <div id="revenuePerfomanceFire"></div>
-                                </div>
                             </div>
                         </div>
-
                     </div>
-
+                  </div>  
+                 </div>
                     <!-- end row -->
                 </div>
                 <!-- container-fluid -->
@@ -1668,434 +1505,616 @@
             <!-- invoice details -->
 
             <!-- Bill creation modal -->
-            <div class="modal fade new-alcohol-application" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+            <div class="modal fade new-hospital-invoice" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <div class="modal-header liq-header">
-                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Alcoholic Drinks Licence New Application</h5>
+                        <div class="modal-header ">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Create New Invoice</h5>
                            
                             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body pb-4 searching-modal-body">
-                            <div class="row">
-                                <div class="col-md-12 mb-3">
-                                    <label for="">Search or Input establishment details</label>
-                                    <select class="form-select liq-search-method" >
-                                        <option value="">Select Search Method</option>
-                                        <option value="search">Search from Existing Registered Businesses</option>
-                                        <option class="register">Unregestered Business</option>                                      
-                                    </select>
-
-                                   
+                       <div class="modal-body">
+                            <div class="row selecting-service">
+                                <div class="col-6">
+                                    <div class="">
+                                        <label for="">Clients Full Names</label>
+                                        <input type="text" class="form-control mb-4" placeholder="eg Jane Doe">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="row">
+                                <div class="col-6">
+                                    <div class="">
+                                        <label for="">Phone Number</label>
+                                        <input type="text" class="form-control mb-4" placeholder="eg 0704549859">
+                                    </div>
+                                </div>
 
-                                <!-- searching for an already registered business that has a valid certificate generated from the system -->
-                                <div class="col-12 business-id-search d-none">
-                                    <label for="">Search For Business To continue</label>
-                                    <div class="input-group mb-3">
-                                        
-                                        <input type="text" class="form-control" placeholder="Enter Business ID">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light search-bz-btn">
-                                            <i class="bx bx-search-alt-2 font-size-16 align-middle me-2"></i> Search
-                                        </button>
-                                      </div>
+                                <div class="col-6">
+                                    <div class="">
+                                        <label for="">Email Address</label>
+                                        <input type="email" class="form-control mb-4" placeholder="eg email@email.com">
+                                    </div>
+                                </div>
 
-                                      <!-- business serach results start here display only  when there are results to be shown -->
-                                      <div class="row pt-3">
-
-                                        <!-- use this loader when serching for the business -->
-                                        <div  class="searching-biz-loader d-none">
-                                            <div class="loader-modal p-5">
-                                                <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
-                                                    <div class="spinner-border text-dark m-1" role="status">
-                                                        <span class="sr-only fw-bold">Searching</span>
-                                                    </div>
-                                                    <p class="pt-4 fw-strong text-uppercase fw-bold">Please wait patiently while our system looks <br> for the business.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 biz-search-results d-none">
-                                            <table class="table table-sm text-uppercase table-striped">
-                                                <thead class="table-dark">
-                                                    <th colspan="2">Search Results for Business with <span class="text-warning">Business ID 1234</span></th>
+                              
+                                <!-- creatong the new invoice modal -->
+                                <div class="col-12 mt-2">
+                                   <div class="row">
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-editable-1 align-middle table-edits">
+                                                <thead class="table-light">
+                                                    <tr class="text-uppercase table-dark">
+                                                        <th>#</th>
+                                                        <th>Service Category</th>
+                                                        <th class="">Service sub Category</th>
+                                                        <th>QTY</th>
+                                                        
+                                                        <th></th>
+                                                    </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <th>
-                                                            Name of Establishment
-                                                        </th>
+                                                    <tr data-id="1">
+                                                        <td style="width: 80px">1.</td>
+                                                        <td class="">
+                                                            <select class="form-control selectpicker form-select" data-live-search="true" title="Select Service Category" data-style="form-select btn border">
+                                                                <option value="" disabled>Select Service Category</option>
+                                                                <option value=""> Service Category one</option>
+                                                                <option value=""> Service Category two</option>
+                                                                <option value=""> Service Category three</option>
+                                                                <option value=""> Service Category four</option>
+                                                                <option value=""> Service Category five</option>
+                                                            </select>
+                                                        </td>
                                                         <td>
-                                                            The big Palace Bar and Grill
+                                                            <select class="form-control selectpicker form-select" data-live-search="true" title="Select Service Subcategory" data-style="form-select btn border">
+                                                                <option value="" disabled>Select Service Category</option>
+                                                                <option value="">Category one</option>
+                                                                <option value="">Category two</option>
+                                                                <option value="">Category three</option>
+                                                                <option value="">Category four</option>
+                                                                <option value="">Category five</option>
+                                                            </select>
+                                                            
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control form-control-sm" placeholder="Quantity">
+                                                        </td>
+                                                       
+                                                        <td></td>
+
+                                                    </tr>
+
+                                                    <tr class="cloneCharges d-none">
+                                                        <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                        <td class="">
+                                                            <select class="form-control selectpicker form-select" data-live-search="true" title="Select Service Category" data-style="form-select btn border">
+                                                                <option value="" disabled>Select Service Category</option>
+                                                                <option value=""> Service Category one</option>
+                                                                <option value=""> Service Category two</option>
+                                                                <option value=""> Service Category three</option>
+                                                                <option value=""> Service Category four</option>
+                                                                <option value=""> Service Category five</option>
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <select class="form-control selectpicker form-select" data-live-search="true" title="Select Service Subcategory" data-style="form-select btn border">
+                                                                <option value="" disabled>Select Service Category</option>
+                                                                <option value="">Category one</option>
+                                                                <option value="">Category two</option>
+                                                                <option value="">Category three</option>
+                                                                <option value="">Category four</option>
+                                                                <option value="">Category five</option>
+                                                            </select>
+                                                            
+                                                        </td>
+
+                                                        <td>
+                                                            <input type="text" class="form-control form-control-sm" placeholder="Quantity">
+                                                        </td>
+                                                        
+
+                                                        <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                            <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
                                                         </td>
                                                     </tr>
 
-                                                    <tr>
-                                                        <th>
-                                                            Sub County
-                                                        </th>
-                                                        <td>
-                                                            Rachuonyo South Subcounty
-                                                        </td>
-                                                    </tr>
 
-                                                    <tr>
-                                                        <th>
-                                                            Ward
-                                                        </th>
-                                                        <td>
-                                                            Name of the Ward
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Physical Address
-                                                        </th>
-                                                        <td>
-                                                            Next to the Big Super Market
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Building/Name of Premiscess
-                                                        </th>
-                                                        <td>
-                                                            The big Tower
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Postal Address
-                                                        </th>
-                                                        <td>
-                                                            123-100009 Eldoret
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Applicant's Name
-                                                        </th>
-                                                        <td>
-                                                            John Doe
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Phone Number
-                                                        </th>
-                                                        <td>
-                                                            0701234567
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Email Address
-                                                        </th>
-                                                        <td>
-                                                            email@mail.com
-                                                        </td>
-                                                    </tr>
                                                 </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                            <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add Service</span></span>
+                                                        </td>
+                                                    </tr>
+                                                </tfoot>
                                             </table>
-
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <button  target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn">
-                                                        <i class="mdi mdi-checkbox-multiple-marked font-size-16 align-middle me-2"></i> Generate Invoice
-                                                    </button>
-                                                </div>
-                                            </div>
                                         </div>
-
-
-                                        <!-- use this for a search that has no results -->
-                                        <div class="col-12 no-results d-none">
-                                            <div class="p-4 border-radius border-solid border-primary border-2 d-flex flex-column align-items-center justify-content-center">
-                                                <div class="img mb-4 pt-3">
-                                                    <img src="assets/images/no-result-found-icon.svg" style="height: 65px;" class="img" alt="">
-                                                </div>
-                                                <div class="text-center">
-                                                    <h4 class="card-title text-uppercase text-dark">No results Found</h4>
-                                                    <p>
-                                                        The business ID you entered does not correspond to any registered business. Please try your search again <br> to find the desired results.</p>
-                                                    
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                      </div>
-                                      <!-- end of business serach results -->
+                                    </div>
+                                  
+                                   </div>
                                 </div>
 
 
-                                <!-- form for registering ann unregistered business -->
-                                <div class="col-12 unregistered-biz-cont d-none">
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="formrow-firstname-input" class="form-label">Name of Establishment</label>
-                                            <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter the Business Name" spellcheck="false" data-ms-editor="true">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-8">
-                                            <div class="row">
 
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Name of Premices</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Building Name" spellcheck="false" data-ms-editor="true">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Sub County</label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>            
-                                                </div>
-        
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Ward</label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>
-            
-                                                </div>
-        
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Zone eg Market, </label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>
-            
-                                                </div>
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Applicant's Name</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="eg John Doe" spellcheck="false" data-ms-editor="true">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Applicant's Postal Address</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="eg 123-001200 Nairobi" spellcheck="false" data-ms-editor="true">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-4">
-                                           <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Physical Address</label>
-                                                        <textarea placeholder="Enter the Business's Physical Address" class="form-control" name="" id="" cols="30" rows="10"></textarea>
-                                                    </div> 
-                                                </div>
-                                           </div>
-                                        </div>
-
-                                        <div class="col-sm-12 col-md-6">
-                                            <div class="mb-3">
-                                                <label for="formrow-firstname-input" class="form-label">Appilicant's Phone</label>
-                                                <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter Phone Number" spellcheck="false" data-ms-editor="true">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-12 col-md-6">
-                                            <div class="mb-3">
-                                                <label for="formrow-firstname-input" class="form-label">Appilicant's Email</label>
-                                                <input type="email" class="form-control" id="formrow-firstname-input" placeholder="email@email.com" spellcheck="false" data-ms-editor="true">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 mt-3">
-                                            <h4 class="text-capitalize">Establishment's Physical location</h4>
-                                            <p>Select the address where this establishmnet is located from this map.</p>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="">
-                                                <div class="card-header bg-white boarder-bottom-1 d-none">
-                                                    <div class="row d-flex justify-content-between">
-                                                        <div class="col-12">
-                                                            <div class="search-box mb-2 me-2">
-                                                                <div class="position-relative">
-                                                                    <input type="text" class="form-control bg-light border-light rounded map-searcher" id="pac-inpu" placeholder="Search for location">
-                                                                    <i class="bx bx-search-alt search-icon"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                
-                                                </div>
-                                                <div class="" style="height: 350px;">
-                                                    <div id="map" class="w-100 mt-1 h-100 live-map-cont main-map-container"></div>
-                                                </div>
-                
-                                            </div>
-                
-                                            <div class="">
-                                                <div class="position-relative ">
-                                                    <!-- map serach input box -->
-                                                    <div class="form-group map-searcher mt-3 pt-3">
-                                                        <input type="text" class="form-control form-control-lg text-black" placeholder="Search for a location" id="pac-input">
-                                                        <button title="Clear search results" class="btn btn-transparent border-0 clear-map"><i class="mdi mdi-close d-none"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <button  target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn">
-                                                <i class="mdi mdi-checkbox-multiple-marked font-size-16 align-middle me-2"></i> Generate Invoice
-                                            </button>
-                                        </div>
-                
-                                       
-
-                                        
-                                    </div>
+                                <div class="col-12 mt-5">
+                                    <button class="btn w-100 text-uppercase button btn-primary hospital-invoice-nxt">Next</button>
                                 </div>
-                            </div>
-                        </div>
 
-                        <!-- matters payment and billing starts here -->
-
-                        <div class="modal-body d-none receipt-billing-modal-body">
-                            <div class="billing-receipting-loader">
-                                <div class="loader-modal p-5">
-                                    <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
-                                        <div class="spinner-border text-dark m-1" role="status">
-                                            <span class="sr-only">Loading...</span>
-                                        </div>
-                                        <p class="pt-4 fw-strong text-uppercase">Generating Invoice Please Wait</p>
-                                    </div>
-                                </div>
                             </div>
 
-                            <!-- generated invoice results -->
-                            <div class="row generated-invoice d-none">
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <address>
-                                                <strong class="text-capitalize">Invoice Prepared for:</strong>
-                                                <br>Establishment Name: <span class="fw-semibold text-black">The Bar And Grill</span><br>
-                                               Phone: <span class="fw-semibold text-black">0704549859</span>
-                                               <br>
-                                                <br> Prepared on 2023-12-15 10:34:49 By Jane Waweru</address></div>
-                                    </div>
-                                   <div class="table-responsive">
-                                    <table class="table table-nowrap vertical-align-middle table-bordered ">
-                                        <thead class="table-dark">
+                            <div class="invoice-details row d-none">
+                               <div class="col-6">
+                                <address>
+                                    <strong class="text-capitalize">Invoice For:</strong><br>
+                                    Kelvin Otati Mugure<br>
+                                    email@mail.com, 0704 549 859<br>                                   
+                                </address>
+                               </div>
+
+                               <div class="col-12">
+                                <div class="table-responsive border-1 mb-3">
+                                    <table class="table table-nowrap vertical-align-middle table-bordered">
+                                        <thead class="table-danger">
                                             <tr class="vertical-align-middle">
-                                                <th style="width: 70px;">1.</th>
                                                 <th class="text-uppercase" colspan="3">
-                                                    Invoice No:. <span class="fw-bold text-warning">BLL123456</span> 
+                                                    Invoice Details
                                                 </th>
-                                                
+                                                <th class="text-end">
+                                                    <a href="PrintDocs/Bill/bill.html" target="new" type="button" class="btn btn-info btn-block w-md btn-sm text-uppercase fw-bold" style="margin-left: 10px;">
+                                                        <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                    </a>
+                                                </th>
                                             </tr>
                                         </thead>
                                         <thead class="bg-light">
                                             <tr>
                                                 <th style="width: 70px;">No.</th>
-                                                <th colspan="2">Item Description (X QTY)</th>
+                                                <th colspan="2">Service Description (x QTY)</th>
                                                 <th class="text-end">Amount</th>
-                                                
                                             </tr>
                                         </thead>
                                         <tfoot class="bg-light text-uppercase table-bordered">
                                             <tr>
                                                 <td></td>
-                                                
                                                 <td class="text-right fw-bold text-uppercase" colspan="2">
                                                     Invoice Sub Total
                                                 </td>
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    KES 500
+                                                <td class="text-right fw-bold text-uppercase">
+                                                    KES 5,500
                                                 </td>
-                                               
                                             </tr>
                                             <tr>
                                                 <td></td>
-                                                
                                                 <td class="text-right fw-bold text-uppercase" colspan="2">
                                                     Amount Paid
                                                 </td>
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                <td class="text-right fw-bold text-uppercase">
                                                     KES 0.00
                                                 </td>
-                                               
                                             </tr>
-
                                             <tr class="table-success">
                                                 <td></td>
-                                                
                                                 <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    Total Payable
+                                                    Outstanding Balance
                                                 </td>
-                                                <td class="border-0 text-end text-right">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 500</h5>
+                                                <td class="border-0 text-end">
+                                                    <h5 class="m-0 text-uppercase fw-bold">KES 5,500</h5>
                                                 </td>
-                                               
                                             </tr>
                                         </tfoot>
-                                        <tbody class="text-uppercase">
-                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                        <tbody>
+                                            <tr title="General Medical Consultation">
                                                 <td>01</td>
                                                 <td colspan="2">
-                                                    <p class="mb-0 p-0 m-0"> ALCOHOLIC DRINKS LICENCE Application (X1)</p>
+                                                    <p class="mb-0 p-0 m-0">General Consultation (X1)</p>
                                                 </td>
-                                                <td class="text-end text-right">KES 500</td>
-                                                
+                                                <td class="text-end">KES 1,000</td>
                                             </tr>
-
-                                         
-
-
-
-                                            
+                                            <tr title="Laboratory Tests">
+                                                <td>02</td>
+                                                <td colspan="2">
+                                                    <p class="mb-0 p-0 m-0">Full Blood Count Test (X1)</p>
+                                                </td>
+                                                <td class="text-end">KES 1,500</td>
+                                            </tr>
+                                            <tr title="Radiology Services">
+                                                <td>03</td>
+                                                <td colspan="2">
+                                                    <p class="mb-0 p-0 m-0">Chest X-ray (X1)</p>
+                                                </td>
+                                                <td class="text-end">KES 2,000</td>
+                                            </tr>
+                                            <tr title="Pharmacy Services">
+                                                <td>04</td>
+                                                <td colspan="2">
+                                                    <p class="mb-0 p-0 m-0">Prescribed Medication (X2)</p>
+                                                </td>
+                                                <td class="text-end">KES 1,000</td>
+                                            </tr>
                                         </tbody>
                                     </table>
-                                   </div>
+                                    
+                                </div>
+                               </div>
 
-                                   <div class="d-flex text-right justify-content-end align-self-end">
-                                    <button type="button" data-toggle="modal" data-target="#payment-modal" class="btn btn-primary waves-effect btn-label waves-light fw-bold text-uppercase me-3">
-                                        <i class="mdi mdi-send label-icon"></i> Receipt Invoice
-                                    </button>
-                                    <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light fw-semibold text-uppercase" type="button"><i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Invoice</a> 
-                                   </div>
+                               <div class="col-12">
+                                    <button class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#payment-modal">Receipt Transaction</button>
                                 </div>
                             </div>
-                            <!-- end of generated receipt results -->
-                        </div>
-
-                        
+                       </div>                        
                     </div>
                     <!-- /.modal-content -->
                 </div>
                 <!-- /.modal-dialog -->
             </div>
             <!-- end of bill creation modal -->
+
+
+            <!-- receive payment modal -->
+            <div class="modal fade" id="payment-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-none">
+                        <span class="badge badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Receive Payment</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle close-modal" data-dismiss="modal"  aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge  badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Receive Payment</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle pull-right close-modal" data-dismiss="modal" aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+                        </div>
+
+                        <div class="payment-panel-parent">
+                            
+                            <div class="send-method payment-panel payment-active-panel">
+                                <label for="" class="mb-0 pb-0">Payment Method</label>
+                                <p><small class="text-muted">How would you like to send this money?</small></p>
+    
+                                <div>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button fw-medium" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <img class="rounded-circle" src="assets/images/users/mpesa.jpg" alt="Mobile Money" height="65">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <p class="m-0 p-0 text-uppercase fw-semibold">MPESA</p>                                                
+                                                        <p class="mb-0 p-0"> <small>A payment request will be sent directly to the customer</small></p>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div>
+                                                        <p>
+                                                            A payment request of <strong class="text-black">KES 1,500</strong> will be sent to the MPESA number you enter below.
+                                                        </p>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">MPESA Number</label>
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control font-21 text-success form-control-lg" id="phone-input" placeholder="Enter Name">
+                                                            <label for="floatingnameInput">Phone No.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button fw-medium collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <img class="rounded-circle" src="assets/images/users/money.jpg" alt="Mobile Money" height="65">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <p class="m-0 p-0 text-uppercase fw-semibold">BANK</p>                                                
+                                                        <p class="mb-0 p-0"> <small>By selecting this option you confirm that you have received the payment inform of cash</small></p>
+    
+                                                        
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                   <div class="bank-inputs">
+                                                    <div class="mb-3">
+                                                        <label for="">Select Bank</label>
+                                                        <select name="" id="" class="form-select">
+                                                            <option value="" disabled>Select Bank Account</option>
+                                                            <option value="">KCB - 1245475</option>
+                                                            <option value="">Cooperative Bank - 56789</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Bank refrence Number</label>
+                                                        <input type="text" class="form-control" placeholder="Enter Ref No.">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Payer's Full Names</label>
+                                                        <input type="text" class="form-control" placeholder="Enter full Names">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="">Payer's Phone Number</label>
+                                                        <input type="text" class="form-control" placeholder="Enter Phone Number">
+                                                    </div>
+
+                                                    <div class="form-check form-check-primary mb-3">
+                                                        <input class="form-check-input" type="checkbox" id="confirm-cash">
+                                                        <label class="form-check-label" for="confirm-cash">
+                                                            Confirm to have received the cheque or receipt for <strong>KES 1,500.00</strong> from the client
+                                                        </label>
+                                                    </div>
+
+                                                    <button class="btn btn-primary w-100 text-uppercase bank-nxt-bank">Next</button>
+                                                   </div>
+
+                                                   <div class="bank-input d-none">
+                                                        <p>
+                                                            An OTP has been sent to the client's phone number: <strong class="text-black">0712345678</strong>. Please ask them to check their messages. If they haven't received it, ask them to enable promotional messages and try again. <a href="#" title="Resend OTP">If necessary, you can click here to retry sending the OTP</a>.
+                                                        </p>
+                                                        <div class="form-group">
+                                                            <label for="">OTP</label>
+                                                            <div class="form-floating mb-3">
+                                                                <input type="text" class="form-control font-21 text-success form-control-lg bank-otp-input" id="phone-input" placeholder="Enter Name" spellcheck="false" data-ms-editor="true">
+                                                                <label for="floatingnameInput">Enter OTP sent to Client's Phone</label>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn btn-light waves-effect me-3 btn-otp-edit">
+                                                                <i class="bx bxs-edit-alt font-size-16 align-middle me-2"></i> Edit
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary waves-effect btn-otp-submit" disabled>
+                                                                Next  <i class="bx bx-right-arrow-alt font-size-16 align-middle"></i>
+                                                            </button>
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none transaction-summary payment-panel">
+                                <label for="">Transaction Breakdown</label>
+                                <div class="border p-4 rounded ">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="text-muted ">
+                                                Receipt NO.                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                RTS12364558T                                         
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Receipt For                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                Alex Wanjala                                         
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Payment Method                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                MPESA                                         
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6">
+                                            <div class="text-muted mt-2">
+                                                Transaction Amount                                           
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end">
+                                            <div class=" text-right text-black">
+                                                KES 1,500                                        
+                                            </div>
+                                        </div>
+    
+                                        
+                                        <div class="col-12 text-black"><hr class="mb-0 pb-0"></div>
+    
+                                        <div class="col-lg-6 text-uppercase">
+                                            <div class="text-muted mt-2 font-21">
+                                                Total                                          
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6 align-self-end text-uppercase">
+                                            <div class=" text-right text-black font-21 fw-bold">
+                                                KES 1,500                                        
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="mpesa-confirmation ">
+                                        <p class="text-muted mt-2">A payment request of <strong class="text-black">KES 1,500</strong> will be sent to <strong class="text-black">phone number (0704549859)</strong> soon after you click the <strong class="text-black text-capitalize">Send Request</strong> button bellow. 
+                                            <br>
+                                            <br>
+                                            Remember to <strong class="text-black">Check your phone</strong> to confirm payment by entering your Mpesa pin.</p>
+
+                                            <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect btn-send waves-light text-center w-100">
+                                                <div class="d-flex justify-content-center align-items-center"> 
+                                                    <div class="stk-timer-container d-none justify-content-center align-items-center">
+                                                        <span class="mdi mdi-timer-outline font-16px"></span>
+                                                        <span class="stk-timer px-2"></span>
+                                                    </div>
+                                                    <div class="justify-content-center align-items-center d-flex">
+                                                        <span class="px-2">Send Request</span> 
+                                                        <div class="flip-x"><i class="mdi mdi-reply ms-3 font-16px"></i></div>
+                                                    </div>
+
+                                                </div>
+                                             </button>
+                                    </div>
+
+                                    <div class="my-wallet-confirmation d-none">
+                                        <p class="text-muted mt-2 "><strong class="text-uppercase text-black">KES 300</strong> will be deducted from your guardian blink wallet and amount will be credited to <strong class="text-capitalize text-black">Alex's pocket money account</strong>.</p>
+                                        <p class="text-muted">confirm transaction by clicking the <strong class="text-capitalize text-black">send money</strong> button.</p>
+                                        
+                                        <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect waves-light text-center w-100">
+                                            <div class="d-flex justify-content-center align-items-center"> <span class="mx-2">Send Money</span> <div class="flip-x"><i class="mdi mdi-reply flip-x ms-3 font-16px"></i></div></div>
+                                         </button>
+
+                                    </div>
+    
+                                    
+                                </div>
+                            </div>
+                            <div class="text-center d-flex flex-column justify-content-around align-items-center sent-success d-none payment-panel">
+                                <div class="success-image mb-4">
+                                    <img src="assets/images/payment-confirmation-images/sent.svg" height="200" alt="">                                
+                                </div>
+                                <h4 class="text-blink-primary fw-bold">Transaction Complete</h4>
+                                <p class="text-muted mb-4"><strong class="text-black">KES 1,500.00</strong> has been received for <strong class="text-black">Bill No. YUB48997</strong></p>
+    
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex">
+                        <button href="javascript: void(0);" disabled class="btn btn-outline-light waves-effect waves-light payment-prev"> <i class="mdi mdi-arrow-left ms-1"></i> Previouse </button>
+                        <button href="javascript: void(0);" class="btn btn-primary waves-effect waves-light payment-next">Next <i class="mdi mdi-arrow-right ms-1"></i></button>
+                        <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect waves-light text-center d-none">
+                           <div class="d-flex justify-content-center align-items-center"> <span>Send Money</span> <div class="flip-x"><i class="mdi mdi-reply flip-x ms-3 font-16px"></i></div></div>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- end of payment modal -->
+
+            <!-- registering  a new hospital -->
+            <div class="modal fade new-hospital-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Register A New Health Facility</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="">Facility Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter The Facility Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-8 mb-3">
+                                    <div class="form-group">
+                                        <label for="" class="mb-0 pb-0">Facility Type</label>                                      
+                                        <select class="form-select">
+                                            <option value="level_2" disabled>Select hospital level type</option>
+                                            <option value="level_2">Level Two: Dispensaries and Clinics</option>
+                                            <option value="level_3">Level Three: Health Centers</option>
+                                            <option value="level_4">Level Four: Sub-County Hospitals</option>
+                                            <option value="level_5">Level Five: County Referral Hospitals</option>
+                                            <option value="level_6">Level Six: National Referral Hospitals</option>                                           
+                                        </select>
+                                        <p> <small>Select the hospital type</small></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="" class="mb-0 pb-0">NHIF Code</label>                                     
+                                        <input type="text" class="form-control" placeholder="Enter Code" title="Enter the NHIF code assigned to this hospital">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="" class="mb-0 pb-0">SubCounty</label>
+                                     
+                                        <select class="form-select">
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMA BAY TOWN</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMABAY HQ</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KABONDO KASIPUL</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KARACHUONYO</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KASIPUL</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">MBITA</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">NDHIWA</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">RANGWE</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">SUBA</a></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="" class="mb-0 pb-0">Ward</label>
+                                     
+                                        <select class="form-select">
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMA BAY TOWN</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">HOMABAY HQ</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KABONDO KASIPUL</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KARACHUONYO</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">KASIPUL</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">MBITA</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">NDHIWA</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">RANGWE</a></option>
+                                            <option value="[object Object]"><a class="dropdown-item" href="#">SUBA</a></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="" class="mb-0 pb-0">Longitude & Latitude</label>
+                                        <p> <small>Enter the coodiantes in the following pattern Longitude,Latitude</small></p>
+                                        <input type="text" class="form-control" placeholder="Longitude, Latitude">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button class="btn btn-primary w-100" title="Click to save">DONE</button>                           
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+             <!-- end of registration -->
 
 
             <footer class="footer ">
@@ -2186,6 +2205,10 @@
 
      <!-- active vs expired certificats -->
      <script src="assets/js/pages/expiredVsActiveCerts.js"></script>
+
+      <!-- Table Editable plugin -->
+      <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
+      <script src="assets/js/pages/table-editable.int.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js "></script>
