@@ -616,49 +616,32 @@
                     <!-- end page title -->
 
                     <!-- tool bar -->
-                 <div class="row">
+                    <div class="row">
                         <div class="col-12 active">
                             <div class="card active">
-                                <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
+                                <div class="card-body mini-nav bg-primary pt-2 pb-3 active">
                                     <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
-                                        <button
-                                            class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary"
-                                            type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                                            aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                                            aria-label="Toggle navigation">
+                                        <button class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                             <span class="mdi mdi-menu"></span>
                                         </button>
-                                        <div class="collapse navbar-collapse justify-content-between active"
-                                            id="navbarNavAltMarkup">
-                                            <div class="navbar-nav">
-                                                <a class="nav-item nav-link" href="cert-biz-stats.html">Dashboard</a>
-                                                <a class="nav-item nav-link" href="cert-biz-ongoing.html">Pending Validation</a>
-
-                                                    <a class="nav-item nav-link" href="cert-biz-inspection.html">Pending Inspection</a>
-                                                <a class="nav-item nav-link" href="cert-biz-suspended.html">Suspended
-                                                    Applications</a>
-                                                <a class="nav-item nav-link" href="cert-biz-approved.html">Approved
-                                                   </a>
-                                                    <a class="nav-item nav-link" href="cert-biz-declined.html">Declined
-                                                        </a>
-                                                <a class="nav-item nav-link" href="cert-biz-active.html">Paid SBPs</a>
-                                                <a class="nav-item nav-link" href="cert-biz-expired.html">Unpaid SBPs</a>
-                                                <a class="nav-item nav-link" href="cert-biz-penalized.html">Penalized
-                                                    SBPs</a>
-                                                <a class="nav-item nav-link" href="cert-biz-unpaid-bills.html">Pending
-                                                    Bills</a>
-                                                <a class="nav-item nav-link"
-                                                    href="cert-biz-receipted-bills.html">SBP Receipts</a>
-                                                    <a class="nav-item nav-link" href="cert-biz-map.html">Map View</a>
-                                                    
-                                            </div>
+                                        <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
+                                            <div class="navbar-nav active">
+                                                    <a class="nav-item nav-link active" href="flagged-transaction-payment-realocation.html" title="Quick stats">Approved Reallocations</a>
+                                                    <a class="nav-item nav-link" href="flagged-transaction-payment-realocation-pending.html" title="Newly registered applications">Pending Approval</a>
+                                                    <a class="nav-item nav-link" href="flagged-transaction-payment-realocation-stats.html" title="applications pending inspection">Reallocated Funds Stats</a>
+                                                   
+                                                </div>
+    
+                                            <form class="form-inline my-2 my-lg-0">
+                                                <button type="button" class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" data-toggle="modal" data-target=".new-alcohol-application">Initiate payment Reallocation</button>
+                                              </form>
                                             
-
+    
                                         </div>
                                     </nav>
                                 </div>
                             </div>
-
+    
                         </div>
                     </div>
                     <!-- end of toolbar -->
@@ -671,19 +654,19 @@
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
                                         role="toolbar">
                                         <h4 class="card-title text-capitalize mb-0 ">
-                                            Applications Pending Validation
+                                            Funds Realocation
                                         </h4>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
-                                        <label class="text-nowrap mb-0">Business Activity:</label>
+                                        <label class="text-nowrap mb-0">Reallocation status</label>
                                         <select class="form-select mx-2" title="Select Subcounty">
-                                            <option>All Business Activites</option>
-                                            <option>Homabay Town</option>
-                                            <option>Ndhiwa</option>
-                                            <option>...</option>
+                                            <option>All Reallocation Activities</option>
+                                            <option>Approved</option>
+                                            <option>Pending Approval</option>
+                                            <option>Rejected</option>
                                         </select>
 
-                                        <label class="text-nowrap mb-0 mx-2">Business Sub Category:</label>
+                                        <label class="text-nowrap mb-0 mx-2">Sub County</label>
                                         <select class="form-select" title="Select Subcounty">
                                             <option>All Sub Categories</option>
                                             <option>Homabay Town</option>
@@ -701,280 +684,64 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive ">
-
-                                        <table class="table align-middle table-hover  contacts-table table-striped "
-                                            id="datatable-buttons">
-                                            <thead class="table-light">
-                                                <tr class="table-dark">
-                                                    <th scope="col">Receipt No.</th>
-                                                    <th scope="col">Business ID</th>
-                                                    <th scope="col">Business Name</th>
-                                                    <th scope="col">Applicatio Date</th>
-                                                    <th>Licensing Officer</th>
-                                                    <th>Status</th>
-                                                    <th scope="col" class="text-right">Amount Paid</th>
-                                                    <th></th>
+                                        <table class="table table-striped">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th>Client</th>
+                                                    <th>Original Invoice No.</th>
+                                                    <th>Original Invoice Date</th>
+                                                    <th>Invoiced Amount</th>
+                                                    <th>Amount Paid</th>
+                                                    <th>New Invoice No.</th>
+                                                    <th>New Invoice Date</th>
+                                                    <th>Amount Transferred</th>
+                                                    <th>Transfer Reason</th>
+                                                    <th>Initiated By</th>
+                                                    <th>Initiator Phone No.</th>
+                                                    <th>Approved By</th>
+                                                    <th>Approver Phone No.</th>
+                                                    <th>Transfer Date</th>
+                                                    <th>Transfer Status</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
-                                                        <td>Tobby Arnold</td>
-                                                    
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td>ABC Ltd</td>
+                                                    <td>INV-00123</td>
+                                                    <td>1st Jan 2024</td>
+                                                    <td>KES 10,000</td>
+                                                    <td>KES 10,000</td>
+                                                    <td>INV-00234</td>
+                                                    <td>5th Jan 2024</td>
+                                                    <td>KES 10,000</td>
+                                                    <td>Wrong Invoice Selected</td>
+                                                    <td>John Doe</td>
+                                                    <td>+254712345678</td>
+                                                    <td>Jane Doe</td>
+                                                    <td>+254798765432</td>
+                                                    <td>10th Jan 2024</td>
+                                                    <td>Completed</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
-                                                        <td>Tobby Arnold</td>
-                                                    
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td>XYZ Enterprises</td>
+                                                    <td>INV-00456</td>
+                                                    <td>2nd Feb 2024</td>
+                                                    <td>KES 6,000</td>
+                                                    <td>KES 5,500</td>
+                                                    <td>INV-00567</td>
+                                                    <td>6th Feb 2024</td>
+                                                    <td>KES 5,500</td>
+                                                    <td>Incorrect Service Charge</td>
+                                                    <td>Jane Smith</td>
+                                                    <td>+254700123456</td>
+                                                    <td>Mark Johnson</td>
+                                                    <td>+254711654321</td>
+                                                    <td>12th Feb 2024</td>
+                                                    <td>Pending</td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
-                                                        <td>Tobby Arnold</td>
-                                                    
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
-                                                        <td>Tobby Arnold</td>
-                                                    
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-
                                             </tbody>
-                                            <tfoot class="table-dark">
-                                                <tr>
-
-                                                    <th>
-                                                        23 Certs
-                                                    </th>
-
-
-                                                    <th class="text-nowrap" colspan="4">23 Businesses</th>
-                                                   
-                                                    <td class="text-nowrap text-right " colspan="2">
-                                                        <span class="fw-semibold ">KES 2,000,000</span>
-                                                    </td>
-                                                    <td></td>
-
-
-
-
-                                                </tr>
-
-                                            </tfoot>
                                         </table>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -1658,6 +1425,70 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- invoice details -->
+
+            <!-- modals starts here -->
+            <div class="modal fade new-alcohol-application" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header liq-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Initiate Payment Reallocation</h5>
+                           
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                       <div class="modal-body">
+                            <div class="row text-uppercase">
+                                <div class="col-12" title="The invoice where the payment was initially made.">
+                                    <div class="mb-4">
+                                        <label class="mb-1">Original Invoice Number <strong class="text-danger">*</strong></label>
+                                        <input type="text"  maxlength="25" name="weight" class="form-control" placeholder="Invoice Number where payment was initially made" title="The invoice where the payment was initially made." spellcheck="false" data-ms-editor="true">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12" title="The invoice where the payment was initially made.">
+                                    <div class="mb-4">
+                                        <label class="mb-1">Original Invoice Number <strong class="text-danger">*</strong></label>
+                                        <input type="text"  maxlength="25" name="weight" class="form-control" placeholder="Invoice Number where payment was initially made" title="The invoice where the payment was initially made." spellcheck="false" data-ms-editor="true">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 d-none">
+                                    <div class="mb-4 w-100 d-flex align-items-center justify-content-center">
+                                        <span class="mdi-arrow-down-bold-circle mdi fs-2"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-12" title="The new invoice where the payment is being transferred.">
+                                    <div class="mb-4">
+                                        <label class="mb-1">New Invoice No. <strong class="text-danger">*</strong></label>
+                                        <input type="text"  maxlength="25" name="weight" class="form-control" placeholder="The new invoice receiving the payment." title="The new invoice where the payment is being transferred." spellcheck="false" data-ms-editor="true">
+                                    </div>
+                                </div>
+
+                                <div class="col-12" title="The new invoice where the payment is being transferred.">
+                                    <div class="mb-4">
+                                        <label class="mb-1">Amount To Transfer <strong class="text-danger">*</strong></label>
+                                        <input type="text"  maxlength="25" name="weight" class="form-control" placeholder="KES" title="The new invoice where the payment is being transferred." spellcheck="false" data-ms-editor="true">
+                                    </div>
+                                </div>
+
+                                <div class="col-12" title="The new invoice where the payment is being transferred.">
+                                    <div class="mb-4">
+                                        <label class="mb-1">Transfer Reason <strong class="text-danger">*</strong></label>
+                                        <input type="text"  maxlength="25" name="weight" class="form-control" placeholder="Enter Reason" title="Enter transfer reason" spellcheck="false" data-ms-editor="true">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn btn-primary text-uppercase">Inititate Reallocation</button>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+             <!-- end of madals -->
 
             <footer class="footer ">
                 <div class="container-fluid ">
