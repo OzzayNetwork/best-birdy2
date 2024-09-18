@@ -1633,6 +1633,9 @@ opacity: 25%;
 .text-underline{
     text-decoration: underline !important;
 }
+.mouse-pointer{
+    cursor: pointer !important;
+}
 
 
 

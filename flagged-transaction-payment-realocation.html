@@ -686,58 +686,83 @@
                                     <div class="table-responsive ">
                                         <table class="table table-striped">
                                             <thead class="table-dark">
-                                                <tr>
-                                                    <th>Client</th>
-                                                    <th>Original Invoice No.</th>
-                                                    <th>Original Invoice Date</th>
-                                                    <th>Invoiced Amount</th>
-                                                    <th>Amount Paid</th>
-                                                    <th>New Invoice No.</th>
-                                                    <th>New Invoice Date</th>
-                                                    <th>Amount Transferred</th>
-                                                    <th>Transfer Reason</th>
-                                                    <th>Initiated By</th>
-                                                    <th>Initiator Phone No.</th>
-                                                    <th>Approved By</th>
-                                                    <th>Approver Phone No.</th>
-                                                    <th>Transfer Date</th>
-                                                    <th>Transfer Status</th>
+                                                <tr class="text-nowrap">
+                                                    <th title="Client Name">Client</th>
+                                                    <th title="Original Invoice Number">Orig. Inv. No.</th>
+                                                    <th title="Original Invoice Date">Orig. Inv. Date</th>
+                                                    <th title="Invoiced Amount">Inv. Amount</th>
+                                                    <th title="Amount Paid to Original Invoice">Amt Paid (Orig. Inv.)</th>
+                                                    <th title="Transferred Invoice Number">Transf. Inv. No.</th>
+                                                    <th title="Transferred Invoice Date">Transf. Inv. Date</th>
+                                                    <th title="Amount Transferred to The other Invoice">Amt Transf.</th>
+                                                    <th title="Reason for Invoice Transfer">Transf. Reason</th>
+                                                    <th title="Supporting Documentation for Transfer">Supporting Docs</th>
+                                                    <th title="Person Who Initiated the Transfer">Initiated By</th>
+                                                    <th title="Phone Number of the Initiator">Initiator Phone</th>
+                                                    <th title="Transfer Initiation Date">Initiated Date</th>
+                                                    <th title="Person Who Approved the Transfer">Approved By</th>
+                                                    <th title="Phone Number of the Approver">Approver Phone</th>
+                                                    <th title="Date the Transfer Was Effected">date initiated</th>
+                                                    <th title="Date of the Transfer">Transf. Date</th>
+                                                    <th></th>
                                                 </tr>
                                             </thead>
+                                            <tfoot class="table-dark">
+                                                <tr>
+                                                    <th>22 Clients</th>
+                                                    <th colspan="2">34 Invoices</th>
+                                                    <th>KES 5,600</th>
+                                                    <TH>KES 6,000</TH>
+                                                    <th colspan="2">4 Invoices</th>
+                                                    <TH>KES 6,000</TH>
+                                                    <th></th>
+                                                    <th colspan="9"></th>
+                                                </tr>
+                                            </tfoot>
                                             <tbody>
                                                 <tr>
                                                     <td>ABC Ltd</td>
                                                     <td>INV-00123</td>
-                                                    <td>1st Jan 2024</td>
+                                                    <td>1st Jan 2024, 10:30 AM</td>
                                                     <td>KES 10,000</td>
                                                     <td>KES 10,000</td>
                                                     <td>INV-00234</td>
-                                                    <td>5th Jan 2024</td>
+                                                    <td>5th Jan 2024, 11:00 AM</td>
                                                     <td>KES 10,000</td>
                                                     <td>Wrong Invoice Selected</td>
+                                                    <td><a href="#" title="Evidence of Overpayment document">Evidence of Overpayment.pdf</a></td>
                                                     <td>John Doe</td>
                                                     <td>+254712345678</td>
+                                                    <td>9th Jan 2024, 9:15 AM</td>
                                                     <td>Jane Doe</td>
                                                     <td>+254798765432</td>
-                                                    <td>10th Jan 2024</td>
-                                                    <td>Completed</td>
+                                                    <td>10th Jan 2024, 12:00 PM</td>
+                                                    <td>10th Jan 2024, 12:45 PM</td>
+                                                    <td class="text-right">
+                                                        <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".details-modal">Details</button>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>XYZ Enterprises</td>
                                                     <td>INV-00456</td>
-                                                    <td>2nd Feb 2024</td>
+                                                    <td>2nd Feb 2024, 9:00 AM</td>
                                                     <td>KES 6,000</td>
                                                     <td>KES 5,500</td>
                                                     <td>INV-00567</td>
-                                                    <td>6th Feb 2024</td>
+                                                    <td>6th Feb 2024, 2:15 PM</td>
                                                     <td>KES 5,500</td>
                                                     <td>Incorrect Service Charge</td>
+                                                    <td><a href="#" title="Service Error Invoice document">Service Error Invoice.pdf</a></td>
                                                     <td>Jane Smith</td>
                                                     <td>+254700123456</td>
+                                                    <td>11th Feb 2024, 10:30 AM</td>
                                                     <td>Mark Johnson</td>
                                                     <td>+254711654321</td>
-                                                    <td>12th Feb 2024</td>
-                                                    <td>Pending</td>
+                                                    <td>12th Feb 2024, 3:00 PM</td>
+                                                    <td>12th Feb 2024, 4:30 PM</td>
+                                                    <td class="text-right">
+                                                        <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".details-modal">Details</button>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1436,7 +1461,31 @@
                             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                         </div>
                        <div class="modal-body">
-                            <div class="row text-uppercase">
+                            <div class="row text-uppercase form-transfer-inputs">
+
+                                <div class="col-12 text-capitalize mb-3">
+                                    <div class="alert alert-info border border-info" role="alert">
+                                       <p class="text-capitalize d-none">Please note that the original payer will receive a notification with a four-digit code sent to their registered phone number. You need to coordinate with them to obtain this code, as it is required to complete the Payment Reallocation. This step prevents unauthorized transfers and ensures transparency. Ensure clear communication with the payer to keep the process smooth and secure.</p>
+
+                                       <p><strong class="text-uppercase">Complete the transfer by following the following steps:</strong></p>
+                                       <ol>
+                                        <li><strong>Fill Out the Form:</strong> Complete the Payment Reallocation form accurately, providing all required details.</li>
+                                        <li><strong>Original Payer Receives Code:</strong> After submission, a four-digit code will be sent to the phone number registered under the original payer’s name.</li>
+                                        <li><strong>Obtain Confirmation Code:</strong> Contact the original payer to ensure they receive and provide you with this code.</li>
+                                        <li><strong>Await Final Approval:</strong> Once you have the code, the final approver will review and approve the transfer. Monitor the status until the process is completed.</li>
+                                    </ol>
+                                    
+                                    <p>These steps are crucial to prevent unauthorized transfers and ensure the process remains transparent and secure.</p>
+
+                                    <p class="mb-0"><strong>Please confirm that you have read and understood the instructions before proceeding:</strong></p>
+                                    <label class="mouse-pointer">
+                                        <input class="form-check-input check-initiato" type="checkbox" id="formCheckcolor3">
+                                        I have read and understood the instructions regarding the Payment Reallocation process.
+                                    </label>
+                                    
+                                    </div>
+                                </div>
+
                                 <div class="col-12" title="The invoice where the payment was initially made.">
                                     <div class="mb-4">
                                         <label class="mb-1">Original Invoice Number <strong class="text-danger">*</strong></label>
@@ -1446,23 +1495,26 @@
                                 
                                 <div class="col-12" title="The invoice where the payment was initially made.">
                                     <div class="mb-4">
-                                        <label class="mb-1">Original Invoice Number <strong class="text-danger">*</strong></label>
-                                        <input type="text"  maxlength="25" name="weight" class="form-control" placeholder="Invoice Number where payment was initially made" title="The invoice where the payment was initially made." spellcheck="false" data-ms-editor="true">
+                                        <label class="mb-1">Transfer Invoice Number <strong class="text-danger">*</strong></label>
+                                        <input type="text"  maxlength="25" name="weight" class="form-control" placeholder="Invoice Number the where payments are being transfered to" title="The invoice where the payment was initially made." spellcheck="false" data-ms-editor="true">
                                     </div>
                                 </div>
 
-                                <div class="col-12 d-none">
-                                    <div class="mb-4 w-100 d-flex align-items-center justify-content-center">
-                                        <span class="mdi-arrow-down-bold-circle mdi fs-2"></span>
+                                <div class="col-6">                                                        
+                                    <div class="mb-5">
+                                        <label for="formFile" class="form-label">Supporting Document</label>
+                                        <input class="form-control" type="file" id="formFile">
                                     </div>
                                 </div>
 
-                                <div class="col-12" title="The new invoice where the payment is being transferred.">
+                                <div class="col-6" title="The new invoice where the payment is being transferred.">
                                     <div class="mb-4">
-                                        <label class="mb-1">New Invoice No. <strong class="text-danger">*</strong></label>
-                                        <input type="text"  maxlength="25" name="weight" class="form-control" placeholder="The new invoice receiving the payment." title="The new invoice where the payment is being transferred." spellcheck="false" data-ms-editor="true">
+                                        <label class="">Supporting Document Title<strong class="text-danger">*</strong></label>
+                                        <input type="text"  maxlength="25" name="weight" class="form-control" placeholder="Enter the title to the document" title="The new invoice where the payment is being transferred." spellcheck="false" data-ms-editor="true">
                                     </div>
                                 </div>
+
+                              
 
                                 <div class="col-12" title="The new invoice where the payment is being transferred.">
                                     <div class="mb-4">
@@ -1478,8 +1530,238 @@
                                     </div>
                                 </div>
 
+                                <div class="col-12 mt-3 text-uppercase">
+                                    <button class="btn btn-primary  initiate-realocation-btn text-uppercase">
+                                        <div class="spinner-border text-white  d-none m-0" height="20px" width="20px" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+
+                                        <div>Next <i class="bx bx-chevron-right"></i></div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="row transfer-confirmation d-none">
+                                <div class="col-12 mb-4">
+                                    <div class="table-responsive border-1 mb-3">
+                                        <table class="table  vertical-align-middle table-bordered">
+                                            <thead class="table-danger">
+                                                <tr class="table-danger">
+                                                    <th ></th>
+                                                    <th colspan="3">ORIGINAL INVOICE: BLL399456985</th>
+                                                </tr>
+                                                <tr class="vertical-align-middle">
+                                                    <th style="width: 70px;">1.</th>
+                                                    <th class="text-uppercase" colspan="3">
+                                                        Phone <span class="fw-bold text-primary">BLL123456</span> | Date: <span class="fw-bold text-primary">12/23/2023 12:56 AM</span>  | Invoice For: <span class="fw-bold text-primary">Mama Ngina Shop</span> 
+                                                    </th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <thead class="bg-light">
+                                                <tr>
+                                                    <th style="width: 70px;">No.</th>
+                                                    <th colspan="2">Item Description (x QTY)</th>
+                                                    <th class="text-end">Amount</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tfoot class="bg-light text-uppercase table-bordered">
+                                                <tr>
+                                                    <td></td>
+                                                    
+                                                    <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                        Invoice Sub Total
+                                                    </td>
+                                                    <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                        KES 1,500
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    
+                                                    <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                        Amount Paid
+                                                    </td>
+                                                    <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                        KES 2,500
+                                                    </td>
+                                                   
+                                                </tr>
+
+                                                <tr class="table-success">
+                                                    <td></td>
+                                                    
+                                                    <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                        Outstanding Balance
+                                                    </td>
+                                                    <td class="border-0 text-end text-right">
+                                                        <h5 class="m-0 text-uppercase fw-bold">KES -1,000</h5>
+                                                    </td>
+                                                   
+                                                </tr>
+                                            </tfoot>
+                                            <tbody>
+                                                <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                    <td>01</td>
+                                                    <td colspan="2">
+                                                        <p class="mb-0 p-0 m-0">Bunners (X2)</p>
+                                                    </td>
+                                                    <td class="text-end text-right">KES 1,000</td>
+                                                    
+                                                </tr>
+
+                                                <tr title="Drving a vehicle without a valid inspection certificate inspected">
+                                                    <td>02</td>
+                                                    <td colspan="2">
+                                                        <p class="mb-0 p-0 m-0">Single Business Permit AApplication (X3)</p>
+
+                                                    </td>
+                                                    <td class="text-end text-right">KES 500</td>
+                                                    
+                                                </tr>
+    
+    
+    
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table-responsive border-1 mb-3">
+                                        <table class="table  vertical-align-middle table-bordered">
+                                            <thead class="table-info">
+                                                <tr class="table-info">
+                                                    <th ></th>
+                                                    <th colspan="3" class="text-uppercase">Transfer Invoice Number: BLL399456985</th>
+                                                </tr>
+                                                <tr class="vertical-align-middle">
+                                                    <th style="width: 70px;">1.</th>
+                                                    <th class="text-uppercase" colspan="3">
+                                                        Phone <span class="fw-bold text-primary">BLL123456</span> | Date: <span class="fw-bold text-primary">12/23/2023 12:56 AM</span>  | Invoice For: <span class="fw-bold text-primary">Mama Ngina Shop</span> 
+                                                    </th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <thead class="bg-light">
+                                                <tr>
+                                                    <th style="width: 70px;">No.</th>
+                                                    <th colspan="2">Item Description (x QTY)</th>
+                                                    <th class="text-end">Amount</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tfoot class="bg-light text-uppercase table-bordered">
+                                                <tr>
+                                                    <td></td>
+                                                    
+                                                    <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                        Invoice Sub Total
+                                                    </td>
+                                                    <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                        KES 1,500
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    
+                                                    <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                        Amount Paid
+                                                    </td>
+                                                    <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                        KES 0.00
+                                                    </td>
+                                                   
+                                                </tr>
+
+                                                <tr class="table-success">
+                                                    <td></td>
+                                                    
+                                                    <td class="text-right fw-bold text-uppercase" colspan="2">
+                                                        Outstanding Balance
+                                                    </td>
+                                                    <td class="border-0 text-end text-right">
+                                                        <h5 class="m-0 text-uppercase fw-bold">KES 1,500</h5>
+                                                    </td>
+                                                   
+                                                </tr>
+                                            </tfoot>
+                                            <tbody>
+                                                <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                    <td>01</td>
+                                                    <td colspan="2">
+                                                        <p class="mb-0 p-0 m-0">Bunners (X2)</p>
+                                                    </td>
+                                                    <td class="text-end text-right">KES 1,000</td>
+                                                    
+                                                </tr>
+
+                                                <tr title="Drving a vehicle without a valid inspection certificate inspected">
+                                                    <td>02</td>
+                                                    <td colspan="2">
+                                                        <p class="mb-0 p-0 m-0">Single Business Permit AApplication (X3)</p>
+
+                                                    </td>
+                                                    <td class="text-end text-right">KES 500</td>
+                                                    
+                                                </tr>
+    
+    
+    
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-4">
+                                    <div class="alert alert-warning border border-warning" role="alert">
+                                        <p>After confirming the transfer by clicking the button below labeled <strong>Request Verification Code</strong>, a <strong>4-digit verification code</strong> will be sent to the original payer at <strong>+2547*****859</strong>.
+                                            Please <strong>contact them</strong> to obtain this code.
+                                            This code is <strong>required to proceed</strong> with the payment transfer. Once you have the code, you can complete the transfer process.</p>
+                                       
+                                       <div class="row">
+                                           <div class="col-12">
+                                            <div class="input-group">
+                                                <button class="btn btn-primary otp-trans-click" type="button" ><i class="mdi  mdi-message-text font-size-16 align-middle me-2"></i> Request Verification Code</button>
+                                                <input type="text" class="form-control" placeholder="Enter The Verification code sent to customer">
+                                              </div>
+                                           </div>
+
+                                           <div class="col-12 mt-2">
+                                                <p>OTP has been sent, Reend otp in <strong class="timer-txt">60 Sec</strong></p>
+                                           </div>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="alert alert-warning border border-warning" role="alert">
+                                        <strong>Message to be sent to the customer intiating the transfer</strong>
+                                       
+                                       <p>
+                                        Dear Customer,
+
+                                        To complete the payment transfer for your invoices, please use the following verification code. Share this code with the county official handling your transfer:
+
+                                        Verification Code: [4-Digit Code]
+
+                                        Original Invoice No.: [Original Invoice No.]
+                                        New Invoice No.: [New Invoice No.]
+
+                                        If you did not initiate this payment or need assistance, please contact us at [Support Mobile Number].
+
+                                        Thank you.
+                                       </p>
+                                     
+                                    </div>
+                                                             
+                                </div>
+
                                 <div class="col-12">
-                                    <button class="btn btn-primary text-uppercase">Inititate Reallocation</button>
+                                    <button type="button" class="btn btn-outline-secondary waves-effect me-3 text-uppercase trans-prev"><i class="bx bx-chevron-left fs-4"></i> Previouse</button>
+                                    <button class="btn btn-success text-uppercase"><i class="bx bx-check me-2 fs-4"></i> Submit Request</button>
                                 </div>
                             </div>
                        </div>
@@ -1489,6 +1771,156 @@
                 <!-- /.modal-dialog -->
             </div>
              <!-- end of madals -->
+
+             <!-- transfer details -->
+             <div class="modal fade details-modal" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header liq-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Transfer realocation detail</h5>
+                           
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-nowrap vertical-align-middle table-striped table-sm table-bordered">
+                                            <tbody>
+                                                <tr title="Invoiced To">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Invoiced To</p>
+                                                    </td>
+                                                    <td class="fw-bold">Kelvin Kiptum</td>
+                                                </tr>
+                                                <tr title="Original Invoice Number">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Original Invoice Number (Invoice from which funds are being reallocated)</p>
+                                                    </td>
+                                                    <td class="fw-bold">INV-001234</td>
+                                                </tr>
+                                                <tr title="Original Invoice Date">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Original Invoice Date (Date the original invoice was created)</p>
+                                                    </td>
+                                                    <td class="fw-bold">11th Jan 2024, 10:54 AM</td>
+                                                </tr>
+                                                <tr title="Invoiced Amount">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Invoiced Amount (Original Invoice)</p>
+                                                    </td>
+                                                    <td class="fw-bold">KES 15,000</td>
+                                                </tr>
+                                                <tr title="Amount Paid (Original Invoice)">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Amount Paid on Original Invoice</p>
+                                                    </td>
+                                                    <td class="fw-bold text-success">KES 12,000</td>
+                                                </tr>
+                                                <tr title="Transferred Invoice Number">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Transferred Invoice Number (Invoice to which the funds are being reallocated)</p>
+                                                    </td>
+                                                    <td class="fw-bold text-uppercase">INV-005678</td>
+                                                </tr>
+                                                <tr title="Transferred Invoice Creation Date">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Transferred Invoice Creation Date (Date the invoice to which the funds are being reallocated was created)</p>
+                                                    </td>
+                                                    <td class="fw-bold">15th Jan 2024, 12:30 PM</td>
+                                                </tr>
+                                                <tr title="Amount Being Transferred">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Amount Being Transferred</p>
+                                                    </td>
+                                                    <td class="fw-bold">KES 12,000</td>
+                                                </tr>
+                                                <tr title="Transfer Serial Number">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Transfer Serial Number</p>
+                                                    </td>
+                                                    <td class="fw-bold">TRX-0907865</td>
+                                                </tr>
+                                                <tr title="Reason for Transfer">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Reason for Transfer</p>
+                                                    </td>
+                                                    <td class="fw-bold">Payment allocated to incorrect invoice</td>
+                                                </tr>
+                                                <tr title="Supporting Documentation">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Supporting Documentation</p>
+                                                    </td>
+                                                    <td class="fw-bold">Transfer_Approval_Letter.pdf</td>
+                                                </tr>
+                                                <tr title="Initiated By">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Initiated By</p>
+                                                    </td>
+                                                    <td class="fw-bold">John Doe</td>
+                                                </tr>
+                                                <tr title="Initiator Phone">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Initiator Phone</p>
+                                                    </td>
+                                                    <td class="fw-bold">+254712345678</td>
+                                                </tr>
+                                        
+                                                <tr title="Initiator's Role">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Initiator's Role</p>
+                                                    </td>
+                                                    <td class="fw-bold">Revenue Officer</td>
+                                                </tr>
+                                        
+                                                <tr title="Transfer Initiation Date">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Transfer Initiation Date</p>
+                                                    </td>
+                                                    <td class="fw-bold">15th Jan 2024, 09:00 AM</td>
+                                                </tr>
+                                                <tr title="Approved By">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Approved By</p>
+                                                    </td>
+                                                    <td class="fw-bold">Jane Smith</td>
+                                                </tr>
+                                                <tr title="Approver Phone">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Approver Phone</p>
+                                                    </td>
+                                                    <td class="fw-bold">+254798765432</td>
+                                                </tr>
+                                                <tr title="Approver Role">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Approver Role</p>
+                                                    </td>
+                                                    <td class="fw-bold">Finance Manager</td>
+                                                </tr>
+                                                <tr title="Approval Date">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Approval Date (Date the transfer was approved)</p>
+                                                    </td>
+                                                    <td class="fw-bold">15th Jan 2024, 11:00 AM</td>
+                                                </tr>
+                                                <tr title="Transfer Date">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Transfer Date (Date the funds were transferred to the new invoice)</p>
+                                                    </td>
+                                                    <td class="fw-bold">15th Jan 2024, 12:30 PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+              <!-- end of transfer details -->
 
             <footer class="footer ">
                 <div class="container-fluid ">

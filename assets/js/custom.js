@@ -1184,4 +1184,74 @@ $('.download-receipt-transfer').on('click', function(){
     }, 800);
    // 
 })
-                                
+
+$(document).ready(function(){
+
+   
+    $('.check-initiato').on('change', function(){
+
+        var checker=$(this)
+
+        function isChecked() {
+            return checker.is(':checked');
+        }
+
+        console.log($(this).isChecked)
+
+        if (isChecked()) {
+            $('.initiate-realocation-btn').prop('disabled', false);
+        } else {
+            $('.initiate-realocation-btn').prop('disabled', true);
+        }
+      
+    })
+
+    $('.otp-trans-click').on('click', function(){
+        var btn=$(this)
+        var timer=60
+        var seconds = 60;
+
+    
+        $(this).prop('disabled', true);
+
+        setTimeout(function() {
+            btn.prop('disabled', false);
+        }, 60000);
+
+        countdown()
+
+      
+
+
+        function countdown() {
+            if (seconds >= 0) {
+                $(".timer-txt").text(seconds+" Sec");
+                seconds--;
+                setTimeout(countdown, 1000);
+            }
+            
+        }       
+
+    })
+
+    $('.initiate-realocation-btn').on('click', function(){
+        var theBtn=$(this)
+        $(theBtn).children('.spinner-border').removeClass('d-none').siblings().addClass('d-none')
+        $(theBtn).prop('disabled', true);
+
+        setTimeout(function() {
+            $(theBtn).children('.spinner-border').addClass('d-none').siblings().removeClass('d-none')
+            $(theBtn).prop('disabled', false);
+
+            $('.transfer-confirmation').removeClass('d-none')
+            $('.form-transfer-inputs').addClass('d-none')
+        }, 2000);
+        
+    })
+
+    $('.trans-prev').on('click', function(){
+        $('.transfer-confirmation').addClass('d-none')
+            $('.form-transfer-inputs').removeClass('d-none')
+    })
+               
+})                     
