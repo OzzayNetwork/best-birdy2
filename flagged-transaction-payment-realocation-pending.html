@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Desk Birdy | Business Permits</title>
+    <title>Desk Birdy | Transfers Pending Approval</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Rental management system by Nouveta LTD" name="description" />
     <meta content="Kelvin Njuguna" name="author" />
@@ -599,14 +599,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Business Permits</h4>
+                                <h4 class="mb-sm-0 font-size-18">Realocations Pending final Approval</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Certificates & Licenses</a></li>
-                                        <li class="breadcrumb-item"><a href="cert-biz-stats.html">Business Permits</a></li>
-                                        <li class="breadcrumb-item active">Pending Validation</li>
+                                        <li class="breadcrumb-item"><a href="#">Action Center</a></li>
+                                        <li class="breadcrumb-item"><a href="flagged-transaction-payment-realocation.html">payment ReAlocations</a></li>
+                                        <li class="breadcrumb-item active">Realocations Pending Approval</li>
                                     </ol>
                                 </div>
 
@@ -648,38 +648,64 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div
-                                    class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
-                                        role="toolbar">
-                                        <h4 class="card-title text-capitalize mb-0 ">
-                                            Funds Realocation
-                                        </h4>
+                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+                                      <div class="flex-grow-1">
+                                        <div class="search-box mb-0 me-3">
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                                                <i class="bx bx-search-alt search-icon"></i>
+                                            </div>
+                                        </div>
+                                      </div>
+
+                                        <div class="d-flex">
+                                            <div class="mx-3">
+                                                <div class="float-end d-flex text-uppercase">
+
+                                                    <div class="input-group input-group-sm me-3">
+                                                        <label class="input-group-text">Filter By Initiator</label>
+                                                        <select class="form-select form-select-sm">
+                                                            <option value="JA">Select The Initiator</option>
+                                                            <option value="JA" selected="">All Users</option>
+                                                            <option value="DE">Kelvin Waweru</option>
+                                                            <option value="NO">Amos Were</option>                                                            
+                                                        </select>                                                       
+                                                    </div>
+
+                                                    <div class="input-group input-group-sm me-3">
+                                                        <label class="input-group-text">Filter By SubCounty</label>
+                                                        <select class="form-select form-select-sm">
+                                                            <option value="JA">Select The Sub County</option>
+                                                            <option value="JA" selected="">All Sub Counties</option>
+                                                            <option value="DE">Homabay Town</option>
+                                                            <option value="NO">Rachuonyo South</option>                                                            
+                                                        </select>                                                       
+                                                    </div>
+
+
+                                                    <div class="input-group input-group fw-semibold text-uppercase">
+                                                        <label class="input-group-text text-uppercase">From</label>
+                                                        <input class="form-control form-control-sm" type="date" value="2019-08-19" id="example-date-input">
+                                                    </div>
+
+                                                    <div class="input-group input-group fw-semibold text-uppercase">
+                                                        <label class="input-group-text text-uppercase">To:</label>
+                                                        <input class="form-control form-control-sm" type="date" value="2019-08-19" id="example-date-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                                <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                            </button>
+
+                                        </div>
+
+
                                     </div>
-                                    <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
-                                        <label class="text-nowrap mb-0">Reallocation status</label>
-                                        <select class="form-select mx-2" title="Select Subcounty">
-                                            <option>All Reallocation Activities</option>
-                                            <option>Approved</option>
-                                            <option>Pending Approval</option>
-                                            <option>Rejected</option>
-                                        </select>
-
-                                        <label class="text-nowrap mb-0 mx-2">Sub County</label>
-                                        <select class="form-select" title="Select Subcounty">
-                                            <option>All Sub Categories</option>
-                                            <option>Homabay Town</option>
-                                            <option>Ndhiwa</option>
-                                            <option>...</option>
-                                        </select>
-
-                                        <select class="form-select mx-3" title="Select Subcounty ">
-                                            <option>All of Sub counties</option>
-                                            <option>Homabay Town</option>
-                                            <option>Ndhiwa</option>
-                                            <option>...</option>
-                                        </select>
+                                    <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
+                                        <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -694,16 +720,12 @@
                                                     <th title="Amount Paid to Original Invoice">Amt Paid (Orig. Inv.)</th>
                                                     <th title="Transferred Invoice Number">Transf. Inv. No.</th>
                                                     <th title="Transferred Invoice Date">Transf. Inv. Date</th>
-                                                    <th title="Amount Transferred to The other Invoice">Amt Transf.</th>
+                                                    <th title="Amount Transferred to The Other Invoice">Amt Transf.</th>
                                                     <th title="Reason for Invoice Transfer">Transf. Reason</th>
                                                     <th title="Supporting Documentation for Transfer">Supporting Docs</th>
                                                     <th title="Person Who Initiated the Transfer">Initiated By</th>
                                                     <th title="Phone Number of the Initiator">Initiator Phone</th>
                                                     <th title="Transfer Initiation Date">Initiated Date</th>
-                                                    <th title="Person Who Approved the Transfer">Approved By</th>
-                                                    <th title="Phone Number of the Approver">Approver Phone</th>
-                                                    <th title="Date the Transfer Was Effected">date initiated</th>
-                                                    <th title="Date of the Transfer">Transf. Date</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -712,11 +734,11 @@
                                                     <th>22 Clients</th>
                                                     <th colspan="2">34 Invoices</th>
                                                     <th>KES 5,600</th>
-                                                    <TH>KES 6,000</TH>
+                                                    <th>KES 6,000</th>
                                                     <th colspan="2">4 Invoices</th>
-                                                    <TH>KES 6,000</TH>
+                                                    <th>KES 6,000</th>
                                                     <th></th>
-                                                    <th colspan="9"></th>
+                                                    <th colspan="5"></th>
                                                 </tr>
                                             </tfoot>
                                             <tbody>
@@ -734,12 +756,10 @@
                                                     <td>John Doe</td>
                                                     <td>+254712345678</td>
                                                     <td>9th Jan 2024, 9:15 AM</td>
-                                                    <td>Jane Doe</td>
-                                                    <td>+254798765432</td>
-                                                    <td>10th Jan 2024, 12:00 PM</td>
-                                                    <td>10th Jan 2024, 12:45 PM</td>
                                                     <td class="text-right">
                                                         <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".details-modal">Details</button>
+                                                        <button type="button" class="btn btn-info btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" title="Please click here to proceed with reviewing and approving the Fund Transfer request." data-bs-toggle="modal" data-bs-target=".approve-modal">Approve Reallocation</button>
+
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -756,12 +776,10 @@
                                                     <td>Jane Smith</td>
                                                     <td>+254700123456</td>
                                                     <td>11th Feb 2024, 10:30 AM</td>
-                                                    <td>Mark Johnson</td>
-                                                    <td>+254711654321</td>
-                                                    <td>12th Feb 2024, 3:00 PM</td>
-                                                    <td>12th Feb 2024, 4:30 PM</td>
-                                                    <td class="text-right">
+                                                    <td class="text-right text-nowrap"  >
                                                         <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" data-bs-toggle="modal" data-bs-target=".details-modal">Details</button>
+                                                        <button type="button" class="btn btn-info btn-sm waves-effect waves-light text-nowrap me-3 text-uppercase" title="Please click here to proceed with reviewing and approving the Fund Transfer request." data-bs-toggle="modal" data-bs-target=".approve-modal">Approve Reallocation</button>
+  
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -1761,8 +1779,47 @@
 
                                 <div class="col-12">
                                     <button type="button" class="btn btn-outline-secondary waves-effect me-3 text-uppercase trans-prev"><i class="bx bx-chevron-left fs-4"></i> Previouse</button>
-                                    <button class="btn btn-success text-uppercase"><i class="bx bx-check me-2 fs-4"></i> Submit Request</button>
+                                    <button class="btn btn-success text-uppercase d-none"><i class="bx bx-check me-2 fs-4"></i> Submit Request</button>
+
+                                    <button class="btn btn-success  submit-realocation-request text-uppercase">
+                                        <div class="spinner-border text-white m-0 d-none" height="20px" width="20px" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                        <div class=""><i class="bx bx-check me-2 fs-4"></i> Submit Request</div>
+                                    </button>
                                 </div>
+                            </div>
+
+                          
+
+                            <div class="row transfer-request-sent d-flex align-items-center justify-content-center d-none">
+                                <div class="col-sm-12 col-md-10 col-lg-8">
+                                    <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
+                                
+    
+                                        <div class="flex-shrink-0 align-self-center  mb-4 pb-4 pt-4">
+                                            <div class="avatar-sm rounded-circle bg-info mini-stat-icon">
+                                                <span class="avatar-title rounded-circle bg-info">
+                                                    <i class="mdi-file-document-edit-outline mdi font-size-24"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+            
+            
+                                        <h4 class="text-black fw-bold text-uppercase">ReAllocation Request sent</h4>
+                                        <p class="text-muted mb-4"> The payment reallocation has been successfully submitted and is now awaiting approval by the final approver. Please follow up on the status to ensure timely approval and completion of the process. </p>                                        <p class="text-muted mb-4">Click Below to downlod the respective Receipts.</p>
+                                        
+                                        <div class="d-flex w-100 pb-4">
+            
+                                            <!-- data-bs-dismiss="modal" -->
+                                            <a href="#" data-bt-dismiss="modal" aria-bt-label="Close"  class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase download-receipt-transfer">
+                                               
+                                                Close
+                                            </a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
                             </div>
                        </div>
                     </div>
@@ -1777,11 +1834,10 @@
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header liq-header">
-                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Transfer realocation detail</h5>
-                           
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Transfer Reallocation Detail</h5>
                             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                         </div>
-                      <div class="modal-body">
+                        <div class="modal-body">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="table-responsive">
@@ -1865,62 +1921,209 @@
                                                     </td>
                                                     <td class="fw-bold">+254712345678</td>
                                                 </tr>
-                                        
                                                 <tr title="Initiator's Role">
                                                     <td>
                                                         <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Initiator's Role</p>
                                                     </td>
                                                     <td class="fw-bold">Revenue Officer</td>
                                                 </tr>
-                                        
                                                 <tr title="Transfer Initiation Date">
                                                     <td>
                                                         <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Transfer Initiation Date</p>
                                                     </td>
                                                     <td class="fw-bold">15th Jan 2024, 09:00 AM</td>
                                                 </tr>
-                                                <tr title="Approved By">
-                                                    <td>
-                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Approved By</p>
-                                                    </td>
-                                                    <td class="fw-bold">Jane Smith</td>
-                                                </tr>
-                                                <tr title="Approver Phone">
-                                                    <td>
-                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Approver Phone</p>
-                                                    </td>
-                                                    <td class="fw-bold">+254798765432</td>
-                                                </tr>
-                                                <tr title="Approver Role">
-                                                    <td>
-                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Approver Role</p>
-                                                    </td>
-                                                    <td class="fw-bold">Finance Manager</td>
-                                                </tr>
-                                                <tr title="Approval Date">
-                                                    <td>
-                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Approval Date (Date the transfer was approved)</p>
-                                                    </td>
-                                                    <td class="fw-bold">15th Jan 2024, 11:00 AM</td>
-                                                </tr>
-                                                <tr title="Transfer Date">
-                                                    <td>
-                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Transfer Date (Date the funds were transferred to the new invoice)</p>
-                                                    </td>
-                                                    <td class="fw-bold">15th Jan 2024, 12:30 PM</td>
-                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
                             </div>
-                      </div>
+                        </div>
                     </div>
                     <!-- /.modal-content -->
                 </div>
                 <!-- /.modal-dialog -->
             </div>
+            
               <!-- end of transfer details -->
+
+              <!-- modal for approving fund realocation -->
+              <div class="modal fade approve-modal" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header liq-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Transfer Reallocation Approvals</h5>
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row details-modal">
+                                <div class="col-12 mb-4">
+                                    <div class="table-responsive">
+                                        <table class="table table-nowrap vertical-align-middle table-striped table-sm table-bordered">
+                                            <tbody>
+                                                <tr title="Invoiced To">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Invoiced To</p>
+                                                    </td>
+                                                    <td class="fw-bold">Kelvin Kiptum</td>
+                                                </tr>
+                                                <tr title="Original Invoice Number">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Original Invoice Number (Invoice from which funds are being reallocated)</p>
+                                                    </td>
+                                                    <td class="fw-bold">INV-001234</td>
+                                                </tr>
+                                                <tr title="Original Invoice Date">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Original Invoice Date (Date the original invoice was created)</p>
+                                                    </td>
+                                                    <td class="fw-bold">11th Jan 2024, 10:54 AM</td>
+                                                </tr>
+                                                <tr title="Invoiced Amount">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Invoiced Amount (Original Invoice)</p>
+                                                    </td>
+                                                    <td class="fw-bold">KES 15,000</td>
+                                                </tr>
+                                                <tr title="Amount Paid (Original Invoice)">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Amount Paid on Original Invoice</p>
+                                                    </td>
+                                                    <td class="fw-bold text-success">KES 12,000</td>
+                                                </tr>
+                                                <tr title="Transferred Invoice Number">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Transferred Invoice Number (Invoice to which the funds are being reallocated)</p>
+                                                    </td>
+                                                    <td class="fw-bold text-uppercase">INV-005678</td>
+                                                </tr>
+                                                <tr title="Transferred Invoice Creation Date">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Transferred Invoice Creation Date (Date the invoice to which the funds are being reallocated was created)</p>
+                                                    </td>
+                                                    <td class="fw-bold">15th Jan 2024, 12:30 PM</td>
+                                                </tr>
+                                                <tr title="Amount Being Transferred">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Amount Being Transferred</p>
+                                                    </td>
+                                                    <td class="fw-bold">KES 12,000</td>
+                                                </tr>
+                                                <tr title="Transfer Serial Number">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Transfer Serial Number</p>
+                                                    </td>
+                                                    <td class="fw-bold">TRX-0907865</td>
+                                                </tr>
+                                                <tr title="Reason for Transfer">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Reason for Transfer</p>
+                                                    </td>
+                                                    <td class="fw-bold">Payment allocated to incorrect invoice</td>
+                                                </tr>
+                                                <tr title="Supporting Documentation">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Supporting Documentation</p>
+                                                    </td>
+                                                    <td class="fw-bold">Transfer_Approval_Letter.pdf</td>
+                                                </tr>
+                                                <tr title="Initiated By">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Initiated By</p>
+                                                    </td>
+                                                    <td class="fw-bold">John Doe</td>
+                                                </tr>
+                                                <tr title="Initiator Phone">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Initiator Phone</p>
+                                                    </td>
+                                                    <td class="fw-bold">+254712345678</td>
+                                                </tr>
+                                                <tr title="Initiator's Role">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Initiator's Role</p>
+                                                    </td>
+                                                    <td class="fw-bold">Revenue Officer</td>
+                                                </tr>
+                                                <tr title="Transfer Initiation Date">
+                                                    <td>
+                                                        <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Transfer Initiation Date</p>
+                                                    </td>
+                                                    <td class="fw-bold">15th Jan 2024, 09:00 AM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-4">
+                                    <div class="alert alert-warning border border-warning" role="alert">
+                                        <p>After reviewing the transfer request details, you can approve the transfer by first requesting an OTP to be sent to your phone at <strong>+2547*****859</strong>. To do this, click the button labeled <strong>Request Verification Code</strong>. Once you receive the code, enter it and then click <strong>Approve Fund Reallocation Request</strong> to complete the process.</p>
+                                       
+                                       <div class="row">
+                                           <div class="col-12">
+                                                <div class="input-group text-uppercase">
+                                                    <button class="btn btn-primary otp-trans-click text-uppercase" type="button"><i class="mdi  mdi-message-text font-size-16 align-middle me-2 text-uppercase"></i> Request Verification Code</button>
+                                                    <input type="text" class="form-control" placeholder="Enter The Verification code sent to customer" spellcheck="false" data-ms-editor="true">
+                                                </div>
+                                           </div>
+
+                                           <div class="col-12 mt-2">
+                                                <p>OTP has been sent, Reend otp in <strong class="timer-txt">60 Sec</strong></p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                 
+                                    <button class="btn btn-success w-100 finish-transfer text-uppercase">
+                                        <div class="spinner-border text-white  d-none m-0" height="20px" width="20px" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+
+                                        <div><i class="mdi mdi-check"></i>Approve Fund Reallocation Request</div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="row transfer-realocation-successful d-flex align-items-center justify-content-center d-none">
+                                <div class="col-sm-12 col-md-10 col-lg-8">
+                                    <div class="text-center payment-active-panel d-flex flex-column justify-content-around align-items-center sent-success d-non payment-panel">
+                                
+    
+                                        <div class="flex-shrink-0 align-self-center  mb-4 pb-4 pt-4">
+                                            <div class="avatar-sm rounded-circle bg-success mini-stat-icon">
+                                                <span class="avatar-title rounded-circle bg-success">
+                                                    <i class="mdi-check-all mdi font-size-24"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+            
+            
+                                        <h4 class="text-black fw-bold text-uppercase">Payment Reallocation Succesful</h4>
+                                        <p class="text-muted mb-4"> The payment transfer has been successfully completed. An amount of <strong class="fw-bold">KES 12,000</strong> has been credited to <strong class="fw-bold">Invoice INV-005678</strong> and debited from <strong class="fw-bold">Invoice INV-001234</strong>. </p>
+                                        <p class="text-muted mb-4">Click Below to downlod the respective Receipts.</p>
+                                        
+                                        <div class="d-flex w-100 pb-4">
+            
+                                            <!-- data-bs-dismiss="modal" -->
+                                            <a href="PrintDocs/Receipts/receipts.html" target="new" class="btn btn-primary btn-block  me-3 flex-grow-1 text-uppercase download-receipt-transfer">
+                                                <i class="bx bx-printer font-size-16 align-middle me-2 "></i>
+                                                Download Receipt (Second Invoice)
+                                            </a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+               <!-- end of modal for fund reallocation -->
 
             <footer class="footer ">
                 <div class="container-fluid ">

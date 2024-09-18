@@ -1253,5 +1253,25 @@ $(document).ready(function(){
         $('.transfer-confirmation').addClass('d-none')
             $('.form-transfer-inputs').removeClass('d-none')
     })
+
+    $('.finish-transfer').on('click', function(){
+        
+
+        setTimeout(function() {
+            $('.details-modal').addClass('d-none')
+            $('.transfer-realocation-successful').removeClass('d-none')
+        }, 2000);
+    })
+
+    $('.submit-realocation-request').on('click', function(){
+
+        var btn =$(this)
+        btn.children(".spinner-border").removeClass('d-none').siblings().addClass('d-none')
+
+        setTimeout(function() {
+            btn.children(".spinner-border").addClass('d-none').siblings().removeClass('d-none')
+            $('.transfer-request-sent').removeClass('d-none').siblings().addClass('d-none')
+        }, 2000);
+    })
                
 })                     
