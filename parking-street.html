@@ -528,6 +528,8 @@
                                 <li class="text-capitalize"><a href="reports-transactions.html">Receipted Transactions</a></li>
                                 <li class="text-capitalize"><a href="reports-unpaid-invoices.html">Unpaid Invoices</a></li>
                                 <li class="text-capitalize"><a href="reports-invoice-comparison.html">Invoice Period Analysis</a></li>
+                                <li class="text-capitalize"><a href="reports-plate-edit.html">Plate Edits Report</a></li>
+
                             </ul>
                         </li>
 
@@ -906,8 +908,8 @@
                                                     </td>
                                                     <td class="text-right text-uppercase">KES 50</td>
                                                     <td class="text-right">
-                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-success btn-sm">View Details</button>
-                                                       
+                                                        <button data-toggle="modal" data-target=".add-car-modal" class="btn btn-success btn-sm mx-2">View Details</button>
+                                                        <button data-toggle="modal" data-target=".edit-plate-modal" class="btn btn-info btn-sm editPlateBtn">Edit Plate No.</button>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1707,6 +1709,188 @@
             </div>
             <!-- invoice details -->
 
+            <!-- editing car number plate modal -->
+            <div class="modal fade edit-plate-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Edit Numbe Plate</h5>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="number-plate-edit-form d-non">
+                            <div >
+                                <div class="col-12">
+                                    <div class="alert alert-warning border-warning border-2" role="alert">
+                                        <i class="fas fa-exclamation-triangle"></i> 
+                                        <strong>You are about to edit the number plate of a car.</strong> Please ensure that this action is not fraudulent, as your actions are being logged. <strong>Be certain of what you are doing.</strong> An OTP will be sent to the customer, and it is your responsibility to retrieve it from them for transaction verification.
+                                    </div>
+                                    
+                                    
+                                </div>
+                              
+                            </div>
+    
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-2">
+                                <div class="table-responsive mt-4">
+                                    <h4 class="modal-title mb-2 text-uppercase fw-bold">Invoice Details</h4>
+                                    <table class="table border border-dark text-uppercase table-sm table-striped align-middle">
+                                        <tbody>
+                                            <tr>
+                                                <th>Invoice Number</th>
+                                                <td class="text-black">Bll12345</td>
+                                            </tr>
+    
+                                            <tr>
+                                                <th>Paid By</th>
+                                                <td class="text-black">Kelvin Njuguna 0704549859</td>
+                                            </tr>
+    
+                                            <tr>
+                                                <th>Time of Payment</th>
+                                                <td class="text-black">12 Jan 2023 11:56 AM</td>
+                                            </tr>
+    
+                                            <tr>
+                                                <th>Vehicle Category</th>
+                                                <td class="text-black">Saloon Car</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Sub county</th>
+                                                <td class="text-black">Meru Town</td>
+                                            </tr>
+    
+                                            <tr>
+                                                <th>Zone</th>
+                                                <td class="text-black">Meru Parking</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+    
+                            <div class="col-12">
+                                <h4 class="modal-title mb-2 text-uppercase fw-bold">Number Plate Editing</h4>
+                                <form action="">
+                                    <table class="table border border-info text-uppercasetable-striped align-middle">
+                                        <tbody>
+                                            <tr>
+                                                
+                                                <td colspan="2" class="text-black fw-bold">
+                                                    <label for="">Entered Number Plate</label>
+                                                    <h4 class="text-danger">
+                                                        KAD123Y
+                                                    </h4>
+                                                </td>
+                                            </tr>
+        
+                                            <tr>
+                                                
+                                                <td colspan="2" class="text-black">
+                                                    <div>
+                                                        <label for="">Edit Number Plate to <strong class="text-danger">*</strong></label>
+                                                        <input type="" class="form-control border-bold border-2 border-info" placeholder="Enter New  Plate Number" name="" value="" required>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="fw-bold text-dark">
+                                                        <label for="" class="">Reason For Editing <strong class="text-danger">*</strong></label>
+                                                        <textarea name="" class="form-control border-bold border-2 border-info" placeholder="Enter Reason" id="" required></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+        
+                                           
+                                        </tbody>
+                                    </table>
+    
+                                    <btn  target="_blank" type="button" class="btn btn-primary w-100 mt-2 waves-effect waves-light text-uppercase initiate-plate-edit">
+                                        Initiate
+                                    </btn>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="number-plate-edit-otp d-none">
+                            <div class="alert alert-info border-info border-2" role="alert">
+                                <h4 class="alert-heading text-black text-uppercase">OTP Verification</h4>
+                                <p>An OTP has been sent to the client's phone number: <strong>+254 7XX XXX 123</strong>. Please call the client to retrieve the OTP and their number plate. Enter the OTP below to confirm the validity of this transaction.</p>
+                                <hr class="text-black border-2 border-black border-info text-info">
+                            
+                                <div class="hstack gap-3">
+                                    <input class="form-control me-auto border-black" type="text" placeholder="Enter OTP" aria-label="Add your item here..." spellcheck="false" data-ms-editor="true">
+                                    <button type="button" class="btn btn-warning text-dark fw-bold text-nowrap text-uppercase">Resend OTP</button>
+                                </div>
+                            </div>
+    
+                            <button class="btn btn-success fw-bold mt-4 text-uppercase w-100 d-flex justify-content-center align-items-center text-center confirm-edit" title="Initiate Payment for Lab Tests">
+                                <div>confirm</div>
+                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </button>
+    
+                        </div>
+
+                        <!-- show this for succesful number plate change -->
+
+                        <div class="d-none p-4 pb-1 number-plate-edit-confirm px-1 d-flex align-items-center justify-content-center flex-column pt-1">
+                            <div class="flex-shrink-0 align-self-center mb-4">
+                                <div class="avatar-md rounded-circle bg-primary mini-stat-icon" title="Action Successful">
+                                    <span class="avatar-title rounded-circle bg-success">
+                                        <i class="bx bx-check-double fs-1" title="Change Successful"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <h4 class="text-uppercase text-success modal-title fw-bold" title="Change Confirmed">Change Successful</h4>
+                            <p class="text-center px-5" title="Number Plate Change Confirmation">
+                                The number plate has been successfully changed from <strong>ABC 123D</strong> to <strong>XYZ 456E</strong>. If there was a mistake, please restart the process to correct it.
+                            </p>
+
+                            <div class="w-100 mt-2">
+                                <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-secondary waves-effect w-100 btn-close-btn text-uppercase fw-bold">Close</button>
+                            </div>
+                        </div>
+
+                        <!-- show this for a failed attempt -->
+
+                        <div class="d-none p-4 pb-1 number-plate-edit-fail px-1 d-flex align-items-center justify-content-center flex-column pt-1">
+                            <div class="flex-shrink-0 align-self-center mb-4">
+                                <div class="avatar-md rounded-circle bg-danger mini-stat-icon" title="Action Failed">
+                                    <span class="avatar-title rounded-circle bg-danger">
+                                        <i class="mdi mdi-close fs-1" title="Change Failed"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <h4 class="text-uppercase text-danger modal-title fw-bold" title="Change Failed">Change Failed</h4>
+                            <p class="text-center px-5" title="Number Plate Change Failed">
+                                Unfortunately, the attempt to change the number plate from <strong>ABC 123D</strong> to <strong>XYZ 456E</strong> was unsuccessful. Please try again or contact support for assistance.
+                            </p>
+                        
+                            <div class="w-100 mt-2">
+                                <button type="button" class="btn btn-info waves-effect w-100 btn-close-btn text-uppercase fw-bold">Retry</button>
+                                <h6 class="text-center my-2">- OR -</h6>                                
+                                <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-secondary waves-effect w-100 btn-close-btn text-uppercase fw-bold">Close</button>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+
+        <!-- end of editing car plate number modal -->
+
             <footer class="footer ">
                 <div class="container-fluid ">
                     <div class="row ">
@@ -2096,6 +2280,37 @@ Highcharts.chart('StreamRevenueChart', {
 });
 
     </script>
+
+<script>
+    $('.editPlateBt').click()
+</script>
+
+<script>
+    $('.initiate-plate-edit').on('click', function(){
+        $('.number-plate-edit-form').addClass('d-none').siblings('.number-plate-edit-otp').removeClass('d-none').siblings().addClass('d-none')
+        $('.edit-plate-modal .btn-close').addClass('d-none')
+    })
+
+    $('.confirm-edit').on('click', function(){
+        var theBtn=$(this)
+        theBtn.children('.spinner-border ').removeClass('d-none').siblings().addClass('d-none')
+
+        setTimeout(function() {
+            theBtn.children('.spinner-border ').addClass('d-none').siblings().removeClass('d-none')
+            $('.number-plate-edit-confirm').removeClass('d-none').siblings().addClass('d-none')
+        }, 2000);
+
+
+    })
+
+    $('.edit-plate-modal .btn-close').on('click', function(){
+        $('.number-plate-edit-form').removeClass('d-none').siblings().addClass('d-none')
+    })
+
+    $('.btn-close-btn').on('click', function(){
+        $('.number-plate-edit-form').removeClass('d-none').siblings().addClass('d-none')
+    })
+</script>
     
     
     
