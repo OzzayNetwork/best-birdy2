@@ -383,7 +383,7 @@
                                 <span>Action Center</span>
                                 <span class="badge rounded-pill bg-danger float-end">10</span>
                             </a>
-                             <ul class="sub-menu" aria-expanded="false">
+                            <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="flagged-transaction-correction.html">Transactions Correction</a></li>
                                 <li><a href="flagged-transaction-payment-realocation.html">Payment Reallocation</a></li>
                                 <li><a href="flagged-transaction-correction-report.html">Corrected Transactions report</a></li>
@@ -562,13 +562,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Creation (Jan 1 - Dec 31, 2024) vs. Payment (Jan 1 - Dec 31, 2025)</h4>
+                                <h4 class="mb-sm-0 font-size-18">Number Plate editing</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item active">Invoice Period Analysis</li>
+                                        <li class="breadcrumb-item active">Edited Number Plates</li>
                                     </ol>
                                 </div>
 
@@ -579,32 +579,7 @@
                   
 
                      <!-- tool bar -->
-                     <div class="row">
-                        <div class="col-12 active">
-                            <div class="card active">
-                                <div class="card-body mini-nav bg-primary pt-2 pb-3 active">
-                                    <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
-                                        <button class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                            <span class="mdi mdi-menu"></span>
-                                        </button>
-                                        <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
-                                            <div class="navbar-nav active">
-                                                <a class="nav-item nav-link" href="reports-invoice-comparison.html">Streams Analysis</a>
-                                                <a class="nav-item nav-link" href="reports-invoice-comparison-streamSubcounty.html">Stream and Subcounty Analysis</a>
-                                            </div>
-                                            <div class="navbar-nav text-capitalize">
-                                                <form class="form-inline my-2 my-lg-0">
-                                                    <button type="button" class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase text-uppercase" data-toggle="modal" data-target=".analysis-modal">Select Period</button>
-                                                  </form>
-                                            </div>
-
-                                        </div>
-                                    </nav>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                    
                     <!-- end of toolbar -->
                     <!-- end page title -->
                     <div class="row">
@@ -623,7 +598,36 @@
                                       </div>
 
                                         <div class="d-flex">
-                                           
+                                            <div class="input-group fw-semibold text-uppercase me-3">
+                                                <label class="input-group-text text-uppercase">Status</label>
+                                                <select class="form-select ">
+                                                    <option value="" disabled>Select Status</option>
+                                                    <option value="All Patients" selected="">All </option>
+                                                    <option value="Inpatient">Successfully changed</option>
+                                                    <option value="Outpatient">Unsuccesful Change request</option>                                                        
+                                                </select>
+                                            </div>
+
+                                            <div class="input-group fw-semibold text-uppercase me-3 mx-3">
+                                                <label class="input-group-text text-uppercase">Officer</label>
+                                                <select class="form-select ">
+                                                    <option value="" disabled>Select Officer</option>
+                                                    <option value="All Patients" selected="">All </option>
+                                                    <option value="Inpatient">Alex wanjala</option>
+                                                    <option value="Outpatient">Amos Were</option>                                                        
+                                                </select>
+                                            </div>
+
+                                            <div class="input-group fw-semibold text-uppercase">
+                                                <label class="input-group-text text-uppercase">FROM:</label>
+                                                <input class="form-control form-control-sm" type="date" value="2019-08-19" id="example-date-input">
+                                            </div>
+
+                                            <div class="input-group fw-semibold text-uppercase me-3">
+                                                <label class="input-group-text text-uppercase">TO:</label>
+                                                <input class="form-control form-control-sm" type="date" value="2019-08-19" id="example-date-input">
+                                            </div>
+
                                             <button  data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                                 <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
                                             </button>
@@ -638,162 +642,184 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-
-                                        <table class="table align-middle table-hover  contacts-table table-striped " id="">
+                                        <table class="table align-middle table-hover contacts-table table-striped">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th>#</th>
+                                                    <th scope="col">Initial Number Plate</th>
+                                                    <th scope="col">Changed Number Plate</th>
+                                                    <th scope="col">Invoice Number</th>
+                                                    <th scope="col">Reason for Change</th>
+                                                    <th scope="col">Changed By</th>
+                                                    <th scope="col">Customer</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Reason for Failing</th>
                                                     <th scope="col">Revenue Stream</th>
-                                                    <th>Invoices</th>
-                                                    <th scope="col">Officers</th>                                                    
-                                                    <th scope="col" class="text-right">Collected Revenue</th>
-                                                    <th></th>
+                                                    <th scope="col" class="text-right">Amount (KES)</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
+                                                    <td><strong>1.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">KDD 123X</td>
+                                                    <td class="text-capitalize text-nowrap">KDJ 456Y</td>
+                                                    <td class="text-capitalize text-nowrap">INV-001</td>
+                                                    <td class="text-capitalize text-nowrap">Correcting typo</td>
+                                                    <td class="text-capitalize text-nowrap">John Doe</td>
+                                                    <td class="text-capitalize text-nowrap">John Doe (0704549849)</td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-invoice-comparison-details.html">CESS</a>
+                                                        <span class="badge bg-success text-uppercase">Successfully Changed</span>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">No Issues</td>
+                                                    <td class="text-capitalize text-nowrap">Parking - Daily Parking</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 300</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
+                                                    <td><strong>2.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">KAA 987Z</td>
+                                                    <td class="text-capitalize text-nowrap">KAB 654M</td>
+                                                    <td class="text-capitalize text-nowrap">INV-002</td>
+                                                    <td class="text-capitalize text-nowrap">Wrong entry</td>
+                                                    <td class="text-capitalize text-nowrap">Jane Smith</td>
+                                                    <td class="text-capitalize text-nowrap">Jane Smith (0798765432)</td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-invoice-comparison-details.html">Single Business Permit</a>
+                                                        <span class="badge bg-danger text-uppercase">Failed</span>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">Internal Server Error</td>
+                                                    <td class="text-capitalize text-nowrap">Cess - Ballast</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 1,000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>3.</strong></td>
+                                                    <td><strong>3.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">KBC 234D</td>
+                                                    <td class="text-capitalize text-nowrap">KBD 345E</td>
+                                                    <td class="text-capitalize text-nowrap">INV-003</td>
+                                                    <td class="text-capitalize text-nowrap">Updated vehicle details</td>
+                                                    <td class="text-capitalize text-nowrap">James Mwangi</td>
+                                                    <td class="text-capitalize text-nowrap">James Mwangi (0723456789)</td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-invoice-comparison-details.html">Cess</a>
+                                                        <span class="badge bg-success text-uppercase">Successfully Changed</span>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">No Issues</td>
+                                                    <td class="text-capitalize text-nowrap">Parking - Monthly Parking</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 5,000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
+                                                    <td><strong>4.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">KDE 567F</td>
+                                                    <td class="text-capitalize text-nowrap">KDE 678G</td>
+                                                    <td class="text-capitalize text-nowrap">INV-004</td>
+                                                    <td class="text-capitalize text-nowrap">Owner change</td>
+                                                    <td class="text-capitalize text-nowrap">Peter Kimani</td>
+                                                    <td class="text-capitalize text-nowrap">Peter Kimani (0712345678)</td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-invoice-comparison-details.html">Parking</a>
+                                                        <span class="badge bg-success text-uppercase">Successfully Changed</span>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">No Issues</td>
+                                                    <td class="text-capitalize text-nowrap">Cess - Gravel</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 800</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap"><strong>5.</strong></td>
+                                                    <td><strong>5.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">KFG 789H</td>
+                                                    <td class="text-capitalize text-nowrap">KFG 890I</td>
+                                                    <td class="text-capitalize text-nowrap">INV-005</td>
+                                                    <td class="text-capitalize text-nowrap">Lost number plate</td>
+                                                    <td class="text-capitalize text-nowrap">Lydia Njeri</td>
+                                                    <td class="text-capitalize text-nowrap">Lydia Njeri (0754321098)</td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <a href="reports-invoice-comparison-details.html">Unreconcyled Transactions</a>
+                                                        <span class="badge bg-danger text-uppercase">Failed</span>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                                                                                        <a type="button" href="reports-subconty-details.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
-
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">Wrong OTP Entry</td>
+                                                    <td class="text-capitalize text-nowrap">Parking - Annual Parking</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 1,200</td>
                                                 </tr>
-                                                
-                                                
+                                                <tr>
+                                                    <td><strong>6.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">KGH 456J</td>
+                                                    <td class="text-capitalize text-nowrap">KGH 567K</td>
+                                                    <td class="text-capitalize text-nowrap">INV-006</td>
+                                                    <td class="text-capitalize text-nowrap">License upgrade</td>
+                                                    <td class="text-capitalize text-nowrap">Samuel Karanja</td>
+                                                    <td class="text-capitalize text-nowrap">Samuel Karanja (0721234567)</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <span class="badge bg-success text-uppercase">Successfully Changed</span>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">No Issues</td>
+                                                    <td class="text-capitalize text-nowrap">Cess - Stone</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 950</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>7.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">KFI 321L</td>
+                                                    <td class="text-capitalize text-nowrap">KFI 432M</td>
+                                                    <td class="text-capitalize text-nowrap">INV-007</td>
+                                                    <td class="text-capitalize text-nowrap">New ownership</td>
+                                                    <td class="text-capitalize text-nowrap">Grace Akinyi</td>
+                                                    <td class="text-capitalize text-nowrap">Grace Akinyi (0790123456)</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <span class="badge bg-danger text-uppercase">Failed</span>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">OTP Timeout</td>
+                                                    <td class="text-capitalize text-nowrap">Parking - Weekend Parking</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>8.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">KJL 987O</td>
+                                                    <td class="text-capitalize text-nowrap">KJL 876P</td>
+                                                    <td class="text-capitalize text-nowrap">INV-008</td>
+                                                    <td class="text-capitalize text-nowrap">Change of vehicle model</td>
+                                                    <td class="text-capitalize text-nowrap">Vincent Otieno</td>
+                                                    <td class="text-capitalize text-nowrap">Vincent Otieno (0723456780)</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <span class="badge bg-success text-uppercase">Successfully Changed</span>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">No Issues</td>
+                                                    <td class="text-capitalize text-nowrap">Cess - Concrete</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 1,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>9.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">KQM 654Q</td>
+                                                    <td class="text-capitalize text-nowrap">KQM 543R</td>
+                                                    <td class="text-capitalize text-nowrap">INV-009</td>
+                                                    <td class="text-capitalize text-nowrap">Transfer between owners</td>
+                                                    <td class="text-capitalize text-nowrap">Lillian Wanjiru</td>
+                                                    <td class="text-capitalize text-nowrap">Lillian Wanjiru (0745678901)</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <span class="badge bg-success text-uppercase">Successfully Changed</span>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">No Issues</td>
+                                                    <td class="text-capitalize text-nowrap">Parking - Holiday Parking</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 1,100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>10.</strong></td>
+                                                    <td class="text-capitalize text-nowrap">KRG 321S</td>
+                                                    <td class="text-capitalize text-nowrap">KRG 432T</td>
+                                                    <td class="text-capitalize text-nowrap">INV-010</td>
+                                                    <td class="text-capitalize text-nowrap">Plate damage</td>
+                                                    <td class="text-capitalize text-nowrap">Abdi Mohamed</td>
+                                                    <td class="text-capitalize text-nowrap">Abdi Mohamed (0705678901)</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <span class="badge bg-danger text-uppercase">Failed</span>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">Documentation missing</td>
+                                                    <td class="text-capitalize text-nowrap">Cess - Bitumen</td>
+                                                    <td class="text-capitalize text-nowrap text-right">KES 600</td>
+                                                </tr>
                                             </tbody>
-                                            <tfoot class="table-dark">
-                                                <tr>
-
-                                                    <th colspan="2">
-                                                        23 Sub Counties
-                                                    </th>
-                                                   <th>
-                                                        45
-                                                   </th>
-                                                   <th>53</th>
-
-                                                    <td class="text-nowrap text-right " colspan="">
-                                                        <span class="fw-semibold ">KES 2,000,000</span>
-                                                    </td>
-                                                    <TD></TD>
-
-                                                    
+                                            <tfoot>
+                                                <tr class="table-dark">
+                                                    <th colspan="2">45 Chnages</th>
+                                                    <th colspan="3">45 Officers</th>
+                                                    <th colspan="6">23 Vehicles</th>
                                                 </tr>
-
                                             </tfoot>
                                         </table>
+                                      
+                                        
                                     </div>
                                     
                                 </div>
@@ -908,67 +934,120 @@
            
 
             <!-- invoice details -->
-            <div class="modal fade analysis-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Invoice Period Analysis Overview: Creation vs. Payment Periods</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Invoice Details</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                           <div class="row p-3">
-                                <div class="col-12 mb-5">
-                                    <div class="alert alert-info alert-dismissible fade show mb-0" role="alert">
-                                        <h4 class="alert-heading">About Invoice Comparison Overview</h4>
-                                        <p class="mb-1">This section allows you to compare invoices based on two distinct date ranges:</p>
-                                        <ol>
-                                            <li><strong>Creation Period:</strong> Select the date range during which invoices were created.</li>
-                                            <li><strong>Payment Period:</strong> Choose the date range when these invoices were paid.</li>
-                                        </ol>
-                                        <p>The comparison will show which invoices were created within <strong>the selected creation period</strong> but remained unpaid, and which of these were paid within <strong>the chosen payment period</strong>. This helps in analyzing and tracking invoice status and payment trends.</p>
-                                       
-                                    </div>
+                            <div class="col-12">
+                                <address>
+                                    <strong>Billed To:</strong><br>
+                                    Kelvin Njuguna<br>
+                                    email@mail.com, 0704 549 859<br>                                   
+                                    Hse No. 410, 90 Degrees By Tsavo
+                                    <br><br>
+                                    1 Mar 2022, 10:20 AM
+                                </address>
+                            </div>
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">Invoice Details ( <span class="text-primary fw-medium">No. 1237</span> )</h3>
                                 </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 70px;">No.</th>
+                                                <th>Item</th>
+                                                <th class="text-end">Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Rent Deposit</td>
+                                                <td class="text-end">KES 24,500</td>
+                                            </tr>
 
-                                <!-- by default select the duration for the previouse financial year eg July 1st 2023 to June 31 2023 -->
+                                            <tr>
+                                                <td>02</td>
+                                                <td>Monthly Rent</td>
+                                                <td class="text-end">KES 12,000</td>
+                                            </tr>
 
-                                <div class="col-12 mb-3">
-                                    <label for="">Invoice Creation Period</label>
-                                    <div class="d-flex">
-                                        <div class="input-group  fw-semibold text-uppercase me-3" title="Select the start date for which the invoices were supposedly created">
-                                            <label class="input-group-text text-uppercase">Date From</label>
-                                            <input class="form-control " type="date" value="2019-08-19" id="example-date-input">
-                                        </div>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>TAX (18%)</td>
+                                                <td class="text-end">KES 250</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-end">Total</td>
+                                                <td class="text-end fw-bold">KES 36,750</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-end">Paid</td>
+                                                <td class="text-end  fw-bold">KES 0.00</td>
+                                            </tr>
 
-                                        <div class="input-group  fw-semibold text-uppercase" title="Select the end date for which the invoices were supposedly created">
-                                            <label class="input-group-text text-uppercase">Date To</label>
-                                            <input class="form-control " type="date" value="2019-08-19" id="example-date-input">
-                                        </div>
-                                    </div>
+                                            <tr>
+                                                <td colspan="2" class="border-0 text-end">
+                                                    <strong>Balance</strong></td>
+                                                <td class="border-0 text-end">
+                                                    <h5 class="m-0 text-uppercase fw-bold">KES 36,750</h5>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-
-                                 <!-- by default select the duration for the current financial year eg July 1st 2024 to June 31 2024 -->
-
-                                <div class="col-12 mb-3">
-                                    <label for="">Invoice Payment Period</label>
-                                    <div class="d-flex">
-                                        <div class="input-group  fw-semibold text-uppercase me-3" title="Select the start date for which the invoices were receipted">
-                                            <label class="input-group-text text-uppercase">Date From</label>
-                                            <input class="form-control " type="date" value="2019-08-19" id="example-date-input">
-                                        </div>
-
-                                        <div class="input-group  fw-semibold text-uppercase" title="Select the end date for which the invoices were supposedly receipted">
-                                            <label class="input-group-text text-uppercase">Date To</label>
-                                            <input class="form-control " type="date" value="2019-08-19" id="example-date-input">
-                                        </div>
-                                    </div>
-                                </div>
-                           </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
-                           
+                            <div class="col-12 d-none">
+                                <div class="table-resposive p-4 px-2 pt-2 overflow-visible">
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr data-id="1">
+                                                <td>
+                                                    <label for="" class="">Payment Method</label>
+                                                    <select class="form-control selectpicker w-100 payment-method" data-style="btn-secondary w-100" data-live-search="true" title="Select payment Method">
+                                                        <option value="Mpesa">MPESA</option>
+                                                        <option value="Cash">CASH</option>   
+                                                     </select>
+                                                </td>
+                                                <td class="px-3 ">
+                                                    <div class="phone-num d-none">
+                                                        <label for="">Phone No.</label>
+                                                        <input type="text " class="form-control w-100 d-flex " placeholder="Phone No." spellcheck="false" data-ms-editor="true">
+                                                    </div>
+
+                                                </td>
+                                                <td class="px-3">
+                                                    <label for="">Amount To Be Paid</label>
+                                                    <input type="text " class="form-control w-100 d-flex" placeholder="KES" spellcheck="false" data-ms-editor="true">
+
+                                                </td>
+                                                <td class="text-right float-right">
+                                                    <div class="d-flex flex-column">
+                                                        <label class="opacity-0">Something</label>
+                                                        <a href="#" class="btn btn-primary w-md waves-effect waves-light">Submit</a>
+                                                    </div>
+                                                </td>
+
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
                             <div class="float-end">
-                               <button class="btn btn-primary text-uppercase">Submit </button>
+                                <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light me-1"><i class="mdi mdi-printer font-16px"></i></a>
+                                <a href="javascript: void(0);" class="btn btn-primary w-md waves-effect waves-light">Receive Payment</a>
                             </div>
                         </div>
 
