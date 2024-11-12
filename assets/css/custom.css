@@ -1636,6 +1636,27 @@ opacity: 25%;
 .mouse-pointer{
     cursor: pointer !important;
 }
+.multi-invoicer {
+    position: fixed; /* Ensures it covers the whole viewport */
+    width: 100vw; /* Full viewport width, preventing horizontal overflow */
+    height: 100vh; /* Full viewport height */
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1055;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+.multi-invoicer .card, .multi-invoicer .card-header{
+    border-radius: 0px;
+}
+.multi-invoicer .card{
+    min-height: 100vh;
+    margin-bottom: 0px;
+    margin: 0px;
+    width: 100%;
+}
 
 
 

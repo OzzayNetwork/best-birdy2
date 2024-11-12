@@ -595,6 +595,135 @@
         <!-- Start right Content here -->
         <!-- ============================================================== -->
         <div class="main-content">
+             <!-- the invoicing details here -->
+             <div class="row position-fixed multi-invoicer">
+                <div class="col-12">
+                    <div class="card w-100 radius-0">
+                        <div class="card-header bg-primar text-white border-bottom d-flex justify-content-between align-items-center py-3">
+                            <h4 class="card-title text-whit text-uppercase mb-0">Bulk SBP Invoicing Wizard</h4>
+                            <button type="button" class="btn btn-danger waves-effect btn-label waves-light text-uppercase"><i class="mdi mdi-close label-icon "></i> Cancel</button>
+                        </div>
+                        <div class="card-header bg-white text-white border-bottom d-flex justify-content-between align-items-center py-3">
+                            <div class="flex-start d-flex">
+                                <!-- Sub County Dropdown -->
+                                <div class="input-group">
+                                    <label class="input-group-text">Sub County</label>
+                                    <select class="form-select" disabled>
+                                        <option value="homabay-town">Homa Bay Town</option>
+                                        <option value="mbita">Mbita</option>
+                                        <option value="ndhiwa">Ndhiwa</option>
+                                        <option value="kasipul">Kasipul</option>
+                                        <option value="karachuonyo">Karachuonyo</option>
+                                        <option value="kabondo-kasipul">Kabondo Kasipul</option>
+                                        <option value="rangwe">Rangwe</option>
+                                        <option value="suba">Suba</option>
+                                    </select>
+                                </div>
+                            
+                                <!-- Ward Dropdown -->
+                                <div class="input-group mx-4">
+                                    <label class="input-group-text">Ward</label>
+                                    <select class="form-select">
+                                        <option value="arujo">Arujo</option>
+                                        <option value="central-kabondo">Central Kabondo</option>
+                                        <option value="gembe">Gembe</option>
+                                        <option value="god-jope">God Jope</option>
+                                        <option value="kanyadoto">Kanyadoto</option>
+                                        <option value="kendu-bay">Kendu Bay</option>
+                                        <option value="kokwanyo-kakelo">Kokwanyo/Kakelo</option>
+                                        <option value="kochi">Kochi</option>
+                                        <!-- Add more wards as needed -->
+                                    </select>
+                                </div>
+                            
+                                <!-- Zone/Market Dropdown -->
+                                <div class="input-group">
+                                    <label class="input-group-text">Zone/Market</label>
+                                    <select class="form-select">
+                                        <option value="homabay-market">Homa Bay Market</option>
+                                        <option value="mbita-market">Mbita Market</option>
+                                        <option value="ndhiwa-market">Ndhiwa Market</option>
+                                        <option value="oyugis-market">Oyugis Market</option>
+                                        <option value="kendu-bay-market">Kendu Bay Market</option>
+                                        <!-- Add more markets as needed -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-primary waves-effect btn-label waves-light text-uppercase"><i class="mdi-check-all mdi label-icon "></i> Change</button>
+
+                            
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4 class="card-title">Business Register for Homa Bay Market Zone, Arujo Ward</h4>
+                                    <p>Please review each entry in the data carefully to ensure accuracy before generating invoices for this ward. Only verified entries will be processed, and their invoices will be generated automatically.</p>
+                                    <p class="fw-bold text-black">Please note, you can only validate businesses registered within one zone at a time.</p>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-striped-info table-s  align-middle text-nowrap">
+                                            <thead class="bg-info text-black text-uppercase border border-info">
+                                                <tr>
+                                                    <th title="Date and Time of Lab Test Order">Biz ID.</th>
+                                                    <th title="Patient Visit Number">Status</th>
+                                                    <th title="invoice number for the scheduled test">Business</th>
+                                                    <th title="Patient Name">Owner</th>
+                                                    <th title="Outpatient or Inpatient">Registered On</th>
+                                                    <th title="Doctor Who Ordered the Test">Sub Category</th>
+                                                    <th title="Lab Test(s) Ordered">2024 Invoice</th>
+                                                    <th>Changes</th>
+                                                    <th class="text-right" title="Mode of Payment (e.g., Cash, Insurance)">Amount Invoiced</th>
+                                                    <th class="text-right" title="Payment Status (Paid or Unpaid)">Amount Paid</th>
+                                                    <th title="Available Actions" class="text-right">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="border border-info">
+                                                <tr>
+                                                    <td>1234</td>
+                                                    <td>
+                                                        <span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span> 
+                                                    </td>
+                                                    <td>Volvo office</td>
+                                                    <td>Abdi Mohammed (0704 *** 789)</td>
+                                                    <td>11 Sep 2023 By Kelvin Kinoti</td>
+                                                    <td>Mini Shop with 1000 Attendants</td>
+                                                    <td>BLL123456</td>
+                                                    <td>0</td>
+                                                    <td class="text-right">10,500</td>
+                                                    <td class="text-uppercase text-right">10,500</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            
+                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2 click-btn" data-bs-toggle="modal" data-bs-target="#details-modal" title="Initiate Payment for Lab Tests">
+                                                                <div>Initiate Verrification</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                           
+                                            <tfoot class="border border-dark">
+                                                <tr class="table-primary text-black border-dark">
+                                                    <th colspan="3">22 Verified | 32 Archived | 64 Pending | 16 Edited</th>
+                                                    <th colspan="6">4 Tests</th>
+                                                    <th class="text-right">KES 567,900</th>
+                                                    <th></th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                        
+                                      </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <!-- end of invoicing details -->
 
             <div class="page-content">
                 <div class="container-fluid">
@@ -603,14 +732,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Business Permits</h4>
+                                <h4 class="mb-sm-0 font-size-18">Bulk SBP Invoicing</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Certificates & Licenses</a></li>
                                         <li class="breadcrumb-item"><a href="cert-biz-stats.html">Business Permits</a></li>
-                                        <li class="breadcrumb-item active">Pending Validation</li>
+                                        <li class="breadcrumb-item active">Bulk Invoicing</li>
                                     </ol>
                                 </div>
 
@@ -619,372 +748,18 @@
                     </div>
                     <!-- end page title -->
 
-                    <!-- tool bar -->
-                 <div class="row">
-                        <div class="col-12 active">
-                            <div class="card active">
-                                <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
-                                    <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
-                                        <button
-                                            class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary"
-                                            type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                                            aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                                            aria-label="Toggle navigation">
-                                            <span class="mdi mdi-menu"></span>
-                                        </button>
-                                        <div class="collapse navbar-collapse justify-content-between active"
-                                            id="navbarNavAltMarkup">
-                                            <div class="navbar-nav">
-                                                <a class="nav-item nav-link" href="cert-biz-stats.html">Dashboard</a>
-                                                <a class="nav-item nav-link" href="cert-biz-ongoing.html">Pending Validation</a>
-
-                                                    <a class="nav-item nav-link" href="cert-biz-inspection.html">Pending Inspection</a>
-                                                <a class="nav-item nav-link" href="cert-biz-suspended.html">Suspended
-                                                    Applications</a>
-                                                <a class="nav-item nav-link" href="cert-biz-approved.html">Approved
-                                                   </a>
-                                                    <a class="nav-item nav-link" href="cert-biz-declined.html">Declined
-                                                        </a>
-                                                <a class="nav-item nav-link" href="cert-biz-active.html">Paid SBPs</a>
-                                                <a class="nav-item nav-link" href="cert-biz-expired.html">Unpaid SBPs</a>
-                                                <a class="nav-item nav-link" href="cert-biz-penalized.html">Penalized
-                                                    SBPs</a>
-                                                <a class="nav-item nav-link" href="cert-biz-unpaid-bills.html">Pending
-                                                    Bills</a>
-                                                <a class="nav-item nav-link"
-                                                    href="cert-biz-receipted-bills.html">SBP Receipts</a>
-                                                    <a class="nav-item nav-link" href="cert-biz-map.html">Map View</a>
-                                                    
-                                            </div>
-                                            
-
-                                        </div>
-                                    </nav>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- end of toolbar -->
-                    <div class="row">
+                    <div class="row w-100 ">
                         <div class="col-12">
-                            <div class="card">
-                                <div
-                                    class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
-                                        role="toolbar">
-                                        <h4 class="card-title text-capitalize mb-0 ">
-                                            Applications Pending Validation
-                                        </h4>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
-                                        <label class="text-nowrap mb-0">Business Activity:</label>
-                                        <select class="form-select mx-2" title="Select Subcounty">
-                                            <option>All Business Activites</option>
-                                            <option>Homabay Town</option>
-                                            <option>Ndhiwa</option>
-                                            <option>...</option>
-                                        </select>
-
-                                        <label class="text-nowrap mb-0 mx-2">Business Sub Category:</label>
-                                        <select class="form-select" title="Select Subcounty">
-                                            <option>All Sub Categories</option>
-                                            <option>Homabay Town</option>
-                                            <option>Ndhiwa</option>
-                                            <option>...</option>
-                                        </select>
-
-                                        <select class="form-select mx-3" title="Select Subcounty ">
-                                            <option>All of Sub counties</option>
-                                            <option>Homabay Town</option>
-                                            <option>Ndhiwa</option>
-                                            <option>...</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive ">
-
-                                        <table class="table align-middle table-hover  contacts-table table-striped "
-                                            id="datatable-buttons">
-                                            <thead class="table-light">
-                                                <tr class="table-dark">
-                                                    <th scope="col">Receipt No.</th>
-                                                    <th scope="col">Business ID</th>
-                                                    <th scope="col">Business Name</th>
-                                                    <th scope="col">Applicatio Date</th>
-                                                    <th>Licensing Officer</th>
-                                                    <th>Status</th>
-                                                    <th scope="col" class="text-right">Amount Paid</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
-                                                        <td>Tobby Arnold</td>
-                                                    
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
-                                                        <td>Tobby Arnold</td>
-                                                    
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
-                                                        <td>Tobby Arnold</td>
-                                                    
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                        </td>
-                                                        <td>Tobby Arnold</td>
-                                                    
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-soft-warning text-uppercase">Ongoing Application</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Application Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light">
-                                                                <i
-                                                                    class="bx bx-printer font-size-16 align-middle me-2"></i>
-                                                                Print Receipt
-                                                            </a>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal"
-                                                                        data-bs-target=".receipting-modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-email me-3 "></i>Send
-                                                                        Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3 "></i>Send
-                                                                        SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-
-                                            </tbody>
-                                            <tfoot class="table-dark">
-                                                <tr>
-
-                                                    <th>
-                                                        23 Certs
-                                                    </th>
-
-
-                                                    <th class="text-nowrap" colspan="4">23 Businesses</th>
-                                                   
-                                                    <td class="text-nowrap text-right " colspan="2">
-                                                        <span class="fw-semibold ">KES 2,000,000</span>
-                                                    </td>
-                                                    <td></td>
-
-
-
-
-                                                </tr>
-
-                                            </tfoot>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                           <div class="card p-5 text-center h-100 d-flex align-items-center justify-content-center text-primary opacity-25">
+                            <i class="bx bx-file f mb-2 display-1"></i>
+                            <h4 class="fw-bold text-capitalize ">Single Business Permit Bulk <br> Invoicing Wizard</h4>
+                            
+                           </div>
                         </div>
                         <!-- end col -->
                     </div>
+
+                   
 
                     <!-- end row -->
                 </div>
@@ -993,86 +768,19 @@
             <!-- End Page-content -->
 
             <!-- receipting modal -->
-            <div class="modal fade receipting-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            <div class="modal fade receipting-modal" id="details-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered modal-full modal-fullscreen">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Business Details</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Omo Business Details</h5>
                             <span
                                 class="badge rounded-pill bg-warning text-uppercase font-12px text-uppercase mx-3">Ongoing Applications</span>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="hori-timeline mt-4">
-                                        <div class="owl-carousel owl-theme  navs-carousel events timeline-carousel"
-                                            id="timeline-carousel">
-                                            <div class="item event-list">
-                                                <div>
-                                                    <div class="event-date">
-                                                        <div class="text-primary mb-1">12 Sep 2023 10:09 AM</div>
-                                                        <h5 class="mb-4">Application</h5>
-                                                    </div>
-                                                    <div class="event-down-icon">
-                                                        <i
-                                                            class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
-                                                    </div>
-
-                                                    <div class="mt-3 px-3">
-                                                        <p class="text-muted text-capitalize"><a
-                                                                href="user-details.html">Kelvin Omondi</a></p>
-                                                                <p class="text-muted text-capitalize mb-1"><a href="PrintDocs/Receipts/receipts-HOMabay county.html"><i class="bx bx-receipt"></i> View Receipt</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="item event-list active">
-                                                <div>
-                                                    <div class="event-date">
-                                                        <div class="text-primary mb-1">-</div>
-                                                        <h5 class="mb-4">Details Verification</h5>
-                                                    </div>
-                                                    <div class="event-down-icon">
-                                                        <i
-                                                        class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
-                                                    </div>
-
-                                                    <div class="mt-3 px-3">
-                                                        <p class="text-muted text-capitalize"><a
-                                                                href="user-details.html">-</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                          
-
-                                            <div class="item event-list">
-                                                <div>
-                                                    <div class="event-date">
-                                                        <div class="text-primary mb-1">-</div>
-                                                        <h5 class="mb-4">Inspection</h5>
-                                                    </div>
-                                                    <div class="event-down-icon">
-                                                        <i
-                                                            class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
-                                                    </div>
-
-                                                    <div class="mt-3 px-3">
-                                                        <p class="text-muted text-capitalize"><a
-                                                                href="user-details.html">-</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-
                                
-
                                 <div class="col-sm-12 col-md-4">
                                     <div class="row">
                                         <div class="col-12 mt-4">
@@ -1097,10 +805,9 @@
                                                                     Business
                                                                     Name</p>
                                                             </td>
-                                                            <td class="">Wireless Electronics</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter Business Name" value="Omo Business">
+                                                            </td>  
 
                                                         </tr>
 
@@ -1108,27 +815,58 @@
                                                             title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
                                                             <td>
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Certificate of Incoporation No. </p>
+                                                                    Sub County</p>
                                                             </td>
-                                                            <td class="">1234557768</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
+                                                            <td class="">
+                                                                <select class="form-select form-select-sm" fdprocessedid="fw9x5">
+                                                                    <option>Change sub County</option>
+                                                                    <option selected>Homa Bay Town</option>
+                                                                    <option>Rachuonyo South</option>
+                                                                </select>
+                                                            </td>  
 
+                                                        </tr>
+
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Ward </p>
+                                                            </td>
+                                                            <td class="">
+                                                                <select class="form-select form-select-sm" fdprocessedid="fw9x5">
+                                                                    <option>Change ward</option>
+                                                                    <option selected>Aruo Ward</option>
+                                                                    <option>Rodi ward</option>
+                                                                </select>
+                                                            </td>  
+
+                                                        </tr>
+
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Zone</p>
+                                                            </td>
+                                                            <td class="">
+                                                                <select class="form-select form-select-sm" fdprocessedid="fw9x5">
+                                                                    <option>Change Zone</option>
+                                                                    <option selected>Rodi Market</option>
+                                                                    <option>Modern Market</option>
+                                                                </select>
+                                                            </td>  
 
                                                         </tr>
 
                                                         <tr>
                                                             <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">KRA
-                                                                    Pin
-                                                                    No.</p>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Plot No.</p>
 
                                                             </td>
-                                                            <td class="">12345</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter Business Name" value="Omo Business">
+                                                            </td>  
 
 
                                                         </tr>
@@ -1139,41 +877,60 @@
                                                                 </p>
 
                                                             </td>
-                                                            <td class="">12345</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter VAT NO." value="JKHH(*&)">
+                                                            </td>  
+                                                        </tr>
 
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Physical Address
+                                                                </p>
+
+                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter The ADdress" value="Next to Kianjokoma Market">
+                                                            </td>  
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Building Name
+                                                                </p>
+
+                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter The Building Name" value="The Tower">
+                                                            </td>  
+                                                        </tr>
+
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Floor Number</p>
+                                                            </td>
+                                                            <td class="">
+                                                                <select class="form-select form-select-sm" fdprocessedid="fw9x5">
+                                                                    <option>NA</option>
+                                                                    <option selected>Ground Floor</option>
+                                                                    <option>12345</option>
+                                                                </select>
+                                                            </td>  
 
                                                         </tr>
 
                                                         <tr>
                                                             <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Business
-                                                                    Activity</p>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Stall/Room No.
+                                                                </p>
 
                                                             </td>
-                                                            <td class="">Accomodation and Catering</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter No. if Applicable" value="NA">
+                                                            </td>  
                                                         </tr>
 
-                                                        <tr class="text-danger fw-semibold">
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Business
-                                                                    Sub category</p>
-
-                                                            </td>
-                                                            <td class="">Small Lodging House</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-x text-danger font-28"></i>
-                                                            </td>
-
-                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -1182,36 +939,72 @@
                                             <div class="table-responsive">
                                                 <table
                                                     class="table table-nowrap vertical-align-middle table-striped table-sm">
-                                                    <thead class="table-light">
-                                                        <th colspan="3" class="">Corrections Needed/Done <br> <a href="user-details.html">(By Flex Amondi)</a></th>
+                                                    <thead class="table-warning">
+                                                        <th colspan="3" class="text-uppercase">2024 Invoicing Details</th>
                                                     </thead>
                                                     <tbody>
-                                                       
-
-                                                        <tr class=" fw-semibold text-capitalize">
+                                                        <tr class=" fw-semibold text-uppercase">
                                                             <td class="text-primary">
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Business
-                                                                    Sub category</p>
+                                                                    Invoice No.</p>
 
                                                             </td>
-                                                            <td class=""><span class="text-primary">change to:</span> large high standard lodging</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-x text-danger font-28"></i>
-                                                            </td>
+                                                            <td class=""><span class="text-primary">BLL48778</td>
+                                                            
 
                                                         </tr>
-                                                        <tr class=" fw-semibold text-capitalize">
+                                                        <tr class=" fw-semibold text-uppercase">
                                                             <td class="text-primary">
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Additional Amount</p>
+                                                                    Total Invoiced Amount</p>
 
                                                             </td>
-                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">KES 12,000</span> (BILL NO. BLL12344jh)</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-x text-danger font-28"></i>
+                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">KES 12,000</span></td>
+                                                           
+                                                        </tr>
+                                                        <tr class=" fw-semibold text-uppercase">
+                                                            <td class="text-primary">
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Amount Paid</p>
                                                             </td>
+                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">KES 12,000</span></td>
+                                                           
+                                                        </tr>
 
+                                                        <tr class=" fw-semibold text-uppercase">
+                                                            <td class="text-primary">
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Outstanding Balance</p>
+                                                            </td>
+                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">KES 0</span></td>
+                                                           
+                                                        </tr>
+
+                                                        <tr class=" fw-semibold text-uppercase">
+                                                            <td class="text-primary">
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Invoiced By</p>
+                                                            </td>
+                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">Alex Kiptanui on 23 sep 2023 12:45 AM</span></td>
+                                                           
+                                                        </tr>
+
+                                                        <tr class=" fw-semibold text-uppercase">
+                                                            <td class="text-primary">
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Inspected By</p>
+                                                            </td>
+                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">Alex Kiptanui on 30 Mar 2024 11:34 PM</span></td>
+                                                           
+                                                        </tr>
+
+                                                        <tr class=" fw-semibold text-uppercase">
+                                                            <td class="text-primary">
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Current Approval Stage</p>
+                                                            </td>
+                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">Approved</span></td>
+                                                           
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -1225,7 +1018,7 @@
                                         <div class="col-12 mt-4">
                                             <div class="bg-warning border-2 bg-soft p-2 mb-4 d-flex align-items-center">
                                                 <i class="bx bxs-user-pin font-28 mr-15px"></i>
-                                                <p class="fw-semibold mb-0 pb-0">Owner Details</p>
+                                                <p class="fw-semibold mb-0 pb-0">Ownership and Business's Contact information</p>
 
                                             </div>
                                         </div>
@@ -1234,19 +1027,19 @@
                                                 <table
                                                     class="table table-nowrap vertical-align-middle table-striped table-sm">
                                                     <thead class="table-light">
-                                                        <th colspan="3" class="text-right text-uppercase">Verification Status <br> <a href="user-details.html">(By Flex Amondi)</a></th>
+                                                        <th colspan="3" class="text-uppercase">Owner Details</th>
                                                     </thead>
                                                     <tbody>
                                                         <tr
                                                             title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
                                                             <td>
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Owner's Full Names</p>
+                                                                    Full Names</p>
                                                             </td>
-                                                            <td class="">Mr Alex Wanjala Akinyi</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Owner's full names" value="Kelvin Njuguna">
                                                             </td>
+                                                            
 
                                                         </tr>
 
@@ -1254,66 +1047,174 @@
                                                             title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
                                                             <td>
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    ID/PPT No.</p>
+                                                                    Owner's ID</p>
                                                             </td>
-                                                            <td class="">1234557768</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Owner's ID Number" value="54634648">
                                                             </td>
+                                                        </tr>
+
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                   Owner's Phone No.</p>
+                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Owner's Phone No." value="0704549859">
+                                                            </td>                                                        
 
                                                         </tr>
 
                                                         <tr>
                                                             <td>
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Owner's Fax</p>
+                                                                    Email Address</p>
 
                                                             </td>
-                                                            <td class="">12345</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter Email" value="email@email.com">
+                                                            </td>   
 
                                                         </tr>
                                                         <tr>
                                                             <td>
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Owner's Mobile No.</p>
+                                                                    KRA PIN No. (Optional)</p>
 
                                                             </td>
-                                                            <td class=""><a href="tel:0704549859">0704549859</a></td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter KRA Pin Number" value="">
+                                                            </td>  
+
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                    <thead class="table-light">
+                                                        <th colspan="3" class="text-uppercase">Business Contact Information</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                   Owner's Phone No.</p>
                                                             </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Owner's Phone No." value="0704549859">
+                                                            </td>                                                        
 
                                                         </tr>
 
                                                         <tr>
                                                             <td>
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Alternative Mobile No.</p>
+                                                                    Business's Email Address</p>
 
                                                             </td>
-                                                            <td class=""><a href="tel:0704549859">0704549859</a></td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter Email" value="email@email.com">
+                                                            </td>   
 
                                                         </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Postal Address</p>
 
+                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter Postal ADress" value="123 homa Bay">
+                                                            </td>  
 
+                                                        </tr>
 
                                                         <tr>
                                                             <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Postal
-                                                                    Address</p>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Company Phone Number</p>
 
                                                             </td>
-                                                            <td class="">12-1004 Nairobi</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter Postal ADress" value="0704567890">
+                                                            </td>  
+
                                                         </tr>
+
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                    <thead class="table-light">
+                                                        <th colspan="3" class="text-uppercase">Contact Person</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                   Full Names</p>
+                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Owner's Phone No." value="0704549859">
+                                                            </td>                                                        
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    ID Number</p>
+
+                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="ID Number" value="89789">
+                                                            </td>   
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Contact Person's Role</p>
+
+                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter Postal ADress" value="Secretary">
+                                                            </td>  
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Ciontact Person's Phone Number</p>
+
+                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Enter Postal ADress" value="0704567890">
+                                                            </td>  
+
+                                                        </tr>
+
+
 
                                                     </tbody>
                                                 </table>
@@ -1327,44 +1228,49 @@
                                 <div class="col-sm-12 col-md-4">
                                     <div class="row">
                                         <div class="col-12 mt-4">
-                                            <div class="bg-danger border-2 bg-soft p-2 mb-4 d-flex align-items-center">
-                                                <i class="bx bx-phone-call pin font-28 mr-15px"></i>
-                                                <p class="fw-semibold mb-0 pb-0">Location and Contact information</p>
-
+                                            <div class="bg-danger border-2 bg-soft p-2 mb-4 d-flex align-items-center rounded">
+                                                <i class="bx bxs-wallet font-28 mr-15px"></i>
+                                                <p class="fw-bold mb-0 ">Billing and Business Categorization Details</p>
                                             </div>
                                         </div>
+                                        
+                                        
                                         <div class="col-12">
                                             <div class="table-responsive">
                                                 <table
                                                     class="table table-nowrap vertical-align-middle table-striped table-sm">
                                                     <thead class="table-light">
-                                                        <th colspan="3" class="text-right text-uppercase">Verification Status <br> <a href="user-details.html">(By Flex Amondi)</a></th>
+                                                        <th colspan="3" class="text-uppercase">SBP Categorization Fees</th>
                                                     </thead>
                                                     <tbody>
                                                         <tr
                                                             title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
                                                             <td>
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Business Mobile No.</p>
+                                                                    Category</p>
                                                             </td>
-                                                            <td class=""><a href="tel:0704549859">0704549859</a></td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
+                                                            <td class="">
+                                                                <select class="form-select form-select-sm" fdprocessedid="fw9x5">
+                                                                    <option selected>Ground Category</option>
+                                                                    <option>Category 1</option>
+                                                                    <option>Category 2</option>
+                                                                </select>
+                                                            </td>  
                                                         </tr>
 
                                                         <tr
                                                             title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
                                                             <td>
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Alternative Phone No</p>
+                                                                    Sub category</p>
                                                             </td>
-                                                            <td class=""><a href="tel:0704549859">0704549859</a></td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
+                                                            <td class="">
+                                                                <select class="form-select form-select-sm" fdprocessedid="fw9x5">
+                                                                    <option selected>Ground Sub Category</option>
+                                                                    <option>Sub Category 1</option>
+                                                                    <option>Sub Category 2</option>
+                                                                </select>
+                                                            </td>  
                                                         </tr>
 
 
@@ -1373,79 +1279,11 @@
                                                             title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
                                                             <td>
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Business Email address</p>
+                                                                    SBP Charges</p>
                                                             </td>
-                                                            <td class=""><a
-                                                                    href="mailto:email@email.com">email@email.com</a>
-                                                            </td>
+                                                           
                                                             <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold"> Sub
-                                                                    county</p>
-
-                                                            </td>
-                                                            <td class="">Homabay Town Sub county</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Ward
-                                                                </p>
-
-                                                            </td>
-                                                            <td class=""><a href="tel:0704549859">Rodi Township Ward</a>
-                                                            </td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Physical address/Street</p>
-
-                                                            </td>
-                                                            <td class=""><a href="tel:0704549859">Along Moi Avenue
-                                                                    opposite cooperative Bank</a></td>
-                                                                    <td class="text-right">
-                                                                        <i class="bx bx-check text-success font-28"></i>
-                                                                    </td>
-
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Building Name</p>
-
-                                                            </td>
-                                                            <td class="">ALexis complex</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
-                                                            </td>
-
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Stall/Room No.</p>
-
-                                                            </td>
-                                                            <td class="">122</td>
-                                                            <td class="text-right">
-                                                                <i class="bx bx-check text-success font-28"></i>
+                                                               <h4 class="text-primary fs-4 mb-0 fw-bold"> KES 12,230</h4>
                                                             </td>
 
                                                         </tr>
@@ -1454,6 +1292,124 @@
                                                 </table>
                                             </div>
                                         </div>
+
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-nowrap vertical-align-middle table-bordered table-sm">
+                                                    <thead class="table-info">
+                                                        <th colspan="" class="text-uppercase">Other Applicable Charges <i>(-- Select Where Applicable --)</i></th>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="formCheckcolor1" checked="">
+                                                                <label class="form-check-label" for="formCheckcolor1">
+                                                                    Renewal Fee - <strong>KES 500</strong>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                      </tr>
+
+                                                      <tr>
+                                                        <td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="formCheckcolor2" >
+                                                                <label class="form-check-label" for="formCheckcolor2">
+                                                                    Conservercy Fees - <strong>KES 700</strong>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                      </tr>
+
+                                                      <tr>
+                                                        <td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="formCheckcolor3" >
+                                                                <label class="form-check-label" for="formCheckcolor3">
+                                                                    Advertising Fees - <strong>KES 700</strong>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                    <tfoot class="table-success">
+                                                        <tr>
+                                                            <th class="text-uppercase">Total(4) KES 589,000</th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <!-- for a downgrade show this -->
+
+                                        <div class="col-12 d-none">
+                                            <div class="card bg-danger text-white-50">
+                                                <div class="card-body">
+                                                    <h5 class="mb-4 text-white text-uppercase"><i class="mdi mdi-block-helper me-3"></i> SBP License Fee Adjustment Notification</h5>
+                                                    <p class="card-text">Please be informed that the SBP license fee for 2025 will be reduced by KES 450 compared to the 2024 fee.</p>
+                                                </div>
+                                            </div>
+                                            <div class="alert alert-warning border-1 border-warning" role="alert">
+                                                <h4 class="text-uppercase fw-bold mb-0">Previous Amount (2024): <strong class="text-primary">KES 4,500</strong></h4>
+                                                <p class="mb-0 text-black">Subcategory: Medium Shop</p>
+                                            </div>
+                                        
+                                            <div class="alert alert-danger border-1 border-danger" role="alert">
+                                                <h4 class="text-uppercase fw-bold mb-0">New Amount (2025): <strong class="text-danger">KES 3,500</strong></h4>
+                                                <p class="mb-0 text-black">Subcategory: Medium Shop</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- for maintained  -->
+                                        <div class="col-12">
+                                            <div class="card bg-primary text-white-50">
+                                                <div class="card-body">
+                                                    <h5 class="mb-4 text-white text-uppercase"><i class="mdi mdi-information-outline me-3"></i> SBP License Fee Update</h5>
+                                                    <p class="card-text">Please note that the SBP license fee for 2025 remains the same as in 2024, though your business category or subcategory may have been reviewed.</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="alert alert-info border-1 border-info" role="alert">
+                                                <h4 class="text-uppercase fw-bold mb-0">Amount (2024): <strong class="text-primary">KES 4,500</strong></h4>
+                                                <p class="mb-0 text-black">Previous Subcategory: Medium Shop</p>
+                                            </div>
+                                        
+                                            <div class="alert alert-info border-1 border-info" role="alert">
+                                                <h4 class="text-uppercase fw-bold mb-0">Amount (2025): <strong class="text-primary">KES 4,500</strong></h4>
+                                                <p class="mb-0 text-black">Current Subcategory: Medium Shop</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- for uphraded business -->
+                                        <div class="col-12 d-none">
+                                            <div class="card bg-success text-white-50">
+                                                <div class="card-body">
+                                                    <h5 class="mb-4 text-white text-uppercase"><i class="mdi mdi-star-circle-outline me-3"></i> Congratulations on Your Business Upgrade!</h5>
+                                                    <p class="card-text">We’re excited to inform you that your business has been upgraded to a higher category for 2025. This enhancement reflects the growth and success of the business, with an adjusted license fee to match the new category.</p>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="alert alert-info border-1 border-info" role="alert">
+                                                <h4 class="text-uppercase fw-bold mb-0">Previous Amount (2024): <strong class="text-primary">KES 4,500</strong></h4>
+                                                <p class="mb-0 text-black">Previous Subcategory: Medium Shop</p>
+                                            </div>
+                                        
+                                            <div class="alert alert-success border-1 border-success" role="alert">
+                                                <h4 class="text-uppercase fw-bold mb-0">New Amount (2025): <strong class="text-success">KES 6,000</strong></h4>
+                                                <p class="mb-0 text-black">New Subcategory: Large Shop</p>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+
+                                        
+                                        
                                     </div>
 
 
@@ -1738,6 +1694,9 @@
     <!-- App js -->
     <script src="assets/js/app.js "></script>
     <script src="assets/js/custom.js "></script>
+    <script>
+        $('.click-btn').click()
+    </script>
 </body>
 
 
