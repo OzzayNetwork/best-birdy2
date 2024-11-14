@@ -1657,7 +1657,57 @@ opacity: 25%;
     margin: 0px;
     width: 100%;
 }
+.kev-tab-header{
+    background-color: #123382;
+    color: white;
+    padding-top: 0px;
+}
+.kev-tab-header .nav{
+    margin-bottom: 1px;
+}
 
+.kev-tab-header .nav{
+    color: white;
+    margin-top: 1.5rem;
+    border: none;
+    border-color: transparent;
+}
+
+.kev-tab-header .nav-pills>li>a, .nav-tabs>li>a {
+    color: white;
+    font-weight: 500;
+}
+
+.kev-tab-header .nav-tabs .nav-item.show .nav-link, .kev-tab-header .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #e4e8fb;
+    border-color: #ced4da #ced4da #e4e8fb;
+    padding-bottom: 0.7rem;
+    font-weight: 800;
+    color: #123382;
+}
+.kev-tab-header .nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-bottom: 0.7rem;
+}
+.kev-tab-header .close-btn{
+    padding: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    /* padding-bottom: 8px;
+    padding-top: 8px;
+    margin-bottom: -1px; */
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 
 
 
