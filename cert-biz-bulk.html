@@ -661,12 +661,12 @@
                                     <p>Please review each entry in the data carefully to ensure accuracy before generating invoices for this ward. Only verified entries will be processed, and their invoices will be generated automatically.</p>
                                     <p class="fw-bold text-black">Please note, you can only validate businesses registered within one zone at a time.</p>
                                     <div class="table-responsive">
-                                        <table class="table table-striped table-striped-info table-s  align-middle text-nowrap">
+                                        <table class="table table-striped table-striped-info table-s align-middle text-nowrap">
                                             <thead class="bg-info text-black text-uppercase border border-info">
                                                 <tr>
                                                     <th title="Date and Time of Lab Test Order">Biz ID.</th>
                                                     <th title="Patient Visit Number">Status</th>
-                                                    <th title="invoice number for the scheduled test">Business</th>
+                                                    <th title="Invoice number for the scheduled test">Business</th>
                                                     <th title="Patient Name">Owner</th>
                                                     <th title="Outpatient or Inpatient">Registered On</th>
                                                     <th title="Doctor Who Ordered the Test">Sub Category</th>
@@ -678,11 +678,10 @@
                                                 </tr>
                                             </thead>
                                             <tbody class="border border-info">
+                                                <!-- Record 1 - Pending -->
                                                 <tr>
                                                     <td>1234</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span> 
-                                                    </td>
+                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
                                                     <td>Volvo office</td>
                                                     <td>Abdi Mohammed (0704 *** 789)</td>
                                                     <td>11 Sep 2023 By Kelvin Kinoti</td>
@@ -693,9 +692,8 @@
                                                     <td class="text-uppercase text-right">10,500</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2 click-btn" data-bs-toggle="modal" data-bs-target="#details-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verrification</div>
+                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
+                                                                <div>Initiate Verification</div>
                                                                 <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
                                                                     <span class="sr-only">Loading...</span>
                                                                 </div>
@@ -703,8 +701,159 @@
                                                         </div>
                                                     </td>
                                                 </tr>
+                                        
+                                                <!-- Record 2 - Invoiced -->
+                                                <tr>
+                                                    <td>1235</td>
+                                                    <td><span class="badge rounded-pill bg-success text-black text-uppercase" key="t-completed">Invoiced</span></td>
+                                                    <td>Medical Supplies</td>
+                                                    <td>Nyakango Omondi (0712 *** 890)</td>
+                                                    <td>12 Sep 2023 By John Doe</td>
+                                                    <td>Store with 500 Attendants</td>
+                                                    <td>BLL123457</td>
+                                                    <td>1</td>
+                                                    <td class="text-right">5,000</td>
+                                                    <td class="text-uppercase text-right">5,000</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="Initiate Payment for Lab Tests">
+                                                                <div>Details</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Record 3 - Archived (Red) -->
+                                                <tr>
+                                                    <td>1236</td>
+                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
+                                                    <td>Insurance Office</td>
+                                                    <td>Ochieng' Amollo (0708 *** 762)</td>
+                                                    <td>15 Sep 2023 By Alice Mwangi</td>
+                                                    <td>Shop with 300 Attendants</td>
+                                                    <td>BLL123458</td>
+                                                    <td>2</td>
+                                                    <td class="text-right">7,500</td>
+                                                    <td class="text-uppercase text-right">7,500</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="Initiate Payment for Lab Tests">
+                                                                <div>Details</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Record 4 - Pending -->
+                                                <tr>
+                                                    <td>1237</td>
+                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
+                                                    <td>Construction Site</td>
+                                                    <td>Odhiambo Achieng' (0721 *** 985)</td>
+                                                    <td>17 Sep 2023 By Peter Njoroge</td>
+                                                    <td>Warehouse with 150 Attendants</td>
+                                                    <td>BLL123459</td>
+                                                    <td>0</td>
+                                                    <td class="text-right">9,800</td>
+                                                    <td class="text-uppercase text-right">9,800</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
+                                                                <div>Initiate Verification</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Record 5 - Invoiced -->
+                                                <tr>
+                                                    <td>1238</td>
+                                                    <td><span class="badge rounded-pill bg-success text-black text-uppercase" key="t-completed">Invoiced</span></td>
+                                                    <td>Medical Equipment</td>
+                                                    <td>Juma J. Otieno (0733 *** 103)</td>
+                                                    <td>18 Sep 2023 By Irene Wanjiru</td>
+                                                    <td>Clinic with 200 Attendants</td>
+                                                    <td>BLL123460</td>
+                                                    <td>1</td>
+                                                    <td class="text-right">12,000</td>
+                                                    <td class="text-uppercase text-right">12,000</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="Initiate Payment for Lab Tests">
+                                                                <div>Details</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Additional records follow the same pattern -->
+                                                <!-- Record 6 - Archived -->
+                                                <tr>
+                                                    <td>1239</td>
+                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
+                                                    <td>Agri Business</td>
+                                                    <td>Okoth Awuor (0707 *** 222)</td>
+                                                    <td>19 Sep 2023 By Paul Omondi</td>
+                                                    <td>Shop with 200 Attendants</td>
+                                                    <td>BLL123461</td>
+                                                    <td>2</td>
+                                                    <td class="text-right">8,200</td>
+                                                    <td class="text-uppercase text-right">8,200</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="Initiate Payment for Lab Tests">
+                                                                <div>Details</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Record 7 - Pending -->
+                                                <tr>
+                                                    <td>1240</td>
+                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
+                                                    <td>Construction Materials</td>
+                                                    <td>Amolo Otieno (0713 *** 481)</td>
+                                                    <td>20 Sep 2023 By Catherine Nyaoke</td>
+                                                    <td>Factory with 150 Attendants</td>
+                                                    <td>BLL123462</td>
+                                                    <td>0</td>
+                                                    <td class="text-right">11,000</td>
+                                                    <td class="text-uppercase text-right">11,000</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
+                                                                <div>Initiate Verification</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                
+
+                                                
+
+                                                
+                                        
                                             </tbody>
-                                           
+                                        
                                             <tfoot class="border border-dark">
                                                 <tr class="table-primary text-black border-dark">
                                                     <th colspan="3">22 Verified | 32 Archived | 64 Pending | 16 Edited</th>
@@ -940,7 +1089,17 @@
                                                 <table
                                                     class="table table-nowrap vertical-align-middle table-striped table-sm">
                                                     <thead class="table-warning">
-                                                        <th colspan="3" class="text-uppercase">2024 Invoicing Details</th>
+                                                        <th colspan="3" class="text-uppercase ">
+                                                          <div class="justify-content-between d-flex"> 
+                                                            <div>
+                                                                2024 Invoicing Details
+                                                            </div>
+
+                                                            <div>
+                                                                <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-primary btn-sm text-uppercase">Open</a>
+                                                            </div>
+                                                          </div>
+                                                        </th>
                                                     </thead>
                                                     <tbody>
                                                         <tr class=" fw-semibold text-uppercase">
@@ -1273,6 +1432,18 @@
                                                             </td>  
                                                         </tr>
 
+                                                        <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Business ACtivity</p>
+                                                            </td>
+                                                            <td class="">
+                                                                <input type="text" class="form-control form-control-sm" placeholder="Owner's full names" value="Selling Baby clothes at Retail pricess" spellcheck="false" data-ms-editor="true">
+                                                            </td>
+                                                            
+
+                                                        </tr>
+
 
 
                                                         <tr
@@ -1368,7 +1539,7 @@
                                             <div class="card bg-primary text-white-50">
                                                 <div class="card-body">
                                                     <h5 class="mb-4 text-white text-uppercase"><i class="mdi mdi-information-outline me-3"></i> SBP License Fee Update</h5>
-                                                    <p class="card-text">Please note that the SBP license fee for 2025 remains the same as in 2024, though your business category or subcategory may have been reviewed.</p>
+                                                    <p class="card-text text-capitalize">Please note that the SBP license fee for 2025 remains the same as in 2024, the amounts charged also remain the same.</p>
                                                 </div>
                                             </div>
                                             
@@ -1388,7 +1559,7 @@
                                             <div class="card bg-success text-white-50">
                                                 <div class="card-body">
                                                     <h5 class="mb-4 text-white text-uppercase"><i class="mdi mdi-star-circle-outline me-3"></i> Congratulations on Your Business Upgrade!</h5>
-                                                    <p class="card-text">We’re excited to inform you that your business has been upgraded to a higher category for 2025. This enhancement reflects the growth and success of the business, with an adjusted license fee to match the new category.</p>
+                                                    <p class="card-text">We’re excited to inform you that the business has been upgraded to a higher category for 2025. This enhancement reflects the growth and success of the business, with an adjusted license fee to match the new category.</p>
                                                 </div>
                                             </div>
                                         
@@ -1439,31 +1610,73 @@
                                         <div class="col-12 mt-4">
                                             <div class="bg-danger border-2 bg-soft p-2 mb-4 d-flex align-items-center">
                                                 <i class="bx bxs-edit-alt pin font-28 mr-15px"></i>
-                                                <p class="fw-semibold mb-0 pb-0">License Officer Notes (Flex Amondi)</p>
+                                                <p class="fw-semibold mb-0 pb-0">SBP 2024 Licensing Actions</p>
 
                                             </div>
                                         </div>
-                                        <div class="col-12">
-                                            <div class="alert alert-warning border-1 border-warning" role="alert">
-                                               Everything looks OK
-                                                </div>
-                                        </div>
 
                                         <div class="col-12">
+                                            <h4 class="card-title">Validation actions</h4>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="radio" name="radioValidation" id="formRadios-validate" checked="" value="approve">
+                                                <label class="form-check-label" for="formRadios-validate">
+                                                    Approve For Invoicing
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="form-check mb-3 form-radio-danger">
+                                                <input class="form-check-input" type="radio" name="radioValidation" id="formRadios-archive" value="Archive">
+                                                <label class="form-check-label" for="formRadios-archive">
+                                                    Archive Business
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 archived-details d-none">
                                             <div>
                                                 <div class="d-flex flex-column">
-                                                    <label class="mb-0">Validation Remarks</label>
-                                                    <small class="mb-3">Enter your Validation Remarks</small>
+                                                    <label class="">Reason for archiving the record</label>
+                                                    <small class="mb-3 d-none">Enter your Validation Remarks</small>
+                                                </div>
+                                                <textarea name="" id="" cols="30" rows="5" class="form-control mb-2" placeholder="Enter your Remarks"></textarea>
+                                            </div>
+
+                                            <div>
+                                                <button class="btn w-100 btn-danger">Archive Record</button>
+                                            </div>
+
+                                            <div>
+                                                <button class="btn btn-danger justify-content-center text-uppercase d-flex align-items-center archive-record w-100 text-center" title="Initiate Payment for Lab Tests">
+                                                    <div>Archive Record</div>
+                                                    <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                        <span class="sr-only">Loading...</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="col-12 approved-details">
+                                            <div>
+                                                <div class="d-flex flex-column">
+                                                    <label class="">Remarks (If Any)</label>
                                                 </div>
                                                 <textarea name="" id="" cols="30" rows="5" class="form-control mb-2" placeholder="Enter your Remarks"></textarea>
                                             </div>
                                             <div>
-                                                <button class="btn w-100 btn-success">Approve for Inspection</button>
+                                                <button class="btn btn-success justify-content-center text-uppercase d-flex align-items-center approve-invoicing w-100 text-center" title="Initiate Payment for Lab Tests">
+                                                    <div>Generate Invoice</div>
+                                                    <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                        <span class="sr-only">Loading...</span>
+                                                    </div>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </div>
                             </div>
 
@@ -1481,6 +1694,721 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- end of receipting modal -->
+
+            <!-- invoiced details modal -->
+            <div class="modal fade details-modal" id="details-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-full modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myLargeModalLabel">Omo Business Details</h5>
+                        <span
+                            class="badge rounded-pill bg-warning text-uppercase font-12px text-uppercase mx-3">Ongoing Applications</span>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                           
+                            <div class="col-sm-12 col-md-4">
+                                <div class="row">
+                                    <div class="col-12 mt-4">
+                                        <div class="bg-info border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                            <i class="bx bx-briefcase-alt-2 font-28 mr-15px"></i>
+                                            <p class="fw-semibold mb-0 pb-0">Business Details </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                <thead class="table-light">
+                                                    <th colspan="3" class="text-uppercase">Business Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <strong>Business Name</strong>
+                                                        </td>
+                                                        <td class="">
+                                                            Omo Business
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <strong>Sub County</strong>
+                                                        </td>
+                                                        <td class="">
+                                                            Homa Bay Town
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <strong>Ward</strong>
+                                                        </td>
+                                                        <td class="">
+                                                            Aruo Ward
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <strong>Zone</strong>
+                                                        </td>
+                                                        <td class="">
+                                                            Rodi Market
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Plot No.</strong>
+                                                        </td>
+                                                        <td class="">
+                                                            Omo Business
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr>
+                                                        <td>
+                                                            <strong>VAT No.</strong>
+                                                        </td>
+                                                        <td class="">
+                                                            JKHH(*&)
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Physical Address</strong>
+                                                        </td>
+                                                        <td class="">
+                                                            Next to Kianjokoma Market
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Building Name</strong>
+                                                        </td>
+                                                        <td class="">
+                                                            The Tower
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <strong>Floor Number</strong>
+                                                        </td>
+                                                        <td class="">
+                                                            Ground Floor
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Stall/Room No.</strong>
+                                                        </td>
+                                                        <td class="">
+                                                            NA
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="row">
+                                    <div class="col-12 mt-4">
+                                        <div class="bg-warning border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                            <i class="bx bxs-user-pin font-28 mr-15px"></i>
+                                            <p class="fw-semibold mb-0 pb-0">Ownership and Business's Contact information</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                <thead class="table-light">
+                                                    <th colspan="3" class="text-uppercase">Owner Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Full Names</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">Kelvin Njuguna</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Owner's ID</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">54634648</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Owner's Phone No.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">0704549859</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Email Address</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">email@email.com</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">KRA PIN No. (Optional)</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">N/A</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                <thead class="table-light">
+                                                    <th colspan="3" class="text-uppercase">Business Contact Information</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Owner's Phone No.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">0704549859</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Business's Email Address</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">email@email.com</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Postal Address</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">123 Homa Bay</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Company Phone Number</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">0704567890</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                <thead class="table-light">
+                                                    <th colspan="3" class="text-uppercase">Contact Person</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Full Names</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">Kelvin Njuguna</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">ID Number</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">89789</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Contact Person's Role</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">Secretary</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Contact Person's Phone Number</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">0704567890</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-sm-12 col-md-4 ">
+                                <div class="row">
+                                    <div class="col-12 mt-4">
+                                        <div class="bg-danger border-2 bg-soft p-2 mb-4 d-flex align-items-center rounded">
+                                            <i class="bx bxs-wallet font-28 mr-15px"></i>
+                                            <p class="fw-bold mb-0 ">Billing and Business Categorization Details</p>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                <thead class="table-light">
+                                                    <th colspan="3" class="text-uppercase">SBP Categorization Fees</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Category</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">Ground Category</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Sub category</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">Ground Sub Category</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Business Activity</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">Selling Baby clothes at Retail prices</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">SBP Charges</p>
+                                                        </td>
+                                                        <td class="">
+                                                            <p class="text-primary fs-4 mb-0 fw-bold">KES 12,230</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-nowrap vertical-align-middle table-bordered table-sm">
+                                                <thead class="table-info">
+                                                    <tr>
+                                                        <th class="text-uppercase">#</th>
+                                                        <th class="text-uppercase">Other Applicable Charges</th>
+                                                        <th class="text-uppercase">Amount (KES)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <p class="mb-0">Renewal Fee</p>
+                                                        </td>
+                                                        <td>
+                                                            <strong>500</strong>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            <p class="mb-0">Conservancy Fees</p>
+                                                        </td>
+                                                        <td>
+                                                            <strong>700</strong>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>
+                                                            <p class="mb-0">Advertising Fees</p>
+                                                        </td>
+                                                        <td>
+                                                            <strong>700</strong>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot class="table-success">
+                                                    <tr>
+                                                        <th colspan="2" class="text-uppercase">Total</th>
+                                                        <th><strong>2,900</strong></th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <!-- for a downgrade show this -->
+                                     <div class="col-12">
+                                        <div class="card bg-primary text-white-50">
+                                            <div class="card-body">
+                                                <h5 class="mb-4 text-white text-uppercase"><i class="mdi mdi-information-outline me-3"></i> SBP License Fee Adjustment Notification</h5>
+                                                <p class="card-text">Please note the adjusted SBP license fee for the 2025 invoicing year. The fee has been reduced from the 2024 amount.</p>
+                                            </div>
+                                        </div>
+                                     </div>
+
+                                    
+                                    
+                                    
+
+                                    <!-- for maintained  -->
+                                    <div class="col-12 d-none">
+                                        <div class="card bg-primary text-white-50">
+                                            <div class="card-body">
+                                                <h5 class="mb-4 text-white text-uppercase"><i class="mdi mdi-information-outline me-3"></i> SBP License Fee Update</h5>
+                                                <p class="card-text text-capitalize">Please note that the SBP license fee for 2025 remains the same as in 2024, the amounts charged also remain the same.</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="alert alert-info border-1 border-info" role="alert">
+                                            <h4 class="text-uppercase fw-bold mb-0">Amount (2024): <strong class="text-primary">KES 4,500</strong></h4>
+                                            <p class="mb-0 text-black">Previous Subcategory: Medium Shop</p>
+                                        </div>
+                                    
+                                        <div class="alert alert-info border-1 border-info" role="alert">
+                                            <h4 class="text-uppercase fw-bold mb-0">Amount (2025): <strong class="text-primary">KES 4,500</strong></h4>
+                                            <p class="mb-0 text-black">Current Subcategory: Medium Shop</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- for uphraded business -->
+                                    <div class="col-12 d-none">
+                                        <div class="card bg-success text-white-50">
+                                            <div class="card-body">
+                                                <h5 class="mb-4 text-white text-uppercase"><i class="mdi mdi-star-circle-outline me-3"></i> Congratulations on Your Business Upgrade!</h5>
+                                                <p class="card-text">We’re excited to inform you that the business has been upgraded to a higher category for 2025. This enhancement reflects the growth and success of the business, with an adjusted license fee to match the new category.</p>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="alert alert-info border-1 border-info" role="alert">
+                                            <h4 class="text-uppercase fw-bold mb-0">Previous Amount (2024): <strong class="text-primary">KES 4,500</strong></h4>
+                                            <p class="mb-0 text-black">Previous Subcategory: Medium Shop</p>
+                                        </div>
+                                    
+                                        <div class="alert alert-success border-1 border-success" role="alert">
+                                            <h4 class="text-uppercase fw-bold mb-0">New Amount (2025): <strong class="text-success">KES 6,000</strong></h4>
+                                            <p class="mb-0 text-black">New Subcategory: Large Shop</p>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+
+                                    
+                                    
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="row">
+                                    <div class="col-12 mt-4">
+                                        <div class="bg-dark border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                            <i class="bx bx-map font-28 mr-15px"></i>
+                                            <p class="fw-semibold mb-0 pb-0">Map View</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46449.71551863634!2d36.67523836781685!3d-1.3353441122372378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0cb9ff59a4a3%3A0x4073419e11826405!2sOrbital%20Africa%20%7C%20Land%20%26%20Topo%20Survey%2C%20GPS%2C%20GPR%2C%20GIS%2C%20Mapping%2C%20Drones%2C%20Training%20%26%20Geospatial%20Solutions!5e0!3m2!1sen!2ske!4v1691859398886!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="row">
+                                    <div class="col-12 mt-4">
+                                        <div class="bg-warning border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                            <i class="bx bxs-user-pin font-28 mr-15px"></i>
+                                            <p class="fw-semibold mb-0 pb-0">Changes and Updates Done</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                <thead class="table-light">
+                                                    <th colspan="3" class="text-uppercase">Information On The Business</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Business Name</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0"><strong>From: </strong> That Business</p>
+                                                            <p class="mb-0"><strong>To: </strong> That Business Is Awsome</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Sub County</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0"><strong>From: </strong> Rachuonyo South</p>
+                                                            <p class="mb-0"><strong>To: </strong> Homabay Town</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Ward</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0"><strong>From: </strong> Oyugis</p>
+                                                            <p class="mb-0"><strong>To: </strong> Rodi Town</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Zone/Market</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0"><strong>From: </strong> Oyugis Town</p>
+                                                            <p class="mb-0"><strong>To: </strong> Rodi Town</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Plot/LR Number</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0"><strong>From: </strong> NA</p>
+                                                            <p class="mb-0"><strong>To: </strong> 123/09</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                <thead class="table-light">
+                                                    <th colspan="3" class="text-uppercase">2024 Invoicing Details</th>
+                                                </thead>
+
+                                                <thead class="text-uppercase table-info">
+                                                    <th class="text-uppercase">#</th>
+                                                    <th>Item</th>
+                                                    <th class="text-right">Amount</th>
+                                                </thead>
+
+                                                <tbody>
+                                                   <tr>
+                                                        <td>1.</td>
+                                                        <td>Medium sized Business</td>
+                                                        <td class="text-right">KES 4,000</td>
+                                                   </tr>
+
+                                                   <tr>
+                                                        <td>2.</td>
+
+                                                        <!-- use strike for an invoicinfg item that was not incoporated for the current year -->
+                                                        <td><strike>Registration Fees</strike></td>
+                                                        <td class="text-right">KES 500</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>3.</td>
+                                                        <td>Conservercy Fees</td>
+                                                        <td class="text-right">KES 300</td>
+                                                    </tr>
+
+                                                    <tr class="table-info text-uppercase fw-bold">
+                                                        <td colspan="2">Totals</td>
+                                                        
+                                                        <td class="text-right fw-bold">KES 4,700</td>
+                                                    </tr>
+
+                                                    <tr class="text-capitalize">
+                                                        <td colspan="3" class="">Invoicing Date: 12 Sep 2023 12:45 PM</td>
+                                                    </tr>
+
+                                                    <tr class="text-capitalize">
+                                                        <td colspan="3" class="">Invoiced By: jane Jane</td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                <thead class="table-light">
+                                                    <th colspan="3" class="text-uppercase">2025 Invoicing Details</th>
+                                                </thead>
+
+                                                <thead class="text-uppercase table-info">
+                                                    <th class="text-uppercase">#</th>
+                                                    <th>Item</th>
+                                                    <th class="text-right">Amount</th>
+                                                </thead>
+
+                                                <tbody>
+                                                   <tr>
+                                                        <td>1.</td>
+                                                        <td>Medium sized Business</td>
+                                                        <td class="text-right">KES 4,000</td>
+                                                   </tr>
+
+                                                   <!-- use this styling for a newley included fee for the current year -->
+
+                                                   <tr class="text-success fw-bold">
+                                                        <td>2.</td>
+
+                                                        <!-- use strike for an invoicinfg item that was not incoporated for the current year -->
+                                                        <td>Renewal Fees</td>
+                                                        <td class="text-right">KES 500</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>3.</td>
+                                                        <td>Conservercy Fees</td>
+                                                        <td class="text-right">KES 300</td>
+                                                    </tr>
+
+                                                    <tr class="table-info text-uppercase fw-bold">
+                                                        <td colspan="2">Totals</td>
+                                                        
+                                                        <td class="text-right fw-bold">KES 4,700</td>
+                                                    </tr>
+
+                                                    <tr class="text-capitalize">
+                                                        <td colspan="3" class="">Invoicing Date: 12 Sep 2024 12:45 PM</td>
+                                                    </tr>
+
+                                                    <tr class="text-capitalize">
+                                                        <td colspan="3" class="">Invoiced By: jane Jane</td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="row">
+                                    <div class="col-12 mt-4">
+                                        <div class="bg-danger border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                            <i class="bx bxs-edit-alt pin font-28 mr-15px"></i>
+                                            <p class="fw-semibold mb-0 pb-0">2025 Licensing Summary</p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        
+                                        
+                                        <div class="alert alert-warning border-1 border-warning" role="alert">
+                                            <h4 class="text-uppercase fw-bold mb-0">2024 Invoice Details</h4>
+                                            <ul class="mb-0 text-black">
+                                                <li><strong>Invoice Number:</strong> INV2024-00123</li>
+                                                <li><strong>Amount:</strong> KES 4,500</li>
+                                                <li><strong>Subcategory:</strong> Medium Shop</li>
+                                                <li><strong>Items Invoiced:</strong> 3</li>
+                                                <li><strong>Other Charges:</strong> 2</li>
+                                            </ul>
+                                            <a href="/invoices/2024/INV2024-00123" class="btn btn-link text-primary" target="_blank">View 2024 Invoice</a>
+                                        </div>
+                                    
+                                        <div class="alert alert-success border-1 border-success" role="alert">
+                                            <h4 class="text-uppercase fw-bold mb-0">2025 Invoice Details</h4>
+                                            <ul class="mb-0 text-black">
+                                                <li><strong>Invoice Number:</strong> INV2025-00145</li>
+                                                <li><strong>Amount:</strong> KES 3,500</li>
+                                                <li><strong>Subcategory:</strong> Medium Shop</li>
+                                                <li><strong>Items Invoiced:</strong> 2</li>
+                                                <li><strong>Other Charges:</strong> 1</li>
+                                            </ul>
+                                            <a href="/invoices/2025/INV2025-00145" class="btn btn-link text-success" target="_blank">View 2025 Invoice</a>
+                                        </div>
+                                    
+                                        <div class="alert alert-info border-1 border-info" role="alert">
+                                            <p class="fw-bold text-uppercase">Remarks from Licensing Officer</p>
+                                            <p class="mb-0 text-black">The 2025 invoice has been updated to reflect a reduced license fee compared to the previous year, along with adjustments to the invoiced items and changes to other applicable charges. For full details, feel free to check out the linked invoices above.</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer d-none">
+
+                        <a href="PrintDocs/Receipts/receipts-HOMabay county.html" target="_blank" type="button"
+                            class="btn btn-primary waves-effect waves-light">
+                            <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Receipt
+                        </a>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+            <!-- end of invoiced details modal -->
 
             <!-- invoice details -->
             <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
@@ -1619,6 +2547,355 @@
             </div>
             <!-- invoice details -->
 
+            <!-- invoicing done successfully confirmation -->
+
+            <div class="modal fade invoiced-record-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header d-none">
+                            <h4 class="modal-title text-uppercase" id="myLargeModalLabel">Acknowledgment confirmartion</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                        
+                                <!-- Confirmation Icon and Message -->
+                               <!-- Confirmation Icon and Message -->
+                                <div class="col-12 d-flex align-items-center justify-content-center pt-3">
+                                    <div class="p-4 px-5 d-flex align-items-center justify-content-center flex-column pt-5">
+                                        <div class="flex-shrink-0 align-self-center mb-4">
+                                            <div class="avatar-md rounded-circle bg-primary mini-stat-icon" title="Action Successful">
+                                                <span class="avatar-title rounded-circle bg-success" aria-label="Action Confirmed">
+                                                    <i class="bx bx-check-double fs-1" title="Acknowledgment Successful" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <h4 class="text-uppercase text-success text-black modal-title" title="Acknowledgment Confirmed">2025 Invoice Generated</h4>
+                                        <p class="text-center px-5" title="Client notified of the invoice and details">
+                                            The 2025 SBP invoice for Volvo Office was successfully generated for KES 7,000. Invoice details were sent to the client via both email and SMS.
+                                        </p>
+                                    </div>
+                                </div>
+
+                        
+                                <!-- Business and Client Details -->
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table class="table border border-info table-sm table-striped-info table-striped text-black" title="Business and Client Details">
+                                            <tbody class="text-black text-uppercase">
+                                                <tr>
+                                                    <td title="Business Name">Business Name</td>
+                                                    <th title="Volvo Office">Volvo Office</th>
+                                                </tr>
+                                                <tr>
+                                                    <td title="Owner's Name">Owner's Name</td>
+                                                    <th title="Kelvin Njuguna Ndungu">Kelvin Njuguna Ndungu</th>
+                                                </tr>
+                                                <tr>
+                                                    <td title="Client Email">Email</td>
+                                                    <th title="Client Email">email@email.com</th>
+                                                </tr>
+                                                <tr>
+                                                    <td title="Client Phone Number">Phone Number</td>
+                                                    <th title="Client Phone Number">0704549859</th>
+                                                </tr>
+                                                <tr>
+                                                    <td title="Invoice Number">Invoice Number</td>
+                                                    <th title="BLL77575675">BLL77575675</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                        
+                                <!-- Invoice Item Details -->
+                                <div class="col-12">
+                                    <div class="table-responsive mt-2">
+                                        <table class="table table-nowrap border border-dark text-uppercase" title="Invoice Item Details">
+                                            <thead class="bg-light">
+                                                <tr>
+                                                    <th style="width: 70px;" title="Item Number">#</th>
+                                                    <th title="Description of Invoice Item">Invoice Item</th>
+                                                    <th class="text-right" title="Amount Charged">Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td title="Item 1">01</td>
+                                                    <td title="Renewal Fee">Renewal Fee</td>
+                                                    <td class="text-right" title="KES 500">KES 500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td title="Item 2">02</td>
+                                                    <td title="Small Business Fee (up to 20 clients)">Small Business (up to 20 clients)</td>
+                                                    <td class="text-right" title="KES 2,500">KES 6,500</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="border border-dark table-light">
+                                                <tr class="text-black">
+                                                    <th colspan="2" title="Total Items">3 Invoice Items</th>
+                                                    <th class="text-right" title="Total Amount">KES 7,000</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                        
+                                <!-- Summary and Payment Details -->
+                                <div class="col-8">
+                                    <div class="table-responsive mt-4">
+                                        <table class="table border border-success text-uppercase table-sm table-striped table-striped-success">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Invoice Date</th>
+                                                    <td class="text-black">12 Sep 2024 12:54 AM</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Invoiced By</th>
+                                                    <td class="text-black">Otati Siso Koikoi</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Invoice Amount</th>
+                                                    <td class="text-black fs-2 fw-bold">KES 7,000</td>
+                                                </tr>                                                      
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                        
+                                <!-- Action Buttons -->
+                                <div class="col-12 d-flex justify-content-end pt-4 text-uppercase">
+                                    <a href="PrintDocs/Bill/bill.html" target="_blank" type="button" class="btn btn-primary text-uppercase d-flex align-items-center revertAcknowledgment mx-2 w-100 text-center justify-content-center" id="revertButton" title="Print the generated permit">
+                                        <div>Print Permit</div>
+                                        <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                    </a>
+                                </div>
+                        
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="modal-footer d-none">
+                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2 Acknowledge-order" data-bs-toggle="modal" data-bs-target="#payment-modal" title="Initiate Payment for Lab Tests">
+                                <div>Acknowledge</div>
+                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </button>
+                        </div>
+                      
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.Approve application -->
+            </div>
+             <!-- end of confirmation -->
+
+            <!-- archived records -->
+            <div class="modal fade otp-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <!-- <div class="modal fade otp-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false"> -->
+                <!-- Modal content here -->
+            
+            
+                <div class="modal-dialog  w-100 modal-md modal-dialog-centered modal-full">
+                    <div class="modal-content w-100 bg-light-blue border-info">
+                        <div class="modal-header text-black text-uppercase border-0" >
+                            <h4 class="modal-title">Archive SBP record for Volvo office</h4>
+                            <button type="button" class="btn-close d-non" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="number-plate-edit-form d-non d-none">
+                                <div>
+                                    <div class="col-12">
+                                        <div class="alert alert-warning border-warning border-2" role="alert">
+                                            <i class="fas fa-exclamation-triangle"></i> 
+                                            <strong>You are about to edit the number plate of a car.</strong> Please ensure that this action is not fraudulent, as your actions are being logged. <strong>Be certain of what you are doing.</strong> An OTP will be sent to the customer, and it is your responsibility to retrieve it from them for transaction verification.
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                  
+                                </div>
+        
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-2">
+                                    <div class="table-responsive mt-4">
+                                        <h4 class="modal-title mb-2 text-uppercase fw-bold">Invoice Details</h4>
+                                        <table class="table border border-dark text-uppercase table-sm table-striped align-middle">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Invoice Number</th>
+                                                    <td class="text-black">Bll12345</td>
+                                                </tr>
+        
+                                                <tr>
+                                                    <th>Paid By</th>
+                                                    <td class="text-black">Kelvin Njuguna 0704549859</td>
+                                                </tr>
+        
+                                                <tr>
+                                                    <th>Time of Payment</th>
+                                                    <td class="text-black">12 Jan 2023 11:56 AM</td>
+                                                </tr>
+        
+                                                <tr>
+                                                    <th>Vehicle Category</th>
+                                                    <td class="text-black">Saloon Car</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Sub county</th>
+                                                    <td class="text-black">Meru Town</td>
+                                                </tr>
+        
+                                                <tr>
+                                                    <th>Zone</th>
+                                                    <td class="text-black">Meru Parking</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12">
+                                    <h4 class="modal-title mb-2 text-uppercase fw-bold">Number Plate Editing</h4>
+                                    <form action="">
+                                        <table class="table border border-info text-uppercasetable-striped align-middle">
+                                            <tbody>
+                                                <tr>
+                                                    
+                                                    <td colspan="2" class="text-black fw-bold">
+                                                        <label for="">Entered Number Plate</label>
+                                                        <h4 class="text-danger">
+                                                            KAD123Y
+                                                        </h4>
+                                                    </td>
+                                                </tr>
+            
+                                                <tr>
+                                                    
+                                                    <td colspan="2" class="text-black">
+                                                        <div>
+                                                            <label for="">Edit Number Plate to <strong class="text-danger">*</strong></label>
+                                                            <input type="" class="form-control border-bold border-2 border-info" placeholder="Enter New  Plate Number" name="" value="" required="" spellcheck="false" data-ms-editor="true">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="fw-bold text-dark">
+                                                            <label for="" class="">Reason For Editing <strong class="text-danger">*</strong></label>
+                                                            <textarea name="" class="form-control border-bold border-2 border-info" placeholder="Enter Reason" id="" required="" spellcheck="false" data-ms-editor="true"></textarea>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+            
+                                               
+                                            </tbody>
+                                        </table>
+        
+                                        <btn target="_blank" type="button" class="btn btn-primary w-100 mt-2 waves-effect waves-light text-uppercase initiate-plate-edit">
+                                            Initiate
+                                        </btn>
+                                    </form>
+                                </div>
+                            </div>
+    
+                            <div class="otp-entry">
+                                <div class="alert alert-info border-info border-2" role="alert">
+                                    <h4 class="alert-heading text-black text-uppercase">OTP Verification</h4>
+                                    
+
+                                    <p>An OTP has been sent to your phone: <strong>+254 7XX XXX 123</strong>. Please enter the OTP to confirm that you want to archive this record.</p>                                    <hr class="text-black border-2 border-black border-info text-info">
+                                
+                                    <div class="hstack gap-3">
+                                        <input class="form-control me-auto border-black" type="text" placeholder="Enter OTP" aria-label="Add your item here..." spellcheck="false" data-ms-editor="true">
+                                        <button type="button" class="btn btn-warning text-dark fw-bold text-nowrap text-uppercase">Resend OTP</button>
+                                    </div>
+    
+                                    <!-- message sent to customer -->
+    
+                                    <p class=" d-none">"Dear [Customer Name], your number plate change from [Previous Number Plate] to [New Number Plate] is in process. Your OTP for finalizing the changes is [OTP]. If you did not initiate this request, please report it immediately. Thank you!"
+                                        <!-- dont show this message anywhere but it should go to the customer -->
+                                    </p>
+                                </div>
+        
+                                <button class="btn btn-success fw-bold mt-4 text-uppercase w-100 d-flex justify-content-center align-items-center text-center confirm-archive" title="Initiate Payment for Lab Tests">
+                                    <div>confirm</div>
+                                    <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                </button>
+        
+                            </div>
+    
+                            <!-- show this for succesfully archived record-->
+    
+                            <div class="d-none p-4 pb-1 archive-done px-1 d-flex align-items-center justify-content-center flex-column pt-1">
+                                <div class="flex-shrink-0 align-self-center mb-4">
+                                    <div class="avatar-md rounded-circle bg-primary mini-stat-icon" title="Action Successful">
+                                        <span class="avatar-title rounded-circle bg-success">
+                                            <i class="bx bx-archive fs-1" title="Records Archived"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <h4 class="text-uppercase text-dark modal-title fw-bold" title="Change Confirmed">Business Archived</h4>
+                                <p class="text-center px-5" title="Record Archiving Confirmation">
+                                    The business named X has been archived successfully.
+                                </p>
+                            
+                                <div class="w-100 mt-2">
+                                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn btn-outline-secondary waves-effect w-100 btn-close-btn-otp text-uppercase fw-bold">
+                                        Close
+                                    </button>
+                                </div>
+
+                                <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  </div> -->
+                                
+                            </div>
+                            
+                            
+                            
+                            <!-- show this for a failed attempt -->
+    
+                            <div class="d-none p-4 pb-1 archiving-fail px-1 d-flex align-items-center justify-content-center flex-column pt-1">
+                                <div class="flex-shrink-0 align-self-center mb-4">
+                                    <div class="avatar-md rounded-circle bg-danger mini-stat-icon" title="Action Failed">
+                                        <span class="avatar-title rounded-circle bg-danger">
+                                            <i class="mdi mdi-close fs-1" title="Archiving Failed"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <h4 class="text-uppercase text-danger modal-title fw-bold" title="Archiving Failed">Archiving Failed</h4>
+                                <p class="text-center px-5" title="Business Record Archiving Failed">
+                                    Unfortunately, the attempt to archive the business record for <strong>“Business XYZ Ltd.”</strong> was unsuccessful. Please try again or contact support for assistance.
+                                </p>
+                                
+                                <div class="w-100 mt-2">
+                                    <button type="button" class="btn btn-info waves-effect w-100 btn-close-btn text-uppercase fw-bold">Retry</button>
+                                    <h6 class="text-center my-2">- OR -</h6>                                
+                                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-secondary waves-effect w-100 btn-close-btn text-uppercase fw-bold">Close</button>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of archived records -->
+
             <footer class="footer ">
                 <div class="container-fluid ">
                     <div class="row ">
@@ -1697,6 +2974,88 @@
     <script>
         $('.click-btn').click()
     </script>
+
+    <script>
+        $(document).ready(function() {
+            // Listen for changes on the radio buttons with name "radioValidation"
+            $('input[name="radioValidation"]').change(function() {
+                const selectedValue = $(this).val();
+
+                if (selectedValue === 'Archive') {
+                    console.log("Executing code for Archive option...");
+                    $('.archived-details').removeClass('d-none')
+                    $('.approved-details').addClass('d-none')
+                    // Place the code for "Archive" here
+                } else if (selectedValue === 'approve') {
+                    console.log("Executing code for Approve option...");
+                    // Place the code for "Approve" here
+                    $('.archived-details').addClass('d-none')
+                    $('.approved-details').removeClass('d-none')
+                }
+            });
+
+            // archiving a record
+            $('.confirm-archive').on('click', function() {
+                var theBtn = $(this);
+                $(this).children('.spinner-border').removeClass('d-none');
+
+                // Get or create instances of the modals
+                var detailsModal = bootstrap.Modal.getInstance($('.receipting-modal')[0]) || new bootstrap.Modal($('.receipting-modal')[0]);
+
+                setTimeout(function() {
+                    // Close details modal if it's open
+                    if (detailsModal) {
+                        detailsModal.hide();
+                    }
+                    $('.archive-done').removeClass('d-none').siblings().addClass('d-none')
+
+                    
+                    
+                    theBtn.children('.spinner-border').addClass('d-none');
+                }, 2000);
+            });
+
+            var archiveModal = new bootstrap.Modal($('.otp-modal')[0]);
+
+            // Add an event listener to run a function when the modal is closed
+            $('.otp-modal').on('hidden.bs.modal', function () {
+                $('.otp-entry').removeClass('d-none').siblings().addClass('d-none')
+            });
+            $('.btn-close-btn-otp').on('click', function(){
+                archiveModal.hide();
+                //alert("clicked")
+
+            })
+
+           
+            
+
+            // approving a business
+            $('.approve-invoicing').on('click', function() {
+                var theBtn = $(this);
+                $(this).children('.spinner-border').removeClass('d-none');
+
+                // Get or create instances of the modals
+                var detailsModal = bootstrap.Modal.getInstance($('.receipting-modal')[0]) || new bootstrap.Modal($('.receipting-modal')[0]);
+
+                setTimeout(function() {
+                    // Close details modal if it's open
+                    if (detailsModal) {
+                        detailsModal.hide();
+                    }
+
+                    // Initialize the acknowledged modal and show it
+                    var myModal = new bootstrap.Modal($('.invoiced-record-modal')[0]); 
+                    myModal.show(); // Show the modal
+                    
+                    theBtn.children('.spinner-border').addClass('d-none');
+                }, 2000);
+            });
+
+        });
+    </script>
+
+
 </body>
 
 
