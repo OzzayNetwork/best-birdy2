@@ -623,20 +623,20 @@
                                     </a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link active"  href="cert-biz-bulk-pending.html" title="View and manage pending records">
+                                    <a class="nav-link"  href="cert-biz-bulk-pending.html" title="View and manage pending records">
                                         <span class="d-block d-sm-none"><i class="mdi mdi-clock-alert"></i></span>
                                         <span class="d-none d-sm-block">Pending Records</span>    
                                     </a>
                                 </li>
-                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" href="cert-biz-bulk-archived.html"  title="Access archived records for reference">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" href="cert-biz-bulk-archived.html"  title="Access archived records for reference">
                                         <span class="d-block d-sm-none"><i class="mdi mdi-archive"></i></span>
                                         <span class="d-none d-sm-block">Archived Records</span>    
                                     </a>
                                 </li>
                             
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" href="cert-biz-bulk.html" role="tab" aria-selected="false" tabindex="-1" title="View previous invoicing register">
+                                    <a class="nav-link " href="cert-biz-bulk.html" role="tab" aria-selected="false" tabindex="-1" title="View previous invoicing register">
                                         <span class="d-block d-sm-none"><i class="mdi mdi-folder-open"></i></span>
                                         <span class="d-none d-sm-block">Previous Register</span>    
                                     </a>
@@ -647,7 +647,7 @@
                            
                         </div>
                         <div class="card-header bg-primar text-white border-bottom d-flex justify-content-between align-items-center py-3">
-                            <h4 class="card-title text-dark text-uppercase mb-0">Records Pending Review for Homa Bay Town Sub-County</h4>
+                            <h4 class="card-title  text-uppercase mb-0">Previously Checked and Rejected for Homa Bay Town Sub County</h4>
                             <div>
                                 <div class="flex-start d-flex align-items-center">
                                     <!-- Sub County Dropdown -->
@@ -698,7 +698,7 @@
                             </div>
                         </div>
                         <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center py-3">
-                            <p class="p-0 m-0 fw-bold text-capitalize">Please review each record carefully to ensure accuracy before approving it for invoicing or archiving. Only verified records will be processed, and invoices will be generated automatically for approved entries.</p>
+                            <p class="p-0 m-0 fw-bold text-capitalize">These entries have been reviewed and marked for archiving. They can only be restored if necessary. Please ensure all details are correct before proceeding.</p>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -729,275 +729,200 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="table-responsive">
-                                       
                                         <table class="table table-striped table-striped-info table-s align-middle text-nowrap">
                                             <thead class="bg-info text-black text-uppercase border border-info">
                                                 <tr>
-                                                    <th title="Date and Time of Lab Test Order">Biz ID.</th>
-                                                    <th title="Patient Visit Number">Status</th>
-                                                    <th title="Invoice number for the scheduled test">Business</th>
-                                                    <th title="Patient Name">Owner</th>
-                                                    <th title="Outpatient or Inpatient">Registered On</th>
-                                                    <th title="Doctor Who Ordered the Test">Sub Category</th>
-                                                    <th title="Lab Test(s) Ordered">2024 Invoice</th>
-                                                    <th class="text-right" title="Mode of Payment (e.g., Cash, Insurance)">Amount Invoiced</th>
-                                                    <th class="text-right" title="Payment Status (Paid or Unpaid)">Amount Paid</th>
+                                                    <th title="Business ID">Biz ID.</th>
+                                                    <th title="Status">Status</th>
+                                                    <th title="Business Name">Business</th>
+                                                    <th title="Owner Name">Owner</th>
+                                                    <th title="Date Archived">Date Archived</th>
+                                                    <th title="Sub Category">Sub Category</th>
+                                                    <th title="2024 Invoice">2024 Invoice</th>
+                                                    <th>Changes</th>
+                                                    <th class="text-right" title="Amount Invoiced">Amount Invoiced</th>
+                                                    <th class="text-right" title="Amount Paid">Amount Paid</th>
+                                                    <th title="Reason for Archiving">Archive Reason</th>
                                                     <th title="Available Actions" class="text-right">Actions</th>
                                                 </tr>
                                             </thead>
-                                            <tfoot>
-                                                <tr class="table-light border border-info">
-                                                    <th colspan="7">56 Records</th>
-                                                    <th class="text-right">54,900</th>
-                                                    <th class="text-right">6,000</th>
-                                                    <th></th>
-                                                </tr>
-                                            </tfoot>
                                             <tbody class="border border-info">
-                                                <!-- Record 1 - Pending -->
+                                                <!-- Record 1 - Archived -->
                                                 <tr>
                                                     <td>1234</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
+                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
                                                     <td>Volvo office</td>
                                                     <td>Abdi Mohammed (0704 *** 789)</td>
-                                                    <td>11 Sep 2023 By Kelvin Kinoti</td>
+                                                    <td>11 Sep 2023 at 2:45 AM by Amos Waswa</td>
                                                     <td>Mini Shop with 1000 Attendants</td>
                                                     <td>BLL123456</td>
-                                                    
+                                                    <td>0</td>
                                                     <td class="text-right">10,500</td>
                                                     <td class="text-uppercase text-right">10,500</td>
+                                                    <td>Duplicate Record</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
+                                                                <div>Details</div>
+                                                            </button>
+                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
+                                                                <div>Restore</div>
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                
-                                                <!-- Record 2 - Pending -->
+                                        
+                                                <!-- Record 2 - Archived -->
                                                 <tr>
                                                     <td>1235</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
+                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
                                                     <td>Medical Supplies</td>
                                                     <td>Nyakango Omondi (0712 *** 890)</td>
-                                                    <td>12 Sep 2023 By John Doe</td>
+                                                    <td>12 Sep 2023 at 3:30 PM by Amos Waswa</td>
                                                     <td>Store with 500 Attendants</td>
                                                     <td>BLL123457</td>
-                                                    
+                                                    <td>1</td>
                                                     <td class="text-right">5,000</td>
                                                     <td class="text-uppercase text-right">5,000</td>
+                                                    <td>Business Closed</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
+                                                                <div>Details</div>
+                                                            </button>
+                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
+                                                                <div>Restore</div>
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                
-                                                <!-- Record 3 - Pending -->
+                                        
+                                                <!-- Record 3 - Archived -->
                                                 <tr>
                                                     <td>1236</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
+                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
                                                     <td>Insurance Office</td>
                                                     <td>Ochieng' Amollo (0708 *** 762)</td>
-                                                    <td>15 Sep 2023 By Alice Mwangi</td>
+                                                    <td>15 Sep 2023 at 11:15 AM by John Kamau</td>
                                                     <td>Shop with 300 Attendants</td>
                                                     <td>BLL123458</td>
-                                                    
+                                                    <td>2</td>
                                                     <td class="text-right">7,500</td>
                                                     <td class="text-uppercase text-right">7,500</td>
+                                                    <td>Test Data</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
+                                                                <div>Details</div>
+                                                            </button>
+                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
+                                                                <div>Restore</div>
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                
-                                                <!-- Record 4 - Pending -->
+                                        
+                                                <!-- Record 4 - Archived -->
                                                 <tr>
                                                     <td>1237</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
+                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
                                                     <td>Construction Site</td>
                                                     <td>Odhiambo Achieng' (0721 *** 985)</td>
-                                                    <td>17 Sep 2023 By Peter Njoroge</td>
+                                                    <td>17 Sep 2023 at 8:00 AM by John Kamau</td>
                                                     <td>Warehouse with 150 Attendants</td>
                                                     <td>BLL123459</td>
-                                                    
+                                                    <td>0</td>
                                                     <td class="text-right">9,800</td>
                                                     <td class="text-uppercase text-right">9,800</td>
+                                                    <td>Data Obsolete</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
+                                                                <div>Details</div>
+                                                            </button>
+                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
+                                                                <div>Restore</div>
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                
-                                                <!-- Record 5 - Pending -->
+                                        
+                                                <!-- Record 5 - Archived -->
                                                 <tr>
                                                     <td>1238</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
+                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
                                                     <td>Medical Equipment</td>
                                                     <td>Juma J. Otieno (0733 *** 103)</td>
-                                                    <td>18 Sep 2023 By Irene Wanjiru</td>
+                                                    <td>18 Sep 2023 at 9:30 AM by Amos Waswa</td>
                                                     <td>Clinic with 200 Attendants</td>
                                                     <td>BLL123460</td>
-                                                    
+                                                    <td>1</td>
                                                     <td class="text-right">12,000</td>
                                                     <td class="text-uppercase text-right">12,000</td>
+                                                    <td>Invalid or Incomplete Details</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
+                                                                <div>Details</div>
+                                                            </button>
+                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
+                                                                <div>Restore</div>
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                
-                                                <!-- Record 6 - Pending -->
+                                        
+                                                <!-- Record 6 - Archived -->
                                                 <tr>
                                                     <td>1239</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
+                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
                                                     <td>Agri Business</td>
                                                     <td>Okoth Awuor (0707 *** 222)</td>
-                                                    <td>19 Sep 2023 By Paul Omondi</td>
+                                                    <td>19 Sep 2023 at 10:15 AM by Amos Waswa</td>
                                                     <td>Shop with 200 Attendants</td>
                                                     <td>BLL123461</td>
-                                                    
+                                                    <td>2</td>
                                                     <td class="text-right">8,200</td>
                                                     <td class="text-uppercase text-right">8,200</td>
+                                                    <td>Merged with Other Business</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
+                                                                <div>Details</div>
+                                                            </button>
+                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
+                                                                <div>Restore</div>
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
                                         
-                                                <!-- Record 7
-                                        
-                                         - Pending -->
+                                                <!-- Record 7 - Archived -->
                                                 <tr>
                                                     <td>1240</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
-                                                    <td>Retail Business</td>
-                                                    <td>Amani Ndungu (0715 *** 467)</td>
-                                                    <td>20 Sep 2023 By Esther Chebet</td>
-                                                    <td>Large Store with 400 Attendants</td>
+                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
+                                                    <td>Auto Repair</td>
+                                                    <td>Shikuku Njeri (0743 *** 102)</td>
+                                                    <td>20 Sep 2023 at 1:00 PM by John Kamau</td>
+                                                    <td>Garage with 50 Attendants</td>
                                                     <td>BLL123462</td>
-                                                    
-                                                    <td class="text-right">10,500</td>
-                                                    <td class="text-uppercase text-right">10,500</td>
+                                                    <td>0</td>
+                                                    <td class="text-right">9,000</td>
+                                                    <td class="text-uppercase text-right">9,000</td>
+                                                    <td>Duplicate Record</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
+                                                                <div>Details</div>
                                                             </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                
-                                                <!-- Record 8 - Pending -->
-                                                <tr>
-                                                    <td>1241</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
-                                                    <td>Security Business</td>
-                                                    <td>Omondi Okoth (0719 *** 112)</td>
-                                                    <td>21 Sep 2023 By Rachel Wambui</td>
-                                                    <td>Warehouse with 350 Attendants</td>
-                                                    <td>BLL123463</td>
-                                                    
-                                                    <td class="text-right">11,500</td>
-                                                    <td class="text-uppercase text-right">11,500</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                
-                                                <!-- Record 9 - Pending -->
-                                                <tr>
-                                                    <td>1242</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
-                                                    <td>Home Goods</td>
-                                                    <td>Gikandi Kiprono (0732 *** 214)</td>
-                                                    <td>22 Sep 2023 By Francis Gicharu</td>
-                                                    <td>Shop with 500 Attendants</td>
-                                                    <td>BLL123464</td>
-                                                    
-                                                    <td class="text-right">15,000</td>
-                                                    <td class="text-uppercase text-right">15,000</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                        
-                                                <!-- Record 10 - Pending -->
-                                                <tr>
-                                                    <td>1243</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
-                                                    <td>Tech Company</td>
-                                                    <td>Ngugi Njeri (0710 *** 654)</td>
-                                                    <td>23 Sep 2023 By Mary Wairimu</td>
-                                                    <td>Office Building with 200 Employees</td>
-                                                    <td>BLL123465</td>
-                                                    
-                                                    <td class="text-right">14,000</td>
-                                                    <td class="text-uppercase text-right">14,000</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
+                                                                <div>Restore</div>
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        
                                         
                                       </div>
                                 </div>
@@ -2195,7 +2120,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        
+                                                        <td>1</td>
                                                         <td>
                                                             <p class="mb-0">Renewal Fee</p>
                                                         </td>
@@ -2204,7 +2129,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        
+                                                        <td>2</td>
                                                         <td>
                                                             <p class="mb-0">Conservancy Fees</p>
                                                         </td>
