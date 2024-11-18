@@ -701,7 +701,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12 mb-3 d-flex">
-                                    <div class="input-group w-auto">
+                                    <div class="input-group w-auto me-3">
                                         <label class="input-group-text">Rows</label>
                                         <select class="form-select">
                                             <option value="homabay-market">Show All</option>
@@ -714,12 +714,23 @@
                                         </select>
                                     </div>
 
-                                   <div class="search-box flex-grow-1 mx-3">
+                                   <div class="search-box flex-grow-1">
                                         <div class="position-relative">
                                             <input type="text" class="form-control rounded bg-light border-light" placeholder="Search..." spellcheck="false" data-ms-editor="true">
                                             <i class="mdi mdi-magnify search-icon"></i>
                                         </div>
                                    </div>
+
+                                   <div class="input-group w-auto mx-3 ">
+                                        <label class="input-group-text text-uppercase">SBP Type</label>
+                                        <select class="form-select">
+                                            <option value="homabay-market">Show All</option>
+                                            <option value="mbita-market">New SBP Record</option>
+                                            <option value="ndhiwa-market">Renewed SBP</option>
+                                        
+                                            <!-- Add more markets as needed -->
+                                        </select>
+                                    </div>
 
                                    <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase">
                                         <i class="bx bxs-printer font-size-16 align-middle me-2"></i> Print
@@ -730,59 +741,44 @@
                                         <table class="table table-striped table-striped-info table-s align-middle text-nowrap">
                                             <thead class="bg-info text-black text-uppercase border border-info">
                                                 <tr>
-                                                    <th title="Date and Time of Lab Test Order">Biz ID.</th>
-                                                    <th title="Patient Visit Number">Status</th>
-                                                    <th title="Invoice number for the scheduled test">Business</th>
-                                                    <th title="Patient Name">Owner</th>
-                                                    <th title="Outpatient or Inpatient">Registered On</th>
-                                                    <th title="Doctor Who Ordered the Test">Sub Category</th>
-                                                    <th title="Lab Test(s) Ordered">2024 Invoice</th>
-                                                    <th>Changes</th>
-                                                    <th class="text-right" title="Mode of Payment (e.g., Cash, Insurance)">Amount Invoiced</th>
-                                                    <th class="text-right" title="Payment Status (Paid or Unpaid)">Amount Paid</th>
-                                                    <th title="Available Actions" class="text-right">Actions</th>
+                                                    <th title="Unique Invoice Number">INV No.</th>
+                                                    <th title="Indicates if the business is New or Renewed">Type</th>
+                                                    <th title="Date the invoice was created and the user who issued it">Date</th>
+                                                    <th title="Name of the business being invoiced">Business</th>
+                                                    <th title="Subcategory of the business being invoiced (e.g., Mini Shop)">SBP Sub Category</th>
+                                                    <th title="The phone number the invoice was sent to">Invoiced Phone</th>
+                                                    <th title="Difference between last year's and this year's invoice amounts" class="text-right">Invoice Difference</th>
+                                                    <th title="Total invoice amount for this year" class="text-right">Amount</th>
+                                                    <th title="Amount paid towards the invoice" class="text-right">Paid</th>
+                                                    <th title="Outstanding balance on the invoice" class="text-right">Balance</th>
+                                                    <th title="Actions you can perform on the invoice" class="text-right">Actions</th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="border border-info">
-                                                <!-- Record 1 - Pending -->
+                                            <tbody class="border border-info text-uppercase">
+                                                <!-- Record 1 -->
                                                 <tr>
-                                                    <td>1234</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
-                                                    <td>Volvo office</td>
-                                                    <td>Abdi Mohammed (0704 *** 789)</td>
-                                                    <td>11 Sep 2023 By Kelvin Kinoti</td>
+                                                    <td>BLL34958395</td>
+                                                    <td><span class="badge rounded-pill bg-success text-white text-uppercase" key="t-new">New</span></td>
+                                                    <td>11 Dec 2024 At 12:34 AM By Calvine Otieno</td>
+                                                    <td>Volvo Viga</td>
                                                     <td>Mini Shop with 1000 Attendants</td>
-                                                    <td>BLL123456</td>
-                                                    <td>0</td>
-                                                    <td class="text-right">10,500</td>
-                                                    <td class="text-uppercase text-right">10,500</td>
+                                                    <td>0704549859</td>
+                                                    <td class="text-right"><span class="fw-bold text-success">KES 600</span></td> <!-- Appreciated -->
+                                                    <td class="text-right">KES 12,300</td>
+                                                    <td class="text-right">KES 0.00</td>
+                                                    <td class="text-right fw-bold">KES 12,300</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
+                                                            <a href="PrintDocs/Bill/bill.html" target="new" type="button" class="btn btn-success waves-effect waves-light text-uppercase btn-sm">
+                                                                <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                            </a>
+                                                            <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase btn-sm mx-2 resend-invoice-btn">
+                                                                <div><i class="fa fa-paper-plane font-size-16 align-middle me-2"></i> Resend Invoice</div>
                                                                 <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
                                                                     <span class="sr-only">Loading...</span>
                                                                 </div>
                                                             </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                        
-                                                <!-- Record 2 - Invoiced -->
-                                                <tr>
-                                                    <td>1235</td>
-                                                    <td><span class="badge rounded-pill bg-success text-black text-uppercase" key="t-completed">Invoiced</span></td>
-                                                    <td>Medical Supplies</td>
-                                                    <td>Nyakango Omondi (0712 *** 890)</td>
-                                                    <td>12 Sep 2023 By John Doe</td>
-                                                    <td>Store with 500 Attendants</td>
-                                                    <td>BLL123457</td>
-                                                    <td>1</td>
-                                                    <td class="text-right">5,000</td>
-                                                    <td class="text-uppercase text-right">5,000</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="Initiate Payment for Lab Tests">
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center" data-bs-toggle="modal" data-bs-target=".details-modal" title="View detailed invoice information">
                                                                 <div>Details</div>
                                                                 <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
                                                                     <span class="sr-only">Loading...</span>
@@ -791,144 +787,226 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                        
-                                                <!-- Record 3 - Archived (Red) -->
+                                                <!-- Additional Records -->
                                                 <tr>
-                                                    <td>1236</td>
-                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
-                                                    <td>Insurance Office</td>
-                                                    <td>Ochieng' Amollo (0708 *** 762)</td>
-                                                    <td>15 Sep 2023 By Alice Mwangi</td>
-                                                    <td>Shop with 300 Attendants</td>
-                                                    <td>BLL123458</td>
-                                                    <td>2</td>
-                                                    <td class="text-right">7,500</td>
-                                                    <td class="text-uppercase text-right">7,500</td>
+                                                    <td>BLL45349827</td>
+                                                    <td><span class="badge rounded-pill bg-primary text-white text-uppercase" key="t-renewed">Renewed</span></td>
+                                                    <td>10 Dec 2024 At 09:20 AM By Mary Wanjiku</td>
+                                                    <td>Blue Sky Hotel</td>
+                                                    <td>Medium-Sized Hotel</td>
+                                                    <td>0713456789</td>
+                                                    <td class="text-right"><span class="fw-bold text-danger">KES -1,200</span></td> <!-- Depreciated -->
+                                                    <td class="text-right">KES 18,000</td>
+                                                    <td class="text-right">KES 15,000</td>
+                                                    <td class="text-right fw-bold">KES 3,000</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Details</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light text-uppercase btn-sm">
+                                                                <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                            </a>
+                                                            <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase btn-sm mx-2 resend-invoice-btn">
+                                                                <i class="fa fa-paper-plane font-size-16 align-middle me-2"></i> Resend Invoice
+                                                            </button>
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center" data-bs-toggle="modal" data-bs-target=".details-modal" title="View detailed invoice information">
+                                                                Details
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                        
-                                                <!-- Record 4 - Pending -->
+                                                <!-- Add more records here -->
                                                 <tr>
-                                                    <td>1237</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
-                                                    <td>Construction Site</td>
-                                                    <td>Odhiambo Achieng' (0721 *** 985)</td>
-                                                    <td>17 Sep 2023 By Peter Njoroge</td>
-                                                    <td>Warehouse with 150 Attendants</td>
-                                                    <td>BLL123459</td>
-                                                    <td>0</td>
-                                                    <td class="text-right">9,800</td>
-                                                    <td class="text-uppercase text-right">9,800</td>
+                                                    <td>BLL98765432</td>
+                                                    <td><span class="badge rounded-pill bg-success text-white text-uppercase" key="t-new">New</span></td>
+                                                    <td>12 Dec 2024 At 08:00 PM By John Mwangi</td>
+                                                    <td>Global Traders</td>
+                                                    <td>Warehouse</td>
+                                                    <td>0723459876</td>
+                                                    <td class="text-right"><span class="fw-bold text-success">KES 2,500</span></td>
+                                                    <td class="text-right">KES 25,000</td>
+                                                    <td class="text-right">KES 10,000</td>
+                                                    <td class="text-right fw-bold">KES 15,000</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light text-uppercase btn-sm">
+                                                                <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                            </a>
+                                                            <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase btn-sm mx-2 resend-invoice-btn">
+                                                                <i class="fa fa-paper-plane font-size-16 align-middle me-2"></i> Resend Invoice
+                                                            </button>
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center" data-bs-toggle="modal" data-bs-target=".details-modal" title="View detailed invoice information">
+                                                                Details
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                        
-                                                <!-- Record 5 - Invoiced -->
-                                                <tr>
-                                                    <td>1238</td>
-                                                    <td><span class="badge rounded-pill bg-success text-black text-uppercase" key="t-completed">Invoiced</span></td>
-                                                    <td>Medical Equipment</td>
-                                                    <td>Juma J. Otieno (0733 *** 103)</td>
-                                                    <td>18 Sep 2023 By Irene Wanjiru</td>
-                                                    <td>Clinic with 200 Attendants</td>
-                                                    <td>BLL123460</td>
-                                                    <td>1</td>
-                                                    <td class="text-right">12,000</td>
-                                                    <td class="text-uppercase text-right">12,000</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Details</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                        
-                                                <!-- Additional records follow the same pattern -->
-                                                <!-- Record 6 - Archived -->
-                                                <tr>
-                                                    <td>1239</td>
-                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
-                                                    <td>Agri Business</td>
-                                                    <td>Okoth Awuor (0707 *** 222)</td>
-                                                    <td>19 Sep 2023 By Paul Omondi</td>
-                                                    <td>Shop with 200 Attendants</td>
-                                                    <td>BLL123461</td>
-                                                    <td>2</td>
-                                                    <td class="text-right">8,200</td>
-                                                    <td class="text-uppercase text-right">8,200</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Details</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                        
-                                                <!-- Record 7 - Pending -->
-                                                <tr>
-                                                    <td>1240</td>
-                                                    <td><span class="badge rounded-pill bg-warning text-black text-uppercase" key="t-new">Pending</span></td>
-                                                    <td>Construction Materials</td>
-                                                    <td>Amolo Otieno (0713 *** 481)</td>
-                                                    <td>20 Sep 2023 By Catherine Nyaoke</td>
-                                                    <td>Factory with 150 Attendants</td>
-                                                    <td>BLL123462</td>
-                                                    <td>0</td>
-                                                    <td class="text-right">11,000</td>
-                                                    <td class="text-uppercase text-right">11,000</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-success text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".receipting-modal" title="Initiate Payment for Lab Tests">
-                                                                <div>Initiate Verification</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                
+                                                <!-- Repeat similar rows for additional records -->
 
+                                                    <tr>
+                                                        <td>BLL34958395</td>
+                                                        <td><span class="badge rounded-pill bg-success text-white text-uppercase" key="t-new">New</span></td>
+                                                        <td>11 Dec 2024 At 12:34 AM By Calvine Otieno</td>
+                                                        <td>Volvo Viga</td>
+                                                        <td>Mini Shop with 1000 Attendants</td>
+                                                        <td>0704549859</td>
+                                                        <td class="text-right"><span class="fw-bold text-success">KES 600</span></td>
+                                                        <td class="text-right">KES 12,300</td>
+                                                        <td class="text-right">KES 0.00</td>
+                                                        <td class="text-right fw-bold">KES 12,300</td>
+                                                        <td class="text-uppercase text-right">
+                                                            <div class="d-flex justify-content-end">
+                                                                <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light text-uppercase btn-sm">
+                                                                    <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                                </a>
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase btn-sm mx-2 resend-invoice-btn">
+                                                                    <i class="fa fa-paper-plane font-size-16 align-middle me-2"></i> Resend Invoice
+                                                                </button>
+                                                                <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center" data-bs-toggle="modal" data-bs-target=".details-modal" title="View detailed invoice information">
+                                                                    Details
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Additional Rows -->
+                                                    <tr>
+                                                        <td>BLL45349827</td>
+                                                        <td><span class="badge rounded-pill bg-primary text-white text-uppercase" key="t-renewed">Renewed</span></td>
+                                                        <td>10 Dec 2024 At 09:20 AM By Mary Wanjiku</td>
+                                                        <td>Blue Sky Hotel</td>
+                                                        <td>Medium-Sized Hotel</td>
+                                                        <td>0713456789</td>
+                                                        <td class="text-right"><span class="fw-bold text-danger">KES -1,200</span></td>
+                                                        <td class="text-right">KES 18,000</td>
+                                                        <td class="text-right">KES 15,000</td>
+                                                        <td class="text-right fw-bold">KES 3,000</td>
+                                                        <td class="text-uppercase text-right">
+                                                            <div class="d-flex justify-content-end">
+                                                                <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light text-uppercase btn-sm">
+                                                                    <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                                </a>
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase btn-sm mx-2 resend-invoice-btn">
+                                                                    <i class="fa fa-paper-plane font-size-16 align-middle me-2"></i> Resend Invoice
+                                                                </button>
+                                                                <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center" data-bs-toggle="modal" data-bs-target=".details-modal" title="View detailed invoice information">
+                                                                    Details
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BLL98765432</td>
+                                                        <td><span class="badge rounded-pill bg-success text-white text-uppercase" key="t-new">New</span></td>
+                                                        <td>12 Dec 2024 At 08:00 PM By John Mwangi</td>
+                                                        <td>Global Traders</td>
+                                                        <td>Warehouse</td>
+                                                        <td>0723459876</td>
+                                                        <td class="text-right"><span class="fw-bold text-success">KES 2,500</span></td>
+                                                        <td class="text-right">KES 25,000</td>
+                                                        <td class="text-right">KES 10,000</td>
+                                                        <td class="text-right fw-bold">KES 15,000</td>
+                                                        <td class="text-uppercase text-right">
+                                                            <div class="d-flex justify-content-end">
+                                                                <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light text-uppercase btn-sm">
+                                                                    <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                                </a>
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase btn-sm mx-2 resend-invoice-btn">
+                                                                    <i class="fa fa-paper-plane font-size-16 align-middle me-2"></i> Resend Invoice
+                                                                </button>
+                                                                <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center" data-bs-toggle="modal" data-bs-target=".details-modal" title="View detailed invoice information">
+                                                                    Details
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BLL24680135</td>
+                                                        <td><span class="badge rounded-pill bg-primary text-white text-uppercase" key="t-renewed">Renewed</span></td>
+                                                        <td>14 Dec 2024 At 10:45 AM By Lucy Njoki</td>
+                                                        <td>Green Mart</td>
+                                                        <td>Retail Supermarket</td>
+                                                        <td>0798765432</td>
+                                                        <td class="text-right"><span class="fw-bold text-success">KES 1,000</span></td>
+                                                        <td class="text-right">KES 20,000</td>
+                                                        <td class="text-right">KES 18,000</td>
+                                                        <td class="text-right fw-bold">KES 2,000</td>
+                                                        <td class="text-uppercase text-right">
+                                                            <div class="d-flex justify-content-end">
+                                                                <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light text-uppercase btn-sm">
+                                                                    <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                                </a>
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase btn-sm mx-2 resend-invoice-btn">
+                                                                    <i class="fa fa-paper-plane font-size-16 align-middle me-2"></i> Resend Invoice
+                                                                </button>
+                                                                <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center" data-bs-toggle="modal" data-bs-target=".details-modal" title="View detailed invoice information">
+                                                                    Details
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BLL75395164</td>
+                                                        <td><span class="badge rounded-pill bg-success text-white text-uppercase" key="t-new">New</span></td>
+                                                        <td>15 Dec 2024 At 02:20 PM By Peter Okoth</td>
+                                                        <td>City Centre Pharmacy</td>
+                                                        <td>Pharmacy Outlet</td>
+                                                        <td>0745623487</td>
+                                                        <td class="text-right"><span class="fw-bold text-danger">KES -500</span></td>
+                                                        <td class="text-right">KES 10,500</td>
+                                                        <td class="text-right">KES 8,500</td>
+                                                        <td class="text-right fw-bold">KES 2,000</td>
+                                                        <td class="text-uppercase text-right">
+                                                            <div class="d-flex justify-content-end">
+                                                                <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light text-uppercase btn-sm">
+                                                                    <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                                </a>
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase btn-sm mx-2 resend-invoice-btn">
+                                                                    <i class="fa fa-paper-plane font-size-16 align-middle me-2"></i> Resend Invoice
+                                                                </button>
+                                                                <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center" data-bs-toggle="modal" data-bs-target=".details-modal" title="View detailed invoice information">
+                                                                    Details
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BLL13579246</td>
+                                                        <td><span class="badge rounded-pill bg-primary text-white text-uppercase" key="t-renewed">Renewed</span></td>
+                                                        <td>16 Dec 2024 At 11:15 AM By Simon Kibet</td>
+                                                        <td>Kilimani Spa</td>
+                                                        <td>Luxury Spa</td>
+                                                        <td>0712345789</td>
+                                                        <td class="text-right"><span class="fw-bold text-success">KES 3,000</span></td>
+                                                        <td class="text-right">KES 30,000</td>
+                                                        <td class="text-right">KES 25,000</td>
+                                                        <td class="text-right fw-bold">KES 5,000</td>
+                                                        <td class="text-uppercase text-right">
+                                                            <div class="d-flex justify-content-end">
+                                                                <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light text-uppercase btn-sm">
+                                                                    <i class="bx bx-printer font-size-16 align-middle me-2"></i> Print Invoice
+                                                                </a>
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase btn-sm mx-2 resend-invoice-btn">
+                                                                    <i class="fa fa-paper-plane font-size-16 align-middle me-2"></i> Resend Invoice
+                                                                </button>
+                                                                <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center" data-bs-toggle="modal" data-bs-target=".details-modal" title="View detailed invoice information">
+                                                                    Details
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
                                                 
-
-                                                
-                                        
                                             </tbody>
-                                        
-                                            <tfoot class="border border-dark">
+                                            <tfoot class="border border-dark text-uppercase">
                                                 <tr class="table-primary text-black border-dark">
-                                                    <th colspan="3">22 Verified | 32 Archived | 64 Pending | 16 Edited</th>
-                                                    <th colspan="6">4 Tests</th>
-                                                    <th class="text-right">KES 567,900</th>
+                                                    <th>Total: 365 Invoices</th>
+                                                    <th colspan="5">New: 55 | Reinvoiced: 75</th>
+                                                    <th class="text-right">KES 20,000</th>
+                                                    <th class="text-right">KES 250,000</th>
+                                                    <th class="text-right">KES 180,000</th>
+                                                    <th class="text-right">KES 70,000</th>
                                                     <th></th>
                                                 </tr>
                                             </tfoot>
                                         </table>
+                                        
                                         
                                       </div>
                                 </div>
@@ -2622,7 +2700,7 @@
 
             <!-- invoicing done successfully confirmation -->
 
-            <div class="modal fade invoiced-record-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade Invoice-resend-confirmed" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header d-none">
@@ -2643,10 +2721,11 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <h4 class="text-uppercase text-success text-black modal-title" title="Acknowledgment Confirmed">2025 Invoice Generated</h4>
+                                        <h4 class="text-uppercase text-primary modal-title" title="Resend Successful">Invoice Resent Successfully</h4>
                                         <p class="text-center px-5" title="Client notified of the invoice and details">
-                                            The 2025 SBP invoice for Volvo Office was successfully generated for KES 7,000. Invoice details were sent to the client via both email and SMS.
+                                            The invoice for Volvo Office has been successfully resent to the client via both email and SMS. Please confirm with the client if further assistance is required.
                                         </p>
+                                        
                                     </div>
                                 </div>
 
@@ -2666,11 +2745,21 @@
                                                 </tr>
                                                 <tr>
                                                     <td title="Client Email">Email</td>
-                                                    <th title="Client Email">email@email.com</th>
+                                                    <th title="Client Email" class="d-flex align-items-center">
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <span>email@email.com</span> <strong class="mdi-check-circle mdi text-success fs-3 me-2"></strong> 
+
+                                                        </div>
+                                                    </th>
                                                 </tr>
                                                 <tr>
                                                     <td title="Client Phone Number">Phone Number</td>
-                                                    <th title="Client Phone Number">0704549859</th>
+                                                    <th title="Client Phone Number" class="d-flex align-items-center">
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <span>0704549859</span> <strong class="mdi-check-circle mdi text-success fs-3 me-2"></strong> 
+
+                                                        </div>
+                                                    </th>
                                                 </tr>
                                                 <tr>
                                                     <td title="Invoice Number">Invoice Number</td>
@@ -3127,6 +3216,24 @@
 
         });
     </script>
+
+    <!-- resending invoice -->
+     <script>
+        $('.resend-invoice-btn').on('click', function(){
+            var theBtn = $(this);
+            $(this).children('.spinner-border').removeClass('d-none');
+
+            var detailsModal = new bootstrap.Modal($('.Invoice-resend-confirmed')[0]);
+            // opening modal after sent is succesful
+            setTimeout(function() {
+                        // Close details modal if it's open
+                        detailsModal.show();
+                theBtn.children('.spinner-border').addClass('d-none');
+            }, 2000);
+        })
+       
+     </script>
+    <!-- end of resending invoice -->
 
 
 </body>
