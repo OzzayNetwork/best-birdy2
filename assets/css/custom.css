@@ -1651,7 +1651,7 @@ opacity: 25%;
 .multi-invoicer .card, .multi-invoicer .card-header{
     border-radius: 0px;
 }
-.multi-invoicer .card{
+.multi-invoicer>.col-12>.card{
     min-height: 100vh;
     margin-bottom: 0px;
     margin: 0px;
@@ -1707,6 +1707,16 @@ opacity: 25%;
     margin-bottom: -1px; */
     padding-top: 0px;
     padding-bottom: 0px;
+}
+.multi-invoicer{
+    margin: 0px;
+}
+
+.multi-invoicer>.col-12{
+    padding: 0px;
+}
+#review-statuse{
+    height: 1000px;
 }
 
 

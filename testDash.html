@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced SBP Invoicing Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .overview {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin: 0;
+            color: #007bff;
+        }
+        .chart {
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>SBP Invoicing Dashboard - Homa Bay County</h1>
+    </header>
+    <section>
+        <h2>Overview</h2>
+        <div class="overview">
+            <div class="card">
+                <h3>Total Businesses</h3>
+                <p>3,700</p>
+            </div>
+            <div class="card">
+                <h3>Verified (%)</h3>
+                <p>45%</p>
+            </div>
+            <div class="card">
+                <h3>Archived (%)</h3>
+                <p>10%</p>
+            </div>
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <p>Ksh 1,200,000</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Sub-County Breakdown</h2>
+        <div id="subcounty-breakdown" class="chart"></div>
+    </section>
+    <section>
+        <h2>Verification and Revenue Trends</h2>
+        <div id="trends" class="chart"></div>
+    </section>
+    <section>
+        <h2>Downgrade Pre-Approval Status</h2>
+        <div id="downgrade-status" class="chart"></div>
+    </section>
+    <footer>
+        <p>© 2024 Homa Bay County Revenue Dashboard</p>
+    </footer>
+
+    <script>
+        // Sub-County Breakdown Bar Chart
+        var subcountyData = {
+            x: ["Sub-County A", "Sub-County B", "Sub-County C", "Sub-County D", "Sub-County E", "Sub-County F", "Sub-County G"],
+            y: [500, 450, 520, 400, 480, 300, 550],
+            name: "Total Businesses",
+            type: "bar"
+        };
+
+        var verifiedData = {
+            x: ["Sub-County A", "Sub-County B", "Sub-County C", "Sub-County D", "Sub-County E", "Sub-County F", "Sub-County G"],
+            y: [225, 200, 250, 180, 200, 120, 250],
+            name: "Verified",
+            type: "bar"
+        };
+
+        var layoutSubcounty = {
+            barmode: "group",
+            title: "Businesses by Sub-County",
+            xaxis: { title: "Sub-County" },
+            yaxis: { title: "Number of Businesses" }
+        };
+
+        Plotly.newPlot("subcounty-breakdown", [subcountyData, verifiedData], layoutSubcounty);
+
+        // Trends Line Chart
+        var trendsData = [
+            {
+                x: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                y: [10, 20, 30, 40, 50, 60, 70, 80],
+                mode: "lines+markers",
+                name: "Verified (%)"
+            },
+            {
+                x: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                y: [100000, 120000, 130000, 140000, 150000, 160000, 170000, 180000],
+                mode: "lines+markers",
+                name: "Revenue (Ksh)"
+            }
+        ];
+
+        var layoutTrends = {
+            title: "Verification and Revenue Trends",
+            xaxis: { title: "Month" },
+            yaxis: { title: "Percentage / Revenue" }
+        };
+
+        Plotly.newPlot("trends", trendsData, layoutTrends);
+
+        // Downgrade Pre-Approval Pie Chart
+        var downgradeStatusData = {
+            labels: ["Approved", "Pending", "Rejected"],
+            values: [50, 30, 20],
+            type: "pie"
+        };
+
+        var layoutDowngrade = {
+            title: "Downgrade Pre-Approval Status"
+        };
+
+        Plotly.newPlot("downgrade-status", [downgradeStatusData], layoutDowngrade);
+    </script>
+</body>
+</html>
