@@ -1719,6 +1719,29 @@ opacity: 25%;
     height: 1000px;
 }
 
+.ico-countdown .coming-box {
+    margin-right: 12px;
+    margin-left: 12px;
+    border: 1px solid #e4e8fb;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: var(--bs-custom-white);
+    width: 75px;
+}
+
+.ico-countdown {
+    font-size: 22px;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.ico-countdown .coming-box span {
+    background-color: var(--bs-light);
+    font-size: 12px;
+    padding: 4px;
+    margin-top: 8px;
+}
+
 
 
 
