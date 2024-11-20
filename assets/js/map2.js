@@ -1357,9 +1357,11 @@ const Mapchart=Highcharts.mapChart('Map-data', {
             
             // Return the formatted string for the tooltip
             return '<br><span style="font-weight:500; text-transform:uppercase; margin-bottom:15px;">' + this.name + ' Sub County</span><br><br>' +
-                   '<span style="font-weight:50;">Collected Revenue: </span>KES ' + this.Collections + '<br>' +
-                   '<span style="font-weight:50;">Revenue Target: </span>KES ' + this.target + '<br>' +
-                   '<span style="font-weight:50;">Percentage Achievement: </span>' + this.value + '%';
+                   '<span style="font-weight:50;">Reviewed Records: </span>' + this.Collections + '<br>' +
+                   '<span style="font-weight:50;">Total Records: </span>' + this.target + '<br>' +
+                   '<span style="font-weight:500;">Value Of Reviewed Records: </span><span style="font-weight:500;">KES ' + this.Collections + '</span><br>' +
+
+                   '<span style="font-weight:50;">Invoicing Rate: </span>' + this.value + '%';
         },
         shared: true
     },

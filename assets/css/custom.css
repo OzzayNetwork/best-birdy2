@@ -1741,6 +1741,9 @@ opacity: 25%;
     padding: 4px;
     margin-top: 8px;
 }
+.system-alert{
+    border-left: 15px solid red !important;
+}
 
 
 
