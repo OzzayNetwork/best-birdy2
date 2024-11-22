@@ -1744,6 +1744,9 @@ opacity: 25%;
 .system-alert{
     border-left: 15px solid red !important;
 }
+.h-calc-15{
+    height: calc(100% - 25px) !important;
+}
 
 
 

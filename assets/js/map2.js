@@ -1456,6 +1456,9 @@ const Mapchart=Highcharts.mapChart('Map-data', {
             verticalAlign: 'bottom'
         }
     },
+    mapNavigation: {
+      enabled: false // Disable the map navigation (zoom, panning, etc.)
+  },
 });
 
 data.forEach(function(entry) {
