@@ -610,8 +610,7 @@
                             class="card-header px-3 py-2 kev-tab-header d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center ">
                                 <i class="bx bxs-folder font-size-24 text-warning"></i>
-                                <p class="mb-0 pb-0 text-uppercase mx-3">Automated Invoicing & Business Register
-                                    Management</p>
+                                <p class="mb-0 pb-0 text-uppercase mx-3">Bulk Invoice Manager</p>
                             </div>
                             <a href="cert-biz-stats.html" class="text-white close-btn">
                                 <i class="mdi mdi-close label-icon"></i>
@@ -765,15 +764,24 @@
                                                         </h6>
                                                         <p class="text-capitalize mb-5">Hover on A sub county to have detailed look</p>
                                                        
-                                                        <div class="w-100">
+                                                       <div class="row">
+                                                            <div class="col-8">
+                                                                <div class="w-100">
                                                           
-                                                            <div id="Map-data" class="" dir="ltr"></div>
-                                                            
-                                                            
-                                                        </div>
+                                                                    <div id="Map-data" class="" dir="ltr"></div>
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-4">
+                                                                <div id="DownStatusContainer" style="height: 300px;"></div>
+
+                                                            </div>
+                                                       </div>
 
                                                         <div class="row">
-                                                            <div class="col-6">
+                                                            <div class="col-12">
                                                                 <div class="mb-4">
                                                                     <div class="alert system-alert alert-danger alert-dismissible fade show border border-danger border-radius-0 mb-0" role="alert">
                                                                         <strong class="d-flex align-items-center text-uppercase fs-5"><i class="mdi mdi-alert-circle-outline fs-2 me-2"></i> <strong>System ALert</strong></strong>
@@ -782,7 +790,7 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-6">
+                                                            <div class="col-6 d-none">
                                                                 <div id="DownStatusContainer" style="height: 300px;"></div>
                                                             </div>
                                                         </div>
@@ -4576,7 +4584,7 @@ Highcharts.chart('categoryChaneg1', {
         series: [{
             type: 'pie',
             name: 'Approval Status',
-            innerSize: '50%',
+            innerSize: '70%',
             data: [
                 ['Pending Approval', 500000], // Example value in KES
                 ['Approved', 300000],
