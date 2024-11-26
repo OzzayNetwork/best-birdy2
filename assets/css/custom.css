@@ -1747,6 +1747,10 @@ opacity: 25%;
 .h-calc-15{
     height: calc(100% - 25px) !important;
 }
+.table-striped-info.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: #E1F5FE;
+    color: var(--bs-table-striped-color);
+}
 
 
 
