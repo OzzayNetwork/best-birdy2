@@ -750,195 +750,135 @@
                                         <table class="table table-striped table-striped-info table-s align-middle text-nowrap">
                                             <thead class="bg-info text-black text-uppercase border border-info">
                                                 <tr>
-                                                    <th title="Business ID">Biz ID.</th>
-                                                    <th title="Status">Status</th>
+                                                    <th title="Business ID">Biz ID</th>
                                                     <th title="Business Name">Business</th>
                                                     <th title="Owner Name">Owner</th>
-                                                    <th title="Date Archived">Date Archived</th>
-                                                    <th title="Sub Category">Sub Category</th>
-                                                    <th title="2024 Invoice">2024 Invoice</th>
-                                                    <th>Changes</th>
-                                                    <th class="text-right" title="Amount Invoiced">Amount Invoiced</th>
-                                                    <th class="text-right" title="Amount Paid">Amount Paid</th>
-                                                    <th title="Reason for Archiving">Archive Reason</th>
+                                                    <th title="Date changes were made">Date Changed</th>
+                                                    <th title="Sub Category Before Changes">Prev Sub Category</th>
+                                                    <th title="Proposed Sub Category">New Sub Category</th>
+                                                    <th class="text-right" title="Previous Amount Invoiced">Prev Amount</th>
+                                                    <th class="text-right" title="Proposed Amount">New Amount</th>
+                                                    <th title="Reason for Change">Change Reason</th>
+                                                    <th title="Approver Details">Approver</th>
                                                     <th title="Available Actions" class="text-right">Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody class="border border-info">
-                                                <!-- Record 1 - Archived -->
+                                                <!-- Record 1 -->
                                                 <tr>
-                                                    <td>1234</td>
-                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
-                                                    <td>Volvo office</td>
-                                                    <td>Abdi Mohammed (0704 *** 789)</td>
-                                                    <td>11 Sep 2023 at 2:45 AM by Amos Waswa</td>
-                                                    <td>Mini Shop with 1000 Attendants</td>
-                                                    <td>BLL123456</td>
-                                                    <td>0</td>
-                                                    <td class="text-right">10,500</td>
-                                                    <td class="text-uppercase text-right">10,500</td>
-                                                    <td>Duplicate Record</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
-                                                                <div>Details</div>
-                                                            </button>
-                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
-                                                                <div>Restore</div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                        
-                                                <!-- Record 2 - Archived -->
-                                                <tr>
-                                                    <td>1235</td>
-                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
-                                                    <td>Medical Supplies</td>
-                                                    <td>Nyakango Omondi (0712 *** 890)</td>
-                                                    <td>12 Sep 2023 at 3:30 PM by Amos Waswa</td>
-                                                    <td>Store with 500 Attendants</td>
-                                                    <td>BLL123457</td>
-                                                    <td>1</td>
-                                                    <td class="text-right">5,000</td>
-                                                    <td class="text-uppercase text-right">5,000</td>
-                                                    <td>Business Closed</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
-                                                                <div>Details</div>
-                                                            </button>
-                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
-                                                                <div>Restore</div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                        
-                                                <!-- Record 3 - Archived -->
-                                                <tr>
-                                                    <td>1236</td>
-                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
-                                                    <td>Insurance Office</td>
-                                                    <td>Ochieng' Amollo (0708 *** 762)</td>
-                                                    <td>15 Sep 2023 at 11:15 AM by John Kamau</td>
-                                                    <td>Shop with 300 Attendants</td>
-                                                    <td>BLL123458</td>
-                                                    <td>2</td>
+                                                    <td>1241</td>
+                                                    <td>Sunny Groceries</td>
+                                                    <td>Kibet Kiprono (0721 *** 123)</td>
+                                                    <td title="Changed by James Kariuki on 5th Oct 2024, 10:30 AM">5 Oct 2024 at 10:30 AM by James Kariuki</td>
+                                                    <td>Mini Mart</td>
+                                                    <td>Supermarket</td>
                                                     <td class="text-right">7,500</td>
-                                                    <td class="text-uppercase text-right">7,500</td>
-                                                    <td>Test Data</td>
+                                                    <td class="text-right">
+                                                        15,000 
+                                                        <span class="text-success ms-2" title="Upgrade">
+                                                            <i class="fas fa-arrow-up"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td title="Owner requested reclassification">Owner Request</td>
+                                                    <td title="Approver Details">Mary Njoroge (mary.njoroge@example.com)</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
                                                                 <div>Details</div>
                                                             </button>
-                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
-                                                                <div>Restore</div>
+                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" onclick="remindApprover('1241')" title="Send Reminder">
+                                                                <i class="fas fa-bell me-1"></i> Remind Approver
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                        
-                                                <!-- Record 4 - Archived -->
+                                                <!-- Record 2 -->
                                                 <tr>
-                                                    <td>1237</td>
-                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
-                                                    <td>Construction Site</td>
-                                                    <td>Odhiambo Achieng' (0721 *** 985)</td>
-                                                    <td>17 Sep 2023 at 8:00 AM by John Kamau</td>
-                                                    <td>Warehouse with 150 Attendants</td>
-                                                    <td>BLL123459</td>
-                                                    <td>0</td>
-                                                    <td class="text-right">9,800</td>
-                                                    <td class="text-uppercase text-right">9,800</td>
-                                                    <td>Data Obsolete</td>
+                                                    <td>1242</td>
+                                                    <td>Elite Chemists</td>
+                                                    <td>Wanjiru Maina (0734 *** 890)</td>
+                                                    <td title="Changed by Sarah Mutiso on 6th Oct 2024, 2:15 PM">6 Oct 2024 at 2:15 PM by Sarah Mutiso</td>
+                                                    <td>Pharmacy</td>
+                                                    <td>Drug Store</td>
+                                                    <td class="text-right">10,000</td>
+                                                    <td class="text-right">
+                                                        8,500
+                                                        <span class="text-danger ms-2" title="Downgrade">
+                                                            <i class="fas fa-arrow-down"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td title="Category adjustment for compliance">Compliance Adjustment</td>
+                                                    <td title="Approver Details">Amos Waswa (amos.waswa@example.com)</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
                                                                 <div>Details</div>
                                                             </button>
-                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
-                                                                <div>Restore</div>
+                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" onclick="remindApprover('1242')" title="Send Reminder">
+                                                                <i class="fas fa-bell me-1"></i> Remind Approver
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                        
-                                                <!-- Record 5 - Archived -->
+                                                <!-- Record 3 -->
                                                 <tr>
-                                                    <td>1238</td>
-                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
-                                                    <td>Medical Equipment</td>
-                                                    <td>Juma J. Otieno (0733 *** 103)</td>
-                                                    <td>18 Sep 2023 at 9:30 AM by Amos Waswa</td>
-                                                    <td>Clinic with 200 Attendants</td>
-                                                    <td>BLL123460</td>
-                                                    <td>1</td>
-                                                    <td class="text-right">12,000</td>
-                                                    <td class="text-uppercase text-right">12,000</td>
-                                                    <td>Invalid or Incomplete Details</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
-                                                                <div>Details</div>
-                                                            </button>
-                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
-                                                                <div>Restore</div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                        
-                                                <!-- Record 6 - Archived -->
-                                                <tr>
-                                                    <td>1239</td>
-                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
-                                                    <td>Agri Business</td>
-                                                    <td>Okoth Awuor (0707 *** 222)</td>
-                                                    <td>19 Sep 2023 at 10:15 AM by Amos Waswa</td>
-                                                    <td>Shop with 200 Attendants</td>
-                                                    <td>BLL123461</td>
-                                                    <td>2</td>
-                                                    <td class="text-right">8,200</td>
-                                                    <td class="text-uppercase text-right">8,200</td>
-                                                    <td>Merged with Other Business</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
-                                                                <div>Details</div>
-                                                            </button>
-                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
-                                                                <div>Restore</div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                        
-                                                <!-- Record 7 - Archived -->
-                                                <tr>
-                                                    <td>1240</td>
-                                                    <td><span class="badge rounded-pill bg-danger text-white text-uppercase" key="t-archived">Archived</span></td>
+                                                    <td>1243</td>
+                                                    <td>QuickFix Mechanics</td>
+                                                    <td>Odhiambo Okoth (0708 *** 762)</td>
+                                                    <td title="Changed by Peter Ochieng' on 7th Oct 2024, 9:45 AM">7 Oct 2024 at 9:45 AM by Peter Ochieng'</td>
+                                                    <td>Garage</td>
                                                     <td>Auto Repair</td>
-                                                    <td>Shikuku Njeri (0743 *** 102)</td>
-                                                    <td>20 Sep 2023 at 1:00 PM by John Kamau</td>
-                                                    <td>Garage with 50 Attendants</td>
-                                                    <td>BLL123462</td>
-                                                    <td>0</td>
                                                     <td class="text-right">9,000</td>
-                                                    <td class="text-uppercase text-right">9,000</td>
-                                                    <td>Duplicate Record</td>
+                                                    <td class="text-right">
+                                                        11,000
+                                                        <span class="text-success ms-2" title="Upgrade">
+                                                            <i class="fas fa-arrow-up"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td title="Expansion of services offered">Service Expansion</td>
+                                                    <td title="Approver Details">John Kamau (john.kamau@example.com)</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
                                                                 <div>Details</div>
                                                             </button>
-                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" title="Restore Record">
-                                                                <div>Restore</div>
+                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" onclick="remindApprover('1243')" title="Send Reminder">
+                                                                <i class="fas fa-bell me-1"></i> Remind Approver
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
+                                                <!-- Additional Records -->
+                                                <!-- Repeat similar structure for the remaining 12 records -->
+                                                <!-- Example Variations -->
+                                                <tr>
+                                                    <td>1244</td>
+                                                    <td>Digital Prints</td>
+                                                    <td>Anne Wanjiku (0712 *** 987)</td>
+                                                    <td title="Changed by John Kamau on 8th Oct 2024, 11:30 AM">8 Oct 2024 at 11:30 AM by John Kamau</td>
+                                                    <td>Print Shop</td>
+                                                    <td>Media Center</td>
+                                                    <td class="text-right">6,500</td>
+                                                    <td class="text-right">
+                                                        9,000
+                                                        <span class="text-success ms-2" title="Upgrade">
+                                                            <i class="fas fa-arrow-up"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td title="Added digital media services">Service Addition</td>
+                                                    <td title="Approver Details">Sarah Mutiso (sarah.mutiso@example.com)</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button class="btn btn-sm btn-dark text-uppercase d-flex align-items-center ms-2" data-bs-toggle="modal" data-bs-target=".details-modal" title="View Details">
+                                                                <div>Details</div>
+                                                            </button>
+                                                            <button class="btn btn-sm btn-warning text-uppercase d-flex align-items-center ms-2" onclick="remindApprover('1244')" title="Send Reminder">
+                                                                <i class="fas fa-bell me-1"></i> Remind Approver
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <!-- Repeat with varying data -->
                                             </tbody>
                                         </table>
                                         
@@ -1164,89 +1104,104 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="table-responsive">
-                                                <table
-                                                    class="table table-nowrap vertical-align-middle table-striped table-sm">
-                                                    <thead class="table-warning">
-                                                        <th colspan="3" class="text-uppercase ">
-                                                          <div class="justify-content-between d-flex"> 
-                                                            <div>
-                                                                2024 Invoicing Details
-                                                            </div>
-
-                                                            <div>
-                                                                <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-primary btn-sm text-uppercase">Open</a>
-                                                            </div>
-                                                          </div>
-                                                        </th>
+                                                <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                    <!-- 2024 Invoice Details -->
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th colspan="3" class="text-uppercase">2024 Invoicing Details</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <thead class="text-uppercase table-info">
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Item</th>
+                                                            <th class="text-right">Amount</th>
+                                                        </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr class=" fw-semibold text-uppercase">
-                                                            <td class="text-primary">
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Invoice No.</p>
-
-                                                            </td>
-                                                            <td class=""><span class="text-primary">BLL48778</td>
-                                                            
-
+                                                        <tr>
+                                                            <td>1.</td>
+                                                            <td>Medium-Sized Business</td>
+                                                            <td class="text-right">KES 4,000</td>
                                                         </tr>
-                                                        <tr class=" fw-semibold text-uppercase">
-                                                            <td class="text-primary">
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Total Invoiced Amount</p>
-
-                                                            </td>
-                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">KES 12,000</span></td>
-                                                           
+                                                        <!-- Previously invoiced item not included in the current year -->
+                                                        <tr>
+                                                            <td>2.</td>
+                                                            <td><strike>Registration Fees</strike></td>
+                                                            <td class="text-right">KES 500</td>
                                                         </tr>
-                                                        <tr class=" fw-semibold text-uppercase">
-                                                            <td class="text-primary">
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Amount Paid</p>
-                                                            </td>
-                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">KES 12,000</span></td>
-                                                           
+                                                        <tr>
+                                                            <td>3.</td>
+                                                            <td>Conservancy Fees</td>
+                                                            <td class="text-right">KES 300</td>
                                                         </tr>
-
-                                                        <tr class=" fw-semibold text-uppercase">
-                                                            <td class="text-primary">
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Outstanding Balance</p>
-                                                            </td>
-                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">KES 0</span></td>
-                                                           
+                                                        <!-- Totals -->
+                                                        <tr class="table-info text-uppercase fw-bold">
+                                                            <td colspan="2">Totals</td>
+                                                            <td class="text-right fw-bold">KES 4,700</td>
                                                         </tr>
-
-                                                        <tr class=" fw-semibold text-uppercase">
-                                                            <td class="text-primary">
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Invoiced By</p>
-                                                            </td>
-                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">Alex Kiptanui on 23 sep 2023 12:45 AM</span></td>
-                                                           
+                                                        <!-- Invoice metadata -->
+                                                        <tr class="text-capitalize">
+                                                            <td colspan="3">Invoicing Date: 12 Sep 2023 12:45 PM</td>
                                                         </tr>
-
-                                                        <tr class=" fw-semibold text-uppercase">
-                                                            <td class="text-primary">
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Inspected By</p>
-                                                            </td>
-                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">Alex Kiptanui on 30 Mar 2024 11:34 PM</span></td>
-                                                           
-                                                        </tr>
-
-                                                        <tr class=" fw-semibold text-uppercase">
-                                                            <td class="text-primary">
-                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
-                                                                    Current Approval Stage</p>
-                                                            </td>
-                                                            <td class=""><span class="text-primary"></span> <span class="text-primary">Approved</span></td>
-                                                           
+                                                        <tr class="text-capitalize">
+                                                            <td colspan="3">Invoiced By: Jane Jane</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
+                                        
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                    <!-- 2025 Invoice Details -->
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th colspan="3" class="text-uppercase">2025 Invoicing Details</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <thead class="text-uppercase table-info">
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Item</th>
+                                                            <th class="text-right">Amount</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1.</td>
+                                                            <td>Medium-Sized Business</td>
+                                                            <td class="text-right">KES 4,000</td>
+                                                        </tr>
+                                                        <!-- Newly added fee for the current year -->
+                                                        <tr class="text-success fw-bold">
+                                                            <td>2.</td>
+                                                            <td>Renewal Fees</td>
+                                                            <td class="text-right">KES 500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3.</td>
+                                                            <td>Conservancy Fees</td>
+                                                            <td class="text-right">KES 300</td>
+                                                        </tr>
+                                                        <!-- Totals -->
+                                                        <tr class="table-info text-uppercase fw-bold">
+                                                            <td colspan="2">Totals</td>
+                                                            <td class="text-right fw-bold">KES 4,700</td>
+                                                        </tr>
+                                                        <!-- Invoice metadata -->
+                                                        <tr class="text-capitalize">
+                                                            <td colspan="3">Invoicing Date: 12 Sep 2024 12:45 PM</td>
+                                                        </tr>
+                                                        <tr class="text-capitalize">
+                                                            <td colspan="3">Invoiced By: Jane Jane</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
 
@@ -2331,112 +2286,103 @@
                                     <div class="col-12">
                                         <div class="table-responsive">
                                             <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                <!-- 2024 Invoice Details -->
                                                 <thead class="table-light">
-                                                    <th colspan="3" class="text-uppercase">2024 Invoicing Details</th>
+                                                    <tr>
+                                                        <th colspan="3" class="text-uppercase">2024 Invoicing Details</th>
+                                                    </tr>
                                                 </thead>
-
                                                 <thead class="text-uppercase table-info">
-                                                    <th class="text-uppercase">#</th>
-                                                    <th>Item</th>
-                                                    <th class="text-right">Amount</th>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Item</th>
+                                                        <th class="text-right">Amount</th>
+                                                    </tr>
                                                 </thead>
-
                                                 <tbody>
-                                                   <tr>
+                                                    <tr>
                                                         <td>1.</td>
-                                                        <td>Medium sized Business</td>
+                                                        <td>Medium-Sized Business</td>
                                                         <td class="text-right">KES 4,000</td>
-                                                   </tr>
-
-                                                   <tr>
+                                                    </tr>
+                                                    <!-- Previously invoiced item not included in the current year -->
+                                                    <tr>
                                                         <td>2.</td>
-
-                                                        <!-- use strike for an invoicinfg item that was not incoporated for the current year -->
                                                         <td><strike>Registration Fees</strike></td>
                                                         <td class="text-right">KES 500</td>
                                                     </tr>
-
                                                     <tr>
                                                         <td>3.</td>
-                                                        <td>Conservercy Fees</td>
+                                                        <td>Conservancy Fees</td>
                                                         <td class="text-right">KES 300</td>
                                                     </tr>
-
+                                                    <!-- Totals -->
                                                     <tr class="table-info text-uppercase fw-bold">
                                                         <td colspan="2">Totals</td>
-                                                        
                                                         <td class="text-right fw-bold">KES 4,700</td>
                                                     </tr>
-
+                                                    <!-- Invoice metadata -->
                                                     <tr class="text-capitalize">
-                                                        <td colspan="3" class="">Invoicing Date: 12 Sep 2023 12:45 PM</td>
+                                                        <td colspan="3">Invoicing Date: 12 Sep 2023 12:45 PM</td>
                                                     </tr>
-
                                                     <tr class="text-capitalize">
-                                                        <td colspan="3" class="">Invoiced By: jane Jane</td>
+                                                        <td colspan="3">Invoiced By: Jane Jane</td>
                                                     </tr>
-                                                    
                                                 </tbody>
                                             </table>
                                         </div>
-                                        
                                     </div>
-
+                                    
                                     <div class="col-12">
                                         <div class="table-responsive">
                                             <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                <!-- 2025 Invoice Details -->
                                                 <thead class="table-light">
-                                                    <th colspan="3" class="text-uppercase">2025 Invoicing Details</th>
+                                                    <tr>
+                                                        <th colspan="3" class="text-uppercase">2025 Invoicing Details</th>
+                                                    </tr>
                                                 </thead>
-
                                                 <thead class="text-uppercase table-info">
-                                                    <th class="text-uppercase">#</th>
-                                                    <th>Item</th>
-                                                    <th class="text-right">Amount</th>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Item</th>
+                                                        <th class="text-right">Amount</th>
+                                                    </tr>
                                                 </thead>
-
                                                 <tbody>
-                                                   <tr>
+                                                    <tr>
                                                         <td>1.</td>
-                                                        <td>Medium sized Business</td>
+                                                        <td>Medium-Sized Business</td>
                                                         <td class="text-right">KES 4,000</td>
-                                                   </tr>
-
-                                                   <!-- use this styling for a newley included fee for the current year -->
-
-                                                   <tr class="text-success fw-bold">
+                                                    </tr>
+                                                    <!-- Newly added fee for the current year -->
+                                                    <tr class="text-success fw-bold">
                                                         <td>2.</td>
-
-                                                        <!-- use strike for an invoicinfg item that was not incoporated for the current year -->
                                                         <td>Renewal Fees</td>
                                                         <td class="text-right">KES 500</td>
                                                     </tr>
-
                                                     <tr>
                                                         <td>3.</td>
-                                                        <td>Conservercy Fees</td>
+                                                        <td>Conservancy Fees</td>
                                                         <td class="text-right">KES 300</td>
                                                     </tr>
-
+                                                    <!-- Totals -->
                                                     <tr class="table-info text-uppercase fw-bold">
                                                         <td colspan="2">Totals</td>
-                                                        
                                                         <td class="text-right fw-bold">KES 4,700</td>
                                                     </tr>
-
+                                                    <!-- Invoice metadata -->
                                                     <tr class="text-capitalize">
-                                                        <td colspan="3" class="">Invoicing Date: 12 Sep 2024 12:45 PM</td>
+                                                        <td colspan="3">Invoicing Date: 12 Sep 2024 12:45 PM</td>
                                                     </tr>
-
                                                     <tr class="text-capitalize">
-                                                        <td colspan="3" class="">Invoiced By: jane Jane</td>
+                                                        <td colspan="3">Invoiced By: Jane Jane</td>
                                                     </tr>
-                                                    
                                                 </tbody>
                                             </table>
                                         </div>
-                                        
                                     </div>
+                                    
                                 </div>
 
 
@@ -2483,7 +2429,12 @@
                                             <p class="fw-bold text-uppercase">Remarks from Licensing Officer</p>
                                             <p class="mb-0 text-black">The 2025 invoice has been updated to reflect a reduced license fee compared to the previous year, along with adjustments to the invoiced items and changes to other applicable charges. For full details, feel free to check out the linked invoices above.</p>
                                         </div>
+
                                         
+                                        
+                                    </div>
+                                    <div class="col-12">
+                                            <button class="btn btn-100 w-100 btn-primary text-uppercase mt-3">Approve Change</button>
                                     </div>
                                 </div>
                             </div>
