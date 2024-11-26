@@ -2433,7 +2433,35 @@
                                         
                                         
                                     </div>
+
                                     <div class="col-12">
+                                        <div class="mt-4">
+                                            <h5 class="font-size-14 mb-3">Verdict</h5>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="verdict-radio" id="formRadios1" value="Approve">
+                                                <label class="form-check-label" for="formRadios1">
+                                                    Approve Change
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="verdict-radio" id="formRadios2" value="Reject">
+                                                <label class="form-check-label" for="formRadios2">
+                                                    Reject Change
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mt-3 d-none reject-input-cont">
+                                        <div>
+                                            <div class="d-flex flex-column">
+                                                <label class="">Reason For Rejecting</label>
+                                            </div>
+                                            <textarea name="" id="" cols="30" rows="5" class="form-control mb-2" placeholder="Enter Reason" spellcheck="false" data-ms-editor="true"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mt-4">
                                             <button class="btn btn-100 w-100 btn-primary text-uppercase mt-3">Approve Change</button>
                                     </div>
                                 </div>
@@ -3113,6 +3141,23 @@
             }
             
         })
+     </script>
+
+     <script>
+        $(document).ready(function() {
+            // When a radio button is selected
+            $('input[name="verdict-radio"]').change(function() {
+                // Check if the selected radio button is 'Approve'
+                if ($(this).val() === 'Approve') {
+                    // Hide the div by adding the 'd-none' class
+                    $('.reject-input-cont').addClass('d-none');
+                } else {
+                    // Show the div by removing the 'd-none' class
+                    $('.reject-input-cont').removeClass('d-none');
+                }
+            });
+        });
+
      </script>
 
 
