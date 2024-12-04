@@ -3052,6 +3052,118 @@
             </div>
             <!-- end of archived records -->
 
+            <!-- otp for confirming changes in SBP vcategory/sub Category -->
+            <div class="modal fade otp-modal-cat" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <!-- <div class="modal fade otp-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false"> -->
+                    <!-- Modal content here -->
+                
+                
+                    <div class="modal-dialog  w-100 modal-md modal-dialog-centered modal-full">
+                        <div class="modal-content w-100 bg-light-blue border-info">
+                            <div class="modal-header text-black text-uppercase border-0" >
+                                <h4 class="modal-title">Change in Sub Category</h4>
+                                <button type="button" class="btn-close d-non" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                               
+        
+                                <div class="otp-entry">
+                                    <div class="alert alert-info border-info border-2" role="alert">
+                                        <h4 class="alert-heading text-black text-uppercase">OTP Verification</h4>
+                                        
+    
+                                        <p>An OTP has been sent to your phone: <strong>+254 7XX XXX 123</strong>. Please enter the OTP to confirm the category change. Once submitted, the change will be pending final approval.</p>
+                                        <hr class="text-black border-2 border-black border-info text-info">
+                                                                                <p class="mb-0"><Strong>Category Change</Strong></p>
+                                        <p>You are changing this business from <strong>Hyper supermarket</strong> to <strong>Small scale supermarket</strong></p>
+                                        <p class="mb-0"><Strong>Reason for Change</Strong></p>
+                                        <p class="text-left">
+                                            Error during tghe invoincing phase
+                                        </p>
+                                        <div class="hstack gap-3">
+                                            <input class="form-control me-auto border-black" type="text" placeholder="Enter OTP" aria-label="Add your item here..." spellcheck="false" data-ms-editor="true">
+                                            <button type="button" class="btn btn-warning text-dark fw-bold text-nowrap text-uppercase">Resend OTP</button>
+                                        </div>
+        
+                                        <!-- message sent to customer -->
+        
+                                        <p class=" d-none">"Dear [Customer Name], your number plate change from [Previous Number Plate] to [New Number Plate] is in process. Your OTP for finalizing the changes is [OTP]. If you did not initiate this request, please report it immediately. Thank you!"
+                                            <!-- dont show this message anywhere but it should go to the customer -->
+                                        </p>
+                                    </div>
+            
+                                    <button class="btn btn-success fw-bold mt-4 text-uppercase w-100 d-flex justify-content-center align-items-center text-center confirm-archive" title="Initiate Payment for Lab Tests">
+                                        <div>confirm</div>
+                                        <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                    </button>
+            
+                                </div>
+        
+                                <!-- show this for succesfully archived record-->
+        
+                                <div class="d-none p-4 pb-1 category-change-submitted px-1 d-flex align-items-center justify-content-center flex-column pt-1">
+                                    <div class="flex-shrink-0 align-self-center mb-4">
+                                        <div class="avatar-md rounded-circle bg-primary mini-stat-icon" title="Action Submitted">
+                                            <span class="avatar-title rounded-circle bg-warning">
+                                                <i class="bx bx-edit fs-1" title="Category Change Submitted"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-uppercase text-dark modal-title fw-bold" title="Change Submitted">Category Change Submitted</h4>
+                                    <p class="text-center px-5" title="Category Change Submission Confirmation">
+                                        The category change for the business named <strong>X</strong> has been submitted successfully. It is now pending final approval.
+                                    </p>
+
+                                    
+                                
+                                    <div class="w-100 mt-2">
+                                        <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn btn-outline-secondary waves-effect w-100 btn-close-btn-otp text-uppercase fw-bold">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                                <!-- show this for a failed attempt -->
+        
+                                <div class="d-none p-4 pb-1 archiving-fail px-1 d-flex align-items-center justify-content-center flex-column pt-1">
+                                    <div class="flex-shrink-0 align-self-center mb-4">
+                                        <div class="avatar-md rounded-circle bg-danger mini-stat-icon" title="Action Failed">
+                                            <span class="avatar-title rounded-circle bg-danger">
+                                                <i class="mdi mdi-close fs-1" title="Archiving Failed"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-uppercase text-danger modal-title fw-bold" title="Archiving Failed">Archiving Failed</h4>
+                                    <p class="text-center px-5" title="Business Record Archiving Failed">
+                                        Unfortunately, the attempt to archive the business record for <strong>“Business XYZ Ltd.”</strong> was unsuccessful. Please try again or contact support for assistance.
+                                    </p>
+                                    
+                                    <div class="w-100 mt-2">
+                                        <button type="button" class="btn btn-info waves-effect w-100 btn-close-btn text-uppercase fw-bold">Retry</button>
+                                        <h6 class="text-center my-2">- OR -</h6>                                
+                                        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-secondary waves-effect w-100 btn-close-btn text-uppercase fw-bold">Close</button>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+             <!-- end of OTP -->
+
             <footer class="footer ">
                 <div class="container-fluid ">
                     <div class="row ">
@@ -3201,7 +3313,7 @@
                     }
 
                     // Initialize the acknowledged modal and show it
-                    var myModal = new bootstrap.Modal($('.invoiced-record-modal')[0]); 
+                    var myModal = new bootstrap.Modal($('.otp-modal-cat')[0]); 
                     myModal.show(); // Show the modal
                     
                     theBtn.children('.spinner-border').addClass('d-none');
