@@ -2964,7 +2964,8 @@
                                     
 
                                     <p>An OTP has been sent to your phone: <strong>+254 7XX XXX 123</strong>. Please enter the OTP to confirm that you want to archive this record.</p>                                    <hr class="text-black border-2 border-black border-info text-info">
-                                
+                                    <p class="mb-0"><Strong>Archive Reason</Strong></p>
+                                    <p>Duplicate Entry</p>
                                     <div class="hstack gap-3">
                                         <input class="form-control me-auto border-black" type="text" placeholder="Enter OTP" aria-label="Add your item here..." spellcheck="false" data-ms-editor="true">
                                         <button type="button" class="btn btn-warning text-dark fw-bold text-nowrap text-uppercase">Resend OTP</button>
@@ -3222,6 +3223,29 @@
                 $('.other-reason-cont').addClass('d-none') 
             }
             
+        })
+     </script>
+
+     <script>
+        $('.archive-record').on('click', function(){
+            var theBtn = $(this);
+                $(this).children('.spinner-border').removeClass('d-none');
+
+                // Get or create instances of the modals
+                var detailsModal = bootstrap.Modal.getInstance($('.receipting-modal')[0]) || new bootstrap.Modal($('.receipting-modal')[0]);
+
+                setTimeout(function() {
+                    // Close details modal if it's open
+                    if (detailsModal) {
+                        detailsModal.hide();
+                    }
+
+                    // Initialize the acknowledged modal and show it
+                    var myModal = new bootstrap.Modal($('.otp-modal')[0]); 
+                    myModal.show(); // Show the modal
+                    
+                    theBtn.children('.spinner-border').addClass('d-none');
+                }, 2000);
         })
      </script>
 
