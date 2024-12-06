@@ -766,7 +766,7 @@
                                         </select>
                                     </div>
 
-                                   <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase">
+                                   <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase" data-bs-toggle="modal" data-bs-target=".print-modal">
                                         <i class="bx bxs-printer font-size-16 align-middle me-2"></i> Print
                                     </button>
                                 </div>
@@ -3091,6 +3091,116 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- end of archived records -->
+
+            <!-- printing modal -->
+            <div class="modal fade print-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Download New register Report</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <address>
+                                        <strong class="text-capitalize">Report Title</strong><br>
+                                        SBP Register report
+                                    </address>
+                                </div>
+
+                                <div class="col-12">
+                                    <label><strong>Report Date Range</strong></label>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-sm-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Date From</label>
+                                                <input class="form-control"placeholder="Start date" type="date">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-sm-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Date To</label>
+                                                <input class="form-control"placeholder="Start date" type="date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label><strong>Select Sub counties to be included in the Report</strong></label>
+                                    <div>
+                                        <div class="form-check form-check-primary mb-3">
+                                            <input class="form-check-input" type="checkbox" id="formCheckcolor1" checked="">
+                                            <label class="form-check-label" for="formCheckcolor1">
+                                                Homa Bay Town
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-primary mb-3">
+                                            <input class="form-check-input" type="checkbox" id="formCheckcolor2" checked="">
+                                            <label class="form-check-label" for="formCheckcolor2">
+                                                Rachuonyo South
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-primary mb-3">
+                                            <input class="form-check-input" type="checkbox" id="formCheckcolor3" checked="">
+                                            <label class="form-check-label" for="formCheckcolor3">
+                                                Rachuonyo North
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-primary mb-3">
+                                            <input class="form-check-input" type="checkbox" id="formCheckcolor4" checked="">
+                                            <label class="form-check-label" for="formCheckcolor4">
+                                                Rangwe
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-primary mb-3">
+                                            <input class="form-check-input" type="checkbox" id="formCheckcolor5" checked="">
+                                            <label class="form-check-label" for="formCheckcolor5">
+                                                Ndhiwa
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-primary mb-3">
+                                            <input class="form-check-input" type="checkbox" id="formCheckcolor6" checked="">
+                                            <label class="form-check-label" for="formCheckcolor6">
+                                                Suba South
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-primary mb-3">
+                                            <input class="form-check-input" type="checkbox" id="formCheckcolor7" checked="">
+                                            <label class="form-check-label" for="formCheckcolor7">
+                                                Suba North
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-primary mb-3">
+                                            <input class="form-check-input" type="checkbox" id="formCheckcolor8" checked="">
+                                            <label class="form-check-label" for="formCheckcolor8">
+                                                Headquarters
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="col-12">
+                                    <a href="PrintDocs/Print Header/multiple page.html"  target="new"  type="button" class="btn btn-primary dropdown-toggle option-selector text-capitalize w-100 mt-5">
+                                        <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                           
+                        </div>
+                       
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+             <!-- end of printing Modal -->
 
             <footer class="footer ">
                 <div class="container-fluid ">
