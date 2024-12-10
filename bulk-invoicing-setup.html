@@ -3138,7 +3138,7 @@
                 <div class="modal-dialog modal-dialog-centered ">
                     <div class="modal-content ">
                         <div class="modal-header border-bottom-0 ">
-                            <button type="button " class="btn-close d-none" data-dismiss="modal" aria-label="Close"></button>
+                            <button type="button " class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body p-5">
                             <div class="text-center mb-4 ">
@@ -3163,6 +3163,15 @@
     
                                             </div>
                                             <div class="row ">
+
+                                                <div class="col-6">
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="radio" name="formRadios" id="formRadios3" checked>
+                                                        <label class="form-check-label" for="formRadios3">
+                                                            Phone No.
+                                                        </label>
+                                                    </div>
+                                                </div>
     
                                                 
     
@@ -3175,14 +3184,7 @@
                                                     </div>
                                                 </div>
     
-                                                <div class="col-6">
-                                                    <div class="form-check mb-3">
-                                                        <input class="form-check-input" type="radio" name="formRadios" id="formRadios3">
-                                                        <label class="form-check-label" for="formRadios3">
-                                                            Phone No.
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                               
                                                 <div class="col-12 ">
                                                     <div class="mb-3 ">
                                                         <label for="digit1-input " class="visually-hidden ">ID Number</label>
@@ -3193,12 +3195,12 @@
                                            
     
                                             <div class="col-12 mt-3">
-                                                <button type="button" class="btn btn-primary w-100 patient-search text-uppercase">
+                                                <button type="button" class="btn btn-primary w-100 user-search text-uppercase">
                                                     <div class="spinner-border text-white  d-none m-0" height="20px" width="20px" role="status">
                                                         <span class="sr-only">Loading...</span>
                                                     </div>
         
-                                                    <div><i class="bx bx-search"></i> Search</div>
+                                                    <div class="icon-txt"><i class="bx bx-search"></i> Search</div>
                                                 </button>
                                             </div>
     
@@ -3212,6 +3214,79 @@
                 </div>
             </div>
               <!-- end of searching -->
+
+              <!-- system user serach results -->
+              <div class="modal fade" id="searchResultList" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-capitalize" id="exampleModalLongTitle">Search results based on your search input</h5>
+                      <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg-warning border-2 bg-soft p-3 mb-4 d-flex align-items-center">
+                            <i class="mdi mdi-text-box-search-outline  font-28 mr-15px"></i>
+                            <p class="fw-semibold mb-0 pb-0 text-uppercase">Search results for : <span class="text-underline text-uppercase text-primary">Phone 07045498</span></p>
+                        </div>
+    
+                        <table class="table table-striped table-s font-12 sources-table">
+                            <thead>
+                                <tr class="font-weight-bold table-dark">
+                                    <th scope="col" colspan="8">
+                                        <i class="mdi mdi-account-group fs-5 text"></i> Search Results
+                                    </th>
+                                </tr>
+                                <tr class="table-primary">
+                                    <th><input type="radio" name="patient-selection" /></th>
+                                    <th>User Name</th>
+                                    <th>Phone No.</th>
+                                    <th>Email</th>
+                                    <th>ID NO.</th>
+                                    <th>Phone No.</th>
+                                    <th>Sub County</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="radio" name="patient-selection" /></td>
+                                    <td>John Mwangi</td>
+                                    <td>0712345678</td>
+                                    <td>john.mwangi@example.com</td>
+                                    <td>12345678</td>
+                                    <td>0712345678</td>
+                                    <td>Mbita</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="patient-selection" /></td>
+                                    <td>Mary Wambui</td>
+                                    <td>0723456789</td>
+                                    <td>mary.wambui@example.com</td>
+                                    <td>23456789</td>
+                                    <td>0723456789</td>
+                                    <td>Rachuonyo North</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="patient-selection" /></td>
+                                    <td>James Otieno</td>
+                                    <td>0734567890</td>
+                                    <td>james.otieno@example.com</td>
+                                    <td>34567890</td>
+                                    <td>0734567890</td>
+                                    <td>Suba</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary w-100 text-uppercase submit-searched-user" disabled>Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <!-- close of serach results -->
 
             <footer class="footer ">
                 <div class="container-fluid ">
@@ -3412,6 +3487,44 @@
                 }, 2000);
         })
      </script>
+
+<script>
+    $('.user-search').on('click', function () {
+        var theBtn = $(this);
+
+        // Show spinner and hide text
+        $(theBtn).children('.spinner-border').removeClass('d-none');
+        $(theBtn).children('.icon-txt').addClass('d-none');
+
+        // Hide close button in search modal
+        $('#seraschModal').find('.btn-close').addClass('d-none');
+
+        // Initialize or get instance of the search modal
+        var searchModalElement = $('#seraschModal')[0];
+        var searchModal = bootstrap.Modal.getInstance(searchModalElement) || new bootstrap.Modal(searchModalElement);
+
+        setTimeout(function () {
+            // Hide the search modal
+            if (searchModal) {
+                searchModal.hide();
+            }
+
+            // Show the search result list modal
+            var resultListModalElement = $('#searchResultList')[0];
+            var resultListModal = bootstrap.Modal.getInstance(resultListModalElement) || new bootstrap.Modal(resultListModalElement);
+            resultListModal.show();
+
+            // Reset button states
+            $(theBtn).children('.spinner-border').addClass('d-none');
+            $('#seraschModal').find('.btn-close').removeClass('d-none');
+            $(theBtn).children('.icon-txt').removeClass('d-none');
+        }, 2000);
+    });
+</script>
+
+
+
+
 
 
 </body>
