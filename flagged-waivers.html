@@ -604,14 +604,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Fire Permit Register</h4>
+                                <h4 class="mb-sm-0 font-size-18">Invoice Waivers</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Certificates & Licenses</a></li>
-                                        <li class="breadcrumb-item"><a href="cert-fire-stats.html">Fire Permits</a></li>
-                                        <li class="breadcrumb-item active">Fire Permit Register</li>
+                                        <li class="breadcrumb-item"><a href="#">Action Center</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Waivers</a></li>
+                                        
                                     </ol>
                                 </div>
 
@@ -636,19 +636,9 @@
                                         <div class="collapse navbar-collapse justify-content-between active"
                                             id="navbarNavAltMarkup">
                                            <div class="navbar-nav">
-                                                <a class="nav-item nav-link" href="cert-fire-stats.html">Quick Stats</a>
-                                                <a class="nav-item nav-link" href="cert-fire-register.html">Fire Permit Register</a>
-                                                <a class="nav-item nav-link" href="cert-fire-pending.html">Pending Invoices</a>
-                                                <a class="nav-item nav-link" href="cert-fire-potential.html">Potential Businesses</a>
-                                                <a class="nav-item nav-link" href="cert-fire-approval.html">Pending Approval</a>
-                                                <a class="nav-item nav-link" href="cert-fire-active.html">Active Certificates</a>
-                                                <a class="nav-item nav-link" href="cert-fire-expired.html">Expired Certificates</a>
-                                                <a class="nav-item nav-link" href="cert-fire-map.html">Map View</a>
+                                                <a class="nav-item nav-link" href="flagged-waivers.html">Pending Approval</a>
+                                                <a class="nav-item nav-link" href="flagged-waivers-approved.html">Waivered Invoices</a>
                                             </div>
-
-                                            <button data-toggle="modal" data-target=".new-fire-invoice" class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" >Invoice A Business</button>
-                                            
-
                                         </div>
                                     </nav>
                                 </div>
@@ -660,285 +650,215 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div
-                                    class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
-                                        role="toolbar">
-                                        <h4 class="card-title mb-0 text-uppercase ">
-                                            Fire Permit Register
-                                        </h4>
+                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+
+                                    <div class="btn-toolbar p-3 d-flex justify-content-between w-100 flex-row row-flex" role="toolbar">
+                                      <div class="flex-grow-1">
+                                        <div class="search-box mb-0 me-3">
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                                                <i class="bx bx-search-alt search-icon"></i>
+                                            </div>
+                                        </div>
+                                      </div>
+                                        <div class="d-flex">
+                                            <div class="input-group fw-semibold text-uppercase me-3">
+                                                <label class="input-group-text text-uppercase">Sub County</label>
+                                                <select class="form-select ">
+                                                    <option value="" disabled="">Select Sub County</option>
+                                                    <option value="All Patients" selected="">All </option>
+                                                    <option value="Inpatient">Homa bay town</option>
+                                                    <option value="Outpatient">Rachuonyo South</option>                                                        
+                                                </select>
+                                            </div>
+
+                                            <div class="input-group fw-semibold text-uppercase me-3">
+                                                <label class="input-group-text text-uppercase">Status</label>
+                                                <select class="form-select ">
+                                                    <option value="" disabled="">Select Status</option>
+                                                    <option value="All Patients" selected="">All </option>
+                                                    <option value="Inpatient">Paid</option>
+                                                    <option value="Outpatient">Pending</option>                                                        
+                                                </select>
+                                            </div>
+
+                                            <div class="input-group fw-semibold text-uppercase me-3 mx-3">
+                                                <label class="input-group-text text-uppercase">User</label>
+                                                <select class="form-select ">
+                                                    <option value="" disabled="">Select Officer</option>
+                                                    <option value="All Patients" selected="">All </option>
+                                                    <option value="Inpatient">Alex wanjala</option>
+                                                    <option value="Outpatient">Amos Were</option>                                                        
+                                                </select>
+                                            </div>
+
+                                            <div class="input-group fw-semibold text-uppercase">
+                                                <label class="input-group-text text-uppercase">FROM:</label>
+                                                <input class="form-control form-control-sm" type="date" value="2019-08-19" id="example-date-input">
+                                            </div>
+
+                                            <div class="input-group fw-semibold text-uppercase me-3">
+                                                <label class="input-group-text text-uppercase">TO:</label>
+                                                <input class="form-control form-control-sm" type="date" value="2019-08-19" id="example-date-input">
+                                            </div>
+
+                                            <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                                <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                            </button>
+
+                                        </div>
                                     </div>
-                                    <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
-                                        <label class="text-nowrap mb-0">Permit Type:</label>
-                                        <select class="form-select mx-2" title="Select Subcounty">
-                                            <option>All Permit types</option>
-                                            <option>Hotel</option>
-                                            <option>Fire Station</option>
-                                            <option>...</option>
-                                        </select>
-
-                                        <label class="text-nowrap mb-0 mx-2">Sub County:</label>
-                                        <select class="form-select" title="Select Subcounty">
-                                            <option>All Sub Categories</option>
-                                            <option>Homabay Town</option>
-                                            <option>Ndhiwa</option>
-                                            <option>...</option>
-                                        </select>
-
-                                        <label class="text-nowrap mb-0 mx-2">Permit Status:</label>
-                                        <select class="form-select" title="Select Subcounty">
-                                            <option>All Permits</option>
-                                            <option>Invoiced</option>
-                                            <option>Pending Approval</option>
-                                            <option>Active Permits</option>
-                                            <option>Expired Permits</option>
-                                            <option>...</option>
-                                        </select>
+                                    <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
+                                        <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
                                     </div>
                                 </div>
+
+                               
                                 <div class="card-body">
                                     <div class="table-responsive text-nowrap">
-
-                                        <table class="table align-middle table-hover  contacts-table table-striped "
-                                            id="datatable-buttons">
+                                        <table class="table align-middle table-hover contacts-table table-striped text-uppercase" id="datatable-buttons">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
-                                                    <th scope="col">Permit Number</th>
-                                                    <th scope="col">Business ID</th>
+                                                    <th scope="col">Date</th>
                                                     <th scope="col">Invoice Number</th>
-                                                    <th scope="col">Business Name</th>
-                                                    <th scope="col">Date Invoiced</th>
-                                                    <th>Year</th>
-                                                    <th scope="col">Expiry date</th>
-                                                    <th scope="col">Certificate Category</th>
-                                                    <th>Status</th>
-                                                    <th>Approved By</th>
-                                                    <th class="text-right">Amount Invoiced</th>
-                                                    <th class="text-right">Amount Paid</th>
-                                                   
+                                                    <th scope="col">Invoiced To</th>
+                                                    <th scope="col">Waiver Reason</th>
+                                                    <th scope="col">Waiver Item</th>
+                                                    <th scope="col" class="text-right">Waiver Amount</th>
+                                                    <th>Invoice Date</th>
+                                                    <th>Invoice Amount</th>
+                                                    <th>Amount Paid</th>
+                                                    <th>Invoice Bal.</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap">FJG567</td>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                    </td>
-                                                    <td>2024</td>
-                                                    <td>31 Dec 2024</td>
-                                                    <td>Industry</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-success text-uppercase" key="t-new">Approved</span>
-                                                    </td>
-                                                    <td>
-                                                       kelvin Njuguna
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-                                                  
-
-                                                    <td>
+                                                    <td>10/Jan/2025 12:34 AM</td>
+                                                    <td>BILL242342</td>
+                                                    <td>Kengen Energies</td>
+                                                    <td>Penalty for late payment</td>
+                                                    <td class="fw-bold text-black">March 26% Penalty</td>
+                                                    <td class="text-right fw-bold text-black">KES 45,000</td>
+                                                    <td>31 Dec 2024 12:56 AM by Paul Smith</td>
+                                                    <td class="text-right">KES 6,000</td>
+                                                    <td class="text-right">KES 2,000</td>
+                                                    <td class="text-right">KES 4,000</td>
+                                                    <td class="text-right">
                                                         <div class="d-flex justify-content-end align-items-center">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
-                                                                <i
-                                                                    class="bx bx-receipt font-size-16 align-middle me-2"></i>
-                                                                Invoice
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light">Approve Waiver</button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                Print Invoice
                                                             </a>
-
-                                                           
                                                         </div>
                                                     </td>
                                                 </tr>
-
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap">FJG567</td>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                    </td>
-                                                    <td>2024</td>
-                                                    <td>31 Dec 2024</td>
-                                                    <td>Industry</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-warning text-uppercase" key="t-new">Pending Approval</span>
-                                                    </td>
-                                                    <td>
-                                                       kelvin Njuguna
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-                                                  
-
-                                                    <td>
+                                                    <td>11/Jan/2025 9:45 AM</td>
+                                                    <td>INV34234</td>
+                                                    <td>Nairobi Power Co.</td>
+                                                    <td>Penalty waiver for excess tax</td>
+                                                    <td>April 10% Penalty</td>
+                                                    <td class="text-right">KES 30,000</td>
+                                                    <td>15 Dec 2024 10:30 AM by John Doe</td>
+                                                    <td class="text-right">KES 12,000</td>
+                                                    <td class="text-right">KES 5,000</td>
+                                                    <td class="text-right">KES 7,000</td>
+                                                    <td class="text-right">
                                                         <div class="d-flex justify-content-end align-items-center">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
-                                                                <i
-                                                                    class="bx bx-receipt font-size-16 align-middle me-2"></i>
-                                                                Invoice
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light">Approve Waiver</button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                Print Invoice
                                                             </a>
-
-                                                           
                                                         </div>
                                                     </td>
                                                 </tr>
-
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap">FJG567</td>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                    </td>
-                                                    <td>2024</td>
-                                                    <td>31 Dec 2024</td>
-                                                    <td>Industry</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-danger text-uppercase" key="t-new">Expired</span>
-                                                    </td>
-                                                    <td>
-                                                       kelvin Njuguna
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-                                                  
-
-                                                    <td>
+                                                    <td>12/Jan/2025 8:00 AM</td>
+                                                    <td>INV34567</td>
+                                                    <td>Solar Africa Ltd.</td>
+                                                    <td>Waiver on interest charges</td>
+                                                    <td>May 5% Penalty</td>
+                                                    <td class="text-right">KES 20,000</td>
+                                                    <td>10 Dec 2024 9:15 AM by Mary Jane</td>
+                                                    <td class="text-right">KES 10,000</td>
+                                                    <td class="text-right">KES 4,000</td>
+                                                    <td class="text-right">KES 6,000</td>
+                                                    <td class="text-right">
                                                         <div class="d-flex justify-content-end align-items-center">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
-                                                                <i
-                                                                    class="bx bx-receipt font-size-16 align-middle me-2"></i>
-                                                                Invoice
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light">Approve Waiver</button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                Print Invoice
                                                             </a>
-
-                                                           
                                                         </div>
                                                     </td>
                                                 </tr>
-                                               
-
                                                 <tr>
-                                                    <td class="text-capitalize text-nowrap">FJG567</td>
-                                                    <td class="text-capitalize text-nowrap">1234567</td>
-                                                    <td class="text-capitalize text-nowrap">THGY6789UYU</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">The Wire</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">10 Jan 2022 <span
-                                                            class="text-muted">10:56 PM</span>
-                                                            (3 Days Ago)
-                                                    </td>
-                                                    <td>2024</td>
-                                                    <td>31 Dec 2024</td>
-                                                    <td>Industry</td>
-                                                    <td>
-                                                        <span class="badge rounded-pill bg-dark text-uppercase" key="t-new">Invoiced</span>
-                                                    </td>
-                                                    <td>
-                                                       kelvin Njuguna
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 2,000</span>
-                                                    </td>
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 0.00</span>
-                                                    </td>
-                                                  
-
-                                                    <td>
+                                                    <td>13/Jan/2025 1:45 PM</td>
+                                                    <td>INV67890</td>
+                                                    <td>Kenya Telecom</td>
+                                                    <td>Late submission penalty</td>
+                                                    <td>March 8% Penalty</td>
+                                                    <td class="text-right">KES 25,000</td>
+                                                    <td>8 Dec 2024 11:00 AM by George Kariuki</td>
+                                                    <td class="text-right">KES 15,000</td>
+                                                    <td class="text-right">KES 5,000</td>
+                                                    <td class="text-right">KES 5,000</td>
+                                                    <td class="text-right">
                                                         <div class="d-flex justify-content-end align-items-center">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
-                                                                <i
-                                                                    class="bx bx-receipt font-size-16 align-middle me-2"></i>
-                                                                Invoice
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light">Approve Waiver</button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                Print Invoice
                                                             </a>
-
-                                                           
                                                         </div>
                                                     </td>
                                                 </tr>
-                                               
-
-                                                
-
-
-
+                                                <tr>
+                                                    <td>14/Jan/2025 10:00 AM</td>
+                                                    <td>INV98765</td>
+                                                    <td>GigaNet Solutions</td>
+                                                    <td>Penalty for underpayment</td>
+                                                    <td>July 15% Penalty</td>
+                                                    <td class="text-right">KES 35,000</td>
+                                                    <td>5 Dec 2024 2:00 PM by Lucy Wanjiku</td>
+                                                    <td class="text-right">KES 20,000</td>
+                                                    <td class="text-right">KES 7,000</td>
+                                                    <td class="text-right">KES 8,000</td>
+                                                    <td class="text-right">
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light">Approve Waiver</button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                Print Invoice
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <!-- Repeat similar blocks up to row 15 -->
+                                                <tr>
+                                                    <td>15/Jan/2025 11:30 AM</td>
+                                                    <td>INV54321</td>
+                                                    <td>TechWave Ltd.</td>
+                                                    <td>Penalty due to tax review</td>
+                                                    <td>June 12% Penalty</td>
+                                                    <td class="text-right">KES 40,000</td>
+                                                    <td>2 Dec 2024 4:45 PM by Peter Mwangi</td>
+                                                    <td class="text-right">KES 25,000</td>
+                                                    <td class="text-right">KES 10,000</td>
+                                                    <td class="text-right">KES 5,000</td>
+                                                    <td class="text-right">
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light">Approve Waiver</button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                Print Invoice
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <!-- Add up to Row 15 following the same structure -->
                                             </tbody>
-                                            <tfoot class="table-dark">
-                                                <tr>
-
-                                                    <th>
-                                                        23 Certs
-                                                    </th>
-
-
-                                                    <th class="text-nowrap" colspan="4">23 Businesses</th>
-                                                   
-                                                    
-                                                    <td colspan="6" class="text-right">KES 45,000</td>
-                                                    <td class="text-right">KES 89,000</td>
-                                                    <td></td>
-
-                                                </tr>
-
-                                            </tfoot>
                                         </table>
+                                        
                                     </div>
                                 </div>
                             </div>

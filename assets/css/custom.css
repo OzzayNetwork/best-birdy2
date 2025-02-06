@@ -1751,6 +1751,9 @@ opacity: 25%;
     --bs-table-accent-bg: #E1F5FE;
     color: var(--bs-table-striped-color);
 }
+.row-flex{
+    flex-flow: row;
+}
 
 
 
