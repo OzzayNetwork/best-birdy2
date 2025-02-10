@@ -604,7 +604,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Invoice Waivers</h4>
+                                <h4 class="mb-sm-0 font-size-18">Approved Waivers</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -724,147 +724,130 @@
                                         <table class="table align-middle table-hover contacts-table table-striped text-uppercase" id="datatable-buttons">
                                             <thead class="table-light">
                                               <tr class="table-dark">
-                                                <th scope="col">Date</th>
                                                 <th scope="col">Invoice Number</th>
                                                 <th scope="col">Invoiced To</th>
-                                                <th scope="col">Waiver Reason</th>
-                                                <th scope="col">Waiver Item</th>
                                                 <th scope="col" class="text-right">Waiver Amount</th>
-                                                <th>Invoice Date</th>
-                                                <th>Invoice Amount</th>
-                                                <th>Amount Paid</th>
-                                                <th>Invoice Bal.</th>
+                                                <th scope="col">Date Approved</th>
+                                                <th scope="col">Approved By</th>
+                                                <th scope="col">Initiated By</th>
+                                                <th scope="col">Waiver Reason</th>
                                                 <th></th>
                                               </tr>
                                             </thead>
                                             <tbody>
                                               <tr>
-                                                <td>10/Jan/2025 12:34 AM</td>
                                                 <td>BILL242342</td>
                                                 <td>Kengen Energies</td>
-                                                <td>Penalty for late payment</td>
-                                                <td class="fw-bold text-black">March 26% Penalty</td>
                                                 <td class="text-right fw-bold text-black">KES 45,000</td>
-                                                <td>31 Dec 2024 12:56 AM by Paul Smith</td>
-                                                <td class="text-right">KES 6,000</td>
-                                                <td class="text-right">KES 2,000</td>
-                                                <td class="text-right">KES 4,000</td>
-                                                <td class="text-right text-uppercase">
-                                                  <div class="d-flex justify-content-end align-items-center">
-                                                    <button class="btn btn-sm btn-success startWaiver text-uppercase " data-bs-toggle="modal" data-bs-target="#otpModalWaiver">
-                                                      Approve Waiver
-                                                    </button>
-                                                    <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light mx-3">
-                                                      Print Invoice
-                                                    </a>
-                                                    <button class="btn btn-danger btn-sm waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#waiverDecline">
-                                                      Decline Waiver
-                                                    </button>
-                                                  </div>
+                                                <td>10/Jan/2025</td>
+                                                <td>Paul Smith</td>
+                                                <td>Alice Wanjiru</td>
+                                                <td>Payment error correction</td>
+                                               <td class="text-right">
+                                                    <div class="d-flex justify-content-end align-items-center">
+                                                        <button class="btn btn-sm btn-success startWaiver text-uppercase" data-bs-toggle="modal" data-bs-target="#otpModalWaiver">
+                                                          Details
+                                                        </button>
+                                                        <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light mx-3">
+                                                          Print Invoice
+                                                        </a>
+                                                        <button class="btn btn-secondary btn-sm waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#waiverDecline">
+                                                          Revert Waiver
+                                                        </button>
+                                                      </div>
                                                 </td>
                                               </tr>
                                               <tr>
-                                                <td>15/Jan/2025 10:15 AM</td>
                                                 <td>BILL987654</td>
                                                 <td>Kenya Power Ltd</td>
-                                                <td>Early settlement incentive</td>
-                                                <td class="fw-bold text-black">January Discount</td>
                                                 <td class="text-right fw-bold text-black">KES 25,000</td>
-                                                <td>01 Jan 2025 09:30 AM by Jane Doe</td>
-                                                <td class="text-right">KES 30,000</td>
-                                                <td class="text-right">KES 10,000</td>
-                                                <td class="text-right">KES 20,000</td>
-                                                <td class="text-right text-uppercase">
-                                                  <div class="d-flex justify-content-end align-items-center">
-                                                    <button class="btn btn-sm btn-success startWaiver text-uppercase" data-bs-toggle="modal" data-bs-target="#otpModalWaiver">
-                                                      Approve Waiver
-                                                    </button>
-                                                    <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light mx-3">
-                                                      Print Invoice
-                                                    </a>
-                                                    <button class="btn btn-danger btn-sm waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#waiverDecline">
-                                                      Decline Waiver
-                                                    </button>
-                                                  </div>
+                                                <td>15/Jan/2025</td>
+                                                <td>Jane Doe</td>
+                                                <td>James Muli</td>
+                                                <td>System downtime adjustment</td>
+                                                <td class="text-right">
+                                                    <div class="d-flex justify-content-end align-items-center">
+                                                        <button class="btn btn-sm btn-success startWaiver text-uppercase" data-bs-toggle="modal" data-bs-target="#otpModalWaiver">
+                                                          Details
+                                                        </button>
+                                                        <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light mx-3">
+                                                          Print Invoice
+                                                        </a>
+                                                        <button class="btn btn-secondary btn-sm waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#waiverDecline">
+                                                          Revert Waiver
+                                                        </button>
+                                                      </div>
                                                 </td>
                                               </tr>
                                               <tr>
-                                                <td>20/Jan/2025 08:45 AM</td>
                                                 <td>BILL765432</td>
                                                 <td>ABC Holdings</td>
-                                                <td>Penalty for late payment</td>
-                                                <td class="fw-bold text-black">February 15% Penalty</td>
                                                 <td class="text-right fw-bold text-black">KES 15,000</td>
-                                                <td>15 Jan 2025 01:00 PM by John Mwangi</td>
-                                                <td class="text-right">KES 50,000</td>
-                                                <td class="text-right">KES 20,000</td>
-                                                <td class="text-right">KES 30,000</td>
-                                                <td class="text-right text-uppercase">
-                                                  <div class="d-flex justify-content-end align-items-center">
-                                                    <button class="btn btn-sm btn-success startWaiver text-uppercase" data-bs-toggle="modal" data-bs-target="#otpModalWaiver">
-                                                      Approve Waiver
-                                                    </button>
-                                                    <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light mx-3">
-                                                      Print Invoice
-                                                    </a>
-                                                    <button class="btn btn-danger btn-sm waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#waiverDecline">
-                                                      Decline Waiver
-                                                    </button>
-                                                  </div>
+                                                <td>20/Jan/2025</td>
+                                                <td>John Mwangi</td>
+                                                <td>Mary Nduta</td>
+                                                <td>Compliance waiver</td>
+                                               <td class="text-right">
+                                                    <div class="d-flex justify-content-end align-items-center">
+                                                        <button class="btn btn-sm btn-success startWaiver text-uppercase" data-bs-toggle="modal" data-bs-target="#otpModalWaiver">
+                                                          Details
+                                                        </button>
+                                                        <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light mx-3">
+                                                          Print Invoice
+                                                        </a>
+                                                        <button class="btn btn-secondary btn-sm waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#waiverDecline">
+                                                          Revert Waiver
+                                                        </button>
+                                                      </div>
                                                 </td>
                                               </tr>
                                               <tr>
-                                                <td>25/Jan/2025 02:50 PM</td>
                                                 <td>BILL112233</td>
                                                 <td>Blue Ocean Ltd</td>
-                                                <td>Penalty for late payment</td>
-                                                <td class="fw-bold text-black">April 10% Penalty</td>
                                                 <td class="text-right fw-bold text-black">KES 10,000</td>
-                                                <td>20 Jan 2025 10:00 AM by Mark Otieno</td>
-                                                <td class="text-right">KES 40,000</td>
-                                                <td class="text-right">KES 30,000</td>
-                                                <td class="text-right">KES 10,000</td>
-                                                <td class="text-right text-uppercase">
-                                                  <div class="d-flex justify-content-end align-items-center">
-                                                    <button class="btn btn-sm btn-success startWaiver text-uppercase" data-bs-toggle="modal" data-bs-target="#otpModalWaiver">
-                                                      Approve Waiver
-                                                    </button>
-                                                    <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light mx-3">
-                                                      Print Invoice
-                                                    </a>
-                                                    <button class="btn btn-danger btn-sm waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#waiverDecline">
-                                                      Decline Waiver
-                                                    </button>
-                                                  </div>
+                                                <td>25/Jan/2025</td>
+                                                <td>Mark Otieno</td>
+                                                <td>Peter Njoroge</td>
+                                                <td>Penalty dispute settlement</td>
+                                               <td class="text-right">
+                                                    <div class="d-flex justify-content-end align-items-center">
+                                                        <button class="btn btn-sm btn-success startWaiver text-uppercase" data-bs-toggle="modal" data-bs-target="#otpModalWaiver">
+                                                          Details
+                                                        </button>
+                                                        <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light mx-3">
+                                                          Print Invoice
+                                                        </a>
+                                                        <button class="btn btn-secondary btn-sm waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#waiverDecline">
+                                                          Revert Waiver
+                                                        </button>
+                                                      </div>
                                                 </td>
                                               </tr>
                                               <tr>
-                                                <td>30/Jan/2025 05:30 PM</td>
                                                 <td>BILL556677</td>
                                                 <td>Green Solutions</td>
-                                                <td>Penalty for late payment</td>
-                                                <td class="fw-bold text-black">May 12% Penalty</td>
                                                 <td class="text-right fw-bold text-black">KES 12,000</td>
-                                                <td>25 Jan 2025 03:30 PM by Susan Kamau</td>
-                                                <td class="text-right">KES 60,000</td>
-                                                <td class="text-right">KES 40,000</td>
-                                                <td class="text-right">KES 20,000</td>
-                                                <td class="text-right text-uppercase">
-                                                  <div class="d-flex justify-content-end align-items-center">
-                                                    <button class="btn btn-sm btn-success startWaiver text-uppercase" data-bs-toggle="modal" data-bs-target="#otpModalWaiver">
-                                                      Approve Waiver
-                                                    </button>
-                                                    <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light mx-3">
-                                                      Print Invoice
-                                                    </a>
-                                                    <button class="btn btn-danger btn-sm waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#waiverDecline">
-                                                      Decline Waiver
-                                                    </button>
-                                                  </div>
+                                                <td>30/Jan/2025</td>
+                                                <td>Susan Kamau</td>
+                                                <td>Lucy Mwangi</td>
+                                                <td>Special consideration for COVID relief</td>
+                                               <td class="text-right">
+                                                    <div class="d-flex justify-content-end align-items-center">
+                                                        <button class="btn btn-sm btn-success startWaiver text-uppercase" data-bs-toggle="modal" data-bs-target="#otpModalWaiver">
+                                                          Details
+                                                        </button>
+                                                        <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light mx-3">
+                                                          Print Invoice
+                                                        </a>
+                                                        <button class="btn btn-secondary btn-sm waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#waiverDecline">
+                                                          Revert Waiver
+                                                        </button>
+                                                      </div>
                                                 </td>
                                               </tr>
-                                              </tbody>
-                                              </table>
+                                            </tbody>
+                                          </table>
+                                          
                                     </div>
                                 </div>
                             </div>
