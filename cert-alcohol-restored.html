@@ -757,22 +757,19 @@
                                 <div class="card-body">
                                     <div class="table-responsive text-nowrap">
 
-                                        <table class="table align-middle table-hover  contacts-table table-striped "
-                                            id="datatable-buttons">
+                                        <table class="table align-middle table-hover contacts-table table-striped" id="datatable-buttons">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th scope="col">Invoice NO.</th>
                                                     <th scope="col">Business</th>
                                                     <th scope="col">Applicant</th>
                                                     <th scope="col">Phone</th>
-                                                    <th>Reason Restored</th>                                                   
-                                                    <!-- kindly note the licence sub category will be picked during insopection to be displayed here as opposed to showiing the business sub category -->
+                                                    <th>Reason Restored</th>
                                                     <th scope="col">Licence Sub Category</th>
                                                     <th scope="col">Application Duration</th>
                                                     <th scope="col">Sub County</th>
                                                     <th>Date Inspected</th>
                                                     <th>Date Paid</th>
-                                                   
                                                     <th scope="col" class="text-right">Instalments</th>
                                                     <th scope="col" class="text-right">Amount Paid</th>
                                                     <th class="text-right">Invoiced By</th>
@@ -782,70 +779,101 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <!-- Row 1 -->
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap">FJG567</td>
                                                     <td class="text-capitalize text-nowrap">Big Boyz Club</td>
                                                     <td class="text-capitalize text-nowrap">Amos Wadibo</td>
                                                     <td class="text-capitalize text-nowrap">0702549859</td>
                                                     <td>The applicant complied with the initially raised concerns</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">Bars and Resturants</a>
-                                                    </td>
+                                                    <td class="text-capitalize text-nowrap"><a href="">Bars and Restaurants</a></td>
                                                     <td>12 Months</td>
-                                                    <td>Mwea Sub County</td>
+                                                    <td>Homa Bay Town</td>
                                                     <td>12 Dec 2023 12:45 AM</td>
                                                     <td>22 Dec 2023 10:12 AM</td>
                                                     <td>1 Instalment</td>
-                                                   
-                                                  
-                                                    <td class="text-right">
-                                                        500.00
-                                                    </td>
+                                                    <td class="text-right">500.00</td>
                                                     <td class="text-capitalize">Amos Weru</td>
-                                                    <td class="text-capitalize">
-                                                       kelvin Njuguna
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        Sammy Zayne
-                                                     </td>
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
+                                                    <td class="text-capitalize">Sammy Zayne</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end align-items-center">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
-                                                                <i
-                                                                    class="bx bx-receipt font-size-16 align-middle me-2"></i>
-                                                                Invoice
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap" data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i>Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i>Invoice
                                                             </a>
-
-                                                           
                                                         </div>
                                                     </td>
                                                 </tr>
-
+                                        
+                                                <!-- Row 2 -->
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">FJG568</td>
+                                                    <td class="text-capitalize text-nowrap">Green Valley Hotel</td>
+                                                    <td class="text-capitalize text-nowrap">Jane Doe</td>
+                                                    <td class="text-capitalize text-nowrap">0701234567</td>
+                                                    <td>All requirements were met</td>
+                                                    <td class="text-capitalize text-nowrap"><a href="">Hotels</a></td>
+                                                    <td>6 Months</td>
+                                                    <td>Rangwe</td>
+                                                    <td>15 Dec 2023 10:00 AM</td>
+                                                    <td>25 Dec 2023 11:30 AM</td>
+                                                    <td>2 Instalments</td>
+                                                    <td class="text-right">750.00</td>
+                                                    <td class="text-capitalize">John Kimani</td>
+                                                    <td class="text-capitalize">Lucy Wanjiru</td>
+                                                    <td class="text-capitalize">Peter Kamau</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap" data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i>Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i>Invoice
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Row 3 -->
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">FJG569</td>
+                                                    <td class="text-capitalize text-nowrap">Sunset Bar</td>
+                                                    <td class="text-capitalize text-nowrap">Michael Otieno</td>
+                                                    <td class="text-capitalize text-nowrap">0709876543</td>
+                                                    <td>Complied with health regulations</td>
+                                                    <td class="text-capitalize text-nowrap"><a href="">Bars and Restaurants</a></td>
+                                                    <td>12 Months</td>
+                                                    <td>Ndhiwa</td>
+                                                    <td>18 Dec 2023 09:00 AM</td>
+                                                    <td>28 Dec 2023 03:00 PM</td>
+                                                    <td>1 Instalment</td>
+                                                    <td class="text-right">600.00</td>
+                                                    <td class="text-capitalize">Mary Wambui</td>
+                                                    <td class="text-capitalize">James Mwangi</td>
+                                                    <td class="text-capitalize">Grace Njeri</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap" data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i>Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i>Invoice
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Add more rows here (up to 20) following the same structure -->
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
-
-                                                    <th colspan="11">
-                                                        23 Applications
-                                                    </th>
-
-                                                    
-                                                   
-                                                    <th  class="text-right">
-                                                        500.00
-                                                    </th>
-
-                                                    
+                                                    <th colspan="11">23 Applications</th>
+                                                    <th class="text-right">500.00</th>
                                                     <th colspan="4"></th>
                                                 </tr>
-
                                             </tfoot>
                                         </table>
                                     </div>

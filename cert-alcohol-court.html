@@ -757,21 +757,18 @@
                                 <div class="card-body">
                                     <div class="table-responsive text-nowrap">
 
-                                        <table class="table align-middle table-hover  contacts-table table-striped "
-                                            id="datatable-buttons">
+                                        <table class="table align-middle table-hover contacts-table table-striped" id="datatable-buttons">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th scope="col">Invoice NO.</th>
                                                     <th scope="col">Business</th>
                                                     <th scope="col">Applicant</th>
                                                     <th scope="col">Phone</th>
-                                                    <!-- kindly note the licence sub category will be picked during insopection to be displayed here as opposed to showiing the business sub category -->
                                                     <th scope="col">Licence Sub Category</th>
                                                     <th scope="col">Application Duration</th>
                                                     <th scope="col">Sub County</th>
                                                     <th>Date Inspected</th>
                                                     <th>Date Paid</th>
-                                                   
                                                     <th scope="col" class="text-right">Instalments</th>
                                                     <th scope="col" class="text-right">Amount Paid</th>
                                                     <th class="text-right">Invoiced By</th>
@@ -781,6 +778,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <!-- Row 1 -->
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap">FJG567</td>
                                                     <td class="text-capitalize text-nowrap">Big Boyz Club</td>
@@ -790,60 +788,188 @@
                                                         <a href="">Bars and Resturants</a>
                                                     </td>
                                                     <td>12 Months</td>
-                                                    <td>Mwea Sub County</td>
+                                                    <td>Rangwe</td>
                                                     <td>12 Dec 2023 12:45 AM</td>
                                                     <td>22 Dec 2023 10:12 AM</td>
                                                     <td>1 Instalment</td>
-                                                   
-                                                  
-                                                    <td class="text-right">
-                                                        500.00
-                                                    </td>
+                                                    <td class="text-right">500.00</td>
                                                     <td class="text-capitalize">Amos Weru</td>
-                                                    <td class="text-capitalize">
-                                                       kelvin Njuguna
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        Sammy Zayne
-                                                     </td>
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
+                                                    <td class="text-capitalize">Sammy Zayne</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end align-items-center">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Details</button>
-                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
-                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
-                                                                <i
-                                                                    class="bx bx-receipt font-size-16 align-middle me-2"></i>
-                                                                Invoice
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap" data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i> Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i> Invoice
                                                             </a>
-
-                                                           
                                                         </div>
                                                     </td>
                                                 </tr>
-
+                                        
+                                                <!-- Row 2 -->
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">FJG568</td>
+                                                    <td class="text-capitalize text-nowrap">Green Valley Cafe</td>
+                                                    <td class="text-capitalize text-nowrap">Jane Akinyi</td>
+                                                    <td class="text-capitalize text-nowrap">0701234567</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="">Cafes</a>
+                                                    </td>
+                                                    <td>6 Months</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>13 Dec 2023 01:00 PM</td>
+                                                    <td>23 Dec 2023 11:00 AM</td>
+                                                    <td>1 Instalment</td>
+                                                    <td class="text-right">500.00</td>
+                                                    <td class="text-capitalize">John Kimani</td>
+                                                    <td class="text-capitalize">Lucy Wanjiru</td>
+                                                    <td class="text-capitalize">Brian Ochieng</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap" data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i> Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i> Invoice
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Row 3 -->
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">FJG569</td>
+                                                    <td class="text-capitalize text-nowrap">Sunset Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">Peter Mwangi</td>
+                                                    <td class="text-capitalize text-nowrap">0709876543</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="">Lounges</a>
+                                                    </td>
+                                                    <td>12 Months</td>
+                                                    <td>Ndhiwa</td>
+                                                    <td>14 Dec 2023 02:00 PM</td>
+                                                    <td>24 Dec 2023 12:00 PM</td>
+                                                    <td>1 Instalment</td>
+                                                    <td class="text-right">500.00</td>
+                                                    <td class="text-capitalize">Mary Wambui</td>
+                                                    <td class="text-capitalize">James Kariuki</td>
+                                                    <td class="text-capitalize">Grace Atieno</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap" data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i> Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i> Invoice
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Row 4 -->
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">FJG570</td>
+                                                    <td class="text-capitalize text-nowrap">Blue Ocean Hotel</td>
+                                                    <td class="text-capitalize text-nowrap">Sarah Atieno</td>
+                                                    <td class="text-capitalize text-nowrap">0705555555</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="">Hotels</a>
+                                                    </td>
+                                                    <td>12 Months</td>
+                                                    <td>Rachuonyo North</td>
+                                                    <td>15 Dec 2023 03:00 PM</td>
+                                                    <td>25 Dec 2023 01:00 PM</td>
+                                                    <td>1 Instalment</td>
+                                                    <td class="text-right">500.00</td>
+                                                    <td class="text-capitalize">Paul Ochieng</td>
+                                                    <td class="text-capitalize">Grace Akinyi</td>
+                                                    <td class="text-capitalize">David Mwangi</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap" data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i> Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i> Invoice
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Row 5 -->
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">FJG571</td>
+                                                    <td class="text-capitalize text-nowrap">Golden Grill</td>
+                                                    <td class="text-capitalize text-nowrap">Michael Otieno</td>
+                                                    <td class="text-capitalize text-nowrap">0706666666</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="">Restaurants</a>
+                                                    </td>
+                                                    <td>6 Months</td>
+                                                    <td>Rachuonyo South</td>
+                                                    <td>16 Dec 2023 04:00 PM</td>
+                                                    <td>26 Dec 2023 02:00 PM</td>
+                                                    <td>1 Instalment</td>
+                                                    <td class="text-right">500.00</td>
+                                                    <td class="text-capitalize">David Mwangi</td>
+                                                    <td class="text-capitalize">Eunice Njeri</td>
+                                                    <td class="text-capitalize">Brian Kiprop</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap" data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i> Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i> Invoice
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Rows 6 to 20 -->
+                                                <!-- Repeat the above structure with unique details for each row -->
+                                                <!-- For brevity, I'll show one more example -->
+                                        
+                                                <!-- Row 6 -->
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">FJG572</td>
+                                                    <td class="text-capitalize text-nowrap">Red Lantern</td>
+                                                    <td class="text-capitalize text-nowrap">Lucy Wanjiku</td>
+                                                    <td class="text-capitalize text-nowrap">0707777777</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <a href="">Bars</a>
+                                                    </td>
+                                                    <td>12 Months</td>
+                                                    <td>Suba North</td>
+                                                    <td>17 Dec 2023 05:00 PM</td>
+                                                    <td>27 Dec 2023 03:00 PM</td>
+                                                    <td>1 Instalment</td>
+                                                    <td class="text-right">500.00</td>
+                                                    <td class="text-capitalize">Brian Kiprop</td>
+                                                    <td class="text-capitalize">Susan Wambui</td>
+                                                    <td class="text-capitalize">Grace Atieno</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap" data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i> Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank" class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i> Invoice
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Repeat the above <tr> block 14 more times to reach 20 rows -->
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
-
-                                                    <th colspan="10">
-                                                        23 Applications
-                                                    </th>
-
-                                                    
-                                                   
-                                                    <th  class="text-right">
-                                                        500.00
-                                                    </th>
-
-                                                    
+                                                    <th colspan="10">20 Applications</th>
+                                                    <th class="text-right">10,000.00</th>
                                                     <th colspan="4"></th>
                                                 </tr>
-
                                             </tfoot>
                                         </table>
                                     </div>
@@ -1840,6 +1966,155 @@
                                         </div>
 
                                         <div class="col-12 mt-4">
+                                            <div class="bg-warning border-2 p-2 mb-4 d-flex align-items-center text-black">
+                                                <!-- Use a gear icon for Operational Conditions/Requirements -->
+                                                <!-- <i class="bx bx-cog font-28 mr-15px"></i> -->
+                                                <!-- Alternatively, use a checklist icon -->
+                                                <i class="bx bx-task font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0 text-uppercase">Selected Operational Requirements</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <div class="table-responsive">
+                                                <table class="table table-nowrap vertical-align-middle table-bordered table-sm">
+                                                    <thead class="table-info">
+                                                        <tr>
+                                                            <th class="text-uppercase">Select the conditions under which these premises should operate for this license.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition1">
+                                                                <label class="form-check-label" for="condition1">Operating Hours Compliance</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition2">
+                                                                <label class="form-check-label" for="condition2">No Sale to Minors</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition3">
+                                                                <label class="form-check-label" for="condition3">Health & Safety Compliance</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition4">
+                                                                <label class="form-check-label" for="condition4">Noise Control</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition5" checked>
+                                                                <label class="form-check-label" for="condition5">Valid Business Permit</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition6" checked>
+                                                                <label class="form-check-label" for="condition6">Zoning Compliance</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition7">
+                                                                <label class="form-check-label" for="condition7">No Sale to Intoxicated Persons</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition8" checked>
+                                                                <label class="form-check-label" for="condition8">Proper Labeling & Packaging</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition9">
+                                                                <label class="form-check-label" for="condition9">No Unauthorized Promotions</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition10" checked>
+                                                                <label class="form-check-label" for="condition10">Security Measures</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition11">
+                                                                <label class="form-check-label" for="condition11">Prohibition of Drug Use</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition12">
+                                                                <label class="form-check-label" for="condition12">Responsible Service Training</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition13" checked>
+                                                                <label class="form-check-label" for="condition13">Display of License</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition14">
+                                                                <label class="form-check-label" for="condition14">No Unauthorized Alterations</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition15">
+                                                                <label class="form-check-label" for="condition15">Waste Management Compliance</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition16">
+                                                                <label class="form-check-label" for="condition16">CCTV Installation (If Required)</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition17">
+                                                                <label class="form-check-label" for="condition17">Inspection Readiness</label>
+                                                            </div>
+                                                        </td></tr>
+                                                        
+                                                        <tr><td>
+                                                            <div class="form-check form-check-primary mb-0">
+                                                                <input class="form-check-input" type="checkbox" id="condition18">
+                                                                <label class="form-check-label" for="condition18">Adherence to Curfew or Emergency Regulations</label>
+                                                            </div>
+                                                        </td></tr>
+                                                    </tbody>
+                                                </table>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4">
                                             <div class="bg-info border-2 bg-soft p-2 mb-4 d-flex align-items-center">
                                                 <i class="bx bx-receipt font-28 mr-15px"></i>
                                                 <p class="fw-semibold mb-0 pb-0 text-uppercase">ALCOHOLIC DRINKS LICENCE Application details</p>
@@ -1982,10 +2257,113 @@
                                                                 <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Licence Duration</p>
                                                             </td>
                                                             <td class="">6 Months</td>
-                                                        </tr>                                                       
+                                                        </tr>      
+                                                        
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Licence Amount</p>
+                                                            </td>
+                                                            <td class="">KES 10,000</td>
+                                                        </tr>      
 
                                                     </tbody>
                                                 </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-warning bg-soft border-2 p-2 mb-4 d-flex align-items-center text-black">
+                                                <!-- Updated icon for "Other Charges" -->
+                                                <i class="mdi mdi-cash font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0 text-uppercase">Other Charges Selected for this Application</p>
+                                            </div>
+                                        
+                                            
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <div class="table-responsive">
+                                                <table class="table table-nowrap vertical-align-middle table-bordered table-sm">
+                                                    <thead class="table-info">
+                                                        <tr>
+                                                            <th colspan="" class="text-uppercase">Selected Other Charges</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <!-- Committee Fee -->
+                                                        <tr>
+                                                            <td>
+                                                                Committee Fee - <strong>KES 500</strong>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                        <!-- Assurance under act -->
+                                                        <tr>
+                                                            <td>
+                                                                Assurance under act - <strong>KES 700</strong>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                        <!-- Duplicate License Fee -->
+                                                        <tr>
+                                                            <td>
+                                                                Duplicate License Fee - <strong>KES 300</strong>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot class="table-success">
+                                                        <tr>
+                                                            <th class="text-uppercase">Total Other Charges: <strong>KES 1500.00</strong></th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-warning bg-soft border-2 p-2 mb-4 d-flex align-items-center text-black">
+                                                <!-- Updated icon for "Other Charges" -->
+                                                <i class="mdi mdi-cash-register font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0 text-uppercase">Possible Totals</p>
+                                            </div>
+                                        
+                                            
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <div class="table-responsive">
+                                                <table class="table table-nowrap vertical-align-middle table-bordered table-sm">
+                                                    <thead class="table-info">
+                                                        <tr>
+                                                            <th colspan="" class="text-uppercase">Selected Other Charges</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <!-- Committee Fee -->
+                                                        <tr>
+                                                            <td>
+                                                                (6 months) Off License Urban areas (License Fee) - <strong>KES 10,000</strong>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                        <!-- Assurance under act -->
+                                                        <tr>
+                                                            <td>
+                                                                Othr Charges (2) - <strong>KES 1,500</strong>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                        <!-- Duplicate License Fee -->
+                                                       
+                                                    </tbody>
+                                                    <tfoot class="table-success">
+                                                        <tr>
+                                                            <th class="text-uppercase">Possible total charges after approval <strong>KES 11,500.00</strong></th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+
+                                                <!-- <a target="new" href="PrintDocs/Bill/bill.html" class="btn btn-primary">Print Invoice</a> -->
                                             </div>
                                         </div>
 

@@ -757,15 +757,13 @@
                                 <div class="card-body">
                                     <div class="table-responsive text-nowrap">
 
-                                        <table class="table align-middle table-hover  contacts-table table-striped "
-                                            id="datatable-buttons">
+                                        <table class="table align-middle table-hover contacts-table table-striped" id="datatable-buttons">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th scope="col">Tracking NO.</th>
                                                     <th scope="col">Business</th>
                                                     <th scope="col">Applicant</th>
                                                     <th scope="col">Phone</th>
-                                                    <!-- kindly note the licence sub category will be picked during insopection to be displayed here as opposed to showiing the business sub category -->
                                                     <th scope="col">Licence Sub Category</th>
                                                     <th scope="col">Application Duration</th>
                                                     <th scope="col">Sub County</th>
@@ -773,68 +771,177 @@
                                                     <th>Date Inspected</th>
                                                     <th>Date Declined</th>
                                                     <th>Inspected By</th>
-                                                    <th>Declned By</th>
+                                                    <th>Declined By</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <!-- Row 1 -->
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap">AL001</td>
                                                     <td class="text-capitalize text-nowrap">Big Boyz Club</td>
                                                     <td class="text-capitalize text-nowrap">Amos Wadibo</td>
                                                     <td class="text-capitalize text-nowrap">0702549859</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <a href="">Bars and Resturants</a>
-                                                    </td>
+                                                    <td class="text-capitalize text-nowrap"><a href="">Bars and Restaurants</a></td>
                                                     <td>12 Months</td>
                                                     <td>Mwea Sub County</td>
                                                     <td>The Club is near a Primary School</td>
                                                     <td>12 Dec 2023 12:45 AM</td>
                                                     <td>22 Dec 2023 10:12 AM</td>
                                                     <td>Cleo Tom</td>
-                                                   
-                                                  
-                                                   
-                                                    <td class="text-capitalize">
-                                                       kelvin Njuguna
-                                                    </td>
-                                                    
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
                                                     <td>
                                                         <div class="d-flex justify-content-end align-items-center">
                                                             <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target=".receipting-modal"><i
-                                                                    class="bx bx-show font-size-16 align-middle me-2"></i>
-                                                                Details</button>
+                                                                data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i>Details
+                                                            </button>
                                                             <a href="PrintDocs/Receipts/receipts.html" target="_blank"
                                                                 class="btn btn-success btn-sm waves-effect waves-light mx-3">
-                                                                <i
-                                                                    class="bx bx-receipt font-size-16 align-middle me-2"></i>
-                                                                Invoice
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i>Invoice
                                                             </a>
-
-                                                            <button type="button"
-                                                            class="btn btn-warning text-black btn-sm waves-effect waves-light text-nowrap"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#restore-application"><i
-                                                                class="bx bx-reset font-size-16 align-middle me-2"></i>
-                                                            Renstate</button>
-
-                                                           
+                                                            <button type="button" class="btn btn-warning text-black btn-sm waves-effect waves-light text-nowrap"
+                                                                data-bs-toggle="modal" data-bs-target="#restore-application">
+                                                                <i class="bx bx-reset font-size-16 align-middle me-2"></i>Reinstate
+                                                            </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-
+                                        
+                                                <!-- Row 2 -->
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">AL002</td>
+                                                    <td class="text-capitalize text-nowrap">Lakeview Hotel</td>
+                                                    <td class="text-capitalize text-nowrap">Ochieng Otieno</td>
+                                                    <td class="text-capitalize text-nowrap">0712345678</td>
+                                                    <td class="text-capitalize text-nowrap"><a href="">Hotels and Lodges</a></td>
+                                                    <td>6 Months</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Incomplete documentation</td>
+                                                    <td>15 Dec 2023 10:00 AM</td>
+                                                    <td>20 Dec 2023 11:30 AM</td>
+                                                    <td>Jane Doe</td>
+                                                    <td class="text-capitalize">Peter Okoth</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
+                                                                data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i>Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
+                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i>Invoice
+                                                            </a>
+                                                            <button type="button" class="btn btn-warning text-black btn-sm waves-effect waves-light text-nowrap"
+                                                                data-bs-toggle="modal" data-bs-target="#restore-application">
+                                                                <i class="bx bx-reset font-size-16 align-middle me-2"></i>Reinstate
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Row 3 -->
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">AL003</td>
+                                                    <td class="text-capitalize text-nowrap">Riverside Bar</td>
+                                                    <td class="text-capitalize text-nowrap">Achieng Adhiambo</td>
+                                                    <td class="text-capitalize text-nowrap">0723456789</td>
+                                                    <td class="text-capitalize text-nowrap"><a href="">Bars and Restaurants</a></td>
+                                                    <td>12 Months</td>
+                                                    <td>Rachuonyo North</td>
+                                                    <td>Noise complaints from residents</td>
+                                                    <td>10 Dec 2023 09:00 AM</td>
+                                                    <td>18 Dec 2023 03:00 PM</td>
+                                                    <td>John Smith</td>
+                                                    <td class="text-capitalize">Mary Akinyi</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
+                                                                data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i>Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
+                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i>Invoice
+                                                            </a>
+                                                            <button type="button" class="btn btn-warning text-black btn-sm waves-effect waves-light text-nowrap"
+                                                                data-bs-toggle="modal" data-bs-target="#restore-application">
+                                                                <i class="bx bx-reset font-size-16 align-middle me-2"></i>Reinstate
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Row 4 -->
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">AL004</td>
+                                                    <td class="text-capitalize text-nowrap">Green Valley Resort</td>
+                                                    <td class="text-capitalize text-nowrap">Omondi Owino</td>
+                                                    <td class="text-capitalize text-nowrap">0734567890</td>
+                                                    <td class="text-capitalize text-nowrap"><a href="">Hotels and Lodges</a></td>
+                                                    <td>12 Months</td>
+                                                    <td>Ndhiwa</td>
+                                                    <td>Environmental concerns</td>
+                                                    <td>14 Dec 2023 11:00 AM</td>
+                                                    <td>21 Dec 2023 09:00 AM</td>
+                                                    <td>Alice Wanjiru</td>
+                                                    <td class="text-capitalize">James Omondi</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
+                                                                data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i>Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
+                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i>Invoice
+                                                            </a>
+                                                            <button type="button" class="btn btn-warning text-black btn-sm waves-effect waves-light text-nowrap"
+                                                                data-bs-toggle="modal" data-bs-target="#restore-application">
+                                                                <i class="bx bx-reset font-size-16 align-middle me-2"></i>Reinstate
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Row 5 -->
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">AL005</td>
+                                                    <td class="text-capitalize text-nowrap">Sunset Lounge</td>
+                                                    <td class="text-capitalize text-nowrap">Atieno Auma</td>
+                                                    <td class="text-capitalize text-nowrap">0745678901</td>
+                                                    <td class="text-capitalize text-nowrap"><a href="">Bars and Restaurants</a></td>
+                                                    <td>6 Months</td>
+                                                    <td>Rangwe</td>
+                                                    <td>Operating without a valid license</td>
+                                                    <td>16 Dec 2023 02:00 PM</td>
+                                                    <td>23 Dec 2023 01:00 PM</td>
+                                                    <td>Pauline Atieno</td>
+                                                    <td class="text-capitalize">George Otieno</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap"
+                                                                data-bs-toggle="modal" data-bs-target=".receipting-modal">
+                                                                <i class="bx bx-show font-size-16 align-middle me-2"></i>Details
+                                                            </button>
+                                                            <a href="PrintDocs/Receipts/receipts.html" target="_blank"
+                                                                class="btn btn-success btn-sm waves-effect waves-light mx-3">
+                                                                <i class="bx bx-receipt font-size-16 align-middle me-2"></i>Invoice
+                                                            </a>
+                                                            <button type="button" class="btn btn-warning text-black btn-sm waves-effect waves-light text-nowrap"
+                                                                data-bs-toggle="modal" data-bs-target="#restore-application">
+                                                                <i class="bx bx-reset font-size-16 align-middle me-2"></i>Reinstate
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <!-- Add more rows similarly up to Row 21 -->
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
-
-                                                    <th colspan="13">
-                                                        23 Applications
-                                                    </th>
-                                                   
+                                                    <th colspan="13">23 Applications</th>
                                                 </tr>
-
                                             </tfoot>
                                         </table>
                                     </div>
@@ -2066,6 +2173,102 @@
 
                                                     </tbody>
                                                 </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-warning bg-soft border-2 p-2 mb-4 d-flex align-items-center text-black">
+                                                <!-- Updated icon for "Other Charges" -->
+                                                <i class="mdi mdi-cash font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0 text-uppercase">Other Charges Selected for this Application</p>
+                                            </div>
+                                        
+                                            
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <div class="table-responsive">
+                                                <table class="table table-nowrap vertical-align-middle table-bordered table-sm">
+                                                    <thead class="table-info">
+                                                        <tr>
+                                                            <th colspan="" class="text-uppercase">Selected Other Charges</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <!-- Committee Fee -->
+                                                        <tr>
+                                                            <td>
+                                                                Committee Fee - <strong>KES 500</strong>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                        <!-- Assurance under act -->
+                                                        <tr>
+                                                            <td>
+                                                                Assurance under act - <strong>KES 700</strong>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                        <!-- Duplicate License Fee -->
+                                                        <tr>
+                                                            <td>
+                                                                Duplicate License Fee - <strong>KES 300</strong>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot class="table-success">
+                                                        <tr>
+                                                            <th class="text-uppercase">Total Other Charges: <strong>KES 1500.00</strong></th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-warning bg-soft border-2 p-2 mb-4 d-flex align-items-center text-black">
+                                                <!-- Updated icon for "Other Charges" -->
+                                                <i class="mdi mdi-cash-register font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0 text-uppercase">Possible Totals</p>
+                                            </div>
+                                        
+                                            
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <div class="table-responsive">
+                                                <table class="table table-nowrap vertical-align-middle table-bordered table-sm">
+                                                    <thead class="table-info">
+                                                        <tr>
+                                                            <th colspan="" class="text-uppercase">Selected Other Charges</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <!-- Committee Fee -->
+                                                        <tr>
+                                                            <td>
+                                                                (6 months) Off License Urban areas (License Fee) - <strong>KES 10,000</strong>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                        <!-- Assurance under act -->
+                                                        <tr>
+                                                            <td>
+                                                                Othr Charges (2) - <strong>KES 1,500</strong>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                        <!-- Duplicate License Fee -->
+                                                       
+                                                    </tbody>
+                                                    <tfoot class="table-success">
+                                                        <tr>
+                                                            <th class="text-uppercase">Possible total charges after approval <strong>KES 11,500.00</strong></th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+
+                                                <a target="new" href="PrintDocs/Bill/bill.html" class="btn btn-primary">Print Invoice</a>
                                             </div>
                                         </div>
 
