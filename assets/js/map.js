@@ -1272,7 +1272,7 @@ const Mapchart=Highcharts.mapChart('Map-data', {
             style: {
                 fontFamily: '"Poppins",sans-serif'
             },
-           "mapData":migoriCounty,
+           "mapData":kajiadoMapData,
           "data": [
     { "id": "id0", "y": 0, "value": 1, "target": 30000, "Collections": 24000 },   // Langata North
     { "id": "id1", "y": 1, "value": 19, "target": 25000, "Collections": 20000 },  // Dagoreti South
