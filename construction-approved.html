@@ -660,97 +660,282 @@
 
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table align-middle table-striped table-nowrap table-hover  contacts-table" id="datatable-buttons">
+                                        <table class="table align-middle table-striped table-nowrap table-hover contacts-table" id="datatable-buttons">
                                             <thead class="table-dark">
-                                              <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Application Date</th>
-                                                <th scope="col">Application Number</th>                                                
-                                                <th scope="col">Project Name</th>
-                                                <th scope="col">Development Type</th>
-                                                <th scope="col">Sub County</th>
-                                                <th scope="col">Ward</th>
-                                                <th scope="col">Plot Number</th>
-                                                <th scope="col">Approval Date</th>
-                                                <th scope="col">Approved By</th>
-                                                <th scope="col" class="text-right">Permit Fee Paid</th>
-                                                <th scope="col">Permit Number</th>
-                                                <th></th>
-                                              </tr>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Application Date</th>
+                                                    <th scope="col">Application Number</th>                                                
+                                                    <th scope="col">Project Name</th>
+                                                    <th scope="col">Development Type</th>
+                                                    <th scope="col">Sub County</th>
+                                                    <th scope="col">Ward</th>
+                                                    <th scope="col">Plot Number</th>
+                                                    <th scope="col">Approval Date</th>
+                                                    <th scope="col">Approved By</th>
+                                                    <th scope="col" class="text-right">Permit Fee Paid</th>
+                                                    <th scope="col">Permit Number</th>
+                                                    <th></th>
+                                                </tr>
                                             </thead>
-                                                                                  
+                                                                                                              
                                             <tbody>
-                                              <tr>
-                                                <td class="text-capitalize">1.</td>
-                                                <td class="text-capitalize">2023-05-18</td>
-                                                <td>BPA-2023-001</td>
-                                                <td>Proposed Residential House</td>
-                                                <td>New Buildings</td>
-                                                <td>Homa Bay Town</td>
-                                                <td>Arujo</td>  
-                                                <td>LR 1234/567</td>
-                                                <td>2023-05-20</td>
-                                                <td>John Doe</td>
-                                                <td class="text-black text-uppercase text-right"><strong>5,000</strong></td>
-                                                <td>PERMIT-001</td>
-                                                <td>
-                                                  <div class="btn-group">
-                                                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
-                                                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                    <ul class="dropdown-menu">
-                                                      <li><a class="dropdown-item" href="#">Download Permit</a></li>
-                                                    </ul>
-                                                  </div>
-                                                </td>  
-                                              </tr>
-                                              <tr>
-                                                <td class="text-capitalize">2.</td>  
-                                                <td class="text-capitalize">2023-05-22</td>
-                                                <td>BPA-2023-003</td>  
-                                                <td>Proposed Warehouse</td>
-                                                <td>Structural Engineering Designs & Supervision</td>  
-                                                <td>Oyugis</td>
-                                                <td>West Kasipul</td>
-                                                <td>LR 4567/890</td>
-                                                <td>2023-05-25</td>
-                                                <td>Jane Smith</td>
-                                                <td class="text-black text-uppercase text-right"><strong>20,000</strong></td>
-                                                <td>PERMIT-002</td>
-                                                <td>
-                                                  <div class="btn-group">
-                                                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>  
-                                                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                    <ul class="dropdown-menu">
-                                                      <li><a class="dropdown-item" href="#">Download Permit</a></li>
-                                                    </ul>
-                                                  </div>
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td class="text-capitalize">3.</td>
-                                                <td class="text-capitalize">2023-05-28</td>
-                                                <td>BPA-2023-005</td>
-                                                <td>Proposed Factory</td>
-                                                <td>Civil Engineering Designs, works & clearing</td>
-                                                <td>Rangwe</td>
-                                                <td>Kagan</td>
-                                                <td>LR 6789/012</td>
-                                                <td>2023-05-30</td>
-                                                <td>Mike Johnson</td>
-                                                <td class="text-black text-uppercase text-right"><strong>30,000</strong></td>
-                                                <td>PERMIT-003</td>
-                                                <td>
-                                                  <div class="btn-group">
-                                                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
-                                                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                    <ul class="dropdown-menu">
-                                                      <li><a class="dropdown-item" href="#">Download Permit</a></li>
-                                                    </ul>
-                                                  </div>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
+                                                <tr>
+                                                    <td class="text-capitalize">1.</td>
+                                                    <td class="text-capitalize">2023-05-18</td>
+                                                    <td>BPA-2023-001</td>
+                                                    <td>Proposed Residential House</td>
+                                                    <td>New Buildings</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Arujo</td>  
+                                                    <td>LR 1234/567</td>
+                                                    <td>2023-05-20</td>
+                                                    <td>John Doe</td>
+                                                    <td class="text-black text-uppercase text-right"><strong>5,000</strong></td>
+                                                    <td>PERMIT-001</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Download Permit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>  
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">2.</td>  
+                                                    <td class="text-capitalize">2023-05-22</td>
+                                                    <td>BPA-2023-003</td>  
+                                                    <td>Proposed Warehouse</td>
+                                                    <td>Structural Engineering Designs & Supervision</td>  
+                                                    <td>Oyugis</td>
+                                                    <td>West Kasipul</td>
+                                                    <td>LR 4567/890</td>
+                                                    <td>2023-05-25</td>
+                                                    <td>Jane Smith</td>
+                                                    <td class="text-black text-uppercase text-right"><strong>20,000</strong></td>
+                                                    <td>PERMIT-002</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>  
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Download Permit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">3.</td>
+                                                    <td class="text-capitalize">2023-05-28</td>
+                                                    <td>BPA-2023-005</td>
+                                                    <td>Proposed Factory</td>
+                                                    <td>Civil Engineering Designs, works & clearing</td>
+                                                    <td>Rangwe</td>
+                                                    <td>Kagan</td>
+                                                    <td>LR 6789/012</td>
+                                                    <td>2023-05-30</td>
+                                                    <td>Mike Johnson</td>
+                                                    <td class="text-black text-uppercase text-right"><strong>30,000</strong></td>
+                                                    <td>PERMIT-003</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Download Permit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">4.</td>
+                                                    <td class="text-capitalize">2023-06-05</td>
+                                                    <td>BPA-2023-007</td>
+                                                    <td>Proposed Shopping Complex</td>
+                                                    <td>Commercial Development</td>
+                                                    <td>Kisumu</td>
+                                                    <td>Nyalenda</td>
+                                                    <td>LR 9012/345</td>
+                                                    <td>2023-06-10</td>
+                                                    <td>Sarah Thompson</td>
+                                                    <td class="text-black text-uppercase text-right"><strong>45,000</strong></td>
+                                                    <td>PERMIT-004</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Download Permit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">5.</td>
+                                                    <td class="text-capitalize">2023-06-12</td>
+                                                    <td>BPA-2023-009</td>
+                                                    <td>Proposed Hospital Extension</td>
+                                                    <td>Healthcare Infrastructure</td>
+                                                    <td>Migori</td>
+                                                    <td>Central</td>
+                                                    <td>LR 3456/789</td>
+                                                    <td>2023-06-15</td>
+                                                    <td>David Wilson</td>
+                                                    <td class="text-black text-uppercase text-right"><strong>25,000</strong></td>
+                                                    <td>PERMIT-005</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Download Permit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">6.</td>
+                                                    <td class="text-capitalize">2023-06-20</td>
+                                                    <td>BPA-2023-011</td>
+                                                    <td>Proposed University Campus</td>
+                                                    <td>Educational Infrastructure</td>
+                                                    <td>Nyatike</td>
+                                                    <td>Kombe</td>
+                                                    <td>LR 7890/123</td>
+                                                    <td>2023-06-25</td>
+                                                    <td>Emily Rodriguez</td>
+                                                    <td class="text-black text-uppercase text-right"><strong>60,000</strong></td>
+                                                    <td>PERMIT-006</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Download Permit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">7.</td>
+                                                    <td class="text-capitalize">2023-06-28</td>
+                                                    <td>BPA-2023-013</td>
+                                                    <td>Proposed Agricultural Processing Plant</td>
+                                                    <td>Industrial Development</td>
+                                                    <td>Rachuonyo</td>
+                                                    <td>Kamhacia</td>
+                                                    <td>LR 2345/678</td>
+                                                    <td>2023-07-02</td>
+                                                    <td>Michael Lee</td>
+                                                    <td class="text-black text-uppercase text-right"><strong>35,000</strong></td>
+                                                    <td>PERMIT-007</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Download Permit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">8.</td>
+                                                    <td class="text-capitalize">2023-07-05</td>
+                                                    <td>BPA-2023-015</td>
+                                                    <td>Proposed Renewable Energy Farm</td>
+                                                    <td>Green Energy Project</td>
+                                                    <td>Suna East</td>
+                                                    <td>Waijah</td>
+                                                    <td>LR 5678/901</td>
+                                                    <td>2023-07-10</td>
+                                                    <td>Jennifer Kim</td>
+                                                    <td class="text-black text-uppercase text-right"><strong>50,000</strong></td>
+                                                    <td>PERMIT-008</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Download Permit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">9.</td>
+                                                    <td class="text-capitalize">2023-07-15</td>
+                                                    <td>BPA-2023-017</td>
+                                                    <td>Proposed Sports Complex</td>
+                                                    <td>Recreational Infrastructure</td>
+                                                    <td>Ndhiwa</td>
+                                                    <td>Kabuoro</td>
+                                                    <td>LR 8901/234</td>
+                                                    <td>2023-07-20</td>
+                                                    <td>Robert Chen</td>
+                                                    <td class="text-black text-uppercase text-right"><strong>40,000</strong></td>
+                                                    <td>PERMIT-009</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Download Permit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">10.</td>
+                                                    <td class="text-capitalize">2023-07-22</td>
+                                                    <td>BPA-2023-019</td>
+                                                    <td>Proposed Research Laboratory</td>
+                                                    <td>Scientific Infrastructure</td>
+                                                    <td>Rongo</td>
+                                                    <td>Miranga</td>
+                                                    <td>LR 4567/890</td>
+                                                    <td>2023-07-28</td>
+                                                    <td>Lisa Rodriguez</td>
+                                                    <td class="text-black text-uppercase text-right"><strong>55,000</strong></td>
+                                                    <td>PERMIT-010</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Download Permit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">11.</td>
+                                                    <td class="text-capitalize">2023-07-30</td>
+                                                    <td>BPA-2023-021</td>
+                                                    <td>Proposed Community Center</td>
+                                                    <td>Social Infrastructure</td>
+                                                    <td>Homabay</td>
+                                                    <td>Township</td>
+                                                    <td>LR 6789/012</td>
+                                                    <td>2023-08-05</td>
+                                                    <td>Thomas Wright</td>
+                                                    <td class="text-black text-uppercase text-right"><strong>35,000</strong></td>
+                                                    <td>PERMIT-011</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Download Permit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                               
 
                                         <!-- Details Modals -->
                                         <div class="modal fade" id="details-1" tabindex="-1" role="dialog"
