@@ -640,13 +640,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Rejected Applications</h4>
+                                <h4 class="mb-sm-0 font-size-18">Construction Professionals</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
                                         <li class="breadcrumb-item active">E Construction</li>
-                                        <li class="breadcrumb-item active">Rejected APplications</li>
+                                        <li class="breadcrumb-item active">Proffessionals</li>
                                     </ol>
                                 </div>
 
@@ -660,114 +660,163 @@
 
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table align-middle table-striped table-nowrap table-hover contacts-table" id="datatable-buttons">
+                                        <table
+                                            class="table align-middle table-striped table-nowrap table-hover dt-responsiv contacts-table"
+                                            id="datatable-buttons">
                                             <thead class="table-dark">
                                                 <tr>
                                                     <th scope="col">#</th>
-                                                    <th scope="col">Application Date</th>
-                                                    <th scope="col">Application Number</th>                                                
-                                                    <th scope="col">Project Name</th>
-                                                    <th scope="col">Development Type</th>
+                                                    <th scope="col">Registration Date</th>
+                                                    <th scope="col">Certificate Number</th>
+                                                    <th scope="col">Professional Name</th>
+                                                    <th scope="col">Profession</th>
+                                                    <th scope="col">Governing Body</th>
                                                     <th scope="col">Sub County</th>
                                                     <th scope="col">Ward</th>
-                                                    <th scope="col">Plot Number</th>
-                                                    <th scope="col">Rejection Date</th>
-                                                    <th scope="col">Rejected By</th>
-                                                    <th scope="col" class="text-right">Reason for Rejection</th>
-                                                    <th scope="col">Notes</th>
+                                                    <th scope="col">Certification Status</th>
+                                                    <th scope="col" class="text-right">Total Applications</th>
+                                                    <th scope="col" class="text-right">Approved</th>
+                                                    <th scope="col" class="text-right">Declined</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
-                                                                                                              
                                             <tbody>
                                                 <tr>
                                                     <td class="text-capitalize">1.</td>
                                                     <td class="text-capitalize">2023-05-18</td>
-                                                    <td>BPA-2023-001</td>
-                                                    <td>Proposed Residential House</td>
-                                                    <td>New Buildings</td>
+                                                    <td>EBK/SE/2023/0045</td>
+                                                    <td>Ochieng Okello</td>
+                                                    <td>Structural Engineer</td>
+                                                    <td>Engineers Board of Kenya</td>
                                                     <td>Homa Bay Town</td>
-                                                    <td>Arujo</td>  
-                                                    <td>LR 1234/567</td>
-                                                    <td>2023-05-20</td>
-                                                    <td>John Doe</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Funding Verification Required</strong></td>
-                                                    <td>Lack of clear financial sustainability plan</td>
+                                                    <td>Arujo</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                    <td class="text-black text-uppercase text-right"><strong>12</strong>
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">8</td>
+                                                    <td class="text-black text-uppercase text-right">2</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#professionalDetailsModal">View
+                                                                Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
+                                                                <li><a class="dropdown-item" href="#">Download
+                                                                        Certificate</a></li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li><a class="dropdown-item text-danger" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-capitalize">2.</td>  
-                                                    <td class="text-capitalize">2023-05-22</td>
-                                                    <td>BPA-2023-003</td>  
-                                                    <td>Proposed Warehouse</td>
-                                                    <td>Structural Engineering Designs & Supervision</td>  
-                                                    <td>Oyugis</td>
-                                                    <td>West Kasipul</td>
-                                                    <td>LR 4567/890</td>
-                                                    <td>2023-05-25</td>
-                                                    <td>Jane Smith</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Zoning Regulation Violation</strong></td>
-                                                    <td>Location does not comply with zoning laws</td>
+                                                    <td class="text-capitalize">2.</td>
+                                                    <td class="text-capitalize">2023-05-20</td>
+                                                    <td>AAK/ARCH/2022/0078</td>
+                                                    <td>Adhiambo Nyambura</td>
+                                                    <td>Architect</td>
+                                                    <td>Architectural Association of Kenya</td>
+                                                    <td>Ndhiwa</td>
+                                                    <td>Kwabwai</td>
+                                                    <td><span class="badge bg-warning">Pending Renewal</span></td>
+                                                    <td class="text-black text-uppercase text-right"><strong>15</strong>
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">10</td>
+                                                    <td class="text-black text-uppercase text-right">3</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>  
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#professionalDetailsModal">View
+                                                                Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
+                                                                <li><a class="dropdown-item" href="#">Download
+                                                                        Certificate</a></li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li><a class="dropdown-item text-danger" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize">3.</td>
-                                                    <td class="text-capitalize">2023-05-28</td>
-                                                    <td>BPA-2023-005</td>
-                                                    <td>Proposed Factory</td>
-                                                    <td>Civil Engineering Designs, works & clearing</td>
-                                                    <td>Rangwe</td>
-                                                    <td>Kagan</td>
-                                                    <td>LR 6789/012</td>
-                                                    <td>2023-05-30</td>
-                                                    <td>Mike Johnson</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Insufficient Safety Documentation</strong></td>
-                                                    <td>Safety plans do not meet building codes</td>
+                                                    <td class="text-capitalize">2023-05-22</td>
+                                                    <td>IEK/CE/2023/0112</td>
+                                                    <td>Otieno Omolo</td>
+                                                    <td>Civil Engineer</td>
+                                                    <td>Institution of Engineers of Kenya</td>
+                                                    <td>Oyugis</td>
+                                                    <td>West Kasipul</td>
+                                                    <td><span class="badge bg-danger">Inactive</span></td>
+                                                    <td class="text-black text-uppercase text-right"><strong>7</strong>
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">5</td>
+                                                    <td class="text-black text-uppercase text-right">1</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#professionalDetailsModal">View
+                                                                Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
+                                                                <li><a class="dropdown-item" href="#">Download
+                                                                        Certificate</a></li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li><a class="dropdown-item text-success" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#activateProfessionalModal">Activate</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize">4.</td>
-                                                    <td class="text-capitalize">2023-06-02</td>
-                                                    <td>BPA-2023-007</td>
-                                                    <td>Proposed Shopping Complex</td>
-                                                    <td>Commercial Development</td>
-                                                    <td>Rachuonyo South</td>
-                                                    <td>Nyalenda</td>
-                                                    <td>LR 9012/345</td>
-                                                    <td>2023-06-05</td>
-                                                    <td>Emily Brown</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Parking Inadequacy</strong></td>
-                                                    <td>Insufficient parking space for proposed development</td>
+                                                    <td class="text-capitalize">2023-06-05</td>
+                                                    <td>AAK/ARCH/2023/0056</td>
+                                                    <td>Akinyi Odhiambo</td>
+                                                    <td>Architect</td>
+                                                    <td>Architectural Association of Kenya</td>
+                                                    <td>Mbita</td>
+                                                    <td>Gembe</td>
+                                                    <td><span class="badge bg-warning">Pending Renewal</span></td>
+                                                    <td class="text-black text-uppercase text-right"><strong>10</strong>
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">7</td>
+                                                    <td class="text-black text-uppercase text-right">2</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#professionalDetailsModal">View
+                                                                Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
+                                                                <li><a class="dropdown-item" href="#">Download
+                                                                        Certificate</a></li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li><a class="dropdown-item text-danger" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -775,353 +824,444 @@
                                                 <tr>
                                                     <td class="text-capitalize">5.</td>
                                                     <td class="text-capitalize">2023-06-10</td>
-                                                    <td>BPA-2023-009</td>
-                                                    <td>Proposed Hospital Extension</td>
-                                                    <td>Healthcare Facility Expansion</td>
-                                                    <td>Rachuonyo South</td>
-                                                    <td>Central</td>
-                                                    <td>LR 3456/789</td>
-                                                    <td>2023-06-15</td>
-                                                    <td>David Wilson</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Environmental Impact Concerns</strong></td>
-                                                    <td>Potential ecological disruption in sensitive area</td>
+                                                    <td>QSK/QS/2023/0089</td>
+                                                    <td>Onyango Otieno</td>
+                                                    <td>Quantity Surveyor</td>
+                                                    <td>Quantity Surveyors of Kenya</td>
+                                                    <td>Rangwe</td>
+                                                    <td>Kagan</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                    <td class="text-black text-uppercase text-right"><strong>15</strong>
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">12</td>
+                                                    <td class="text-black text-uppercase text-right">2</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#professionalDetailsModal">View
+                                                                Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
+                                                                <li><a class="dropdown-item" href="#">Download
+                                                                        Certificate</a></li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li><a class="dropdown-item text-danger" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize">6.</td>
-                                                    <td class="text-capitalize">2023-06-18</td>
-                                                    <td>BPA-2023-011</td>
-                                                    <td>Proposed Resort</td>
-                                                    <td>Tourism Infrastructure</td>
-                                                    <td>Rachuonyo South</td>
-                                                    <td>Kombe</td>
-                                                    <td>LR 7890/123</td>
-                                                    <td>2023-06-22</td>
-                                                    <td>Sarah Green</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Coastal Protection Violation</strong></td>
-                                                    <td>Encroachment on protected coastal zone</td>
+                                                    <td class="text-capitalize">2023-06-15</td>
+                                                    <td>EBK/SE/2023/0223</td>
+                                                    <td>Adhiambo Awuor</td>
+                                                    <td>Structural Engineer</td>
+                                                    <td>Engineers Board of Kenya</td>
+                                                    <td>Ndhiwa</td>
+                                                    <td>Central Kasipul</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                    <td class="text-black text-uppercase text-right"><strong>8</strong>
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">6</td>
+                                                    <td class="text-black text-uppercase text-right">1</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#professionalDetailsModal">View
+                                                                Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
+                                                                <li><a class="dropdown-item" href="#">Download
+                                                                        Certificate</a></li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li><a class="dropdown-item text-danger" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize">7.</td>
-                                                    <td class="text-capitalize">2023-06-25</td>
-                                                    <td>BPA-2023-013</td>
-                                                    <td>Proposed School Building</td>
-                                                    <td>Educational Infrastructure</td>
-                                                    <td>Rachuonyo</td>
-                                                    <td>Kamhacia</td>
-                                                    <td>LR 2345/678</td>
-                                                    <td>2023-06-30</td>
-                                                    <td>Michael Lee</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Land Use Restriction</strong></td>
-                                                    <td>Proposed site not zoned for educational use</td>
+                                                    <td class="text-capitalize">2023-06-20</td>
+                                                    <td>AAK/ARCH/2023/0112</td>
+                                                    <td>Oduor Otieno</td>
+                                                    <td>Architect</td>
+                                                    <td>Architectural Association of Kenya</td>
+                                                    <td>Homa Bay Town</td>
+                                                    <td>Rodi Kopany</td>
+                                                    <td><span class="badge bg-warning">Pending Renewal</span></td>
+                                                    <td class="text-black text-uppercase text-right"><strong>12</strong>
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">9</td>
+                                                    <td class="text-black text-uppercase text-right">2</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#professionalDetailsModal">View
+                                                                Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
+                                                                <li><a class="dropdown-item" href="#">Download
+                                                                        Certificate</a></li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li><a class="dropdown-item text-success" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#activateProfessionalModal">Activate</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize">8.</td>
-                                                    <td class="text-capitalize">2023-07-03</td>
-                                                    <td>BPA-2023-015</td>
-                                                    <td>Proposed Agricultural Processing Plant</td>
-                                                    <td>Industrial Development</td>
-                                                    <td>Suna East</td>
-                                                    <td>Waijah</td>
-                                                    <td>LR 5678/901</td>
-                                                    <td>2023-07-08</td>
-                                                    <td>Jennifer Kim</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Water Resource Impact</strong></td>
-                                                    <td>Potential contamination of local water sources</td>
+                                                    <td class="text-capitalize">2023-06-25</td>
+                                                    <td>IEK/CE/2023/0245</td>
+                                                    <td>Akoth Ochieng</td>
+                                                    <td>Civil Engineer</td>
+                                                    <td>Institution of Engineers of Kenya</td>
+                                                    <td>Oyugis</td>
+                                                    <td>East Kasipul</td>
+                                                    <td><span class="badge bg-danger">Inactive</span></td>
+                                                    <td class="text-black text-uppercase text-right"><strong>6</strong>
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">4</td>
+                                                    <td class="text-black text-uppercase text-right">1</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#professionalDetailsModal">View
+                                                                Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
+                                                                <li><a class="dropdown-item" href="#">Download
+                                                                        Certificate</a></li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li><a class="dropdown-item text-success" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#activateProfessionalModal">Activate</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize">9.</td>
-                                                    <td class="text-capitalize">2023-07-12</td>
-                                                    <td>BPA-2023-017</td>
-                                                    <td>Proposed Telecommunications Tower</td>
-                                                    <td>Infrastructure Development</td>
-                                                    <td>Ndhiwa</td>
-                                                    <td>Kabuoro</td>
-                                                    <td>LR 8901/234</td>
-                                                    <td>2023-07-15</td>
-                                                    <td>Robert Chen</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Aesthetic Concerns</strong></td>
-                                                    <td>Potential visual pollution in scenic area</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
-                                                            </ul>
-                                                        </div>
+                                                    <td class="text-capitalize">2023-07-01</td>
+                                                    <td>QSK/QS/2023/0134</td>
+                                                    <td>Otieno Jaoko</td>
+                                                    <td>Quantity Surveyor</td>
+                                                    <td>Quantity Surveyors of Kenya</td>
+                                                    <td>Mbita</td>
+                                                    <td>Mfangano</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                    <td class="text-black text-uppercase text-right"><strong>14</strong>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">10.</td>
-                                                    <td class="text-capitalize">2023-07-20</td>
-                                                    <td>BPA-2023-019</td>
-                                                    <td>Proposed Renewable Energy Farm</td>
-                                                    <td>Green Energy Project</td>
-                                                    <td>Homa Bay town</td>
-                                                    <td>Miranga</td>
-                                                    <td>LR 4567/890</td>
-                                                    <td>2023-07-25</td>
-                                                    <td>Lisa Rodriguez</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Wildlife Habitat Interference</strong></td>
-                                                    <td>Potential disruption of local ecosystem</td>
+                                                    <td class="text-black text-uppercase text-right">11</td>
+                                                    <td class="text-black text-uppercase text-right">2</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#professionalDetailsModal">View
+                                                                Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">11.</td>
-                                                    <td class="text-capitalize">2023-07-28</td>
-                                                    <td>BPA-2023-021</td>
-                                                    <td>Proposed Multi-Story Parking Garage</td>
-                                                    <td>Urban Infrastructure</td>
-                                                    <td>Homabay</td>
-                                                    <td>Township</td>
-                                                    <td>LR 6789/012</td>
-                                                    <td>2023-08-02</td>
-                                                    <td>Thomas Wright</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Traffic Impact Assessment Incomplete</strong></td>
-                                                    <td>Insufficient traffic flow analysis</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                               
-                                                <tr>
-                                                    <td class="text-capitalize">13.</td>
-                                                    <td class="text-capitalize">2023-08-12</td>
-                                                    <td>BPA-2023-025</td>
-                                                    <td>Proposed Research Laboratory</td>
-                                                    <td>Scientific Infrastructure</td>
-                                                    <td>Suba</td>
-                                                    <td>North</td>
-                                                    <td>LR 2345/678</td>
-                                                    <td>2023-08-18</td>
-                                                    <td>Dr. Elizabeth Wong</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Safety Protocol Gaps</strong></td>
-                                                    <td>Inadequate biosafety and containment measures</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">14.</td>
-                                                    <td class="text-capitalize">2023-08-20</td>
-                                                    <td>BPA-2023-027</td>
-                                                    <td>Proposed Heritage Museum</td>
-                                                    <td>Cultural Infrastructure</td>
-                                                    <td>Rachuonyo South</td>
-                                                    <td>Ahero</td>
-                                                    <td>LR 5678/901</td>
-                                                    <td>2023-08-25</td>
-                                                    <td>Carlos Martinez</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Historical Preservation Concerns</strong></td>
-                                                    <td>Potential damage to adjacent historical sites</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">15.</td>
-                                                    <td class="text-capitalize">2023-08-28</td>
-                                                    <td>BPA-2023-029</td>
-                                                    <td>Proposed Agricultural Research Center</td>
-                                                    <td>Agricultural Innovation</td>
-                                                    <td>Homa Bay town</td>
-                                                    <td>Chache</td>
-                                                    <td>LR 8901/234</td>
-                                                    <td>2023-09-02</td>
-                                                    <td>Karen Phillips</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Land Use Conflict</strong></td>
-                                                    <td>Proposed site overlaps with agricultural preservation zone</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">16.</td>
-                                                    <td class="text-capitalize">2023-09-05</td>
-                                                    <td>BPA-2023-031</td>
-                                                    <td>Proposed Sports Complex</td>
-                                                    <td>Recreational Infrastructure</td>
-                                                    <td>Homa Bay town</td>
-                                                    <td>Central</td>
-                                                    <td>LR 4567/890</td>
-                                                    <td>2023-09-10</td>
-                                                    <td>Marcus Johnson</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Accessibility Non-Compliance</strong></td>
-                                                    <td>Inadequate provisions for persons with disabilities</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">17.</td>
-                                                    <td class="text-capitalize">2023-09-13</td>
-                                                    <td>BPA-2023-033</td>
-                                                    <td>Proposed Eco-Tourism Lodge</td>
-                                                    <td>Tourism Development</td>
-                                                    <td>Homa Bay town</td>
-                                                    <td>Ogembo</td>
-                                                    <td>LR 6789/012</td>
-                                                    <td>2023-09-18</td>
-                                                    <td>Rachel Green</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Environmental Sustainability Concerns</strong></td>
-                                                    <td>Insufficient green building and conservation strategies</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">18.</td>
-                                                    <td class="text-capitalize">2023-09-21</td>
-                                                    <td>BPA-2023-035</td>
-                                                    <td>Proposed Emergency Response Center</td>
-                                                    <td>Public Safety Infrastructure</td>
-                                                    <td>Homa Bay town</td>
-                                                    <td>Homa Bay town</td>
-                                                    <td>LR 9012/345</td>
-                                                    <td>2023-09-26</td>
-                                                    <td>Daniel Rodriguez</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Communication Infrastructure Deficiency</strong></td>
-                                                    <td>Inadequate telecommunications and emergency communication plans</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">19.</td>
-                                                    <td class="text-capitalize">2023-09-29</td>
-                                                    <td>BPA-2023-037</td>
-                                                    <td>Proposed Urban Farming Center</td>
-                                                    <td>Agricultural Innovation</td>
-                                                    <td>Homa Bay town</td>
-                                                    <td>Keumbu</td>
-                                                    <td>LR 2345/678</td>
-                                                    <td>2023-10-04</td>
-                                                    <td>Emma Thompson</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Soil Contamination Risk</strong></td>
-                                                    <td>Potential soil quality issues in proposed site</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">20.</td>
-                                                    <td class="text-capitalize">2023-10-07</td>
-                                                    <td>BPA-2023-039</td>
-                                                    <td>Proposed Renewable Energy Training Center</td>
-                                                    <td>Educational Infrastructure</td>
-                                                    <td>Manga</td>
-                                                    <td>Borabu</td>
-                                                    <td>LR 5678/901</td>
-                                                    <td>2023-10-12</td>
-                                                    <td>Alexander Kim</td>
-                                                    <td class="text-black text-uppercase text-right"><strong>Grid Connection Complexity</strong></td>
-                                                    <td>Unresolved technical challenges for energy grid integration</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#details-3">View Rejection Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download Rejection Notice</a></li>
+                                                                <li><a class="dropdown-item" href="#">Download
+                                                                        Certificate</a></li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li><a class="dropdown-item text-danger" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                       
-                                               
+
+                                        <!-- Deactivate Professional Modal -->
+                                        <div class="modal fade" id="deactivateProfessionalModal" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-danger text-white">
+                                                        <h5 class="modal-title">Deactivate Professional</h5>
+                                                        <button type="button" class="btn-close btn-close-white"
+                                                            data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Professional Name</label>
+                                                                <input type="text" class="form-control"
+                                                                    value="Ochieng Okello" readonly>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Reason for Deactivation <span
+                                                                        class="text-danger">*</span></label>
+                                                                <select class="form-select" required>
+                                                                    <option value="">Select Reason</option>
+                                                                    <option>Professional Misconduct</option>
+                                                                    <option>Expired Certification</option>
+                                                                    <option>Disciplinary Action</option>
+                                                                    <option>Incomplete Documentation</option>
+                                                                    <option>Voluntary Suspension</option>
+                                                                    <option>Other</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3 d-none" id="otherReasonField">
+                                                                <label class="form-label">Specify Other Reason <span
+                                                                        class="text-danger">*</span></label>
+                                                                <textarea class="form-control" rows="3"
+                                                                    placeholder="Provide detailed explanation"></textarea>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Detailed Explanation <span
+                                                                        class="text-danger">*</span></label>
+                                                                <textarea class="form-control" rows="3" required
+                                                                    placeholder="Provide a comprehensive explanation for deactivation"></textarea>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Approved By <span
+                                                                        class="text-danger">*</span></label>
+                                                                <input type="text" class="form-control" required
+                                                                    placeholder="Enter name of approving authority">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Approver's Position <span
+                                                                        class="text-danger">*</span></label>
+                                                                <input type="text" class="form-control" required
+                                                                    placeholder="Enter position of approving authority">
+                                                            </div>
+                                                            <div class="form-check mb-3">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="confirmDeactivation" required>
+                                                                <label class="form-check-label"
+                                                                    for="confirmDeactivation">
+                                                                    I confirm that this deactivation is justified and
+                                                                    follows due process
+                                                                </label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-danger">Deactivate
+                                                            Professional</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Activate Professional Modal -->
+                                        <div class="modal fade" id="activateProfessionalModal" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-success text-white">
+                                                        <h5 class="modal-title">Activate Professional</h5>
+                                                        <button type="button" class="btn-close btn-close-white"
+                                                            data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Professional Name</label>
+                                                                <input type="text" class="form-control"
+                                                                    value="Otieno Omolo" readonly>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Reason for Activation <span
+                                                                        class="text-danger">*</span></label>
+                                                                <select class="form-select" required>
+                                                                    <option value="">Select Reason</option>
+                                                                    <option>Resolved Previous Issues</option>
+                                                                    <option>Documentation Updated</option>
+                                                                    <option>Certification Renewed</option>
+                                                                    <option>Disciplinary Action Completed</option>
+                                                                    <option>Other</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3 d-none" id="otherActivationReasonField">
+                                                                <label class="form-label">Specify Other Reason <span
+                                                                        class="text-danger">*</span></label>
+                                                                <textarea class="form-control" rows="3"
+                                                                    placeholder="Provide detailed explanation"></textarea>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Detailed Explanation <span
+                                                                        class="text-danger">*</span></label>
+                                                                <textarea class="form-control" rows="3" required
+                                                                    placeholder="Provide a comprehensive explanation for activation"></textarea>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Approved By <span
+                                                                        class="text-danger">*</span></label>
+                                                                <input type="text" class="form-control" required
+                                                                    placeholder="Enter name of approving authority">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Approver's Position <span
+                                                                        class="text-danger">*</span></label>
+                                                                <input type="text" class="form-control" required
+                                                                    placeholder="Enter position of approving authority">
+                                                            </div>
+                                                            <div class="form-check mb-3">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="confirmActivation" required>
+                                                                <label class="form-check-label" for="confirmActivation">
+                                                                    I confirm that this activation is justified and
+                                                                    follows due process
+                                                                </label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-success">Activate
+                                                            Professional</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            document.addEventListener('DOMContentLoaded', function () {
+                                                // Deactivation Modal - Other Reason Handling
+                                                const deactivationReasonSelect = document.querySelector(
+                                                    '#deactivateProfessionalModal select');
+                                                const otherDeactivationReasonField = document.getElementById(
+                                                    'otherReasonField');
+
+                                                deactivationReasonSelect.addEventListener('change',
+                                            function () {
+                                                    if (this.value === 'Other') {
+                                                        otherDeactivationReasonField.classList.remove(
+                                                            'd-none');
+                                                    } else {
+                                                        otherDeactivationReasonField.classList.add(
+                                                            'd-none');
+                                                    }
+                                                });
+
+                                                // Activation Modal - Other Reason Handling
+                                                const activationReasonSelect = document.querySelector(
+                                                    '#activateProfessionalModal select');
+                                                const otherActivationReasonField = document.getElementById(
+                                                    'otherActivationReasonField');
+
+                                                activationReasonSelect.addEventListener('change', function () {
+                                                    if (this.value === 'Other') {
+                                                        otherActivationReasonField.classList.remove(
+                                                            'd-none');
+                                                    } else {
+                                                        otherActivationReasonField.classList.add(
+                                                            'd-none');
+                                                    }
+                                                });
+                                            });
+                                        </script>
+
+                                        <!-- Professional Details Modal -->
+                                        <div class="modal fade" id="professionalDetailsModal" tabindex="-1">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Professional Details</h5>
+                                                        <button type="button" class="btn-close btn-close-white"
+                                                            data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <h6>Personal Information</h6>
+                                                                <p><strong>Name:</strong> Ochieng Okello</p>
+                                                                <p><strong>Profession:</strong> Structural Engineer</p>
+                                                                <p><strong>Governing Body:</strong> Engineers Board of
+                                                                    Kenya</p>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h6>Certificate Details</h6>
+                                                                <p><strong>Certificate Number:</strong> EBK/SE/2023/0045
+                                                                </p>
+                                                                <p><strong>Registration Date:</strong> 2023-02-15</p>
+                                                                <p><strong>Certificate Expiry:</strong> 2024-12-31</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-3">
+                                                            <div class="col-12">
+                                                                <h6>Contact Information</h6>
+                                                                <p><strong>Email:</strong>
+                                                                    ochieng.okello@engineering.com</p>
+                                                                <p><strong>Phone:</strong> +254 720 123 456</p>
+                                                                <p><strong>Location:</strong> Homa Bay</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-3">
+                                                            <div class="col-12">
+                                                                <h6>Application Statistics</h6>
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <div class="card text-center">
+                                                                            <div
+                                                                                class="card-body bg-success text-white">
+                                                                                <h5 class="card-title">8</h5>
+                                                                                <p class="card-text">Approved
+                                                                                    Applications</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="card text-center">
+                                                                            <div class="card-body bg-danger text-white">
+                                                                                <h5 class="card-title">2</h5>
+                                                                                <p class="card-text">Declined
+                                                                                    Applications</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="card text-center">
+                                                                            <div class="card-body bg-warning text-dark">
+                                                                                <h5 class="card-title">2</h5>
+                                                                                <p class="card-text">Pending
+                                                                                    Applications</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
                                         <!-- Details Modals -->
                                         <div class="modal fade" id="details-1" tabindex="-1" role="dialog"
                                             aria-labelledby="details-1-label" aria-hidden="true">
@@ -1174,93 +1314,106 @@
                                         <!-- Details Modals -->
                                         <!-- Your table code remains the same -->
 
-<!-- Details Modals -->
-<!-- Your table code remains the same -->
+                                        <!-- Details Modals -->
+                                        <!-- Your table code remains the same -->
 
-<!-- Details Modals -->
-<div class="modal fade" id="details-3" tabindex="-1" role="dialog" aria-labelledby="details-1-label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header ">
-          <h5 class="modal-title" id="details-1-label">Rejected Application: BPA-2023-001</h5>
-          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="alert alert-danger" role="alert">
-            <strong>Rejection Reason:</strong> Incomplete Environmental Impact Assessment
-          </div>
+                                        <!-- Details Modals -->
+                                        <div class="modal fade" id="details-3" tabindex="-1" role="dialog"
+                                            aria-labelledby="details-1-label" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header ">
+                                                        <h5 class="modal-title" id="details-1-label">Rejected
+                                                            Application: BPA-2023-001</h5>
+                                                        <button type="button" class="close text-white"
+                                                            data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="alert alert-danger" role="alert">
+                                                            <strong>Rejection Reason:</strong> Incomplete Environmental
+                                                            Impact Assessment
+                                                        </div>
 
-          <h6>Applicant Details</h6>
-          <p>
-            <strong>Name:</strong> John Doe<br>
-            <strong>Email:</strong> john.doe@example.com<br>
-            <strong>Phone:</strong> +254 (723) 456-7890
-          </p>
+                                                        <h6>Applicant Details</h6>
+                                                        <p>
+                                                            <strong>Name:</strong> John Doe<br>
+                                                            <strong>Email:</strong> john.doe@example.com<br>
+                                                            <strong>Phone:</strong> +254 (723) 456-7890
+                                                        </p>
 
-          <h6>Project Details</h6>
-          <p>
-            <strong>Project Name:</strong> Proposed Residential House<br>
-            <strong>Plot Number:</strong> LR 1234/567<br>
-            <strong>Development Type:</strong> New Buildings<br>
-            <strong>Site Location:</strong> Homa Bay Town, Arujo Ward<br>
-            <strong>Sub County:</strong> Homa Bay Town<br>
-            <strong>Ward:</strong> Arujo
-          </p>
+                                                        <h6>Project Details</h6>
+                                                        <p>
+                                                            <strong>Project Name:</strong> Proposed Residential
+                                                            House<br>
+                                                            <strong>Plot Number:</strong> LR 1234/567<br>
+                                                            <strong>Development Type:</strong> New Buildings<br>
+                                                            <strong>Site Location:</strong> Homa Bay Town, Arujo
+                                                            Ward<br>
+                                                            <strong>Sub County:</strong> Homa Bay Town<br>
+                                                            <strong>Ward:</strong> Arujo
+                                                        </p>
 
-          <h6>Rejection Details</h6>
-          <p>
-            <strong>Rejection Date:</strong> 2023-05-20<br>
-            <strong>Rejected By:</strong> John Doe (Senior Environmental Officer)<br>
-            <strong>Department:</strong> Environmental Assessment Unit
-          </p>
+                                                        <h6>Rejection Details</h6>
+                                                        <p>
+                                                            <strong>Rejection Date:</strong> 2023-05-20<br>
+                                                            <strong>Rejected By:</strong> John Doe (Senior Environmental
+                                                            Officer)<br>
+                                                            <strong>Department:</strong> Environmental Assessment Unit
+                                                        </p>
 
-          <h6>Specific Deficiencies</h6>
-          <ul>
-            <li>Incomplete biodiversity impact analysis</li>
-            <li>Lack of comprehensive ecosystem assessment</li>
-            <li>Missing detailed mitigation strategies</li>
-            <li>Insufficient documentation on potential environmental disruptions</li>
-          </ul>
+                                                        <h6>Specific Deficiencies</h6>
+                                                        <ul>
+                                                            <li>Incomplete biodiversity impact analysis</li>
+                                                            <li>Lack of comprehensive ecosystem assessment</li>
+                                                            <li>Missing detailed mitigation strategies</li>
+                                                            <li>Insufficient documentation on potential environmental
+                                                                disruptions</li>
+                                                        </ul>
 
-          <h6>Recommended Actions</h6>
-          <ol>
-            <li>Conduct a comprehensive environmental impact study</li>
-            <li>Engage local environmental experts</li>
-            <li>Provide detailed mitigation and conservation plans</li>
-            <li>Resubmit updated environmental documentation</li>
-          </ol>
+                                                        <h6>Recommended Actions</h6>
+                                                        <ol>
+                                                            <li>Conduct a comprehensive environmental impact study</li>
+                                                            <li>Engage local environmental experts</li>
+                                                            <li>Provide detailed mitigation and conservation plans</li>
+                                                            <li>Resubmit updated environmental documentation</li>
+                                                        </ol>
 
-          <h6>Uploaded Documents</h6>
-          <ul class="text-muted">
-            <li><del>Architectural Drawings</del> (Insufficient detail)</li>  
-            <li><del>Structural Drawings</del> (Incomplete environmental context)</li>
-            <li><del>Site Plan</del> (Lacks ecological assessment)</li>
-            <li>Title Deed</li>
-            <li>KRA PIN Certificate</li>
-          </ul>
+                                                        <h6>Uploaded Documents</h6>
+                                                        <ul class="text-muted">
+                                                            <li><del>Architectural Drawings</del> (Insufficient detail)
+                                                            </li>
+                                                            <li><del>Structural Drawings</del> (Incomplete environmental
+                                                                context)</li>
+                                                            <li><del>Site Plan</del> (Lacks ecological assessment)</li>
+                                                            <li>Title Deed</li>
+                                                            <li>KRA PIN Certificate</li>
+                                                        </ul>
 
-          <h6>Payment Details</h6>
-          <p>
-            <strong>Application Fee Paid:</strong> KES 5,000<br>
-            <strong>Payment Date:</strong> 2023-05-17<br>
-            <strong>Payment Status:</strong> Non-refundable processing fee
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Request Clarification</button>
-        </div>
-      </div>
-    </div>  
-  </div>
-  
-  <!-- Similar modals for Application 2 and 3 -->
-  ...
-  
-  <!-- Similar modals for Application 2 and 3 -->
-  ...
+                                                        <h6>Payment Details</h6>
+                                                        <p>
+                                                            <strong>Application Fee Paid:</strong> KES 5,000<br>
+                                                            <strong>Payment Date:</strong> 2023-05-17<br>
+                                                            <strong>Payment Status:</strong> Non-refundable processing
+                                                            fee
+                                                        </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Request
+                                                            Clarification</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Similar modals for Application 2 and 3 -->
+                                        ...
+
+                                        <!-- Similar modals for Application 2 and 3 -->
+                                        ...
 
                                         <!-- Similar modals for Application 2 and 3 -->
                                         ...
