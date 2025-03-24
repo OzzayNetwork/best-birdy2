@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Best Birdy | Keeping you up to date</title>
+    <title>Best Birdy | E construction</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="Keep your finances and membership up to date" name="description" />
@@ -650,18 +650,14 @@
                                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                                 <ul class="navbar-nav mr-auto">
                                                 <li class="nav-item active">
-                                                    <a class="nav-link active" href="#">1. Member Details <span class="sr-only">(current)</span></a>
+                                                    <a class="nav-link active" href="#">1. Applications Details <span class="sr-only">(current)</span></a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="#">2. Next of Kin</a>
-                                                </li>
-                            
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">3. Truck Registration</a>
+                                                    <a class="nav-link" href="#">2. Plot Details</a>
                                                 </li>
                             
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="#">4. Payments & Confirmation</a>
+                                                    <a class="nav-link" href="#">3. Billing Details</a>
                                                 </li>
                                                 
                                                 </ul>
@@ -672,7 +668,7 @@
 
                                         <!-- Property details -->
                                         <div class="step-cont active-step">
-                                            <h3>Member Details</h3>
+                                            <h3>General Application Details</h3>
                                             <section>
                                                 <form>
                                                     <!-- Tenant type selection -->
@@ -680,99 +676,385 @@
                                                     <div class="row tenant-indidual-type">
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="mb-4">
-                                                                <label for="basicpill-firstname-input">First name <strong class="text-danger">*</strong></label>
-                                                                <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Enter Your First Name">
+                                                                <label for="developmentType" class="form-label">
+                                                                    Development Type <strong class="text-danger">*</strong>
+                                                                </label>
+                                                                <select 
+                                                                    id="developmentType" 
+                                                                    class="form-select" 
+                                                                    title="Select the type of development for your project"
+                                                                    required
+                                                                >
+                                                                    <optgroup label="Planning">
+                                                                        <option value="">Select Development Type</option>
+                                                                        <option value="subdivision">Subdivision/Amalgamation of land</option>
+                                                                        <option value="landUseChange">Change/Extension of Use of land</option>
+                                                                        <option value="leaseRenewal">Extension/Renewal of Lease of land</option>
+                                                                        <option value="advertising">Outdoor Advertising & Signage</option>
+                                                                        <option value="regularisation">Regularisation of Existing Developments</option>
+                                                                    </optgroup>
+                                                                    <optgroup label="Engineering">
+                                                                        <option value="structuralEngineering">Structural Engineering Designs & Supervision</option>
+                                                                        <option value="civilEngineering">Civil Engineering Designs, works & clearing</option>
+                                                                    </optgroup>
+                                                                    <optgroup label="Architectural">
+                                                                        <option value="newBuildings">New Buildings</option>
+                                                                        <option value="buildingAlterations">Alterations and additions to existing buildings</option>
+                                                                        <option value="demolition">Demolition of Dwellings</option>
+                                                                        <option value="architecturalRegularisation">Regularisation of Existing Developments</option>
+                                                                    </optgroup>
+                                                                </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="mb-4">
-                                                                <label for="basicpill-lastname-input">Last Name <strong class="text-danger">*</strong></label>
-                                                                <input type="text" class="form-control" id="basicpill-lastname-input" placeholder="Enter Your Last Name">
+                                                                <label for="projectTitle" class="form-label">
+                                                                    Project's Title <strong class="text-danger">*</strong>
+                                                                </label>
+                                                                <input 
+                                                                    type="text" 
+                                                                    class="form-control" 
+                                                                    id="projectTitle" 
+                                                                    placeholder="Enter project's descriptive title" 
+                                                                    title="Provide a clear and concise title for your development project"
+                                                                    required
+                                                                >
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="mb-4">
-                                                                <label for="">Other Name(s)</label>
-                                                                <input type="text" class="form-control" id="" placeholder="Enter Your Last Name">
+                                                                <label for="projectValue" class="form-label">
+                                                                    Project's Value
+                                                                </label>
+                                                                <input 
+                                                                    type="text" 
+                                                                    class="form-control" 
+                                                                    id="projectValue" 
+                                                                    placeholder="Enter estimated project value in KES" 
+                                                                    title="Provide the total estimated financial value of the project"
+                                                                >
                                                             </div>
                                                         </div>
-                                                        <div class="col-12">
-                                                            <div class="row">
-                                                                <div class="col-lg-4 col-md-6">
-                                                                    <div class="mb-4">
-                                                                        <label for="basicpill-firstname-input">ID Num/ PPT Num<strong class="text-danger">*</strong></label>
-                                                                        <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Enter Your First Name">
+
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div><hr></div>
+                                                            </div>
+
+                                                            <div class="col-12">
+                                                                <div class="bg-primary border-2 bg-soft p-3 mb-4">
+                                                                    <p class="fw-semibold mb-0 pb-0">Personnel In-Charge Details</p>
+    
+                                                                </div>
+                                                            </div>
+                                                           
+                                                            <div class="col-lg-4 col-md-6">
+                                                                <div class="mb-4">
+                                                                    <label for="professionalType" class="form-label">
+                                                                        Professional Type <strong class="text-danger">*</strong>
+                                                                    </label>
+                                                                    <select 
+                                                                        id="professionalType" 
+                                                                        class="form-select" 
+                                                                        title="Select the type of professional involved in the project"
+                                                                        required
+                                                                    >
+                                                                        <option value="">Select Professional Type</option>
+                                                                        <option value="architect">Architect</option>
+                                                                        <option value="civilEngineer">Civil Engineer</option>
+                                                                        <option value="structuralEngineer">Structural Engineer</option>
+                                                                        <option value="electricalEngineer">Electrical Engineer</option>
+                                                                        <option value="mechanicalEngineer">Mechanical Engineer</option>
+                                                                        <option value="landSurveyor">Land Surveyor</option>
+                                                                        <option value="urbanPlanner">Urban Planner</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6">
+                                                                <div class="mb-4">
+                                                                    <label for="certificateNumber" class="form-label">
+                                                                        Professional Certificate Number <strong class="text-danger">*</strong>
+                                                                    </label>
+                                                                    <div class="input-group">
+                                                                        <input 
+                                                                            type="text" 
+                                                                            class="form-control" 
+                                                                            id="certificateNumber" 
+                                                                            placeholder="Enter Professional Certificate Number" 
+                                                                            required
+                                                                        >
+                                                                        <button class="btn btn-outline-secondary" type="button" id="searchProfessionalBtn" title="Search Professional Details">
+                                                                            <i class="bx bx-search"></i>
+                                                                        </button>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6 col-lg-4 col-sm-12">
-                                                                    <div class="mb-4">
-                                                                        <label for="" class="">Date of Registration<strong class="text-danger">*</strong></label>
-                                                                        <div class="input-group" id="datepicker1">
-                                                                            <input type="text" class="form-control mouse-pointer" placeholder="Select Date" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker1' data-provide="datepicker" data-date-autoclose="true">
-
-                                                                            <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-4">
-                                                                    <div class="row">
-                                                                        <label for="" class="">Gender: <strong class="text-danger">*</strong></label>
-                                                                        <div class="d-flex">
-                                                                            <div class="form-check mb-3 pr-15px">
-                                                                                <input class="form-check-input" type="radio" name="gender" id="formRadios1" checked>
-                                                                                <label class="form-check-label" for="formRadios1">
-                                                                                    Male
-                                                                                </label>
-                                                                            </div>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input" type="radio" name="gender" id="formRadios2">
-                                                                                <label class="form-check-label" for="formRadios2">
-                                                                                    Female
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6">
+                                                                <div class="mb-4">
+                                                                    <label for="fullNames" class="form-label">Full Names</label>
+                                                                    <input 
+                                                                        type="text" 
+                                                                        class="form-control" 
+                                                                        id="fullNames" 
+                                                                        placeholder="Professional's Full Names" 
+                                                                        readonly
+                                                                    >
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                            <div class="col-lg-4 col-md-6">
+                                                                <div class="mb-4">
+                                                                    <label for="otherNames" class="form-label">Other Names</label>
+                                                                    <input 
+                                                                        type="text" 
+                                                                        class="form-control" 
+                                                                        id="otherNames" 
+                                                                        placeholder="Other Names (if any)" 
+                                                                        readonly
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6">
+                                                                <div class="mb-4">
+                                                                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                                                                    <input 
+                                                                        type="tel" 
+                                                                        class="form-control" 
+                                                                        id="phoneNumber" 
+                                                                        placeholder="Professional's Phone Number" 
+                                                                        readonly
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6">
+                                                                <div class="mb-4">
+                                                                    <label for="emailAddress" class="form-label">Email Address</label>
+                                                                    <input 
+                                                                        type="email" 
+                                                                        class="form-control" 
+                                                                        id="emailAddress" 
+                                                                        placeholder="Professional's Email Address" 
+                                                                        readonly
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6">
+                                                                <div class="mb-4">
+                                                                    <label for="idNumber" class="form-label">ID Number</label>
+                                                                    <input 
+                                                                        type="text" 
+                                                                        class="form-control" 
+                                                                        id="idNumber" 
+                                                                        placeholder="Professional's ID Number" 
+                                                                        readonly
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 mb-4 mt-4">
+                                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addProfessionalModal">
+                                                                    <i class="bx bx-plus me-2"></i>Add New Professional
+                                                                </button>
+                                                            </div>
 
-                                                        <div class="col-lg-4 col-md-6">
-                                                            <div class="mb-4">
-                                                                <label for="basicpill-lastname-input">Nationality <strong class="text-danger">*</strong></label>
-                                                                <select class="form-control selectpicker" data-live-search="true" title="Select nationality">
-                                                                    
-                                                                    <option value="" selected>Kenya</option>
-                                                                    <option value="">Brazil</option>
-                                                                    <option value="">South Africa</option>                                                                
-                                                            </select>
+                                                            <div class="col-12">
+                                                                <div><hr></div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-6">
-                                                            <div class="mb-4">
-                                                                <label for="basicpill-lastname-input">Marital Status <strong class="text-danger">*</strong></label>
-                                                                <select class="form-control selectpicker" data-live-search="true" title="Select Marital status">
+                                                        
+                                                       
+                                                        
+                                                        <script>
+                                                        document.addEventListener('DOMContentLoaded', function() {
+                                                            const searchProfessionalBtn = document.getElementById('searchProfessionalBtn');
+                                                            const certificateNumberInput = document.getElementById('certificateNumber');
+                                                            
+                                                            const readonlyFields = [
+                                                                'fullNames', 
+                                                                'otherNames', 
+                                                                'phoneNumber', 
+                                                                'emailAddress', 
+                                                                'idNumber'
+                                                            ];
+                                                        
+                                                            // Disable readonly fields initially
+                                                            readonlyFields.forEach(fieldId => {
+                                                                document.getElementById(fieldId).value = '';
+                                                            });
+                                                        
+                                                            searchProfessionalBtn.addEventListener('click', function() {
+                                                                const certificateNumber = certificateNumberInput.value.trim();
                                                                 
-                                                                    <option value="">Single</option>
-                                                                    <option value="">Married</option>                                                                
-                                                            </select>
+                                                                if (!certificateNumber) {
+                                                                    alert('Please enter a Certificate Number');
+                                                                    return;
+                                                                }
+                                                        
+                                                                // Simulated API call to fetch professional details
+                                                                // In a real application, this would be an actual API request
+                                                                const mockProfessionalData = {
+                                                                    'ARCH001': {
+                                                                        fullNames: 'John Kamau Mwangi',
+                                                                        otherNames: 'Njoroge',
+                                                                        phoneNumber: '+254 720 123 456',
+                                                                        emailAddress: 'john.mwangi@example.com',
+                                                                        idNumber: '12345678'
+                                                                    }
+                                                                };
+                                                        
+                                                                const professionalDetails = mockProfessionalData[certificateNumber];
+                                                        
+                                                                if (professionalDetails) {
+                                                                    // Populate readonly fields
+                                                                    readonlyFields.forEach(fieldId => {
+                                                                        const field = document.getElementById(fieldId);
+                                                                        field.value = professionalDetails[field.id] || '';
+                                                                    });
+                                                                } else {
+                                                                    alert('No professional found with this certificate number');
+                                                                    readonlyFields.forEach(fieldId => {
+                                                                        document.getElementById(fieldId).value = '';
+                                                                    });
+                                                                }
+                                                            });
+                                                        
+                                                            // Add Professional Modal Form Submission
+                                                            const addProfessionalForm = document.getElementById('addProfessionalForm');
+                                                            addProfessionalForm.addEventListener('submit', function(e) {
+                                                                e.preventDefault();
+                                                                // Here you would typically send the data to a backend service
+                                                                alert('Professional details submitted successfully');
+                                                                
+                                                                // Close the modal
+                                                                const modalElement = document.getElementById('addProfessionalModal');
+                                                                const modalInstance = bootstrap.Modal.getInstance(modalElement);
+                                                                modalInstance.hide();
+                                                            });
+                                                        });
+                                                        </script>
+
+                                                        <div class="col-12 mb-4">
+                                                            <div class="row">
+                                                               
+                                                                <div class="col-12">
+
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="bg-primary border-2 bg-soft p-3 mb-4">
+                                                                                <p class="fw-semibold mb-0 pb-0">Project Files</p>
+                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <table class="table table-editable-1 align-middle table-edits">
+                                                                        <thead class="table-light">
+                                                                            <tr class="text-uppercase table-dark">
+                                                                                <th>#</th>
+                                                                                <th>Document</th>
+                                                                                <th class="">File</th>
+                                                                                <th class="">Document Number</th>
+                                                                                <th>valid Till</th>
+                                                                                <th></th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr data-id="1">
+                                                                                <td style="width: 80px">1.</td>
+                                                                                <td>Land Ownership Documents</td>
+                                                                                <td><input class="form-control" type="file" id="landOwnershipFile"></td>
+                                                                                <td><input type="text" class="form-control" placeholder="Enter Land Title Deed Number" spellcheck="false"></td>
+                                                                                <td><input class="form-control" type="date" value=""></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr data-id="2">
+                                                                                <td style="width: 80px">2.</td>
+                                                                                <td>Consent Letter</td>
+                                                                                <td><input class="form-control" type="file" id="consentLetterFile"></td>
+                                                                                <td><input type="text" class="form-control" placeholder="Enter Consent Letter Reference" spellcheck="false"></td>
+                                                                                <td><input class="form-control" type="date" value=""></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr data-id="3">
+                                                                                <td style="width: 80px">3.</td>
+                                                                                <td>Architectural Drawings</td>
+                                                                                <td><input class="form-control" type="file" id="architecturalDrawingsFile"></td>
+                                                                                <td><input type="text" class="form-control" placeholder="Enter Architectural Plan Number" spellcheck="false"></td>
+                                                                                <td><input class="form-control" type="date" value=""></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr data-id="4">
+                                                                                <td style="width: 80px">4.</td>
+                                                                                <td>Structural Engineering Plans</td>
+                                                                                <td><input class="form-control" type="file" id="structuralPlansFile"></td>
+                                                                                <td><input type="text" class="form-control" placeholder="Enter Structural Design Reference" spellcheck="false"></td>
+                                                                                <td><input class="form-control" type="date" value=""></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr data-id="5">
+                                                                                <td style="width: 80px">5.</td>
+                                                                                <td>Land Rate receipts</td>
+                                                                                <td><input class="form-control" type="file" id="landRateReceiptsFile"></td>
+                                                                                <td><input type="text" class="form-control" placeholder="Enter Receipt Number" spellcheck="false"></td>
+                                                                                <td><input class="form-control" type="date" value=""></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr data-id="6">
+                                                                                <td style="width: 80px">6.</td>
+                                                                                <td>Owner's ID Number</td>
+                                                                                <td><input class="form-control" type="file" id="ownerIDFile"></td>
+                                                                                <td><input type="text" class="form-control" placeholder="Enter National ID Number" spellcheck="false"></td>
+                                                                                <td><input class="form-control" type="date" value=""></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr data-id="7">
+                                                                                <td style="width: 80px">7.</td>
+                                                                                <td>Owner's KRA PIN nUmber</td>
+                                                                                <td><input class="form-control" type="file" id="ownerKRAPINFile"></td>
+                                                                                <td><input type="text" class="form-control" placeholder="Enter KRA PIN Number" spellcheck="false"></td>
+                                                                                <td><input class="form-control" type="date" value=""></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr data-id="8">
+                                                                                <td style="width: 80px">8.</td>
+                                                                                <td>Land Search Certificate</td>
+                                                                                <td><input class="form-control" type="file" id="landSearchFile"></td>
+                                                                                <td><input type="text" class="form-control" placeholder="Enter Certificate Reference" spellcheck="false"></td>
+                                                                                <td><input class="form-control" type="date" value=""></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr class="cloneCharges d-none">
+                                                                                <td style="width: 80px" class="categoryIndex">#</td>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" placeholder="Document Name" spellcheck="false" data-ms-editor="true">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <input class="form-control" type="file" id="formFile">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" placeholder="Enter Document Number" spellcheck="false" data-ms-editor="true">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <input class="form-control" type="date" value="2019-08-19" id="example-date-input">
+                                                                                </td>
+                                                                                <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                                                    <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2" title="Cancel"><i class="bx bx-x"></i></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        
+                                                                        <tfoot>
+                                                                            <tr>
+                                                                                <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                                                    <span class="d-flex align-items-center">
+                                                                                        <i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21"></i>
+                                                                                        <span class="pl-5">Upload Other Documents</span>
+                                                                                    </span>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
                                                             </div>
                                                         </div>
-
-                                                        <div class="col-lg-4 col-md-6">
-                                                            <div class="mb-4">
-                                                                <label for="basicpill-firstname-input">Email. <strong class="text-danger">*</strong></label>
-                                                                <input type="email" class="form-control" id="Enter tenants email address" placeholder="Enter property plot No.">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6">
-                                                            <div class="mb-4">
-                                                                <label for="basicpill-firstname-input">Phone. <strong class="text-danger">*</strong></label>
-                                                                <input type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Enter Phone No.">
-                                                            </div>
-                                                        </div>
-
-
 
                                                     </div>
 
@@ -781,89 +1063,354 @@
                                         </div>
                                         <!-- next of kin and dependents -->
                                         <div class="step-cont d-none">
-                                            <h3>Next Of Kin</h3>
+                                            
                                             <section>
                                                 <form>
                                                     <div class="row">
 
                                                         <div class="col-12">
                                                             <div class="bg-primary border-2 bg-soft p-3 mb-4">
-                                                                <p class="fw-semibold mb-0 pb-0">Next of Kin Details</p>
+                                                                <p class="fw-semibold mb-0 pb-0">Plot Details</p>
 
                                                             </div>
                                                         </div>
-
-                                                        <div class="table-responsive table-responsive-md mb-4">
-                                                            <table class="table table-editable-3 align-middle table-edits">
-                                                                <thead class="table-light">
-                                                                    <tr class="text-uppercase table-dark">
-                                                                        <th>#</th>
-                                                                        <th>First name</th>
-                                                                        <th class="">Middle name</th>
-                                                                        <th class="">other names</th>
-                                                                        <th class="">Relationship</th>
-                                                                        <th></th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr data-id="1">
-                                                                        <td style="width: 80px">1.</td>
-                                                                        <td>
-                                                                            <input type="text " class="form-control " placeholder="Enter First name" spellcheck="false" data-ms-editor="true">
-                                                                        </td>
-                                                                        <td class="">
-                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
-                                                                        </td>
-                                                                        <td class="">
-                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
-                                                                        </td>
-                                                                        <td>
-                                                                            <select class="form-control selectpicker" data-live-search="true" title="Select Relationship">
-                                                                                <option value="">Father</option>
-                                                                                <option value="">Mother</option>   
-                                                                                <option value="">Sister</option>                                                                
-                                                                        </select>
-                                                                        </td>
-                                                                        <td></td>
-
-                                                                    </tr>
-
-                                                                    <tr class="cloneCharges d-none">
-                                                                        <td style="width: 80px " class="categoryIndex ">#</td>
-
-                                                                        <td>
-                                                                            <input type="text " class="form-control " placeholder="Enter First name" spellcheck="false" data-ms-editor="true">
-                                                                        </td>
-                                                                        <td class="">
-                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
-                                                                        </td>
-                                                                        <td class="">
-                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
-                                                                        </td>
-                                                                        <td>
-                                                                            <select class="form-control selectpicker" data-live-search="true" title="Select Relationship">
-                                                                                    <option value="">Father</option>
-                                                                                    <option value="">Mother</option>   
-                                                                                    <option value="">Sister</option>                                                                
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="mb-4">
+                                                                        <label for="plotNumber" class="form-label">
+                                                                            Plot Number <strong class="text-danger">*</strong>
+                                                                        </label>
+                                                                        <div class="input-group">
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="plotNumber" 
+                                                                                placeholder="Enter Plot Number" 
+                                                                                required
+                                                                            >
+                                                                            <button class="btn btn-secondary" type="button" id="searchPlotBtn" title="Search Plot Details">
+                                                                                <i class="bx bx-search"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            
+                                                                <div id="plotDetailsSection" class="row g-3" style="display: none;">
+                                                                    <div class="col-12">
+                                                                        <h5 class="mb-3 text-primary">Owner Details</h5>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">UPN Number</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="upnNumber" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Plot Size</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="plotSize" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Land Value</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="landValue" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Annual Land Rate Charges</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="annualLandRateCharges" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Current Balance</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control text-danger fw-bold" 
+                                                                                id="currentBalance" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Land Type</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="landType" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Land Use</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="landUse" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                            
+                                                                    <div class="col-12 mt-4">
+                                                                        <div class="bg-primary border-2 bg-soft p-3 mb-4">
+                                                                            <p class="fw-semibold mb-0 pb-0">Plot Details</p>
+            
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Full Names</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="ownerFullNames" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">ID/Passport Number</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="ownerIdNumber" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Phone Number</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="ownerPhoneNumber" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Email Address</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="ownerEmail" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">KRA PIN Number</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="ownerKraPin" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Sub County</label>
+                                                                            <select 
+                                                                                class="form-select" 
+                                                                                id="subCounty" 
+                                                                                readonly
+                                                                            >
+                                                                                <option value="">Select Sub County</option>
+                                                                                <option value="homabay_town">Homabay Town</option>
+                                                                                <option value="ndhiwa">Ndhiwa</option>
+                                                                                <option value="mbita">Mbita</option>
+                                                                                <option value="rachuonyo_north">Rachuonyo North</option>
+                                                                                <option value="rachuonyo_south">Rachuonyo South</option>
+                                                                                <option value="suba_north">Suba North</option>
+                                                                                <option value="suba_south">Suba South</option>
                                                                             </select>
-                                                                        </td>
-
-                                                                        <td class="text-right cell-change d-flex align-items-center justify-content-end">
-                                                                            <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
-                                                                        </td>
-                                                                    </tr>
-
-
-                                                                </tbody>
-                                                                <tfoot>
-                                                                    <tr>
-                                                                        <td colspan="7" class="bg-light add-field-3 cursor-pinter ">
-                                                                            <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add a Kin</span></span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tfoot>
-                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Ward</label>
+                                                                            <select 
+                                                                                class="form-select" 
+                                                                                id="ward" 
+                                                                                readonly
+                                                                            >
+                                                                                <option value="">Select Ward</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label">Address</label>
+                                                                            <input 
+                                                                                type="text" 
+                                                                                class="form-control" 
+                                                                                id="ownerAddress" 
+                                                                                readonly
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <script>
+                                                            document.addEventListener('DOMContentLoaded', function() {
+                                                                const searchPlotBtn = document.getElementById('searchPlotBtn');
+                                                                const plotNumberInput = document.getElementById('plotNumber');
+                                                                const plotDetailsSection = document.getElementById('plotDetailsSection');
+                                                            
+                                                                // Wards for each sub-county in Homabay
+                                                                const wardsMap = {
+                                                                    'homabay_town': [
+                                                                        'Homabay Town', 
+                                                                        'Rabuon', 
+                                                                        'Mfangano'
+                                                                    ],
+                                                                    'ndhiwa': [
+                                                                        'Ndhiwa', 
+                                                                        'West Kabuoch', 
+                                                                        'Central Kabuoch'
+                                                                    ],
+                                                                    'mbita': [
+                                                                        'Gembe', 
+                                                                        'Rusinga', 
+                                                                        'Mfangano'
+                                                                    ],
+                                                                    'rachuonyo_north': [
+                                                                        'Kendu Bay', 
+                                                                        'Kibiri', 
+                                                                        'Rachuonyo North'
+                                                                    ],
+                                                                    'rachuonyo_south': [
+                                                                        'Guesii', 
+                                                                        'Kapsara', 
+                                                                        'Rachuonyo South'
+                                                                    ],
+                                                                    'suba_north': [
+                                                                        'Gwassi North', 
+                                                                        'Lambwe', 
+                                                                        'Ruma'
+                                                                    ],
+                                                                    'suba_south': [
+                                                                        'Gwassi South', 
+                                                                        'Migori', 
+                                                                        'Kaksingri'
+                                                                    ]
+                                                                };
+                                                            
+                                                                // Mock data for plot details
+                                                                const mockPlotData = {
+                                                                    'PLT001': {
+                                                                        upnNumber: 'UPN-HMB-001',
+                                                                        plotSize: '0.5 Acres',
+                                                                        landValue: 'KES 5,000,000',
+                                                                        annualLandRateCharges: 'KES 50,000',
+                                                                        currentBalance: 'KES 25,000',
+                                                                        landType: 'Residential',
+                                                                        landUse: 'Single Family Dwelling',
+                                                                        ownerFullNames: 'John Ochieng Okello',
+                                                                        ownerIdNumber: '12345678',
+                                                                        ownerPhoneNumber: '+254 720 123 456',
+                                                                        ownerEmail: 'john.okello@example.com',
+                                                                        ownerKraPin: 'A123456789B',
+                                                                        subCounty: 'homabay_town',
+                                                                        ward: 'Homabay Town',
+                                                                        ownerAddress: 'P.O. Box 123-40400, Homabay'
+                                                                    }
+                                                                };
+                                                            
+                                                                // Sub County dropdown change event
+                                                                const subCountySelect = document.getElementById('subCounty');
+                                                                const wardSelect = document.getElementById('ward');
+                                                            
+                                                                subCountySelect.addEventListener('change', function() {
+                                                                    // Populate wards based on selected sub-county
+                                                                    const selectedSubCounty = this.value;
+                                                                    const wardsForSubCounty = wardsMap[selectedSubCounty] || [];
+                                                            
+                                                                    // Clear existing options
+                                                                    wardSelect.innerHTML = '<option value="">Select Ward</option>';
+                                                            
+                                                                    // Add new options
+                                                                    wardsForSubCounty.forEach(ward => {
+                                                                        const option = document.createElement('option');
+                                                                        option.value = ward.toLowerCase().replace(/\s+/g, '_');
+                                                                        option.textContent = ward;
+                                                                        wardSelect.appendChild(option);
+                                                                    });
+                                                                });
+                                                            
+                                                                searchPlotBtn.addEventListener('click', function() {
+                                                                    const plotNumber = plotNumberInput.value.trim();
+                                                                    
+                                                                    if (!plotNumber) {
+                                                                        alert('Please enter a Plot Number');
+                                                                        return;
+                                                                    }
+                                                            
+                                                                    const plotDetails = mockPlotData[plotNumber];
+                                                            
+                                                                    if (plotDetails) {
+                                                                        // Populate all readonly fields
+                                                                        const fieldsToPopulate = [
+                                                                            'upnNumber', 'plotSize', 'landValue', 'annualLandRateCharges', 
+                                                                            'currentBalance', 'landType', 'landUse', 'ownerFullNames', 
+                                                                            'ownerIdNumber', 'ownerPhoneNumber', 'ownerEmail', 'ownerKraPin', 
+                                                                            'subCounty', 'ward', 'ownerAddress'
+                                                                        ];
+                                                            
+                                                                        fieldsToPopulate.forEach(fieldId => {
+                                                                            const field = document.getElementById(fieldId);
+                                                                            field.value = plotDetails[fieldId] || '';
+                                                                        });
+                                                            
+                                                                        // Trigger sub-county change to populate wards
+                                                                        subCountySelect.value = plotDetails.subCounty;
+                                                                        const event = new Event('change');
+                                                                        subCountySelect.dispatchEvent(event);
+                                                            
+                                                                        // Show the plot details section
+                                                                        plotDetailsSection.style.display = 'flex';
+                                                                    } else {
+                                                                        alert('No plot found with this Plot Number');
+                                                                        plotDetailsSection.style.display = 'none';
+                                                                    }
+                                                                });
+                                                            });
+                                                            </script>
                                                         </div>
+
                                                     </div>
 
 
@@ -876,287 +1423,121 @@
 
 
                                         <!-- Payment Details -->
-                                        <div class="step-cont d-none">
-                                            <h3>Truck(s) Registration</h3>
-                                            <section>
-                                                <form>
-                                                    <div class="row clone-cont">
-                                                        <div class="col-12 clone-me">
-                                                            <div class="row ">
-                                                                <!-- truck registration -->
-                                                                <div class="col-12">
-                                                                    <div class="bg-primary border-2 bg-soft p-3 mb-4">
-                                                                        <p class="fw-semibold mb-0 pb-0">Truck No. 1</p>
-
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class="truck-reg-cont p-4">
-                                                                        <div class="row">
-                                                                            <div class="col-12">
-                                                                                <div class="bg-warning border-2 bg-soft p-2 mb-4 d-flex align-items-center">
-                                                                                    <i class="mdi mdi-truck-delivery-outline font-28 mr-15px"></i>
-                                                                                    <p class="fw-semibold mb-0 pb-0">Truck Details</p>
-
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Plate Number <strong class="text-danger">*</strong></label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Plate No.">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-6 col-lg-4 col-sm-12">
-                                                                                <div class="mb-4">
-                                                                                    <label for="" class="">Last inspection Date</label>
-                                                                                    <div class="input-group" id="datepicker10">
-                                                                                        <input type="text" class="form-control mouse-pointer" placeholder="Select the previous date of inspection" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker10' data-provide="datepicker" data-date-autoclose="true">
-
-                                                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-md-6 col-lg-4 col-sm-12">
-                                                                                <div class="mb-4">
-                                                                                    <label for="" class="">Next Inspection Date<strong class="text-danger">*</strong></label>
-                                                                                    <div class="input-group" id="datepicker11">
-                                                                                        <input type="text" class="form-control mouse-pointer" placeholder="Select Next inspection Date" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker11' data-provide="datepicker" data-date-autoclose="true">
-
-                                                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-12">
-                                                                                <div class="bg-warning border-2 mt-4 bg-soft p-2 mb-4 d-flex align-items-center">
-                                                                                    <i class="mdi mdi-clipboard-text-outline font-28 mr-15px"></i>
-                                                                                    <p class="fw-semibold mb-0 pb-0">Documents and attachments</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-sm-3">
-                                                                                <div>
-                                                                                    <label class="form-label">Logbook</label>
-                                                                                    <div class="input-group mb-3 cursor-pinter">
-                                                                                        <label class="input-group-text bg-primary text-white" for="truck-logbook">Select Logbook</label>
-                                                                                        <input type="file" class="form-control" id="truck-logbook">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-sm-3">
-                                                                                <div>
-                                                                                    <label class="form-label">Front view image</label>
-                                                                                    <div class="input-group mb-3 cursor-pinter">
-                                                                                        <label class="input-group-text bg-primary text-white" for="truck-front-img">Select photo</label>
-                                                                                        <input type="file" class="form-control" id="truck-front-img">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-sm-3">
-                                                                                <div>
-                                                                                    <label class="form-label">Rare view image</label>
-                                                                                    <div class="input-group mb-3 cursor-pinter">
-                                                                                        <label class="input-group-text bg-primary text-white" for="truck-rare-img">Select photo</label>
-                                                                                        <input type="file" class="form-control" id="truck-rare-img">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-sm-3">
-                                                                                <div>
-                                                                                    <label class="form-label">Insurance</label>
-                                                                                    <div class="input-group mb-3 cursor-pinter">
-                                                                                        <label class="input-group-text bg-primary text-white" for="truck-rare-img">Upload Insurance</label>
-                                                                                        <input type="file" class="form-control" id="truck-rare-img">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-12">
-                                                                                <div class="bg-warning border-2 bg-soft mt-4 p-2 mb-4 d-flex align-items-center">
-                                                                                    <i class="mdi mdi-steering font-28 mr-15px"></i>
-                                                                                    <p class="fw-semibold mb-0 pb-0">Driver details</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Driver's First Name </label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Enter first Name">
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Driver's Second Name </label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Enter second Name">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Driver's Other Name(s) </label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Enter driver's Other names">
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Driver's ID Num</label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Enter driver's ID No.">
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Driver's License No. </label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Driver's License No">
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-
-
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mb-5">
-                                                            <button class="btn btn-outline-secondary waves-effect waves-light w-100" type="submit "><i class="bx bx-plus me-1"></i> Add Another Truck</button>
-                                                        </div>
-                                                    </div>
-
-                                                </form>
-                                            </section>
-                                        </div>
-
+                                      
 
                                         <!-- Confirm Details -->
                                         <div class="step-cont d-none">
                                             <h3>Payments And confirmation</h3>
                                             <section>
-                                                <form>
-                                                    <div class="col-12">
-                                                        <div class="bg-primary border-2 bg-soft p-3 mb-4">
-                                                            <p class="fw-semibold mb-0 pb-0">Invoice Breakdown</p>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="table-responsive">
-                                                        <table class="table table-nowrap">
-                                                            <thead class="table-dark">
-                                                                <tr>
-                                                                    <th>#</th>
-                                                                    <th style="width: 70px;">truck</th>
-                                                                    <th class="text-end">Permit Charges</th>
-                                                                    <th class="text-end">Duration</th>
-                                                                    <th class="text-end">Office Maintenance Fee</th>
-                                                                    <th class="text-end">Maintenance Fee period</th>
-                                                                    <th class="text-end">Totals</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1.</td>
-                                                                    <td class="text-uppercase">KAB 123P</td>
-                                                                    <td class="text-end">KES 6,000</td>
-                                                                    <td class="text-end">6 Months</td>
-                                                                    <td class="text-end">KES 6,000</td>
-                                                                    <td class="text-end">6 Months</td>
-                                                                    <td class="text-end">KES 12,000</td>
-
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <td>2.</td>
-                                                                    <td class="text-uppercase">KBB 265Y</td>
-                                                                    <td class="text-end">KES 6,000</td>
-                                                                    <td class="text-end">6 Months</td>
-                                                                    <td class="text-end">KES 6,000</td>
-                                                                    <td class="text-end">6 Months</td>
-                                                                    <td class="text-end">KES 12,000</td>
-
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <td>3.</td>
-                                                                    <td class="text-uppercase">KCA 567T</td>
-                                                                    <td class="text-end">KES 6,000</td>
-                                                                    <td class="text-end">6 Months</td>
-                                                                    <td class="text-end">KES 6,000</td>
-                                                                    <td class="text-end">6 Months</td>
-                                                                    <td class="text-end">KES 12,000</td>
-
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <td colspan="2"><strong>Total</strong></td>
-                                                                    <td class="text-end fw-bold">KES 18,000</td>
-                                                                    <td></td>
-                                                                    <td class="text-end fw-bold">KES 18,000</td>
-                                                                    <td></td>
-                                                                    <td class="text-end fw-bold text-uppercase fw-bold">
-                                                                        <h5>KES 36,000</h5>
-                                                                    </td>
-                                                                </tr>
-
-
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="bg-primary border-2 bg-soft p-3 mb-4">
-                                                            <p class="fw-semibold mb-0 pb-0">Payment Options</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-
-                                                        <div class="col-lg-4 col-md-6">
-                                                            <div class="mb-4">
-                                                                <label for="basicpill-lastname-input">Payment Option<strong class="text-danger">*</strong></label>
-                                                                <select class="form-control selectpicker payment-options" data-live-search="true" title="Select payment option">
-                                                                        <option value="MPESA" data-content="<span class='badge pill bg-success fs-6'>MPESA</span>">MPESA</option>
-                                                                        <option value="CASH" data-content="<span class='badge pill bg-primary fs-6'>CASH</span>">CASH</option> 
-                                                                        <option value="Print Invoice" data-content="<span class='badge pill bg-warning fs-6'>CASH</span>">PRINT INVOICE</option>                                                              
+                                                <div class="col-12">
+                                                    <table class="table table-editable-1 align-middle table-edits">
+                                                        <thead class="table-light">
+                                                          <tr class="text-uppercase table-dark">
+                                                            <th>#</th>
+                                                            <th>Invoice Item</th>
+                                                            <th class="">QTY</th>
+                                                            <th>Amount</th>
+                                                            <th></th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr data-id="1">
+                                                            <td style="width: 80px">1.</td>
+                                                            <td>Land Rate Fees</td>
+                                                            <td>-</td>
+                                                            <td><input type="text" class="form-control" disabled placeholder="Land Rate Balance" spellcheck="false" value="2500"></td>
+                                                            <td></td>
+                                                          </tr>
+                                                          <tr data-id="2">
+                                                            <td style="width: 80px">2.</td>
+                                                            <td>Application Fee</td>
+                                                            <td>1</td>
+                                                            <td><input type="text" class="form-control" disabled placeholder="Amount" spellcheck="false" value="1000"></td>
+                                                            <td></td>
+                                                          </tr>
+                                                          <tr data-id="3">
+                                                            <td style="width: 80px">3.</td>
+                                                            <td>Application Form</td>
+                                                            <td>1</td>
+                                                            <td><input type="text" class="form-control" disabled placeholder="Amount" spellcheck="false" value="300"></td>
+                                                            <td></td>  
+                                                          </tr>
+                                                          <tr data-id="4">
+                                                            <td style="width: 80px">4.</td>
+                                                            <td>Public Health Inspection Fees</td>
+                                                            <td><input type="text" class="form-control" placeholder="QTY" spellcheck="false"></td>
+                                                            <td><input type="text" class="form-control" placeholder="Amount" spellcheck="false"></td>
+                                                            <td></td>
+                                                          </tr>
+                                                          <tr data-id="5">  
+                                                            <td style="width: 80px">5.</td>
+                                                            <td>
+                                                              <select class="form-select">
+                                                                <option value="">Select Physical Planning Fee</option>
+                                                                <option value="development-application">Development Application</option>  
+                                                                <option value="building-plan-approval">Building Plan Approval</option>
+                                                                <option value="construction-permit">Construction Permit</option>
+                                                                <option value="change-of-use">Change of Use</option> 
+                                                                <option value="other">Other Physical Planning Fees</option>
+                                                              </select>
+                                                            </td>
+                                                            <td><input type="text" class="form-control" placeholder="QTY" spellcheck="false"></td>
+                                                            <td><input type="text" class="form-control" placeholder="Amount" spellcheck="false"></td>
+                                                            <td></td>
+                                                          </tr>
+                                                          <tr data-id="6">
+                                                            <td style="width: 80px">6.</td>  
+                                                            <td>
+                                                              <select class="form-select">
+                                                                <option value="">Select Other Fee</option>
+                                                                <option value="">Structural Inspection</option>
+                                                                <option value="">Structural Approval</option>
+                                                                <option value="">Temporary Structures</option> 
+                                                                <option value="">Hoarding Permit</option>
+                                                                <option value="">Demolition Permit</option>
+                                                                <option value="">Fire Safety Compliance</option>
+                                                                <option value="">Occupation Certificate</option>
+                                                              </select>
+                                                            </td>
+                                                            <td><input type="text" class="form-control" placeholder="QTY" spellcheck="false"></td>  
+                                                            <td><input type="text" class="form-control" placeholder="Amount" spellcheck="false"></td>
+                                                            <td></td>
+                                                          </tr>
+                                                          <tr class="cloneCharges d-none">
+                                                            <td style="width: 80px" class="categoryIndex">#</td>
+                                                            <td>
+                                                                <select class="form-select">
+                                                                  <option value="">Select Other Fee</option>
+                                                                  <option value="">Structural Inspection</option>
+                                                                  <option value="">Structural Approval</option>
+                                                                  <option value="">Temporary Structures</option> 
+                                                                  <option value="">Hoarding Permit</option>
+                                                                  <option value="">Demolition Permit</option>
+                                                                  <option value="">Fire Safety Compliance</option>
+                                                                  <option value="">Occupation Certificate</option>
                                                                 </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6 mpesa-phone d-none">
-                                                            <div class="mb-4">
-                                                                <label for="basicpill-firstname-input">Phone. <strong class="text-danger">*</strong></label>
-                                                                <input type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Enter Phone No.">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6">
-                                                            <div class="mb-4">
-                                                                <label for="basicpill-firstname-input">Amount<strong class="text-danger">*</strong></label>
-                                                                <input value="36000" readonly type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Amount to be Paid">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="row">
-                                                                <div class="col-4 d-none cash-alert">
-                                                                    <div class="alert alert-secondary" role="alert">
-                                                                        By selecting this option it means you confirmed that you have received <strong>KES 36,000</strong> and a receipt will be produced for the same.
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-4 d-none mpesa-alert">
-                                                                    <div class="alert alert-success" role="alert">
-                                                                        By selecting this option a payment request for <strong>KES 36,000</strong> Will be sent to the customer and a receipt will be produced once the payment has been successfully done.
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="col-4 d-none invoice-alert">
-                                                                    <div class="alert alert-warning" role="alert">
-                                                                        An invoice for <strong>KES 36,000</strong> will be created and the client is free to make the payment on later date through <strong class="fw-semibold">Mpesa,Bank or cash.</strong>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                </form>
+                                                              </td>
+                                                              <td><input type="text" class="form-control" placeholder="QTY" spellcheck="false"></td>  
+                                                              <td><input type="text" class="form-control" placeholder="Amount" spellcheck="false"></td>
+                                                              
+                                                            <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                              <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2" title="Cancel"><i class="bx bx-x"></i></a>  
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                        
+                                                        <tfoot>
+                                                          <tr>
+                                                            <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                              <span class="d-flex align-items-center">  
+                                                                <i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21"></i>
+                                                                <span class="pl-5">Upload Other Documents</span>
+                                                              </span>
+                                                            </td>
+                                                          </tr>
+                                                        </tfoot>
+                                                      </table>
+                                                </div>
                                             </section>
                                         </div>
 
@@ -1248,7 +1629,7 @@
             <!-- end modal -->
 
             <!-- tenant id number modal -->
-            <div class="modal fade " id="subscribeModal" data-bs-backdrop="static " data-bs-keyboard="false " tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+            <div class="modal fade " id="" data-bs-backdrop="static " data-bs-keyboard="false " tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
                 <div class="modal-dialog modal-dialog-centered ">
                     <div class="modal-content ">
                         <div class="modal-header border-bottom-0 ">
@@ -1318,7 +1699,125 @@
 
     </div>
     <!-- END layout-wrapper -->
-
+     
+    <!-- adding new proffessional -->
+      <!-- Add Professional Modal -->
+      <div class="modal fade" id="addProfessionalModal" tabindex="-1" aria-labelledby="addProfessionalModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addProfessionalModalLabel">Add New Professional</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addProfessionalForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="modalProfessionalType" class="form-label">Professional Type <strong class="text-danger">*</strong></label>
+                                <select 
+                                    id="modalProfessionalType" 
+                                    class="form-select" 
+                                    required
+                                >
+                                    <option value="">Select Professional Type</option>
+                                    <option value="architect">Architect</option>
+                                    <option value="civilEngineer">Civil Engineer</option>
+                                    <option value="structuralEngineer">Structural Engineer</option>
+                                    <option value="electricalEngineer">Electrical Engineer</option>
+                                    <option value="mechanicalEngineer">Mechanical Engineer</option>
+                                    <option value="landSurveyor">Land Surveyor</option>
+                                    <option value="urbanPlanner">Urban Planner</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="modalCertificateNumber" class="form-label">Certificate Number <strong class="text-danger">*</strong></label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="modalCertificateNumber" 
+                                    placeholder="Enter Certificate Number" 
+                                    required
+                                >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="modalFullNames" class="form-label">Full Names <strong class="text-danger">*</strong></label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="modalFullNames" 
+                                    placeholder="Enter Full Names" 
+                                    required
+                                >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="modalOtherNames" class="form-label">Other Names</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="modalOtherNames" 
+                                    placeholder="Enter Other Names"
+                                >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="modalPhoneNumber" class="form-label">Phone Number <strong class="text-danger">*</strong></label>
+                                <input 
+                                    type="tel" 
+                                    class="form-control" 
+                                    id="modalPhoneNumber" 
+                                    placeholder="Enter Phone Number" 
+                                    required
+                                >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="modalEmailAddress" class="form-label">Email Address <strong class="text-danger">*</strong></label>
+                                <input 
+                                    type="email" 
+                                    class="form-control" 
+                                    id="modalEmailAddress" 
+                                    placeholder="Enter Email Address" 
+                                    required
+                                >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="modalIdNumber" class="form-label">ID Number <strong class="text-danger">*</strong></label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="modalIdNumber" 
+                                    placeholder="Enter ID Number" 
+                                    required
+                                >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="modalCertificationFile" class="form-label">Professional Certification <strong class="text-danger">*</strong></label>
+                                <input 
+                                    type="file" 
+                                    class="form-control" 
+                                    id="modalCertificationFile" 
+                                    accept=".pdf,.jpg,.jpeg,.png" 
+                                    required
+                                >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="modalCertificationExpiry" class="form-label">Certification Expiry Date <strong class="text-danger">*</strong></label>
+                                <input 
+                                    type="date" 
+                                    class="form-control" 
+                                    id="modalCertificationExpiry" 
+                                    required
+                                >
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Save Professional</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- end of proffessional -->
     <!-- Right bar overlay-->
     <div class="rightbar-overlay "></div>
 
