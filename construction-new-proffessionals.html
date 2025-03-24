@@ -640,7 +640,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Construction Professionals</h4>
+                                <h4 class="mb-sm-0 font-size-18">Proffesionals Pending Approval</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -657,347 +657,269 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
+                                <div class="card-header bg-white  w-100 border-bottom d-flex justify-content-between align-items-center">
+                                    <h4 class="card-title text-capitalize">
+                                        Pending APproval
+                                    </h4>
+                                    <div class="d-flex">
+                                        
+                                        <button data-bs-toggle="modal" data-bs-target=".add-plot-modal" type="button" class="btn btn-success text-uppercase dropdown-toggle option-selector me-3">
+                                            <i class="bx bx-plus font-size-16"></i> <span class="pl-1 d-md-inline">Add A Persone</span>
+                                        </button>
+
+                                       
+
+                                    </div>
+                                    
+                                </div>
 
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table
-                                            class="table align-middle table-striped table-nowrap table-hover dt-responsiv contacts-table"
-                                            id="datatable-buttons">
+                                        <table class="table align-middle table-striped table-nowrap table-hover dt-responsiv contacts-table" id="datatable-buttons">
                                             <thead class="table-dark">
                                                 <tr>
                                                     <th scope="col">#</th>
-                                                    <th scope="col">Registration Date</th>
-                                                    <th scope="col">Certificate Number</th>
+                                                    <th scope="col">Application Date</th>
+                                                    <th scope="col">Application Number</th>                                                
                                                     <th scope="col">Professional Name</th>
                                                     <th scope="col">Profession</th>
-                                                    <th scope="col">Governing Body</th>
+                                                    <th scope="col">Proposed Governing Body</th>
+                                                    <th scope="col">Contact Number</th>
+                                                    <th scope="col">Email Address</th>
                                                     <th scope="col">Sub County</th>
                                                     <th scope="col">Ward</th>
-                                                    <th scope="col">Certification Status</th>
-                                                    <th scope="col" class="text-right">Total Applications</th>
-                                                    <th scope="col" class="text-right">Approved</th>
-                                                    <th scope="col" class="text-right">Declined</th>
+                                                    <th scope="col">Supporting Documents</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="text-capitalize">1.</td>
-                                                    <td class="text-capitalize">2023-05-18</td>
-                                                    <td>EBK/SE/2023/0045</td>
-                                                    <td>Ochieng Okello</td>
-                                                    <td>Structural Engineer</td>
-                                                    <td>Engineers Board of Kenya</td>
+                                                    <td class="text-capitalize">2024-03-15</td>
+                                                    <td>REG-2024-001</td>
+                                                    <td>Jackson Ogola</td>
+                                                    <td>Urban Planner</td>
+                                                    <td>Kenya Institute of Planners</td>
+                                                    <td>+254 720 123 456</td>
+                                                    <td>jackson.ogola@example.com</td>
                                                     <td>Homa Bay Town</td>
-                                                    <td>Arujo</td>
-                                                    <td><span class="badge bg-success">Active</span></td>
-                                                    <td class="text-black text-uppercase text-right"><strong>12</strong>
+                                                    <td>Central</td>  
+                                                    <td class="text-center">
+                                                        <span class="badge bg-primary">4/6 Documents</span>
+                                                        <button class="btn btn-sm btn-outline-info ml-2" data-bs-toggle="modal" data-bs-target="#documentsModal">View</button>
                                                     </td>
-                                                    <td class="text-black text-uppercase text-right">8</td>
-                                                    <td class="text-black text-uppercase text-right">2</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button class="btn btn-primary btn-sm"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#professionalDetailsModal">View
-                                                                Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
-                                                                type="button" data-bs-toggle="dropdown"
-                                                                aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#applicationDetailsModal">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download
-                                                                        Certificate</a></li>
+                                                                <li><a class="dropdown-item" href="#">Request Additional Documents</a></li>
                                                                 <div class="dropdown-divider"></div>
-                                                                <li><a class="dropdown-item text-danger" href="#"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
-                                                                </li>
+                                                                <li><a class="dropdown-item text-success" href="#">Mark for Review</a></li>
+                                                                <li><a class="dropdown-item text-danger" href="#">Reject Application</a></li>
                                                             </ul>
                                                         </div>
-                                                    </td>
+                                                    </td>  
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize">2.</td>
-                                                    <td class="text-capitalize">2023-05-20</td>
-                                                    <td>AAK/ARCH/2022/0078</td>
-                                                    <td>Adhiambo Nyambura</td>
-                                                    <td>Architect</td>
-                                                    <td>Architectural Association of Kenya</td>
+                                                    <td class="text-capitalize">2024-03-18</td>
+                                                    <td>REG-2024-002</td>
+                                                    <td>Mary Akinyi Ochieng</td>
+                                                    <td>Environmental Engineer</td>
+                                                    <td>Environmental Institute of Kenya</td>
+                                                    <td>+254 735 456 789</td>
+                                                    <td>mary.akinyi@example.com</td>
                                                     <td>Ndhiwa</td>
-                                                    <td>Kwabwai</td>
-                                                    <td><span class="badge bg-warning">Pending Renewal</span></td>
-                                                    <td class="text-black text-uppercase text-right"><strong>15</strong>
+                                                    <td>Rachuonyo North</td>
+                                                    <td class="text-center">
+                                                        <span class="badge bg-primary">5/6 Documents</span>
+                                                        <button class="btn btn-sm btn-outline-info ml-2" data-bs-toggle="modal" data-bs-target="#documentsModal">View</button>
                                                     </td>
-                                                    <td class="text-black text-uppercase text-right">10</td>
-                                                    <td class="text-black text-uppercase text-right">3</td>
-                                                    <td>
+                                                    <td>  
                                                         <div class="btn-group">
-                                                            <button class="btn btn-primary btn-sm"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#professionalDetailsModal">View
-                                                                Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
-                                                                type="button" data-bs-toggle="dropdown"
-                                                                aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#applicationDetailsModal">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download
-                                                                        Certificate</a></li>
+                                                                <li><a class="dropdown-item" href="#">Download Application</a></li>  
                                                                 <div class="dropdown-divider"></div>
-                                                                <li><a class="dropdown-item text-danger" href="#"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
-                                                                </li>
+                                                                <li><a class="dropdown-item text-success" href="#">Advance Application</a></li>
+                                                                <li><a class="dropdown-item text-danger" href="#">Request Clarification</a></li>
                                                             </ul>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-capitalize">3.</td>
-                                                    <td class="text-capitalize">2023-05-22</td>
-                                                    <td>IEK/CE/2023/0112</td>
-                                                    <td>Otieno Omolo</td>
-                                                    <td>Civil Engineer</td>
-                                                    <td>Institution of Engineers of Kenya</td>
+                                                    <td class="text-capitalize">2024-03-20</td>
+                                                    <td>REG-2024-003</td>
+                                                    <td>Peter Otieno Omolo</td>
+                                                    <td>Geotechnical Engineer</td>
+                                                    <td>Engineers Board of Kenya</td>
+                                                    <td>+254 710 789 012</td>
+                                                    <td>peter.otieno@example.com</td>
                                                     <td>Oyugis</td>
                                                     <td>West Kasipul</td>
-                                                    <td><span class="badge bg-danger">Inactive</span></td>
-                                                    <td class="text-black text-uppercase text-right"><strong>7</strong>
+                                                    <td class="text-center">
+                                                        <span class="badge bg-warning">3/6 Documents</span>
+                                                        <button class="btn btn-sm btn-outline-info ml-2" data-bs-toggle="modal" data-bs-target="#documentsModal">View</button>
                                                     </td>
-                                                    <td class="text-black text-uppercase text-right">5</td>
-                                                    <td class="text-black text-uppercase text-right">1</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button class="btn btn-primary btn-sm"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#professionalDetailsModal">View
-                                                                Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
-                                                                type="button" data-bs-toggle="dropdown"
-                                                                aria-expanded="false"></button>
+                                                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#applicationDetailsModal">View Details</button>
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download
-                                                                        Certificate</a></li>
+                                                                <li><a class="dropdown-item" href="#">Download Application</a></li>
                                                                 <div class="dropdown-divider"></div>
-                                                                <li><a class="dropdown-item text-success" href="#"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#activateProfessionalModal">Activate</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">4.</td>
-                                                    <td class="text-capitalize">2023-06-05</td>
-                                                    <td>AAK/ARCH/2023/0056</td>
-                                                    <td>Akinyi Odhiambo</td>
-                                                    <td>Architect</td>
-                                                    <td>Architectural Association of Kenya</td>
-                                                    <td>Mbita</td>
-                                                    <td>Gembe</td>
-                                                    <td><span class="badge bg-warning">Pending Renewal</span></td>
-                                                    <td class="text-black text-uppercase text-right"><strong>10</strong>
-                                                    </td>
-                                                    <td class="text-black text-uppercase text-right">7</td>
-                                                    <td class="text-black text-uppercase text-right">2</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-primary btn-sm"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#professionalDetailsModal">View
-                                                                Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
-                                                                type="button" data-bs-toggle="dropdown"
-                                                                aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download
-                                                                        Certificate</a></li>
-                                                                <div class="dropdown-divider"></div>
-                                                                <li><a class="dropdown-item text-danger" href="#"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">5.</td>
-                                                    <td class="text-capitalize">2023-06-10</td>
-                                                    <td>QSK/QS/2023/0089</td>
-                                                    <td>Onyango Otieno</td>
-                                                    <td>Quantity Surveyor</td>
-                                                    <td>Quantity Surveyors of Kenya</td>
-                                                    <td>Rangwe</td>
-                                                    <td>Kagan</td>
-                                                    <td><span class="badge bg-success">Active</span></td>
-                                                    <td class="text-black text-uppercase text-right"><strong>15</strong>
-                                                    </td>
-                                                    <td class="text-black text-uppercase text-right">12</td>
-                                                    <td class="text-black text-uppercase text-right">2</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-primary btn-sm"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#professionalDetailsModal">View
-                                                                Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
-                                                                type="button" data-bs-toggle="dropdown"
-                                                                aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download
-                                                                        Certificate</a></li>
-                                                                <div class="dropdown-divider"></div>
-                                                                <li><a class="dropdown-item text-danger" href="#"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">6.</td>
-                                                    <td class="text-capitalize">2023-06-15</td>
-                                                    <td>EBK/SE/2023/0223</td>
-                                                    <td>Adhiambo Awuor</td>
-                                                    <td>Structural Engineer</td>
-                                                    <td>Engineers Board of Kenya</td>
-                                                    <td>Ndhiwa</td>
-                                                    <td>Central Kasipul</td>
-                                                    <td><span class="badge bg-success">Active</span></td>
-                                                    <td class="text-black text-uppercase text-right"><strong>8</strong>
-                                                    </td>
-                                                    <td class="text-black text-uppercase text-right">6</td>
-                                                    <td class="text-black text-uppercase text-right">1</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-primary btn-sm"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#professionalDetailsModal">View
-                                                                Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
-                                                                type="button" data-bs-toggle="dropdown"
-                                                                aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download
-                                                                        Certificate</a></li>
-                                                                <div class="dropdown-divider"></div>
-                                                                <li><a class="dropdown-item text-danger" href="#"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">7.</td>
-                                                    <td class="text-capitalize">2023-06-20</td>
-                                                    <td>AAK/ARCH/2023/0112</td>
-                                                    <td>Oduor Otieno</td>
-                                                    <td>Architect</td>
-                                                    <td>Architectural Association of Kenya</td>
-                                                    <td>Homa Bay Town</td>
-                                                    <td>Rodi Kopany</td>
-                                                    <td><span class="badge bg-warning">Pending Renewal</span></td>
-                                                    <td class="text-black text-uppercase text-right"><strong>12</strong>
-                                                    </td>
-                                                    <td class="text-black text-uppercase text-right">9</td>
-                                                    <td class="text-black text-uppercase text-right">2</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-primary btn-sm"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#professionalDetailsModal">View
-                                                                Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
-                                                                type="button" data-bs-toggle="dropdown"
-                                                                aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download
-                                                                        Certificate</a></li>
-                                                                <div class="dropdown-divider"></div>
-                                                                <li><a class="dropdown-item text-success" href="#"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#activateProfessionalModal">Activate</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">8.</td>
-                                                    <td class="text-capitalize">2023-06-25</td>
-                                                    <td>IEK/CE/2023/0245</td>
-                                                    <td>Akoth Ochieng</td>
-                                                    <td>Civil Engineer</td>
-                                                    <td>Institution of Engineers of Kenya</td>
-                                                    <td>Oyugis</td>
-                                                    <td>East Kasipul</td>
-                                                    <td><span class="badge bg-danger">Inactive</span></td>
-                                                    <td class="text-black text-uppercase text-right"><strong>6</strong>
-                                                    </td>
-                                                    <td class="text-black text-uppercase text-right">4</td>
-                                                    <td class="text-black text-uppercase text-right">1</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-primary btn-sm"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#professionalDetailsModal">View
-                                                                Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
-                                                                type="button" data-bs-toggle="dropdown"
-                                                                aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download
-                                                                        Certificate</a></li>
-                                                                <div class="dropdown-divider"></div>
-                                                                <li><a class="dropdown-item text-success" href="#"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#activateProfessionalModal">Activate</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-capitalize">9.</td>
-                                                    <td class="text-capitalize">2023-07-01</td>
-                                                    <td>QSK/QS/2023/0134</td>
-                                                    <td>Otieno Jaoko</td>
-                                                    <td>Quantity Surveyor</td>
-                                                    <td>Quantity Surveyors of Kenya</td>
-                                                    <td>Mbita</td>
-                                                    <td>Mfangano</td>
-                                                    <td><span class="badge bg-success">Active</span></td>
-                                                    <td class="text-black text-uppercase text-right"><strong>14</strong>
-                                                    </td>
-                                                    <td class="text-black text-uppercase text-right">11</td>
-                                                    <td class="text-black text-uppercase text-right">2</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button class="btn btn-primary btn-sm"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#professionalDetailsModal">View
-                                                                Details</button>
-                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
-                                                                type="button" data-bs-toggle="dropdown"
-                                                                aria-expanded="false"></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Download
-                                                                        Certificate</a></li>
-                                                                <div class="dropdown-divider"></div>
-                                                                <li><a class="dropdown-item text-danger" href="#"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#deactivateProfessionalModal">Deactivate</a>
-                                                                </li>
+                                                                <li><a class="dropdown-item text-success" href="#">Initiate Review</a></li>
+                                                                <li><a class="dropdown-item text-danger" href="#">Reject Application</a></li>
                                                             </ul>
                                                         </div>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
+                                        
+                                        <!-- Documents Modal -->
+                                        <div class="modal fade" id="documentsModal" tabindex="-1">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header ">
+                                                        <h5 class="modal-title">Submitted Documents</h5>
+                                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                Academic Certificates
+                                                                <span class="badge bg-primary rounded-pill">2 files</span>
+                                                            </li>
+                                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                Professional Identification
+                                                                <span class="badge bg-primary rounded-pill">1 file</span>
+                                                            </li>
+                                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                Curriculum Vitae
+                                                                <span class="badge bg-primary rounded-pill">1 file</span>
+                                                            </li>
+                                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                Recommendation Letters
+                                                                <span class="badge bg-warning rounded-pill">Pending</span>
+                                                            </li>
+                                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                Proof of Continuous Professional Development
+                                                                <span class="badge bg-warning rounded-pill">Pending</span>
+                                                            </li>
+                                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                Professional Practice Evidence
+                                                                <span class="badge bg-warning rounded-pill">Pending</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Application Details Modal -->
+                                        <div class="modal fade" id="applicationDetailsModal" tabindex="-1">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Professional Registration Application Details</h5>
+                                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <h6>Applicant Information</h6>
+                                                                <p><strong>Name:</strong> Jackson Ogola</p>
+                                                                <p><strong>Proposed Profession:</strong> Urban Planner</p>
+                                                                <p><strong>Proposed Governing Body:</strong> Kenya Institute of Planners</p>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h6>Contact Details</h6>
+                                                                <p><strong>Phone:</strong> +254 720 123 456</p>
+                                                                <p><strong>Email:</strong> jackson.ogola@example.com</p>
+                                                                <p><strong>Address:</strong> Homa Bay Town, Central Ward</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Review Application</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Application Details Modal -->
+                                        <div class="modal fade" id="applicationDetailsModal" tabindex="-1">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Professional Registration Application Details</h5>
+                                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <h6>Applicant Information</h6>
+                                                                <p><strong>Name:</strong> Jackson Ogola</p>
+                                                                <p><strong>Proposed Profession:</strong> Urban Planner</p>
+                                                                <p><strong>Proposed Governing Body:</strong> Kenya Institute of Planners</p>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h6>Application Status</h6>
+                                                                <p><strong>Application Number:</strong> REG-2024-001</p>
+                                                                <p><strong>Application Date:</strong> 2024-03-15</p>
+                                                                <p><strong>Current Status:</strong> Pending Initial Review</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-3">
+                                                            <div class="col-12">
+                                                                <h6>Document Submission Checklist</h6>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">4/6 Documents Submitted</div>
+                                                                </div>
+                                                                <ul class="list-group mt-2">
+                                                                    <li class="list-group-item">
+                                                                        <input class="form-check-input me-1" type="checkbox" checked>
+                                                                        Academic Certificates
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <input class="form-check-input me-1" type="checkbox" checked>
+                                                                        Professional Identification
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <input class="form-check-input me-1" type="checkbox" checked>
+                                                                        Curriculum Vitae
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <input class="form-check-input me-1" type="checkbox" checked>
+                                                                        Recommendation Letters
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <input class="form-check-input me-1" type="checkbox">
+                                                                        Proof of Continuous Professional Development
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <input class="form-check-input me-1" type="checkbox">
+                                                                        Professional Practice Evidence
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Review Application</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <!-- Deactivate Professional Modal -->
                                         <div class="modal fade" id="deactivateProfessionalModal" tabindex="-1">
