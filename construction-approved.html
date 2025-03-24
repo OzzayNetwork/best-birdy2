@@ -640,13 +640,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Applications In progress</h4>
+                                <h4 class="mb-sm-0 font-size-18">Declined Applications</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
                                         <li class="breadcrumb-item active">E Construction</li>
-                                        <li class="breadcrumb-item active">Ongoing Applications</li>
+                                        <li class="breadcrumb-item active">Declined APplications</li>
                                     </ol>
                                 </div>
 
@@ -660,7 +660,7 @@
 
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table align-middle table-striped table-nowrap table-hover dt-responsiv contacts-table" id="datatable-buttons">
+                                        <table class="table align-middle table-striped table-nowrap table-hover  contacts-table" id="datatable-buttons">
                                             <thead class="table-dark">
                                               <tr>
                                                 <th scope="col">#</th>
@@ -671,10 +671,10 @@
                                                 <th scope="col">Sub County</th>
                                                 <th scope="col">Ward</th>
                                                 <th scope="col">Plot Number</th>
-                                                <th scope="col">Payment Status</th>
-                                                <th scope="col" class="text-right">Amount Paid</th>
-                                                <th scope="col" class="text-right">Pending Amount</th>  
-                                                <th scope="col" class="text-right">Total Amount</th>
+                                                <th scope="col">Approval Date</th>
+                                                <th scope="col">Approved By</th>
+                                                <th scope="col" class="text-right">Permit Fee Paid</th>
+                                                <th scope="col">Permit Number</th>
                                                 <th></th>
                                               </tr>
                                             </thead>
@@ -689,52 +689,22 @@
                                                 <td>Homa Bay Town</td>
                                                 <td>Arujo</td>  
                                                 <td>LR 1234/567</td>
-                                                <td><span class="badge bg-success">Paid</span></td>
+                                                <td>2023-05-20</td>
+                                                <td>John Doe</td>
                                                 <td class="text-black text-uppercase text-right"><strong>5,000</strong></td>
-                                                <td class="text-black text-uppercase text-right">0</td>
-                                                <td class="text-black text-uppercase text-right">5,000</td>
+                                                <td>PERMIT-001</td>
                                                 <td>
                                                   <div class="btn-group">
                                                     <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
                                                     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                                     <ul class="dropdown-menu">
-                                                      <li><a class="dropdown-item" href="#">Download Receipt</a></li>
-                                                      <div class="dropdown-divider"></div>
-                                                      <li><a class="dropdown-item text-success" href="#" data-toggle="modal" data-target="#approve-3">Approve</a></li>
-                                                      <li><a class="dropdown-item text-danger" href="#" data-toggle="modal" data-target="#decline-3">Decline</a></li>
+                                                      <li><a class="dropdown-item" href="#">Download Permit</a></li>
                                                     </ul>
                                                   </div>
                                                 </td>  
                                               </tr>
                                               <tr>
                                                 <td class="text-capitalize">2.</td>  
-                                                <td class="text-capitalize">2023-05-20</td>
-                                                <td>BPA-2023-002</td>
-                                                <td>Proposed Office Block</td>  
-                                                <td>Alterations and additions to existing buildings</td>
-                                                <td>Ndhiwa</td>
-                                                <td>Kwabwai</td>
-                                                <td>LR 7890/123</td>
-                                                <td><span class="badge bg-warning">Partial</span></td> 
-                                                <td class="text-black text-uppercase text-right"><strong>10,000</strong></td>
-                                                <td class="text-black text-uppercase text-right">5,000</td>
-                                                <td class="text-black text-uppercase text-right">15,000</td>
-                                                <td>  
-                                                  <div class="btn-group">
-                                                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
-                                                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                    <ul class="dropdown-menu">
-                                                      <li><a class="dropdown-item" href="#">Download Invoice</a></li>  
-                                                      <li><a class="dropdown-item" href="#">Download Receipt</a></li>
-                                                      <div class="dropdown-divider"></div>
-                                                      <li><a class="dropdown-item text-success" href="#" data-toggle="modal" data-target="#approve-3">Approve</a></li>
-                                                      <li><a class="dropdown-item text-danger" href="#" data-toggle="modal" data-target="#decline-3">Decline</a></li>
-                                                    </ul>
-                                                  </div>
-                                                </td>
-                                              </tr>
-                                              <tr>  
-                                                <td class="text-capitalize">3.</td>
                                                 <td class="text-capitalize">2023-05-22</td>
                                                 <td>BPA-2023-003</td>  
                                                 <td>Proposed Warehouse</td>
@@ -742,52 +712,22 @@
                                                 <td>Oyugis</td>
                                                 <td>West Kasipul</td>
                                                 <td>LR 4567/890</td>
-                                                <td><span class="badge bg-danger">Unpaid</span></td>
-                                                <td class="text-black text-uppercase text-right"><strong>0</strong></td>
-                                                <td class="text-black text-uppercase text-right">20,000</td>
-                                                <td class="text-black text-uppercase text-right">20,000</td>
+                                                <td>2023-05-25</td>
+                                                <td>Jane Smith</td>
+                                                <td class="text-black text-uppercase text-right"><strong>20,000</strong></td>
+                                                <td>PERMIT-002</td>
                                                 <td>
                                                   <div class="btn-group">
                                                     <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>  
                                                     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                                     <ul class="dropdown-menu">
-                                                      <li><a class="dropdown-item" href="#">Download Invoice</a></li>
-                                                      <div class="dropdown-divider"></div> 
-                                                      <li><a class="dropdown-item text-success" href="#" data-toggle="modal" data-target="#approve-3">Approve</a></li>
-                                                      <li><a class="dropdown-item text-danger" href="#" data-toggle="modal" data-target="#decline-3">Decline</a></li>  
+                                                      <li><a class="dropdown-item" href="#">Download Permit</a></li>
                                                     </ul>
                                                   </div>
                                                 </td>
                                               </tr>
                                               <tr>
-                                                <td class="text-capitalize">4.</td>
-                                                <td class="text-capitalize">2023-05-25</td>
-                                                <td>BPA-2023-004</td>
-                                                <td>Proposed Shopping Mall</td>
-                                                <td>New Buildings</td>
-                                                <td>Mbita</td>
-                                                <td>Gembe West</td>
-                                                <td>LR 9012/345</td>
-                                                <td><span class="badge bg-warning">Partial</span></td>
-                                                <td class="text-black text-uppercase text-right"><strong>25,000</strong></td>
-                                                <td class="text-black text-uppercase text-right">15,000</td>
-                                                <td class="text-black text-uppercase text-right">40,000</td>
-                                                <td>
-                                                  <div class="btn-group">
-                                                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
-                                                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                    <ul class="dropdown-menu">
-                                                      <li><a class="dropdown-item" href="#">Download Invoice</a></li>
-                                                      <li><a class="dropdown-item" href="#">Download Receipt</a></li>
-                                                      <div class="dropdown-divider"></div>
-                                                      <li><a class="dropdown-item text-success" href="#" data-toggle="modal" data-target="#approve-3">Approve</a></li>
-                                                      <li><a class="dropdown-item text-danger" href="#" data-toggle="modal" data-target="#decline-3">Decline</a></li>
-                                                    </ul>
-                                                  </div>
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td class="text-capitalize">5.</td>
+                                                <td class="text-capitalize">3.</td>
                                                 <td class="text-capitalize">2023-05-28</td>
                                                 <td>BPA-2023-005</td>
                                                 <td>Proposed Factory</td>
@@ -795,19 +735,16 @@
                                                 <td>Rangwe</td>
                                                 <td>Kagan</td>
                                                 <td>LR 6789/012</td>
-                                                <td><span class="badge bg-success">Paid</span></td>
+                                                <td>2023-05-30</td>
+                                                <td>Mike Johnson</td>
                                                 <td class="text-black text-uppercase text-right"><strong>30,000</strong></td>
-                                                <td class="text-black text-uppercase text-right">0</td>
-                                                <td class="text-black text-uppercase text-right">30,000</td>
+                                                <td>PERMIT-003</td>
                                                 <td>
                                                   <div class="btn-group">
                                                     <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#details-3">View Details</button>
                                                     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                                     <ul class="dropdown-menu">
-                                                      <li><a class="dropdown-item" href="#">Download Receipt</a></li>
-                                                      <div class="dropdown-divider"></div>
-                                                      <li><a class="dropdown-item text-success" href="#" data-toggle="modal" data-target="#approve-3">Approve</a></li>
-                                                      <li><a class="dropdown-item text-danger" href="#" data-toggle="modal" data-target="#decline-3">Decline</a></li>
+                                                      <li><a class="dropdown-item" href="#">Download Permit</a></li>
                                                     </ul>
                                                   </div>
                                                 </td>
