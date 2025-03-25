@@ -700,7 +700,7 @@
                                                     <ul class="dropdown-menu">
                                                       <li><a class="dropdown-item" href="#">Download Receipt</a></li>
                                                       <div class="dropdown-divider"></div>
-                                                      <li><a class="dropdown-item text-success" href="#" data-toggle="modal" data-target="#approve-3">Approve</a></li>
+                                                      <li><a class="dropdown-item text-success" href="#" data-toggle="modal" data-target=".construction-permit-modal">Approve</a></li>
                                                       <li><a class="dropdown-item text-danger" href="#" data-toggle="modal" data-target="#decline-3">Decline</a></li>
                                                     </ul>
                                                   </div>
@@ -1190,6 +1190,248 @@
             </div>
             <!-- end of changing revenue stream modal -->
 
+            <!-- modal for details -->
+            <div class="modal fade construction-permit-modal" tabindex="-1" role="dialog" aria-labelledby="constructionPermitModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="constructionPermitModalLabel">Construction Permit Application</h5>
+                            <span class="badge rounded-pill bg-primary text-uppercase mx-3">In Progress</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Professional Person Details Section -->
+                            <div class="col-12 mt-4">
+                                <div class="bg-dark border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                    <i class="bx bx-user-circle font-28 mr-15px"></i>
+                                    <p class="fw-semibold mb-0 pb-0">Professional Person Details</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                        <tbody>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Full Names</p></td>
+                                                <td>John Doe Architectural Consultants</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Phone Number</p></td>
+                                                <td>+254 712 345 678</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Email Address</p></td>
+                                                <td>john.doe@architecturalconsultants.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Professional Type</p></td>
+                                                <td>Architect</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Governing Body</p></td>
+                                                <td>Architectural Association of Kenya</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Certificate Number</p></td>
+                                                <td>AAK/2023/1234</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Certificate Expiration</p></td>
+                                                <td>31 December 2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">National ID Number</p></td>
+                                                <td>12345678</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+            
+                            <!-- Application Details Section -->
+                            <div class="col-12 mt-4">
+                                <div class="bg-info border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                    <i class="bx bx-detail font-28 mr-15px"></i>
+                                    <p class="fw-semibold mb-0 pb-0">Application Details</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                        <tbody>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Application Date</p></td>
+                                                <td>15 March 2025</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Application/Tracking Number</p></td>
+                                                <td>CP-HB-2025-0001</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Project Name</p></td>
+                                                <td>Homa Bay Commercial Complex</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Development Type</p></td>
+                                                <td>New Building Construction</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Sub County</p></td>
+                                                <td>Homa Bay</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Ward</p></td>
+                                                <td>Homa Bay Central</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Plot Number</p></td>
+                                                <td>LR NO. 1224/890</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Project Value</p></td>
+                                                <td>KES 50,000,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Project Duration</p></td>
+                                                <td>12 Months</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Project Description</p></td>
+                                                <td>Multi-story commercial building with retail and office spaces</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+            
+                            <!-- Supporting Documents Section -->
+                            <div class="col-12 mt-4">
+                                <div class="bg-warning border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                    <i class="bx bx-file font-28 mr-15px"></i>
+                                    <p class="fw-semibold mb-0 pb-0">Supporting Documents</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                        <tbody>
+                                            <tr><td>Land Ownership Documents</td><td>✓ Uploaded</td></tr>
+                                            <tr><td>Consent Letter</td><td>✓ Uploaded</td></tr>
+                                            <tr><td>Architectural Drawings</td><td>✓ Uploaded</td></tr>
+                                            <tr><td>Structural Engineering Plans</td><td>✓ Uploaded</td></tr>
+                                            <tr><td>Owner's ID Number</td><td>12345678</td></tr>
+                                            <tr><td>Owner's KRA PIN Number</td><td>A123456789B</td></tr>
+                                            <tr><td>Land Search Certificate Number</td><td>LS-HB-2025-0001</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+            
+                            <!-- Initial Billing Information -->
+                            <div class="col-12 mt-4">
+                                <div class="bg-success border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                    <i class="bx bx-receipt font-28 mr-15px"></i>
+                                    <p class="fw-semibold mb-0 pb-0">Initial Billing Information</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                        <tbody>
+                                            <tr><td>Land Rate Arrears</td><td>KES 25,000</td></tr>
+                                            <tr><td>Application Fees</td><td>KES 5,000</td></tr>
+                                            <tr><td>Form Fees</td><td>KES 1,000</td></tr>
+                                            <tr><td>Payment Method</td><td>M-PESA</td></tr>
+                                            <tr><td>Reference Number</td><td>MPESA8790JKL</td></tr>
+                                            <tr><td>Invoice Number</td><td>INV-CP-2025-0001</td></tr>
+                                            <tr><td>Receipt Number</td><td>RCP-CP-2025-0001</td></tr>
+                                            <tr><td>Amount Invoiced</td><td>KES 31,000</td></tr>
+                                            <tr><td>Amount Paid</td><td>KES 31,000</td></tr>
+                                            <tr><td>Pending Amount</td><td>KES 0</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+            
+                            <!-- Final Billing Information -->
+                            <div class="col-12 mt-4">
+                                <div class="bg-primary border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                    <i class="bx bx-dollar-circle font-28 mr-15px"></i>
+                                    <p class="fw-semibold mb-0 pb-0">Final Billing Information</p>
+                                </div>
+                                <div class="row">
+                                    <div class="table-responsive">
+                                        <table class="table table-editable-1 align-middle table-edits">
+                                            <thead class="table-light">
+                                                <tr class="text-uppercase table-dark">
+                                                    <th>#</th>
+                                                    <th>Service Type</th>
+                                                    <th class="">Fee Item</th>
+                                                    <th class="">QTY</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                                <tr data-id="7">
+                                                    <td style="width: 80px">7.</td>
+                                                    <td>
+                                                        <select class="form-select">
+                                                            <option>Inspection Fee</option>
+                                                            <option>Approval Fee</option>
+                                                            <option>Additional Charges</option>
+                                                        </select>
+                                                    </td>
+                                                   <td>
+                                                    <select class="form-select">
+                                                        <option>Plan Review</option>
+                                                        <option>Site Inspection</option>
+                                                        <option>Final Approval</option>
+                                                    </select>
+                                                   </td>
+                                                    <td><input type="text" class="form-control" placeholder="QTY" spellcheck="false"></td>
+                                                    <td></td>
+                                                </tr>
+                                               
+                                                <tr class="cloneCharges d-none">
+                                                    <td style="width: 80px" class="categoryIndex">#</td>
+                                                    <td>
+                                                        <select class="form-select">
+                                                            <option>Inspection Fee</option>
+                                                            <option>Approval Fee</option>
+                                                            <option>Additional Charges</option>
+                                                        </select>
+                                                    </td>
+                                                   <td>
+                                                    <select class="form-select">
+                                                        <option>Plan Review</option>
+                                                        <option>Site Inspection</option>
+                                                        <option>Final Approval</option>
+                                                    </select>
+                                                   </td>
+                                                    <td><input type="text" class="form-control" placeholder="QTY" spellcheck="false"></td>
+                                                    <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                        <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2" title="Cancel"><i class="bx bx-x"></i></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                        <span class="d-flex align-items-center">
+                                                            <i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21"></i>
+                                                            <span class="pl-5">Upload Other Documents</span>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of details modal -->
+
 
             <footer class="footer ">
                 <div class="container-fluid ">
@@ -1265,6 +1507,11 @@
     <!-- Datatable init js -->
     <script src="assets/js/pages/datatables.init.js"></script>
 
+
+     <!-- Table Editable plugin -->
+     <script src="assets/libs/table-edits/build/table-edits.min.js "></script>
+     <script src="assets/js/pages/table-editable.int.js "></script>
+     
     <!-- App js -->
     <script src="assets/js/app.js"></script>
     <script src="assets/js/custom.js"></script>
